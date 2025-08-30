@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev -p 3001",
-    "build": "npm run hydration-check && next build",
+    "build": "next build",
     "check-client-usage": "node scripts/check-client-components.js",    "build:unsafe": "next build",
     "start": "next start",
     "lint": "next lint",

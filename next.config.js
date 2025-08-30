@@ -108,6 +108,20 @@ const nextConfig = {
           },
         ],
       },
+      // IndexNow密钥文件支持
+      {
+        source: '/a3f202e9872f45238294db525b233bf5.txt',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'text/plain',
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=3600',
+          },
+        ],
+      },
       // 静态资源长期缓存
       {
         source: '/images/(.*)',
