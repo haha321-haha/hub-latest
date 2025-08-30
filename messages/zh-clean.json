@@ -1,0 +1,223 @@
+{
+  "site": {
+    "name": "Period Hub",
+    "title": "Period Hub - 经期健康管理平台",
+    "description": "专业的经期健康管理平台，为每位女性提供科学指导和贴心支持"
+  },
+  "metadata": {
+    "home": {
+      "title": "Period Hub - 经期健康管理平台",
+      "description": "专业的经期健康管理平台，科学指导，贴心陪伴，让每个女性都能健康自信地度过生理期"
+    },
+    "articles": {
+      "title": "健康文章 - Period Hub",
+      "description": "基于科学研究的专业指导，帮助您更好地了解和管理经期健康"
+    },
+    "tools": {
+      "title": "互动工具 - Period Hub",
+      "description": "智能化健康评估工具，为您提供个性化的健康管理方案"
+    },
+    "teen": {
+      "title": "青少年健康专区 - Period Hub",
+      "description": "专为青少年女性设计的经期健康指导，让成长路上不再困惑"
+    },
+    "about": {
+      "title": "关于我们 - Period Hub",
+      "description": "致力于为每位女性提供专业、贴心的经期健康管理服务"
+    },
+    "contact": {
+      "title": "联系我们 - Period Hub",
+      "description": "我们在您的经期健康之路上随时为您提供帮助"
+    }
+  },
+  "common": {
+    "PeriodHub": "经期健康中心",
+    "home": "首页",
+    "articles": "健康文章",
+    "interactiveTools": "互动工具",
+    "teenHealth": "青少年专区",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "search": "搜索",
+    "readMore": "阅读更多",
+    "loading": "加载中...",
+    "error": "出错了",
+    "tryAgain": "重试"
+  },
+  "hero": {
+    "title": "专业的经期健康管理平台",
+    "subtitle": "科学指导，贴心陪伴，让每个女性都能健康自信地度过生理期",
+    "cta": "免费2分钟健康评估",
+    "learnMore": "浏览文章",
+    "features": {
+      "articles": "42篇专业文章",
+      "tools": "5个互动工具",
+      "support": "24/7在线支持"
+    }
+  },
+  "footer": {
+    "description": "专业的经期健康管理平台，为每位女性提供科学指导和贴心支持。",
+    "quickLinks": "快速链接",
+    "support": "支持",
+    "contactUs": "联系我们",
+    "helpCenter": "帮助中心",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "email": "邮箱",
+    "support24": "为您提供专业的健康指导",
+    "allRights": "保留所有权利。",
+    "disclaimer": "此内容仅供参考，不能替代专业医疗建议。"
+  },
+  "articles": {
+    "title": "健康文章",
+    "subtitle": "基于科学研究的专业指导，帮助您更好地了解和管理经期健康",
+    "categories": {
+      "pain": "疼痛管理",
+      "painDesc": "有效缓解经期疼痛的方法和技巧",
+      "nutrition": "营养指导",
+      "nutritionDesc": "经期营养补充和饮食建议"
+    },
+    "painRelief": "快速缓解经期疼痛指南",
+    "antiInflammatory": "抗炎饮食与经期疼痛",
+    "heatTherapy": "热敷疗法完整指南",
+    "nutritionGuide": "经期营养指导手册",
+    "supplements": "经期健康补充剂",
+    "hydration": "经期水分补充指南",
+    "cta": {
+      "title": "需要个性化建议？",
+      "subtitle": "使用我们的互动工具获得专属健康方案",
+      "button": "开始评估"
+    }
+  },
+  "tools": {
+    "title": "互动工具",
+    "subtitle": "智能化健康评估工具，为您提供个性化的健康管理方案",
+    "startTool": "开始使用",
+    "painAssessment": {
+      "title": "疼痛评估工具",
+      "description": "科学评估您的经期疼痛程度并提供针对性建议"
+    },
+    "cycleTracker": {
+      "title": "周期追踪器",
+      "description": "智能记录和预测您的月经周期"
+    },
+    "symptomChecker": {
+      "title": "症状检查器",
+      "description": "快速识别经期相关症状并获得专业建议"
+    },
+    "wellnessPlan": {
+      "title": "健康计划制定",
+      "description": "根据您的具体情况制定个性化健康管理计划"
+    },
+    "info": {
+      "title": "为什么选择我们的工具？",
+      "description": "基于最新医学研究，结合人工智能技术，为您提供最专业的健康管理体验",
+      "privacy": "隐私保护",
+      "privacyDesc": "所有数据本地存储，绝不泄露",
+      "instant": "即时反馈",
+      "instantDesc": "实时分析，立即获得结果",
+      "personalized": "个性化定制",
+      "personalizedDesc": "根据您的情况量身定制"
+    }
+  },
+  "teen": {
+    "title": "青少年健康专区",
+    "subtitle": "专为青少年女性设计的经期健康指导，让成长路上不再困惑",
+    "welcome": {
+      "title": "欢迎来到青少年健康专区",
+      "message": "这里是专门为青少年女性准备的安全空间，我们理解你的困惑和担心，愿意陪伴你度过这个特殊的成长阶段。"
+    },
+    "basics": {
+      "title": "经期基础知识",
+      "description": "了解月经的基本知识，消除恐惧和误解"
+    },
+    "firstPeriod": {
+      "title": "初潮指导",
+      "description": "第一次月经的准备和应对方法"
+    },
+    "products": {
+      "title": "卫生用品选择",
+      "description": "了解各种卫生用品的使用方法和选择技巧"
+    },
+    "support": {
+      "title": "心理支持",
+      "description": "应对经期带来的情绪变化和心理压力"
+    },
+    "learnMore": "了解更多",
+    "cta": {
+      "title": "还有疑问？",
+      "subtitle": "我们的专业团队随时为你解答",
+      "button": "咨询专家"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "致力于为每位女性提供专业、贴心的经期健康管理服务",
+    "mission": {
+      "title": "我们的使命",
+      "description": "我们相信每位女性都应该拥有健康、自信的生理期体验。"
+    },
+    "contact": {
+      "title": "想要了解更多？",
+      "description": "如果您有任何问题或建议，欢迎随时与我们联系",
+      "button": "联系我们"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们在您的经期健康之路上随时为您提供帮助。",
+    "form": {
+      "title": "发送消息",
+      "name": "姓名",
+      "namePlaceholder": "请输入您的姓名",
+      "email": "邮箱地址",
+      "emailPlaceholder": "请输入您的邮箱地址",
+      "subject": "主题",
+      "selectSubject": "请选择主题",
+      "subjects": {
+        "general": "一般咨询",
+        "medical": "医疗问题",
+        "technical": "技术支持",
+        "feedback": "意见反馈"
+      },
+      "message": "消息内容",
+      "messagePlaceholder": "告诉我们如何为您提供帮助...",
+      "submit": "发送消息",
+      "success": "谢谢！您的消息已成功发送。"
+    },
+    "methods": {
+      "title": "其他联系方式",
+      "email": {
+        "title": "邮件支持",
+        "description": "获得详细的问题解答",
+        "action": "发送邮件"
+      },
+      "support": {
+        "title": "24/7支持",
+        "description": "需要时立即获得帮助",
+        "value": "随时可用",
+        "action": "获取帮助"
+      },
+      "social": {
+        "title": "社交媒体",
+        "description": "关注我们获取健康贴士和更新",
+        "value": "与我们联系",
+        "action": "关注我们"
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "description": "快速找到常见问题的答案",
+      "button": "查看常见问题"
+    },
+    "response": {
+      "title": "响应时间",
+      "urgent": "紧急事项",
+      "urgentTime": "2小时内",
+      "general": "一般咨询",
+      "generalTime": "24小时内",
+      "support": "支持请求",
+      "supportTime": "12小时内"
+    }
+  }
+}

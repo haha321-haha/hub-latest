@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Medical Insurance Quick Reference Card</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 25px;
+            font-size: 18px;
+            border-left: 3px solid #3498db;
+            padding-left: 12px;
+        }
+        h3 {
+            color: #2c3e50;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .quick-info {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border-left: 4px solid #28a745;
+        }
+        .warning {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border-left: 4px solid #ffc107;
+        }
+        .emergency {
+            background: #f8d7da;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border-left: 4px solid #dc3545;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: white;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .contact-info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .checklist {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .checklist ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .checklist li:before {
+            content: "☐ ";
+            font-weight: bold;
+            color: #3498db;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .formula {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 6px;
+            font-family: monospace;
+            margin: 12px 0;
+            border: 1px solid #dee2e6;
+            font-size: 14px;
+        }
+        .resource-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+        @media print {
+            body { background: white; font-size: 12px; }
+            .container { box-shadow: none; padding: 15px; }
+            .page-break { page-break-before: always; }
+        }
+    
+        /* 📱 移动端响应式优化 */
+        @media (max-width: 768px) {
+            body { padding: 8px !important; font-size: 14px; }
+            .container { padding: 12px !important; margin: 0 !important; }
+            .header h1 { font-size: 24px !important; }
+            .section { margin-bottom: 20px !important; }
+            table, .table-container { overflow-x: auto; display: block; }
+            .grid, .content-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
+        }
+        @media (max-width: 480px) {
+            body { padding: 4px !important; font-size: 13px; }
+            .header h1 { font-size: 20px !important; }
+            .header p { font-size: 12px !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 US Medical Insurance Quick Reference Card</h1>
+        
+        <div class="quick-info">
+            <h3>📋 2025 Key Updates</h3>
+            <ul>
+                <li><strong>Medicare Part D coverage gap completely eliminated</strong></li>
+                <li><strong>Annual out-of-pocket maximum: $2,000</strong></li>
+                <li><strong>ACA subsidy cap removal extended through 2025</strong></li>
+            </ul>
+        </div>
+
+        <h2>💰 Metal Plan Quick Comparison</h2>
+        <table>
+            <tr>
+                <th>Plan</th>
+                <th>Monthly Premium</th>
+                <th>Annual Deductible</th>
+                <th>Best For</th>
+            </tr>
+            <tr>
+                <td>Bronze</td>
+                <td>$250-400</td>
+                <td>$7,000+</td>
+                <td>Young healthy women</td>
+            </tr>
+            <tr>
+                <td>Silver</td>
+                <td>$350-600</td>
+                <td>$5,000-7,000</td>
+                <td>Low-moderate income (recommended)</td>
+            </tr>
+            <tr>
+                <td>Gold</td>
+                <td>$500-800</td>
+                <td>$3,000-5,000</td>
+                <td>Chronic menstrual pain patients</td>
+            </tr>
+            <tr>
+                <td>Platinum</td>
+                <td>$700+</td>
+                <td>$1,500-3,000</td>
+                <td>Complex condition patients</td>
+            </tr>
+        </table>
+
+        <h2>💊 Common Medication Cost Reference</h2>
+        <table>
+            <tr>
+                <th>Medication Type</th>
+                <th>Monthly Copay</th>
+                <th>Money-Saving Tips</th>
+            </tr>
+            <tr>
+                <td>NSAIDs (Ibuprofen)</td>
+                <td>$5-15</td>
+                <td>Choose generic + 90-day supply</td>
+            </tr>
+            <tr>
+                <td>Hormonal contraceptives</td>
+                <td>$0-30</td>
+                <td>ACA mandatory coverage</td>
+            </tr>
+            <tr>
+                <td>COX-2 inhibitors</td>
+                <td>$30-100</td>
+                <td>Apply for pharmaceutical assistance</td>
+            </tr>
+        </table>
+
+        <h2>🏥 Test Cost Estimates</h2>
+        <ul>
+            <li><strong>Pelvic ultrasound</strong>: $220-550 (in-network copay $30-150)</li>
+            <li><strong>Hormone panel</strong>: $200-500 (in-network copay $40-120)</li>
+            <li><strong>MRI examination</strong>: $1,000-3,000 (requires prior authorization)</li>
+            <li><strong>Laparoscopy</strong>: $3,000-8,000 (better Gold/Platinum coverage)</li>
+        </ul>
+
+        <div class="formula">
+            <h3>💡 Cost Calculation Formula</h3>
+            <code>Out-of-pocket cost = Deductible + (Total cost - Deductible) × Coinsurance rate</code>
+        </div>
+
+        <h2>🚨 Appeal Process Flow</h2>
+        <div class="warning">
+            <ol>
+                <li><strong>Receive denial notice</strong> → Submit internal appeal within 30 days</li>
+                <li><strong>Appeal successful?</strong> → Receive reimbursement ✅</li>
+                <li><strong>Appeal denied?</strong> → Request independent external review</li>
+                <li><strong>External review supports?</strong> → Insurance company forced to pay ✅</li>
+                <li><strong>External review denies?</strong> → File complaint with state regulatory agency</li>
+            </ol>
+        </div>
+
+        <div class="emergency">
+            <h3>🆘 Emergency Situation Criteria</h3>
+            <ul>
+                <li>Menstrual pain causing fainting (systolic BP <90mmHg)</li>
+                <li>Severe vomiting and dehydration requiring IV fluids</li>
+                <li>Emergency department vital signs records must be retained</li>
+            </ul>
+        </div>
+
+        <h2>📞 Important Contact Information</h2>
+        <div class="contact-info">
+            <h3>Policy Inquiries</h3>
+            <ul>
+                <li><strong>HealthCare.gov</strong>: Insurance plan comparison and enrollment</li>
+                <li><strong>CMS.gov</strong>: Medicare and Medicaid information</li>
+            </ul>
+            
+            <h3>Patient Assistance</h3>
+            <ul>
+                <li><strong>Patient Advocate Foundation</strong>: Insurance appeal support</li>
+                <li><strong>GoodRx.com</strong>: Prescription drug discounts</li>
+            </ul>
+            
+            <h3>Clinical Guidelines</h3>
+            <ul>
+                <li><strong>ACOG.org</strong>: Menstrual pain management guidelines</li>
+                <li><strong>NWHN.org</strong>: Women's health advocacy</li>
+            </ul>
+        </div>
+
+        <h2>📅 Important 2025 Dates</h2>
+        <div class="warning">
+            <ul>
+                <li><strong>Open enrollment ended</strong>: November 1, 2024 - January 15, 2025</li>
+                <li><strong>Next open enrollment</strong>: November 1, 2025 - January 15, 2026</li>
+                <li><strong>Subsidy policy expires</strong>: December 31, 2025</li>
+            </ul>
+        </div>
+
+        <h2>✅ Action Checklist</h2>
+        <div class="checklist">
+            <h3>When Choosing Insurance:</h3>
+            <ul>
+                <li>Confirm gynecologist is in-network</li>
+                <li>Verify menstrual pain medications are in formulary</li>
+                <li>Calculate annual maximum out-of-pocket costs</li>
+                <li>Understand prior authorization requirements</li>
+            </ul>
+
+            <h3>Medical Visit Preparation:</h3>
+            <ul>
+                <li>Record detailed symptom diary</li>
+                <li>Collect previous treatment history</li>
+                <li>Prepare prior authorization application materials</li>
+                <li>Research patient assistance programs</li>
+            </ul>
+
+            <h3>Cost Management:</h3>
+            <ul>
+                <li>Regularly check claim status</li>
+                <li>Keep all medical expense receipts</li>
+                <li>Understand appeal procedures and deadlines</li>
+                <li>Consider HSA account benefits</li>
+            </ul>
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2>🎯 Low-Income Solutions</h2>
+        <div class="quick-info">
+            <h3>Targeted Assistance:</h3>
+            <ul>
+                <li><strong>Medicaid Expansion</strong>: 39 states cover adults with income ≤138% FPL</li>
+                <li><strong>FQHC Sliding Fee Scale</strong>: Minimum $20/visit for comprehensive examination</li>
+                <li><strong>Extra Help</strong>: Federal assistance for Medicare Part D drug costs</li>
+            </ul>
+        </div>
+
+        <h2>📊 Income Eligibility Quick Reference</h2>
+        <table>
+            <tr>
+                <th>Household Size</th>
+                <th>100% FPL</th>
+                <th>138% FPL (Medicaid)</th>
+                <th>400% FPL</th>
+            </tr>
+            <tr>
+                <td>1 person</td>
+                <td>$15,060</td>
+                <td>$20,783</td>
+                <td>$60,240</td>
+            </tr>
+            <tr>
+                <td>2 people</td>
+                <td>$20,440</td>
+                <td>$28,207</td>
+                <td>$81,760</td>
+            </tr>
+            <tr>
+                <td>3 people</td>
+                <td>$25,820</td>
+                <td>$35,632</td>
+                <td>$103,280</td>
+            </tr>
+            <tr>
+                <td>4 people</td>
+                <td>$31,200</td>
+                <td>$43,056</td>
+                <td>$124,800</td>
+            </tr>
+        </table>
+
+        <div class="warning">
+            <p><strong>Disclaimer</strong>: This reference card is compiled based on the latest 2025 policy information. Specific coverage should be confirmed with individual insurance plan terms. For personalized advice, please consult a certified insurance advisor.</p>
+        </div>
+    </div>
+</body>
+</html>

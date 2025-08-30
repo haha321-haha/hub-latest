@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>月经周期营养与活动计划模板 | periodhub.health</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 12px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* 📱 移动端优化 */
+        @media (max-width: 768px) {
+            body {
+                padding: 8px;
+            }
+            .container {
+                padding: 16px;
+                border-radius: 8px;
+            }
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #e91e63;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            color: #e91e63;
+            margin: 0;
+            font-size: 28px;
+        }
+        .header p {
+            color: #666;
+            margin: 10px 0 0 0;
+            font-size: 16px;
+        }
+        .phase-section {
+            margin-bottom: 40px;
+            border: 2px solid #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        }
+        .phase-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .phase-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-right: 15px;
+            color: white;
+            font-weight: bold;
+        }
+        .menstrual { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+        .follicular { background: linear-gradient(135deg, #3498db, #2980b9); }
+        .ovulatory { background: linear-gradient(135deg, #f39c12, #e67e22); }
+        .luteal { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+        
+        .phase-title {
+            flex: 1;
+        }
+        .phase-title h2 {
+            margin: 0;
+            color: #333;
+            font-size: 24px;
+        }
+        .phase-title p {
+            margin: 5px 0 0 0;
+            color: #666;
+            font-size: 14px;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* 📱 移动端网格优化 */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+        .content-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #e91e63;
+        }
+        .content-box h4 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 16px;
+        }
+        .food-list, .activity-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .food-list li, .activity-list li {
+            padding: 5px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+        .food-list li:last-child, .activity-list li:last-child {
+            border-bottom: none;
+        }
+        .food-emoji, .activity-emoji {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+        .intro-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .intro-section h2 {
+            margin: 0 0 15px 0;
+            font-size: 22px;
+        }
+        .cycle-overview {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        /* 📱 移动端周期概览优化 */
+        @media (max-width: 768px) {
+            .cycle-overview {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cycle-overview {
+                grid-template-columns: 1fr;
+            }
+        }
+        .cycle-phase {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .cycle-phase h4 {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+        }
+        .cycle-phase p {
+            margin: 0;
+            font-size: 12px;
+            opacity: 0.9;
+        }
+        .tips-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border-left: 4px solid #28a745;
+        }
+        .tips-section h3 {
+            color: #28a745;
+            margin: 0 0 15px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 14px;
+        }
+        .planning-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            overflow-x: auto;
+            display: block;
+            white-space: nowrap;
+        }
+        .planning-table th, .planning-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            min-width: 120px;
+        }
+        .planning-table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+        }
+        .planning-table td {
+            height: 60px;
+        }
+
+        /* 📱 移动端表格优化 */
+        @media (max-width: 768px) {
+            .planning-table {
+                font-size: 14px;
+                display: table;
+            }
+            .planning-table th, .planning-table td {
+                padding: 8px;
+                min-width: 100px;
+            }
+            .planning-table td {
+                height: 50px;
+            }
+            .table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 0 -16px;
+                padding: 0 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>月经周期营养与活动计划模板</h1>
+            <p>根据月经周期四个阶段的生理特点，提供个性化的饮食营养建议和运动活动计划</p>
+            <p style="font-size: 14px; color: #999;">periodhub.health | 女性健康管理工具</p>
+        </div>
+
+        <div class="intro-section">
+            <h2>🌙 了解您的月经周期</h2>
+            <p>月经周期是一个复杂的生理过程，通常持续21-35天，平均28天。它由多种激素精密调控，主要经历四个阶段。了解这些阶段及其伴随的激素变化，能帮助我们理解身体在不同时期的特点和需求，从而进行更个性化的饮食和活动调整。</p>
+            
+            <div class="cycle-overview">
+                <div class="cycle-phase">
+                    <h4>🩸 月经期</h4>
+                    <p>第1-5天<br>雌激素和黄体素水平较低<br>身体需要休息和恢复</p>
+                </div>
+                <div class="cycle-phase">
+                    <h4>🌱 卵泡期</h4>
+                    <p>第1-13天<br>雌激素水平逐渐升高<br>精力逐渐充沛</p>
+                </div>
+                <div class="cycle-phase">
+                    <h4>🌟 排卵期</h4>
+                    <p>第14天左右<br>雌激素达到峰值<br>体能处于最高点</p>
+                </div>
+                <div class="cycle-phase">
+                    <h4>🌙 黄体期</h4>
+                    <p>第15-28天<br>黄体素水平升高<br>容易出现PMS症状</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 月经期 -->
+        <div class="phase-section">
+            <div class="phase-header">
+                <div class="phase-icon menstrual">1</div>
+                <div class="phase-title">
+                    <h2>月经期 (第1-5天)</h2>
+                    <p>身体特点：疲劳、虚弱，容易出现痛经、腹胀等不适。情绪可能较为低落或不稳定。</p>
+                </div>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-box">
+                    <h4>🍎 推荐食物</h4>
+                    <ul class="food-list">
+                        <li><span class="food-emoji">🥩</span>富含铁质：瘦红肉、动物肝脏、菠菜</li>
+                        <li><span class="food-emoji">🐟</span>抗炎食物：深海鱼、亚麻籽、核桃</li>
+                        <li><span class="food-emoji">🥣</span>易消化：热粥、汤品、煮熟蔬菜</li>
+                        <li><span class="food-emoji">🥬</span>富含镁钙：深绿色叶菜、坚果、豆制品</li>
+                    </ul>
+                </div>
+                
+                <div class="content-box">
+                    <h4>🏃‍♀️ 推荐活动</h4>
+                    <ul class="activity-list">
+                        <li><span class="activity-emoji">🚶‍♀️</span>温和舒缓：散步、慢走、轻柔伸展</li>
+                        <li><span class="activity-emoji">🧘‍♀️</span>恢复性运动：阴瑜伽、修复瑜伽</li>
+                        <li><span class="activity-emoji">🫁</span>深呼吸练习：放松身心</li>
+                        <li><span class="activity-emoji">😴</span>充分休息：保证充足睡眠</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table class="planning-table">
+                    <tr>
+                        <th style="width: 20%;">时间</th>
+                        <th style="width: 40%;">饮食计划</th>
+                        <th style="width: 40%;">活动计划</th>
+                    </tr>
+                    <tr>
+                        <td><strong>早餐</strong></td>
+                        <td>燕麦粥 + 红枣 + 核桃 + 温豆奶</td>
+                        <td>轻柔伸展 10分钟</td>
+                    </tr>
+                    <tr>
+                        <td><strong>午餐</strong></td>
+                        <td>瘦肉汤 + 菠菜 + 糙米饭</td>
+                        <td>餐后散步 15分钟</td>
+                    </tr>
+                    <tr>
+                        <td><strong>晚餐</strong></td>
+                        <td>三文鱼 + 蒸蔬菜 + 少量主食</td>
+                        <td>阴瑜伽 20分钟</td>
+                    </tr>
+                    <tr>
+                        <td><strong>加餐</strong></td>
+                        <td>姜茶、红糖水、坚果</td>
+                        <td>深呼吸练习 5分钟</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 卵泡期 -->
+        <div class="phase-section">
+            <div class="phase-header">
+                <div class="phase-icon follicular">2</div>
+                <div class="phase-title">
+                    <h2>卵泡期 (第6-13天)</h2>
+                    <p>身体特点：雌激素水平逐渐升高，身体开始恢复，精力逐渐充沛，体能和恢复力增强。</p>
+                </div>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-box">
+                    <h4>🍎 推荐食物</h4>
+                    <ul class="food-list">
+                        <li><span class="food-emoji">🥩</span>优质蛋白质：鸡胸肉、鱼、瘦牛肉、鸡蛋</li>
+                        <li><span class="food-emoji">🌾</span>复合碳水：糙米、燕麦、全麦面包、地瓜</li>
+                        <li><span class="food-emoji">🥗</span>丰富蔬果：提供维生素、矿物质和抗氧化剂</li>
+                        <li><span class="food-emoji">🫘</span>豆制品：豆腐、豆浆、藜麦</li>
+                    </ul>
+                </div>
+                
+                <div class="content-box">
+                    <h4>🏃‍♀️ 推荐活动</h4>
+                    <ul class="activity-list">
+                        <li><span class="activity-emoji">🏋️‍♀️</span>力量训练：重量训练、阻力运动</li>
+                        <li><span class="activity-emoji">🏃‍♀️</span>有氧运动：跑步、游泳、骑行</li>
+                        <li><span class="activity-emoji">⚡</span>高强度间歇：HIIT训练</li>
+                        <li><span class="activity-emoji">⚽</span>球类运动：网球、羽毛球</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <table class="planning-table">
+                <tr>
+                    <th style="width: 20%;">时间</th>
+                    <th style="width: 40%;">饮食计划</th>
+                    <th style="width: 40%;">活动计划</th>
+                </tr>
+                <tr>
+                    <td><strong>早餐</strong></td>
+                    <td>全麦吐司 + 鸡蛋 + 牛油果 + 蛋白粉</td>
+                    <td>力量训练 30分钟</td>
+                </tr>
+                <tr>
+                    <td><strong>午餐</strong></td>
+                    <td>鸡胸肉 + 藜麦 + 彩色蔬菜沙拉</td>
+                    <td>有氧运动 40分钟</td>
+                </tr>
+                <tr>
+                    <td><strong>晚餐</strong></td>
+                    <td>鱼类 + 地瓜 + 蒸蔬菜</td>
+                    <td>拉伸放松 15分钟</td>
+                </tr>
+                <tr>
+                    <td><strong>加餐</strong></td>
+                    <td>坚果、酸奶、水果</td>
+                    <td>HIIT训练 20分钟</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 排卵期 -->
+        <div class="phase-section">
+            <div class="phase-header">
+                <div class="phase-icon ovulatory">3</div>
+                <div class="phase-title">
+                    <h2>排卵期 (第14天左右)</h2>
+                    <p>身体特点：雌激素达到峰值，体能和精力通常处于最高点。可能情绪敏感，但也感到自信和精力充沛。</p>
+                </div>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-box">
+                    <h4>🍎 推荐食物</h4>
+                    <ul class="food-list">
+                        <li><span class="food-emoji">🥩</span>延续高蛋白：继续支持身体功能</li>
+                        <li><span class="food-emoji">🥗</span>易消化食物：为高强度运动做准备</li>
+                        <li><span class="food-emoji">💧</span>充足水分：维持身体正常功能</li>
+                        <li><span class="food-emoji">🫐</span>抗氧化剂：应对运动压力</li>
+                    </ul>
+                </div>
+                
+                <div class="content-box">
+                    <h4>🏃‍♀️ 推荐活动</h4>
+                    <ul class="activity-list">
+                        <li><span class="activity-emoji">🏃‍♀️</span>高强度训练：短跑、跳跃练习</li>
+                        <li><span class="activity-emoji">🏋️‍♀️</span>大负荷力量：深蹲、硬拉等复合动作</li>
+                        <li><span class="activity-emoji">🏆</span>挑战极限：冲击个人最好成绩</li>
+                        <li><span class="activity-emoji">🎯</span>技能训练：学习新的运动技能</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <table class="planning-table">
+                <tr>
+                    <th style="width: 20%;">时间</th>
+                    <th style="width: 40%;">饮食计划</th>
+                    <th style="width: 40%;">活动计划</th>
+                </tr>
+                <tr>
+                    <td><strong>运动前</strong></td>
+                    <td>香蕉 + 燕麦 + 充足水分</td>
+                    <td>充分热身 15分钟</td>
+                </tr>
+                <tr>
+                    <td><strong>运动中</strong></td>
+                    <td>电解质饮料、适量补水</td>
+                    <td>高强度训练 45-60分钟</td>
+                </tr>
+                <tr>
+                    <td><strong>运动后</strong></td>
+                    <td>蛋白质 + 碳水化合物恢复餐</td>
+                    <td>拉伸恢复 20分钟</td>
+                </tr>
+                <tr>
+                    <td><strong>全天</strong></td>
+                    <td>高蛋白饮食 + 充足水分</td>
+                    <td>充足休息恢复</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 黄体期 -->
+        <div class="phase-section">
+            <div class="phase-header">
+                <div class="phase-icon luteal">4</div>
+                <div class="phase-title">
+                    <h2>黄体期 (第15-28天)</h2>
+                    <p>身体特点：黄体素水平升高，容易出现水肿、乳房胀痛、食欲增强、疲劳感。PMS症状可能明显。</p>
+                </div>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-box">
+                    <h4>🍎 推荐食物</h4>
+                    <ul class="food-list">
+                        <li><span class="food-emoji">🌾</span>稳定血糖：地瓜、糙米、燕麦、全麦制品</li>
+                        <li><span class="food-emoji">🥑</span>健康脂肪：酪梨、坚果、橄榄油、深海鱼</li>
+                        <li><span class="food-emoji">🥬</span>富含镁钙：缓解PMS症状</li>
+                        <li><span class="food-emoji">🥕</span>高纤维：蔬菜、水果、全谷物、豆类</li>
+                    </ul>
+                </div>
+                
+                <div class="content-box">
+                    <h4>🏃‍♀️ 推荐活动</h4>
+                    <ul class="activity-list">
+                        <li><span class="activity-emoji">🚶‍♀️</span>中低强度：慢跑、游泳、快走</li>
+                        <li><span class="activity-emoji">🧘‍♀️</span>放松舒缓：普拉提、瑜伽、伸展</li>
+                        <li><span class="activity-emoji">🧠</span>减压活动：冥想、正念步行</li>
+                        <li><span class="activity-emoji">😌</span>情绪调节：音乐、阅读、艺术</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <table class="planning-table">
+                <tr>
+                    <th style="width: 20%;">时间</th>
+                    <th style="width: 40%;">饮食计划</th>
+                    <th style="width: 40%;">活动计划</th>
+                </tr>
+                <tr>
+                    <td><strong>早餐</strong></td>
+                    <td>燕麦 + 坚果 + 浆果 + 酸奶</td>
+                    <td>温和瑜伽 20分钟</td>
+                </tr>
+                <tr>
+                    <td><strong>午餐</strong></td>
+                    <td>地瓜 + 鸡肉 + 大量蔬菜</td>
+                    <td>慢走 30分钟</td>
+                </tr>
+                <tr>
+                    <td><strong>晚餐</strong></td>
+                    <td>三文鱼 + 糙米 + 绿叶蔬菜</td>
+                    <td>普拉提 25分钟</td>
+                </tr>
+                <tr>
+                    <td><strong>加餐</strong></td>
+                    <td>少量黑巧克力、草本茶</td>
+                    <td>冥想 10分钟</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="tips-section">
+            <h3>💡 个性化使用建议</h3>
+            <ul>
+                <li><strong>了解您的周期：</strong>首先记录您的月经日期来确定周期长度，根据实际情况调整天数划分</li>
+                <li><strong>个性化调整：</strong>根据您自身的感受、症状、体能水平和偏好进行调整</li>
+                <li><strong>搭配追踪工具：</strong>建议使用月经周期追踪App或纸质日志记录身体反应</li>
+                <li><strong>持续记录评估：</strong>使用1-2个周期后，回顾记录并优化计划</li>
+                <li><strong>保持灵活：</strong>根据实际情况灵活调整，这是指导工具而非严格规则</li>
+                <li><strong>咨询专业人士：</strong>如有严重不适或困惑，建议咨询医生、营养师或运动专家</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 periodhub.health | 专业女性健康管理平台</p>
+            <p>更多健康资源请访问：<strong>periodhub.health</strong></p>
+        </div>
+    </div>
+</body>
+</html>

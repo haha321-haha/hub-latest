@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF预览页面下载功能测试</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #f3e8ff, #fce7f3);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .resource-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .resource-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #7c3aed;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 10px;
+        }
+        .test-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .test-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .test-link:hover {
+            background: #f1f5f9;
+            border-color: #7c3aed;
+        }
+        .link-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .flag {
+            font-size: 20px;
+        }
+        .url {
+            font-family: monospace;
+            font-size: 14px;
+            color: #475569;
+        }
+        .test-btn {
+            padding: 6px 12px;
+            background: #7c3aed;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.2s;
+        }
+        .test-btn:hover {
+            background: #6d28d9;
+        }
+        .instructions {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .status-pending { background: #fbbf24; }
+        .status-success { background: #10b981; }
+        .status-error { background: #ef4444; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📋 PDF预览页面下载功能测试</h1>
+        <p>点击下方链接测试每个PDF预览页面的下载功能</p>
+        <p><strong>测试目标：</strong>确认点击"下载PDF"按钮下载的是HTML格式文件（.html扩展名）</p>
+    </div>
+
+    <div class="resource-grid">
+        <div class="resource-card">
+            <div class="resource-title">📊 痛经症状追踪表</div>
+            <div class="test-links">
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇨🇳</span>
+                        <span class="url">/zh/downloads/preview/pain-tracking-form</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/zh/downloads/preview/pain-tracking-form', 'pain-tracking-form.html')">测试</button>
+                </div>
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇺🇸</span>
+                        <span class="url">/en/downloads/preview/pain-tracking-form</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/en/downloads/preview/pain-tracking-form', 'pain-tracking-form-en.html')">Test</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-card">
+            <div class="resource-title">🏫 校园应急清单</div>
+            <div class="test-links">
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇨🇳</span>
+                        <span class="url">/zh/downloads/preview/campus-emergency-checklist</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/zh/downloads/preview/campus-emergency-checklist', 'campus-emergency-checklist.html')">测试</button>
+                </div>
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇺🇸</span>
+                        <span class="url">/en/downloads/preview/campus-emergency-checklist</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/en/downloads/preview/campus-emergency-checklist', 'campus-emergency-checklist-en.html')">Test</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-card">
+            <div class="resource-title">📋 特定经期疼痛管理指南</div>
+            <div class="test-links">
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇨🇳</span>
+                        <span class="url">/zh/downloads/preview/specific-menstrual-pain-management-guide</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/zh/downloads/preview/specific-menstrual-pain-management-guide', 'specific-menstrual-pain-management-guide.html')">测试</button>
+                </div>
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇺🇸</span>
+                        <span class="url">/en/downloads/preview/specific-menstrual-pain-management-guide</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/en/downloads/preview/specific-menstrual-pain-management-guide', 'specific-menstrual-pain-management-guide-en.html')">Test</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-card">
+            <div class="resource-title">✅ 健康习惯清单</div>
+            <div class="test-links">
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇨🇳</span>
+                        <span class="url">/zh/downloads/preview/healthy-habits-checklist</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/zh/downloads/preview/healthy-habits-checklist', 'healthy-habits-checklist.html')">测试</button>
+                </div>
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇺🇸</span>
+                        <span class="url">/en/downloads/preview/healthy-habits-checklist</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/en/downloads/preview/healthy-habits-checklist', 'healthy-habits-checklist-en.html')">Test</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-card">
+            <div class="resource-title">🥗 月经周期营养计划</div>
+            <div class="test-links">
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇨🇳</span>
+                        <span class="url">/zh/downloads/preview/menstrual-cycle-nutrition-plan</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/zh/downloads/preview/menstrual-cycle-nutrition-plan', 'menstrual-cycle-nutrition-plan.html')">测试</button>
+                </div>
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇺🇸</span>
+                        <span class="url">/en/downloads/preview/menstrual-cycle-nutrition-plan</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/en/downloads/preview/menstrual-cycle-nutrition-plan', 'menstrual-cycle-nutrition-plan-en.html')">Test</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-card">
+            <div class="resource-title">💊 镁与肠道健康指南</div>
+            <div class="test-links">
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇨🇳</span>
+                        <span class="url">/zh/downloads/preview/magnesium-gut-health-menstrual-pain-guide</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/zh/downloads/preview/magnesium-gut-health-menstrual-pain-guide', 'magnesium-gut-health-menstrual-pain-guide.html')">测试</button>
+                </div>
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇺🇸</span>
+                        <span class="url">/en/downloads/preview/magnesium-gut-health-menstrual-pain-guide</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/en/downloads/preview/magnesium-gut-health-menstrual-pain-guide', 'magnesium-gut-health-menstrual-pain-guide-en.html')">Test</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-card">
+            <div class="resource-title">🧘‍♀️ 站桩八段锦图解指南</div>
+            <div class="test-links">
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇨🇳</span>
+                        <span class="url">/zh/downloads/preview/zhan-zhuang-baduanjin-illustrated-guide</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/zh/downloads/preview/zhan-zhuang-baduanjin-illustrated-guide', 'zhan-zhuang-baduanjin-illustrated-guide.html')">测试</button>
+                </div>
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇺🇸</span>
+                        <span class="url">/en/downloads/preview/zhan-zhuang-baduanjin-illustrated-guide</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/en/downloads/preview/zhan-zhuang-baduanjin-illustrated-guide', 'zhan-zhuang-baduanjin-illustrated-guide-en.html')">Test</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-card">
+            <div class="resource-title">⚠️ 经期疼痛并发症管理</div>
+            <div class="test-links">
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇨🇳</span>
+                        <span class="url">/zh/downloads/preview/menstrual-pain-complications-management</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/zh/downloads/preview/menstrual-pain-complications-management', 'menstrual-pain-complications-management.html')">测试</button>
+                </div>
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇺🇸</span>
+                        <span class="url">/en/downloads/preview/menstrual-pain-complications-management</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/en/downloads/preview/menstrual-pain-complications-management', 'menstrual-pain-complications-management-en.html')">Test</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-card">
+            <div class="resource-title">👨‍👩‍👧‍👦 家长沟通指南</div>
+            <div class="test-links">
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇨🇳</span>
+                        <span class="url">/zh/downloads/preview/parent-communication-guide</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/zh/downloads/preview/parent-communication-guide', 'parent-communication-guide.html')">测试</button>
+                </div>
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇺🇸</span>
+                        <span class="url">/en/downloads/preview/parent-communication-guide</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/en/downloads/preview/parent-communication-guide', 'parent-communication-guide-en.html')">Test</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-card">
+            <div class="resource-title">👨‍🏫 教师协作手册</div>
+            <div class="test-links">
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇨🇳</span>
+                        <span class="url">/zh/downloads/preview/teacher-collaboration-handbook</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/zh/downloads/preview/teacher-collaboration-handbook', 'teacher-collaboration-handbook.html')">测试</button>
+                </div>
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇺🇸</span>
+                        <span class="url">/en/downloads/preview/teacher-collaboration-handbook</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/en/downloads/preview/teacher-collaboration-handbook', 'teacher-collaboration-handbook-en.html')">Test</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-card">
+            <div class="resource-title">🌿 自然疗法评估</div>
+            <div class="test-links">
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇨🇳</span>
+                        <span class="url">/zh/downloads/preview/natural-therapy-assessment</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/zh/downloads/preview/natural-therapy-assessment', 'natural-therapy-assessment.html')">测试</button>
+                </div>
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇺🇸</span>
+                        <span class="url">/en/downloads/preview/natural-therapy-assessment</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/en/downloads/preview/natural-therapy-assessment', 'natural-therapy-assessment-en.html')">Test</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-card">
+            <div class="resource-title">👩‍⚕️ 教师健康手册</div>
+            <div class="test-links">
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇨🇳</span>
+                        <span class="url">/zh/downloads/preview/teacher-health-manual</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/zh/downloads/preview/teacher-health-manual', 'teacher-health-manual.html')">测试</button>
+                </div>
+                <div class="test-link">
+                    <div class="link-info">
+                        <span class="flag">🇺🇸</span>
+                        <span class="url">/en/downloads/preview/teacher-health-manual</span>
+                    </div>
+                    <button class="test-btn" onclick="testDownload('http://localhost:3003/en/downloads/preview/teacher-health-manual', 'teacher-health-manual-en.html')">Test</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="instructions">
+        <h3>📝 测试说明</h3>
+        <ol>
+            <li><strong>点击"测试"按钮</strong> - 在新标签页中打开预览页面</li>
+            <li><strong>点击右上角"下载PDF"按钮</strong> - 测试下载功能</li>
+            <li><strong>检查下载的文件</strong> - 确认文件扩展名为 <code>.html</code></li>
+            <li><strong>验证文件内容</strong> - 确认HTML文件内容与预览页面一致</li>
+        </ol>
+        
+        <h3>✅ 预期结果</h3>
+        <ul>
+            <li>所有下载的文件都应该是HTML格式（.html扩展名）</li>
+            <li>HTML文件可以在浏览器中正常打开</li>
+            <li>HTML文件内容与预览页面显示完全一致</li>
+            <li>HTML文件支持打印功能</li>
+        </ul>
+    </div>
+
+    <script>
+        function testDownload(url, expectedFilename) {
+            // 在新标签页中打开预览页面
+            window.open(url, '_blank');
+            
+            // 显示预期的下载文件名
+            alert(`请在新打开的页面中点击"下载PDF"按钮\n预期下载文件名: ${expectedFilename}`);
+        }
+    </script>
+</body>
+</html>

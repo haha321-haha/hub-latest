@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Therapy Effectiveness Assessment Form | periodhub.health</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #e91e63;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            color: #e91e63;
+            margin: 0;
+            font-size: 28px;
+        }
+        .header p {
+            color: #666;
+            margin: 10px 0 0 0;
+            font-size: 16px;
+        }
+        .section {
+            margin-bottom: 30px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #e91e63;
+        }
+        .section h2 {
+            color: #333;
+            margin: 0 0 15px 0;
+            font-size: 20px;
+        }
+        .section h3 {
+            color: #555;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-table td {
+            height: 50px;
+        }
+        .instructions {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 20px;
+        }
+        .warning {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 14px;
+        }
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .rating-scale {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border-radius: 5px;
+        }
+        .scale-item {
+            text-align: center;
+            flex: 1;
+            padding: 5px;
+        }
+        .scale-number {
+            font-weight: bold;
+            color: #e91e63;
+            font-size: 16px;
+        }
+        .scale-desc {
+            font-size: 11px;
+            color: #666;
+            margin-top: 3px;
+        }
+        .info-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .therapy-categories {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .category-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        .category-box h4 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 14px;
+        }
+        .therapy-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .therapy-list li {
+            padding: 3px 0;
+            font-size: 13px;
+            color: #666;
+        }
+        .therapy-list li:before {
+            content: "• ";
+            color: #e91e63;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Natural Therapy Effectiveness Assessment Form</h1>
+            <p>Professional tool for systematically evaluating the effectiveness of different natural therapies</p>
+            <p style="font-size: 14px; color: #999;">periodhub.health | Women's Health Management Tools</p>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 Instructions for Use</h3>
+            <ul>
+                <li>Record your symptoms and feelings as objectively as possible each day</li>
+                <li>Fill out the daily log promptly when symptoms appear and subside</li>
+                <li>Evaluate at least one complete menstrual cycle for a more comprehensive understanding of therapy effectiveness</li>
+                <li>Regularly review your records, especially conduct cycle summaries after menstruation ends</li>
+                <li>This form is a tool to help you self-observe and evaluate, and can be discussed with a doctor when needed</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>I. Basic Information Section</h2>
+            
+            <div class="info-box">
+                <h3>User Basic Information</h3>
+                <table>
+                    <tr>
+                        <td style="width: 30%; background-color: #f8f9fa;"><strong>Name/User ID</strong></td>
+                        <td style="width: 70%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>Age</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>Main Assessment Symptom Start Time</strong></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <h3>Main Assessment Symptoms (Multiple selections allowed)</h3>
+                <div class="checkbox-grid">
+                    <div class="checkbox-item">☐ Menstrual pain</div>
+                    <div class="checkbox-item">☐ Premenstrual mood swings</div>
+                    <div class="checkbox-item">☐ Bloating</div>
+                    <div class="checkbox-item">☐ Fatigue/lack of energy</div>
+                    <div class="checkbox-item">☐ Insomnia/poor sleep quality</div>
+                    <div class="checkbox-item">☐ Headache</div>
+                    <div class="checkbox-item">☐ Other: _____________</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>Current Assessment Cycle Information</h3>
+                <table>
+                    <tr>
+                        <td style="width: 30%; background-color: #f8f9fa;"><strong>Assessment Start Date</strong></td>
+                        <td style="width: 70%;">______ Year ____Month ____Day</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>Assessment End Date</strong></td>
+                        <td>______ Year ____Month ____Day</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>Cycles Covered</strong></td>
+                        <td>______ Complete menstrual cycles</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <h3>Main Goals and Expectations</h3>
+                <p style="margin: 5px 0; color: #666; font-size: 14px;">What specific effects do you hope to achieve through this assessment and the natural therapies you try?</p>
+                <div style="border: 1px solid #ddd; padding: 10px; min-height: 60px; background: white;">
+                    <p style="margin: 0; color: #999; font-size: 13px;">For example: Reduce menstrual pain intensity by 50%, reduce pain medication use, more stable mood, etc.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>II. Therapy Record Section</h2>
+            <p style="color: #666; font-size: 14px;">Please record all natural therapies you try during this assessment cycle. You can try multiple therapies and track their effects simultaneously.</p>
+            
+            <table class="form-table">
+                <thead>
+                    <tr>
+                        <th style="width: 5%;">#</th>
+                        <th style="width: 25%;">Therapy Name/Description</th>
+                        <th style="width: 15%;">Type</th>
+                        <th style="width: 15%;">Frequency</th>
+                        <th style="width: 15%;">Duration per Session</th>
+                        <th style="width: 12%;">Start Date</th>
+                        <th style="width: 13%;">End Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f8f9fa; font-size: 12px; color: #666;">
+                        <td>Example</td>
+                        <td>30-minute brisk walk daily</td>
+                        <td>Exercise</td>
+                        <td>Daily</td>
+                        <td>30 minutes</td>
+                        <td>2024-01-01</td>
+                        <td>2024-01-31</td>
+                    </tr>
+                    <tr><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>4</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                </tbody>
+            </table>
+
+            <div class="therapy-categories">
+                <div class="category-box">
+                    <h4>🌿 Common Natural Therapy Types</h4>
+                    <ul class="therapy-list">
+                        <li>Herbs/Supplements</li>
+                        <li>Dietary adjustments</li>
+                        <li>Exercise</li>
+                        <li>Meditation/Relaxation</li>
+                        <li>Physical therapy</li>
+                        <li>Aromatherapy</li>
+                        <li>Acupuncture/Massage</li>
+                        <li>Others</li>
+                    </ul>
+                </div>
+                <div class="category-box">
+                    <h4>📝 Recording Examples</h4>
+                    <ul class="therapy-list">
+                        <li>Angelica granules, three times daily</li>
+                        <li>Low-gluten diet</li>
+                        <li>Yoga, 3 times per week</li>
+                        <li>Acupoint massage: Hegu + Zusanli</li>
+                        <li>Lavender essential oil</li>
+                        <li>Abdominal heat therapy</li>
+                        <li>Mindfulness meditation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>III. Daily Tracking Log</h2>
+            <p style="color: #666; font-size: 14px;">Please record daily or when symptoms occur during the assessment cycle. Use 0-10 scale to assess intensity and levels.</p>
+            
+            <div class="rating-scale">
+                <div class="scale-item">
+                    <div class="scale-number">0</div>
+                    <div class="scale-desc">No symptoms<br>Lowest</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">2-3</div>
+                    <div class="scale-desc">Mild<br>Slight discomfort</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">4-6</div>
+                    <div class="scale-desc">Moderate<br>Obvious impact</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">7-8</div>
+                    <div class="scale-desc">Severe<br>Significant impact</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">9-10</div>
+                    <div class="scale-desc">Extreme<br>Highest/Strongest</div>
+                </div>
+            </div>
+
+            <table class="form-table">
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">Date</th>
+                        <th style="width: 12%;">Menstrual Cycle Phase</th>
+                        <th style="width: 18%;">Main Symptom Intensity(0-10)</th>
+                        <th style="width: 10%;">Symptom Duration</th>
+                        <th style="width: 8%;">Mood Level</th>
+                        <th style="width: 8%;">Energy Level</th>
+                        <th style="width: 15%;">Therapies Used Today</th>
+                        <th style="width: 19%;">Immediate Effect Feeling</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f8f9fa; font-size: 11px; color: #666;">
+                        <td>Example<br>01-15</td>
+                        <td>Menstrual Day 2</td>
+                        <td>Pain:7<br>Bloating:5<br>Fatigue:6</td>
+                        <td>4 hours</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>Therapy 1,3<br>Heat therapy 30min</td>
+                        <td>Pain slightly relieved<br>No change in bloating<br>Mood improved</td>
+                    </tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>IV. Cycle Summary and Assessment Section</h2>
+            <p style="color: #666; font-size: 14px;">After completing this assessment cycle, please review your records and conduct a summary assessment.</p>
+            
+            <div class="info-box">
+                <h3>Overall Symptom Change Review</h3>
+                <table>
+                    <tr>
+                        <td style="width: 40%; background-color: #f8f9fa;"><strong>Symptom Frequency Change</strong></td>
+                        <td style="width: 60%;">
+                            ☐ Significantly decreased ☐ Slightly decreased ☐ No change ☐ Slightly increased ☐ Significantly increased<br>
+                            <div style="margin-top: 5px; border: 1px solid #ddd; padding: 5px; min-height: 30px;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>Symptom Intensity Change</strong></td>
+                        <td>
+                            ☐ Significantly reduced ☐ Slightly reduced ☐ No change ☐ Slightly increased ☐ Significantly increased<br>
+                            <div style="margin-top: 5px; border: 1px solid #ddd; padding: 5px; min-height: 30px;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>Symptom Duration Change</strong></td>
+                        <td>
+                            ☐ Significantly shortened ☐ Slightly shortened ☐ No change ☐ Slightly extended ☐ Significantly extended<br>
+                            <div style="margin-top: 5px; border: 1px solid #ddd; padding: 5px; min-height: 30px;"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <h3>Therapy Effectiveness Assessment</h3>
+                <table>
+                    <tr>
+                        <td style="width: 40%; background-color: #f8f9fa;"><strong>Overall Effectiveness Score</strong></td>
+                        <td style="width: 60%;">________ / 10 points (0=completely ineffective, 10=very effective)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>Most Helpful Therapy</strong></td>
+                        <td>
+                            <div style="border: 1px solid #ddd; padding: 5px; min-height: 40px;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>Discomfort or Side Effects</strong></td>
+                        <td>
+                            <div style="border: 1px solid #ddd; padding: 5px; min-height: 40px;"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <h3>Follow-up Decisions</h3>
+                <div style="margin: 10px 0;">
+                    <strong>Will you continue using these natural therapies?</strong><br>
+                    ☐ Yes, continue all ☐ Yes, continue some ☐ No, stop all therapies ☐ Need adjustments<br>
+                    <div style="margin-top: 5px; border: 1px solid #ddd; padding: 5px; min-height: 30px;">
+                        <span style="color: #999; font-size: 12px;">Please specify your plan:</span>
+                    </div>
+                </div>
+                <div style="margin: 10px 0;">
+                    <strong>Are there other therapies you need to try?</strong><br>
+                    <div style="margin-top: 5px; border: 1px solid #ddd; padding: 5px; min-height: 30px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="warning">
+            <h3>⚠️ Important Notice</h3>
+            <p><strong>This assessment form is a tool to help you self-observe and evaluate, and cannot replace professional medical diagnosis.</strong></p>
+            <ul>
+                <li>If symptoms are severe or continue to worsen, please consult a doctor promptly</li>
+                <li>It is recommended to consult professionals before trying new natural therapies</li>
+                <li>Some herbs and supplements may interact with medications</li>
+                <li>You can discuss your records and findings with doctors or professionals when needed</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 periodhub.health | Professional Women's Health Management Platform</p>
+            <p>For more health resources, visit: <strong>periodhub.health</strong></p>
+        </div>
+    </div>
+</body>
+</html>

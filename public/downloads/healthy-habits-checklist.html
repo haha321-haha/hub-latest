@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经期健康生活习惯清单 - periodhub.health</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #e91e63;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #e91e63;
+            font-size: 28px;
+            margin: 0;
+        }
+        .header p {
+            color: #666;
+            font-size: 14px;
+            margin: 10px 0 0 0;
+        }
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        .section h2 {
+            color: #e91e63;
+            font-size: 18px;
+            border-left: 4px solid #e91e63;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        .section h3 {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+        .checklist li {
+            margin-bottom: 8px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: #e91e63;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .phase-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #6c757d;
+        }
+        .phase-section.menstrual {
+            border-left-color: #e91e63;
+            background: #fce4ec;
+        }
+        .phase-section.follicular {
+            border-left-color: #4caf50;
+            background: #e8f5e8;
+        }
+        .phase-section.ovulation {
+            border-left-color: #ff9800;
+            background: #fff3e0;
+        }
+        .phase-section.luteal {
+            border-left-color: #9c27b0;
+            background: #f3e5f5;
+        }
+        .daily-tracker {
+            background: #e3f2fd;
+            border: 2px solid #2196f3;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .daily-tracker h3 {
+            color: #2196f3;
+            margin-top: 0;
+        }
+        .warning-signs {
+            background: #fff3e0;
+            border: 2px solid #ff9800;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .warning-signs h3 {
+            color: #ff9800;
+            margin-top: 0;
+        }
+        .tips {
+            background: #e8f5e8;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .tips h3 {
+            color: #4caf50;
+            margin-top: 0;
+        }
+        .rating-scale {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .rating-scale span {
+            font-size: 12px;
+            color: #666;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 12px;
+        }
+        @media print {
+            body { margin: 0; padding: 15px; }
+            .section { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>经期健康生活习惯清单</h1>
+        <p>科学管理月经周期，提升生活质量 | periodhub.health</p>
+        <p>每日检查，健康生活</p>
+    </div>
+
+    <div class="section">
+        <h2>📅 月经周期追踪</h2>
+        
+        <h3>基础记录（每日）</h3>
+        <ul class="checklist">
+            <li>记录月经开始日期</li>
+            <li>记录月经结束日期</li>
+            <li>记录经血量（轻/中/重）</li>
+            <li>记录经血颜色和质地</li>
+            <li>计算周期长度</li>
+            <li>使用月经追踪APP或日历</li>
+        </ul>
+
+        <h3>症状记录</h3>
+        <ul class="checklist">
+            <li>疼痛程度（1-10分）</li>
+            <li>疼痛位置（下腹/腰部/其他）</li>
+            <li>情绪变化</li>
+            <li>其他身体症状</li>
+            <li>睡眠质量</li>
+            <li>能量水平</li>
+        </ul>
+    </div>
+
+    <div class="daily-tracker">
+        <h3>📊 每日健康评分表</h3>
+        <p><strong>疼痛程度：</strong></p>
+        <div class="rating-scale">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+        </div>
+        <div class="rating-scale">
+            <span>无痛</span><span style="margin-left: auto;">剧痛</span>
+        </div>
+        
+        <p><strong>情绪状态：</strong></p>
+        <div class="rating-scale">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+        </div>
+        <div class="rating-scale">
+            <span>很差</span><span style="margin-left: auto;">很好</span>
+        </div>
+        
+        <p><strong>能量水平：</strong></p>
+        <div class="rating-scale">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+        </div>
+        <div class="rating-scale">
+            <span>疲惫</span><span style="margin-left: auto;">充沛</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🍎 饮食管理清单</h2>
+        
+        <h3>每日营养检查</h3>
+        <ul class="checklist">
+            <li>喝足够的水（8-10杯）</li>
+            <li>摄入富含铁的食物（瘦肉、菠菜、豆类）</li>
+            <li>补充维生素C（促进铁吸收）</li>
+            <li>摄入钙质丰富食物（奶制品、绿叶菜）</li>
+            <li>补充镁元素（坚果、全谷物）</li>
+            <li>摄入Omega-3脂肪酸（鱼类、亚麻籽）</li>
+        </ul>
+
+        <h3>经期特别注意</h3>
+        <ul class="checklist">
+            <li>避免过多咖啡因</li>
+            <li>减少高盐食物摄入</li>
+            <li>限制精制糖摄入</li>
+            <li>避免酒精</li>
+            <li>多吃抗炎食物（姜黄、生姜）</li>
+            <li>适量摄入黑巧克力（缓解情绪）</li>
+        </ul>
+    </div>
+
+    <div class="phase-section menstrual">
+        <h3>🩸 月经期（1-7天）</h3>
+        <ul class="checklist">
+            <li>每2-4小时更换卫生用品</li>
+            <li>使用温水清洁外阴</li>
+            <li>穿舒适的棉质内裤</li>
+            <li>避免盆浴，选择淋浴</li>
+            <li>充足休息，早睡早起</li>
+            <li>轻度运动（散步、瑜伽）</li>
+        </ul>
+    </div>
+
+    <div class="phase-section follicular">
+        <h3>🌱 卵泡期（8-14天）</h3>
+        <ul class="checklist">
+            <li>逐渐增加运动强度</li>
+            <li>保持均衡饮食</li>
+            <li>充分利用高能量期</li>
+            <li>制定新的健康目标</li>
+            <li>保持良好心情</li>
+            <li>规律作息时间</li>
+        </ul>
+    </div>
+
+    <div class="phase-section ovulation">
+        <h3>🥚 排卵期（14-16天）</h3>
+        <ul class="checklist">
+            <li>注意观察排卵症状</li>
+            <li>保持适度运动</li>
+            <li>注意个人卫生</li>
+            <li>保持心情愉悦</li>
+            <li>充足睡眠</li>
+            <li>健康饮食</li>
+        </ul>
+    </div>
+
+    <div class="phase-section luteal">
+        <h3>🌙 黄体期（17-28天）</h3>
+        <ul class="checklist">
+            <li>注意情绪管理</li>
+            <li>减少高强度运动</li>
+            <li>控制盐分摄入</li>
+            <li>增加镁的摄入</li>
+            <li>保持规律作息</li>
+            <li>准备下次月经用品</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🏃‍♀️ 运动与活动</h2>
+        
+        <h3>经期运动指南</h3>
+        <ul class="checklist">
+            <li>轻度有氧运动（散步、慢跑）</li>
+            <li>瑜伽和拉伸运动</li>
+            <li>避免剧烈运动</li>
+            <li>游泳（使用棉条）</li>
+            <li>听从身体信号</li>
+            <li>运动后及时清洁</li>
+        </ul>
+
+        <h3>非经期运动</h3>
+        <ul class="checklist">
+            <li>每周至少150分钟中等强度运动</li>
+            <li>力量训练（每周2-3次）</li>
+            <li>核心肌群锻炼</li>
+            <li>盆底肌训练</li>
+            <li>保持运动多样性</li>
+            <li>逐渐增加运动强度</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>😴 睡眠与休息</h2>
+        
+        <h3>睡眠质量检查</h3>
+        <ul class="checklist">
+            <li>每晚7-9小时睡眠</li>
+            <li>固定的睡眠时间</li>
+            <li>睡前1小时避免电子设备</li>
+            <li>保持卧室凉爽、黑暗、安静</li>
+            <li>使用舒适的床上用品</li>
+            <li>经期使用夜用卫生巾</li>
+        </ul>
+
+        <h3>放松技巧</h3>
+        <ul class="checklist">
+            <li>深呼吸练习</li>
+            <li>冥想或正念练习</li>
+            <li>温水浴</li>
+            <li>轻柔音乐</li>
+            <li>阅读</li>
+            <li>芳香疗法</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🧼 个人卫生管理</h2>
+        
+        <h3>日常卫生习惯</h3>
+        <ul class="checklist">
+            <li>每日清洁外阴（温水即可）</li>
+            <li>从前向后擦拭</li>
+            <li>穿透气的棉质内裤</li>
+            <li>每日更换内裤</li>
+            <li>避免使用香皂清洁阴道</li>
+            <li>保持外阴干燥</li>
+        </ul>
+
+        <h3>经期特别护理</h3>
+        <ul class="checklist">
+            <li>增加清洁频率</li>
+            <li>及时更换卫生用品</li>
+            <li>选择合适的卫生用品</li>
+            <li>避免紧身衣物</li>
+            <li>注意手部清洁</li>
+            <li>正确处理废弃用品</li>
+        </ul>
+    </div>
+
+    <div class="warning-signs">
+        <h3>⚠️ 需要关注的警示信号</h3>
+        <p><strong>立即就医的情况：</strong></p>
+        <ul class="checklist">
+            <li>剧烈疼痛，止痛药无效</li>
+            <li>大量出血（1小时湿透超大号卫生巾）</li>
+            <li>发热超过38.5°C</li>
+            <li>呕吐、晕厥</li>
+            <li>异常分泌物</li>
+            <li>月经停止超过3个月（非怀孕）</li>
+        </ul>
+        
+        <p><strong>需要医生咨询的情况：</strong></p>
+        <ul class="checklist">
+            <li>月经周期严重不规律</li>
+            <li>痛经影响日常生活</li>
+            <li>月经量明显变化</li>
+            <li>经期超过7天</li>
+            <li>两次月经间出血</li>
+            <li>情绪严重波动</li>
+        </ul>
+    </div>
+
+    <div class="tips">
+        <h3>💡 健康生活小贴士</h3>
+        <ul>
+            <li><strong>保持积极心态</strong> - 月经是女性健康的标志</li>
+            <li><strong>建立支持网络</strong> - 与朋友、家人分享经验</li>
+            <li><strong>定期体检</strong> - 每年进行妇科检查</li>
+            <li><strong>学习相关知识</strong> - 了解自己的身体</li>
+            <li><strong>准备应急包</strong> - 在家、学校、工作场所都准备</li>
+            <li><strong>记录变化</strong> - 注意身体的任何变化</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📱 推荐工具与资源</h2>
+        
+        <h3>手机应用</h3>
+        <ul class="checklist">
+            <li>月经周期追踪APP</li>
+            <li>症状记录应用</li>
+            <li>冥想和放松应用</li>
+            <li>运动健身应用</li>
+            <li>营养饮食应用</li>
+        </ul>
+
+        <h3>其他资源</h3>
+        <ul class="checklist">
+            <li>periodhub.health 网站</li>
+            <li>妇科医生咨询</li>
+            <li>健康教育书籍</li>
+            <li>在线健康社区</li>
+            <li>营养师咨询</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>本清单由 periodhub.health 专业团队制作</p>
+        <p>更多资源请访问：www.periodhub.health</p>
+        <p>如有疑问，请咨询专业医疗人员</p>
+    </div>
+</body>
+</html>

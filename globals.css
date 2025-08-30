@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* 自定义响应式容器，替换散落的 container-custom */
+  .container-custom {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* 卡片与主按钮统一风格，包含移动端触控面积 */
+  .card {
+    @apply bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-primary-600 text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg font-medium hover:bg-primary-700 transition-colors;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center border-2 border-primary-600 text-primary-600 px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg font-medium hover:bg-primary-50 transition-colors;
+  }
+  .btn-disabled {
+    @apply inline-flex items-center justify-center bg-neutral-200 text-neutral-500 px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg font-medium cursor-not-allowed;
+  }
+  .mobile-touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  /* Interactive range slider styles used in tools (e.g., pain scale) */
+  .pain-scale {
+    /* Remove native styling so our gradient background becomes visible */
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    border-radius: 9999px;
+    background: #e5e7eb; /* fallback; actual fill is controlled via inline backgroundImage */
+    outline: none;
+  }
+  .pain-scale::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 9999px;
+    background: transparent; /* reveal input's own background (our gradient) */
+  }
+  .pain-scale::-moz-range-track {
+    height: 8px;
+    border-radius: 9999px;
+    background: transparent;
+  }
+  .pain-scale::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 9999px;
+    background: #7c3aed; /* primary-600 */
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+    margin-top: -5px; /* vertically center on 8px track */
+  }
+  .pain-scale::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 9999px;
+    background: #7c3aed;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+  }
+  .pain-scale:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}

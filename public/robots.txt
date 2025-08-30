@@ -1,0 +1,58 @@
+User-agent: *
+Allow: /
+
+# 禁止访问管理后台
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# 禁止访问SEO管理面板（需要权限验证）
+Disallow: /admin/seo-dashboard/
+
+# 允许搜索引擎访问重要内容
+Allow: /zh/
+Allow: /zh/articles/
+Allow: /zh/health-guide/
+Allow: /zh/interactive-tools/
+Allow: /zh/scenario-solutions/
+Allow: /zh/natural-therapies/
+Allow: /zh/downloads/
+
+# 允许图片资源
+Allow: /images/
+Allow: /icons/
+Allow: /favicon.ico
+
+# 指定sitemap位置
+Sitemap: https://periodhub.health/sitemap.xml
+
+# 对于百度搜索引擎
+User-agent: Baiduspider
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# 对于360搜索引擎
+User-agent: 360Spider
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# 对于搜狗搜索引擎
+User-agent: Sogou web spider
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# 对于必应搜索引擎
+User-agent: bingbot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# 对于谷歌搜索引擎
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /admin/

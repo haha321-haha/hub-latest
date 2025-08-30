@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自然疗法效果评估表 | periodhub.health</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 12px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* 📱 移动端优化 */
+        @media (max-width: 768px) {
+            body {
+                padding: 8px;
+            }
+            .container {
+                padding: 16px;
+                border-radius: 8px;
+            }
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #e91e63;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            color: #e91e63;
+            margin: 0;
+            font-size: 28px;
+        }
+        .header p {
+            color: #666;
+            margin: 10px 0 0 0;
+            font-size: 16px;
+        }
+        .section {
+            margin-bottom: 30px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #e91e63;
+        }
+        .section h2 {
+            color: #333;
+            margin: 0 0 15px 0;
+            font-size: 20px;
+        }
+        .section h3 {
+            color: #555;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: white;
+            overflow-x: auto;
+            display: block;
+            white-space: nowrap;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+            min-width: 100px;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-table {
+            display: table;
+            width: 100%;
+        }
+        .form-table td {
+            height: 50px;
+        }
+
+        /* 📱 移动端表格优化 */
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+            th, td {
+                padding: 8px;
+                min-width: 80px;
+            }
+            .form-table td {
+                height: 40px;
+            }
+            .table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 0 -16px;
+                padding: 0 16px;
+            }
+        }
+        .instructions {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 20px;
+        }
+        .warning {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 14px;
+        }
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        /* 📱 移动端复选框优化 */
+        @media (max-width: 768px) {
+            .checkbox-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .checkbox-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .rating-scale {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border-radius: 5px;
+        }
+        .scale-item {
+            text-align: center;
+            flex: 1;
+            padding: 5px;
+        }
+        .scale-number {
+            font-weight: bold;
+            color: #e91e63;
+            font-size: 16px;
+        }
+        .scale-desc {
+            font-size: 11px;
+            color: #666;
+            margin-top: 3px;
+        }
+        .info-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .therapy-categories {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        /* 📱 移动端疗法分类优化 */
+        @media (max-width: 768px) {
+            .therapy-categories {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+        }
+        .category-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        .category-box h4 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 14px;
+        }
+        .therapy-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .therapy-list li {
+            padding: 3px 0;
+            font-size: 13px;
+            color: #666;
+        }
+        .therapy-list li:before {
+            content: "• ";
+            color: #e91e63;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>自然疗法效果评估表</h1>
+            <p>用于系统评估不同自然疗法效果的专业工具</p>
+            <p style="font-size: 14px; color: #999;">periodhub.health | 女性健康管理工具</p>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 使用说明</h3>
+            <ul>
+                <li>尽量客观地记录每天的症状和感受</li>
+                <li>在症状出现和缓解时及时填写每日日志</li>
+                <li>至少评估一个完整的月经周期，以便更全面地了解疗法效果</li>
+                <li>定期回顾您的记录，特别是月经结束后进行周期总结</li>
+                <li>本表格是帮助您自我观察和评估的工具，可在需要时与医生讨论</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>一、基础信息区</h2>
+            
+            <div class="info-box">
+                <h3>用户基本信息</h3>
+                <table>
+                    <tr>
+                        <td style="width: 30%; background-color: #f8f9fa;"><strong>姓名/用户代号</strong></td>
+                        <td style="width: 70%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>年龄</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>主要评估症状开始时间</strong></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <h3>主要评估症状（可多选）</h3>
+                <div class="checkbox-grid">
+                    <div class="checkbox-item">☐ 痛经</div>
+                    <div class="checkbox-item">☐ 经前情绪波动</div>
+                    <div class="checkbox-item">☐ 腹胀</div>
+                    <div class="checkbox-item">☐ 疲劳/精力不足</div>
+                    <div class="checkbox-item">☐ 失眠/睡眠质量差</div>
+                    <div class="checkbox-item">☐ 头痛</div>
+                    <div class="checkbox-item">☐ 其他：_____________</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>本次评估周期信息</h3>
+                <table>
+                    <tr>
+                        <td style="width: 30%; background-color: #f8f9fa;"><strong>评估开始日期</strong></td>
+                        <td style="width: 70%;">______年 ____月 ____日</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>评估结束日期</strong></td>
+                        <td>______年 ____月 ____日</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>覆盖周期数</strong></td>
+                        <td>______ 个完整月经周期</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <h3>主要目标与期望</h3>
+                <p style="margin: 5px 0; color: #666; font-size: 14px;">您希望通过本次评估和尝试的自然疗法达到什么具体效果？</p>
+                <div style="border: 1px solid #ddd; padding: 10px; min-height: 60px; background: white;">
+                    <p style="margin: 0; color: #999; font-size: 13px;">例如：痛经强度降低50%，减少使用止痛药，情绪更稳定等</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>二、疗法记录区</h2>
+            <p style="color: #666; font-size: 14px;">请记录您在本次评估周期内尝试的所有自然疗法。您可以尝试多种疗法并同时追踪其效果。</p>
+            
+            <div class="table-container">
+                <table class="form-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 5%;">#</th>
+                            <th style="width: 25%;">疗法名称/描述</th>
+                            <th style="width: 15%;">类型</th>
+                            <th style="width: 15%;">执行频率</th>
+                            <th style="width: 15%;">每次持续时长</th>
+                            <th style="width: 12%;">开始日期</th>
+                            <th style="width: 13%;">结束日期</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #f8f9fa; font-size: 12px; color: #666;">
+                            <td>示例</td>
+                            <td>每天30分钟快走</td>
+                            <td>运动</td>
+                            <td>每天</td>
+                            <td>30分钟</td>
+                            <td>2024-01-01</td>
+                            <td>2024-01-31</td>
+                        </tr>
+                        <tr><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                        <tr><td>2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                        <tr><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                        <tr><td>4</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                        <tr><td>5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="therapy-categories">
+                <div class="category-box">
+                    <h4>🌿 常见自然疗法类型</h4>
+                    <ul class="therapy-list">
+                        <li>草药/补充剂</li>
+                        <li>饮食调整</li>
+                        <li>运动</li>
+                        <li>冥想/放松</li>
+                        <li>物理疗法</li>
+                        <li>芳香疗法</li>
+                        <li>针灸/按摩</li>
+                        <li>其他</li>
+                    </ul>
+                </div>
+                <div class="category-box">
+                    <h4>📝 记录示例</h4>
+                    <ul class="therapy-list">
+                        <li>当归颗粒，每日三次</li>
+                        <li>低麸质饮食</li>
+                        <li>瑜伽，每周3次</li>
+                        <li>穴位按摩：合谷+足三里</li>
+                        <li>薰衣草精油</li>
+                        <li>热敷腹部</li>
+                        <li>正念冥想</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>三、每日追踪日志</h2>
+            <p style="color: #666; font-size: 14px;">请在评估周期内，每天或在症状出现时进行记录。使用 0-10 分评估强度和水平。</p>
+            
+            <div class="rating-scale">
+                <div class="scale-item">
+                    <div class="scale-number">0</div>
+                    <div class="scale-desc">无症状<br>最低</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">2-3</div>
+                    <div class="scale-desc">轻微<br>略有不适</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">4-6</div>
+                    <div class="scale-desc">中等<br>明显影响</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">7-8</div>
+                    <div class="scale-desc">严重<br>显著影响</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">9-10</div>
+                    <div class="scale-desc">极严重<br>最高/最强</div>
+                </div>
+            </div>
+
+            <table class="form-table">
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">日期</th>
+                        <th style="width: 12%;">月经周期阶段</th>
+                        <th style="width: 18%;">主要症状强度(0-10)</th>
+                        <th style="width: 10%;">症状持续时间</th>
+                        <th style="width: 8%;">情绪水平</th>
+                        <th style="width: 8%;">精力水平</th>
+                        <th style="width: 15%;">当天所用疗法</th>
+                        <th style="width: 19%;">效果即时感受</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f8f9fa; font-size: 11px; color: #666;">
+                        <td>示例<br>01-15</td>
+                        <td>经期第2天</td>
+                        <td>痛经:7<br>腹胀:5<br>疲劳:6</td>
+                        <td>4小时</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>疗法1,3<br>热敷30分钟</td>
+                        <td>疼痛稍有缓解<br>腹胀无变化<br>情绪好转</td>
+                    </tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>四、周期总结与评估区</h2>
+            <p style="color: #666; font-size: 14px;">在完成本次评估周期后，请回顾您的记录，并进行总结评估。</p>
+            
+            <div class="info-box">
+                <h3>整体症状变化回顾</h3>
+                <table>
+                    <tr>
+                        <td style="width: 40%; background-color: #f8f9fa;"><strong>症状发生频率变化</strong></td>
+                        <td style="width: 60%;">
+                            ☐ 明显减少 ☐ 略有减少 ☐ 无变化 ☐ 略有增加 ☐ 明显增加<br>
+                            <div style="margin-top: 5px; border: 1px solid #ddd; padding: 5px; min-height: 30px;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>症状强度变化</strong></td>
+                        <td>
+                            ☐ 明显降低 ☐ 略有降低 ☐ 无变化 ☐ 略有增加 ☐ 明显增加<br>
+                            <div style="margin-top: 5px; border: 1px solid #ddd; padding: 5px; min-height: 30px;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>症状持续时间变化</strong></td>
+                        <td>
+                            ☐ 明显缩短 ☐ 略有缩短 ☐ 无变化 ☐ 略有延长 ☐ 明显延长<br>
+                            <div style="margin-top: 5px; border: 1px solid #ddd; padding: 5px; min-height: 30px;"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <h3>疗法有效性评估</h3>
+                <table>
+                    <tr>
+                        <td style="width: 40%; background-color: #f8f9fa;"><strong>整体有效性评分</strong></td>
+                        <td style="width: 60%;">________ / 10 分 (0=完全无效，10=非常有效)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>最有帮助的疗法</strong></td>
+                        <td>
+                            <div style="border: 1px solid #ddd; padding: 5px; min-height: 40px;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8f9fa;"><strong>不适或副作用</strong></td>
+                        <td>
+                            <div style="border: 1px solid #ddd; padding: 5px; min-height: 40px;"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <h3>后续决策</h3>
+                <div style="margin: 10px 0;">
+                    <strong>是否会继续采用这些自然疗法？</strong><br>
+                    ☐ 是，全部继续 ☐ 是，部分继续 ☐ 否，停止全部疗法 ☐ 需要调整<br>
+                    <div style="margin-top: 5px; border: 1px solid #ddd; padding: 5px; min-height: 30px;">
+                        <span style="color: #999; font-size: 12px;">请注明具体计划：</span>
+                    </div>
+                </div>
+                <div style="margin: 10px 0;">
+                    <strong>是否有其他需要尝试的疗法？</strong><br>
+                    <div style="margin-top: 5px; border: 1px solid #ddd; padding: 5px; min-height: 30px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="warning">
+            <h3>⚠️ 重要提醒</h3>
+            <p><strong>本评估表是帮助您自我观察和评估的工具，不能替代专业医疗诊断。</strong></p>
+            <ul>
+                <li>如果症状严重或持续恶化，请及时咨询医生</li>
+                <li>在尝试新的自然疗法前，建议咨询专业人士</li>
+                <li>某些草药和补充剂可能与药物产生相互作用</li>
+                <li>您可以在需要时与医生或专业人士讨论您的记录和发现</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 periodhub.health | 专业女性健康管理平台</p>
+            <p>更多健康资源请访问：<strong>periodhub.health</strong></p>
+        </div>
+    </div>
+</body>
+</html>

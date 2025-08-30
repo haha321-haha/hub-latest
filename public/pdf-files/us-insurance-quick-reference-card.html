@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美国医疗保险快速参考卡</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 25px;
+            font-size: 18px;
+            border-left: 3px solid #3498db;
+            padding-left: 12px;
+        }
+        h3 {
+            color: #2c3e50;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .quick-info {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border-left: 4px solid #28a745;
+        }
+        .warning {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border-left: 4px solid #ffc107;
+        }
+        .emergency {
+            background: #f8d7da;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border-left: 4px solid #dc3545;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: white;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .contact-info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .checklist {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .checklist ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .checklist li:before {
+            content: "☐ ";
+            font-weight: bold;
+            color: #3498db;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .formula {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 6px;
+            font-family: monospace;
+            margin: 12px 0;
+            border: 1px solid #dee2e6;
+            font-size: 14px;
+        }
+        .resource-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+        @media print {
+            body { background: white; font-size: 12px; }
+            .container { box-shadow: none; padding: 15px; }
+            .page-break { page-break-before: always; }
+        }
+    
+        /* 📱 移动端响应式优化 */
+        @media (max-width: 768px) {
+            body { padding: 8px !important; font-size: 14px; }
+            .container { padding: 12px !important; margin: 0 !important; }
+            .header h1 { font-size: 24px !important; }
+            .section { margin-bottom: 20px !important; }
+            table, .table-container { overflow-x: auto; display: block; }
+            .grid, .content-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
+        }
+        @media (max-width: 480px) {
+            body { padding: 4px !important; font-size: 13px; }
+            .header h1 { font-size: 20px !important; }
+            .header p { font-size: 12px !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 美国医疗保险快速参考卡</h1>
+        
+        <div class="quick-info">
+            <h3>📋 2025年关键更新</h3>
+            <ul>
+                <li><strong>Medicare Part D覆盖缺口期已完全取消</strong></li>
+                <li><strong>年度自付上限：$2,000</strong></li>
+                <li><strong>ACA补贴无上限政策延续至2025年底</strong></li>
+            </ul>
+        </div>
+
+        <h2>💰 金属计划快速对比</h2>
+        <table>
+            <tr>
+                <th>计划</th>
+                <th>月保费</th>
+                <th>年自付额</th>
+                <th>适用人群</th>
+            </tr>
+            <tr>
+                <td>Bronze</td>
+                <td>$250-400</td>
+                <td>$7,000+</td>
+                <td>年轻健康女性</td>
+            </tr>
+            <tr>
+                <td>Silver</td>
+                <td>$350-600</td>
+                <td>$5,000-7,000</td>
+                <td>中低收入者（推荐）</td>
+            </tr>
+            <tr>
+                <td>Gold</td>
+                <td>$500-800</td>
+                <td>$3,000-5,000</td>
+                <td>慢性痛经患者</td>
+            </tr>
+            <tr>
+                <td>Platinum</td>
+                <td>$700+</td>
+                <td>$1,500-3,000</td>
+                <td>复杂病症患者</td>
+            </tr>
+        </table>
+
+        <h2>💊 常见药物费用参考</h2>
+        <table>
+            <tr>
+                <th>药物类型</th>
+                <th>月自付费用</th>
+                <th>省钱技巧</th>
+            </tr>
+            <tr>
+                <td>NSAIDs（布洛芬）</td>
+                <td>$5-15</td>
+                <td>选择通用药+90天供应</td>
+            </tr>
+            <tr>
+                <td>激素避孕药</td>
+                <td>$0-30</td>
+                <td>ACA强制覆盖</td>
+            </tr>
+            <tr>
+                <td>COX-2抑制剂</td>
+                <td>$30-100</td>
+                <td>申请制药公司援助</td>
+            </tr>
+        </table>
+
+        <h2>🏥 检查费用估算</h2>
+        <ul>
+            <li><strong>盆腔超声</strong>：$220-550（网络内自付$30-150）</li>
+            <li><strong>激素六项</strong>：$200-500（网络内自付$40-120）</li>
+            <li><strong>MRI检查</strong>：$1,000-3,000（需预授权）</li>
+            <li><strong>腹腔镜</strong>：$3,000-8,000（Gold/Platinum覆盖较好）</li>
+        </ul>
+
+        <div class="formula">
+            <h3>💡 费用计算公式</h3>
+            <code>自付费用 = 自付额 + (总费用-自付额) × 共同保险比例</code>
+        </div>
+
+        <h2>🚨 申诉流程图</h2>
+        <div class="warning">
+            <ol>
+                <li><strong>收到拒付通知</strong> → 30天内提交内部申诉</li>
+                <li><strong>申诉成功？</strong> → 获得理赔 ✅</li>
+                <li><strong>申诉失败？</strong> → 申请独立外部审查</li>
+                <li><strong>外部审查支持？</strong> → 强制保险公司赔付 ✅</li>
+                <li><strong>外部审查拒绝？</strong> → 向州监管局投诉</li>
+            </ol>
+        </div>
+
+        <div class="emergency">
+            <h3>🆘 紧急情况标准</h3>
+            <ul>
+                <li>痛经导致晕厥（收缩压<90mmHg）</li>
+                <li>剧烈呕吐脱水需静脉补液</li>
+                <li>急诊科生命体征记录必须保留</li>
+            </ul>
+        </div>
+
+        <h2>📞 重要联系方式</h2>
+        <div class="contact-info">
+            <h3>政策查询</h3>
+            <ul>
+                <li><strong>HealthCare.gov</strong>：保险计划比较和注册</li>
+                <li><strong>CMS.gov</strong>：Medicare和Medicaid信息</li>
+            </ul>
+            
+            <h3>患者援助</h3>
+            <ul>
+                <li><strong>Patient Advocate Foundation</strong>：保险申诉支持</li>
+                <li><strong>GoodRx.com</strong>：处方药折扣</li>
+            </ul>
+            
+            <h3>临床指南</h3>
+            <ul>
+                <li><strong>ACOG.org</strong>：痛经管理指南</li>
+                <li><strong>NWHN.org</strong>：女性健康倡导</li>
+            </ul>
+        </div>
+
+        <h2>📅 2025年重要时间节点</h2>
+        <div class="warning">
+            <ul>
+                <li><strong>开放期已结束</strong>：2024年11月1日-2025年1月15日</li>
+                <li><strong>下次开放期</strong>：2025年11月1日-2026年1月15日</li>
+                <li><strong>补贴政策到期</strong>：2025年12月31日</li>
+            </ul>
+        </div>
+
+        <h2>✅ 行动清单</h2>
+        <div class="checklist">
+            <h3>选择保险时：</h3>
+            <ul>
+                <li>确认妇科医生在网络内</li>
+                <li>核实痛经药物在药物目录中</li>
+                <li>计算年度最大自付费用</li>
+                <li>了解预授权要求</li>
+            </ul>
+
+            <h3>就医准备：</h3>
+            <ul>
+                <li>记录详细症状日志</li>
+                <li>收集既往治疗历史</li>
+                <li>准备预授权申请材料</li>
+                <li>研究患者援助计划</li>
+            </ul>
+
+            <h3>费用管理：</h3>
+            <ul>
+                <li>定期检查理赔状态</li>
+                <li>保留所有医疗费用收据</li>
+                <li>了解申诉程序和期限</li>
+                <li>考虑HSA账户优势</li>
+            </ul>
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2>🎯 低收入解决方案</h2>
+        <div class="quick-info">
+            <h3>针对性援助：</h3>
+            <ul>
+                <li><strong>Medicaid扩展</strong>：39个州覆盖收入≤138% FPL的成年人</li>
+                <li><strong>FQHC滑动费率</strong>：最低$20/次全面检查</li>
+                <li><strong>Extra Help</strong>：联邦补助Medicare Part D药费</li>
+            </ul>
+        </div>
+
+        <h2>📊 收入资格快查表</h2>
+        <table>
+            <tr>
+                <th>家庭规模</th>
+                <th>100% FPL</th>
+                <th>138% FPL (Medicaid)</th>
+                <th>400% FPL</th>
+            </tr>
+            <tr>
+                <td>1人</td>
+                <td>$15,060</td>
+                <td>$20,783</td>
+                <td>$60,240</td>
+            </tr>
+            <tr>
+                <td>2人</td>
+                <td>$20,440</td>
+                <td>$28,207</td>
+                <td>$81,760</td>
+            </tr>
+            <tr>
+                <td>3人</td>
+                <td>$25,820</td>
+                <td>$35,632</td>
+                <td>$103,280</td>
+            </tr>
+            <tr>
+                <td>4人</td>
+                <td>$31,200</td>
+                <td>$43,056</td>
+                <td>$124,800</td>
+            </tr>
+        </table>
+
+        <div class="warning">
+            <p><strong>免责声明</strong>：本参考卡基于2025年最新政策信息编制。具体覆盖范围请以各保险计划条款为准。如需个性化建议，请咨询认证保险顾问。</p>
+        </div>
+    </div>
+</body>
+</html>

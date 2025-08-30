@@ -1,0 +1,223 @@
+{
+  "site": {
+    "name": "Period Hub",
+    "title": "Period Hub - Menstrual Health Management Platform",
+    "description": "Professional menstrual health management platform providing scientific guidance and caring support for every woman"
+  },
+  "metadata": {
+    "home": {
+      "title": "Period Hub - Menstrual Health Management Platform",
+      "description": "Professional menstrual health management platform with scientific guidance and caring support to help every woman navigate their menstrual cycle with confidence and health"
+    },
+    "articles": {
+      "title": "Health Articles - Period Hub",
+      "description": "Professional guidance based on scientific research to help you better understand and manage menstrual health"
+    },
+    "tools": {
+      "title": "Interactive Tools - Period Hub",
+      "description": "Intelligent health assessment tools providing personalized health management solutions"
+    },
+    "teen": {
+      "title": "Teen Health Zone - Period Hub",
+      "description": "Menstrual health guidance designed specifically for teenage girls, making the journey of growth less confusing"
+    },
+    "about": {
+      "title": "About Us - Period Hub",
+      "description": "Committed to providing professional and caring menstrual health management services for every woman"
+    },
+    "contact": {
+      "title": "Contact Us - Period Hub",
+      "description": "We're here to help you on your menstrual health journey"
+    }
+  },
+  "common": {
+    "PeriodHub": "Period Hub",
+    "home": "Home",
+    "articles": "Articles",
+    "interactiveTools": "Interactive Tools",
+    "teenHealth": "Teen Health",
+    "about": "About",
+    "contact": "Contact",
+    "search": "Search",
+    "readMore": "Read More",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "tryAgain": "Try Again"
+  },
+  "hero": {
+    "title": "Professional Menstrual Health Management Platform",
+    "subtitle": "Scientific guidance and caring support to help every woman navigate their menstrual cycle with confidence and health",
+    "cta": "Free 2-Minute Health Assessment",
+    "learnMore": "Browse Articles",
+    "features": {
+      "articles": "22 Professional Articles",
+      "tools": "4 Interactive Tools",
+      "support": "24/7 Online Support"
+    }
+  },
+  "footer": {
+    "description": "Professional menstrual health management platform providing scientific guidance and caring support for every woman.",
+    "quickLinks": "Quick Links",
+    "support": "Support",
+    "contactUs": "Contact Us",
+    "helpCenter": "Help Center",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "email": "Email",
+    "support24": "Providing professional health guidance for you",
+    "allRights": "All rights reserved.",
+    "disclaimer": "This content is for reference only and cannot replace professional medical advice."
+  },
+  "articles": {
+    "title": "Health Articles",
+    "subtitle": "Professional guidance based on scientific research to help you better understand and manage menstrual health",
+    "categories": {
+      "pain": "Pain Management",
+      "painDesc": "Effective methods and techniques for relieving menstrual pain",
+      "nutrition": "Nutrition Guidance",
+      "nutritionDesc": "Menstrual nutrition supplements and dietary recommendations"
+    },
+    "painRelief": "Quick Menstrual Pain Relief Guide",
+    "antiInflammatory": "Anti-inflammatory Diet and Menstrual Pain",
+    "heatTherapy": "Complete Heat Therapy Guide",
+    "nutritionGuide": "Menstrual Nutrition Guide",
+    "supplements": "Menstrual Health Supplements",
+    "hydration": "Menstrual Hydration Guide",
+    "cta": {
+      "title": "Need Personalized Advice?",
+      "subtitle": "Use our interactive tools to get your exclusive health plan",
+      "button": "Start Assessment"
+    }
+  },
+  "tools": {
+    "title": "Interactive Tools",
+    "subtitle": "Intelligent health assessment tools providing personalized health management solutions",
+    "startTool": "Start Using",
+    "painAssessment": {
+      "title": "Pain Assessment Tool",
+      "description": "Scientifically assess your menstrual pain level and provide targeted recommendations"
+    },
+    "cycleTracker": {
+      "title": "Cycle Tracker",
+      "description": "Intelligently record and predict your menstrual cycle"
+    },
+    "symptomChecker": {
+      "title": "Symptom Checker",
+      "description": "Quickly identify menstrual-related symptoms and get professional advice"
+    },
+    "wellnessPlan": {
+      "title": "Wellness Plan Creation",
+      "description": "Create personalized health management plans based on your specific situation"
+    },
+    "info": {
+      "title": "Why Choose Our Tools?",
+      "description": "Based on the latest medical research, combined with AI technology, providing you with the most professional health management experience",
+      "privacy": "Privacy Protection",
+      "privacyDesc": "All data stored locally, never leaked",
+      "instant": "Instant Feedback",
+      "instantDesc": "Real-time analysis, immediate results",
+      "personalized": "Personalized Customization",
+      "personalizedDesc": "Tailored to your specific situation"
+    }
+  },
+  "teen": {
+    "title": "Teen Health Zone",
+    "subtitle": "Menstrual health guidance designed specifically for teenage girls, making the journey of growth less confusing",
+    "welcome": {
+      "title": "Welcome to Teen Health Zone",
+      "message": "This is a safe space specially prepared for teenage girls. We understand your confusion and concerns, and are willing to accompany you through this special stage of growth."
+    },
+    "basics": {
+      "title": "Menstrual Basics",
+      "description": "Learn the basic knowledge about menstruation, eliminate fear and misunderstanding"
+    },
+    "firstPeriod": {
+      "title": "First Period Guidance",
+      "description": "Preparation and coping methods for your first menstruation"
+    },
+    "products": {
+      "title": "Hygiene Product Selection",
+      "description": "Learn about the usage and selection tips for various hygiene products"
+    },
+    "support": {
+      "title": "Psychological Support",
+      "description": "Cope with emotional changes and psychological stress brought by menstruation"
+    },
+    "learnMore": "Learn More",
+    "cta": {
+      "title": "Still Have Questions?",
+      "subtitle": "Our professional team is always here to answer your questions",
+      "button": "Consult Expert"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Committed to providing professional and caring menstrual health management services for every woman",
+    "mission": {
+      "title": "Our Mission",
+      "description": "We believe every woman deserves a healthy and confident menstrual experience."
+    },
+    "contact": {
+      "title": "Want to Learn More?",
+      "description": "If you have any questions or suggestions, feel free to contact us anytime",
+      "button": "Contact Us"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help you on your menstrual health journey.",
+    "form": {
+      "title": "Send Message",
+      "name": "Name",
+      "namePlaceholder": "Please enter your name",
+      "email": "Email Address",
+      "emailPlaceholder": "Please enter your email address",
+      "subject": "Subject",
+      "selectSubject": "Please select a subject",
+      "subjects": {
+        "general": "General Inquiry",
+        "medical": "Medical Question",
+        "technical": "Technical Support",
+        "feedback": "Feedback"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help you...",
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been sent successfully."
+    },
+    "methods": {
+      "title": "Other Contact Methods",
+      "email": {
+        "title": "Email Support",
+        "description": "Get detailed answers to your questions",
+        "action": "Send Email"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Get help immediately when you need it",
+        "value": "Always Available",
+        "action": "Get Help"
+      },
+      "social": {
+        "title": "Social Media",
+        "description": "Follow us for health tips and updates",
+        "value": "Connect with Us",
+        "action": "Follow Us"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Quickly find answers to common questions",
+      "button": "View FAQ"
+    },
+    "response": {
+      "title": "Response Time",
+      "urgent": "Urgent Matters",
+      "urgentTime": "Within 2 hours",
+      "general": "General Inquiries",
+      "generalTime": "Within 24 hours",
+      "support": "Support Requests",
+      "supportTime": "Within 12 hours"
+    }
+  }
+}

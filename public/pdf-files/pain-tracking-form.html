@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>痛经症状追踪表 | periodhub.health</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 12px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* 📱 移动端优化 */
+        @media (max-width: 768px) {
+            body {
+                padding: 8px;
+            }
+            .container {
+                padding: 16px;
+                border-radius: 8px;
+            }
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #e91e63;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            color: #e91e63;
+            margin: 0;
+            font-size: 28px;
+        }
+        .header p {
+            color: #666;
+            margin: 10px 0 0 0;
+            font-size: 16px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #333;
+            border-left: 4px solid #e91e63;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            display: block;
+            white-space: nowrap;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+            min-width: 100px;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-table {
+            display: table;
+            width: 100%;
+        }
+        .form-table td {
+            height: 40px;
+        }
+
+        /* 📱 移动端表格优化 */
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+            th, td {
+                padding: 8px;
+                min-width: 80px;
+            }
+            .form-table td {
+                height: 35px;
+            }
+            /* 表格横向滚动 */
+            .table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 0 -16px;
+                padding: 0 16px;
+            }
+        }
+        .instructions {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 20px;
+        }
+        .warning {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 14px;
+        }
+        .checkbox-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            padding: 4px 0;
+            font-size: 14px;
+        }
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        /* 📱 移动端复选框优化 */
+        @media (max-width: 768px) {
+            .checkbox-list {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            .checkbox-item {
+                font-size: 13px;
+                padding: 6px 0;
+            }
+        }
+        .pain-scale {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .scale-item {
+            text-align: center;
+            flex: 1;
+            min-width: 80px;
+        }
+        .scale-number {
+            font-weight: bold;
+            color: #e91e63;
+            font-size: 18px;
+        }
+        .scale-desc {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+            line-height: 1.3;
+        }
+
+        /* 📱 移动端疼痛评分优化 */
+        @media (max-width: 768px) {
+            .pain-scale {
+                padding: 8px;
+                flex-wrap: nowrap;
+            }
+            .scale-item {
+                min-width: 60px;
+            }
+            .scale-number {
+                font-size: 16px;
+            }
+            .scale-desc {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>痛经症状追踪表</h1>
+            <p>详细记录痛经症状、触发因素和缓解方法的专业表格</p>
+            <p style="font-size: 14px; color: #999;">periodhub.health | 女性健康管理工具</p>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 使用说明</h3>
+            <ul>
+                <li>请在症状出现时及时填写，以保证记录的准确性</li>
+                <li>如果尝试了多种缓解方法，请分别评估其效果</li>
+                <li>持续记录几个月经周期，可以帮助您发现痛经的规律和最有效的缓解策略</li>
+                <li>建议打印多份使用，或复制表格内容到电子文档中</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>疼痛程度评分标准</h2>
+            <div class="pain-scale">
+                <div class="scale-item">
+                    <div class="scale-number">1-2</div>
+                    <div class="scale-desc">轻微疼痛<br>不影响日常活动</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">3-4</div>
+                    <div class="scale-desc">轻度疼痛<br>略有不适</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">5-6</div>
+                    <div class="scale-desc">中度疼痛<br>影响工作效率</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">7-8</div>
+                    <div class="scale-desc">重度疼痛<br>需要休息</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">9-10</div>
+                    <div class="scale-desc">剧烈疼痛<br>难以忍受</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>症状追踪记录表</h2>
+            <div class="table-container">
+                <table class="form-table">
+                <thead>
+                    <tr>
+                        <th style="width: 12%;">日期与时间</th>
+                        <th style="width: 20%;">症状描述</th>
+                        <th style="width: 10%;">疼痛程度<br>(1-10分)</th>
+                        <th style="width: 18%;">可能的触发因素</th>
+                        <th style="width: 20%;">使用的缓解方法</th>
+                        <th style="width: 12%;">方法效果评估</th>
+                        <th style="width: 8%;">备注</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 示例行 -->
+                    <tr style="background-color: #f8f9fa;">
+                        <td style="font-size: 12px; color: #666;">示例：<br>2024-01-15<br>14:30</td>
+                        <td style="font-size: 12px; color: #666;">下腹部绞痛<br>腰部酸痛<br>轻微头痛</td>
+                        <td style="font-size: 12px; color: #666; text-align: center;">6</td>
+                        <td style="font-size: 12px; color: #666;">压力大<br>睡眠不足<br>喝了冷饮</td>
+                        <td style="font-size: 12px; color: #666;">热敷30分钟<br>喝姜茶<br>轻度瑜伽</td>
+                        <td style="font-size: 12px; color: #666;">中度缓解</td>
+                        <td style="font-size: 12px; color: #666;">工作日<br>情绪焦虑</td>
+                    </tr>
+                    <!-- 空白记录行 -->
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>常见症状参考</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                <div>
+                    <h4>🔸 疼痛症状</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ 腹部绞痛</div>
+                        <div class="checkbox-item">☐ 下背部酸痛</div>
+                        <div class="checkbox-item">☐ 头痛</div>
+                        <div class="checkbox-item">☐ 大腿内侧疼痛</div>
+                    </div>
+                </div>
+                <div>
+                    <h4>🔸 其他症状</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ 恶心/呕吐</div>
+                        <div class="checkbox-item">☐ 疲劳</div>
+                        <div class="checkbox-item">☐ 情绪波动</div>
+                        <div class="checkbox-item">☐ 胀气</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>触发因素参考</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+                <div>
+                    <h4>🔸 生活方式</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ 压力</div>
+                        <div class="checkbox-item">☐ 缺乏睡眠</div>
+                        <div class="checkbox-item">☐ 受凉</div>
+                        <div class="checkbox-item">☐ 特定活动</div>
+                    </div>
+                </div>
+                <div>
+                    <h4>🔸 饮食因素</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ 冷饮</div>
+                        <div class="checkbox-item">☐ 辛辣食物</div>
+                        <div class="checkbox-item">☐ 咖啡因</div>
+                        <div class="checkbox-item">☐ 高糖食物</div>
+                    </div>
+                </div>
+                <div>
+                    <h4>🔸 其他因素</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ 情绪变化</div>
+                        <div class="checkbox-item">☐ 环境变化</div>
+                        <div class="checkbox-item">☐ 药物影响</div>
+                        <div class="checkbox-item">☐ 无明显诱因</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>缓解方法参考</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                <div>
+                    <h4>🔸 物理疗法</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ 热敷（腹部/腰部）</div>
+                        <div class="checkbox-item">☐ 轻度运动（瑜伽、散步）</div>
+                        <div class="checkbox-item">☐ 穴位按压</div>
+                        <div class="checkbox-item">☐ 按摩</div>
+                    </div>
+                </div>
+                <div>
+                    <h4>🔸 其他方法</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ 草药茶/饮品（姜茶等）</div>
+                        <div class="checkbox-item">☐ 冥想/深呼吸</div>
+                        <div class="checkbox-item">☐ 休息/睡眠</div>
+                        <div class="checkbox-item">☐ 止痛药（请注明名称）</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>效果评估标准</h2>
+            <table>
+                <tr>
+                    <th style="width: 20%;">评估等级</th>
+                    <th>描述</th>
+                </tr>
+                <tr>
+                    <td><strong>无效</strong></td>
+                    <td>疼痛无缓解，症状无改善</td>
+                </tr>
+                <tr>
+                    <td><strong>轻微缓解</strong></td>
+                    <td>疼痛略有减轻，但仍有明显不适</td>
+                </tr>
+                <tr>
+                    <td><strong>中度缓解</strong></td>
+                    <td>疼痛明显减轻，可进行部分日常活动</td>
+                </tr>
+                <tr>
+                    <td><strong>显著缓解</strong></td>
+                    <td>疼痛大部分或完全消失，恢复正常活动</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="warning">
+            <h3>⚠️ 重要提醒</h3>
+            <p><strong>本表格为个人症状追踪工具，记录结果不能替代专业医疗诊断。</strong></p>
+            <p>如果您的痛经症状严重、持续不缓解或伴有以下情况，请及时咨询医生：</p>
+            <ul>
+                <li>疼痛程度达到8分以上且持续时间长</li>
+                <li>伴有发热、异常出血或分泌物</li>
+                <li>疼痛模式突然改变</li>
+                <li>常规缓解方法完全无效</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 periodhub.health | 专业女性健康管理平台</p>
+            <p>更多健康资源请访问：<strong>periodhub.health</strong></p>
+        </div>
+    </div>
+</body>
+</html>

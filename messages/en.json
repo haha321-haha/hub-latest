@@ -1,0 +1,1997 @@
+{
+  "site": {
+    "name": "Period Hub",
+    "title": "Period Hub - Menstrual Health Management Platform",
+    "description": "Professional menstrual health management platform providing scientific guidance and caring support for every woman"
+  },
+  "metadata": {
+    "home": {
+      "title": "Period Hub - Menstrual Health Management Platform",
+      "description": "Professional menstrual health management platform with scientific guidance and caring support to help every woman navigate their menstrual cycle with confidence and health"
+    },
+    "articles": {
+      "title": "Health Articles - Period Hub",
+      "description": "Professional guidance based on scientific research to help you better understand and manage menstrual health"
+    },
+    "tools": {
+      "title": "Interactive Tools - Period Hub",
+      "description": "Intelligent health assessment tools providing personalized health management solutions"
+    },
+    "teen": {
+      "title": "Teen Health Zone - Period Hub",
+      "description": "Menstrual health guidance designed specifically for teenage girls, making the journey of growth less confusing"
+    },
+    "about": {
+      "title": "About Us - Period Hub",
+      "description": "Committed to providing professional and caring menstrual health management services for every woman"
+    },
+    "contact": {
+      "title": "Contact Us - Period Hub",
+      "description": "We're here to help you on your menstrual health journey"
+    }
+  },
+  "common": {
+    "PeriodHub": "Period Hub",
+    "home": "Home",
+    "articles": "Articles",
+    "interactiveTools": "Interactive Tools",
+    "teenHealth": "Teen Health",
+    "about": "About",
+    "contact": "Contact",
+    "search": "Search",
+    "readMore": "Read More",
+    "loading": "Loading...",
+    "error": "Error occurred",
+    "tryAgain": "Try Again",
+    "healthGuide": "Health Guide",
+    "naturalTherapies": "Natural Therapies",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "learnMore": "Learn More",
+    "seeAll": "See All",
+    "tryNow": "Try Now",
+    "startNow": "Start Now",
+    "comingSoon": "Coming Soon",
+    "importantNote": "Important Note",
+    "medicalDisclaimer": "This information is for educational purposes only and is not intended to replace professional medical advice. Always consult with a healthcare provider for medical concerns.",
+    "navigation": {
+      "backToArticles": "Back to Articles"
+    }
+  },
+  "hero": {
+    "welcomeBadge": "Women's Health Expert",
+    "title": "Professional Menstrual",
+    "titleHighlight": "Health Management Platform",
+    "subtitle": "Evidence-based guidance and privacy protection, supporting every woman in scientific menstrual management",
+    "features": {
+      "personalizedRecord": "Personalized Records",
+      "personalizedRecordDesc": "Intelligent analysis based on personal data",
+      "evidenceBasedGuide": "Evidence-Based Guide",
+      "evidenceBasedGuideDesc": "Professional content supported by medical research",
+      "privacyFirst": "Privacy First",
+      "privacyFirstDesc": "Local storage, secure data",
+      "precisionPrediction": "Precision Prediction",
+      "precisionPredictionDesc": "Data-driven cycle prediction"
+    },
+    "cta": {
+      "primary": "Start Exploring",
+      "secondary": "Learn More"
+    },
+    "stats": {
+      "tools": "Practical Tools",
+      "content": "Professional Content",
+      "support": "24/7 Support"
+    },
+    "toolCards": {
+      "painTracker": "Pain Recorder",
+      "painTrackerDesc": "Symptom tracking and trend analysis to help identify pain patterns",
+      "cycleTracker": "Cycle Prediction",
+      "cycleTrackerDesc": "Intelligent prediction based on historical data, prepare in advance",
+      "constitutionTest": "Constitution Assessment",
+      "constitutionTestDesc": "TCM constitution identification and conditioning advice, personalized health plans"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "articles": "Articles & Downloads",
+    "therapies": "Therapies",
+    "instantRelief": "Immediate Relief",
+    "naturalTherapies": "Natural Care",
+    "culturalCharms": "Cultural Comforts",
+    "scenarioSolutions": "Scenario Solutions",
+    "downloads": "PDF Downloads",
+    "interactiveTools": "Interactive Solutions",
+    "symptomAssessment": "Symptom Assessment",
+    "painTracker": "Pain Tracker",
+    "healthGuide": "Health Guide"
+  },
+  "homepage": {
+    "hero": {
+      "headline": "Find Relief, Understand Your Cycle.",
+      "subheadline": "Your compassionate guide to navigating menstrual pain with effective solutions and supportive resources.",
+      "bodyCopy": "Welcome to periodhub.health – your trusted partner for menstrual wellness. We offer evidence-based insights, practical tools, and compassionate support to help you understand, manage, and find relief from menstrual discomfort. Whether you need quick remedies, long-term strategies, or a deeper understanding of your body, we're here for you.",
+      "ctaExplore": "Explore Solutions",
+      "ctaCheckSymptoms": "Start Your Symptom Check",
+      "imageAlt": "A woman in a warm, caring environment expressing understanding and compassion",
+      "ctaDiscoverNatural": "Discover Natural Therapies"
+    },
+    "modules": {
+      "title": "Discover Your Path to Comfort",
+      "instantRelief": {
+        "title": "Instant Relief",
+        "description": "Quick techniques and remedies to alleviate period pain when you need it most. Find methods you can use right now for immediate comfort."
+      },
+      "interactiveSolutions": {
+        "title": "Interactive Solutions",
+        "description": "Engaging tools and personalized insights to help you manage your menstrual health proactively. Use our symptom checker and resources for tailored guidance."
+      },
+      "dailyConditioning": {
+        "title": "Daily Conditioning",
+        "description": "Lifestyle adjustments and routines to build long-term resilience against menstrual discomfort and support overall wellness throughout your cycle."
+      }
+    },
+    "featuredContent": {
+      "title": "Featured Articles",
+      "viewAll": "View All Articles",
+      "readMore": "Read more"
+    },
+    "features": {
+      "articlesDesc": "Professional medical knowledge with easy-to-understand health guidance",
+      "toolsDesc": "Personalized health assessment and management tools",
+      "teenDesc": "Health guidance and support designed specifically for teenagers",
+      "experience": "Experience Now",
+      "learnMore": "Learn More"
+    },
+    "statistics": {
+      "title": "Menstrual Health Data Insights",
+      "description": "Real data from global women's health surveys, understanding the current state and challenges of menstrual health",
+      "altText": "Menstrual health statistics infographic showing global women's period pain related statistical information"
+    },
+    "quickAccess": {
+      "title": "Quick Access",
+      "healthGuideDesc": "Comprehensive menstrual health guide",
+      "emergencyRelief": "Emergency Relief",
+      "emergencyReliefDesc": "Quick and effective pain relief solutions",
+      "naturalTherapiesDesc": "Natural and safe conditioning methods",
+      "painTracker": "Pain Tracker",
+      "painTrackerDesc": "Record and analyze your pain patterns"
+    }
+  },
+  "articlesPage": {
+    "title": "Articles & Guides",
+    "description": "Explore our collection of articles to learn more about menstrual health and pain relief.",
+    "searchPlaceholder": "Search articles...",
+    "categories": {
+      "immediateRelief": {
+        "title": "Immediate Relief Solutions",
+        "description": "Quick and effective pain relief methods and emergency techniques",
+        "articles": {
+          "fiveMinuteRelief": "5-Minute Quick Tips for Period Pain Relief",
+          "fiveMinuteReliefDesc": "Need fast relief from menstrual cramps? Explore simple, actionable techniques you can use right now",
+          "heatTherapy": "Complete Heat Therapy Guide",
+          "heatTherapyDesc": "Comprehensive understanding of heat therapy science, application methods, and safety precautions",
+          "nsaidGuide": "Professional NSAID Guide for Menstrual Pain",
+          "nsaidGuideDesc": "Professional medical guidance on safe and effective use of NSAIDs for menstrual pain relief",
+          "specificManagement": "Specific Menstrual Pain Management Guide",
+          "specificManagementDesc": "Personalized management strategies and treatment plans for different types of menstrual pain"
+        }
+      },
+      "nutritionHealth": {
+        "title": "Nutrition & Health",
+        "description": "Scientific nutrition guidance and healthy lifestyle recommendations",
+        "articles": {
+          "stressManagement": "Complete Menstrual Stress Management Guide: Comprehensive Relief from Psychological to Physiological",
+          "stressManagementDesc": "Evidence-based menstrual stress management guide based on the latest ACOG, APA, and NIH research, providing scientific stress relief strategies for North American working women, covering immediate stress reduction techniques, long-term management plans, and workplace coping solutions",
+          "antiInflammatory": "Anti-Inflammatory Diet Guide for Menstrual Pain Relief",
+          "antiInflammatoryDesc": "Scientific anti-inflammatory dietary strategies to reduce menstrual inflammation and pain through nutritional regulation",
+          "magnesiumGuide": "Comprehensive Guide to Magnesium and Gut Health",
+          "magnesiumGuideDesc": "In-depth understanding of magnesium's important role in menstrual health and gut health management",
+          "periodRecipes": "Period-Friendly Recipes",
+          "periodRecipesDesc": "Nutritional recipes specifically designed for menstruation to alleviate discomfort symptoms",
+          "sleepQuality": "Comprehensive Menstrual Sleep Quality Improvement Guide: Evidence-Based Medical Methods",
+          "sleepQualityDesc": "Evidence-based menstrual sleep improvement guide based on the latest research from AASM, ACOG, and NIH, providing a systematic 21-day sleep quality enhancement plan",
+          "preventiveCare": "Complete Menstrual Preventive Care Plan: Evidence-Based Medical Guidance",
+          "preventiveCareDesc": "Evidence-based preventive care strategies for North American women based on the latest research from ACOG, NIH, and FDA, covering comprehensive full-cycle care plans"
+        }
+      },
+      "naturalTherapies": {
+        "title": "Natural Therapies",
+        "description": "Gentle and effective natural therapies and traditional conditioning methods",
+        "articles": {
+          "physicalTherapy": "Comprehensive Natural Physical Therapy Guide",
+          "physicalTherapyDesc": "Explore scientific applications of massage, stretching, exercise and other natural physical therapies",
+          "essentialOils": "Essential Oils Aromatherapy Guide for Menstrual Pain",
+          "essentialOilsDesc": "Understanding the application and precautions of essential oil aromatherapy in menstrual pain relief",
+          "herbalTea": "Effective Herbal Tea for Menstrual Pain Relief",
+          "herbalTeaDesc": "Explore the application and preparation methods of traditional herbal teas in menstrual pain relief",
+          "traditionalMethods": "Global Traditional Menstrual Pain Relief Methods",
+          "traditionalMethodsDesc": "Explore traditional wisdom for menstrual pain relief from cultures around the world",
+          "zhanZhuang": "Zhan Zhuang & Baduanjin for Menstrual Pain Relief",
+          "zhanZhuangDesc": "Learn the application of traditional Chinese health exercises in menstrual health management"
+        }
+      },
+      "medicalGuidance": {
+        "title": "Medical Guidance",
+        "description": "Professional medical knowledge and scientific treatment guidance",
+        "articles": {
+          "comprehensiveMedical": "Comprehensive Medical Guide to Dysmenorrhea",
+          "comprehensiveMedicalDesc": "Comprehensive medical perspective: causes, diagnosis, treatment and prevention of dysmenorrhea",
+          "whenToSeeDoctor": "When to See a Doctor: Period Pain Warning Signs",
+          "whenToSeeDoctorDesc": "Identify menstrual pain symptoms and emergencies that require medical intervention",
+          "medicalCare": "Comprehensive Guide to When to Seek Medical Care",
+          "medicalCareDesc": "Detailed guidance on when professional medical evaluation and treatment are needed",
+          "complications": "Menstrual Pain Complications Management",
+          "complicationsDesc": "Understanding potential complications of menstrual pain and their prevention and management strategies"
+        }
+      },
+      "understandingEducation": {
+        "title": "Understanding & Education",
+        "description": "In-depth understanding of menstrual physiology and health education knowledge",
+        "articles": {
+          "understandingCycle": "Understanding Your Menstrual Cycle",
+          "understandingCycleDesc": "Comprehensive understanding of scientific knowledge and health management of the female menstrual cycle",
+          "hiddenCulprits": "Hidden Culprits of Menstrual Pain",
+          "hiddenCulpritsDesc": "Reveal hidden factors and lifestyle habits that may worsen menstrual pain",
+          "painDifferential": "Menstrual Pain vs Other Abdominal Pain Guide",
+          "painDifferentialDesc": "Learn to distinguish important characteristics between menstrual pain and other abdominal pain",
+          "faqExpert": "Menstrual Pain FAQ: Expert Answers",
+          "faqExpertDesc": "Professional doctors answer common questions and misconceptions about menstrual pain",
+          "insuranceCoverage": "Complete Guide to US Medical Insurance Coverage for Menstrual Pain Treatment (2025 Revised Edition)",
+          "insuranceCoverageDesc": "Comprehensive guide to US medical insurance coverage for menstrual pain treatment based on the latest ACA policies, covering insurance selection strategies, claims tips, cost optimization, and rights protection",
+          "researchProgress2024": "2024 Menstrual Pain Research Progress Report: Evidence-Based Medicine and Clinical Translation",
+          "researchProgress2024Desc": "2024 menstrual pain research progress report based on PubMed database, FDA approval information, and published studies, covering new pathological mechanism discoveries and innovative treatment breakthroughs",
+          "lifecycleAnalysis": "Complete Analysis of Women's Lifecycle Menstrual Pain Characteristics: North American Scientific Management Guide",
+          "lifecycleAnalysisDesc": "Based on the latest clinical guidelines from ACOG, The Menopause Society, and NIH, providing North American women with scientific menstrual pain management plans throughout their lifecycle"
+        }
+      },
+      "specializedGuides": {
+        "title": "Specialized Guides",
+        "description": "Professional guidance and in-depth analysis for specific situations",
+        "articles": {
+          "iudGuide": "Comprehensive IUD Guide",
+          "iudGuideDesc": "Comprehensive understanding of IUD types, effects, side effects and precautions",
+          "medicalGuide": "Medical Guide to Menstrual Pain",
+          "medicalGuideDesc": "Evidence-based medical guide for diagnosis and treatment of menstrual pain",
+          "readingList": "Recommended Reading List",
+          "readingListDesc": "Curated recommendations for menstrual health-related books, research and resources"
+        }
+      },
+      "longTermManagement": {
+        "title": "Long-term Management",
+        "description": "Building sustainable healthy lifestyle and long-term management strategies"
+      }
+    },
+    "cta": {
+      "title": "[EN] 准备好开始您的健康之旅了吗？",
+      "subtitle": "[EN] 使用我们的互动工具，获得个性化的健康建议和管理方案",
+      "button": "[EN] 探索互动工具"
+    },
+    "stats": {
+      "articles": "[EN] 专业文章",
+      "categories": "[EN] 主题分类",
+      "evidenceBased": "[EN] 循证内容"
+    }
+  },
+  "pdfCenter": {
+    "meta": {
+      "title": "PDF Download Center - Period Hub",
+      "description": "Professional menstrual health PDF resource download center, providing management tools, health guides, communication guidance and educational resources",
+      "keywords": "menstrual health,PDF download,health management,women's health,period guide"
+    },
+    "search": {
+      "placeholder": "Search {totalResources} resources... Try: pain, relief, nutrition, exercise, medical, communication",
+      "placeholderShort": "Search resources...",
+      "keywords": {
+        "pain": "pain",
+        "relief": "relief",
+        "nutrition": "nutrition",
+        "exercise": "exercise",
+        "medical": "medical",
+        "communication": "communication"
+      },
+      "suggestions": "Try keywords: pain, relief, nutrition, exercise, medical, communication",
+      "helpText": "Search in {totalResources} expert resources",
+      "ariaLabel": "Search health resources"
+    },
+    "title": "PDF Download Center",
+    "description": "Professional menstrual health PDF resource library, providing practical management tools, scientific health guides, effective communication skills and comprehensive educational resources. All resources are free to download and support bilingual Chinese and English.",
+    "success": {
+      "title": "PDF Download Center is Ready!",
+      "message": "We have carefully prepared 12 professional PDF resources for you, covering 4 core categories, supporting bilingual Chinese and English downloads. Each resource has been carefully crafted by our professional team to ensure scientific and practical content.",
+      "status": "System Running Normally"
+    },
+    "stats": {
+      "totalResources": "Total Resources",
+      "categories": "Categories",
+      "languages": "Languages Supported",
+      "featured": "Featured Resources",
+      "showing": "Showing",
+      "resources": "resources"
+    },
+    "categories": {
+      "managementTools": {
+        "title": "Management Tools",
+        "description": "Practical menstrual management and tracking tools"
+      },
+      "healthManagement": {
+        "title": "Health Management",
+        "description": "Scientific health management guidance programs"
+      },
+      "communicationGuidance": {
+        "title": "Communication Guidance",
+        "description": "Effective communication skills and advice"
+      },
+      "educationalResources": {
+        "title": "Educational Resources",
+        "description": "Comprehensive menstrual health educational materials"
+      }
+    },
+    "resources": {
+      "painTrackingForm": {
+        "title": "Pain Tracking Form",
+        "description": "Professional pain recording and analysis tool to help you better understand pain patterns"
+      },
+      "cycleCalendar": {
+        "title": "Menstrual Calendar",
+        "description": "Personalized menstrual tracking calendar to predict and manage your menstrual cycle"
+      },
+      "symptomDiary": {
+        "title": "Symptom Diary",
+        "description": "Detailed symptom recording template providing important reference for medical diagnosis"
+      },
+      "naturalTherapyAssessment": {
+        "title": "Natural Therapy Assessment",
+        "description": "Personalized natural therapy selection guide to find the most suitable conditioning plan for you"
+      },
+      "nutritionGuide": {
+        "title": "Nutrition Guide",
+        "description": "Complete menstrual nutrition supplement guide, scientific diet to improve menstrual discomfort"
+      },
+      "exerciseRoutine": {
+        "title": "Exercise Routine",
+        "description": "Exercise plan designed specifically for menstruation, relieve pain and improve health"
+      },
+      "doctorConsultationGuide": {
+        "title": "Doctor Consultation Guide",
+        "description": "Complete guide for effective communication with doctors to get better medical services"
+      },
+      "familyCommunicationTips": {
+        "title": "Family Communication Tips",
+        "description": "Practical advice and tips for communicating menstrual topics with family and friends"
+      },
+      "workplaceSupportGuide": {
+        "title": "Workplace Support Guide",
+        "description": "Strategies and methods for gaining understanding and support in the workplace"
+      },
+      "menstrualHealthBasics": {
+        "title": "Menstrual Health Basics",
+        "description": "Comprehensive menstrual health knowledge handbook, complete guide from basics to advanced"
+      },
+      "teenGuide": {
+        "title": "Teen Guide",
+        "description": "Menstrual health education resources designed specifically for teenage girls"
+      },
+      "mythsFactsGuide": {
+        "title": "Myths & Facts Guide",
+        "description": "Debunk common menstrual myths and learn scientific menstrual health knowledge"
+      }
+    },
+    "filter": {
+      "title": "Filter",
+      "categories": "Filter by Category",
+      "allCategories": "All Categories",
+      "items": "items",
+      "category": "Category",
+      "clearAll": "Clear Filters",
+      "activeFilters": "Active Filters"
+    },
+    "viewMode": {
+      "grid": "Grid View",
+      "list": "List View"
+    },
+    "empty": {
+      "title": "No Related Resources Found",
+      "searchMessage": "Please try searching with other keywords",
+      "filterMessage": "Please adjust filter conditions or browse other categories",
+      "resetFilters": "Reset Filters"
+    },
+    "footer": {
+      "description": "All PDF resources have been reviewed by our professional team to ensure content accuracy and practicality.",
+      "totalDownloads": "Total Downloads",
+      "lastUpdated": "Last Updated",
+      "rating": "User Rating"
+    }
+  },
+  "downloadsPage": {
+    "title": "PDF Resource Download Center",
+    "description": "Download professionally crafted PDF guides, forms, and tools to help you better manage your menstrual health. All resources are available in both Chinese and English.",
+    "stats": {
+      "totalResources": "Professional Resources",
+      "categories": "Categories",
+      "languages": "Language Versions"
+    },
+    "categories": {
+      "managementTools": {
+        "title": "Management Tools",
+        "description": "Practical tracking forms, assessment tools, and management guides"
+      },
+      "healthManagement": {
+        "title": "Health Management",
+        "description": "Nutrition guidance, healthy habits, and professional medical guides"
+      },
+      "communicationGuidance": {
+        "title": "Communication Guidance",
+        "description": "Communication and collaboration guides for parents, teachers, and schools"
+      },
+      "educationalResources": {
+        "title": "Educational Resources",
+        "description": "Professional health education resources for educators"
+      }
+    },
+    "resources": {
+      "painTrackingForm": {
+        "title": "Pain Tracking Form",
+        "description": "Record and analyze your pain patterns to provide important reference for medical diagnosis"
+      },
+      "menstrualCycleNutritionPlan": {
+        "title": "Menstrual Nutrition Plan",
+        "description": "Scientific menstrual nutrition guidance to help alleviate symptoms and promote overall health"
+      },
+      "campusEmergencyChecklist": {
+        "title": "Campus Emergency Checklist",
+        "description": "Student-specific menstrual emergency handling guide and essential items checklist"
+      },
+      "magnesiumGutHealthGuide": {
+        "title": "Magnesium & Gut Health Guide",
+        "description": "In-depth understanding of magnesium's important role in menstrual health and supplementation methods"
+      },
+      "naturalTherapyAssessment": {
+        "title": "Natural Therapy Assessment",
+        "description": "Evaluate and choose natural therapies and conditioning plans suitable for you"
+      },
+      "healthyHabitsChecklist": {
+        "title": "Healthy Habits Checklist",
+        "description": "Establish daily life habits and routines beneficial to menstrual health"
+      },
+      "menstrualPainComplicationsManagement": {
+        "title": "Complications Management Guide",
+        "description": "Professional guidance for identifying and managing menstrual pain-related complications"
+      },
+      "parentCommunicationGuide": {
+        "title": "Parent Communication Guide",
+        "description": "Guidance to help parents communicate effectively with teenagers about menstrual health"
+      },
+      "teacherCollaborationHandbook": {
+        "title": "Teacher Collaboration Handbook",
+        "description": "Practical handbook for teachers on how to support students' menstrual health management"
+      },
+      "teacherHealthManual": {
+        "title": "Teacher Health Manual",
+        "description": "Menstrual health education resources and guidance for educators"
+      },
+      "usInsuranceQuickReference": {
+        "title": "US Medical Insurance Quick Reference Card",
+        "description": "Quick reference guide for US menstrual pain treatment insurance coverage, including cost comparisons, appeal processes, and emergency contacts"
+      },
+      "recommendedReadingList": {
+        "title": "Recommended Reading List",
+        "description": "Curated selection of books, articles, and research materials related to menstrual health"
+      },
+      "specificMenstrualPainManagementGuide": {
+        "title": "Specific Menstrual Pain Management Guide",
+        "description": "Personalized management strategies and treatment plans for different types of menstrual pain"
+      },
+      "zhanZhuangBaduanjinIllustratedGuide": {
+        "title": "Zhan Zhuang & Baduanjin Illustrated Guide",
+        "description": "Application guidance of traditional Chinese health exercises in menstrual health management"
+      }
+    },
+    "backToArticles": "Back to Articles"
+  },
+  "articleList": {
+    "publishedOn": "Published on {date, date, long}",
+    "readMore": "Read more",
+    "noArticles": "No articles found. Check back soon!"
+  },
+  "articleDetail": {
+    "backToList": "Back to Articles",
+    "publishedOn": "Published on {date, date, long}",
+    "notFoundTitle": "Article Not Found",
+    "notFoundDescription": "Sorry, we could not find the article you are looking for."
+  },
+  "therapiesPage": {
+    "title": "Relief Therapies",
+    "description": "Discover various therapies and methods to manage and alleviate period pain."
+  },
+  "SpecialTherapiesPage": {
+    "title": "Special Therapies",
+    "description": "Explore specialized therapies and treatment methods for comprehensive menstrual health management."
+  },
+  "therapyList": {
+    "lastUpdated": "Last updated on {date, date, long}",
+    "learnMore": "Learn more",
+    "noTherapies": "No therapies found. Check back soon!"
+  },
+  "therapyDetail": {
+    "backToList": "Back to Therapies",
+    "lastUpdated": "Last updated on {date, date, long}",
+    "notFoundTitle": "Therapy Not Found",
+    "notFoundDescription": "Sorry, we could not find the therapy you are looking for."
+  },
+  "immediateReliefPage": {
+    "title": "Immediate Relief Solutions for Period Pain",
+    "description": "Explore quick and effective methods to find relief from period pain when you need it most. Learn about techniques you can apply right now.",
+    "introTitle": "When Period Pain Strikes...",
+    "introText": "When period pain strikes, you need fast, effective ways to find comfort. This section is dedicated to immediate relief solutions – methods you can turn to right now to help alleviate acute menstrual cramps and discomfort.",
+    "typesTitle": "Types of Immediate Relief",
+    "heatTherapy": "Heat Therapy",
+    "gentleMovement": "Gentle Movement & Breathing",
+    "acupressure": "Acupressure",
+    "otcOptions": "Over-the-Counter Options",
+    "findingWhatWorksTitle": "Finding What Works for You",
+    "findingWhatWorksText": "Experimentation is key to discovering which immediate relief methods are most effective for your unique body and pain type. Consider combining different approaches for enhanced comfort.",
+    "contentSectionTitle": "Relevant Articles & Therapies"
+  },
+  "naturalTherapiesPage": {
+    "title": "Natural Therapies & Daily Conditioning for Menstrual Wellness",
+    "description": "Discover gentle, natural approaches and lifestyle adjustments for long-term menstrual wellness and reducing pain.",
+    "introTitle": "Cultivating Long-Term Health",
+    "introText": "Beyond immediate relief, cultivating long-term menstrual wellness involves integrating natural therapies and mindful daily habits into your routine. This section explores holistic approaches that can help reduce the frequency and severity of period pain over time and support your overall well-being throughout your cycle.",
+    "holisticApproachesTitle": "Holistic Approaches for Long-Term Comfort",
+    "dietNutrition": "Diet & Nutrition",
+    "herbalRemedies": "Herbal Remedies & Supplements",
+    "movementExercise": "Movement & Exercise",
+    "mindBodyPractices": "Mind-Body Practices",
+    "traditionalPractices": "Traditional Practices",
+    "consistencyIsKeyTitle": "Consistency is Key",
+    "consistencyIsKeyText": "Integrating these natural approaches takes time and consistency. Be patient with yourself and focus on building sustainable habits that support your body throughout your entire cycle, not just during your period.",
+    "contentSectionTitle": "Relevant Therapies & Guides"
+  },
+  "culturalCharmsPage": {
+    "title": "Exploring Cultural Comfort: Charms and Traditional Healing Symbols",
+    "description": "Explore the historical and cultural significance of charms, symbols, and traditional practices used for comfort and spiritual support.",
+    "introTitle": "A Journey Through Cultural Traditions",
+    "introText": "Throughout history and across diverse cultures, people have turned to symbols, objects, and traditional practices for comfort, protection, and support during times of vulnerability, including during menstruation. These practices are deeply rooted in cultural belief systems and folklore.",
+    "understandingTitle": "Understanding Cultural Healing Traditions",
+    "understandingText": "Many cultures have traditions that involve using specific items or performing certain rituals believed to influence well-being, bring good fortune, or ward off negative energy. For some, this extends to seeking comfort or relief during challenging physical experiences like menstrual discomfort.",
+    "disclaimerTitle": "Cultural Support Disclaimer",
+    "disclaimerText": "The information presented here regarding cultural charms, traditional practices, and associated beliefs is for cultural and informational purposes only. These practices are rooted in tradition and belief systems and are not intended to be, and should not be interpreted as, a substitute for professional medical advice, diagnosis, or treatment.",
+    "mediaAreaTitle": "Cultural Symbols and Imagery",
+    "imagePlaceholder": "Image/Media Placeholder",
+    "promptSuggestionPrefix": "AI Prompt: ",
+    "introduction": "Throughout history and across diverse cultures, people have turned to symbols, objects, and traditional practices for comfort, protection, and support during times of vulnerability, including during menstruation. These practices are deeply rooted in cultural belief systems and folklore.",
+    "multimediaTitle": "Cultural Symbols and Imagery",
+    "contentSection1Description": "Explore various traditional symbols and objects used across cultures for comfort and spiritual support.",
+    "disclaimer": "The information presented here regarding cultural charms, traditional practices, and associated beliefs is for cultural and informational purposes only. These practices are rooted in tradition and belief systems and are not intended to be, and should not be interpreted as, a substitute for professional medical advice, diagnosis, or treatment.",
+    "backHome": "Back to Home"
+  },
+  "interactiveToolsPage": {
+    "title": "Interactive Tools for Menstrual Health Management",
+    "description": "Use our interactive tools to better understand your symptoms, track your pain patterns, and receive personalized recommendations.",
+    "symptomAssessment": {
+      "title": "Symptom Assessment Tool",
+      "description": "Answer a few questions about your symptoms to receive personalized recommendations for managing your menstrual pain.",
+      "startButton": "Start Assessment",
+      "questions": {
+        "painLocation": "Where do you feel pain during your period?",
+        "painIntensity": "How would you rate your pain intensity?",
+        "painDuration": "How long does your pain typically last?",
+        "accompaniedSymptoms": "Which symptoms accompany your menstrual pain?",
+        "reliefMethods": "Which methods have you tried for relief?"
+      },
+      "results": {
+        "title": "Your Personalized Recommendations",
+        "disclaimer": "These recommendations are based on your responses and are for informational purposes only. They are not a substitute for professional medical advice.",
+        "tryAgain": "Try Again",
+        "saveResults": "Save Results"
+      }
+    },
+    "painTracker": {
+      "title": "Pain Tracking System",
+      "description": "Record and monitor your menstrual pain patterns over time to identify triggers and effective relief methods.",
+      "startButton": "Start Tracking",
+      "addEntry": "Add New Entry",
+      "viewHistory": "View History",
+      "entryForm": {
+        "date": "Date",
+        "painLevel": "Pain Level",
+        "location": "Pain Location",
+        "symptoms": "Associated Symptoms",
+        "remedies": "Remedies Used",
+        "effectiveness": "Effectiveness",
+        "notes": "Notes",
+        "save": "Save Entry",
+        "cancel": "Cancel"
+      },
+      "insights": {
+        "title": "Your Pain Insights",
+        "description": "Based on your tracking history, here are some patterns we've noticed:",
+        "noData": "Not enough data yet. Continue tracking to see insights."
+      },
+      "assessment": {
+        "title": "Symptom Assessment Tool",
+        "subtitle": "Quickly identify pain types through professional questionnaires and receive precise personalized recommendations.",
+        "start": {
+          "title": "Before Starting",
+          "description": "Please ensure you're in a quiet, private environment where you can focus on answering the questions. This assessment will help you better understand your symptom patterns.",
+          "feature1": "Professional symptom analysis",
+          "feature2": "Personalized recommendations",
+          "feature3": "Scientific assessment methods",
+          "feature4": "Instant result feedback",
+          "startButton": "Start Assessment",
+          "disclaimer": "This assessment is for reference only and cannot replace professional medical diagnosis."
+        },
+        "progress": {
+          "questionOf": "Question {current} of {total}"
+        },
+        "navigation": {
+          "previous": "Previous",
+          "next": "Next",
+          "skip": "Skip",
+          "finish": "Complete Assessment"
+        },
+        "result": {
+          "title": "Assessment Results",
+          "yourScore": "Your Score",
+          "severity": "Severity",
+          "riskLevel": "Risk Level",
+          "summary": "Summary",
+          "recommendations": "Recommendations",
+          "timeframe": "Timeframe:",
+          "actionSteps": "Action Steps",
+          "retakeAssessment": "Retake Assessment",
+          "saveResults": "Save Results",
+          "nextSteps": {
+            "trackSymptoms": "Use pain tracker to record symptoms",
+            "tryRecommendations": "Try recommended relief methods",
+            "consultDoctor": "If symptoms persist or worsen, consult a doctor"
+          }
+        },
+        "severity": {
+          "mild": "Mild",
+          "moderate": "Moderate",
+          "severe": "Severe",
+          "emergency": "Emergency"
+        },
+        "priority": {
+          "high": "High Priority",
+          "medium": "Medium Priority",
+          "low": "Low Priority"
+        },
+        "messages": {
+          "assessmentComplete": "Assessment Complete",
+          "assessmentCompleteDesc": "Your symptom assessment is complete. Please review the results and recommendations.",
+          "assessmentFailed": "Assessment Failed",
+          "assessmentFailedDesc": "An error occurred during assessment. Please try again.",
+          "resultsSaved": "Results Saved",
+          "resultsSavedDesc": "Your assessment results have been saved to local storage."
+        },
+        "resultMessages": {
+          "emergency": "Your symptoms are quite severe, we recommend consulting a medical professional as soon as possible.",
+          "emergencySummary": "Assessment indicates you may need professional medical attention.",
+          "severe": "Your symptoms are quite severe, we recommend adopting comprehensive management strategies.",
+          "severeSummary": "Your symptoms require active management and possible medical intervention.",
+          "moderate": "You have moderate symptoms that can be managed through various methods.",
+          "moderateSummary": "Your symptoms are manageable with recommended relief strategies.",
+          "mild": "Your symptoms are relatively mild and can be well managed through simple self-care.",
+          "mildSummary": "Your symptoms are mild and can be improved through lifestyle adjustments."
+        },
+        "recommendations": {
+          "emergencyMedical": {
+            "title": "Seek Immediate Medical Care",
+            "description": "Your symptoms may require professional medical evaluation and treatment",
+            "timeframe": "Immediately",
+            "actionSteps": [
+              "Contact your gynecologist",
+              "If pain is severe, consider emergency care",
+              "Keep a detailed symptom diary"
+            ]
+          },
+          "painManagement": {
+            "title": "Pain Management Strategies",
+            "description": "Multiple methods can help relieve menstrual pain",
+            "timeframe": "Immediately available",
+            "actionSteps": [
+              "Use heating pads or hot water bottles",
+              "Try light exercise like walking",
+              "Consider over-the-counter pain relievers (follow instructions)"
+            ]
+          },
+          "lifestyleChanges": {
+            "title": "Lifestyle Adjustments",
+            "description": "Long-term lifestyle changes can significantly improve symptoms",
+            "timeframe": "2-3 months to see effects",
+            "actionSteps": [
+              "Maintain regular exercise habits",
+              "Ensure adequate sleep",
+              "Learn stress management techniques",
+              "Maintain a balanced diet"
+            ]
+          },
+          "selfcarePractices": {
+            "title": "Self-Care Practices",
+            "description": "Daily self-care can help you better manage symptoms",
+            "timeframe": "Ongoing",
+            "actionSteps": [
+              "Practice deep breathing and meditation",
+              "Use pain tracker to record symptoms",
+              "Build a support network",
+              "Learn relaxation techniques"
+            ]
+          }
+        }
+      }
+    },
+    "personalizedInsights": {
+      "title": "Personalized Insights (Future)",
+      "description": "Unlock deeper insights into your menstrual health patterns based on your tracked data and assessments. (Coming Soon)"
+    },
+    "constitutionTest": {
+      "title": "TCM Constitution Test",
+      "description": "Discover your TCM constitution type through 8 questions and get personalized acupoint, diet, and lifestyle recommendations",
+      "cta": "Start Test"
+    },
+    "periodPainAssessment": {
+      "title": "Period Pain Assessment Tool",
+      "description": "Answer a few simple questions to understand your period pain type and severity.",
+      "cta": "Quick Assessment"
+    },
+    "cycleTracker": {
+      "title": "Menstrual Cycle Tracker",
+      "description": "Intelligently record and predict your menstrual cycle to better understand your body's patterns.",
+      "cta": "Start Tracking"
+    },
+    "breathingExercise": {
+      "title": "4-7-8 Breathing Exercise",
+      "subtitle": "Natural pain relief through nervous system regulation",
+      "phases": {
+        "inhale": "Inhale",
+        "hold": "Hold",
+        "exhale": "Exhale"
+      },
+      "instructions": "How to practice:",
+      "startButton": "🫁 Start Guided Practice",
+      "stopButton": "Stop Practice",
+      "practiceAgain": "Practice Again",
+      "completed": "✅ One cycle completed!",
+      "currentPhase": "Current:",
+      "benefits": {
+        "title": "Scientific Benefits:",
+        "painPerception": "Pain Perception",
+        "muscleTension": "Muscle Tension",
+        "relaxation": "Relaxation"
+      },
+      "tip": "💡 Tip: Find a comfortable sitting or lying position, relax all muscles. Beginners should do 3-4 cycles.",
+      "timeUnit": "s",
+      "description": "Based on scientifically validated 4-7-8 breathing method, quickly relieve pain through nervous system regulation. No download required, start practicing immediately.",
+      "usageTips": {
+        "title": "Usage Tips:",
+        "bestTiming": {
+          "title": "Best Timing:",
+          "items": [
+            "When pain just starts",
+            "When feeling anxious",
+            "Before sleep for relaxation"
+          ]
+        },
+        "precautions": {
+          "title": "Precautions:",
+          "items": [
+            "Find comfortable sitting or lying position",
+            "Beginners: 3-4 cycles are enough",
+            "Stop if feeling dizzy"
+          ]
+        }
+      }
+    },
+    "embeddedPainAssessment": {
+      "title": "💡 Quick Pain Assessment",
+      "subtitle": "Understand your pain level in 1 minute and get initial recommendations",
+      "question": "How intense is your menstrual pain?",
+      "selectIntensityFirst": "Please select pain intensity first",
+      "options": {
+        "mild": "Mild (tolerable, doesn't affect daily activities)",
+        "moderate": "Moderate (affects some activities, but manageable)",
+        "severe": "Severe (completely affects daily activities, need rest)"
+      },
+      "buttons": {
+        "getAdvice": "Get Advice",
+        "detailedAssessment": "Detailed Assessment",
+        "testAgain": "Test Again",
+        "fullAssessment": "Full Assessment"
+      },
+      "resultTitle": "Assessment Result",
+      "results": {
+        "mild": "Your menstrual pain is mild. You can try natural relief methods like heat therapy and light exercise.",
+        "moderate": "Your menstrual pain is moderate. Consider combining multiple relief methods, and over-the-counter pain medication if needed.",
+        "severe": "Your menstrual pain is severe. We recommend consulting a doctor for professional assessment and treatment advice."
+      },
+      "disclaimer": "⚠️ This tool is for reference only and cannot replace professional medical advice"
+    },
+    "searchBox": {
+      "placeholder": "Search articles...",
+      "matchTypes": {
+        "title": "Title",
+        "summary": "Summary",
+        "tag": "Tag",
+        "content": "Content"
+      },
+      "noResults": "No articles found"
+    },
+    "painDifferentialDiagnosis": {
+      "title": "Pain Differential Diagnosis",
+      "description": "Advanced diagnostic tool to help differentiate between various types of menstrual pain and identify potential underlying causes.",
+      "startButton": "Start Diagnosis"
+    },
+    "toolsIntroduction": "Our interactive tools are designed to empower you with knowledge and personalized strategies for managing your menstrual health. By understanding your unique symptoms and patterns, you can make informed decisions and find more effective relief.",
+    "developmentNote": "We are continuously developing new tools and resources. Check back often for updates!"
+  },
+  "interactiveTools": {
+    "common": {
+      "loading": "Loading...",
+      "error": "An error occurred, please try again",
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "save": "Save",
+      "reset": "Reset",
+      "back": "Back",
+      "next": "Next",
+      "previous": "Previous",
+      "close": "Close",
+      "startNow": "Start Now",
+      "tryNow": "Try Now",
+      "learnMore": "Learn More"
+    },
+    "navigation": {
+      "backToTools": "Back to Tools",
+      "toolsTitle": "Interactive Tools",
+      "toolsDescription": "Professional menstrual health management tools to help you better understand and manage your health"
+    },
+    "categories": {
+      "assessment": "Assessment",
+      "tracking": "Tracking",
+      "constitutionAssessment": "Constitution Assessment",
+      "healthAssessment": "Health Assessment"
+    },
+    "difficulty": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard"
+    },
+    "estimatedTime": {
+      "5to10min": "5-10 minutes",
+      "2to3minDaily": "2-3 minutes daily",
+      "5to8min": "5-8 minutes",
+      "3to5min": "3-5 minutes"
+    },
+    "medicalDisclaimer": {
+      "title": "Medical Disclaimer",
+      "text": "This tool is for reference only and cannot replace professional medical advice, diagnosis, or treatment. Please consult healthcare professionals for any health concerns.",
+      "shortText": "⚠️ This tool is for reference only and cannot replace professional medical diagnosis. If you have concerns, please consult a doctor."
+    },
+    "constitutionTest": {
+      "title": "TCM Constitution Test",
+      "description": "Discover your TCM constitution type through 8 questions and get personalized acupoint, diet, and lifestyle recommendations",
+      "cta": "Start Test",
+      "subtitle": "Discover your TCM constitution type through professional questionnaire and get personalized health recommendations",
+      "features": {
+        "quick": {
+          "title": "Quick & Easy",
+          "description": "Only takes 5-8 minutes"
+        },
+        "professional": {
+          "title": "Professional",
+          "description": "Based on TCM theory"
+        },
+        "personalized": {
+          "title": "Personalized",
+          "description": "Tailored to your constitution"
+        },
+        "practical": {
+          "title": "Practical",
+          "description": "Acupoint, diet, lifestyle tips"
+        }
+      },
+      "instructions": {
+        "title": "Test Instructions",
+        "item1": "Answer based on your condition in the past 3 months",
+        "item2": "Choose the option that best describes you",
+        "item3": "If unsure, choose the relatively more suitable option",
+        "item4": "Results are for reference only, not medical diagnosis"
+      },
+      "navigation": {
+        "startTest": "Start Test",
+        "nextQuestion": "Next",
+        "previousQuestion": "Previous",
+        "completeTest": "Complete Test",
+        "retakeTest": "Retake Test",
+        "previous": "Previous",
+        "next": "Next"
+      },
+      "painScale": {
+        "title": "Pain Level: ",
+        "reference": "Pain Level Reference",
+        "levels": {
+          "none": "None",
+          "mild": "Mild",
+          "moderate": "Moderate",
+          "severe": "Severe",
+          "extreme": "Extreme"
+        },
+        "descriptions": {
+          "0-2": "No pain or slight discomfort",
+          "3-4": "Mild pain, tolerable",
+          "5-7": "Moderate pain, affects activities",
+          "8-10": "Severe pain, unbearable"
+        }
+      },
+      "progress": {
+        "questionOf": "Question {current} of {total}",
+        "complete": "Complete"
+      },
+      "result": {
+        "title": "Test Results",
+        "subtitle": "Your TCM Constitution Type Analysis",
+        "match": "Match",
+        "constitutionFeatures": "Constitution Features",
+        "commonSymptoms": "Common Symptoms",
+        "menstrualFeatures": "Menstrual Features"
+      },
+      "recommendations": {
+        "acupoints": {
+          "title": "Acupoint Therapy Recommendations",
+          "primaryAcupoints": "Primary Acupoints",
+          "location": "Location: ",
+          "function": "Function: ",
+          "method": "Method: ",
+          "guidelines": "Massage Guidelines",
+          "technique": "Technique: ",
+          "frequency": "Frequency: ",
+          "duration": "Duration: "
+        },
+        "dietary": {
+          "title": "Dietary Recommendations",
+          "beneficialFoods": "Beneficial Foods",
+          "foodsToAvoid": "Foods to Avoid",
+          "dietaryPrinciples": "Dietary Principles"
+        },
+        "lifestyle": {
+          "title": "Scenario-based Lifestyle Recommendations",
+          "description": "Based on your constitution type, here are personalized recommendations for different life scenarios",
+          "reminder": "Reminder: ",
+          "reminderText": "These recommendations require consistent practice to see results. It's recommended to combine with professional medical guidance."
+        },
+        "menstrualPain": {
+          "title": "Menstrual Pain Specific Recommendations",
+          "acupointTherapy": "Acupoint Therapy",
+          "lifestyleAdjustments": "Lifestyle Adjustments"
+        }
+      },
+      "messages": {
+        "testComplete": "Test Complete",
+        "testCompleteDesc": "Your personalized constitution analysis has been generated",
+        "testFailed": "Test Failed",
+        "testFailedDesc": "Unable to generate test results, please try again"
+      },
+      "emergencyKit": {
+        "title": "Personalized Emergency Kit Recommendations",
+        "description": "Based on your constitution characteristics, we recommend a personalized emergency kit item list. Be prepared for a more comfortable period.",
+        "priority": {
+          "high": "Essential",
+          "medium": "Recommended",
+          "low": "Optional"
+        },
+        "packingTips": "📦 Packing Tips:",
+        "packingAdvice": "Prioritize \"Essential\" items, choose \"Recommended\" and \"Optional\" items based on outing duration and scenarios. Consider preparing a dedicated small bag for easy access."
+      },
+      "articles": {
+        "title": "Recommended Health Articles",
+        "readMore": "Read More"
+      },
+      "communication": {
+        "title": "Communication Template Assistant",
+        "description": "Communication with people around you is important when experiencing menstrual discomfort. These templates can help you better express your needs and seek understanding.",
+        "styles": {
+          "intimate": "Intimate",
+          "casual": "Casual",
+          "formal": "Formal"
+        },
+        "copyText": "Copy Text",
+        "usageTips": "💡 Usage Tips:",
+        "usageAdvice": "These templates are for reference only. Please adjust them according to your actual situation and relationship intimacy. Sincere communication is key to building understanding."
+      }
+    },
+    "painTracker": {
+      "title": "Pain Tracker",
+      "description": "Track pain patterns, analyze trends, and optimize treatment effectiveness.",
+      "cta": "Start Tracking"
+    },
+    "breathingExercise": {
+      "title": "Instant Breathing Exercise Tool",
+      "description": "Based on scientifically validated 4-7-8 breathing technique to quickly relieve pain by regulating the nervous system. No download required, start practicing immediately.",
+      "usageTips": {
+        "title": "Usage Tips:",
+        "bestTiming": {
+          "title": "Best Timing:",
+          "items": [
+            "When pain just starts",
+            "When feeling anxious",
+            "Before sleep for relaxation"
+          ]
+        },
+        "precautions": {
+          "title": "Precautions:",
+          "items": [
+            "Find comfortable sitting or lying position",
+            "Beginners: 3-4 cycles are enough",
+            "Stop if feeling dizzy"
+          ]
+        }
+      }
+    },
+    "title": "Interactive Tools"
+  },
+  "scenarioSolutionsPage": {
+    "title": "Scenario-Based Solutions",
+    "description": "Professional menstrual pain management strategies tailored for different life situations, helping you stay confident in any environment.",
+    "introTitle": "Complete Life Scenario Coverage",
+    "introText": "Every woman's life is multifaceted, from workplace to home, from exercise to social activities. Different scenarios require different coping strategies. We've carefully prepared comprehensive scenario-based solutions to help you handle menstrual discomfort gracefully, wherever you are.",
+    "scenarios": {
+      "office": {
+        "title": "Office/Workplace Scenarios",
+        "description": "Discreet relief solutions for professional environments",
+        "features": [
+          "Meeting Emergency Kit",
+          "Office Chair Stretches",
+          "Workplace Nutrition"
+        ]
+      },
+      "commute": {
+        "title": "Commuting Scenarios",
+        "description": "Strategies for sudden pain while traveling",
+        "features": [
+          "Public Transport Solutions",
+          "Driving Adjustments",
+          "Emergency Response Plans"
+        ]
+      },
+      "exercise": {
+        "title": "Exercise/Outdoor Scenarios",
+        "description": "Safety guidelines for physical activities",
+        "features": [
+          "Period Hiking Guide",
+          "Pool Hygiene Management",
+          "Yoga Pose Library"
+        ]
+      },
+      "sleep": {
+        "title": "Sleep Scenarios",
+        "description": "Soothing solutions for nighttime pain",
+        "features": [
+          "Sleep Audio",
+          "Scientific Sleep Positions",
+          "Bedtime Nutrition"
+        ]
+      },
+      "social": {
+        "title": "Social Scenarios",
+        "description": "Graceful management during social activities",
+        "features": [
+          "Date Emergency Strategies",
+          "Party Food Choices",
+          "Pain Concealment Techniques"
+        ]
+      },
+      "lifeStages": {
+        "title": "Special Life Stages",
+        "description": "Specialized solutions for different age groups",
+        "features": [
+          "Adolescence Programs",
+          "Pre-pregnancy Programs",
+          "Perimenopause Programs"
+        ]
+      }
+    }
+  },
+  "header": {
+    "home": "Home",
+    "interactiveSolutions": "Interactive Solutions",
+    "articlesDownloads": "Articles & Downloads",
+    "scenarioSolutions": "Scenario Solutions",
+    "frameworkDemo": "🚀 Framework Demo",
+    "naturalCare": "Natural Care",
+    "healthGuide": "Health Guide"
+  },
+  "footer": {
+    "copyright": "© {currentYear, number, integer} periodhub.health. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact_email": "tiyibaofu@outlook.com",
+    "disclaimer": "This content is for informational purposes only and should not replace professional medical advice.",
+    "linksTitle": "Links",
+    "contactTitle": "Contact",
+    "medicalDisclaimer": "Medical Disclaimer",
+    "articles": "Articles",
+    "naturalTherapies": "Natural Therapies",
+    "medicalDisclaimerFull": "Medical Disclaimer: The content on this website is for informational and educational purposes only and is not intended to be a substitute for professional medical advice, diagnosis, or treatment. We are not healthcare professionals. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. In case of emergency, seek immediate medical attention. Use of this website does not establish a doctor-patient relationship."
+  },
+  "navigationTabs": {
+    "articles": "📚 Articles",
+    "pdfDownloads": "📥 PDF Downloads"
+  },
+  "userSuccessStories": {
+    "title": "User Success Stories",
+    "statistic": "Over 10,000+ women have found their own solutions here",
+    "ctaButton": "Join them and start your healing journey",
+    "stories": {
+      "story1": {
+        "name": "Lisa Li",
+        "role": "IT Professional, 25",
+        "initial": "L",
+        "testimonial": "\"Through personalized assessment, I discovered I have prostaglandin-excess type dysmenorrhea. Following the platform's dietary and exercise recommendations, my pain intensity dropped from 8 to 3 points in 3 months, and my work efficiency improved significantly!\""
+      },
+      "story2": {
+        "name": "Tina Zhang",
+        "role": "University Student, 20",
+        "initial": "T",
+        "testimonial": "\"The teen section content is so helpful! I learned heat therapy, yoga, and breathing techniques. Now I'm not afraid of getting my period during exams. I even helped my roommates improve, and our relationships got better!\""
+      },
+      "story3": {
+        "name": "Wendy Wang",
+        "role": "Working Mother, 32",
+        "initial": "W",
+        "testimonial": "\"The pain diary feature helped me discover the connection between menstrual pain and stress. Combined with doctor's treatment and platform recommendations, I've basically said goodbye to monthly suffering, and my quality of life has improved significantly.\""
+      }
+    }
+  },
+  "toolsCollectionButton": {
+    "buttonText": "Access Complete Tools Collection"
+  },
+  "healthStatistics": {
+    "title": "Menstrual Health Statistics",
+    "subtitle": "Authoritative data based on global women's health surveys to help you understand the real state of menstrual health",
+    "chartTitle": "月经健康统计数据",
+    "chartSubtitle": "Period Health Statistics",
+    "stats": {
+      "experiencePain": {
+        "label": "Experience Period Pain",
+        "sublabel": "女性经历痛经",
+        "source": "Global Statistics"
+      },
+      "affectsWork": {
+        "label": "Affects Work/Study",
+        "sublabel": "影响工作学习",
+        "source": "Productivity Impact"
+      },
+      "seekHelp": {
+        "label": "Seek Medical Help",
+        "sublabel": "寻求医疗帮助",
+        "source": "Medical Statistics"
+      },
+      "usePainkillers": {
+        "label": "Use Painkillers",
+        "sublabel": "使用止痛药",
+        "source": "Relief Methods"
+      },
+      "avgDuration": {
+        "label": "Average Pain Duration",
+        "sublabel": "平均疼痛持续时间",
+        "unit": "Days 天",
+        "source": "Global Statistics"
+      },
+      "avgPainLevel": {
+        "label": "Average Pain Level",
+        "sublabel": "平均疼痛程度",
+        "source": "Global Statistics"
+      },
+      "primaryAge": {
+        "label": "Primary Age Range",
+        "sublabel": "主要影响年龄段",
+        "unit": "Years 岁",
+        "source": "Global Statistics"
+      }
+    },
+    "dataSource": "数据来源：全球女性健康调查 | Data Source: Global Women's Health Survey"
+  },
+  "searchBox": {
+    "placeholder": "Search articles...",
+    "noResults": "No articles found",
+    "matchTypes": {
+      "title": "Title",
+      "summary": "Summary",
+      "tag": "Tag",
+      "content": "Content"
+    }
+  },
+  "downloadButton": {
+    "viewDocument": "View Document"
+  },
+  "breathingExercise": {
+    "title": "4-7-8 Breathing Exercise",
+    "description": "Based on scientifically validated 4-7-8 breathing method, quickly relieve pain through nervous system regulation. No download required, start practicing immediately.",
+    "usageTips": {
+      "title": "Usage Tips:",
+      "bestTiming": {
+        "title": "Best Timing:",
+        "items": [
+          "When pain just starts",
+          "When feeling anxious",
+          "Before sleep for relaxation"
+        ]
+      },
+      "precautions": {
+        "title": "Precautions:",
+        "items": [
+          "Find comfortable sitting or lying position",
+          "Beginners: 3-4 cycles are enough",
+          "Stop if feeling dizzy"
+        ]
+      }
+    },
+    "subtitle": "Natural pain relief through nervous system regulation",
+    "phases": {
+      "inhale": "Inhale",
+      "hold": "Hold",
+      "exhale": "Exhale"
+    },
+    "instructions": "How to practice:",
+    "startButton": "🫁 Start Guided Practice",
+    "stopButton": "Stop Practice",
+    "practiceAgain": "Practice Again",
+    "completed": "✅ One cycle completed!",
+    "currentPhase": "Current:",
+    "benefits": {
+      "title": "Scientific Benefits:",
+      "painPerception": "Pain Perception",
+      "muscleTension": "Muscle Tension",
+      "relaxation": "Relaxation"
+    },
+    "tip": "💡 Tip: Find a comfortable sitting or lying position, relax all muscles. Beginners should do 3-4 cycles.",
+    "timeUnit": "s"
+  },
+  "tools": {
+    "title": "Interactive Tools",
+    "subtitle": "Intelligent health assessment tools providing personalized health management solutions",
+    "startTool": "Start Using",
+    "comingSoon": "Coming Soon",
+    "features": "Features",
+    "painAssessment": {
+      "title": "Pain Assessment Tool",
+      "description": "Scientifically assess your menstrual pain level and provide targeted recommendations",
+      "feature1": "Professional symptom analysis",
+      "feature2": "Personalized recommendations",
+      "feature3": "Scientific assessment methods"
+    },
+    "cycleTracker": {
+      "title": "Cycle Tracker",
+      "description": "Intelligently record and predict your menstrual cycle",
+      "feature1": "Smart cycle prediction",
+      "feature2": "Symptom tracking",
+      "feature3": "Data analysis",
+      "tabs": {
+        "record": "[EN] 记录",
+        "history": "[EN] 历史",
+        "prediction": "[EN] 预测"
+      },
+      "record": {
+        "startTitle": "[EN] 开始记录新周期",
+        "startDescription": "[EN] 记录您的月经周期，获得智能预测和健康建议",
+        "startButton": "[EN] 开始记录新周期",
+        "recordingTitle": "[EN] 记录当前周期",
+        "startDate": "[EN] 开始日期",
+        "startDateHint": "[EN] 选择月经开始的日期",
+        "flowTitle": "[EN] 经血量",
+        "flowOptions": {
+          "light": "[EN] 少量",
+          "medium": "[EN] 中等",
+          "heavy": "[EN] 大量"
+        },
+        "symptomsTitle": "[EN] 症状记录",
+        "symptoms": {
+          "abdominalPain": "[EN] 腹痛",
+          "backPain": "[EN] 腰痛",
+          "headache": "[EN] 头痛",
+          "breastTenderness": "[EN] 乳房胀痛",
+          "moodSwings": "[EN] 情绪波动",
+          "fatigue": "[EN] 疲劳",
+          "nausea": "[EN] 恶心",
+          "bloating": "[EN] 腹胀",
+          "insomnia": "[EN] 失眠",
+          "appetiteChanges": "[EN] 食欲变化",
+          "skinChanges": "[EN] 皮肤变化",
+          "other": "[EN] 其他"
+        },
+        "endDate": "[EN] 结束日期",
+        "endDateHint": "[EN] 选择月经结束的日期（可选）",
+        "notesTitle": "[EN] 备注",
+        "notesPlaceholder": "[EN] 记录任何额外信息...",
+        "endCycleButton": "[EN] 结束当前周期",
+        "cancelButton": "[EN] 取消"
+      },
+      "history": {
+        "title": "[EN] 历史记录",
+        "noRecords": "[EN] 暂无记录，开始记录您的第一个周期吧！",
+        "ongoing": "[EN] 进行中",
+        "flow": "[EN] 经血量",
+        "symptoms": "[EN] 症状",
+        "notes": "[EN] 备注",
+        "days": "[EN] 天"
+      },
+      "prediction": {
+        "title": "[EN] 智能预测",
+        "noData": "[EN] 需要至少2个完整周期才能进行预测",
+        "nextPeriod": "[EN] 下次月经",
+        "ovulation": "[EN] 排卵期",
+        "daysLeft": "[EN] 还有 {days} 天",
+        "today": "[EN] 今天",
+        "daysPast": "[EN] 已过 {days} 天",
+        "statistics": "[EN] 周期统计",
+        "avgCycleLength": "[EN] 平均周期长度",
+        "accuracy": "[EN] 预测准确度",
+        "recordedCycles": "[EN] 记录周期数",
+        "recommendations": "[EN] 健康建议",
+        "shortCycle": "[EN] 您的周期较短，建议咨询医生",
+        "longCycle": "[EN] 您的周期较长，建议咨询医生",
+        "irregularCycle": "[EN] 周期不规律，建议继续记录以提高预测准确度",
+        "ovulationTip": "[EN] 排卵期前后是受孕的最佳时机",
+        "lifestyleTip": "[EN] 保持规律作息和健康饮食有助于周期稳定"
+      }
+    },
+    "symptomChecker": {
+      "title": "Symptom Checker",
+      "description": "Quickly identify menstrual-related symptoms and get professional advice",
+      "feature1": "Quick symptom identification",
+      "feature2": "Professional advice",
+      "feature3": "Health guidance"
+    },
+    "wellnessPlan": {
+      "title": "Wellness Plan Creation",
+      "description": "Create personalized health management plans based on your specific situation",
+      "feature1": "Personalized plans",
+      "feature2": "Health tracking",
+      "feature3": "Goal management"
+    },
+    "info": {
+      "title": "Why Choose Our Tools?",
+      "description": "Based on the latest medical research and AI technology, providing the most professional health management experience",
+      "privacy": "Privacy Protection",
+      "privacyDesc": "All data stored locally, never leaked",
+      "instant": "Instant Feedback",
+      "instantDesc": "Real-time analysis, immediate results",
+      "personalized": "Personalized",
+      "personalizedDesc": "Tailored to your specific situation"
+    },
+    "periodPainAssessment": {
+      "title": "Period Pain Assessment Tool",
+      "subtitle": "Answer a few simple questions to understand your period pain type and severity.",
+      "validationMessage": "Please select pain intensity and onset time first",
+      "disclaimer": "This tool is for reference only and cannot replace professional medical diagnosis. If you have concerns, please consult a doctor.",
+      "questions": {
+        "intensity": {
+          "title": "How intense is your period pain?",
+          "options": {
+            "mild": "Mild (tolerable, doesn't affect daily activities)",
+            "moderate": "Moderate (affects some activities, but manageable)",
+            "severe": "Severe (completely affects daily activities, requires rest)"
+          }
+        },
+        "onset": {
+          "title": "When did your period pain start?",
+          "options": {
+            "recent": "Soon after first period (within 1-2 years)",
+            "later": "Started later (years after first period)"
+          }
+        },
+        "symptoms": {
+          "title": "Do you have any of the following symptoms? (Multiple choice)",
+          "options": {
+            "fever": "Fever (body temperature above 38°C)",
+            "vomiting": "Severe vomiting",
+            "dizziness": "Fainting or severe dizziness",
+            "bleeding": "Abnormal bleeding (heavy or clots)",
+            "nonMenstrual": "Pelvic pain even when not menstruating"
+          }
+        }
+      },
+      "actions": {
+        "assess": "Assess Whether Medical Consultation is Needed",
+        "reset": "Reset Assessment",
+        "moreInfo": "View More Teen Health Guidance"
+      },
+      "results": {
+        "title": "Assessment Results",
+        "consultAdvice": "We recommend that you consult a doctor or gynecologist as soon as possible for professional medical advice and treatment plans.",
+        "severe_symptoms": "Based on the symptoms you selected (such as fever, severe vomiting, fainting, or abnormal bleeding), we recommend that you consult a doctor as soon as possible, as these may be warning signs that require medical evaluation.",
+        "severe_late": "Severe period pain that starts later after menarche may indicate a risk of secondary dysmenorrhea. We recommend consulting a doctor to rule out potential gynecological issues.",
+        "severe_early": "Your period pain severity is quite high. While it may be primary dysmenorrhea, severe pain that affects daily life warrants medical evaluation for effective pain management strategies.",
+        "moderate_late": "Moderate period pain that starts later after menarche suggests consulting a doctor to rule out the possibility of secondary dysmenorrhea.",
+        "normal": "Based on the information you provided, your period pain situation falls within the common range and may be primary dysmenorrhea. We recommend trying natural relief methods such as heat therapy, light exercise, and healthy dietary habits. If symptoms worsen or become abnormal, please consult a doctor promptly."
+      }
+    }
+  },
+  "healthGuidePage": {
+    "title": "Comprehensive Menstrual Health Guide",
+    "description": "Your complete menstrual health resource, from basics to advanced management strategies, helping you understand and manage your menstrual health comprehensively."
+  },
+  "teenHealth": {
+    "meta": {
+      "title": "Teen Health Guide",
+      "description": "Educational resources designed for teenagers about menstrual health, providing scientific and practical period management knowledge"
+    }
+  },
+  "toolPage": {
+    "backToTools": "Back to Tools",
+    "toolNotFound": "Tool Not Found",
+    "toolNotFoundDesc": "Sorry, we could not find the tool you are looking for.",
+    "medicalDisclaimer": "Medical Disclaimer",
+    "medicalDisclaimerText": "This tool is for reference only and cannot replace professional medical advice, diagnosis, or treatment. Please consult healthcare professionals for any health concerns.",
+    "categories": {
+      "assessment": "Assessment",
+      "tracking": "Tracking",
+      "constitutionAssessment": "Constitution Assessment",
+      "healthAssessment": "Health Assessment"
+    },
+    "difficulty": {
+      "easy": "Easy"
+    },
+    "estimatedTime": {
+      "5to10min": "5-10 minutes",
+      "2to3minDaily": "2-3 minutes daily",
+      "5to8min": "5-8 minutes",
+      "3to5min": "3-5 minutes"
+    }
+  },
+  "downloads": {
+    "common": {
+      "download": "View Document",
+      "document": "Document",
+      "pages": "pages"
+    }
+  },
+  "painTracker": {
+    "title": "Pain Tracker",
+    "subtitle": "Record and track your menstrual pain to understand patterns and find the most effective relief methods",
+    "description": "Help manage your menstrual health by keeping detailed pain records",
+    "navigation": {
+      "overview": "Overview",
+      "addEntry": "Add Entry",
+      "viewEntries": "View Entries",
+      "statistics": "Statistics",
+      "export": "Export Data"
+    },
+    "form": {
+      "title": "Pain Record",
+      "editTitle": "Edit Pain Record",
+      "date": "Date",
+      "painLevel": "Pain Level",
+      "duration": "Duration",
+      "location": "Pain Location",
+      "menstrualStatus": "Menstrual Status",
+      "symptoms": "Symptoms",
+      "remedies": "Remedies Used",
+      "effectiveness": "Effectiveness Rating",
+      "notes": "Notes",
+      "optional": "optional",
+      "minutes": "minutes",
+      "save": "Save Record",
+      "cancel": "Cancel",
+      "saving": "Saving...",
+      "edit": "Edit Record",
+      "update": "Update Record",
+      "updating": "Updating...",
+      "notesPlaceholder": "Record any additional information such as triggers, mood, etc..."
+    },
+    "entries": {
+      "title": "Pain Records",
+      "noEntries": "No pain records yet",
+      "noEntriesDescription": "Start recording your pain information to better understand pain patterns",
+      "addFirst": "Add First Record",
+      "totalEntries": "Total Records",
+      "lastEntry": "Last Entry",
+      "edit": "Edit",
+      "delete": "Delete",
+      "confirmDelete": "Confirm Delete",
+      "deleteMessage": "Are you sure you want to delete this record? This action cannot be undone.",
+      "deleteSuccess": "Record deleted successfully",
+      "deleteError": "Failed to delete record, please try again",
+      "painIntensity": "Pain Intensity",
+      "duration": "Duration",
+      "minutes": "minutes"
+    },
+    "statistics": {
+      "title": "Statistics",
+      "overview": "Overview",
+      "trends": "Trend Analysis",
+      "patterns": "Pain Patterns",
+      "remedies": "Remedy Effectiveness",
+      "totalEntries": "Total Records",
+      "averagePain": "Average Pain Level",
+      "maxPain": "Maximum Pain Level",
+      "minPain": "Minimum Pain Level",
+      "trendDirection": "Pain Trend",
+      "improving": "Improving",
+      "worsening": "Worsening",
+      "stable": "Stable",
+      "mostCommonSymptoms": "Most Common Symptoms",
+      "mostEffectiveRemedies": "Most Effective Remedies",
+      "painFrequency": "Pain Level Distribution",
+      "noData": "No data available",
+      "noDataDescription": "Add more records to view statistical analysis",
+      "painLevelChart": "Pain Level Trends",
+      "cyclePatterns": "Menstrual Cycle Pain Patterns",
+      "remedyEffectiveness": "Remedy Effectiveness",
+      "inDevelopment": "Statistics feature is under development..."
+    },
+    "export": {
+      "title": "Export Data",
+      "description": "Export your pain records as files for backup or sharing with healthcare providers",
+      "format": "Export Format",
+      "json": "JSON Format",
+      "csv": "CSV Format",
+      "pdf": "PDF Report",
+      "dateRange": "Date Range",
+      "allData": "All Data",
+      "lastMonth": "Last Month",
+      "lastThreeMonths": "Last 3 Months",
+      "lastSixMonths": "Last 6 Months",
+      "customRange": "Custom Range",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "includeCharts": "Include Charts",
+      "includeStatistics": "Include Statistics",
+      "export": "Export",
+      "exporting": "Exporting...",
+      "exportSuccess": "Export successful",
+      "exportError": "Export failed, please try again",
+      "inDevelopment": "Export feature is under development..."
+    },
+    "insights": {
+      "title": "Health Insights",
+      "painPatterns": "Pain Pattern Analysis",
+      "recommendations": "Personalized Recommendations",
+      "trends": "Trend Analysis",
+      "alerts": "Health Alerts",
+      "noInsights": "No insights available",
+      "noInsightsDescription": "Record more data to get personalized health insights"
+    },
+    "settings": {
+      "title": "Settings",
+      "notifications": "Notification Settings",
+      "reminders": "Recording Reminders",
+      "privacy": "Privacy Settings",
+      "dataManagement": "Data Management",
+      "clearAllData": "Clear All Data",
+      "clearDataWarning": "This action will permanently delete all pain records and cannot be undone",
+      "clearDataConfirm": "Confirm Clear",
+      "clearDataSuccess": "Data cleared successfully",
+      "clearDataError": "Failed to clear data, please try again"
+    },
+    "messages": {
+      "saveSuccess": "Record saved successfully",
+      "saveError": "Failed to save record, please try again",
+      "updateSuccess": "Record updated successfully",
+      "updateError": "Failed to update record, please try again",
+      "deleteSuccess": "Record deleted successfully",
+      "deleteError": "Failed to delete record, please try again",
+      "confirmDelete": "Are you sure you want to delete this record? This action cannot be undone.",
+      "loadError": "Failed to load data, please refresh the page",
+      "networkError": "Network error, please check your connection",
+      "validationError": "Please check your input",
+      "duplicateDate": "A record for this date already exists, please choose another date or edit the existing record",
+      "assessmentComplete": "Assessment Complete",
+      "assessmentCompleteDesc": "Your personalized recommendations have been generated",
+      "assessmentFailed": "Assessment Failed",
+      "assessmentFailedDesc": "Unable to generate assessment results, please try again",
+      "resultsSaved": "Results Saved",
+      "resultsSavedDesc": "You can view your assessment results anytime",
+      "close": "Close"
+    },
+    "help": {
+      "title": "Help",
+      "gettingStarted": "Getting Started",
+      "recordingPain": "Recording Pain",
+      "viewingData": "Viewing Data",
+      "exportingData": "Exporting Data",
+      "tips": "Tips",
+      "faq": "FAQ"
+    },
+    "assessment": {
+      "title": "Symptom Assessment Tool",
+      "subtitle": "Quickly identify pain types through professional questionnaires and receive precise personalized recommendations.",
+      "start": {
+        "title": "Before Starting",
+        "description": "Please ensure you're in a quiet, private environment where you can focus on answering the questions. This assessment will help you better understand your symptom patterns.",
+        "feature1": "Professional symptom analysis",
+        "feature2": "Personalized recommendations",
+        "feature3": "Scientific assessment methods",
+        "feature4": "Instant result feedback",
+        "startButton": "Start Assessment",
+        "disclaimer": "This assessment is for reference only and cannot replace professional medical diagnosis."
+      },
+      "progress": {
+        "questionOf": "Question {current} of {total}"
+      },
+      "navigation": {
+        "previous": "Previous",
+        "next": "Next",
+        "skip": "Skip",
+        "finish": "Complete Assessment"
+      },
+      "result": {
+        "title": "Assessment Results",
+        "yourScore": "Your Score",
+        "severity": "Severity",
+        "riskLevel": "Risk Level",
+        "summary": "Summary",
+        "recommendations": "Recommendations",
+        "timeframe": "Timeframe:",
+        "actionSteps": "Action Steps",
+        "retakeAssessment": "Retake Assessment",
+        "saveResults": "Save Results",
+        "nextSteps": {
+          "trackSymptoms": "Use pain tracker to record symptoms",
+          "tryRecommendations": "Try recommended relief methods",
+          "consultDoctor": "If symptoms persist or worsen, consult a doctor"
+        }
+      },
+      "severity": {
+        "mild": "Mild",
+        "moderate": "Moderate",
+        "severe": "Severe",
+        "emergency": "Emergency"
+      },
+      "priority": {
+        "high": "High Priority",
+        "medium": "Medium Priority",
+        "low": "Low Priority"
+      },
+      "messages": {
+        "assessmentComplete": "Assessment Complete",
+        "assessmentCompleteDesc": "Your symptom assessment is complete. Please review the results and recommendations.",
+        "assessmentFailed": "Assessment Failed",
+        "assessmentFailedDesc": "An error occurred during assessment. Please try again.",
+        "resultsSaved": "Results Saved",
+        "resultsSavedDesc": "Your assessment results have been saved to local storage."
+      },
+      "resultMessages": {
+        "emergency": "Your symptoms are quite severe. We recommend consulting a healthcare professional as soon as possible.",
+        "emergencySummary": "Assessment indicates you may need professional medical attention.",
+        "severe": "Your symptoms are quite serious. We recommend adopting comprehensive management strategies.",
+        "severeSummary": "Your symptoms require active management and possible medical intervention.",
+        "moderate": "You have moderate symptoms that can be managed through various methods.",
+        "moderateSummary": "Your symptoms are manageable with recommended relief strategies.",
+        "mild": "Your symptoms are relatively mild and can be well managed through simple self-care.",
+        "mildSummary": "Your symptoms are mild and can be improved through lifestyle adjustments."
+      },
+      "recommendations": {
+        "emergencyMedical": {
+          "title": "Seek Immediate Medical Care",
+          "description": "Your symptoms may require professional medical evaluation and treatment",
+          "timeframe": "Immediately",
+          "actionSteps": [
+            "Contact your gynecologist",
+            "If pain is severe, consider emergency care",
+            "Keep a detailed symptom diary"
+          ]
+        },
+        "painManagement": {
+          "title": "Pain Management Strategies",
+          "description": "Multiple methods can help relieve menstrual pain",
+          "timeframe": "Immediately available",
+          "actionSteps": [
+            "Use heating pads or hot water bottles",
+            "Try light exercise like walking",
+            "Consider over-the-counter pain relievers (follow instructions)"
+          ]
+        },
+        "lifestyleChanges": {
+          "title": "Lifestyle Adjustments",
+          "description": "Long-term lifestyle changes can significantly improve symptoms",
+          "timeframe": "2-3 months to see effects",
+          "actionSteps": [
+            "Maintain regular exercise habits",
+            "Ensure adequate sleep",
+            "Learn stress management techniques",
+            "Maintain a balanced diet"
+          ]
+        },
+        "selfcarePractices": {
+          "title": "Self-Care Practices",
+          "description": "Daily self-care can help you better manage symptoms",
+          "timeframe": "Ongoing",
+          "actionSteps": [
+            "Practice deep breathing and meditation",
+            "Use pain tracker to record symptoms",
+            "Build a support network",
+            "Learn relaxation techniques"
+          ]
+        }
+      }
+    }
+  },
+  "homePageContent": {
+    "searchPlaceholder": "🔍 Quick search for pain relief solutions...",
+    "searchTips": "💡 Try searching \"5-minute relief\", \"heat therapy\", \"prostaglandins\"",
+    "statistics": {
+      "title": "Data-Driven Results",
+      "description": "Statistics based on real user feedback and scientific research",
+      "improvement": "Users Report Improvement",
+      "users": "100K+",
+      "totalUsers": "Total Users",
+      "support": "Online Support",
+      "articles": "Expert Articles"
+    },
+    "healthGuide": {
+      "title": "Health Guide",
+      "description": "Comprehensive menstrual health knowledge system, from basic understanding to advanced management strategies."
+    },
+    "smartTools": {
+      "title": "Smart Health Tools",
+      "description": "Professional assessment and tracking tools to help you better understand and manage your menstrual health"
+    },
+    "medicalDisclaimer": "Medical Disclaimer"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help you on your menstrual health journey. Reach out to us anytime.",
+    "form": {
+      "title": "Send us a message",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "subject": "Subject",
+      "selectSubject": "Select a subject",
+      "subjects": {
+        "general": "General Inquiry",
+        "medical": "Medical Question",
+        "technical": "Technical Support",
+        "feedback": "Feedback"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help you...",
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been sent successfully."
+    },
+    "methods": {
+      "title": "Other ways to reach us",
+      "email": {
+        "title": "Email Support",
+        "description": "Get detailed answers to your questions",
+        "action": "Send Email"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Immediate assistance when you need it",
+        "value": "Always available",
+        "action": "Get Help"
+      },
+      "social": {
+        "title": "Social Media",
+        "description": "Follow us for health tips and updates",
+        "value": "Connect with us",
+        "action": "Follow Us"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Find quick answers to common questions",
+      "button": "View FAQ"
+    },
+    "response": {
+      "title": "Response Times",
+      "urgent": "Urgent Matters",
+      "urgentTime": "Within 2 hours",
+      "general": "General Inquiries",
+      "generalTime": "Within 24 hours",
+      "support": "Support Requests",
+      "supportTime": "Within 12 hours"
+    }
+  },
+  "articles": {
+    "insuranceGuide": {
+      "formula": {
+        "title": "Healthcare Insurance Cost Calculation Formula",
+        "mainFormula": "Out-of-pocket cost = Deductible + (Total cost - Deductible) × Coinsurance rate",
+        "ariaLabel": "Healthcare insurance out-of-pocket cost calculation formula, including deductible and coinsurance rate calculation",
+        "variables": {
+          "symbols": {
+            "outOfPocket": "Out-of-pocket cost",
+            "deductible": "Deductible",
+            "totalCost": "Total cost",
+            "coinsuranceRate": "Coinsurance rate"
+          },
+          "descriptions": {
+            "outOfPocket": "The total amount you will ultimately pay",
+            "deductible": "The fixed amount you pay before insurance starts covering costs",
+            "totalCost": "The total cost of medical services",
+            "coinsuranceRate": "The percentage of costs you pay after meeting your deductible"
+          }
+        },
+        "calculator": {
+          "title": "Out-of-Pocket Cost Calculator",
+          "subtitle": "Enter your insurance information to calculate expected out-of-pocket costs",
+          "inputs": {
+            "deductibleLabel": "Deductible",
+            "deductiblePlaceholder": "Enter deductible amount",
+            "totalCostLabel": "Total Cost",
+            "totalCostPlaceholder": "Enter total medical service cost",
+            "coinsuranceLabel": "Coinsurance Rate (%)",
+            "coinsurancePlaceholder": "Enter coinsurance percentage"
+          },
+          "result": {
+            "title": "Your Expected Out-of-Pocket Cost",
+            "amount": "${amount}",
+            "breakdown": "Cost Breakdown",
+            "deductiblePortion": "Deductible portion: ${amount}",
+            "coinsurancePortion": "Coinsurance portion: ${amount}",
+            "totalAmount": "Total out-of-pocket cost: ${amount}"
+          },
+          "validation": {
+            "deductibleRequired": "Please enter deductible amount",
+            "totalCostRequired": "Please enter total cost",
+            "coinsuranceRequired": "Please enter coinsurance rate",
+            "positiveNumberRequired": "Please enter a positive number",
+            "validPercentageRequired": "Please enter a percentage between 0-100"
+          }
+        },
+        "steps": {
+          "title": "Cost Calculation Steps",
+          "subtitle": "Understand how your out-of-pocket cost is calculated",
+          "step1": {
+            "number": "1",
+            "title": "Determine Deductible",
+            "description": "The fixed amount you pay first",
+            "example": "Example: $1,000"
+          },
+          "step2": {
+            "number": "2",
+            "title": "Calculate Excess Amount",
+            "description": "Total cost minus deductible",
+            "formula": "Excess amount = Total cost - Deductible",
+            "example": "$5,000 - $1,000 = $4,000"
+          },
+          "step3": {
+            "number": "3",
+            "title": "Apply Coinsurance Rate",
+            "description": "Excess amount multiplied by your share percentage",
+            "formula": "Coinsurance cost = Excess amount × Coinsurance rate",
+            "example": "$4,000 × 20% = $800"
+          },
+          "finalResult": {
+            "title": "Calculate Final Result",
+            "description": "Deductible + Coinsurance portion",
+            "formula": "Total out-of-pocket cost = Deductible + Coinsurance cost",
+            "example": "$1,000 + $800 = $1,800",
+            "conclusion": "This is the total amount you need to pay"
+          }
+        }
+      }
+    }
+  },
+  "home": {
+    "trusted": {
+      "title": "Trusted Professional Platform",
+      "subtitle": "Based on scientific research, trusted by users",
+      "metrics": {
+        "activeUsers": "Active Users",
+        "articles": "Expert Articles",
+        "resources": "PDF Resources",
+        "satisfaction": "User Satisfaction"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Professional answers about period pain relief and menstrual health",
+      "q1": "What are the fastest ways to relieve menstrual cramps?",
+      "a1": "The fastest menstrual cramp relief methods include: 1) Heat therapy on lower abdomen and back; 2) Gentle abdominal massage; 3) Light exercise like yoga; 4) NSAIDs like ibuprofen; 5) Adequate rest. Combining multiple methods works best.",
+      "q2": "What is considered a normal menstrual cycle?",
+      "a2": "A normal menstrual cycle ranges from 21-35 days, with an average of 28 days. Menstruation typically lasts 3-7 days. Consult a gynecologist if cycles are consistently irregular or show significant changes.",
+      "q3": "How does Traditional Chinese Medicine treat irregular periods?",
+      "a3": "TCM treats irregular periods through: 1) Acupuncture to regulate qi and blood; 2) Herbal formulas like Si Wu Tang; 3) Dietary therapy; 4) Lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
+    },
+    "features": {
+      "title": "Professional Features",
+      "subtitle": "Comprehensive menstrual health management services for you",
+      "tracking": {
+        "title": "Smart Tracking System",
+        "description": "Accurate cycle prediction, scientific symptom recording, personalized health insights"
+      },
+      "assessment": {
+        "title": "Professional Health Assessment",
+        "description": "Evidence-based symptom assessment tools, customized health management plans for you"
+      },
+      "resources": {
+        "title": "Rich Professional Resources",
+        "description": "42 professional articles, 24 PDF resources, PDF guides, comprehensive support for your health needs"
+      }
+    },
+    "quickLinks": {
+      "title": "Quick Navigation",
+      "healthGuide": "Health Guide",
+      "healthGuideDesc": "Comprehensive period pain knowledge and scientific management methods",
+      "assessment": "Symptom Assessment",
+      "assessmentDesc": "Professional tools to help understand your period pain type",
+      "resources": "PDF Resources",
+      "resourcesDesc": "Downloadable professional health guidance and tools",
+      "solutions": "Scenario Solutions",
+      "solutionsDesc": "Targeted solutions for different life environments"
+    }
+  },
+  "homeClean": {
+    "meta": {
+      "title": "Your Professional Health Management Partner",
+      "description": "Professional constitution test, symptom assessment and pain tracking tools"
+    },
+    "hero": {
+      "title": "Menstrual Health Management Expert",
+      "subtitle": "Scientific cycle tracking, health advice and personalized care plans",
+      "cta": "Get Started"
+    },
+    "features": {
+      "title": "Professional Features",
+      "assessment": {
+        "icon": "🧭",
+        "title": "Symptom Assessment",
+        "description": "Answer a few questions to get personalized relief advice",
+        "cta": "Start Assessment"
+      },
+      "tracking": {
+        "icon": "📈",
+        "title": "Pain Tracking",
+        "description": "Record pain patterns and get trend insights",
+        "cta": "Start Tracking"
+      },
+      "constitution": {
+        "icon": "🧩",
+        "title": "TCM Constitution Test",
+        "description": "8 questions to learn your type and get recommendations",
+        "cta": "Start Test"
+      }
+    },
+    "trusted": {
+      "title": "Trusted Professional Platform",
+      "metrics": {
+        "activeUsers": { "number": "50K+", "label": "Active Users" },
+        "articles": { "number": "42", "label": "Expert Articles" },
+        "resources": { "number": "24", "label": "PDF Resources" },
+        "satisfaction": { "number": "98%", "label": "User Satisfaction" }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Professional answers about period pain relief and menstrual health",
+      "q1": {
+        "question": "What are the fastest ways to relieve menstrual cramps?",
+        "answer": "The fastest menstrual cramp relief methods include: 1) Heat therapy on lower abdomen and back; 2) Gentle abdominal massage; 3) Light exercise like yoga; 4) NSAIDs like ibuprofen; 5) Adequate rest. Combining multiple methods works best."
+      },
+      "q2": {
+        "question": "What is considered a normal menstrual cycle?",
+        "answer": "A normal menstrual cycle ranges from 21-35 days, with an average of 28 days. Menstruation typically lasts 3-7 days. Consult a gynecologist if cycles are consistently irregular or show significant changes."
+      },
+      "q3": {
+        "question": "How does Traditional Chinese Medicine treat irregular periods?",
+        "answer": "TCM treats irregular periods through: 1) Acupuncture to regulate qi and blood; 2) Herbal formulas like Si Wu Tang; 3) Dietary therapy; 4) Lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
+      }
+    },
+    "quickNav": {
+      "title": "Quick Navigation",
+      "constitutionTest": "Constitution Test",
+      "symptomAssessment": "Symptom Assessment",
+      "painTracker": "Pain Tracker"
+    }
+  },
+  "embeddedPainAssessment": {
+    "title": "Pain Assessment Tool",
+    "description": "Quickly assess your pain level",
+    "loading": "Loading...",
+    "error": "Failed to load, please refresh the page and try again"
+  }
+}

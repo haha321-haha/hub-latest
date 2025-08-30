@@ -1,0 +1,77 @@
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "PeriodHub - 专业女性健康管理平台",
+  "description": "提供专业的痛经缓解方法、月经健康管理工具和个性化建议",
+  "url": "https://periodhub.health",
+  "inLanguage": [
+    "zh-CN",
+    "en-US"
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "PeriodHub",
+    "url": "https://periodhub.health",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://periodhub.health/icon-512.png",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "mainEntity": {
+    "@type": "MedicalCondition",
+    "name": "痛经",
+    "alternateName": [
+      "月经疼痛",
+      "经期疼痛",
+      "Dysmenorrhea",
+      "Menstrual Pain"
+    ],
+    "description": "月经期间或前后出现的疼痛症状，影响女性日常生活质量",
+    "symptom": [
+      {
+        "@type": "MedicalSymptom",
+        "name": "下腹疼痛"
+      },
+      {
+        "@type": "MedicalSymptom",
+        "name": "腰部疼痛"
+      },
+      {
+        "@type": "MedicalSymptom",
+        "name": "恶心呕吐"
+      },
+      {
+        "@type": "MedicalSymptom",
+        "name": "头痛头晕"
+      }
+    ],
+    "possibleTreatment": [
+      {
+        "@type": "MedicalTherapy",
+        "name": "热敷疗法"
+      },
+      {
+        "@type": "MedicalTherapy",
+        "name": "运动疗法"
+      },
+      {
+        "@type": "MedicalTherapy",
+        "name": "中医调理"
+      },
+      {
+        "@type": "MedicalTherapy",
+        "name": "营养调节"
+      }
+    ]
+  },
+  "specialty": {
+    "@type": "MedicalSpecialty",
+    "name": "妇科学"
+  },
+  "audience": {
+    "@type": "MedicalAudience",
+    "audienceType": "Patient"
+  }
+}
