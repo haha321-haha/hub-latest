@@ -1817,6 +1817,27 @@
       "resources": {
         "title": "丰富专业资源",
         "description": "42篇专业文章、24个PDF资源、PDF指南，全面支持您的健康需求"
+      },
+      "immediateRelief": {
+        "title": "即时缓解方案",
+        "description": "快速有效的疼痛缓解方法和紧急技巧"
+      },
+      "learnMore": "了解更多"
+    },
+    "treatmentGuide": {
+      "title": "专业治疗指南",
+      "subtitle": "科学的疼痛管理方案",
+      "medicationGuide": {
+        "title": "用药指南",
+        "description": "安全有效的药物使用建议"
+      },
+      "heatTherapy": {
+        "title": "热疗方法",
+        "description": "温热疗法的科学应用"
+      },
+      "diagnosis": {
+        "title": "症状诊断",
+        "description": "专业的症状识别指导"
       }
     },
     "trusted": {

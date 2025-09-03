@@ -2007,6 +2007,27 @@
       "resources": {
         "title": "Rich Professional Resources",
         "description": "42 professional articles, 24 PDF resources, PDF guides, comprehensive support for your health needs"
+      },
+      "immediateRelief": {
+        "title": "Immediate Relief Solutions",
+        "description": "Quick and effective pain relief methods and emergency techniques"
+      },
+      "learnMore": "Learn More"
+    },
+    "treatmentGuide": {
+      "title": "Professional Treatment Guide",
+      "subtitle": "Scientific pain management solutions",
+      "medicationGuide": {
+        "title": "Medication Guide",
+        "description": "Safe and effective medication usage recommendations"
+      },
+      "heatTherapy": {
+        "title": "Heat Therapy Methods",
+        "description": "Scientific application of thermal therapy"
+      },
+      "diagnosis": {
+        "title": "Symptom Diagnosis",
+        "description": "Professional symptom identification guidance"
       }
     },
     "quickLinks": {
