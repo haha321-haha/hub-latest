@@ -17,8 +17,8 @@ try {
     'PAIN_LEVELS',
     'PAIN_TYPES',
     'ERROR_MESSAGES',
-    'DATE_TIME_FORMATS',
-    'MEDICAL_TERMS'
+    'MEDICAL_TERMS',
+    'CULTURAL_DESCRIPTIONS'
   ];
 
   let allPresent = true;
