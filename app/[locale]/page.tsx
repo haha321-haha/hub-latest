@@ -176,7 +176,7 @@ const getStructuredData = async (locale: string) => {
 
 export default async function HomePage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
-  const t = useTranslations('home');
+  const t = await getTranslations('home');
   const isZh = typeof locale === 'string' && (locale === 'zh' || locale.startsWith('zh'));
   const structuredData = await getStructuredData(locale);
 
