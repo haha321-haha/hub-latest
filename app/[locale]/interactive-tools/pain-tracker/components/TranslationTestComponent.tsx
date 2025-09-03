@@ -8,9 +8,7 @@ import {
   REMEDIES, 
   MENSTRUAL_STATUS, 
   PAIN_LEVELS, 
-  PAIN_TYPES,
-  MEDICAL_TERMS,
-  CULTURAL_DESCRIPTIONS 
+  PAIN_TYPES
 } from '../../shared/constants';
 import { formatDate, formatRelativeDate, formatDuration } from '../../shared/utils/dateFormatting';
 
