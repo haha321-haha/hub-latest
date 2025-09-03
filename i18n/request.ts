@@ -4,6 +4,7 @@ import { getRequestConfig } from 'next-intl/server';
 // Can be imported from a shared config
 export const locales = ['en', 'zh'] as const;
 export type Locale = (typeof locales)[number];
+export const defaultLocale = 'zh';
 
 export default getRequestConfig(async ({ requestLocale }) => {
   // This typically corresponds to the `[locale]` segment

@@ -1,11 +1,10 @@
 import { NextRequest } from 'next/server';
 import createMiddleware from 'next-intl/middleware';
-import { locales, defaultLocale, localePrefix } from './i18n';
+import { locales, defaultLocale } from './i18n/request';
 
 const intlMiddleware = createMiddleware({
   locales,
   defaultLocale,
-  localePrefix,
   // 🚀 性能优化：自动检测用户语言偏好
   localeDetection: true,
   // 🔧 可选：设置默认行为更精确控制
