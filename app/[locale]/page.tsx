@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { unstable_setRequestLocale as setRequestLocale } from 'next-intl/server';
+import { unstable_setRequestLocale as setRequestLocale, getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 import Hero from '@/components/layout/Hero';
 import UserSuccessStories from '@/components/UserSuccessStories';
@@ -69,7 +69,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 }
 
 // 增强的结构化数据 - 针对健康平台优化
-const getStructuredData = (locale: string) => ({
+const getStructuredData = async (locale: string) => {
+  const t = await getTranslations({ locale });
+  
+  return {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -79,9 +82,7 @@ const getStructuredData = (locale: string) => ({
       "applicationCategory": "HealthApplication",
       "operatingSystem": "Web",
       "inLanguage": locale === 'zh' ? "zh-CN" : "en-US",
-      "description": locale === 'zh'
-        ? "专业的女性月经健康管理平台，提供痛经追踪、周期预测、体质评估等功能"
-        : "Professional menstrual health management platform with pain tracking, cycle prediction, and constitution assessment",
+      "description": t('metadata.home.structuredData.description'),
       "url": `https://periodhub.health/${locale}`,
       "offers": {
         "@type": "Offer",
@@ -89,11 +90,11 @@ const getStructuredData = (locale: string) => ({
         "priceCurrency": "USD"
       },
       "featureList": [
-        locale === 'zh' ? "痛经追踪" : "Pain Tracking",
-        locale === 'zh' ? "周期预测" : "Cycle Prediction",
-        locale === 'zh' ? "体质评估" : "Constitution Assessment",
-        locale === 'zh' ? "健康指南" : "Health Guides",
-        locale === 'zh' ? "场景解决方案" : "Scenario Solutions"
+        t('metadata.home.structuredData.featureList.painTracking'),
+        t('metadata.home.structuredData.featureList.cyclePrediction'),
+        t('metadata.home.structuredData.featureList.constitutionAssessment'),
+        t('metadata.home.structuredData.featureList.healthGuides'),
+        t('metadata.home.structuredData.featureList.scenarioSolutions')
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -126,9 +127,7 @@ const getStructuredData = (locale: string) => ({
       "@id": `https://periodhub.health/${locale}#website`,
       "url": "https://periodhub.health",
       "name": "PeriodHub",
-      "description": locale === 'zh'
-        ? "专业的女性月经健康管理平台"
-        : "Professional menstrual health management platform",
+      "description": t('organization.description'),
       "publisher": {
         "@id": `https://periodhub.health/${locale}#organization`
       },
@@ -147,43 +146,39 @@ const getStructuredData = (locale: string) => ({
       "mainEntity": [
         {
           "@type": "Question",
-          "name": locale === 'zh' ? "痛经怎么缓解最快方法？" : "What are the fastest ways to relieve menstrual cramps?",
+          "name": t('faq.q1.question'),
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": locale === 'zh'
-              ? "最快的痛经缓解方法包括：热敷下腹部和腰部、轻柔按摩腹部、适量运动如瑜伽、服用布洛芬等非甾体抗炎药、保持充足休息。建议结合多种方法，效果更佳。"
-              : "The fastest menstrual cramp relief methods include: heat therapy on lower abdomen and back, gentle abdominal massage, light exercise like yoga, NSAIDs like ibuprofen, and adequate rest. Combining multiple methods works best."
+            "text": t('faq.q1.answer')
           }
         },
         {
           "@type": "Question",
-          "name": locale === 'zh' ? "月经周期多少天算正常？" : "What is considered a normal menstrual cycle?",
+          "name": t('faq.q2.question'),
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": locale === 'zh'
-              ? "正常的月经周期为21-35天，平均28天。月经持续时间通常为3-7天。如果周期长期不规律或有明显变化，建议咨询妇科医生。"
-              : "A normal menstrual cycle ranges from 21-35 days, with an average of 28 days. Menstruation typically lasts 3-7 days. Consult a gynecologist if cycles are consistently irregular."
+            "text": t('faq.q2.answer')
           }
         },
         {
           "@type": "Question",
-          "name": locale === 'zh' ? "中医如何调理月经不调？" : "How does Traditional Chinese Medicine treat irregular periods?",
+          "name": t('faq.q3.question'),
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": locale === 'zh'
-              ? "中医通过辨证论治调理月经：针灸调节气血、中药方剂如四物汤、食疗调养、生活方式调整。需要专业中医师诊断体质后制定个性化方案。"
-              : "TCM treats irregular periods through syndrome differentiation: acupuncture to regulate qi and blood, herbal formulas, dietary therapy, and lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
+            "text": t('faq.q3.answer')
           }
         }
       ]
     }
   ]
-});
+  };
+};
 
-export default function HomePage({ params: { locale } }: { params: { locale: string } }) {
+export default async function HomePage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
   const t = useTranslations('home');
   const isZh = typeof locale === 'string' && (locale === 'zh' || locale.startsWith('zh'));
+  const structuredData = await getStructuredData(locale);
 
   return (
     <>
@@ -191,7 +186,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(getStructuredData(locale))
+          __html: JSON.stringify(structuredData)
         }}
       />
 
@@ -488,13 +483,13 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-pink-600 mb-2 group-hover:text-pink-700">
-                    {locale === 'zh' ? '痛经症状评估' : 'Period Pain Assessment'}
+                    {t('quickLinks.assessment.title')}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    {locale === 'zh' ? '科学评估痛经程度，获得个性化治疗建议和用药指导' : 'Scientifically assess period pain severity and get personalized treatment recommendations'}
+                    {t('quickLinks.assessment.description')}
                   </p>
                   <div className="mt-3 text-pink-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    {locale === 'zh' ? '开始评估 →' : 'Start assessment →'}
+                    {t('quickLinks.assessment.cta')}
                   </div>
                 </Link>
 
@@ -507,7 +502,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                   <h3 className="text-lg font-semibold text-blue-600 mb-2 group-hover:text-blue-700">{t('quickLinks.resources')}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{t('quickLinks.resourcesDesc')}</p>
                   <div className="mt-3 text-blue-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    {locale === 'zh' ? '下载资源 →' : 'Download resources →'}
+                    {t('quickLinks.downloads.cta')}
                   </div>
                 </Link>
 
@@ -520,7 +515,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                   <h3 className="text-lg font-semibold text-green-600 mb-2 group-hover:text-green-700">{t('quickLinks.solutions')}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{t('quickLinks.solutionsDesc')}</p>
                   <div className="mt-3 text-green-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    {locale === 'zh' ? '查看方案 →' : 'View solutions →'}
+                    {t('quickLinks.scenarios.cta')}
                   </div>
                 </Link>
               </div>

@@ -7,7 +7,17 @@
   "metadata": {
     "home": {
       "title": "Period Hub - Menstrual Health Management Platform",
-      "description": "Professional menstrual health platform offering period pain relief, cycle tracking, symptom assessment and scientific management solutions for women"
+      "description": "Professional menstrual health platform offering period pain relief, cycle tracking, symptom assessment and scientific management solutions for women",
+      "structuredData": {
+        "description": "Professional menstrual health management platform with pain tracking, cycle prediction, and constitution assessment",
+        "featureList": {
+          "painTracking": "Pain Tracking",
+          "cyclePrediction": "Cycle Prediction",
+          "constitutionAssessment": "Constitution Assessment",
+          "healthGuides": "Health Guides",
+          "scenarioSolutions": "Scenario Solutions"
+        }
+      }
     },
     "articles": {
       "title": "Health Articles - Period Hub",
@@ -96,7 +106,8 @@
       "cycleTrackerDesc": "Intelligent prediction based on historical data, prepare in advance",
       "constitutionTest": "Constitution Assessment",
       "constitutionTestDesc": "TCM constitution identification and conditioning advice, personalized health plans"
-    }
+    },
+    "description": "[ZH] 专业的经期健康管理平台，循证指导与隐私保护，陪伴每位女性科学管理生理期"
   },
   "navigation": {
     "home": "Home",
@@ -530,6 +541,7 @@
     "description": "Explore quick and effective methods to find relief from period pain when you need it most. Learn about techniques you can apply right now.",
     "introTitle": "When Period Pain Strikes...",
     "introText": "When period pain strikes, you need fast, effective ways to find comfort. This section is dedicated to immediate relief solutions – methods you can turn to right now to help alleviate acute menstrual cramps and discomfort.",
+    "introText2": "We understand that finding quick relief is essential for getting through your day. The approaches suggested here focus on readily available techniques and remedies that can provide temporary but much-needed comfort.",
     "typesTitle": "Types of Immediate Relief",
     "heatTherapy": "Heat Therapy",
     "gentleMovement": "Gentle Movement & Breathing",
@@ -537,7 +549,60 @@
     "otcOptions": "Over-the-Counter Options",
     "findingWhatWorksTitle": "Finding What Works for You",
     "findingWhatWorksText": "Experimentation is key to discovering which immediate relief methods are most effective for your unique body and pain type. Consider combining different approaches for enhanced comfort.",
-    "contentSectionTitle": "Relevant Articles & Therapies"
+    "findingWhatWorksText2": "Remember, these methods are for managing symptoms in the moment. For persistent, severe, or unusual pain, always consult a healthcare professional.",
+    "contentSectionTitle": "Relevant Articles & Therapies",
+    "heatTherapyDescription": "Applying heat to the lower abdomen or back can help relax contracting uterine muscles and improve blood circulation, which may alleviate cramps.",
+    "gentleMovementDescription": "Light stretching, walking, or specific yoga poses can sometimes ease cramps by improving circulation and muscle relaxation. Deep breathing techniques can also help manage pain.",
+    "breathingExerciseTitle": "Deep Breathing Exercise",
+    "breathingExerciseDescription": "Activate the parasympathetic nervous system through 4-7-8 breathing technique to naturally reduce pain sensitivity. Research shows it can reduce pain perception by 40%.",
+    "acupressureDescription": "Applying pressure to specific points on the body may help reduce pain signals and provide relief from menstrual cramps.",
+    "otcOptionsDescription": "Understanding common non-prescription options and their basic mechanisms can be helpful, although professional medical advice is crucial for safe and effective use.",
+    "workTipsTitle": "Quick Tips for Managing Cramps at Work",
+    "workTipsDescription": "Practical strategies for finding relief during your workday when period pain strikes.",
+    "meditationTitle": "5-Minute Meditation for Pain Relief",
+    "meditationDescription": "A quick guided meditation practice designed specifically to help manage menstrual pain.",
+    "disclaimerTitle": "Disclaimer:",
+    "disclaimerText": "The information provided on this page is for educational purposes only and is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.",
+    "parameters": {
+      "scientificParameters": "Scientific Parameters",
+      "heatTherapy": {
+        "temperature": "40-45°C (104-113°F)",
+        "duration": "15-20 minutes",
+        "frequency": "As needed, up to 3-4 times daily",
+        "timing": "At onset of pain, continue for 2-3 days",
+        "mechanism": "Increases blood flow, relaxes uterine muscles"
+      },
+      "breathing": {
+        "title": "4-7-8 Breathing Parameters",
+        "technique": "4-7-8 breathing technique",
+        "cycles": "Start with 3-4 cycles, increase to 8 cycles",
+        "frequency": "Every 2-3 hours during acute pain",
+        "timing": "When pain intensity reaches 5+",
+        "mechanism": "Activates parasympathetic nervous system, reduces prostaglandin sensitivity"
+      },
+      "nsaid": {
+        "title": "NSAID Usage Parameters",
+        "dosage": "200-400mg ibuprofen every 6-8 hours (max 1200mg/day)",
+        "timing": "Start at first sign of cramps, continue for 1-2 days",
+        "mechanism": "Blocks prostaglandin synthesis (COX-1/COX-2 inhibition)",
+        "contraindications": "Avoid with asthma, ulcers, kidney disease"
+      }
+    },
+    "labels": {
+      "temperature": "Temperature: ",
+      "duration": "Duration: ",
+      "frequency": "Frequency: ",
+      "timing": "Timing: ",
+      "mechanism": "Mechanism: ",
+      "technique": "Technique: ",
+      "cycles": "Cycles: ",
+      "dosage": "Dosage: ",
+      "contraindications": "Contraindications: "
+    },
+    "actions": {
+      "startPractice": "Start Practice →",
+      "learnMore": "Learn More →"
+    }
   },
   "naturalTherapiesPage": {
     "title": "Natural Therapies & Daily Conditioning for Menstrual Wellness",
@@ -1011,7 +1076,23 @@
     "painTracker": {
       "title": "Pain Tracker",
       "description": "Track pain patterns, analyze trends, and optimize treatment effectiveness.",
-      "cta": "Start Tracking"
+      "cta": "Start Tracking",
+      "toolTitle": "[ZH] 疼痛记录",
+      "toolDescription": "[ZH] 记录您今天的疼痛情况，帮助我们更好地了解您的疼痛模式。",
+      "painLevel": "[ZH] 疼痛程度（1-10）",
+      "painLocation": "[ZH] 疼痛位置",
+      "painLocationPlaceholder": "[ZH] 请选择位置",
+      "painType": "[ZH] 疼痛类型",
+      "painTypePlaceholder": "[ZH] 请选择类型",
+      "lowerAbdomen": "[ZH] 下腹部",
+      "lowerBack": "[ZH] 腰部",
+      "thighs": "[ZH] 大腿",
+      "other": "[ZH] 其他",
+      "cramping": "[ZH] 绞痛",
+      "dullPain": "[ZH] 钝痛",
+      "sharpPain": "[ZH] 刺痛",
+      "recording": "[ZH] 记录中...",
+      "recordPain": "[ZH] 记录疼痛"
     },
     "breathingExercise": {
       "title": "Instant Breathing Exercise Tool",
@@ -1036,7 +1117,22 @@
         }
       }
     },
-    "title": "Interactive Tools"
+    "title": "Interactive Tools",
+    "symptomAssessment": {
+      "title": "[ZH] 症状评估工具",
+      "description": "[ZH] 回答几个关于症状的问题，获取个性化的缓解建议。",
+      "toolTitle": "[ZH] 症状评估工具",
+      "toolDescription": "[ZH] 该工具将帮助您评估经期症状的严重程度，并提供个性化建议。",
+      "selectSymptom": "[ZH] 您当前的主要症状是什么？",
+      "selectSymptomPlaceholder": "[ZH] 请选择症状",
+      "menstrualPain": "[ZH] 经期疼痛",
+      "irregularPeriods": "[ZH] 经期不规律",
+      "abnormalFlow": "[ZH] 经期量异常",
+      "otherSymptoms": "[ZH] 其他症状",
+      "severity": "[ZH] 症状严重程度（1-10）",
+      "assessing": "[ZH] 评估中...",
+      "startAssessment": "[ZH] 开始评估"
+    }
   },
   "scenarioSolutionsPage": {
     "title": "Scenario-Based Solutions",
@@ -1155,53 +1251,50 @@
     "buttonText": "Access Complete Tools Collection"
   },
   "healthStatistics": {
-    "title": "Menstrual Health Statistics",
-    "subtitle": "Authoritative data based on global women's health surveys to help you understand the real state of menstrual health",
-    "chartTitle": "月经健康统计数据",
-    "chartSubtitle": "Period Health Statistics",
+    "dataSource": "数据来源：全球女性健康调查 | Data Source: Global Women's Health Survey",
+    "title": "[ZH] 月经健康统计数据",
+    "subtitle": "[ZH] 基于全球女性健康调查的权威数据，帮助您了解月经健康的真实现状",
+    "chartTitle": "[ZH] 月经健康统计数据",
+    "chartSubtitle": "[ZH] Period Health Statistics",
     "stats": {
       "experiencePain": {
-        "label": "Experience Period Pain",
-        "sublabel": "女性经历痛经",
-        "source": "Global Statistics"
+        "label": "[ZH] 女性经历痛经",
+        "sublabel": "[ZH] Experience Period Pain",
+        "source": "[ZH] 全球统计数据"
       },
       "affectsWork": {
-        "label": "Affects Work/Study",
-        "sublabel": "影响工作学习",
-        "source": "Productivity Impact"
+        "label": "[ZH] 影响工作学习",
+        "sublabel": "[ZH] Affects Work/Study",
+        "source": "[ZH] 生产力影响"
       },
       "seekHelp": {
-        "label": "Seek Medical Help",
-        "sublabel": "寻求医疗帮助",
-        "source": "Medical Statistics"
+        "label": "[ZH] 寻求医疗帮助",
+        "sublabel": "[ZH] Seek Medical Help",
+        "source": "[ZH] 就医统计"
       },
       "usePainkillers": {
-        "label": "Use Painkillers",
-        "sublabel": "使用止痛药",
-        "source": "Relief Methods"
+        "label": "[ZH] 使用止痛药",
+        "sublabel": "[ZH] Use Painkillers",
+        "source": "[ZH] 缓解方式"
       },
       "avgDuration": {
-        "label": "Average Pain Duration",
-        "sublabel": "平均疼痛持续时间",
-        "unit": "Days 天",
-        "source": "Global Statistics"
+        "label": "[ZH] 平均疼痛持续时间",
+        "sublabel": "[ZH] Average Pain Duration",
+        "unit": "[ZH] 天 Days",
+        "source": "[ZH] 全球统计数据"
       },
       "avgPainLevel": {
-        "label": "Average Pain Level",
-        "sublabel": "平均疼痛程度",
-        "source": "Global Statistics"
+        "label": "[ZH] 平均疼痛程度",
+        "sublabel": "[ZH] Average Pain Level",
+        "source": "[ZH] 全球统计数据"
       },
       "primaryAge": {
-        "label": "Primary Age Range",
-        "sublabel": "主要影响年龄段",
-        "unit": "Years 岁",
-        "source": "Global Statistics"
+        "label": "[ZH] 主要影响年龄段",
+        "sublabel": "[ZH] Primary Age Range",
+        "unit": "[ZH] 岁 Years",
+        "source": "[ZH] 全球统计数据"
       }
-    },
-    "dataSource": "数据来源：全球女性健康调查 | Data Source: Global Women's Health Survey"
-  },
-  "healthStatistics": {
-    "dataSource": "数据来源：全球女性健康调查 | Data Source: Global Women's Health Survey"
+    }
   },
   "searchBox": {
     "placeholder": "Search articles...",
@@ -1925,7 +2018,43 @@
       "resources": "PDF Resources",
       "resourcesDesc": "Downloadable professional health guidance and tools",
       "solutions": "Scenario Solutions",
-      "solutionsDesc": "Targeted solutions for different life environments"
+      "solutionsDesc": "Targeted solutions for different life environments",
+      "assessment": {
+        "title": "Period Pain Assessment",
+        "description": "Scientifically assess period pain severity and get personalized treatment recommendations",
+        "cta": "Start assessment →"
+      },
+      "downloads": {
+        "cta": "Download resources →"
+      },
+      "scenarios": {
+        "cta": "View solutions →"
+      }
+    },
+    "faq": {
+      "q1": {
+        "question": "What are the fastest ways to relieve menstrual cramps?",
+        "answer": "The fastest menstrual cramp relief methods include: heat therapy on lower abdomen and back, gentle abdominal massage, light exercise like yoga, NSAIDs like ibuprofen, and adequate rest. Combining multiple methods works best."
+      },
+      "q2": {
+        "question": "What is considered a normal menstrual cycle?",
+        "answer": "A normal menstrual cycle ranges from 21-35 days, with an average of 28 days. Menstruation typically lasts 3-7 days. Consult a gynecologist if cycles are consistently irregular."
+      },
+      "q3": {
+        "question": "How does Traditional Chinese Medicine treat irregular periods?",
+        "answer": "TCM treats irregular periods through syndrome differentiation: acupuncture to regulate qi and blood, herbal formulas, dietary therapy, and lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
+      }
+    },
+    "organization": {
+      "description": "Professional menstrual health management platform"
+    },
+    "hero": {
+      "title": "[ZH] 经期健康管理专家",
+      "subtitle": "[ZH] 科学的经期追踪、健康建议和个性化护理方案",
+      "cta": {
+        "primary": "[ZH] 开始使用",
+        "secondary": "[ZH] 了解更多"
+      }
     }
   },
   "homeClean": {
@@ -1962,10 +2091,22 @@
     "trusted": {
       "title": "Trusted Professional Platform",
       "metrics": {
-        "activeUsers": { "number": "50K+", "label": "Active Users" },
-        "articles": { "number": "42", "label": "Expert Articles" },
-        "resources": { "number": "24", "label": "PDF Resources" },
-        "satisfaction": { "number": "98%", "label": "User Satisfaction" }
+        "activeUsers": {
+          "number": "50K+",
+          "label": "Active Users"
+        },
+        "articles": {
+          "number": "42",
+          "label": "Expert Articles"
+        },
+        "resources": {
+          "number": "24",
+          "label": "PDF Resources"
+        },
+        "satisfaction": {
+          "number": "98%",
+          "label": "User Satisfaction"
+        }
       }
     },
     "faq": {
@@ -1996,5 +2137,30 @@
     "description": "Quickly assess your pain level",
     "loading": "Loading...",
     "error": "Failed to load, please refresh the page and try again"
+  },
+  "scientificParameters": {
+    "heatTherapy": {
+      "title": "[ZH] 热疗科学参数",
+      "temperature": "[ZH] 40-45°C (104-113°F)",
+      "duration": "[ZH] 15-20分钟",
+      "frequency": "[ZH] 按需使用，每天最多3-4次",
+      "timing": "[ZH] 疼痛开始时使用，持续2-3天",
+      "mechanism": "[ZH] 增加血流，放松子宫肌肉"
+    },
+    "breathingExercise": {
+      "title": "[ZH] 4-7-8呼吸法参数",
+      "technique": "[ZH] 4-7-8呼吸法",
+      "cycles": "[ZH] 初学者3-4个循环，逐渐增加到8个循环",
+      "frequency": "[ZH] 急性疼痛期间每2-3小时一次",
+      "timing": "[ZH] 疼痛强度达到0-10分制的5分以上时使用",
+      "mechanism": "[ZH] 激活副交感神经系统，降低前列腺素敏感度"
+    },
+    "nsaid": {
+      "title": "[ZH] NSAID使用参数",
+      "dosage": "[ZH] 布洛芬200-400mg，每6-8小时一次（每日最多1200mg）",
+      "timing": "[ZH] 痉挛首次出现时开始使用，持续1-2天",
+      "mechanism": "[ZH] 阻断前列腺素合成（COX-1/COX-2抑制）",
+      "contraindications": "[ZH] 哮喘、胃溃疡、肾病患者避免使用"
+    }
   }
 }

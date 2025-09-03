@@ -26,29 +26,7 @@ export default function ImmediateReliefPage({
   const t = useTranslations('immediateReliefPage');
   const commonT = useTranslations('common');
   
-  // Scientific parameters data
-  const heatTherapyParams = {
-    temperature: "40-45°C (104-113°F)",
-    duration: "15-20 minutes",
-    frequency: "As needed, up to 3-4 times daily",
-    timing: "At onset of pain, continue for 2-3 days",
-    mechanism: "Increases blood flow, relaxes uterine muscles"
-  };
 
-  const breathingParams = {
-    technique: "4-7-8 breathing",
-    cycles: "3-4 cycles initially, increase to 8 cycles",
-    frequency: "Every 2-3 hours during acute pain",
-    timing: "When pain intensity reaches 5+ on 0-10 scale",
-    mechanism: "Activates parasympathetic nervous system, reduces prostaglandin sensitivity"
-  };
-
-  const nsaidParams = {
-    dosage: "200-400mg ibuprofen every 6-8 hours (max 1200mg/day)",
-    timing: "Start at first sign of cramps, continue for 1-2 days",
-    mechanism: "Blocks prostaglandin synthesis (COX-1/COX-2 inhibition)",
-    contraindications: "Avoid if asthma, ulcers, kidney disease"
-  };
   
   return (
     <div className="space-y-10">
@@ -72,10 +50,7 @@ export default function ImmediateReliefPage({
             {t('introText')}
           </p>
           <p className="text-neutral-700 leading-relaxed mt-4">
-            {locale === 'zh'
-              ? '我们理解快速缓解对于度过一天是至关重要的。这里建议的方法专注于容易获得的技巧和疗法，可以提供临时但急需的舒适感。'
-              : 'We understand that finding quick relief is essential for getting through your day. The approaches suggested here focus on readily available techniques and remedies that can provide temporary but much-needed comfort.'
-            }
+            {t('introText2')}
           </p>
         </div>
       </section>
@@ -101,25 +76,22 @@ export default function ImmediateReliefPage({
               </h3>
             </div>
             <p className="text-neutral-600 mb-4">
-              {locale === 'zh'
-                ? '在下腹部或背部敷热可以帮助放松收缩的子宫肌肉并改善血液循环，从而缓解痉挛。'
-                : 'Applying heat to the lower abdomen or back can help relax contracting uterine muscles and improve blood circulation, which may alleviate cramps.'
-              }
+              {t('heatTherapyDescription')}
             </p>
             
             {/* 科学参数显示 */}
             <div className="bg-primary-50 p-4 rounded-lg mb-4">
               <h4 className="font-semibold text-primary-800 mb-2">
-                {locale === 'zh' ? '科学参数' : 'Scientific Parameters'}
+                {t('parameters.scientificParameters')}
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
-                <div><strong>{locale === 'zh' ? '温度：' : 'Temperature: '}</strong>{heatTherapyParams.temperature}</div>
-                <div><strong>{locale === 'zh' ? '时长：' : 'Duration: '}</strong>{heatTherapyParams.duration}</div>
-                <div><strong>{locale === 'zh' ? '频率：' : 'Frequency: '}</strong>{heatTherapyParams.frequency}</div>
-                <div><strong>{locale === 'zh' ? '时机：' : 'Timing: '}</strong>{heatTherapyParams.timing}</div>
+                <div><strong>{t('labels.temperature')}</strong>{t('parameters.heatTherapy.temperature')}</div>
+                <div><strong>{t('labels.duration')}</strong>{t('parameters.heatTherapy.duration')}</div>
+                <div><strong>{t('labels.frequency')}</strong>{t('parameters.heatTherapy.frequency')}</div>
+                <div><strong>{t('labels.timing')}</strong>{t('parameters.heatTherapy.timing')}</div>
               </div>
               <p className="text-xs text-primary-700 mt-2">
-                <strong>{locale === 'zh' ? '作用机制：' : 'Mechanism: '}</strong>{heatTherapyParams.mechanism}
+                <strong>{t('labels.mechanism')}</strong>{t('parameters.heatTherapy.mechanism')}
               </p>
             </div>
             <div className="flex justify-end">
@@ -127,7 +99,7 @@ export default function ImmediateReliefPage({
                 href={`/${locale}/articles/heat-therapy-complete-guide`}
                 className="text-primary-600 hover:text-primary-700 font-medium"
               >
-                {commonT('learnMore')} →
+                {t('actions.learnMore')}
               </Link>
             </div>
           </div>
@@ -145,10 +117,7 @@ export default function ImmediateReliefPage({
               </h3>
             </div>
             <p className="text-neutral-600 mb-4">
-              {locale === 'zh'
-                ? '轻度拉伸、散步或特定的瑜伽姿势有时可以通过改善血液循环和肌肉放松来缓解痉挛。深呼吸技巧也有助于管理疼痛。'
-                : 'Light stretching, walking, or specific yoga poses can sometimes ease cramps by improving circulation and muscle relaxation. Deep breathing techniques can also help manage pain.'
-              }
+              {t('gentleMovementDescription')}
             </p>
             <div className="flex justify-end">
               <Link
@@ -169,29 +138,26 @@ export default function ImmediateReliefPage({
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-neutral-800">
-                {locale === 'zh' ? '深呼吸练习' : 'Deep Breathing Exercise'}
+                {t('breathingExerciseTitle')}
               </h3>
             </div>
             <p className="text-neutral-600 mb-4">
-              {locale === 'zh'
-                ? '通过4-7-8呼吸法激活副交感神经系统，自然降低疼痛敏感度。科学研究显示可减少40%的疼痛感知。'
-                : 'Activate the parasympathetic nervous system through 4-7-8 breathing technique to naturally reduce pain sensitivity. Research shows it can reduce pain perception by 40%.'
-              }
+              {t('breathingExerciseDescription')}
             </p>
             
             {/* 呼吸练习科学参数 */}
             <div className="bg-blue-50 p-4 rounded-lg mb-4">
               <h4 className="font-semibold text-blue-800 mb-2">
-                {locale === 'zh' ? '4-7-8呼吸法参数' : '4-7-8 Breathing Parameters'}
+                {t('parameters.breathing.title')}
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
-                <div><strong>{locale === 'zh' ? '技巧：' : 'Technique: '}</strong>{breathingParams.technique}</div>
-                <div><strong>{locale === 'zh' ? '循环次数：' : 'Cycles: '}</strong>{breathingParams.cycles}</div>
-                <div><strong>{locale === 'zh' ? '频率：' : 'Frequency: '}</strong>{breathingParams.frequency}</div>
-                <div><strong>{locale === 'zh' ? '时机：' : 'Timing: '}</strong>{breathingParams.timing}</div>
+                <div><strong>{t('labels.technique')}</strong>{t('parameters.breathing.technique')}</div>
+                <div><strong>{t('labels.cycles')}</strong>{t('parameters.breathing.cycles')}</div>
+                <div><strong>{t('labels.frequency')}</strong>{t('parameters.breathing.frequency')}</div>
+                <div><strong>{t('labels.timing')}</strong>{t('parameters.breathing.timing')}</div>
               </div>
               <p className="text-xs text-blue-700 mt-2">
-                <strong>{locale === 'zh' ? '作用机制：' : 'Mechanism: '}</strong>{breathingParams.mechanism}
+                <strong>{t('labels.mechanism')}</strong>{t('parameters.breathing.mechanism')}
               </p>
             </div>
             <div className="flex justify-end">
@@ -199,7 +165,7 @@ export default function ImmediateReliefPage({
                 href={`/${locale}/interactive-tools#breathing-exercise`}
                 className="text-blue-600 hover:text-blue-700 font-medium"
               >
-                {locale === 'zh' ? '开始练习 →' : 'Start Practice →'}
+{t('actions.startPractice')}
               </Link>
             </div>
           </div>
@@ -217,17 +183,14 @@ export default function ImmediateReliefPage({
               </h3>
             </div>
             <p className="text-neutral-600 mb-4">
-              {locale === 'zh'
-                ? '对身体特定穴位施压可能有助于减少疼痛信号并缓解经期痉挛。'
-                : 'Applying pressure to specific points on the body may help reduce pain signals and provide relief from menstrual cramps.'
-              }
+              {t('acupressureDescription')}
             </p>
             <div className="flex justify-end">
               <Link
                 href={`/${locale}/articles/global-traditional-menstrual-pain-relief`}
                 className="text-accent-600 hover:text-accent-700 font-medium"
               >
-                {commonT('learnMore')} →
+                {t('actions.learnMore')}
               </Link>
             </div>
           </div>
@@ -245,26 +208,23 @@ export default function ImmediateReliefPage({
               </h3>
             </div>
             <p className="text-neutral-600 mb-4">
-              {locale === 'zh'
-                ? '了解常见的非处方药选项及其基本机制可能会有所帮助，尽管专业医疗建议对于安全有效使用至关重要。'
-                : 'Understanding common non-prescription options and their basic mechanisms can be helpful, although professional medical advice is crucial for safe and effective use.'
-              }
+              {t('otcOptionsDescription')}
             </p>
             
             {/* NSAID科学参数 */}
             <div className="bg-neutral-50 p-4 rounded-lg mb-4">
               <h4 className="font-semibold text-neutral-800 mb-2">
-                {locale === 'zh' ? 'NSAID使用参数' : 'NSAID Usage Parameters'}
+                {t('parameters.nsaid.title')}
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
-                <div><strong>{locale === 'zh' ? '剂量：' : 'Dosage: '}</strong>{nsaidParams.dosage}</div>
-                <div><strong>{locale === 'zh' ? '时机：' : 'Timing: '}</strong>{nsaidParams.timing}</div>
+                <div><strong>{t('labels.dosage')}</strong>{t('parameters.nsaid.dosage')}</div>
+                <div><strong>{t('labels.timing')}</strong>{t('parameters.nsaid.timing')}</div>
               </div>
               <p className="text-xs text-neutral-700 mt-2">
-                <strong>{locale === 'zh' ? '作用机制：' : 'Mechanism: '}</strong>{nsaidParams.mechanism}
+                <strong>{t('labels.mechanism')}</strong>{t('parameters.nsaid.mechanism')}
               </p>
               <p className="text-xs text-red-600 mt-1">
-                <strong>{locale === 'zh' ? '禁忌症：' : 'Contraindications: '}</strong>{nsaidParams.contraindications}
+                <strong>{t('labels.contraindications')}</strong>{t('parameters.nsaid.contraindications')}
               </p>
             </div>
             <div className="flex justify-end">
@@ -272,7 +232,7 @@ export default function ImmediateReliefPage({
                 href={`/${locale}/articles/when-to-seek-medical-care-comprehensive-guide`}
                 className="text-neutral-600 hover:text-neutral-700 font-medium"
               >
-                {commonT('learnMore')} →
+                {t('actions.learnMore')}
               </Link>
             </div>
           </div>
@@ -288,10 +248,7 @@ export default function ImmediateReliefPage({
           {t('findingWhatWorksText')}
         </p>
         <p className="text-neutral-700 leading-relaxed mt-4">
-          {locale === 'zh'
-            ? '请记住，这些方法是为了在当下管理症状。对于持续、严重或异常的疼痛，请务必咨询医疗专业人士。'
-            : 'Remember, these methods are for managing symptoms in the moment. For persistent, severe, or unusual pain, always consult a healthcare professional.'
-          }
+          {t('findingWhatWorksText2')}
         </p>
       </section>
 
@@ -304,13 +261,10 @@ export default function ImmediateReliefPage({
         <div className="grid md:grid-cols-2 gap-6">
           <div className="card group block">
             <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-700 mb-2">
-              {locale === 'zh' ? '工作中管理痉挛的快速技巧' : 'Quick Tips for Managing Cramps at Work'}
+              {t('workTipsTitle')}
             </h3>
             <p className="text-neutral-600 mb-4">
-              {locale === 'zh'
-                ? '当经期疼痛来袭时，在工作日寻找缓解的实用策略。'
-                : 'Practical strategies for finding relief during your workday when period pain strikes.'
-              }
+              {t('workTipsDescription')}
             </p>
             <span className="font-medium text-primary-500 group-hover:text-primary-600 transition-colors">
               {commonT('readMore')} →
@@ -319,13 +273,10 @@ export default function ImmediateReliefPage({
 
           <div className="card group block">
             <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-700 mb-2">
-              {locale === 'zh' ? '5分钟疼痛缓解冥想' : '5-Minute Meditation for Pain Relief'}
+              {t('meditationTitle')}
             </h3>
             <p className="text-neutral-600 mb-4">
-              {locale === 'zh'
-                ? '专门设计用于帮助管理经期疼痛的快速引导冥想练习。'
-                : 'A quick guided meditation practice designed specifically to help manage menstrual pain.'
-              }
+              {t('meditationDescription')}
             </p>
             <span className="font-medium text-primary-500 group-hover:text-primary-600 transition-colors">
               {commonT('readMore')} →
@@ -338,12 +289,9 @@ export default function ImmediateReliefPage({
       <section className="bg-primary-50 border-l-4 border-primary-500 p-4 rounded-r-lg">
         <p className="text-neutral-700">
           <strong className="text-primary-700">
-            {locale === 'zh' ? '免责声明：' : 'Disclaimer:'}
+            {t('disclaimerTitle')}
           </strong>
-          {locale === 'zh'
-            ? '本页面提供的信息仅供教育目的，不旨在替代专业医疗建议、诊断或治疗。如有任何医疗问题，请务必咨询您的医生或其他合格的医疗保健提供者。'
-            : 'The information provided on this page is for educational purposes only and is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.'
-          }
+          {t('disclaimerText')}
         </p>
       </section>
     </div>

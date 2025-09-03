@@ -7,7 +7,17 @@
   "metadata": {
     "home": {
       "title": "Period Hub - 经期健康管理平台",
-      "description": "专业经期健康管理平台，提供痛经缓解、周期追踪、症状评估等科学管理方案，帮助女性科学应对经期不适"
+      "description": "专业经期健康管理平台，提供痛经缓解、周期追踪、症状评估等科学管理方案，帮助女性科学应对经期不适",
+      "structuredData": {
+        "description": "专业的女性月经健康管理平台，提供痛经追踪、周期预测、体质评估等功能",
+        "featureList": {
+          "painTracking": "痛经追踪",
+          "cyclePrediction": "周期预测",
+          "constitutionAssessment": "体质评估",
+          "healthGuides": "健康指南",
+          "scenarioSolutions": "场景解决方案"
+        }
+      }
     },
     "articles": {
       "title": "健康文章 - Period Hub",
@@ -531,6 +541,7 @@
     "description": "探索在您最需要时快速有效缓解痛经的方法。了解您可以立即尝试的技巧。",
     "introTitle": "当经期疼痛来袭时...",
     "introText": "当经期疼痛来袭时，您需要快速有效的方法来获得舒适。本节致力于提供即时缓解方案——您可以立即采用的方法，以帮助缓解急性经期痉挛和不适。",
+    "introText2": "我们理解快速缓解对于度过一天是至关重要的。这里建议的方法专注于容易获得的技巧和疗法，可以提供临时但急需的舒适感。",
     "typesTitle": "即时缓解类型",
     "heatTherapy": "热疗",
     "gentleMovement": "温和运动与呼吸",
@@ -538,7 +549,60 @@
     "otcOptions": "非处方药选项",
     "findingWhatWorksTitle": "找到适合您的方法",
     "findingWhatWorksText": "找到最适合您身体和疼痛类型的即时缓解方法，关键在于尝试。考虑结合不同的方法以增强舒适度。",
-    "contentSectionTitle": "相关文章与疗法"
+    "findingWhatWorksText2": "请记住，这些方法是为了在当下管理症状。对于持续、严重或异常的疼痛，请务必咨询医疗专业人士。",
+    "contentSectionTitle": "相关文章与疗法",
+    "heatTherapyDescription": "在下腹部或背部敷热可以帮助放松收缩的子宫肌肉并改善血液循环，从而缓解痉挛。",
+    "gentleMovementDescription": "轻度拉伸、散步或特定的瑜伽姿势有时可以通过改善血液循环和肌肉放松来缓解痉挛。深呼吸技巧也有助于管理疼痛。",
+    "breathingExerciseTitle": "深呼吸练习",
+    "breathingExerciseDescription": "通过4-7-8呼吸法激活副交感神经系统，自然降低疼痛敏感度。科学研究显示可减少40%的疼痛感知。",
+    "acupressureDescription": "对身体特定穴位施压可能有助于减少疼痛信号并缓解经期痉挛。",
+    "otcOptionsDescription": "了解常见的非处方药选项及其基本机制可能会有所帮助，尽管专业医疗建议对于安全有效使用至关重要。",
+    "workTipsTitle": "工作中管理痉挛的快速技巧",
+    "workTipsDescription": "当经期疼痛来袭时，在工作日寻找缓解的实用策略。",
+    "meditationTitle": "5分钟疼痛缓解冥想",
+    "meditationDescription": "专门设计用于帮助管理经期疼痛的快速引导冥想练习。",
+    "disclaimerTitle": "免责声明：",
+    "disclaimerText": "本页面提供的信息仅供教育目的，不旨在替代专业医疗建议、诊断或治疗。如有任何医疗问题，请务必咨询您的医生或其他合格的医疗保健提供者。",
+    "parameters": {
+      "scientificParameters": "科学参数",
+      "heatTherapy": {
+        "temperature": "40-45°C (104-113°F)",
+        "duration": "15-20分钟",
+        "frequency": "根据需要使用，最多3-4次/天",
+        "timing": "疼痛开始时，持续2-3天",
+        "mechanism": "增加血流，放松子宫肌肉"
+      },
+      "breathing": {
+        "title": "4-7-8呼吸法参数",
+        "technique": "4-7-8呼吸法",
+        "cycles": "初始3-4次循环，增加到8次循环",
+        "frequency": "急性疼痛期间每2-3小时",
+        "timing": "疼痛强度达到5+时",
+        "mechanism": "激活副交感神经系统，降低前列腺素敏感性"
+      },
+      "nsaid": {
+        "title": "NSAID使用参数",
+        "dosage": "200-400mg布洛芬每6-8小时（最大1200mg/天）",
+        "timing": "痉挛首次出现时开始，持续1-2天",
+        "mechanism": "阻断前列腺素合成（COX-1/COX-2抑制）",
+        "contraindications": "哮喘、溃疡、肾病避免"
+      }
+    },
+    "labels": {
+      "temperature": "温度：",
+      "duration": "时长：",
+      "frequency": "频率：",
+      "timing": "时机：",
+      "mechanism": "作用机制：",
+      "technique": "技巧：",
+      "cycles": "循环次数：",
+      "dosage": "剂量：",
+      "contraindications": "禁忌症："
+    },
+    "actions": {
+      "startPractice": "开始练习 →",
+      "learnMore": "了解详情 →"
+    }
   },
   "naturalTherapiesPage": {
     "title": "经期健康自然疗法与平时调理",
@@ -1010,9 +1074,25 @@
       }
     },
     "painTracker": {
-      "title": "疼痛追踪器",
-      "description": "记录疼痛模式，分析趋势变化，优化治疗效果。",
-      "cta": "开始追踪"
+      "title": "经期疼痛追踪系统",
+      "description": "记录疼痛程度与位置，分析疼痛模式，获取个性化建议。",
+      "toolTitle": "疼痛记录",
+      "toolDescription": "记录您今天的疼痛情况，帮助我们更好地了解您的疼痛模式。",
+      "painLevel": "疼痛程度（1-10）",
+      "painLocation": "疼痛位置",
+      "painLocationPlaceholder": "请选择位置",
+      "painType": "疼痛类型",
+      "painTypePlaceholder": "请选择类型",
+      "lowerAbdomen": "下腹部",
+      "lowerBack": "腰部",
+      "thighs": "大腿",
+      "other": "其他",
+      "cramping": "绞痛",
+      "dullPain": "钝痛",
+      "sharpPain": "刺痛",
+      "recording": "记录中...",
+      "recordPain": "记录疼痛",
+      "cta": "[EN] Start Tracking"
     },
     "breathingExercise": {
       "title": "即时呼吸练习工具",
@@ -1052,26 +1132,6 @@
       "severity": "症状严重程度（1-10）",
       "assessing": "评估中...",
       "startAssessment": "开始评估"
-    },
-    "painTracker": {
-      "title": "经期疼痛追踪系统",
-      "description": "记录疼痛程度与位置，分析疼痛模式，获取个性化建议。",
-      "toolTitle": "疼痛记录",
-      "toolDescription": "记录您今天的疼痛情况，帮助我们更好地了解您的疼痛模式。",
-      "painLevel": "疼痛程度（1-10）",
-      "painLocation": "疼痛位置",
-      "painLocationPlaceholder": "请选择位置",
-      "painType": "疼痛类型",
-      "painTypePlaceholder": "请选择类型",
-      "lowerAbdomen": "下腹部",
-      "lowerBack": "腰部",
-      "thighs": "大腿",
-      "other": "其他",
-      "cramping": "绞痛",
-      "dullPain": "钝痛",
-      "sharpPain": "刺痛",
-      "recording": "记录中...",
-      "recordPain": "记录疼痛"
     }
   },
   "scenarioSolutionsPage": {
@@ -1235,6 +1295,31 @@
       }
     },
     "dataSource": "数据来源：全球女性健康调查 | Data Source: Global Women's Health Survey"
+  },
+  "scientificParameters": {
+    "heatTherapy": {
+      "title": "热疗科学参数",
+      "temperature": "40-45°C (104-113°F)",
+      "duration": "15-20分钟",
+      "frequency": "按需使用，每天最多3-4次",
+      "timing": "疼痛开始时使用，持续2-3天",
+      "mechanism": "增加血流，放松子宫肌肉"
+    },
+    "breathingExercise": {
+      "title": "4-7-8呼吸法参数",
+      "technique": "4-7-8呼吸法",
+      "cycles": "初学者3-4个循环，逐渐增加到8个循环",
+      "frequency": "急性疼痛期间每2-3小时一次",
+      "timing": "疼痛强度达到0-10分制的5分以上时使用",
+      "mechanism": "激活副交感神经系统，降低前列腺素敏感度"
+    },
+    "nsaid": {
+      "title": "NSAID使用参数",
+      "dosage": "布洛芬200-400mg，每6-8小时一次（每日最多1200mg）",
+      "timing": "痉挛首次出现时开始使用，持续1-2天",
+      "mechanism": "阻断前列腺素合成（COX-1/COX-2抑制）",
+      "contraindications": "哮喘、胃溃疡、肾病患者避免使用"
+    }
   },
   "searchBox": {
     "placeholder": "搜索文章...",
@@ -1629,9 +1714,9 @@
         "retakeAssessment": "重新评估",
         "saveResults": "保存结果",
         "nextSteps": {
-          "trackSymptoms": "",
-          "tryRecommendations": "",
-          "consultDoctor": ""
+          "trackSymptoms": "使用疼痛追踪器记录症状",
+          "tryRecommendations": "尝试推荐的缓解方法",
+          "consultDoctor": "如果症状持续或恶化，请咨询医生"
         }
       },
       "severity": {
@@ -1763,7 +1848,35 @@
       "resources": "PDF资源",
       "resourcesDesc": "可下载的专业健康指导和工具",
       "solutions": "场景方案",
-      "solutionsDesc": "针对不同生活环境的应对方案"
+      "solutionsDesc": "针对不同生活环境的应对方案",
+      "assessment": {
+        "title": "痛经症状评估",
+        "description": "科学评估痛经程度，获得个性化治疗建议和用药指导",
+        "cta": "开始评估 →"
+      },
+      "downloads": {
+        "cta": "下载资源 →"
+      },
+      "scenarios": {
+        "cta": "查看方案 →"
+      }
+    },
+    "faq": {
+      "q1": {
+        "question": "痛经怎么缓解最快方法？",
+        "answer": "最快的痛经缓解方法包括：热敷下腹部和腰部、轻柔按摩腹部、适量运动如瑜伽、服用布洛芬等非甾体抗炎药、保持充足休息。建议结合多种方法，效果更佳。"
+      },
+      "q2": {
+        "question": "月经周期多少天算正常？",
+        "answer": "正常的月经周期为21-35天，平均28天。月经持续时间通常为3-7天。如果周期长期不规律或有明显变化，建议咨询妇科医生。"
+      },
+      "q3": {
+        "question": "中医如何调理月经不调？",
+        "answer": "中医通过辨证论治调理月经：针灸调节气血、中药方剂如四物汤、食疗调养、生活方式调整。需要专业中医师诊断体质后制定个性化方案。"
+      }
+    },
+    "organization": {
+      "description": "专业的女性月经健康管理平台"
     }
   },
   "homeClean": {
@@ -1800,10 +1913,22 @@
     "trusted": {
       "title": "值得信赖的专业平台",
       "metrics": {
-        "activeUsers": { "number": "50K+", "label": "活跃用户" },
-        "articles": { "number": "42", "label": "专业文章" },
-        "resources": { "number": "24", "label": "PDF资源" },
-        "satisfaction": { "number": "98%", "label": "用户满意度" }
+        "activeUsers": {
+          "number": "50K+",
+          "label": "活跃用户"
+        },
+        "articles": {
+          "number": "42",
+          "label": "专业文章"
+        },
+        "resources": {
+          "number": "24",
+          "label": "PDF资源"
+        },
+        "satisfaction": {
+          "number": "98%",
+          "label": "用户满意度"
+        }
       }
     },
     "faq": {
