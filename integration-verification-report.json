@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-09-01T14:21:01.393Z",
+  "overallScore": 85,
+  "results": {
+    "navigation": {
+      "passed": 3,
+      "failed": 1,
+      "issues": [
+        "Consistent routing structure"
+      ]
+    },
+    "styling": {
+      "passed": 5,
+      "failed": 0,
+      "issues": []
+    },
+    "internationalization": {
+      "passed": 5,
+      "failed": 0,
+      "issues": []
+    },
+    "pdfConsistency": {
+      "passed": 3,
+      "failed": 1,
+      "issues": [
+        "Export templates use consistent styling with PDF center"
+      ]
+    },
+    "responsiveness": {
+      "passed": 4,
+      "failed": 0,
+      "issues": []
+    },
+    "crossBrowser": {
+      "passed": 2,
+      "failed": 2,
+      "issues": [
+        "Uses standard CSS properties",
+        "Graceful degradation for JavaScript disabled"
+      ]
+    }
+  },
+  "summary": {
+    "totalPassed": 22,
+    "totalFailed": 4,
+    "overallPercentage": 85
+  }
+}

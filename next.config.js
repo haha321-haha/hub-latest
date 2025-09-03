@@ -71,6 +71,61 @@ const nextConfig = {
 
   // SEO优化
   trailingSlash: false,
+
+  // 🚀 SEO优化 - 301重定向配置
+  async redirects() {
+    return [
+      // 处理重复内容
+      {
+        source: '/downloads/download-1',
+        destination: '/downloads',
+        permanent: true,
+      },
+      {
+        source: '/downloads/download-2',
+        destination: '/downloads',
+        permanent: true,
+      },
+      {
+        source: '/downloads/download-3',
+        destination: '/downloads',
+        permanent: true,
+      },
+      // 阻止测试页面索引
+      {
+        source: '/test',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/test/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/dev',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/dev/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      // URL规范化
+      {
+        source: '/index.html',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/home',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
+
   generateEtags: true,
 
   // 🚀 头部优化 - 增强缓存策略

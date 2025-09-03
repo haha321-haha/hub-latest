@@ -7,27 +7,27 @@
   "metadata": {
     "home": {
       "title": "Period Hub - Menstrual Health Management Platform",
-      "description": "Professional menstrual health management platform with scientific guidance and caring support to help every woman navigate their menstrual cycle with confidence and health"
+      "description": "Professional menstrual health platform offering period pain relief, cycle tracking, symptom assessment and scientific management solutions for women"
     },
     "articles": {
       "title": "Health Articles - Period Hub",
-      "description": "Professional guidance based on scientific research to help you better understand and manage menstrual health"
+      "description": "42 evidence-based articles covering period pain relief, nutrition therapy, lifestyle improvements and expert menstrual health knowledge"
     },
     "tools": {
       "title": "Interactive Tools - Period Hub",
-      "description": "Intelligent health assessment tools providing personalized health management solutions"
+      "description": "6 professional tools including period pain assessment, cycle tracking, constitution testing - personalized menstrual health management based on medical research"
     },
     "teen": {
       "title": "Teen Health Zone - Period Hub",
-      "description": "Menstrual health guidance designed specifically for teenage girls, making the journey of growth less confusing"
+      "description": "Specialized menstrual health education for ages 10-19, including first period guidance, school emergency handling, and psychological adjustment support"
     },
     "about": {
       "title": "About Us - Period Hub",
-      "description": "Committed to providing professional and caring menstrual health management services for every woman"
+      "description": "Professional menstrual health platform offering evidence-based period pain relief, cycle management, and comprehensive health education for women"
     },
     "contact": {
       "title": "Contact Us - Period Hub",
-      "description": "We're here to help you on your menstrual health journey"
+      "description": "Professional menstrual health consultation team, 24-hour response for period pain relief, health management, and technical support questions"
     }
   },
   "common": {

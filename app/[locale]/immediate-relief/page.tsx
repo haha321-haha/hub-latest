@@ -26,6 +26,30 @@ export default function ImmediateReliefPage({
   const t = useTranslations('immediateReliefPage');
   const commonT = useTranslations('common');
   
+  // Scientific parameters data
+  const heatTherapyParams = {
+    temperature: "40-45°C (104-113°F)",
+    duration: "15-20 minutes",
+    frequency: "As needed, up to 3-4 times daily",
+    timing: "At onset of pain, continue for 2-3 days",
+    mechanism: "Increases blood flow, relaxes uterine muscles"
+  };
+
+  const breathingParams = {
+    technique: "4-7-8 breathing",
+    cycles: "3-4 cycles initially, increase to 8 cycles",
+    frequency: "Every 2-3 hours during acute pain",
+    timing: "When pain intensity reaches 5+ on 0-10 scale",
+    mechanism: "Activates parasympathetic nervous system, reduces prostaglandin sensitivity"
+  };
+
+  const nsaidParams = {
+    dosage: "200-400mg ibuprofen every 6-8 hours (max 1200mg/day)",
+    timing: "Start at first sign of cramps, continue for 1-2 days",
+    mechanism: "Blocks prostaglandin synthesis (COX-1/COX-2 inhibition)",
+    contraindications: "Avoid if asthma, ulcers, kidney disease"
+  };
+  
   return (
     <div className="space-y-10">
       {/* Page Header */}

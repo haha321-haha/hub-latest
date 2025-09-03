@@ -186,6 +186,26 @@ export const CHART_COLORS = {
   dark: '#374151'
 } as const;
 
+// 疼痛类型选项
+export const PAIN_TYPES = {
+  en: [
+    { value: 'cramping', label: 'Cramping', description: 'Sharp, intermittent pain' },
+    { value: 'aching', label: 'Aching', description: 'Dull, persistent pain' },
+    { value: 'throbbing', label: 'Throbbing', description: 'Pulsating pain' },
+    { value: 'stabbing', label: 'Stabbing', description: 'Sudden, sharp pain' },
+    { value: 'pressure', label: 'Pressure', description: 'Tight, squeezing sensation' },
+    { value: 'burning', label: 'Burning', description: 'Hot, burning sensation' }
+  ],
+  zh: [
+    { value: 'cramping', label: '痉挛性疼痛', description: '尖锐、间歇性疼痛' },
+    { value: 'aching', label: '酸痛', description: '钝痛、持续性疼痛' },
+    { value: 'throbbing', label: '跳痛', description: '搏动性疼痛' },
+    { value: 'stabbing', label: '刺痛', description: '突然的尖锐疼痛' },
+    { value: 'pressure', label: '压迫感', description: '紧缩、挤压感' },
+    { value: 'burning', label: '灼烧感', description: '灼热、烧伤感' }
+  ]
+} as const;
+
 // 动画配置
 export const ANIMATION_DURATION = {
   fast: 150,

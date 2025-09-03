@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-08-30T16:57:02.229Z",
+  "totalFiles": 31,
+  "demonstratedFiles": 3,
+  "categoryBreakdown": {
+    "config": 9,
+    "unknown": 21,
+    "util": 1
+  },
+  "confidenceDistribution": {
+    "high": 3,
+    "medium": 16,
+    "low": 12
+  },
+  "recommendations": [
+    "🔥 立即批准高置信度文件 (≥80%)",
+    "⚡ 按类别批量处理相似文件",
+    "🔍 详细审查低置信度文件",
+    "📝 记录用户偏好以改进算法"
+  ]
+}
