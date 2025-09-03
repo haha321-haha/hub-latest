@@ -17,7 +17,7 @@ export default function Header() {
 
   // Navigation items
   const navigation = [
-    { name: locale === 'en' ? 'Home' : '首页', href: `/${locale}/interactive-tools` },
+    { name: locale === 'en' ? 'Home' : '首页', href: `/${locale}` },
     { name: locale === 'en' ? 'Interactive Solutions' : '互动解决方案', href: `/${locale}/interactive-tools` },
     { name: locale === 'en' ? 'PDF Download Center' : '文章PDF下载中心', href: `/${locale}/downloads` },
     { name: locale === 'en' ? 'Scenario Solutions' : '场景解决方案', href: `/${locale}/scenario-solutions` },
@@ -47,6 +47,10 @@ export default function Header() {
 
   // Check if a nav item is active
   const isActive = (href: string) => {
+    // 首页特殊处理：精确匹配 /zh 或 /en
+    if (href === `/${locale}`) {
+      return pathname === href;
+    }
     if (href === `/${locale}/interactive-tools`) {
       return pathname === href;
     }
@@ -70,7 +74,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
           {/* 📱 移动端优化Logo */}
           <div className="flex-shrink-0">
-            <Link href={`/${locale}/interactive-tools`} className="flex items-center space-x-2">
+            <Link href={`/${locale}`} className="flex items-center space-x-2">
               <span className="font-bold text-lg sm:text-xl text-primary-600 hover:text-primary-700 transition-colors">
                 periodhub.health
               </span>
