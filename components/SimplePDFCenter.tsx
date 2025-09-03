@@ -23,7 +23,7 @@ interface Resource {
 
 const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
   const [activeCategory, setActiveCategory] = useState('immediate');
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState('热敷');
   const [loadingStates, setLoadingStates] = useState<Record<string, boolean>>({});
   const router = useRouter();
   
@@ -910,7 +910,13 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       // 搜索描述
       const descriptionMatch = resource.description?.toLowerCase().includes(term) || false;
       
-      return titleMatch || keywordMatch || descriptionMatch;
+      // 特殊匹配：热敷相关
+      const heatMatch = (term.includes('热敷') || term.includes('heat')) && 
+        (resource.title.toLowerCase().includes('热') || 
+         resource.title.toLowerCase().includes('heat') ||
+         resource.keywords?.some(k => k.toLowerCase().includes('热') || k.toLowerCase().includes('heat')));
+      
+      return titleMatch || keywordMatch || descriptionMatch || heatMatch;
     });
   };
 

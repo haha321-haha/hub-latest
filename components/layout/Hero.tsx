@@ -96,13 +96,22 @@ export default function Hero() {
 
             {/* Action buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link href={`/${locale}/interactive-tools`}>
+              <Link href={`/${locale}/immediate-relief`}>
                 <Button 
                   size="lg" 
                   className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 min-w-[200px] group"
                 >
-                  {t('cta.primary')}
+                  {locale === 'zh' ? '⚡ 即时缓解' : '⚡ Immediate Relief'}
                   <ArrowRight className="w-5 h-5 ml-2 inline-block group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              <Link href={`/${locale}/interactive-tools`}>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-600 transition-all duration-300 min-w-[200px]"
+                >
+                  {t('cta.primary')}
                 </Button>
               </Link>
               <Link href={`/${locale}/health-guide`}>
