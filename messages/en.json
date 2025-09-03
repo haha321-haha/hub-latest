@@ -1200,6 +1200,9 @@
     },
     "dataSource": "数据来源：全球女性健康调查 | Data Source: Global Women's Health Survey"
   },
+  "healthStatistics": {
+    "dataSource": "数据来源：全球女性健康调查 | Data Source: Global Women's Health Survey"
+  },
   "searchBox": {
     "placeholder": "Search articles...",
     "noResults": "No articles found",
