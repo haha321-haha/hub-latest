@@ -106,6 +106,22 @@ export default function ImmediateReliefPage({
                 : 'Applying heat to the lower abdomen or back can help relax contracting uterine muscles and improve blood circulation, which may alleviate cramps.'
               }
             </p>
+            
+            {/* 科学参数显示 */}
+            <div className="bg-primary-50 p-4 rounded-lg mb-4">
+              <h4 className="font-semibold text-primary-800 mb-2">
+                {locale === 'zh' ? '科学参数' : 'Scientific Parameters'}
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+                <div><strong>{locale === 'zh' ? '温度：' : 'Temperature: '}</strong>{heatTherapyParams.temperature}</div>
+                <div><strong>{locale === 'zh' ? '时长：' : 'Duration: '}</strong>{heatTherapyParams.duration}</div>
+                <div><strong>{locale === 'zh' ? '频率：' : 'Frequency: '}</strong>{heatTherapyParams.frequency}</div>
+                <div><strong>{locale === 'zh' ? '时机：' : 'Timing: '}</strong>{heatTherapyParams.timing}</div>
+              </div>
+              <p className="text-xs text-primary-700 mt-2">
+                <strong>{locale === 'zh' ? '作用机制：' : 'Mechanism: '}</strong>{heatTherapyParams.mechanism}
+              </p>
+            </div>
             <div className="flex justify-end">
               <Link
                 href={`/${locale}/articles/heat-therapy-complete-guide`}
@@ -162,6 +178,22 @@ export default function ImmediateReliefPage({
                 : 'Activate the parasympathetic nervous system through 4-7-8 breathing technique to naturally reduce pain sensitivity. Research shows it can reduce pain perception by 40%.'
               }
             </p>
+            
+            {/* 呼吸练习科学参数 */}
+            <div className="bg-blue-50 p-4 rounded-lg mb-4">
+              <h4 className="font-semibold text-blue-800 mb-2">
+                {locale === 'zh' ? '4-7-8呼吸法参数' : '4-7-8 Breathing Parameters'}
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+                <div><strong>{locale === 'zh' ? '技巧：' : 'Technique: '}</strong>{breathingParams.technique}</div>
+                <div><strong>{locale === 'zh' ? '循环次数：' : 'Cycles: '}</strong>{breathingParams.cycles}</div>
+                <div><strong>{locale === 'zh' ? '频率：' : 'Frequency: '}</strong>{breathingParams.frequency}</div>
+                <div><strong>{locale === 'zh' ? '时机：' : 'Timing: '}</strong>{breathingParams.timing}</div>
+              </div>
+              <p className="text-xs text-blue-700 mt-2">
+                <strong>{locale === 'zh' ? '作用机制：' : 'Mechanism: '}</strong>{breathingParams.mechanism}
+              </p>
+            </div>
             <div className="flex justify-end">
               <Link
                 href={`/${locale}/interactive-tools#breathing-exercise`}
@@ -218,6 +250,23 @@ export default function ImmediateReliefPage({
                 : 'Understanding common non-prescription options and their basic mechanisms can be helpful, although professional medical advice is crucial for safe and effective use.'
               }
             </p>
+            
+            {/* NSAID科学参数 */}
+            <div className="bg-neutral-50 p-4 rounded-lg mb-4">
+              <h4 className="font-semibold text-neutral-800 mb-2">
+                {locale === 'zh' ? 'NSAID使用参数' : 'NSAID Usage Parameters'}
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+                <div><strong>{locale === 'zh' ? '剂量：' : 'Dosage: '}</strong>{nsaidParams.dosage}</div>
+                <div><strong>{locale === 'zh' ? '时机：' : 'Timing: '}</strong>{nsaidParams.timing}</div>
+              </div>
+              <p className="text-xs text-neutral-700 mt-2">
+                <strong>{locale === 'zh' ? '作用机制：' : 'Mechanism: '}</strong>{nsaidParams.mechanism}
+              </p>
+              <p className="text-xs text-red-600 mt-1">
+                <strong>{locale === 'zh' ? '禁忌症：' : 'Contraindications: '}</strong>{nsaidParams.contraindications}
+              </p>
+            </div>
             <div className="flex justify-end">
               <Link
                 href={`/${locale}/articles/when-to-seek-medical-care-comprehensive-guide`}
