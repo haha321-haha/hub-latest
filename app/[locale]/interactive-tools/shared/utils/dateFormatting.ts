@@ -1,6 +1,39 @@
 import { format, formatDistanceToNow, isToday, isYesterday, differenceInDays, differenceInWeeks, differenceInMonths } from 'date-fns';
 import { enUS, zhCN } from 'date-fns/locale';
-import { DATE_TIME_FORMATS } from '../constants';
+
+// 日期时间格式常量（修复缺失的DATE_TIME_FORMATS）
+const DATE_TIME_FORMATS = {
+  en: {
+    short: 'MMM d, yyyy',
+    medium: 'MMM d, yyyy h:mm a',
+    long: 'MMMM d, yyyy h:mm:ss a',
+    time: 'h:mm a',
+    date: 'MMMM d, yyyy',
+    monthYear: 'MMMM yyyy',
+    relative: {
+      today: 'Today',
+      yesterday: 'Yesterday',
+      daysAgo: (days: number) => `${days} day${days !== 1 ? 's' : ''} ago`,
+      weeksAgo: (weeks: number) => `${weeks} week${weeks !== 1 ? 's' : ''} ago`,
+      monthsAgo: (months: number) => `${months} month${months !== 1 ? 's' : ''} ago`
+    }
+  },
+  zh: {
+    short: 'yyyy年M月d日',
+    medium: 'yyyy年M月d日 HH:mm',
+    long: 'yyyy年M月d日 HH:mm:ss',
+    time: 'HH:mm',
+    date: 'yyyy年M月d日',
+    monthYear: 'yyyy年M月',
+    relative: {
+      today: '今天',
+      yesterday: '昨天',
+      daysAgo: (days: number) => `${days}天前`,
+      weeksAgo: (weeks: number) => `${weeks}周前`,
+      monthsAgo: (months: number) => `${months}个月前`
+    }
+  }
+} as const;
 
 // Locale mapping for date-fns
 const DATE_FNS_LOCALES = {

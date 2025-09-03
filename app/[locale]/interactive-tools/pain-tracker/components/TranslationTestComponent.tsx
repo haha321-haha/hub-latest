@@ -8,7 +8,9 @@ import {
   REMEDIES, 
   MENSTRUAL_STATUS, 
   PAIN_LEVELS, 
-  PAIN_TYPES
+  PAIN_TYPES,
+  MEDICAL_TERMS,
+  CULTURAL_DESCRIPTIONS
 } from '../../shared/constants';
 import { formatDate, formatRelativeDate, formatDuration } from '../../shared/utils/dateFormatting';
 
@@ -84,7 +86,7 @@ export default function TranslationTestComponent({ locale }: TranslationTestComp
               <span className="text-lg">{location.icon}</span>
               <div>
                 <div className="font-medium">{location.label}</div>
-                {location.description && (
+                {location?.description && (
                   <div className="text-xs text-gray-500">{location.description}</div>
                 )}
               </div>
@@ -106,7 +108,7 @@ export default function TranslationTestComponent({ locale }: TranslationTestComp
               <div>
                 <div className="font-medium">{symptom.label}</div>
                 <div className="text-xs text-gray-500">
-                  {symptom.category} • {symptom.severity}
+                  {symptom?.category} • {symptom?.severity}
                 </div>
               </div>
             </div>
@@ -127,7 +129,7 @@ export default function TranslationTestComponent({ locale }: TranslationTestComp
               <div>
                 <div className="font-medium">{remedy.label}</div>
                 <div className="text-xs text-gray-500">
-                  {remedy.category} • {remedy.type}
+                  {remedy?.category} • {remedy?.type}
                 </div>
               </div>
             </div>
@@ -147,8 +149,8 @@ export default function TranslationTestComponent({ locale }: TranslationTestComp
               <span className="text-lg">{status.icon}</span>
               <div>
                 <div className="font-medium">{status.label}</div>
-                <div className="text-sm text-gray-600">{status.description}</div>
-                <div className="text-xs text-gray-500">Phase: {status.phase}</div>
+                <div className="text-sm text-gray-600">{status?.description}</div>
+                <div className="text-xs text-gray-500">Phase: {status?.phase}</div>
               </div>
             </div>
           </div>
@@ -167,7 +169,7 @@ export default function TranslationTestComponent({ locale }: TranslationTestComp
               <div className="flex items-center space-x-3">
                 <div 
                   className="w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm"
-                  style={{ backgroundColor: level.color }}
+                  style={{ backgroundColor: level?.color }}
                 >
                   {level.value}
                 </div>
@@ -177,7 +179,7 @@ export default function TranslationTestComponent({ locale }: TranslationTestComp
                 </div>
               </div>
               <div className="text-xs text-gray-500 italic">
-                {level.culturalNote}
+                {level?.culturalNote}
               </div>
             </div>
           </div>
@@ -193,7 +195,7 @@ export default function TranslationTestComponent({ locale }: TranslationTestComp
         {PAIN_TYPES[locale].map((type) => (
           <div key={type.value} className="border rounded-lg p-3 hover:bg-gray-50">
             <div className="flex items-center space-x-2">
-              <span className="text-lg">{type.icon}</span>
+              <span className="text-lg">{type?.icon}</span>
               <div>
                 <div className="font-medium">{type.label}</div>
                 <div className="text-xs text-gray-500">{type.description}</div>
@@ -209,7 +211,7 @@ export default function TranslationTestComponent({ locale }: TranslationTestComp
     <div className="space-y-4">
       <h3 className="text-lg font-semibold">{locale === 'zh' ? '医学术语' : 'Medical Terminology'}</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {Object.entries(MEDICAL_TERMS[locale]).map(([key, term]) => (
+        {Object.entries(MEDICAL_TERMS[locale] || {}).map(([key, term]) => (
           <div key={key} className="border rounded-lg p-3 hover:bg-gray-50">
             <div className="font-medium">{term}</div>
             <div className="text-xs text-gray-500">{key}</div>
@@ -227,7 +229,7 @@ export default function TranslationTestComponent({ locale }: TranslationTestComp
         <div className="border rounded-lg p-4">
           <h4 className="font-medium mb-2">{locale === 'zh' ? '疼痛比喻' : 'Pain Metaphors'}</h4>
           <div className="space-y-2">
-            {Object.entries(CULTURAL_DESCRIPTIONS[locale].painMetaphors).map(([key, metaphor]) => (
+            {Object.entries(CULTURAL_DESCRIPTIONS[locale]?.painMetaphors || {}).map(([key, metaphor]) => (
               <div key={key} className="flex justify-between">
                 <span className="capitalize">{key}:</span>
                 <span className="italic text-gray-600">{metaphor}</span>
@@ -239,7 +241,7 @@ export default function TranslationTestComponent({ locale }: TranslationTestComp
         <div className="border rounded-lg p-4">
           <h4 className="font-medium mb-2">{locale === 'zh' ? '舒适措施' : 'Comfort Measures'}</h4>
           <div className="space-y-2">
-            {Object.entries(CULTURAL_DESCRIPTIONS[locale].comfortMeasures).map(([key, measure]) => (
+            {Object.entries(CULTURAL_DESCRIPTIONS[locale]?.comfortMeasures || {}).map(([key, measure]) => (
               <div key={key} className="flex justify-between">
                 <span className="capitalize">{key}:</span>
                 <span className="italic text-gray-600">{measure}</span>
