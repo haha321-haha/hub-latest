@@ -33,7 +33,7 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
   const [showHistory, setShowHistory] = useState(false);
 
   // 使用翻译键
-  const t = useTranslations('cycleTracker');
+  const t = useTranslations();
 
   // 本地存储键名
   const STORAGE_KEYS = {

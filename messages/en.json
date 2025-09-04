@@ -1364,7 +1364,12 @@
       "relaxation": "Relaxation"
     },
     "tip": "💡 Tip: Find a comfortable sitting or lying position, relax all muscles. Beginners should do 3-4 cycles.",
-    "timeUnit": "s"
+    "timeUnit": "s",
+    "cycleTracker": {
+      "title": "Smart Cycle Tracker",
+      "description": "Intelligently track your menstrual cycle, predict your next period, record symptom changes, and help you better understand your body's patterns.",
+      "cta": "Start Tracking"
+    }
   },
   "tools": {
     "title": "Interactive Tools",
