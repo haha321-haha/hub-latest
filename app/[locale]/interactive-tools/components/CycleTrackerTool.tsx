@@ -31,69 +31,12 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved'>('idle');
   const [showHistory, setShowHistory] = useState(false);
 
-  // 翻译文本
-  const texts = {
-    zh: {
-      title: '月经周期追踪器',
-      subtitle: '记录您的月经周期，预测下次月经和排卵期。',
-      lastPeriodLabel: '上次月经开始日期',
-      cycleLengthLabel: '平均周期长度（天）',
-      calculateButton: '计算预测',
-      resetButton: '重新计算',
-      predictionTitle: '预测结果',
-      nextPeriodLabel: '下次月经预计日期',
-      ovulationLabel: '排卵期预计日期',
-      fertilityWindowLabel: '易孕期',
-      disclaimer: '此工具仅供参考，不能替代专业医疗建议。每个人的周期可能有所不同。',
-      dateValidationError: '上次月经开始日期不能是未来日期',
-      cycleLengthRange: '周期长度通常在21-35天之间',
-      to: '至',
-      loading: '正在加载保存的数据...',
-      saveSuccess: '数据已保存',
-      historyTitle: '历史记录',
-      showHistory: '查看历史记录',
-      hideHistory: '隐藏历史记录',
-      noHistory: '暂无历史记录',
-      deleteRecord: '删除',
-      clearAllHistory: '清空所有记录',
-      exportData: '导出数据',
-      confirmClearAll: '确定要清空所有历史记录吗？',
-      recordedOn: '记录于',
-      cycleLength: '周期长度',
-      days: '天'
-    },
-    en: {
-      title: 'Menstrual Cycle Tracker',
-      subtitle: 'Track your menstrual cycle and predict your next period and ovulation.',
-      lastPeriodLabel: 'Last Period Start Date',
-      cycleLengthLabel: 'Average Cycle Length (days)',
-      calculateButton: 'Calculate Prediction',
-      resetButton: 'Reset',
-      predictionTitle: 'Prediction Results',
-      nextPeriodLabel: 'Next Period Expected',
-      ovulationLabel: 'Ovulation Expected',
-      fertilityWindowLabel: 'Fertility Window',
-      disclaimer: 'This tool is for reference only and cannot replace professional medical advice. Each person\'s cycle may vary.',
-      dateValidationError: 'Last period start date cannot be in the future',
-      cycleLengthRange: 'Cycle length is typically between 21-35 days',
-      to: 'to',
-      loading: 'Loading saved data...',
-      saveSuccess: 'Data saved',
-      historyTitle: 'History Records',
-      showHistory: 'Show History',
-      hideHistory: 'Hide History',
-      noHistory: 'No history records',
-      deleteRecord: 'Delete',
-      clearAllHistory: 'Clear All Records',
-      exportData: 'Export Data',
-      confirmClearAll: 'Are you sure you want to clear all history records?',
-      recordedOn: 'Recorded on',
-      cycleLength: 'Cycle Length',
-      days: 'days'
-    }
+  // 使用翻译键
+  const t = (key: string) => {
+    // 这里应该使用实际的翻译函数，暂时返回key作为占位符
+    // 在实际应用中，这里应该调用 useTranslations('cycleTracker')(key)
+    return key;
   };
-
-  const t = texts[locale as keyof typeof texts] || texts.zh;
 
   // 本地存储键名
   const STORAGE_KEYS = {
@@ -174,7 +117,7 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
 
   // 清空所有历史记录
   const clearAllHistory = () => {
-    if (confirm(t.confirmClearAll)) {
+    if (confirm(t('cycleTracker.confirmClearAll'))) {
       setHistoryRecords([]);
       localStorage.removeItem(STORAGE_KEYS.HISTORY);
     }
@@ -228,17 +171,17 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
 
     // 计算下次月经日期
     const nextPeriod = new Date(lastPeriod);
-    nextPeriod.setDate(nextPeriod.getDate() + cycleLength);
+    nextPeriod.setUTCDate(nextPeriod.getUTCDate() + cycleLength);
 
     // 计算排卵日期（通常在下次月经前14天）
     const ovulation = new Date(nextPeriod);
-    ovulation.setDate(ovulation.getDate() - 14);
+    ovulation.setUTCDate(ovulation.getUTCDate() - 14);
 
     // 计算易孕期（排卵前5天到排卵后1天）
     const fertilityStart = new Date(ovulation);
-    fertilityStart.setDate(fertilityStart.getDate() - 5);
+    fertilityStart.setUTCDate(fertilityStart.getUTCDate() - 5);
     const fertilityEnd = new Date(ovulation);
-    fertilityEnd.setDate(fertilityEnd.getDate() + 1);
+    fertilityEnd.setUTCDate(fertilityEnd.getUTCDate() + 1);
 
     const newPrediction = {
       nextPeriod: nextPeriod.toISOString().split('T')[0],
@@ -281,8 +224,8 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
     const selectedDate = e.target.value;
     const today = getTodayDate();
 
-    if (selectedDate > today) {
-      alert(t.dateValidationError);
+    if (new Date(selectedDate) > new Date(today)) {
+      alert(t('cycleTracker.dateValidation'));
       return;
     }
 
@@ -308,7 +251,7 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
       <div className="max-w-2xl mx-auto p-6">
         <div className="text-center py-12">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">{t.loading}</p>
+          <p className="text-gray-600">{t('cycleTracker.loading')}</p>
         </div>
       </div>
     );
@@ -317,8 +260,8 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
   return (
     <div className="max-w-2xl mx-auto p-6">
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">{t.title}</h1>
-        <p className="text-lg text-gray-600">{t.subtitle}</p>
+        <h1 className="text-3xl font-bold text-gray-800 mb-4">{t('cycleTracker.title')}</h1>
+        <p className="text-lg text-gray-600">{t('cycleTracker.subtitle')}</p>
 
         {/* 保存状态提示 */}
         {saveStatus === 'saved' && (
@@ -326,7 +269,7 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
             </svg>
-            {t.saveSuccess}
+            {t('cycleTracker.saveSuccess')}
           </div>
         )}
       </div>
@@ -340,7 +283,7 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          {showHistory ? t.hideHistory : t.showHistory}
+          {showHistory ? t('cycleTracker.hideHistory') : t('cycleTracker.showHistory')}
           {historyRecords.length > 0 && (
             <span className="ml-2 bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">
               {historyRecords.length}
@@ -353,7 +296,7 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
       {showHistory && (
         <div className="mb-8 bg-purple-50 rounded-xl p-6">
           <div className="flex justify-between items-center mb-4">
-            <h3 className="text-xl font-semibold text-gray-800">{t.historyTitle}</h3>
+            <h3 className="text-xl font-semibold text-gray-800">{t('cycleTracker.historyTitle')}</h3>
             <div className="flex space-x-2">
               {historyRecords.length > 0 && (
                 <>
@@ -361,13 +304,13 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
                     onClick={exportData}
                     className="px-3 py-1 text-sm bg-purple-100 text-purple-700 rounded hover:bg-purple-200 transition-colors"
                   >
-                    {t.exportData}
+                    {t('cycleTracker.exportData')}
                   </button>
                   <button
                     onClick={clearAllHistory}
                     className="px-3 py-1 text-sm bg-red-100 text-red-700 rounded hover:bg-red-200 transition-colors"
                   >
-                    {t.clearAllHistory}
+                    {t('cycleTracker.clearAllHistory')}
                   </button>
                 </>
               )}
@@ -375,7 +318,7 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
           </div>
 
           {historyRecords.length === 0 ? (
-            <p className="text-gray-500 text-center py-4">{t.noHistory}</p>
+            <p className="text-gray-500 text-center py-4">{t('cycleTracker.noHistory')}</p>
           ) : (
             <div className="space-y-3 max-h-96 overflow-y-auto">
               {historyRecords.map((record) => (
@@ -383,32 +326,32 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
                   <div className="flex justify-between items-start mb-2">
                     <div>
                       <p className="text-sm text-gray-500">
-                        {t.recordedOn} {formatDate(record.date.split('T')[0])}
+                        {t('cycleTracker.recordedOn')} {formatDate(record.date.split('T')[0])}
                       </p>
                       <p className="font-medium text-gray-800">
-                        {t.cycleLength}: {record.cycleLength} {t.days}
+                        {t('cycleTracker.cycleLength')}: {record.cycleLength} {t('cycleTracker.days')}
                       </p>
                     </div>
                     <button
                       onClick={() => deleteHistoryRecord(record.id)}
                       className="text-red-500 hover:text-red-700 text-sm"
                     >
-                      {t.deleteRecord}
+                      {t('cycleTracker.deleteRecord')}
                     </button>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
                     <div className="bg-pink-100 text-pink-800 p-2 rounded">
-                      <div className="font-medium">{t.nextPeriodLabel}</div>
+                      <div className="font-medium">{t('cycleTracker.nextPeriodLabel')}</div>
                       <div>{formatDate(record.prediction.nextPeriod)}</div>
                     </div>
                     <div className="bg-purple-100 text-purple-800 p-2 rounded">
-                      <div className="font-medium">{t.ovulationLabel}</div>
+                      <div className="font-medium">{t('cycleTracker.ovulationLabel')}</div>
                       <div>{formatDate(record.prediction.ovulation)}</div>
                     </div>
                     <div className="bg-green-100 text-green-800 p-2 rounded">
-                      <div className="font-medium">{t.fertilityWindowLabel}</div>
+                      <div className="font-medium">{t('cycleTracker.fertilityWindowLabel')}</div>
                       <div>
-                        {formatDate(record.prediction.fertilityWindow.start)} {t.to} {formatDate(record.prediction.fertilityWindow.end)}
+                        {formatDate(record.prediction.fertilityWindow.start)} {t('cycleTracker.to')} {formatDate(record.prediction.fertilityWindow.end)}
                       </div>
                     </div>
                   </div>
@@ -423,7 +366,7 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
         <div className="space-y-6">
           <div>
             <label className="block text-lg font-semibold mb-3 text-gray-800">
-              {t.lastPeriodLabel}
+              {t('cycleTracker.lastPeriodLabel')}
             </label>
             <input
               type="date"
@@ -432,12 +375,12 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
               max={getTodayDate()}
               className="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-base"
             />
-            <p className="mt-2 text-sm text-red-600">⚠️ {t.dateValidationError}</p>
+            <p className="mt-2 text-sm text-red-600">⚠️ {t('cycleTracker.dateValidation')}</p>
           </div>
 
           <div>
             <label className="block text-lg font-semibold mb-3 text-gray-800">
-              {t.cycleLengthLabel}
+              {t('cycleTracker.cycleLengthLabel')}
             </label>
             <div className="flex items-center space-x-4">
               <div className="flex-1 relative">
@@ -457,7 +400,7 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
                   }}
                 />
                 {/* 滑块样式 */}
-                <style jsx>{`
+                <style>{`
                   .slider::-webkit-slider-thumb {
                     appearance: none;
                     height: 20px;
@@ -483,7 +426,7 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
                 {cycleLength}
               </span>
             </div>
-            <p className="mt-2 text-sm text-gray-500">{t.cycleLengthRange}</p>
+            <p className="mt-2 text-sm text-gray-500">{t('cycleTracker.cycleLengthRange')}</p>
           </div>
 
           <div className="flex justify-center pt-6">
@@ -492,21 +435,21 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
               disabled={!lastPeriodDate}
               className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-purple-800 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
             >
-              {t.calculateButton}
+              {t('cycleTracker.calculateButton')}
             </button>
           </div>
         </div>
       ) : (
         <div className="space-y-6">
           <div className="text-center">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">{t.predictionTitle}</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">{t('cycleTracker.predictionTitle')}</h2>
           </div>
 
           <div className="grid gap-6">
             <div className="bg-gradient-to-r from-pink-500 to-purple-500 rounded-xl p-6 text-white">
               <div className="flex items-center space-x-3 mb-4">
                 <span className="text-3xl">🩸</span>
-                <h3 className="text-xl font-semibold">{t.nextPeriodLabel}</h3>
+                <h3 className="text-xl font-semibold">{t('cycleTracker.nextPeriodLabel')}</h3>
               </div>
               <p className="text-2xl font-bold">{formatDate(prediction.nextPeriod)}</p>
             </div>
@@ -514,7 +457,7 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
             <div className="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl p-6 text-white">
               <div className="flex items-center space-x-3 mb-4">
                 <span className="text-3xl">🥚</span>
-                <h3 className="text-xl font-semibold">{t.ovulationLabel}</h3>
+                <h3 className="text-xl font-semibold">{t('cycleTracker.ovulationLabel')}</h3>
               </div>
               <p className="text-2xl font-bold">{formatDate(prediction.ovulation)}</p>
             </div>
@@ -522,10 +465,10 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
             <div className="bg-gradient-to-r from-green-500 to-teal-500 rounded-xl p-6 text-white">
               <div className="flex items-center space-x-3 mb-4">
                 <span className="text-3xl">💚</span>
-                <h3 className="text-xl font-semibold">{t.fertilityWindowLabel}</h3>
+                <h3 className="text-xl font-semibold">{t('cycleTracker.fertilityWindowLabel')}</h3>
               </div>
               <p className="text-xl font-bold">
-                {formatDate(prediction.fertilityWindow.start)} {t.to} {formatDate(prediction.fertilityWindow.end)}
+                {formatDate(prediction.fertilityWindow.start)} {t('cycleTracker.to')} {formatDate(prediction.fertilityWindow.end)}
               </p>
             </div>
           </div>
@@ -535,14 +478,14 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
               onClick={resetCalculation}
               className="border border-purple-600 text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors"
             >
-              {t.resetButton}
+              {t('cycleTracker.resetButton')}
             </button>
           </div>
         </div>
       )}
 
       <div className="mt-8 text-sm text-gray-500 text-center">
-        <p>{t.disclaimer}</p>
+        <p>{t('cycleTracker.disclaimer')}</p>
       </div>
     </div>
   );

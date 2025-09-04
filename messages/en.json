@@ -1983,15 +1983,22 @@
         "satisfaction": "User Satisfaction"
       }
     },
+    "healthStatistics": {
+      "dataSource": "Data source: Based on user feedback and medical research statistics"
+    },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Professional answers about period pain relief and menstrual health",
-      "q1": "What are the fastest ways to relieve menstrual cramps?",
-      "a1": "The fastest menstrual cramp relief methods include: 1) Heat therapy on lower abdomen and back; 2) Gentle abdominal massage; 3) Light exercise like yoga; 4) NSAIDs like ibuprofen; 5) Adequate rest. Combining multiple methods works best.",
-      "q2": "What is considered a normal menstrual cycle?",
-      "a2": "A normal menstrual cycle ranges from 21-35 days, with an average of 28 days. Menstruation typically lasts 3-7 days. Consult a gynecologist if cycles are consistently irregular or show significant changes.",
-      "q3": "How does Traditional Chinese Medicine treat irregular periods?",
-      "a3": "TCM treats irregular periods through: 1) Acupuncture to regulate qi and blood; 2) Herbal formulas like Si Wu Tang; 3) Dietary therapy; 4) Lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
+      "q1": {
+        "question": "What are the fastest ways to relieve menstrual cramps?",
+        "answer": "The fastest menstrual cramp relief methods include: heat therapy on lower abdomen and back, gentle abdominal massage, light exercise like yoga, NSAIDs like ibuprofen, and adequate rest. Combining multiple methods works best."
+      },
+      "q2": {
+        "question": "What is considered a normal menstrual cycle?",
+        "answer": "A normal menstrual cycle ranges from 21-35 days, with an average of 28 days. Menstruation typically lasts 3-7 days. Consult a gynecologist if cycles are consistently irregular."
+      },
+      "q3": {
+        "question": "How does Traditional Chinese Medicine treat irregular periods?",
+        "answer": "TCM treats irregular periods through syndrome differentiation: acupuncture to regulate qi and blood, herbal formulas, dietary therapy, and lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
+      }
     },
     "features": {
       "title": "Professional Features",
@@ -2010,7 +2017,8 @@
       },
       "immediateRelief": {
         "title": "Immediate Relief Solutions",
-        "description": "Quick and effective pain relief methods and emergency techniques"
+        "description": "Quick and effective pain relief methods and emergency techniques",
+        "cta": "Get Relief Now →"
       },
       "learnMore": "Learn More"
     },
@@ -2019,51 +2027,56 @@
       "subtitle": "Scientific pain management solutions",
       "medicationGuide": {
         "title": "Medication Guide",
-        "description": "Safe and effective medication usage recommendations"
+        "description": "Safe and effective medication usage recommendations",
+        "cta": "View Guide →"
       },
       "heatTherapy": {
         "title": "Heat Therapy Methods",
-        "description": "Scientific application of thermal therapy"
+        "description": "Scientific application of thermal therapy",
+        "cta": "Learn Heat Therapy →"
       },
       "diagnosis": {
         "title": "Symptom Diagnosis",
-        "description": "Professional symptom identification guidance"
+        "description": "Professional symptom identification guidance",
+        "cta": "Start Diagnosis →"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Answers to your questions about menstrual health",
+      "q1": {
+        "question": "What are the fastest ways to relieve menstrual cramps?",
+        "answer": "The fastest menstrual cramp relief methods include: 1) Heat therapy on lower abdomen and back; 2) Gentle abdominal massage; 3) Light exercise like yoga; 4) NSAIDs like ibuprofen; 5) Adequate rest. Combining multiple methods works best."
+      },
+      "q2": {
+        "question": "What is considered a normal menstrual cycle?",
+        "answer": "A normal menstrual cycle ranges from 21-35 days, with an average of 28 days. Menstruation typically lasts 3-7 days. Consult a gynecologist if cycles are consistently irregular or show significant changes."
+      },
+      "q3": {
+        "question": "How does Traditional Chinese Medicine treat irregular periods?",
+        "answer": "TCM treats irregular periods through: 1) Acupuncture to regulate qi and blood; 2) Herbal formulas like Si Wu Tang; 3) Dietary therapy; 4) Lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
       }
     },
     "quickLinks": {
       "title": "Quick Navigation",
       "healthGuide": "Health Guide",
       "healthGuideDesc": "Comprehensive period pain knowledge and scientific management methods",
-      "assessment": "Symptom Assessment",
-      "assessmentDesc": "Professional tools to help understand your period pain type",
-      "resources": "PDF Resources",
-      "resourcesDesc": "Downloadable professional health guidance and tools",
-      "solutions": "Scenario Solutions",
-      "solutionsDesc": "Targeted solutions for different life environments",
+      "viewNow": "View Now →",
       "assessment": {
         "title": "Period Pain Assessment",
         "description": "Scientifically assess period pain severity and get personalized treatment recommendations",
         "cta": "Start assessment →"
       },
+      "assessmentDesc": "Professional tools to help understand your period pain type",
+      "resources": "PDF Resources",
+      "resourcesDesc": "Downloadable professional health guidance and tools",
+      "solutions": "Scenario Solutions",
+      "solutionsDesc": "Targeted solutions for different life environments",
       "downloads": {
         "cta": "Download resources →"
       },
       "scenarios": {
         "cta": "View solutions →"
-      }
-    },
-    "faq": {
-      "q1": {
-        "question": "What are the fastest ways to relieve menstrual cramps?",
-        "answer": "The fastest menstrual cramp relief methods include: heat therapy on lower abdomen and back, gentle abdominal massage, light exercise like yoga, NSAIDs like ibuprofen, and adequate rest. Combining multiple methods works best."
-      },
-      "q2": {
-        "question": "What is considered a normal menstrual cycle?",
-        "answer": "A normal menstrual cycle ranges from 21-35 days, with an average of 28 days. Menstruation typically lasts 3-7 days. Consult a gynecologist if cycles are consistently irregular."
-      },
-      "q3": {
-        "question": "How does Traditional Chinese Medicine treat irregular periods?",
-        "answer": "TCM treats irregular periods through syndrome differentiation: acupuncture to regulate qi and blood, herbal formulas, dietary therapy, and lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
       }
     },
     "organization": {
@@ -2183,5 +2196,34 @@
       "mechanism": "[ZH] 阻断前列腺素合成（COX-1/COX-2抑制）",
       "contraindications": "[ZH] 哮喘、胃溃疡、肾病患者避免使用"
     }
+  },
+  "cycleTracker": {
+    "title": "Menstrual Cycle Tracker",
+    "subtitle": "Track your menstrual cycle and predict your next period and ovulation.",
+    "lastPeriodLabel": "Last Period Start Date",
+    "cycleLengthLabel": "Average Cycle Length (days)",
+    "calculateButton": "Calculate Prediction",
+    "resetButton": "Reset",
+    "predictionTitle": "Prediction Results",
+    "nextPeriodLabel": "Next Period Expected",
+    "ovulationLabel": "Ovulation Expected",
+    "fertilityWindowLabel": "Fertility Window",
+    "disclaimer": "This tool is for reference only and cannot replace professional medical advice. Each person's cycle may vary.",
+    "dateValidation": "Last period start date cannot be in the future",
+    "cycleLengthRange": "Cycle length is typically between 21-35 days",
+    "to": "to",
+    "loading": "Loading saved data...",
+    "saveSuccess": "Data saved",
+    "historyTitle": "History Records",
+    "showHistory": "Show History",
+    "hideHistory": "Hide History",
+    "noHistory": "No history records",
+    "deleteRecord": "Delete",
+    "clearAllHistory": "Clear All Records",
+    "exportData": "Export Data",
+    "confirmClearAll": "Are you sure you want to clear all history records?",
+    "recordedOn": "Recorded on",
+    "cycleLength": "Cycle Length",
+    "days": "days"
   }
 }

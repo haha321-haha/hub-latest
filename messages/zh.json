@@ -1820,7 +1820,8 @@
       },
       "immediateRelief": {
         "title": "即时缓解方案",
-        "description": "快速有效的疼痛缓解方法和紧急技巧"
+        "description": "快速有效的疼痛缓解方法和紧急技巧",
+        "cta": "立即缓解 →"
       },
       "learnMore": "了解更多"
     },
@@ -1829,15 +1830,18 @@
       "subtitle": "科学的疼痛管理方案",
       "medicationGuide": {
         "title": "用药指南",
-        "description": "安全有效的药物使用建议"
+        "description": "安全有效的药物使用建议",
+        "cta": "查看指南 →"
       },
       "heatTherapy": {
         "title": "热疗方法",
-        "description": "温热疗法的科学应用"
+        "description": "温热疗法的科学应用",
+        "cta": "学习热疗 →"
       },
       "diagnosis": {
         "title": "症状诊断",
-        "description": "专业的症状识别指导"
+        "description": "专业的症状识别指导",
+        "cta": "开始诊断 →"
       }
     },
     "trusted": {
@@ -1850,39 +1854,12 @@
         "satisfaction": "用户满意度"
       }
     },
-    "faq": {
-      "title": "常见问题解答",
-      "subtitle": "关于痛经缓解和月经健康的专业解答",
-      "q1": "痛经怎么缓解最快方法？",
-      "a1": "最快的痛经缓解方法包括：1) 热敷下腹部和腰部；2) 轻柔按摩腹部；3) 适量运动如瑜伽；4) 服用布洛芬等非甾体抗炎药；5) 保持充足休息。建议结合多种方法，效果更佳。",
-      "q2": "月经周期多少天算正常？",
-      "a2": "正常的月经周期为21-35天，平均28天。月经持续时间通常为3-7天。如果周期长期不规律或有明显变化，建议咨询妇科医生。",
-      "q3": "中医如何调理月经不调？",
-      "a3": "中医通过辨证论治调理月经：1) 针灸调节气血；2) 中药方剂如四物汤、逍遥散；3) 食疗调养；4) 生活方式调整。需要专业中医师诊断体质后制定个性化方案。"
-    },
-    "quickLinks": {
-      "title": "快速导航",
-      "healthGuide": "健康指南",
-      "healthGuideDesc": "全面的痛经知识和科学管理方法",
-      "assessment": "症状评估",
-      "assessmentDesc": "专业工具帮助了解您的痛经类型",
-      "resources": "PDF资源",
-      "resourcesDesc": "可下载的专业健康指导和工具",
-      "solutions": "场景方案",
-      "solutionsDesc": "针对不同生活环境的应对方案",
-      "assessment": {
-        "title": "痛经症状评估",
-        "description": "科学评估痛经程度，获得个性化治疗建议和用药指导",
-        "cta": "开始评估 →"
-      },
-      "downloads": {
-        "cta": "下载资源 →"
-      },
-      "scenarios": {
-        "cta": "查看方案 →"
-      }
+    "healthStatistics": {
+      "dataSource": "数据来源：基于用户反馈和医学研究统计"
     },
     "faq": {
+      "title": "常见问题",
+      "subtitle": "解答您关于经期健康的疑问",
       "q1": {
         "question": "痛经怎么缓解最快方法？",
         "answer": "最快的痛经缓解方法包括：热敷下腹部和腰部、轻柔按摩腹部、适量运动如瑜伽、服用布洛芬等非甾体抗炎药、保持充足休息。建议结合多种方法，效果更佳。"
@@ -1894,6 +1871,28 @@
       "q3": {
         "question": "中医如何调理月经不调？",
         "answer": "中医通过辨证论治调理月经：针灸调节气血、中药方剂如四物汤、食疗调养、生活方式调整。需要专业中医师诊断体质后制定个性化方案。"
+      }
+    },
+    "quickLinks": {
+      "title": "快速导航",
+      "healthGuide": "健康指南",
+      "healthGuideDesc": "全面的痛经知识和科学管理方法",
+      "viewNow": "立即查看 →",
+      "assessment": {
+        "title": "痛经症状评估",
+        "description": "科学评估痛经程度，获得个性化治疗建议和用药指导",
+        "cta": "开始评估 →"
+      },
+      "assessmentDesc": "专业工具帮助了解您的痛经类型",
+      "resources": "PDF资源",
+      "resourcesDesc": "可下载的专业健康指导和工具",
+      "solutions": "场景方案",
+      "solutionsDesc": "针对不同生活环境的应对方案",
+      "downloads": {
+        "cta": "下载资源 →"
+      },
+      "scenarios": {
+        "cta": "查看方案 →"
       }
     },
     "organization": {
@@ -2175,5 +2174,34 @@
     "description": "快速评估您的疼痛程度",
     "loading": "加载中...",
     "error": "加载失败，请刷新页面重试"
+  },
+  "cycleTracker": {
+    "title": "月经周期追踪器",
+    "subtitle": "记录您的月经周期，预测下次月经和排卵期。",
+    "lastPeriodLabel": "上次月经开始日期",
+    "cycleLengthLabel": "平均周期长度（天）",
+    "calculateButton": "计算预测",
+    "resetButton": "重新计算",
+    "predictionTitle": "预测结果",
+    "nextPeriodLabel": "下次月经预计日期",
+    "ovulationLabel": "排卵期预计日期",
+    "fertilityWindowLabel": "易孕期",
+    "disclaimer": "此工具仅供参考，不能替代专业医疗建议。每个人的周期可能有所不同。",
+    "dateValidation": "上次月经开始日期不能是未来日期",
+    "cycleLengthRange": "周期长度通常在21-35天之间",
+    "to": "至",
+    "loading": "正在加载保存的数据...",
+    "saveSuccess": "数据已保存",
+    "historyTitle": "历史记录",
+    "showHistory": "查看历史记录",
+    "hideHistory": "隐藏历史记录",
+    "noHistory": "暂无历史记录",
+    "deleteRecord": "删除",
+    "clearAllHistory": "清空所有记录",
+    "exportData": "导出数据",
+    "confirmClearAll": "确定要清空所有历史记录吗？",
+    "recordedOn": "记录于",
+    "cycleLength": "周期长度",
+    "days": "天"
   }
 }
