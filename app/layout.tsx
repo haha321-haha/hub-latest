@@ -8,7 +8,7 @@ const notoSansSC = Noto_Sans_SC({
   weight: ['300', '400', '500', '600', '700', '900'],
   display: 'swap',
 });
-import WebVitalsReporter from '@/components/WebVitalsReporter';
+import { WebVitalsReporter } from '@/components/WebVitalsReporter';
 import PerformanceMonitor from '@/components/PerformanceMonitor';
 
 // 🚀 Core Web Vitals 优化的根布局
