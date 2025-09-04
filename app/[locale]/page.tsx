@@ -416,37 +416,37 @@ export default async function HomePage({ params: { locale } }: { params: { local
               <div className="space-y-6">
                 <details className="bg-gray-50 rounded-lg p-6 group">
                   <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
-                    <span>{t('faq.q1')}</span>
+                    <span>{t('faq.q1.question')}</span>
                     <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="mt-4 text-gray-600 leading-relaxed">
-                    {t('faq.a1')}
+                    {t('faq.q1.answer')}
                   </div>
                 </details>
 
                 <details className="bg-gray-50 rounded-lg p-6 group">
                   <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
-                    <span>{t('faq.q2')}</span>
+                    <span>{t('faq.q2.question')}</span>
                     <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="mt-4 text-gray-600 leading-relaxed">
-                    {t('faq.a2')}
+                    {t('faq.q2.answer')}
                   </div>
                 </details>
 
                 <details className="bg-gray-50 rounded-lg p-6 group">
                   <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
-                    <span>{t('faq.q3')}</span>
+                    <span>{t('faq.q3.question')}</span>
                     <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="mt-4 text-gray-600 leading-relaxed">
-                    {t('faq.a3')}
+                    {t('faq.q3.answer')}
                   </div>
                 </details>
               </div>
