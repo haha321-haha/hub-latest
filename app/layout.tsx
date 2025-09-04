@@ -8,8 +8,8 @@ const notoSansSC = Noto_Sans_SC({
   weight: ['300', '400', '500', '600', '700', '900'],
   display: 'swap',
 });
-// import WebVitalsReporter from '@/components/WebVitalsReporter';
-// import PerformanceMonitor from '@/components/PerformanceMonitor';
+import WebVitalsReporter from '@/components/WebVitalsReporter';
+import PerformanceMonitor from '@/components/PerformanceMonitor';
 
 // 🚀 Core Web Vitals 优化的根布局
 export const metadata: Metadata = {
@@ -174,10 +174,10 @@ export default function RootLayout({
         {children}
         
         {/* 🚀 SEO优化 - Core Web Vitals监控 */}
-        {/* <WebVitalsReporter /> */}
+        <WebVitalsReporter />
         
         {/* 🚀 SEO优化 - 性能监控 */}
-        {/* <PerformanceMonitor /> */}
+        <PerformanceMonitor />
         
       </body>
     </html>

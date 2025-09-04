@@ -75,7 +75,7 @@ const nextConfig = {
   // 🚀 SEO优化 - 301重定向配置
   async redirects() {
     return [
-      // 处理重复的下载页面
+      // 处理重复的下载页面 - 支持多语言
       {
         source: '/downloads-new',
         destination: '/downloads',
@@ -89,6 +89,37 @@ const nextConfig = {
       {
         source: '/articles-pdf-center',
         destination: '/downloads',
+        permanent: true,
+      },
+      // 多语言版本重定向
+      {
+        source: '/zh/downloads-new',
+        destination: '/zh/downloads',
+        permanent: true,
+      },
+      {
+        source: '/zh/download-center',
+        destination: '/zh/downloads',
+        permanent: true,
+      },
+      {
+        source: '/zh/articles-pdf-center',
+        destination: '/zh/downloads',
+        permanent: true,
+      },
+      {
+        source: '/en/downloads-new',
+        destination: '/en/downloads',
+        permanent: true,
+      },
+      {
+        source: '/en/download-center',
+        destination: '/en/downloads',
+        permanent: true,
+      },
+      {
+        source: '/en/articles-pdf-center',
+        destination: '/en/downloads',
         permanent: true,
       },
       // 处理重复的疼痛追踪页面

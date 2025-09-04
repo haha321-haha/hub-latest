@@ -1,123 +1,111 @@
 'use client';
 
 import { useEffect } from 'react';
+import { PerformanceMonitor, trackPageLoad, trackRouteChange } from '@/lib/performance-monitor';
 
-export default function PerformanceMonitor() {
-  useEffect(() => {
-    // 监控页面加载性能
-    const measurePageLoad = () => {
-      if (typeof window !== 'undefined' && 'performance' in window) {
-        const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
-        
-        const metrics = {
-          // 页面加载时间
-          pageLoadTime: navigation.loadEventEnd - navigation.fetchStart,
-          // DNS查询时间
-          dnsTime: navigation.domainLookupEnd - navigation.domainLookupStart,
-          // TCP连接时间
-          tcpTime: navigation.connectEnd - navigation.connectStart,
-          // 首字节时间
-          ttfb: navigation.responseStart - navigation.fetchStart,
-          // DOM解析时间
-          domParseTime: navigation.domContentLoadedEventEnd - navigation.domContentLoadedEventStart,
-          // 资源加载时间
-          resourceLoadTime: navigation.loadEventEnd - navigation.domContentLoadedEventEnd,
-        };
-        
-        // 发送性能数据
-        if (process.env.NODE_ENV === 'production') {
-          fetch('/api/analytics/performance', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              ...metrics,
-              url: window.location.href,
-              userAgent: navigator.userAgent,
-              timestamp: new Date().toISOString(),
-            }),
-          }).catch(console.error);
-        }
-        
-        // 开发环境打印
-        if (process.env.NODE_ENV === 'development') {
-          console.table(metrics);
-        }
-      }
-    };
-
-    // 页面加载完成后测量
-    if (document.readyState === 'complete') {
-      measurePageLoad();
-    } else {
-      window.addEventListener('load', measurePageLoad);
-    }
-
-    // 监控资源加载错误
-    const handleResourceError = (event: Event) => {
-      const target = event.target as HTMLElement;
-      console.error('Resource failed to load:', target.tagName, target.getAttribute('src') || target.getAttribute('href'));
-      
-      // 发送错误报告
-      if (process.env.NODE_ENV === 'production') {
-        fetch('/api/analytics/errors', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            type: 'resource_error',
-            element: target.tagName,
-            src: target.getAttribute('src') || target.getAttribute('href'),
-            url: window.location.href,
-            timestamp: new Date().toISOString(),
-          }),
-        }).catch(console.error);
-      }
-    };
-
-    window.addEventListener('error', handleResourceError, true);
-
-    return () => {
-      window.removeEventListener('load', measurePageLoad);
-      window.removeEventListener('error', handleResourceError, true);
-    };
-  }, []);
-
-  return null;
+interface PerformanceMonitorProps {
+  enabled?: boolean;
+  showConsole?: boolean;
 }
 
-// 性能优化Hook
-export function usePerformanceOptimization() {
+export default function PerformanceMonitorComponent({ 
+  enabled = true, 
+  showConsole = false 
+}: PerformanceMonitorProps) {
   useEffect(() => {
-    // 预加载关键资源
-    const preloadCriticalResources = () => {
-      const criticalImages = [
-        '/images/hero/hero-main-banner.jpg',
-        '/images/infographics/stats-infographic.svg',
-      ];
+    if (!enabled || typeof window === 'undefined') return;
+
+    // 初始化性能监控
+    trackPageLoad();
+    trackRouteChange();
+
+    // 定期检查性能指标
+    const interval = setInterval(() => {
+      const monitor = PerformanceMonitor.getInstance();
+      const metrics = monitor.getMetrics();
       
-      criticalImages.forEach(src => {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'image';
-        link.href = src;
-        document.head.appendChild(link);
-      });
+      if (showConsole && Object.keys(metrics).length > 0) {
+        console.log('📊 Current Performance Metrics:', metrics);
+      }
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+      const monitor = PerformanceMonitor.getInstance();
+      monitor.disconnect();
+    };
+  }, [enabled, showConsole]);
+
+  return null; // 这是一个无UI组件
+}
+
+// 性能指标显示组件
+export function PerformanceMetricsDisplay() {
+  const [metrics, setMetrics] = useState<any>({});
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const monitor = PerformanceMonitor.getInstance();
+    
+    const updateMetrics = () => {
+      setMetrics(monitor.getMetrics());
     };
 
-    // 延迟加载非关键资源
-    const lazyLoadNonCritical = () => {
-      // 延迟加载第三方脚本
-      setTimeout(() => {
-        // Google Analytics
-        if (process.env.NODE_ENV === 'production' && !(window as any).gtag) {
-          const script = document.createElement('script');
-          script.async = true;
-          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-YOUR_GA_ID';
-          document.head.appendChild(script);
-        }
-      }, 3000);
-    };
+    // 初始更新
+    updateMetrics();
 
-    preloadCriticalResources();
-    lazyLoadNonCritical();
+    // 定期更新
+    const interval = setInterval(updateMetrics, 2000);
+
+    return () => clearInterval(interval);
   }, []);
+
+  if (!isVisible || Object.keys(metrics).length === 0) {
+    return (
+      <button
+        onClick={() => setIsVisible(true)}
+        className="fixed bottom-4 right-4 bg-blue-600 text-white px-3 py-2 rounded-lg text-sm shadow-lg z-50"
+      >
+        📊 Performance
+      </button>
+    );
+  }
+
+  return (
+    <div className="fixed bottom-4 right-4 bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-50 max-w-xs">
+      <div className="flex justify-between items-center mb-2">
+        <h3 className="font-semibold text-gray-800">Performance Metrics</h3>
+        <button
+          onClick={() => setIsVisible(false)}
+          className="text-gray-500 hover:text-gray-700"
+        >
+          ×
+        </button>
+      </div>
+      
+      <div className="space-y-2 text-sm">
+        {Object.entries(metrics).map(([name, value]) => {
+          const monitor = PerformanceMonitor.getInstance();
+          const grade = monitor.getPerformanceGrade(name, value as number);
+          const gradeColor = {
+            good: 'text-green-600',
+            'needs-improvement': 'text-yellow-600',
+            poor: 'text-red-600'
+          }[grade];
+
+          return (
+            <div key={name} className="flex justify-between">
+              <span className="font-medium">{name}:</span>
+              <span className={`${gradeColor}`}>
+                {typeof value === 'number' ? `${value.toFixed(0)}ms` : value}
+                <span className="ml-1 text-xs">({grade})</span>
+              </span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
