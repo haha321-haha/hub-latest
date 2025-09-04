@@ -537,8 +537,8 @@
     "notFoundDescription": "抱歉，我们找不到您要查找的疗法。"
   },
   "immediateReliefPage": {
-    "title": "痛经剧痛急救指南：医生亲授5步缓解法+全国急诊导航",
-    "description": "痛经剧痛急救指南：医生亲授5步缓解法+全国急诊导航。当疼痛等级≥7分时立即使用，含药物禁忌速查与急诊准备清单，关键时刻救急必备",
+    "title": "痛经剧痛急救指南：医生亲授5步缓解法",
+    "description": "痛经剧痛急救指南：医生亲授5步缓解法。当疼痛等级≥7分时立即使用，含药物禁忌速查与急诊准备清单，关键时刻救急必备",
     "introTitle": "当经期疼痛来袭时...",
     "introText": "当经期疼痛来袭时，您需要快速有效的方法来获得舒适。本节致力于提供即时缓解方案——您可以立即采用的方法，以帮助缓解急性经期痉挛和不适。",
     "introText2": "我们理解快速缓解对于度过一天是至关重要的。这里建议的方法专注于容易获得的技巧和疗法，可以提供临时但急需的舒适感。",
@@ -550,17 +550,151 @@
     "findingWhatWorksTitle": "找到适合您的方法",
     "findingWhatWorksText": "找到最适合您身体和疼痛类型的即时缓解方法，关键在于尝试。考虑结合不同的方法以增强舒适度。",
     "findingWhatWorksText2": "请记住，这些方法是为了在当下管理症状。对于持续、严重或异常的疼痛，请务必咨询医疗专业人士。",
+    "combinationTherapy": {
+      "title": "组合使用效果更佳",
+      "subtitle": "根据疼痛程度选择最佳组合方案",
+      "combinations": [
+        {
+          "level": "轻度疼痛（1-3分）",
+          "methods": ["热敷 + 深呼吸", "轻度拉伸 + 穴位按摩"],
+          "description": "适合日常轻微不适，以自然方法为主"
+        },
+        {
+          "level": "中度疼痛（4-6分）",
+          "methods": ["热敷 + 穴位按摩 + 温和运动", "NSAID + 热敷 + 深呼吸"],
+          "description": "需要多种方法结合，可考虑药物辅助"
+        },
+        {
+          "level": "重度疼痛（7-10分）",
+          "methods": ["NSAID + 热敷 + 穴位按摩 + 深呼吸", "立即就医 + 应急处理"],
+          "description": "建议立即就医，同时进行应急处理"
+        }
+      ]
+    },
+    "emergencyResponse": {
+      "title": "紧急疼痛应对",
+      "subtitle": "当疼痛等级≥7分时的立即行动清单",
+      "immediateActions": [
+        "立即服用NSAID类药物（如布洛芬）",
+        "使用热敷垫或热水袋敷下腹部",
+        "进行4-7-8呼吸法缓解紧张",
+        "按摩三阴交、合谷穴等关键穴位"
+      ],
+      "medicalIndicators": {
+        "title": "就医指征提醒",
+        "indicators": [
+          "疼痛持续超过3天且无缓解",
+          "出现发热、恶心、呕吐等症状",
+          "疼痛突然加重或性质改变",
+          "非经期时也有严重盆腔疼痛"
+        ]
+      },
+      "emergencyKit": {
+        "title": "急诊准备清单",
+        "items": [
+          "止痛药（布洛芬、对乙酰氨基酚）",
+          "热敷垫或热水袋",
+          "暖宝宝贴",
+          "薄荷精油或清凉油",
+          "医生联系方式"
+        ]
+      }
+    },
     "contentSectionTitle": "相关文章与疗法",
     "heatTherapyDescription": "在下腹部或背部敷热可以帮助放松收缩的子宫肌肉并改善血液循环，从而缓解痉挛。",
     "gentleMovementDescription": "轻度拉伸、散步或特定的瑜伽姿势有时可以通过改善血液循环和肌肉放松来缓解痉挛。深呼吸技巧也有助于管理疼痛。",
+    "gentleMovementDetails": {
+      "yogaPoses": {
+        "title": "推荐瑜伽体式",
+        "poses": [
+          {
+            "name": "婴儿式",
+            "description": "跪坐，身体前倾，额头贴地，手臂向前伸展，保持5-10分钟",
+            "benefits": "放松下背部和骨盆区域，缓解子宫收缩"
+          },
+          {
+            "name": "猫牛式",
+            "description": "四肢着地，交替做拱背和塌腰动作，重复10-15次",
+            "benefits": "改善脊柱灵活性，缓解腰部紧张"
+          },
+          {
+            "name": "仰卧束角式",
+            "description": "仰卧，脚掌相对，膝盖向两侧打开，保持10-15分钟",
+            "benefits": "打开骨盆，促进血液循环"
+          },
+          {
+            "name": "快乐婴儿式",
+            "description": "仰卧，双手抓住脚掌，轻轻左右摇摆，保持5-10分钟",
+            "benefits": "放松髋关节，缓解下腹部紧张"
+          }
+        ]
+      },
+      "breathingExercises": {
+        "title": "呼吸练习技巧",
+        "exercises": [
+          {
+            "name": "4-7-8呼吸法",
+            "steps": "吸气4秒，屏气7秒，呼气8秒，重复3-8个循环",
+            "benefits": "激活副交感神经系统，降低疼痛敏感度"
+          },
+          {
+            "name": "腹式呼吸",
+            "steps": "将手放在腹部，深吸气时腹部鼓起，呼气时腹部收缩",
+            "benefits": "促进深度放松，缓解肌肉紧张"
+          }
+        ]
+      },
+      "timing": {
+        "title": "使用时机建议",
+        "preventive": "预防性使用：经期前3-5天开始练习",
+        "during": "疼痛期间：每2-3小时进行一次",
+        "continuous": "持续使用：建立日常练习习惯"
+      }
+    },
     "breathingExerciseTitle": "深呼吸练习",
     "breathingExerciseDescription": "通过4-7-8呼吸法激活副交感神经系统，自然降低疼痛敏感度。科学研究显示可减少40%的疼痛感知。",
     "acupressureDescription": "对身体特定穴位施压可能有助于减少疼痛信号并缓解经期痉挛。",
+    "acupressureDetails": {
+      "title": "穴位按摩详解",
+      "acupoints": [
+        {
+          "name": "三阴交",
+          "location": "小腿内侧，踝关节上3寸（约4指宽）",
+          "method": "用拇指按压，力度适中，每次3-5分钟",
+          "benefits": "调理肝脾肾三经，缓解经期疼痛"
+        },
+        {
+          "name": "血海穴",
+          "location": "大腿内侧，膝盖骨内侧端上2寸",
+          "method": "用拇指或食指按压，有酸胀感为宜",
+          "benefits": "活血化瘀，缓解经期血瘀疼痛"
+        },
+        {
+          "name": "合谷穴",
+          "location": "手背，拇指和食指之间的虎口处",
+          "method": "用另一手拇指按压，力度稍重",
+          "benefits": "通经活络，缓解全身疼痛"
+        },
+        {
+          "name": "关元穴",
+          "location": "下腹部，肚脐下3寸（约4指宽）",
+          "method": "用手掌轻柔按摩，顺时针方向",
+          "benefits": "温肾固本，缓解下腹部疼痛"
+        }
+      ],
+      "technique": {
+        "title": "按摩手法指导",
+        "pressure": "按压力度：以有酸胀感但不疼痛为宜",
+        "time": "按摩时间：每个穴位3-5分钟",
+        "frequency": "按摩频率：疼痛期间每2-3小时一次",
+        "precautions": "注意事项：避免在皮肤破损处按摩，孕妇慎用"
+      }
+    },
     "otcOptionsDescription": "了解常见的非处方药选项及其基本机制可能会有所帮助，尽管专业医疗建议对于安全有效使用至关重要。",
-    "workTipsTitle": "工作中管理痉挛的快速技巧",
-    "workTipsDescription": "当经期疼痛来袭时，在工作日寻找缓解的实用策略。",
-    "meditationTitle": "5分钟疼痛缓解冥想",
-    "meditationDescription": "专门设计用于帮助管理经期疼痛的快速引导冥想练习。",
+    "workTipsTitle": "多场景经期应急包清单",
+    "workTipsDescription": "在办公环境中管理经期疼痛的实用策略。",
+    "meditationTitle": "症状评估工具",
+    "meditationDescription": "科学评估经期症状，获取个性化建议。",
     "disclaimerTitle": "免责声明：",
     "disclaimerText": "本页面提供的信息仅供教育目的，不旨在替代专业医疗建议、诊断或治疗。如有任何医疗问题，请务必咨询您的医生或其他合格的医疗保健提供者。",
     "parameters": {
