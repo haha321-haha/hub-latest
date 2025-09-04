@@ -202,7 +202,8 @@ export default function PerformanceDashboard() {
                   </div>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
