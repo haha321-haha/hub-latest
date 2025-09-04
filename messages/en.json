@@ -909,6 +909,10 @@
     "developmentNote": "We are continuously developing new tools and resources. Check back often for updates!"
   },
   "interactiveTools": {
+    "breadcrumb": {
+      "home": "Home",
+      "interactiveTools": "Interactive Tools"
+    },
     "common": {
       "loading": "Loading...",
       "error": "An error occurred, please try again",

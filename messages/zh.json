@@ -1043,6 +1043,10 @@
     "developmentNote": "我们正在不断开发新的工具和资源。请经常回来查看更新！"
   },
   "interactiveTools": {
+    "breadcrumb": {
+      "home": "首页",
+      "interactiveTools": "互动工具"
+    },
     "common": {
       "loading": "加载中...",
       "error": "发生错误，请重试",

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 
 interface CycleTrackerToolProps {
   locale: string;
@@ -32,11 +33,7 @@ export default function CycleTrackerTool({ locale }: CycleTrackerToolProps) {
   const [showHistory, setShowHistory] = useState(false);
 
   // 使用翻译键
-  const t = (key: string) => {
-    // 这里应该使用实际的翻译函数，暂时返回key作为占位符
-    // 在实际应用中，这里应该调用 useTranslations('cycleTracker')(key)
-    return key;
-  };
+  const t = useTranslations('cycleTracker');
 
   // 本地存储键名
   const STORAGE_KEYS = {
