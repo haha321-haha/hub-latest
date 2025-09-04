@@ -1,47 +1,7 @@
+'use client';
+
 import { useState } from 'react';
 import { useLocale } from 'next-intl';
-import { Metadata } from 'next';
-
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const isZh = locale === 'zh';
-
-  return {
-    title: isZh
-      ? '智能症状评估 - PeriodHub | 专业经期健康评估工具'
-      : 'Smart Symptom Assessment - PeriodHub | Professional Menstrual Health Assessment Tool',
-    description: isZh
-      ? 'PeriodHub智能症状评估：科学评估经期症状，获取个性化建议和治疗方案。专业的经期健康评估工具，帮助您了解身体状况。'
-      : 'PeriodHub Smart Symptom Assessment: Scientifically evaluate menstrual symptoms and get personalized recommendations and treatment plans. Professional menstrual health assessment tool to help you understand your physical condition.',
-    keywords: isZh ? [
-      '症状评估', '经期健康评估', '痛经评估', '健康检查', '智能评估', '经期症状'
-    ] : [
-      'symptom assessment', 'menstrual health assessment', 'period pain assessment', 'health check', 'smart assessment', 'menstrual symptoms'
-    ],
-    openGraph: {
-      title: isZh
-        ? '智能症状评估 - PeriodHub'
-        : 'Smart Symptom Assessment - PeriodHub',
-      description: isZh
-        ? '专业经期健康评估工具'
-        : 'Professional menstrual health assessment tool',
-      url: `https://periodhub.health/${locale}/assessment`,
-      siteName: 'PeriodHub',
-      locale: isZh ? 'zh_CN' : 'en_US',
-      type: 'website',
-    },
-    robots: {
-      index: true,
-      follow: true,
-    },
-    alternates: {
-      canonical: `https://periodhub.health/${locale}/assessment`,
-      languages: {
-        'zh-CN': 'https://periodhub.health/zh/assessment',
-        'en-US': 'https://periodhub.health/en/assessment',
-      },
-    },
-  };
-}
 
 interface AssessmentData {
   painIntensity: number;

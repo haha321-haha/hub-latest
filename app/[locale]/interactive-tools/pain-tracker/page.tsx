@@ -1,49 +1,9 @@
 
+'use client';
+
 import { useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { Metadata } from 'next';
-
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const isZh = locale === 'zh';
-
-  return {
-    title: isZh
-      ? '疼痛追踪工具 - PeriodHub | 智能经期疼痛记录分析'
-      : 'Pain Tracking Tool - PeriodHub | Smart Menstrual Pain Recording Analysis',
-    description: isZh
-      ? 'PeriodHub疼痛追踪工具：记录经期疼痛模式，分析疼痛趋势，获取个性化管理建议。智能追踪您的疼痛数据，提供专业的健康洞察。'
-      : 'PeriodHub Pain Tracking Tool: Record menstrual pain patterns, analyze pain trends, and get personalized management recommendations. Smart tracking of your pain data with professional health insights.',
-    keywords: isZh ? [
-      '疼痛追踪工具', '经期疼痛记录', '痛经分析', '疼痛管理工具', '健康追踪', '经期健康'
-    ] : [
-      'pain tracking tool', 'menstrual pain recording', 'period pain analysis', 'pain management tool', 'health tracking', 'menstrual health'
-    ],
-    openGraph: {
-      title: isZh
-        ? '疼痛追踪工具 - PeriodHub'
-        : 'Pain Tracking Tool - PeriodHub',
-      description: isZh
-        ? '智能经期疼痛记录分析工具'
-        : 'Smart menstrual pain recording analysis tool',
-      url: `https://periodhub.health/${locale}/interactive-tools/pain-tracker`,
-      siteName: 'PeriodHub',
-      locale: isZh ? 'zh_CN' : 'en_US',
-      type: 'website',
-    },
-    robots: {
-      index: true,
-      follow: true,
-    },
-    alternates: {
-      canonical: `https://periodhub.health/${locale}/interactive-tools/pain-tracker`,
-      languages: {
-        'zh-CN': 'https://periodhub.health/zh/interactive-tools/pain-tracker',
-        'en-US': 'https://periodhub.health/en/interactive-tools/pain-tracker',
-      },
-    },
-  };
-}
 
 type Locale = 'en' | 'zh';
 
