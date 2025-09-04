@@ -1794,6 +1794,70 @@
       }
     }
   },
+  "medicationGuide": {
+    "title": "用药指南",
+    "description": "安全有效的药物使用建议，帮助您科学管理经期疼痛",
+    "introTitle": "了解经期疼痛用药",
+    "introText": "正确的药物使用可以安全有效地缓解经期疼痛。本指南将帮助您了解常用药物的使用方法、注意事项和安全建议。",
+    "nsaidTitle": "非甾体抗炎药 (NSAIDs)",
+    "dosage": "剂量",
+    "timing": "使用时机",
+    "mechanism": "作用机制",
+    "ibuprofen": {
+      "title": "布洛芬 (Ibuprofen)",
+      "dosage": "200-400mg，每6-8小时一次",
+      "timing": "疼痛开始时服用，持续1-2天",
+      "mechanism": "抑制前列腺素合成，减少子宫收缩"
+    },
+    "naproxen": {
+      "title": "萘普生 (Naproxen)",
+      "dosage": "220mg，每8-12小时一次",
+      "timing": "疼痛开始时服用，持续1-2天",
+      "mechanism": "长效抗炎，持续缓解疼痛"
+    },
+    "safetyTitle": "安全使用指南",
+    "contraindications": "禁忌症",
+    "contraindicationsList": {
+      "asthma": "哮喘患者",
+      "ulcer": "胃溃疡或十二指肠溃疡",
+      "kidney": "严重肾功能不全",
+      "liver": "严重肝功能不全"
+    },
+    "sideEffects": "常见副作用",
+    "sideEffectsList": {
+      "stomach": "胃部不适、恶心",
+      "dizziness": "头晕、嗜睡",
+      "headache": "头痛"
+    },
+    "usageTipsTitle": "使用技巧",
+    "tips": {
+      "timing": {
+        "title": "最佳服用时机",
+        "description": "在疼痛刚开始时服用效果最佳，不要等到疼痛加剧"
+      },
+      "food": {
+        "title": "与食物同服",
+        "description": "建议与食物同服以减少胃部刺激"
+      },
+      "duration": {
+        "title": "使用期限",
+        "description": "连续使用不超过3-5天，如症状持续请咨询医生"
+      },
+      "alternatives": {
+        "title": "替代方案",
+        "description": "可结合热敷、按摩等非药物方法"
+      }
+    },
+    "seeDoctorTitle": "何时需要就医",
+    "seeDoctorList": {
+      "severe": "疼痛严重且持续不缓解",
+      "persistent": "疼痛持续超过3天",
+      "newSymptoms": "出现新的症状（如发热、异常出血）",
+      "medication": "药物无效或出现严重副作用"
+    },
+    "disclaimerTitle": "医疗免责声明：",
+    "disclaimerText": "本指南仅供参考，不能替代专业医疗建议。如有疑问请咨询医生。"
+  },
   "home": {
     "hero": {
       "title": "经期健康管理专家",

@@ -1972,6 +1972,70 @@
       }
     }
   },
+  "medicationGuide": {
+    "title": "Medication Guide",
+    "description": "Safe and effective medication usage recommendations to help you manage period pain scientifically",
+    "introTitle": "Understanding Period Pain Medication",
+    "introText": "Proper medication use can safely and effectively relieve period pain. This guide will help you understand the usage, precautions, and safety recommendations for common medications.",
+    "nsaidTitle": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
+    "dosage": "Dosage",
+    "timing": "Timing",
+    "mechanism": "Mechanism",
+    "ibuprofen": {
+      "title": "Ibuprofen",
+      "dosage": "200-400mg every 6-8 hours",
+      "timing": "Take when pain starts, continue for 1-2 days",
+      "mechanism": "Inhibits prostaglandin synthesis, reduces uterine contractions"
+    },
+    "naproxen": {
+      "title": "Naproxen",
+      "dosage": "220mg every 8-12 hours",
+      "timing": "Take when pain starts, continue for 1-2 days",
+      "mechanism": "Long-acting anti-inflammatory, sustained pain relief"
+    },
+    "safetyTitle": "Safety Guidelines",
+    "contraindications": "Contraindications",
+    "contraindicationsList": {
+      "asthma": "Asthma patients",
+      "ulcer": "Gastric or duodenal ulcers",
+      "kidney": "Severe kidney dysfunction",
+      "liver": "Severe liver dysfunction"
+    },
+    "sideEffects": "Common Side Effects",
+    "sideEffectsList": {
+      "stomach": "Stomach upset, nausea",
+      "dizziness": "Dizziness, drowsiness",
+      "headache": "Headache"
+    },
+    "usageTipsTitle": "Usage Tips",
+    "tips": {
+      "timing": {
+        "title": "Best Timing",
+        "description": "Most effective when taken at the start of pain, don't wait until pain worsens"
+      },
+      "food": {
+        "title": "Take with Food",
+        "description": "Recommended to take with food to reduce stomach irritation"
+      },
+      "duration": {
+        "title": "Duration of Use",
+        "description": "Use for no more than 3-5 consecutive days, consult doctor if symptoms persist"
+      },
+      "alternatives": {
+        "title": "Alternative Methods",
+        "description": "Can be combined with heat therapy, massage and other non-medication methods"
+      }
+    },
+    "seeDoctorTitle": "When to See a Doctor",
+    "seeDoctorList": {
+      "severe": "Severe and persistent pain that doesn't improve",
+      "persistent": "Pain lasting more than 3 days",
+      "newSymptoms": "New symptoms appear (fever, abnormal bleeding)",
+      "medication": "Medication ineffective or serious side effects occur"
+    },
+    "disclaimerTitle": "Medical Disclaimer:",
+    "disclaimerText": "This guide is for reference only and does not replace professional medical advice. Consult your doctor if you have questions."
+  },
   "home": {
     "trusted": {
       "title": "Trusted Professional Platform",

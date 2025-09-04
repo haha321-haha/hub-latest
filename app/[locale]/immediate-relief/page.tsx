@@ -29,7 +29,7 @@ export default function ImmediateReliefPage({
 
   
   return (
-    <div className="space-y-10">
+    <div className="container space-y-10">
       {/* Page Header */}
       <header className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-primary-700 mb-4">
@@ -61,7 +61,7 @@ export default function ImmediateReliefPage({
           {t('typesTitle')}
         </h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
           {/* Heat Therapy */}
           <div className="card">
             <div className="flex items-center mb-4">
@@ -84,7 +84,7 @@ export default function ImmediateReliefPage({
               <h4 className="font-semibold text-primary-800 mb-2">
                 {t('parameters.scientificParameters')}
               </h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
                 <div><strong>{t('labels.temperature')}</strong>{t('parameters.heatTherapy.temperature')}</div>
                 <div><strong>{t('labels.duration')}</strong>{t('parameters.heatTherapy.duration')}</div>
                 <div><strong>{t('labels.frequency')}</strong>{t('parameters.heatTherapy.frequency')}</div>
@@ -150,7 +150,7 @@ export default function ImmediateReliefPage({
               <h4 className="font-semibold text-blue-800 mb-2">
                 {t('parameters.breathing.title')}
               </h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
                 <div><strong>{t('labels.technique')}</strong>{t('parameters.breathing.technique')}</div>
                 <div><strong>{t('labels.cycles')}</strong>{t('parameters.breathing.cycles')}</div>
                 <div><strong>{t('labels.frequency')}</strong>{t('parameters.breathing.frequency')}</div>
@@ -216,7 +216,7 @@ export default function ImmediateReliefPage({
               <h4 className="font-semibold text-neutral-800 mb-2">
                 {t('parameters.nsaid.title')}
               </h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
                 <div><strong>{t('labels.dosage')}</strong>{t('parameters.nsaid.dosage')}</div>
                 <div><strong>{t('labels.timing')}</strong>{t('parameters.nsaid.timing')}</div>
               </div>
@@ -258,7 +258,7 @@ export default function ImmediateReliefPage({
           {t('contentSectionTitle')}
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="card group block">
             <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-700 mb-2">
               {t('workTipsTitle')}
