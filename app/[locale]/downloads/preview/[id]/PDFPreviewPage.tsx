@@ -273,9 +273,9 @@ export default function PDFPreviewPage({ locale, resourceId }: PDFPreviewPagePro
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
             {locale === 'zh' ? '预览不可用' : 'Preview Unavailable'}
-          </h1>
+          </h2>
           <p className="text-gray-600 mb-6">
             {locale === 'zh'
               ? '抱歉，此资源暂不支持在线预览，请直接下载PDF文件。'

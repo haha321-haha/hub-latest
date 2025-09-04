@@ -334,9 +334,9 @@ export default function ConstitutionTestTool({ locale }: ConstitutionTestToolPro
           <div className="w-20 h-20 mx-auto mb-6 bg-green-100 rounded-full flex items-center justify-center">
             <CheckCircle className="w-10 h-10 text-green-600" />
           </div>
-          <h1 className="text-3xl font-bold text-neutral-800 mb-2">
+          <h2 className="text-3xl font-bold text-neutral-800 mb-2">
             {t('result.title')}
-          </h1>
+          </h2>
           <p className="text-lg text-neutral-600">
             {t('result.subtitle')}
           </p>
