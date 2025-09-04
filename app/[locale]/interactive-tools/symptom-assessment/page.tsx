@@ -4,6 +4,48 @@
 import { useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const isZh = locale === 'zh';
+
+  return {
+    title: isZh
+      ? '症状评估工具 - PeriodHub | 智能经期症状分析'
+      : 'Symptom Assessment Tool - PeriodHub | Smart Menstrual Symptom Analysis',
+    description: isZh
+      ? 'PeriodHub症状评估工具：科学分析经期症状，提供个性化健康建议。专业的症状评估系统，帮助您更好地了解和管理经期健康。'
+      : 'PeriodHub Symptom Assessment Tool: Scientifically analyze menstrual symptoms and provide personalized health recommendations. Professional symptom assessment system to help you better understand and manage menstrual health.',
+    keywords: isZh ? [
+      '症状评估工具', '经期症状分析', '痛经评估', '健康检查工具', '智能评估', '经期健康'
+    ] : [
+      'symptom assessment tool', 'menstrual symptom analysis', 'period pain assessment', 'health check tool', 'smart assessment', 'menstrual health'
+    ],
+    openGraph: {
+      title: isZh
+        ? '症状评估工具 - PeriodHub'
+        : 'Symptom Assessment Tool - PeriodHub',
+      description: isZh
+        ? '智能经期症状分析工具'
+        : 'Smart menstrual symptom analysis tool',
+      url: `https://periodhub.health/${locale}/interactive-tools/symptom-assessment`,
+      siteName: 'PeriodHub',
+      locale: isZh ? 'zh_CN' : 'en_US',
+      type: 'website',
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    alternates: {
+      canonical: `https://periodhub.health/${locale}/interactive-tools/symptom-assessment`,
+      languages: {
+        'zh-CN': 'https://periodhub.health/zh/interactive-tools/symptom-assessment',
+        'en-US': 'https://periodhub.health/en/interactive-tools/symptom-assessment',
+      },
+    },
+  };
+}
 
 type Locale = 'en' | 'zh';
 

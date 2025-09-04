@@ -1,6 +1,18 @@
-'use client';
-
 import React from 'react';
+import { Metadata } from 'next';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: '框架演示 - PeriodHub | 技术架构展示',
+    description: 'PeriodHub技术框架演示：展示平台的技术架构、功能模块和开发进度。',
+    robots: {
+      index: false,
+      follow: false,
+    },
+  };
+}
+
+'use client';
 import {
   Rocket,
   Zap,
