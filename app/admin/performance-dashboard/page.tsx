@@ -1,5 +1,15 @@
 import { Suspense } from 'react';
 import PerformanceDashboard from '@/components/PerformanceDashboard';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Performance Dashboard - PeriodHub Admin',
+  description: 'Website performance analytics dashboard',
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function PerformanceDashboardPage() {
   return (

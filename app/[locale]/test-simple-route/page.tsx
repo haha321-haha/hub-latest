@@ -1,3 +1,14 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Test Simple Route - PeriodHub',
+  description: 'Simple test route page',
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function TestSimpleRoutePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100">

@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 
 // Add noindex metadata for test pages
 export const metadata: Metadata = {
+  title: 'Test Route - PeriodHub',
+  description: 'Test page for route functionality',
   robots: {
     index: false,
     follow: false,

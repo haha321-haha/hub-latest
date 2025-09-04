@@ -6,6 +6,8 @@ import type { Metadata } from 'next';
 
 // Add noindex metadata for test pages
 export const metadata: Metadata = {
+  title: 'Test Image Quality - PeriodHub',
+  description: 'Test page for image quality optimization',
   robots: {
     index: false,
     follow: false,

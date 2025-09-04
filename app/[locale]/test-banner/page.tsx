@@ -4,6 +4,8 @@ import type { Metadata } from 'next';
 
 // Add noindex metadata for test pages
 export const metadata: Metadata = {
+  title: 'Test Banner - PeriodHub',
+  description: 'Test page for banner functionality',
   robots: {
     index: false,
     follow: false,
