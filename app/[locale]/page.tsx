@@ -341,7 +341,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/* 痛经用药指南 */}
-                <Link href={`/${locale}/articles/pain-management/medication-guide`} className="group bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                <Link href={`/${locale}/downloads/medication-guide`} className="group bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
                   <div className="flex items-center mb-4">
                     <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

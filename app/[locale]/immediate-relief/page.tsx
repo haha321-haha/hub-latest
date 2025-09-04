@@ -481,12 +481,15 @@ export default function ImmediateReliefPage({
           {t('contentSectionTitle')}
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="card group block">
             <Link href={`/${locale}/scenario-solutions/emergency-kit`}>
-              <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-700 mb-2">
-                {t('workTipsTitle')}
-              </h3>
+              <div className="flex items-center mb-3">
+                <span className="text-2xl mr-2">📦</span>
+                <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-700">
+                  {t('workTipsTitle')}
+                </h3>
+              </div>
               <p className="text-neutral-600 mb-4">
                 {t('workTipsDescription')}
               </p>
@@ -498,11 +501,86 @@ export default function ImmediateReliefPage({
 
           <div className="card group block">
             <Link href={`/${locale}/interactive-tools/symptom-assessment`}>
-              <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-700 mb-2">
-                {t('meditationTitle')}
-              </h3>
+              <div className="flex items-center mb-3">
+                <span className="text-2xl mr-2">📊</span>
+                <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-700">
+                  {t('meditationTitle')}
+                </h3>
+              </div>
               <p className="text-neutral-600 mb-4">
                 {t('meditationDescription')}
+              </p>
+              <span className="font-medium text-primary-500 group-hover:text-primary-600 transition-colors">
+                {commonT('readMore')} →
+              </span>
+            </Link>
+          </div>
+
+          {/* 新增：NSAIDs药物指南卡片 */}
+          <div className="card group block">
+            <Link href={`/${locale}/downloads/medication-guide`}>
+              <div className="flex items-center mb-3">
+                <span className="text-2xl mr-2">🧮</span>
+                <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-700">
+                  NSAIDs痛经治疗专业指南
+                </h3>
+              </div>
+              <p className="text-neutral-600 mb-4">
+                包含互动式用药计算器，帮您精准计算安全剂量
+              </p>
+              <span className="font-medium text-primary-500 group-hover:text-primary-600 transition-colors">
+                {commonT('readMore')} →
+              </span>
+            </Link>
+          </div>
+
+          {/* 新增：生活场景全覆盖卡片 */}
+          <div className="card group block">
+            <Link href={`/${locale}/scenario-solutions`}>
+              <div className="flex items-center mb-3">
+                <span className="text-2xl mr-2">🏠</span>
+                <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-700">
+                  生活场景全覆盖
+                </h3>
+              </div>
+              <p className="text-neutral-600 mb-4">
+                从居家到外出，全方位经期不适解决方案
+              </p>
+              <span className="font-medium text-primary-500 group-hover:text-primary-600 transition-colors">
+                {commonT('readMore')} →
+              </span>
+            </Link>
+          </div>
+
+          {/* 新增：热敷疗法指南卡片 */}
+          <div className="card group block">
+            <Link href={`/${locale}/articles/heat-therapy-complete-guide`}>
+              <div className="flex items-center mb-3">
+                <span className="text-2xl mr-2">🔥</span>
+                <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-700">
+                  热敷疗法指南
+                </h3>
+              </div>
+              <p className="text-neutral-600 mb-4">
+                科学热敷方法，快速缓解经期疼痛
+              </p>
+              <span className="font-medium text-primary-500 group-hover:text-primary-600 transition-colors">
+                {commonT('readMore')} →
+              </span>
+            </Link>
+          </div>
+
+          {/* 新增：饮食调理方案卡片 */}
+          <div className="card group block">
+            <Link href={`/${locale}/articles/period-friendly-recipes`}>
+              <div className="flex items-center mb-3">
+                <span className="text-2xl mr-2">🥗</span>
+                <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-700">
+                  饮食调理方案
+                </h3>
+              </div>
+              <p className="text-neutral-600 mb-4">
+                经期营养搭配，从内而外缓解不适
               </p>
               <span className="font-medium text-primary-500 group-hover:text-primary-600 transition-colors">
                 {commonT('readMore')} →
