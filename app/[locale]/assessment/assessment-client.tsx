@@ -351,9 +351,9 @@ export default function AssessmentClient() {
     return (
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-lg p-8">
-          <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
             {locale === 'zh' ? '评估结果' : 'Assessment Results'}
-          </h1>
+          </h2>
           
           <div className="text-center mb-8">
             <div className={`inline-flex items-center px-6 py-3 rounded-full text-lg font-semibold ${
