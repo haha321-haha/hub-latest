@@ -1035,7 +1035,12 @@
       "cta": "立即评估"
     },
     "toolsIntroduction": "我们的互动工具旨在为您提供知识和个性化策略，帮助您管理经期健康。通过了解您独特的症状和模式，您可以做出明智的决定并找到更有效的缓解方法。",
-    "developmentNote": "我们正在不断开发新的工具和资源。请经常回来查看更新！"
+    "developmentNote": "我们正在不断开发新的工具和资源。请经常回来查看更新！",
+    "cycleTracker": {
+      "title": "智能周期追踪器",
+      "description": "智能追踪月经周期，预测下次月经时间，记录症状变化，帮助您更好地了解身体规律。",
+      "cta": "开始追踪"
+    }
   },
   "interactiveTools": {
     "breadcrumb": {
@@ -1462,11 +1467,6 @@
       "timing": "痉挛首次出现时开始使用，持续1-2天",
       "mechanism": "阻断前列腺素合成（COX-1/COX-2抑制）",
       "contraindications": "哮喘、胃溃疡、肾病患者避免使用"
-    },
-    "cycleTracker": {
-      "title": "智能周期追踪器",
-      "description": "智能追踪月经周期，预测下次月经时间，记录症状变化，帮助您更好地了解身体规律。",
-      "cta": "开始追踪"
     }
   },
   "searchBox": {

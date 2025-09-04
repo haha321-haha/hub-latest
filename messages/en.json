@@ -906,7 +906,12 @@
       "startButton": "Start Diagnosis"
     },
     "toolsIntroduction": "Our interactive tools are designed to empower you with knowledge and personalized strategies for managing your menstrual health. By understanding your unique symptoms and patterns, you can make informed decisions and find more effective relief.",
-    "developmentNote": "We are continuously developing new tools and resources. Check back often for updates!"
+    "developmentNote": "We are continuously developing new tools and resources. Check back often for updates!",
+    "cycleTracker": {
+      "title": "Smart Cycle Tracker",
+      "description": "Intelligently track your menstrual cycle, predict your next period, record symptom changes, and help you better understand your body's patterns.",
+      "cta": "Start Tracking"
+    }
   },
   "interactiveTools": {
     "breadcrumb": {
