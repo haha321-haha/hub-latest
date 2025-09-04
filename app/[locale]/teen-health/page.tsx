@@ -28,6 +28,15 @@ export async function generateMetadata({
   return {
     title: t('meta.title'),
     description: t('meta.description'),
+    keywords: locale === 'zh' 
+      ? '青少年经期健康,青春期教育,经期管理,校园健康,心理健康,成长支持,科学教育'
+      : 'teen menstrual health,puberty education,period management,school health,mental health,growth support,scientific education',
+    openGraph: {
+      title: t('meta.title'),
+      description: t('meta.description'),
+      type: 'website',
+      locale: locale,
+    },
   };
 }
 

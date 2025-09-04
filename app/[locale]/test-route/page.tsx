@@ -1,3 +1,13 @@
+import type { Metadata } from 'next';
+
+// Add noindex metadata for test pages
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function TestRoutePage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-green-100">

@@ -75,6 +75,28 @@ const nextConfig = {
   // 🚀 SEO优化 - 301重定向配置
   async redirects() {
     return [
+      // 处理重复的下载页面
+      {
+        source: '/downloads-new',
+        destination: '/downloads',
+        permanent: true,
+      },
+      {
+        source: '/download-center',
+        destination: '/downloads',
+        permanent: true,
+      },
+      {
+        source: '/articles-pdf-center',
+        destination: '/downloads',
+        permanent: true,
+      },
+      // 处理重复的疼痛追踪页面
+      {
+        source: '/pain-tracker',
+        destination: '/interactive-tools/pain-tracker',
+        permanent: true,
+      },
       // 处理重复内容
       {
         source: '/downloads/download-1',

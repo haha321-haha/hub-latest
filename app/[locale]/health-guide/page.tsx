@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import StructuredData from '@/components/StructuredData';
 import { Locale, locales } from '@/i18n';
 
 // Generate metadata for the page
@@ -14,6 +15,15 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
+    keywords: locale === 'zh' 
+      ? '痛经健康指南,经期健康管理,痛经成因,痛经治疗,生活方式管理,医学知识,健康策略'
+      : 'menstrual health guide,period health management,period pain causes,period pain treatment,lifestyle management,medical knowledge,health strategies',
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      type: 'website',
+      locale: locale,
+    },
   };
 }
 
@@ -92,6 +102,14 @@ export default async function HealthGuidePage({
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
+      {/* SEO结构化数据 */}
+      <StructuredData
+        type="healthTopicPage"
+        title={t('title')}
+        description={t('description')}
+        url={`https://periodhub.health/${locale}/health-guide`}
+      />
+      
       <div className="container mx-auto px-4 py-8 max-w-7xl">
         <div className="space-y-12">
           {/* Page Header */}
@@ -119,12 +137,52 @@ export default async function HealthGuidePage({
               : 'Menstrual pain affects the quality of life for millions of women worldwide. This comprehensive guide brings together the latest scientific research, traditional wisdom, and practical strategies to provide you with a complete knowledge system for better understanding, managing, and relieving menstrual discomfort.'
             }
           </p>
-          <p className="text-neutral-700 leading-relaxed">
+          <p className="text-neutral-700 leading-relaxed mb-6">
             {locale === 'zh'
               ? '无论您是刚开始经历痛经，还是寻求新的管理方法，这个指南都将成为您可靠的参考资源。'
               : 'Whether you are just starting to experience menstrual pain or looking for new management approaches, this guide will serve as your reliable reference resource.'
             }
           </p>
+          
+          {/* 快速访问相关工具 */}
+          <div className="bg-white rounded-lg p-4 border border-primary-200">
+            <h3 className="text-lg font-semibold text-neutral-800 mb-3">
+              {locale === 'zh' ? '🔧 配套工具推荐' : '🔧 Recommended Tools'}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <Link href={`/${locale}/interactive-tools/symptom-assessment`} className="flex items-center p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors group">
+                <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="font-medium text-blue-700 group-hover:text-blue-800">
+                    {locale === 'zh' ? '痛经症状评估' : 'Pain Assessment'}
+                  </div>
+                  <div className="text-xs text-blue-600">
+                    {locale === 'zh' ? '评估痛经严重程度' : 'Assess pain severity'}
+                  </div>
+                </div>
+              </Link>
+              
+              <Link href={`/${locale}/interactive-tools/pain-tracker`} className="flex items-center p-3 bg-green-50 rounded-lg hover:bg-green-100 transition-colors group">
+                <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center mr-3">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="font-medium text-green-700 group-hover:text-green-800">
+                    {locale === 'zh' ? '疼痛追踪器' : 'Pain Tracker'}
+                  </div>
+                  <div className="text-xs text-green-600">
+                    {locale === 'zh' ? '记录疼痛模式' : 'Track pain patterns'}
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 

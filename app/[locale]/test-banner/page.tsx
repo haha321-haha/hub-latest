@@ -1,5 +1,14 @@
 import { setRequestLocale } from 'next-intl/server';
 import { Locale } from '@/i18n';
+import type { Metadata } from 'next';
+
+// Add noindex metadata for test pages
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function TestBannerPage({
   params: { locale }

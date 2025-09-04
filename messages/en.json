@@ -638,8 +638,8 @@
     "backHome": "Back to Home"
   },
   "interactiveToolsPage": {
-    "title": "Interactive Tools for Menstrual Health Management",
-    "description": "Use our interactive tools to better understand your symptoms, track your pain patterns, and receive personalized recommendations.",
+    "title": "Interactive Menstrual Health Tools - Symptom Assessment & Pain Tracking",
+    "description": "Professional menstrual health management tools including symptom assessment, pain tracking, and data analytics. Scientifically evaluate your menstrual symptoms, get personalized health recommendations, and effectively manage period pain. Bilingual support with mobile-optimized experience.",
     "symptomAssessment": {
       "title": "Symptom Assessment Tool",
       "description": "Answer a few questions about your symptoms to receive personalized recommendations for managing your menstrual pain.",
@@ -1135,8 +1135,8 @@
     }
   },
   "scenarioSolutionsPage": {
-    "title": "Scenario-Based Solutions",
-    "description": "Professional menstrual pain management strategies tailored for different life situations, helping you stay confident in any environment.",
+    "title": "Scenario-Based Period Pain Solutions - Workplace, Exercise & Social Life Management",
+    "description": "Professional scenario-based period pain management strategies covering workplace, exercise, social, and sleep situations. Get targeted relief strategies and practical tips to handle period pain confidently in any environment. Includes emergency kit lists, exercise guidance, and social etiquette tips.",
     "introTitle": "Complete Life Scenario Coverage",
     "introText": "Every woman's life is multifaceted, from workplace to home, from exercise to social activities. Different scenarios require different coping strategies. We've carefully prepared comprehensive scenario-based solutions to help you handle menstrual discomfort gracefully, wherever you are.",
     "scenarios": {
@@ -1513,13 +1513,13 @@
     }
   },
   "healthGuidePage": {
-    "title": "Comprehensive Menstrual Health Guide",
-    "description": "Your complete menstrual health resource, from basics to advanced management strategies, helping you understand and manage your menstrual health comprehensively."
+    "title": "Comprehensive Menstrual Health Guide - Medical Knowledge & Scientific Management",
+    "description": "Complete menstrual health guide covering causes, symptom identification, treatment methods, and lifestyle management. Based on latest medical research, providing scientific and practical health management strategies to help women better understand and address menstrual health issues. Includes global perspectives, lifestyle advice, and medical care guidance."
   },
   "teenHealth": {
     "meta": {
-      "title": "Teen Health Guide",
-      "description": "Educational resources designed for teenagers about menstrual health, providing scientific and practical period management knowledge"
+      "title": "Teen Menstrual Health Guide - Scientific Education & Growth Support",
+      "description": "Educational resources designed for teenagers covering puberty development, period management, mental health, and school life. Providing scientific and practical menstrual health knowledge to help teens build correct health concepts and navigate adolescence smoothly. Includes school guides, communication tips, and emotional support."
     }
   },
   "toolPage": {

@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import StructuredData from '@/components/StructuredData';
 import Image from 'next/image';
 import {
   Briefcase,
@@ -28,6 +29,15 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   return {
     title: t('title'),
     description: t('description'),
+    keywords: locale === 'zh' 
+      ? '场景化痛经解决方案,职场痛经管理,运动痛经应对,社交痛经礼仪,痛经应急包,痛经缓解技巧'
+      : 'scenario-based period pain solutions,workplace period management,exercise period pain relief,social period etiquette,period emergency kit,period pain relief tips',
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      type: 'website',
+      locale: locale,
+    },
   };
 }
 
@@ -124,6 +134,14 @@ export default async function ScenarioSolutionsPage({ params: { locale } }: Prop
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 md:space-y-12" data-page="scenario-solutions">
+      {/* SEO结构化数据 */}
+      <StructuredData
+        type="healthTopicPage"
+        title={t('title')}
+        description={t('description')}
+        url={`https://periodhub.health/${locale}/scenario-solutions`}
+      />
+      
       {/* Page Header */}
       <header className="text-center py-8 md:py-12">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-700 mb-4">

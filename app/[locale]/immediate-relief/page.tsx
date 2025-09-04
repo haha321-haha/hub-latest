@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
+import Breadcrumb from '@/components/Breadcrumb';
 
 // Generate metadata for the page
 export async function generateMetadata({
@@ -91,6 +92,13 @@ export default function ImmediateReliefPage({
         }}
       />
       <div className="container space-y-10">
+        {/* Breadcrumb */}
+        <Breadcrumb 
+          items={[
+            { label: '即时缓解', href: `/${locale}/immediate-relief` }
+          ]}
+        />
+        
         {/* Page Header */}
       <header className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-primary-700 mb-4">

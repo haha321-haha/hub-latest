@@ -2,6 +2,15 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 import OptimizedImage from '@/components/ui/OptimizedImage';
 import Image from 'next/image';
 import { Locale } from '@/i18n';
+import type { Metadata } from 'next';
+
+// Add noindex metadata for test pages
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function TestImageQualityPage({
   params: { locale }

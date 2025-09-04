@@ -15,6 +15,10 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   return {
     title: `PDF资源中心测试 - ${locale === 'zh' ? 'Period Hub' : 'Period Hub'}`,
     description: '测试新的PDF资源分类和优化系统',
+    robots: {
+      index: false,
+      follow: false,
+    },
   };
 }
 

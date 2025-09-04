@@ -19,6 +19,15 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
+    keywords: locale === 'zh' 
+      ? '经期健康管理,症状评估,疼痛追踪,痛经管理,健康工具,个性化建议,数据分析'
+      : 'menstrual health management,symptom assessment,pain tracking,period pain management,health tools,personalized recommendations,data analytics',
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      type: 'website',
+      locale: locale,
+    },
   };
 }
 

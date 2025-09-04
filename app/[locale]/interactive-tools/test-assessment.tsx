@@ -2,6 +2,15 @@
 
 import React from 'react';
 import { assessmentQuestions } from './shared/data/assessmentQuestions';
+import type { Metadata } from 'next';
+
+// Add noindex metadata for test pages
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function TestAssessment() {
   const zhQuestions = assessmentQuestions.zh || [];
