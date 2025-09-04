@@ -23,7 +23,7 @@ interface Resource {
 
 const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
   const [activeCategory, setActiveCategory] = useState('immediate');
-  const [searchTerm, setSearchTerm] = useState('热敷');
+  const [searchTerm, setSearchTerm] = useState('');
   const [loadingStates, setLoadingStates] = useState<Record<string, boolean>>({});
   const router = useRouter();
   

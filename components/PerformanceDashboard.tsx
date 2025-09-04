@@ -170,32 +170,34 @@ export default function PerformanceDashboard() {
         <div className="bg-white rounded-lg shadow p-6">
           <h2 className="text-lg font-semibold text-gray-900 mb-4">Average Performance Metrics</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {Object.entries(data.averages).map(([metric, stats]) => (
+            {Object.entries(data.averages).map(([metric, stats]) => {
+              const typedStats = stats as MetricAverages[string];
+              return (
               <div key={metric} className="border border-gray-200 rounded-lg p-4">
                 <h3 className="font-medium text-gray-900 mb-2">{metric}</h3>
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between">
                     <span className="text-gray-600">Average:</span>
-                    <span className={getGradeColor(metric, stats.average)}>
-                      {stats.average.toFixed(0)}ms
+                    <span className={getGradeColor(metric, typedStats.average)}>
+                      {typedStats.average.toFixed(0)}ms
                     </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Min:</span>
-                    <span className="text-gray-900">{stats.min.toFixed(0)}ms</span>
+                    <span className="text-gray-900">{typedStats.min.toFixed(0)}ms</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Max:</span>
-                    <span className="text-gray-900">{stats.max.toFixed(0)}ms</span>
+                    <span className="text-gray-900">{typedStats.max.toFixed(0)}ms</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Count:</span>
-                    <span className="text-gray-900">{stats.count}</span>
+                    <span className="text-gray-900">{typedStats.count}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Grade:</span>
-                    <span className={getGradeColor(metric, stats.average)}>
-                      {getGrade(metric, stats.average)}
+                    <span className={getGradeColor(metric, typedStats.average)}>
+                      {getGrade(metric, typedStats.average)}
                     </span>
                   </div>
                 </div>
