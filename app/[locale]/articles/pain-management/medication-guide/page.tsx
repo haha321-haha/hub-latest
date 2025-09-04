@@ -198,6 +198,140 @@ export default function MedicationGuidePage({
         </div>
       </section>
 
+      {/* Drug Comparison Table */}
+      <section>
+        <h2 className="text-2xl font-semibold text-neutral-800 mb-6">
+          {t('comparisonTitle')}
+        </h2>
+        
+        <div className="card mb-8">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-gray-50">
+                  <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-700">
+                    {t('comparisonTable.headers.feature')}
+                  </th>
+                  <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-700">
+                    {t('comparisonTable.headers.ibuprofen')}
+                  </th>
+                  <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-700">
+                    {t('comparisonTable.headers.naproxen')}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-3 font-medium text-gray-700">
+                    {t('comparisonTable.rows.onset.feature')}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-3 text-gray-600">
+                    {t('comparisonTable.rows.onset.ibuprofen')}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-3 text-gray-600">
+                    {t('comparisonTable.rows.onset.naproxen')}
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-medium text-gray-700">
+                    {t('comparisonTable.rows.duration.feature')}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-3 text-gray-600">
+                    {t('comparisonTable.rows.duration.ibuprofen')}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-3 text-gray-600">
+                    {t('comparisonTable.rows.duration.naproxen')}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-3 font-medium text-gray-700">
+                    {t('comparisonTable.rows.dosage.feature')}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-3 text-gray-600">
+                    {t('comparisonTable.rows.dosage.ibuprofen')}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-3 text-gray-600">
+                    {t('comparisonTable.rows.dosage.naproxen')}
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-medium text-gray-700">
+                    {t('comparisonTable.rows.frequency.feature')}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-3 text-gray-600">
+                    {t('comparisonTable.rows.frequency.ibuprofen')}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-3 text-gray-600">
+                    {t('comparisonTable.rows.frequency.naproxen')}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-3 font-medium text-gray-700">
+                    {t('comparisonTable.rows.bestFor.feature')}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-3 text-gray-600">
+                    {t('comparisonTable.rows.bestFor.ibuprofen')}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-3 text-gray-600">
+                    {t('comparisonTable.rows.bestFor.naproxen')}
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-medium text-gray-700">
+                    {t('comparisonTable.rows.sideEffects.feature')}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-3 text-gray-600">
+                    {t('comparisonTable.rows.sideEffects.ibuprofen')}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-3 text-gray-600">
+                    {t('comparisonTable.rows.sideEffects.naproxen')}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Selection Guide */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div className="card">
+            <h3 className="text-lg font-semibold text-blue-600 mb-3">
+              {t('selectionGuide.ibuprofen.title')}
+            </h3>
+            <ul className="space-y-2">
+              {[
+                t('selectionGuide.ibuprofen.points.0'),
+                t('selectionGuide.ibuprofen.points.1'),
+                t('selectionGuide.ibuprofen.points.2')
+              ].map((point: string, index: number) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-blue-500 mr-2">•</span>
+                  <span className="text-gray-600">{point}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          <div className="card">
+            <h3 className="text-lg font-semibold text-green-600 mb-3">
+              {t('selectionGuide.naproxen.title')}
+            </h3>
+            <ul className="space-y-2">
+              {[
+                t('selectionGuide.naproxen.points.0'),
+                t('selectionGuide.naproxen.points.1'),
+                t('selectionGuide.naproxen.points.2')
+              ].map((point: string, index: number) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-green-500 mr-2">•</span>
+                  <span className="text-gray-600">{point}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Usage Tips */}
       <section>
         <h2 className="text-2xl font-semibold text-neutral-800 mb-6">

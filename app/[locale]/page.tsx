@@ -71,7 +71,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 // 增强的结构化数据 - 针对健康平台优化
 const getStructuredData = async (locale: string) => {
-  const t = await getTranslations({ locale, namespace: 'home' });
+  const t = await getTranslations({ locale, namespace: '' });
   
   return {
   "@context": "https://schema.org",
@@ -448,6 +448,54 @@ export default async function HomePage({ params: { locale } }: { params: { local
                   </summary>
                   <div className="mt-4 text-gray-600 leading-relaxed">
                     {t('faq.q3.answer')}
+                  </div>
+                </details>
+
+                <details className="bg-gray-50 rounded-lg p-6 group">
+                  <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
+                    <span>{t('faq.q4.question')}</span>
+                    <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="mt-4 text-gray-600 leading-relaxed">
+                    {t('faq.q4.answer')}
+                  </div>
+                </details>
+
+                <details className="bg-gray-50 rounded-lg p-6 group">
+                  <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
+                    <span>{t('faq.q5.question')}</span>
+                    <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="mt-4 text-gray-600 leading-relaxed">
+                    {t('faq.q5.answer')}
+                  </div>
+                </details>
+
+                <details className="bg-gray-50 rounded-lg p-6 group">
+                  <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
+                    <span>{t('faq.q6.question')}</span>
+                    <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="mt-4 text-gray-600 leading-relaxed">
+                    {t('faq.q6.answer')}
+                  </div>
+                </details>
+
+                <details className="bg-gray-50 rounded-lg p-6 group">
+                  <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
+                    <span>{t('faq.q7.question')}</span>
+                    <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="mt-4 text-gray-600 leading-relaxed">
+                    {t('faq.q7.answer')}
                   </div>
                 </details>
               </div>
