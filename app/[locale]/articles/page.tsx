@@ -6,6 +6,6 @@ export default async function ArticlesPage({
 }: {
   params: { locale: Locale }
 }) {
-  // 简洁的302重定向到downloads页面
-  redirect(`/${locale}/downloads`);
+  // 301永久重定向到downloads页面
+  redirect(`/${locale}/downloads`, 'replace');
 }
