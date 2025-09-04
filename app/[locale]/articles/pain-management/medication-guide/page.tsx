@@ -255,6 +255,73 @@ export default function MedicationGuidePage({
         </p>
       </section>
 
+      {/* Related Tools */}
+      <section>
+        <h2 className="text-2xl font-semibold text-neutral-800 mb-6">
+          {t('relatedToolsTitle')}
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Link href={`/${locale}/articles/nsaid-menstrual-pain-professional-guide`}>
+            <div className="card group hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-blue-600 group-hover:text-blue-700 mb-2">
+                    {t('relatedTools.nsaidGuide.title')}
+                  </h3>
+                  <p className="text-neutral-600 mb-3">
+                    {t('relatedTools.nsaidGuide.description')}
+                  </p>
+                  <div className="flex items-center text-sm text-blue-500 group-hover:text-blue-600">
+                    <span className="mr-2">🧮</span>
+                    <span>{t('relatedTools.nsaidGuide.feature')}</span>
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          <Link href={`/${locale}/interactive-tools/symptom-assessment`}>
+            <div className="card group hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-green-600 group-hover:text-green-700 mb-2">
+                    {t('relatedTools.symptomAssessment.title')}
+                  </h3>
+                  <p className="text-neutral-600 mb-3">
+                    {t('relatedTools.symptomAssessment.description')}
+                  </p>
+                  <div className="flex items-center text-sm text-green-500 group-hover:text-green-600">
+                    <span className="mr-2">📊</span>
+                    <span>{t('relatedTools.symptomAssessment.feature')}</span>
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       {/* Back to Articles */}
       <div className="text-center">
         <Link

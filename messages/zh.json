@@ -1990,7 +1990,20 @@
       "medication": "药物无效或出现严重副作用"
     },
     "disclaimerTitle": "医疗免责声明：",
-    "disclaimerText": "本指南仅供参考，不能替代专业医疗建议。如有疑问请咨询医生。"
+    "disclaimerText": "本指南仅供参考，不能替代专业医疗建议。如有疑问请咨询医生。",
+    "relatedToolsTitle": "相关工具",
+    "relatedTools": {
+      "nsaidGuide": {
+        "title": "NSAIDs痛经治疗专业指南",
+        "description": "包含互动式用药计算器，帮您精准计算安全剂量",
+        "feature": "包含互动式用药计算器"
+      },
+      "symptomAssessment": {
+        "title": "症状评估工具",
+        "description": "科学评估经期症状，获取个性化建议",
+        "feature": "个性化症状分析"
+      }
+    }
   },
   "home": {
     "hero": {
