@@ -32,6 +32,14 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
         keywords: locale === 'zh'
       ? '经期可以运动吗,场景化痛经解决方案,职场痛经管理,运动痛经应对,社交痛经礼仪,痛经应急包,痛经缓解技巧,热敷,敷热水袋,暖宝宝,按摩,揉肚子,止痛药'
       : 'scenario-based period pain solutions,workplace period management,exercise period pain relief,social period etiquette,period emergency kit,period pain relief tips',
+    alternates: {
+      canonical: `https://periodhub.health/${locale}/scenario-solutions`,
+      languages: {
+        'zh-CN': 'https://periodhub.health/zh/scenario-solutions',
+        'en-US': 'https://periodhub.health/en/scenario-solutions',
+        'x-default': 'https://periodhub.health/zh/scenario-solutions',
+      },
+    },
     openGraph: {
       title: t('title'),
       description: t('description'),

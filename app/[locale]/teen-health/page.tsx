@@ -31,6 +31,14 @@ export async function generateMetadata({
     keywords: locale === 'zh' 
       ? '青少年经期健康,青春期教育,经期管理,校园健康,心理健康,成长支持,科学教育'
       : 'teen menstrual health,puberty education,period management,school health,mental health,growth support,scientific education',
+    alternates: {
+      canonical: `https://periodhub.health/${locale}/teen-health`,
+      languages: {
+        'zh-CN': 'https://periodhub.health/zh/teen-health',
+        'en-US': 'https://periodhub.health/en/teen-health',
+        'x-default': 'https://periodhub.health/zh/teen-health',
+      },
+    },
     openGraph: {
       title: t('meta.title'),
       description: t('meta.description'),

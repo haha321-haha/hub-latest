@@ -18,6 +18,14 @@ export async function generateMetadata({
   return {
     title: `${title} | periodhub.health`,
     description,
+    alternates: {
+      canonical: `https://periodhub.health/${locale}/privacy-policy`,
+      languages: {
+        'zh-CN': 'https://periodhub.health/zh/privacy-policy',
+        'en-US': 'https://periodhub.health/en/privacy-policy',
+        'x-default': 'https://periodhub.health/zh/privacy-policy',
+      },
+    },
     openGraph: {
       title,
       description,

@@ -15,6 +15,14 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
+    alternates: {
+      canonical: `https://periodhub.health/${locale}/special-therapies`,
+      languages: {
+        'zh-CN': 'https://periodhub.health/zh/special-therapies',
+        'en-US': 'https://periodhub.health/en/special-therapies',
+        'x-default': 'https://periodhub.health/zh/special-therapies',
+      },
+    },
   };
 }
 

@@ -20,6 +20,14 @@ export async function generateMetadata({
       '热敷', '敷热水袋', '暖宝宝', '按摩', '揉肚子', '止痛药',
       'period pain emergency relief', 'immediate period pain relief', 'heat therapy for cramps'
     ],
+    alternates: {
+      canonical: `https://periodhub.health/${locale}/immediate-relief`,
+      languages: {
+        'zh-CN': 'https://periodhub.health/zh/immediate-relief',
+        'en-US': 'https://periodhub.health/en/immediate-relief',
+        'x-default': 'https://periodhub.health/zh/immediate-relief',
+      },
+    },
     openGraph: {
       title: t('title'),
       description: t('description'),

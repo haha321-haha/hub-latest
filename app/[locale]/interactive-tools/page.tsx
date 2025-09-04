@@ -22,6 +22,14 @@ export async function generateMetadata({
     keywords: locale === 'zh' 
       ? '经期健康管理,症状评估,疼痛追踪,痛经管理,健康工具,个性化建议,数据分析'
       : 'menstrual health management,symptom assessment,pain tracking,period pain management,health tools,personalized recommendations,data analytics',
+    alternates: {
+      canonical: `https://periodhub.health/${locale}/interactive-tools`,
+      languages: {
+        'zh-CN': 'https://periodhub.health/zh/interactive-tools',
+        'en-US': 'https://periodhub.health/en/interactive-tools',
+        'x-default': 'https://periodhub.health/zh/interactive-tools',
+      },
+    },
     openGraph: {
       title: t('title'),
       description: t('description'),

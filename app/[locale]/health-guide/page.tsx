@@ -18,6 +18,14 @@ export async function generateMetadata({
         keywords: locale === 'zh'
       ? '月经推迟几天算正常,经期注意事项,月经不调怎么办,痛经健康指南,经期健康管理,痛经成因,痛经治疗,生活方式管理,医学知识,健康策略,热敷,敷热水袋,暖宝宝,按摩,揉肚子,止痛药'
       : 'menstrual health guide,period health management,period pain causes,period pain treatment,lifestyle management,medical knowledge,health strategies',
+    alternates: {
+      canonical: `https://periodhub.health/${locale}/health-guide`,
+      languages: {
+        'zh-CN': 'https://periodhub.health/zh/health-guide',
+        'en-US': 'https://periodhub.health/en/health-guide',
+        'x-default': 'https://periodhub.health/zh/health-guide',
+      },
+    },
     openGraph: {
       title: t('title'),
       description: t('description'),
