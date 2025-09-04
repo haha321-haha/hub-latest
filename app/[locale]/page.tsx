@@ -72,6 +72,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 // 增强的结构化数据 - 针对健康平台优化
 const getStructuredData = async (locale: string) => {
   const t = await getTranslations({ locale, namespace: '' });
+  const tFaq = await getTranslations({ locale, namespace: 'faq' });
+  const tOrg = await getTranslations({ locale, namespace: 'organization' });
   
   return {
   "@context": "https://schema.org",
@@ -128,7 +130,7 @@ const getStructuredData = async (locale: string) => {
       "@id": `https://periodhub.health/${locale}#website`,
       "url": "https://periodhub.health",
       "name": "PeriodHub",
-      "description": t('organization.description'),
+      "description": tOrg('description'),
       "publisher": {
         "@id": `https://periodhub.health/${locale}#organization`
       },
@@ -147,26 +149,26 @@ const getStructuredData = async (locale: string) => {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": t('faq.q1.question'),
+          "name": tFaq('q1.question'),
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": t('faq.q1.answer')
+            "text": tFaq('q1.answer')
           }
         },
         {
           "@type": "Question",
-          "name": t('faq.q2.question'),
+          "name": tFaq('q2.question'),
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": t('faq.q2.answer')
+            "text": tFaq('q2.answer')
           }
         },
         {
           "@type": "Question",
-          "name": t('faq.q3.question'),
+          "name": tFaq('q3.question'),
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": t('faq.q3.answer')
+            "text": tFaq('q3.answer')
           }
         }
       ]
@@ -178,6 +180,7 @@ const getStructuredData = async (locale: string) => {
 export default async function HomePage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
   const t = await getTranslations('home');
+  const tFaq = await getTranslations('faq');
   const isZh = typeof locale === 'string' && (locale === 'zh' || locale.startsWith('zh'));
   const structuredData = await getStructuredData(locale);
 
@@ -410,92 +413,92 @@ export default async function HomePage({ params: { locale } }: { params: { local
           <section className="py-20 bg-white" aria-labelledby="faq-heading">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <header className="text-center mb-16">
-                <h2 id="faq-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t('faq.title')}</h2>
-                <p className="text-xl text-gray-600">{t('faq.subtitle')}</p>
+                <h2 id="faq-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{tFaq('title')}</h2>
+                <p className="text-xl text-gray-600">{tFaq('subtitle')}</p>
               </header>
 
               <div className="space-y-6">
                 <details className="bg-gray-50 rounded-lg p-6 group">
                   <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
-                    <span>{t('faq.q1.question')}</span>
+                    <span>{tFaq('q1.question')}</span>
                     <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="mt-4 text-gray-600 leading-relaxed">
-                    {t('faq.q1.answer')}
+                    {tFaq('q1.answer')}
                   </div>
                 </details>
 
                 <details className="bg-gray-50 rounded-lg p-6 group">
                   <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
-                    <span>{t('faq.q2.question')}</span>
+                    <span>{tFaq('q2.question')}</span>
                     <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="mt-4 text-gray-600 leading-relaxed">
-                    {t('faq.q2.answer')}
+                    {tFaq('q2.answer')}
                   </div>
                 </details>
 
                 <details className="bg-gray-50 rounded-lg p-6 group">
                   <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
-                    <span>{t('faq.q3.question')}</span>
+                    <span>{tFaq('q3.question')}</span>
                     <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="mt-4 text-gray-600 leading-relaxed">
-                    {t('faq.q3.answer')}
+                    {tFaq('q3.answer')}
                   </div>
                 </details>
 
                 <details className="bg-gray-50 rounded-lg p-6 group">
                   <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
-                    <span>{t('faq.q4.question')}</span>
+                    <span>{tFaq('q4.question')}</span>
                     <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="mt-4 text-gray-600 leading-relaxed">
-                    {t('faq.q4.answer')}
+                    {tFaq('q4.answer')}
                   </div>
                 </details>
 
                 <details className="bg-gray-50 rounded-lg p-6 group">
                   <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
-                    <span>{t('faq.q5.question')}</span>
+                    <span>{tFaq('q5.question')}</span>
                     <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="mt-4 text-gray-600 leading-relaxed">
-                    {t('faq.q5.answer')}
+                    {tFaq('q5.answer')}
                   </div>
                 </details>
 
                 <details className="bg-gray-50 rounded-lg p-6 group">
                   <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
-                    <span>{t('faq.q6.question')}</span>
+                    <span>{tFaq('q6.question')}</span>
                     <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="mt-4 text-gray-600 leading-relaxed">
-                    {t('faq.q6.answer')}
+                    {tFaq('q6.answer')}
                   </div>
                 </details>
 
                 <details className="bg-gray-50 rounded-lg p-6 group">
                   <summary className="font-semibold text-lg text-gray-900 cursor-pointer list-none flex items-center justify-between">
-                    <span>{t('faq.q7.question')}</span>
+                    <span>{tFaq('q7.question')}</span>
                     <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="mt-4 text-gray-600 leading-relaxed">
-                    {t('faq.q7.answer')}
+                    {tFaq('q7.answer')}
                   </div>
                 </details>
               </div>
