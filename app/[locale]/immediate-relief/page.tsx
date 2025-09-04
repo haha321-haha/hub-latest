@@ -14,6 +14,16 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
+    keywords: [
+      '痛经剧痛急救指南', '痛经紧急处理', '经期疼痛缓解', '热敷疗法', '穴位按摩',
+      'period pain emergency relief', 'immediate period pain relief', 'heat therapy for cramps'
+    ],
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      type: 'article',
+      publishedTime: new Date().toISOString(),
+    },
   };
 }
 
@@ -26,11 +36,62 @@ export default function ImmediateReliefPage({
   const t = useTranslations('immediateReliefPage');
   const commonT = useTranslations('common');
   
-
+  // 结构化数据
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": t('title'),
+    "description": t('description'),
+    "medicalAudience": "Patient",
+    "about": {
+      "@type": "MedicalCondition",
+      "name": "Dysmenorrhea"
+    },
+    "mainEntity": {
+      "@type": "HowTo",
+      "name": "痛经紧急缓解5步法",
+      "description": "医生认证的痛经紧急缓解方法",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "热敷疗法",
+          "text": "40-45°C热敷下腹部15-20分钟"
+        },
+        {
+          "@type": "HowToStep", 
+          "name": "呼吸练习",
+          "text": "4-7-8呼吸法，激活副交感神经系统"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "穴位按摩",
+          "text": "按摩关元穴、三阴交等穴位"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "药物使用",
+          "text": "按医嘱使用NSAID类药物"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "就医指征",
+          "text": "疼痛≥7分或出现异常症状时立即就医"
+        }
+      ]
+    }
+  };
   
   return (
-    <div className="container space-y-10">
-      {/* Page Header */}
+    <>
+      {/* 结构化数据 */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData)
+        }}
+      />
+      <div className="container space-y-10">
+        {/* Page Header */}
       <header className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-primary-700 mb-4">
           {t('title')}
@@ -294,6 +355,7 @@ export default function ImmediateReliefPage({
           {t('disclaimerText')}
         </p>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

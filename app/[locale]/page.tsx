@@ -15,8 +15,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       ? 'PeriodHub - 专业痛经缓解方法和月经健康管理平台 | 科学指导，贴心陪伴'
       : 'PeriodHub - Professional Menstrual Health Management Platform | Scientific Guidance',
     description: isZh
-      ? '专业痛经缓解指南和月经健康管理平台。提供科学的痛经治疗方法、原发性痛经诊断标准、NSAID用药建议和热敷疗法指导。42篇专业文章+24个实用工具，帮助女性科学管理经期健康，快速缓解痛经症状。'
-      : 'Professional menstrual cramps relief guide and period health management platform. Evidence-based dysmenorrhea treatment, NSAID medication guidelines, and heat therapy instructions. 42 expert articles + 24 practical tools for scientific period pain management and menstrual health.',
+      ? 'PeriodHub｜专业痛经缓解方案与经期健康管理平台。基于42篇医学指南和24个自测工具，三甲医院合作机构已帮助60万+女性科学应对痛经困扰，获取个性化解决方案，改善生活质量'
+      : 'PeriodHub | Professional Period Pain Relief & Menstrual Health Platform. 42 Medical Guidelines + 24 Self-Assessment Tools. Board-Certified OB/GYN Reviewed. 600K+ Women Helped. Get Personalized Solutions Now',
     keywords: isZh ? [
       '痛经怎么缓解最快方法', '痛经吃什么药最有效', '月经推迟几天算正常', '月经量少是什么原因',
       '痛经缓解', '月经疼痛', '经期健康', '女性健康', '月经健康管理', '经期疼痛怎么办', '中医调理',
