@@ -50,6 +50,21 @@ export const pdfResources: PDFResource[] = [
     updatedAt: '2024-01-15'
   },
   {
+    id: 'campus-emergency-checklist',
+    title: '校园应急清单',
+    titleKey: 'campusEmergencyChecklist.title',
+    description: '学生专用的经期应急处理指南和必备物品清单',
+    descriptionKey: 'campusEmergencyChecklist.description',
+    filename: 'campus-emergency-checklist.pdf',
+    category: 'management-tools',
+    size: '1.8MB',
+    downloadUrl: '/downloads/campus-emergency-checklist.pdf',
+    icon: '🏫',
+    fileSize: 1800,
+    createdAt: '2024-01-15',
+    updatedAt: '2024-01-15'
+  },
+  {
     id: 'menstrual-health-handbook',
     title: '月经健康手册',
     titleKey: 'menstrualHealthHandbook.title',
