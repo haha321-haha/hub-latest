@@ -6,8 +6,8 @@
   },
   "metadata": {
     "home": {
-      "title": "Period Hub - Menstrual Health Management Platform",
-      "description": "Professional menstrual health platform offering period pain relief, cycle tracking, symptom assessment and scientific management solutions for women",
+      "title": "2024 Complete Dysmenorrhea Treatment Guide: Symptom Relief + Medication Advice + Heat Therapy Methods",
+      "description": "Professional doctor guidance: dysmenorrhea cause analysis + NSAIDs dosage + correct heat therapy methods. Learn all scientific relief methods in 5 minutes, helping millions of women reduce pain",
       "structuredData": {
         "description": "Professional menstrual health management platform with pain tracking, cycle prediction, and constitution assessment",
         "featureList": {
@@ -1973,8 +1973,8 @@
     }
   },
   "medicationGuide": {
-    "title": "Medication Guide",
-    "description": "Safe and effective medication usage recommendations to help you manage period pain scientifically",
+    "title": "Complete Safe Medication Guide for Dysmenorrhea: Ibuprofen/Naproxen and Other NSAIDs Usage Guidelines",
+    "description": "Complete safe medication guide for dysmenorrhea: Ibuprofen/Naproxen and other NSAIDs usage guidelines, dosage calculation, contraindication reminders, and drug interaction details. Includes medication timing reminder tool to calculate your safe dosage and avoid medication risks",
     "introTitle": "Understanding Period Pain Medication",
     "introText": "Proper medication use can safely and effectively relieve period pain. This guide will help you understand the usage, precautions, and safety recommendations for common medications.",
     "nsaidTitle": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
@@ -1993,6 +1993,66 @@
       "timing": "Take when pain starts, continue for 1-2 days",
       "mechanism": "Long-acting anti-inflammatory, sustained pain relief"
     },
+    "comparisonTitle": "Ibuprofen vs Naproxen: Detailed Comparison",
+    "comparisonTable": {
+      "headers": {
+        "feature": "Feature",
+        "ibuprofen": "Ibuprofen",
+        "naproxen": "Naproxen"
+      },
+      "rows": {
+        "onset": {
+          "feature": "Onset Time",
+          "ibuprofen": "30-60 minutes",
+          "naproxen": "1-2 hours"
+        },
+        "duration": {
+          "feature": "Duration",
+          "ibuprofen": "4-6 hours",
+          "naproxen": "8-12 hours"
+        },
+        "dosage": {
+          "feature": "Common Dosage",
+          "ibuprofen": "200-400mg",
+          "naproxen": "220mg"
+        },
+        "frequency": {
+          "feature": "Frequency",
+          "ibuprofen": "Every 6-8 hours",
+          "naproxen": "Every 8-12 hours"
+        },
+        "bestFor": {
+          "feature": "Best For",
+          "ibuprofen": "Rapid relief of acute pain",
+          "naproxen": "Sustained relief of chronic pain"
+        },
+        "sideEffects": {
+          "feature": "Side Effect Risk",
+          "ibuprofen": "Moderate",
+          "naproxen": "Lower"
+        }
+      }
+    },
+    "selectionGuide": {
+      "title": "How to Choose?",
+      "ibuprofen": {
+        "title": "Choose Ibuprofen if you:",
+        "points": {
+          "0": "Need rapid pain relief",
+          "1": "Have mild to moderate pain",
+          "2": "Want more flexible dosing times"
+        }
+      },
+      "naproxen": {
+        "title": "Choose Naproxen if you:",
+        "points": {
+          "0": "Need long-lasting relief",
+          "1": "Have moderate to severe pain",
+          "2": "Want to reduce dosing frequency"
+        }
+      }
+    },
+    "safetyTitle": "Safe Usage Guidelines",
     "safetyTitle": "Safety Guidelines",
     "contraindications": "Contraindications",
     "contraindicationsList": {
@@ -2062,6 +2122,22 @@
       "q3": {
         "question": "How does Traditional Chinese Medicine treat irregular periods?",
         "answer": "TCM treats irregular periods through syndrome differentiation: acupuncture to regulate qi and blood, herbal formulas, dietary therapy, and lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
+      },
+      "q4": {
+        "question": "When is the most effective time to take Ibuprofen?",
+        "answer": "Ibuprofen is most effective when taken at the onset of pain, typically taking effect in 30-60 minutes. It's recommended to take it when pain first starts or when you anticipate pain coming, rather than waiting until the pain becomes severe."
+      },
+      "q5": {
+        "question": "How many times can I take Ibuprofen per day?",
+        "answer": "Ibuprofen can be taken every 6-8 hours, up to 4 times per day. Adult single dose is 200-400mg, with a maximum total daily dose of 2400mg. Do not use continuously for more than 3 days; consult a doctor if pain persists."
+      },
+      "q6": {
+        "question": "Which has fewer side effects: Naproxen or Ibuprofen?",
+        "answer": "Naproxen typically has fewer side effects because it's taken less frequently (every 8-12 hours). However, both may cause stomach discomfort, so it's recommended to take with food. Those with stomach, heart, or kidney/liver problems should use with caution."
+      },
+      "q7": {
+        "question": "Can I take both Ibuprofen and Naproxen together for period pain?",
+        "answer": "It's not recommended to take both Ibuprofen and Naproxen together as they are both NSAIDs, which increases the risk of side effects. Choose one medication, and if it's not effective, consult a doctor to adjust your medication plan."
       }
     },
     "features": {
