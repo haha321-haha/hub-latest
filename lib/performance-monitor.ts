@@ -55,8 +55,10 @@ export class PerformanceMonitor {
       const observer = new PerformanceObserver((list) => {
         const entries = list.getEntries();
         entries.forEach((entry) => {
-          this.metrics.set('FID', entry.processingStart - entry.startTime);
-          this.logMetric('FID', entry.processingStart - entry.startTime);
+          const fidEntry = entry as PerformanceEventTiming;
+          const fid = fidEntry.processingStart - fidEntry.startTime;
+          this.metrics.set('FID', fid);
+          this.logMetric('FID', fid);
         });
       });
       observer.observe({ entryTypes: ['first-input'] });
@@ -107,8 +109,9 @@ export class PerformanceMonitor {
       const observer = new PerformanceObserver((list) => {
         const entries = list.getEntries();
         entries.forEach((entry) => {
-          if (entry.responseStart > 0) {
-            const ttfb = entry.responseStart - entry.requestStart;
+          const navEntry = entry as PerformanceNavigationTiming;
+          if (navEntry.responseStart > 0) {
+            const ttfb = navEntry.responseStart - navEntry.requestStart;
             this.metrics.set('TTFB', ttfb);
             this.logMetric('TTFB', ttfb);
           }
@@ -175,9 +178,9 @@ export class PerformanceMonitor {
     const report = {
       timestamp: new Date().toISOString(),
       url: typeof window !== 'undefined' ? window.location.href : '',
-      metrics: {},
-      grades: {},
-      recommendations: []
+      metrics: {} as Record<string, number>,
+      grades: {} as Record<string, string>,
+      recommendations: [] as string[]
     };
 
     Object.entries(metrics).forEach(([name, value]) => {

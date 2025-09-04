@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { PerformanceMonitor, trackPageLoad, trackRouteChange } from '@/lib/performance-monitor';
 
 interface PerformanceMonitorProps {
@@ -99,7 +99,7 @@ export function PerformanceMetricsDisplay() {
             <div key={name} className="flex justify-between">
               <span className="font-medium">{name}:</span>
               <span className={`${gradeColor}`}>
-                {typeof value === 'number' ? `${value.toFixed(0)}ms` : value}
+                {typeof value === 'number' ? `${value.toFixed(0)}ms` : String(value)}
                 <span className="ml-1 text-xs">({grade})</span>
               </span>
             </div>
