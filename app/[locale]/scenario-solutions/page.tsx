@@ -29,8 +29,8 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   return {
     title: t('title'),
     description: t('description'),
-    keywords: locale === 'zh' 
-      ? '经期可以运动吗,场景化痛经解决方案,职场痛经管理,运动痛经应对,社交痛经礼仪,痛经应急包,痛经缓解技巧'
+        keywords: locale === 'zh'
+      ? '经期可以运动吗,场景化痛经解决方案,职场痛经管理,运动痛经应对,社交痛经礼仪,痛经应急包,痛经缓解技巧,热敷,敷热水袋,暖宝宝,按摩,揉肚子,止痛药'
       : 'scenario-based period pain solutions,workplace period management,exercise period pain relief,social period etiquette,period emergency kit,period pain relief tips',
     openGraph: {
       title: t('title'),

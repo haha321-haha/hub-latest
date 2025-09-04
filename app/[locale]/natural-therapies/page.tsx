@@ -16,6 +16,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords: isZh ? [
       '痛经自然疗法', '痛经缓解方法', '经期疼痛自然疗法', '痛经调理', '经期不适', '自然止痛',
       '热敷缓解痛经', '瑜伽缓解痛经', '草药治疗痛经', '针灸治疗痛经', '按摩缓解痛经',
+      '热敷', '敷热水袋', '暖宝宝', '按摩', '揉肚子', '止痛药',
       '痛经快速缓解5分钟', '青少年痛经怎么办', '职场女性痛经应对', '无药物痛经缓解'
     ] : [
       'natural menstrual pain relief', 'period pain natural remedies', 'menstrual cramps natural treatment',

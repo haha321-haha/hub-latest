@@ -17,6 +17,7 @@ export async function generateMetadata({
     description: t('description'),
     keywords: [
       '痛经怎么缓解', '痛经剧痛急救指南', '痛经紧急处理', '经期疼痛缓解', '热敷疗法', '穴位按摩',
+      '热敷', '敷热水袋', '暖宝宝', '按摩', '揉肚子', '止痛药',
       'period pain emergency relief', 'immediate period pain relief', 'heat therapy for cramps'
     ],
     openGraph: {

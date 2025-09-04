@@ -17,6 +17,7 @@ export async function generateMetadata({
     description: t('description'),
     keywords: [
       '痛经吃什么药', '痛经安全用药', '布洛芬使用指南', '萘普生剂量', 'NSAID药物', '经期疼痛药物',
+      '止痛药', '热敷', '按摩', '揉肚子', '敷热水袋', '暖宝宝',
       'period pain medication', 'ibuprofen dosage', 'naproxen safety', 'NSAID guidelines'
     ],
     openGraph: {

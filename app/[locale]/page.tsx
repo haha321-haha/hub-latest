@@ -20,6 +20,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords: isZh ? [
       '痛经怎么缓解最快方法', '痛经吃什么药最有效', '月经推迟几天算正常', '月经量少是什么原因',
       '痛经缓解', '月经疼痛', '经期健康', '女性健康', '月经健康管理', '经期疼痛怎么办', '中医调理',
+      '热敷', '敷热水袋', '暖宝宝', '按摩', '揉肚子', '止痛药',
       '月经周期', '经期护理', '生理期', '大姨妈', '例假', '月经不调', '经期症状'
     ] : [
       'menstrual cramps relief', 'period pain remedies', 'how to stop period pain', 'natural period pain relief',
