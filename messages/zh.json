@@ -43,7 +43,7 @@
   "assessment": {
     "meta": {
       "title": "智能症状评估 - PeriodHub | 专业经期健康评估工具",
-      "description": "PeriodHub智能症状评估：科学评估经期症状，获取个性化建议和治疗方案。专业的经期健康评估工具，帮助您了解身体状况。",
+      "description": "PeriodHub智能症状评估：科学评估经期症状，获取个性化建议和治疗方案。专业的经期健康评估工具，帮助您了解身体状况和健康状态，提供科学指导，改善生活质量。",
       "ogTitle": "智能症状评估 - PeriodHub",
       "ogDescription": "专业经期健康评估工具，科学分析症状，提供个性化建议",
       "twitterTitle": "智能症状评估 - PeriodHub",
@@ -804,7 +804,7 @@
     },
     "painTracker": {
       "title": "疼痛追踪系统",
-      "description": "记录和监测您的经期疼痛模式，以识别触发因素和有效的缓解方法。",
+      "description": "记录和监测您的经期疼痛模式，以识别触发因素和有效的缓解方法。专业的疼痛追踪工具，帮助您更好地管理健康，获得个性化洞察和建议，改善生活质量，提供科学指导。",
       "startButton": "开始追踪",
       "addEntry": "添加新记录",
       "viewHistory": "查看历史",

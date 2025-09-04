@@ -43,7 +43,7 @@
   "assessment": {
     "meta": {
       "title": "Smart Symptom Assessment - PeriodHub | Professional Menstrual Health Assessment Tool",
-      "description": "PeriodHub Smart Symptom Assessment: Scientifically evaluate menstrual symptoms and get personalized recommendations and treatment plans. Professional menstrual health assessment tool to help you understand your physical condition.",
+      "description": "PeriodHub Smart Symptom Assessment: Scientifically evaluate menstrual symptoms and get personalized recommendations. Professional health assessment tool.",
       "ogTitle": "Smart Symptom Assessment - PeriodHub",
       "ogDescription": "Professional menstrual health assessment tool with scientific symptom analysis and personalized recommendations",
       "twitterTitle": "Smart Symptom Assessment - PeriodHub",
@@ -670,7 +670,7 @@
     },
     "painTracker": {
       "title": "Pain Tracking System",
-      "description": "Record and monitor your menstrual pain patterns over time to identify triggers and effective relief methods.",
+      "description": "Record and monitor your menstrual pain patterns over time to identify triggers and effective relief methods. Professional pain tracking tool for better health management.",
       "startButton": "Start Tracking",
       "addEntry": "Add New Entry",
       "viewHistory": "View History",
