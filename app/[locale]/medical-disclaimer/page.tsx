@@ -1,6 +1,48 @@
 'use client';
 
 import { useLocale } from 'next-intl';
+import { Metadata } from 'next';
+
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const isZh = locale === 'zh';
+
+  return {
+    title: isZh
+      ? '医疗免责声明 - PeriodHub | 重要法律声明'
+      : 'Medical Disclaimer - PeriodHub | Important Legal Notice',
+    description: isZh
+      ? 'PeriodHub医疗免责声明：本网站提供的信息仅供教育目的，不构成专业医疗建议。请咨询专业医生获取医疗建议。'
+      : 'PeriodHub Medical Disclaimer: Information on this website is for educational purposes only and does not constitute professional medical advice. Please consult a healthcare professional for medical advice.',
+    keywords: isZh ? [
+      '医疗免责声明', '法律声明', '医疗建议', '健康信息', '免责条款', '医疗网站'
+    ] : [
+      'medical disclaimer', 'legal notice', 'medical advice', 'health information', 'terms of service', 'medical website'
+    ],
+    openGraph: {
+      title: isZh
+        ? '医疗免责声明 - PeriodHub'
+        : 'Medical Disclaimer - PeriodHub',
+      description: isZh
+        ? 'PeriodHub医疗免责声明：重要法律声明和使用条款'
+        : 'PeriodHub Medical Disclaimer: Important legal notice and terms of use',
+      url: `https://periodhub.health/${locale}/medical-disclaimer`,
+      siteName: 'PeriodHub',
+      locale: isZh ? 'zh_CN' : 'en_US',
+      type: 'website',
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    alternates: {
+      canonical: `https://periodhub.health/${locale}/medical-disclaimer`,
+      languages: {
+        'zh-CN': 'https://periodhub.health/zh/medical-disclaimer',
+        'en-US': 'https://periodhub.health/en/medical-disclaimer',
+      },
+    },
+  };
+}
 
 export default function MedicalDisclaimerPage() {
   const locale = useLocale();

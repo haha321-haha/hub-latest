@@ -1,6 +1,24 @@
 'use client';
 
 import React from 'react';
+import { Metadata } from 'next';
+
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const isZh = locale === 'zh';
+
+  return {
+    title: isZh
+      ? '框架演示 - PeriodHub | 技术功能展示'
+      : 'Framework Demo - PeriodHub | Technical Feature Showcase',
+    description: isZh
+      ? 'PeriodHub框架演示：展示网站的技术功能、性能优化和用户体验特性。为开发者和技术团队提供功能演示。'
+      : 'PeriodHub Framework Demo: Showcase technical features, performance optimizations and user experience features of the website. Provides feature demonstrations for developers and technical teams.',
+    robots: {
+      index: false,
+      follow: false,
+    },
+  };
+}
 import {
   Rocket,
   Zap,
