@@ -72,8 +72,6 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 // 增强的结构化数据 - 针对健康平台优化
 const getStructuredData = async (locale: string) => {
   const t = await getTranslations({ locale, namespace: '' });
-  const tFaq = await getTranslations({ locale, namespace: 'faq' });
-  const tOrg = await getTranslations({ locale, namespace: 'organization' });
   
   return {
   "@context": "https://schema.org",
@@ -130,7 +128,7 @@ const getStructuredData = async (locale: string) => {
       "@id": `https://periodhub.health/${locale}#website`,
       "url": "https://periodhub.health",
       "name": "PeriodHub",
-      "description": tOrg('description'),
+      "description": t('organization.description'),
       "publisher": {
         "@id": `https://periodhub.health/${locale}#organization`
       },
@@ -149,26 +147,26 @@ const getStructuredData = async (locale: string) => {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": tFaq('q1.question'),
+          "name": t('faq.q1.question'),
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": tFaq('q1.answer')
+            "text": t('faq.q1.answer')
           }
         },
         {
           "@type": "Question",
-          "name": tFaq('q2.question'),
+          "name": t('faq.q2.question'),
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": tFaq('q2.answer')
+            "text": t('faq.q2.answer')
           }
         },
         {
           "@type": "Question",
-          "name": tFaq('q3.question'),
+          "name": t('faq.q3.question'),
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": tFaq('q3.answer')
+            "text": t('faq.q3.answer')
           }
         }
       ]
