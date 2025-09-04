@@ -331,7 +331,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           title: locale === 'zh' ? '热疗完整指南' : 'Complete Heat Therapy Guide',
           type: 'article' as const,
           readTime: locale === 'zh' ? '8分钟' : '8 min read',
-          category: 'immediate'
+          category: 'immediate',
+          keywords: locale === 'zh' ? ['热敷', '敷热水袋', '暖宝宝', '热疗', '温热', '缓解'] : ['heat', 'therapy', 'warm', 'relief', 'thermal', 'treatment']
         },
         {
           id: 'immediate-3',
@@ -345,7 +346,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           title: locale === 'zh' ? '自然物理疗法综合指南' : 'Natural Physical Therapy Guide',
           type: 'article' as const,
           readTime: locale === 'zh' ? '12分钟' : '12 min read',
-          category: 'immediate'
+          category: 'immediate',
+          keywords: locale === 'zh' ? ['按摩', '揉肚子', '物理', '自然', '疗法', '缓解'] : ['massage', 'physical', 'natural', 'therapy', 'relief', 'treatment']
         },
         {
           id: 'immediate-5',
@@ -361,7 +363,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
           readTime: locale === 'zh' ? '15分钟' : '15 min read',
           category: 'immediate',
-          keywords: locale === 'zh' ? ['药物', '医学', '专业', '抗炎', '治疗'] : ['medication', 'medical', 'professional', 'anti-inflammatory', 'treatment']
+          keywords: locale === 'zh' ? ['止痛药', '药物', '医学', '专业', '抗炎', '治疗'] : ['pain', 'medication', 'medical', 'professional', 'anti-inflammatory', 'treatment']
         },
         {
           id: 'immediate-7',
@@ -422,7 +424,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'pdf' as const,
           readTime: locale === 'zh' ? 'PDF' : 'PDF',
           category: 'immediate',
-          keywords: locale === 'zh' ? ['热疗', '指南', '温热', '治疗', '方法'] : ['heat', 'therapy', 'thermal', 'treatment', 'methods'],
+          keywords: locale === 'zh' ? ['热敷', '敷热水袋', '暖宝宝', '热疗', '指南', '温热', '治疗', '方法'] : ['heat', 'therapy', 'warm', 'thermal', 'treatment', 'methods', 'guide'],
           description: locale === 'zh' ? '详细的热疗使用方法和注意事项指南' : 'Detailed guide on heat therapy methods and precautions'
         },
         {
@@ -891,7 +893,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
     }
   };
 
-  // 🔍 搜索过滤逻辑
+  // 🔍 搜索过滤逻辑 - 增强6个核心关键词匹配
   const searchResources = (searchTerm: string): Resource[] => {
     if (!searchTerm.trim()) return [];
     
@@ -910,13 +912,41 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       // 搜索描述
       const descriptionMatch = resource.description?.toLowerCase().includes(term) || false;
       
-      // 特殊匹配：热敷相关
-      const heatMatch = (term.includes('热敷') || term.includes('heat')) && 
-        (resource.title.toLowerCase().includes('热') || 
-         resource.title.toLowerCase().includes('heat') ||
-         resource.keywords?.some(k => k.toLowerCase().includes('热') || k.toLowerCase().includes('heat')));
+      // 6个核心关键词的特殊匹配逻辑
+      const coreKeywordMatches = {
+        // 热敷相关匹配
+        '热敷': term.includes('热敷') && (
+          resource.title.toLowerCase().includes('热') || 
+          resource.keywords?.some(k => k.toLowerCase().includes('热敷') || k.toLowerCase().includes('热疗'))
+        ),
+        '敷热水袋': term.includes('敷热水袋') && (
+          resource.title.toLowerCase().includes('热') || 
+          resource.keywords?.some(k => k.toLowerCase().includes('敷热水袋') || k.toLowerCase().includes('热疗'))
+        ),
+        '暖宝宝': term.includes('暖宝宝') && (
+          resource.title.toLowerCase().includes('热') || 
+          resource.keywords?.some(k => k.toLowerCase().includes('暖宝宝') || k.toLowerCase().includes('热疗'))
+        ),
+        // 按摩相关匹配
+        '按摩': term.includes('按摩') && (
+          resource.title.toLowerCase().includes('按摩') || 
+          resource.keywords?.some(k => k.toLowerCase().includes('按摩'))
+        ),
+        '揉肚子': term.includes('揉肚子') && (
+          resource.title.toLowerCase().includes('按摩') || 
+          resource.keywords?.some(k => k.toLowerCase().includes('揉肚子') || k.toLowerCase().includes('按摩'))
+        ),
+        // 止痛药相关匹配
+        '止痛药': term.includes('止痛药') && (
+          resource.title.toLowerCase().includes('药') || 
+          resource.keywords?.some(k => k.toLowerCase().includes('止痛药') || k.toLowerCase().includes('药物'))
+        )
+      };
       
-      return titleMatch || keywordMatch || descriptionMatch || heatMatch;
+      // 检查是否有任何核心关键词匹配
+      const hasCoreKeywordMatch = Object.values(coreKeywordMatches).some(match => match);
+      
+      return titleMatch || keywordMatch || descriptionMatch || hasCoreKeywordMatch;
     });
   };
 
@@ -1055,9 +1085,11 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         {/* 💡 搜索提示 - 仅在空搜索时显示 */}
         {!searchTerm && (
           <div className="mt-2 text-xs text-gray-500 text-center">
-            <span className="hidden sm:inline">{t('suggestions')}</span>
+            <span className="hidden sm:inline">
+              {locale === 'zh' ? '试试关键词：热敷、敷热水袋、暖宝宝、按摩、揉肚子、止痛药' : 'Try keywords: heat, massage, pain relief, medication'}
+            </span>
             <span className="sm:hidden">
-              {locale === 'zh' ? '试试：疼痛、缓解、营养' : 'Try: pain, relief, nutrition'}
+              {locale === 'zh' ? '试试：热敷、按摩、止痛药' : 'Try: heat, massage, pain'}
             </span>
           </div>
         )}
@@ -1141,8 +1173,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
                 </p>
                 <p className="text-sm">
                   {locale === 'zh' 
-                    ? '试试搜索：疼痛、缓解、营养、运动、医学、沟通' 
-                    : 'Try searching: pain, relief, nutrition, exercise, medical, communication'}
+                    ? '试试搜索：热敷、敷热水袋、暖宝宝、按摩、揉肚子、止痛药' 
+                    : 'Try searching: heat, massage, pain relief, medication, warm, therapy'}
                 </p>
               </div>
             )}
