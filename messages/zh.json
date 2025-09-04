@@ -2127,6 +2127,31 @@
     "healthStatistics": {
       "dataSource": "数据来源：基于用户反馈和医学研究统计"
     },
+    "quickLinks": {
+      "title": "快速导航",
+      "healthGuide": "健康指南",
+      "healthGuideDesc": "全面的痛经知识和科学管理方法",
+      "viewNow": "立即查看 →",
+      "assessment": {
+        "title": "痛经症状评估",
+        "description": "科学评估痛经程度，获得个性化治疗建议和用药指导",
+        "cta": "开始评估 →"
+      },
+      "assessmentDesc": "专业工具帮助了解您的痛经类型",
+      "resources": "PDF资源",
+      "resourcesDesc": "可下载的专业健康指导和工具",
+      "solutions": "场景方案",
+      "solutionsDesc": "针对不同生活环境的应对方案",
+      "downloads": {
+        "cta": "下载资源 →"
+      },
+      "scenarios": {
+        "cta": "查看方案 →"
+      }
+    },
+    "organization": {
+      "description": "专业的女性月经健康管理平台"
+    },
     "faq": {
       "title": "常见问题",
       "subtitle": "解答您关于经期健康的疑问",
@@ -2158,31 +2183,6 @@
         "question": "痛经时可以同时服用布洛芬和萘普生吗？",
         "answer": "不建议同时服用布洛芬和萘普生，因为它们都是NSAIDs类药物，同时服用会增加副作用风险。建议选择其中一种，如果效果不佳可咨询医生调整用药方案。"
       }
-    },
-    "quickLinks": {
-      "title": "快速导航",
-      "healthGuide": "健康指南",
-      "healthGuideDesc": "全面的痛经知识和科学管理方法",
-      "viewNow": "立即查看 →",
-      "assessment": {
-        "title": "痛经症状评估",
-        "description": "科学评估痛经程度，获得个性化治疗建议和用药指导",
-        "cta": "开始评估 →"
-      },
-      "assessmentDesc": "专业工具帮助了解您的痛经类型",
-      "resources": "PDF资源",
-      "resourcesDesc": "可下载的专业健康指导和工具",
-      "solutions": "场景方案",
-      "solutionsDesc": "针对不同生活环境的应对方案",
-      "downloads": {
-        "cta": "下载资源 →"
-      },
-      "scenarios": {
-        "cta": "查看方案 →"
-      }
-    },
-    "organization": {
-      "description": "专业的女性月经健康管理平台"
     }
   },
   "homeClean": {
