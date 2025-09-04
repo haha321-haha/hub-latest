@@ -1876,11 +1876,6 @@
         "action": "Follow Us"
       }
     },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "description": "Find quick answers to common questions",
-      "button": "View FAQ"
-    },
     "response": {
       "title": "Response Times",
       "urgent": "Urgent Matters",
@@ -2181,22 +2176,6 @@
         "cta": "Start Diagnosis →"
       }
     },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Answers to your questions about menstrual health",
-      "q1": {
-        "question": "What are the fastest ways to relieve menstrual cramps?",
-        "answer": "The fastest menstrual cramp relief methods include: 1) Heat therapy on lower abdomen and back; 2) Gentle abdominal massage; 3) Light exercise like yoga; 4) NSAIDs like ibuprofen; 5) Adequate rest. Combining multiple methods works best."
-      },
-      "q2": {
-        "question": "What is considered a normal menstrual cycle?",
-        "answer": "A normal menstrual cycle ranges from 21-35 days, with an average of 28 days. Menstruation typically lasts 3-7 days. Consult a gynecologist if cycles are consistently irregular or show significant changes."
-      },
-      "q3": {
-        "question": "How does Traditional Chinese Medicine treat irregular periods?",
-        "answer": "TCM treats irregular periods through: 1) Acupuncture to regulate qi and blood; 2) Herbal formulas like Si Wu Tang; 3) Dietary therapy; 4) Lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
-      }
-    },
     "quickLinks": {
       "title": "Quick Navigation",
       "healthGuide": "Health Guide",
@@ -2281,22 +2260,6 @@
           "number": "98%",
           "label": "User Satisfaction"
         }
-      }
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Professional answers about period pain relief and menstrual health",
-      "q1": {
-        "question": "What are the fastest ways to relieve menstrual cramps?",
-        "answer": "The fastest menstrual cramp relief methods include: 1) Heat therapy on lower abdomen and back; 2) Gentle abdominal massage; 3) Light exercise like yoga; 4) NSAIDs like ibuprofen; 5) Adequate rest. Combining multiple methods works best."
-      },
-      "q2": {
-        "question": "What is considered a normal menstrual cycle?",
-        "answer": "A normal menstrual cycle ranges from 21-35 days, with an average of 28 days. Menstruation typically lasts 3-7 days. Consult a gynecologist if cycles are consistently irregular or show significant changes."
-      },
-      "q3": {
-        "question": "How does Traditional Chinese Medicine treat irregular periods?",
-        "answer": "TCM treats irregular periods through: 1) Acupuncture to regulate qi and blood; 2) Herbal formulas like Si Wu Tang; 3) Dietary therapy; 4) Lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
       }
     },
     "quickNav": {
