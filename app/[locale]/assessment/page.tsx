@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { Metadata } from 'next';

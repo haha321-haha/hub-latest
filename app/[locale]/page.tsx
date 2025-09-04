@@ -71,7 +71,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 // 增强的结构化数据 - 针对健康平台优化
 const getStructuredData = async (locale: string) => {
-  const t = await getTranslations({ locale, namespace: 'home' });
+  const t = await getTranslations({ locale, namespace: '' });
   
   return {
   "@context": "https://schema.org",
@@ -177,7 +177,7 @@ const getStructuredData = async (locale: string) => {
 
 export default async function HomePage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
-  const t = await getTranslations('home');
+  const t = await getTranslations('');
   const isZh = typeof locale === 'string' && (locale === 'zh' || locale.startsWith('zh'));
   const structuredData = await getStructuredData(locale);
 
@@ -201,10 +201,10 @@ export default async function HomePage({ params: { locale } }: { params: { local
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <header className="text-center mb-16">
                 <h2 id="features-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                  {t('features.title')}
+                  {t('home.features.title')}
                 </h2>
                 <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                  {t('features.subtitle')}
+                  {t('home.features.subtitle')}
                 </p>
               </header>
 
@@ -216,10 +216,10 @@ export default async function HomePage({ params: { locale } }: { params: { local
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors">{t('features.tracking.title')}</h3>
-                    <p className="text-gray-600 leading-relaxed">{t('features.tracking.description')}</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors">{t('home.features.tracking.title')}</h3>
+                    <p className="text-gray-600 leading-relaxed">{t('home.features.tracking.description')}</p>
                     <div className="mt-4 text-purple-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                      {t('features.learnMore')}
+                      {t('home.features.learnMore')}
                     </div>
                   </article>
                 </Link>
@@ -231,10 +231,10 @@ export default async function HomePage({ params: { locale } }: { params: { local
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">{t('features.assessment.title')}</h3>
-                    <p className="text-gray-600 leading-relaxed">{t('features.assessment.description')}</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">{t('home.features.assessment.title')}</h3>
+                    <p className="text-gray-600 leading-relaxed">{t('home.features.assessment.description')}</p>
                     <div className="mt-4 text-blue-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                      {t('features.learnMore')}
+                      {t('home.features.learnMore')}
                     </div>
                   </article>
                 </Link>
@@ -246,10 +246,10 @@ export default async function HomePage({ params: { locale } }: { params: { local
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-green-600 transition-colors">{t('features.resources.title')}</h3>
-                    <p className="text-gray-600 leading-relaxed">{t('features.resources.description')}</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-green-600 transition-colors">{t('home.features.resources.title')}</h3>
+                    <p className="text-gray-600 leading-relaxed">{t('home.features.resources.description')}</p>
                     <div className="mt-4 text-green-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                      {t('features.learnMore')}
+                      {t('home.features.learnMore')}
                     </div>
                   </article>
                 </Link>
@@ -262,13 +262,13 @@ export default async function HomePage({ params: { locale } }: { params: { local
                       </svg>
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-red-600 transition-colors">
-                      {t('features.immediateRelief.title')}
+                      {t('home.features.immediateRelief.title')}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      {t('features.immediateRelief.description')}
+                      {t('home.features.immediateRelief.description')}
                     </p>
                     <div className="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                      {t('features.immediateRelief.cta')}
+                      {t('home.features.immediateRelief.cta')}
                     </div>
                   </article>
                 </Link>
@@ -302,26 +302,26 @@ export default async function HomePage({ params: { locale } }: { params: { local
           <section className="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('trusted.title')}</h2>
-                <p className="text-xl text-gray-600">{t('trusted.subtitle')}</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('home.trusted.title')}</h2>
+                <p className="text-xl text-gray-600">{t('home.trusted.subtitle')}</p>
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div className="bg-white rounded-xl p-6 shadow-sm">
                   <div className="text-3xl font-bold text-purple-600 mb-2">50K+</div>
-                  <div className="text-gray-600">{t('trusted.metrics.activeUsers')}</div>
+                  <div className="text-gray-600">{t('home.trusted.metrics.activeUsers')}</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
                   <div className="text-3xl font-bold text-pink-600 mb-2">42</div>
-                  <div className="text-gray-600">{t('trusted.metrics.articles')}</div>
+                  <div className="text-gray-600">{t('home.trusted.metrics.articles')}</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
                   <div className="text-3xl font-bold text-blue-600 mb-2">24</div>
-                  <div className="text-gray-600">{t('trusted.metrics.resources')}</div>
+                  <div className="text-gray-600">{t('home.trusted.metrics.resources')}</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
                   <div className="text-3xl font-bold text-green-600 mb-2">98%</div>
-                  <div className="text-gray-600">{t('trusted.metrics.satisfaction')}</div>
+                  <div className="text-gray-600">{t('home.trusted.metrics.satisfaction')}</div>
                 </div>
               </div>
             </div>
@@ -332,10 +332,10 @@ export default async function HomePage({ params: { locale } }: { params: { local
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <header className="text-center mb-12">
                 <h2 id="pain-management-heading" className="text-3xl font-bold text-gray-900 mb-4">
-                  {t('treatmentGuide.title')}
+                  {t('home.treatmentGuide.title')}
                 </h2>
                 <p className="text-xl text-gray-600">
-                  {t('treatmentGuide.subtitle')}
+                  {t('home.treatmentGuide.subtitle')}
                 </p>
               </header>
 
@@ -349,14 +349,14 @@ export default async function HomePage({ params: { locale } }: { params: { local
                       </svg>
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600">
-                      {t('treatmentGuide.medicationGuide.title')}
+                      {t('home.treatmentGuide.medicationGuide.title')}
                     </h3>
                   </div>
                   <p className="text-gray-600 text-sm mb-3">
-                    {t('treatmentGuide.medicationGuide.description')}
+                    {t('home.treatmentGuide.medicationGuide.description')}
                   </p>
                   <div className="text-blue-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    {t('treatmentGuide.medicationGuide.cta')}
+                    {t('home.treatmentGuide.medicationGuide.cta')}
                   </div>
                 </Link>
 
@@ -369,14 +369,14 @@ export default async function HomePage({ params: { locale } }: { params: { local
                       </svg>
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900 group-hover:text-red-600">
-                      {t('treatmentGuide.heatTherapy.title')}
+                      {t('home.treatmentGuide.heatTherapy.title')}
                     </h3>
                   </div>
                   <p className="text-gray-600 text-sm mb-3">
-                    {t('treatmentGuide.heatTherapy.description')}
+                    {t('home.treatmentGuide.heatTherapy.description')}
                   </p>
                   <div className="text-red-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    {t('treatmentGuide.heatTherapy.cta')}
+                    {t('home.treatmentGuide.heatTherapy.cta')}
                   </div>
                 </Link>
 
@@ -389,14 +389,14 @@ export default async function HomePage({ params: { locale } }: { params: { local
                       </svg>
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900 group-hover:text-purple-600">
-                      {t('treatmentGuide.diagnosis.title')}
+                      {t('home.treatmentGuide.diagnosis.title')}
                     </h3>
                   </div>
                   <p className="text-gray-600 text-sm mb-3">
-                    {t('treatmentGuide.diagnosis.description')}
+                    {t('home.treatmentGuide.diagnosis.description')}
                   </p>
                   <div className="text-purple-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    {t('treatmentGuide.diagnosis.cta')}
+                    {t('home.treatmentGuide.diagnosis.cta')}
                   </div>
                 </Link>
               </div>
@@ -507,7 +507,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <header className="text-center mb-12">
                 <h2 id="quick-links-heading" className="text-3xl font-bold text-gray-900 mb-4">
-                  {t('quickLinks.title')}
+                  {t('home.quickLinks.title')}
                 </h2>
               </header>
 
@@ -518,10 +518,10 @@ export default async function HomePage({ params: { locale } }: { params: { local
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-semibold text-purple-600 mb-2 group-hover:text-purple-700">{t('quickLinks.healthGuide')}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{t('quickLinks.healthGuideDesc')}</p>
+                  <h3 className="text-lg font-semibold text-purple-600 mb-2 group-hover:text-purple-700">{t('home.quickLinks.healthGuide')}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{t('home.quickLinks.healthGuideDesc')}</p>
                   <div className="mt-3 text-purple-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    {t('quickLinks.viewNow')}
+                    {t('home.quickLinks.viewNow')}
                   </div>
                 </Link>
 
@@ -532,13 +532,13 @@ export default async function HomePage({ params: { locale } }: { params: { local
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-pink-600 mb-2 group-hover:text-pink-700">
-                    {t('quickLinks.assessment.title')}
+                    {t('home.quickLinks.assessment.title')}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    {t('quickLinks.assessment.description')}
+                    {t('home.quickLinks.assessment.description')}
                   </p>
                   <div className="mt-3 text-pink-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    {t('quickLinks.assessment.cta')}
+                    {t('home.quickLinks.assessment.cta')}
                   </div>
                 </Link>
 
@@ -548,10 +548,10 @@ export default async function HomePage({ params: { locale } }: { params: { local
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-semibold text-blue-600 mb-2 group-hover:text-blue-700">{t('quickLinks.resources')}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{t('quickLinks.resourcesDesc')}</p>
+                  <h3 className="text-lg font-semibold text-blue-600 mb-2 group-hover:text-blue-700">{t('home.quickLinks.resources')}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{t('home.quickLinks.resourcesDesc')}</p>
                   <div className="mt-3 text-blue-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    {t('quickLinks.downloads.cta')}
+                    {t('home.quickLinks.downloads.cta')}
                   </div>
                 </Link>
 
@@ -561,10 +561,10 @@ export default async function HomePage({ params: { locale } }: { params: { local
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-semibold text-green-600 mb-2 group-hover:text-green-700">{t('quickLinks.solutions')}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{t('quickLinks.solutionsDesc')}</p>
+                  <h3 className="text-lg font-semibold text-green-600 mb-2 group-hover:text-green-700">{t('home.quickLinks.solutions')}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{t('home.quickLinks.solutionsDesc')}</p>
                   <div className="mt-3 text-green-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    {t('quickLinks.scenarios.cta')}
+                    {t('home.quickLinks.scenarios.cta')}
                   </div>
                 </Link>
               </div>
