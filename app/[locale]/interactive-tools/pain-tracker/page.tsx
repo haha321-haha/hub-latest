@@ -1,51 +1,8 @@
-
 'use client';
 
 import { useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { Metadata } from 'next';
-
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const isZh = locale === 'zh';
-
-  return {
-    title: isZh
-      ? '疼痛追踪工具 - PeriodHub | 智能经期疼痛记录分析'
-      : 'Pain Tracking Tool - PeriodHub | Smart Menstrual Pain Recording Analysis',
-    description: isZh
-      ? 'PeriodHub疼痛追踪工具：记录经期疼痛模式，分析疼痛趋势，获取个性化管理建议。智能追踪您的疼痛数据，提供专业的健康洞察。'
-      : 'PeriodHub Pain Tracking Tool: Record menstrual pain patterns, analyze pain trends, and get personalized management recommendations. Smart tracking of your pain data with professional health insights.',
-    keywords: isZh ? [
-      '疼痛追踪工具', '经期疼痛记录', '痛经分析', '疼痛管理工具', '健康追踪', '经期健康'
-    ] : [
-      'pain tracking tool', 'menstrual pain recording', 'period pain analysis', 'pain management tool', 'health tracking', 'menstrual health'
-    ],
-    openGraph: {
-      title: isZh
-        ? '疼痛追踪工具 - PeriodHub'
-        : 'Pain Tracking Tool - PeriodHub',
-      description: isZh
-        ? '智能经期疼痛记录分析工具'
-        : 'Smart menstrual pain recording analysis tool',
-      url: `https://periodhub.health/${locale}/interactive-tools/pain-tracker`,
-      siteName: 'PeriodHub',
-      locale: isZh ? 'zh_CN' : 'en_US',
-      type: 'website',
-    },
-    robots: {
-      index: true,
-      follow: true,
-    },
-    alternates: {
-      canonical: `https://periodhub.health/${locale}/interactive-tools/pain-tracker`,
-      languages: {
-        'zh-CN': 'https://periodhub.health/zh/interactive-tools/pain-tracker',
-        'en-US': 'https://periodhub.health/en/interactive-tools/pain-tracker',
-      },
-    },
-  };
-}
 
 type Locale = 'en' | 'zh';
 
@@ -60,304 +17,248 @@ export default function PainTrackerPage({ params: { locale } }: Props) {
   const [painType, setPainType] = useState('');
   const [isRecording, setIsRecording] = useState(false);
   const [result, setResult] = useState<null | {
-    score: number;
-    severity: 'mild' | 'moderate' | 'severe' | 'emergency';
-    summary: string;
-    locationLabel: string;
-    typeLabel: string;
-    recommendations: Array<{ id: string; title: string; description: string; timeframe: string; priority: 'high' | 'medium' | 'low'; actionSteps: string[] }>
+    level: number;
+    location: string;
+    type: string;
+    timestamp: string;
+    recommendations: string[];
   }>(null);
-  const resultRef = useRef<HTMLDivElement | null>(null);
-  const percent = ((painLevel - 1) / 9) * 100;
-  const gradientFill = 'linear-gradient(90deg, #22c55e, #f59e0b, #ef4444)';
-  const trackBase = 'linear-gradient(90deg, #e5e7eb 0 0)';
 
-  const handleRecordPain = async () => {
-    if (!painLocation || !painType) {
-      alert(locale === 'zh' ? '请填写完整的疼痛信息' : 'Please fill in complete pain information');
-      return;
-    }
-
+  const handleStartRecording = () => {
     setIsRecording(true);
-    
-    // 模拟记录过程
-    setTimeout(() => {
-      setIsRecording(false);
-      
-      // 将存储值映射为已翻译的标签
-      const locationLabel = locations.find(l => l.value === painLocation)?.label || painLocation;
-      const typeLabel = painTypes.find(ti => ti.value === painType)?.label || painType;
-
-      // 计算严重程度
-      const severity: 'mild' | 'moderate' | 'severe' | 'emergency' =
-        painLevel >= 9 ? 'emergency' : painLevel >= 7 ? 'severe' : painLevel >= 4 ? 'moderate' : 'mild';
-
-      const summaryZh =
-        severity === 'emergency'
-          ? '您的疼痛较为严重，建议尽快就医评估并接受规范治疗。'
-          : severity === 'severe'
-          ? '您的疼痛比较严重，建议采取综合管理策略，必要时咨询医生。'
-          : severity === 'moderate'
-          ? '您有中等程度的疼痛，建议结合热疗、拉伸与放松训练，持续观察。'
-          : '您的疼痛较轻，建议继续记录并通过生活方式调整进行管理。';
-      const summaryEn =
-        severity === 'emergency'
-          ? 'Your pain is severe. Please seek medical evaluation promptly.'
-          : severity === 'severe'
-          ? 'Your pain is relatively severe. Consider combined management and medical consultation.'
-          : severity === 'moderate'
-          ? 'Moderate pain. Combine heat, stretching and relaxation; continue monitoring.'
-          : 'Mild pain. Keep logging and adjust lifestyle.';
-
-      const recs = (
-        severity === 'emergency'
-          ? [
-              { id: 'seek-care', title: locale === 'zh' ? '建议立即就医' : 'Seek medical care now', description: locale === 'zh' ? '若出现发热、昏厥、异常出血或持续剧痛，请尽快就医。' : 'If fever, fainting, abnormal bleeding or persistent severe pain, seek care immediately.', timeframe: locale === 'zh' ? '立即' : 'Immediate', priority: 'high' as const, actionSteps: (locale === 'zh' ? ['联系妇科医生或急诊', '准备近期疼痛记录', '必要时前往急诊'] : ['Contact OB-GYN/Urgent care', 'Prepare recent pain logs', 'Go to ER if needed']) as string[] },
-            ]
-          : severity === 'severe'
-          ? [
-              { id: 'combined', title: locale === 'zh' ? '综合管理' : 'Combined management', description: locale === 'zh' ? '在医生指导下使用止痛药，配合热疗与轻量运动。' : 'Use analgesics as directed, plus heat therapy and light exercise.', timeframe: locale === 'zh' ? '本周内开始' : 'Start this week', priority: 'high' as const, actionSteps: (locale === 'zh' ? ['按说明使用NSAIDs', '热敷20分钟/次', '每天步行15-20分钟'] : ['Use NSAIDs as directed', 'Heat 20 min/session', 'Walk 15-20m daily']) as string[] },
-            ]
-          : severity === 'moderate'
-          ? [
-              { id: 'pain-mgmt', title: locale === 'zh' ? '疼痛管理' : 'Pain management', description: locale === 'zh' ? '热敷+拉伸+呼吸放松，2周后复评。' : 'Heat + stretching + breathing; reassess in 2 weeks.', timeframe: locale === 'zh' ? '1-2周见效' : '1-2 weeks', priority: 'medium' as const, actionSteps: (locale === 'zh' ? ['热敷腹部/腰背', '轻瑜伽或拉伸15-20分钟', '4-7-8呼吸练习'] : ['Heat abdomen/back', 'Light yoga/stretch 15-20m', '4-7-8 breathing']) as string[] },
-            ]
-          : [
-              { id: 'lifestyle', title: locale === 'zh' ? '生活方式调整' : 'Lifestyle adjustments', description: locale === 'zh' ? '规律作息、均衡饮食、适度运动，有助于减少疼痛频率。' : 'Regular sleep, balanced diet, moderate exercise to reduce pain frequency.', timeframe: locale === 'zh' ? '持续进行' : 'Ongoing', priority: 'low' as const, actionSteps: (locale === 'zh' ? ['保证7-8小时睡眠', '减少高糖高脂摄入', '保持每周3次轻运动'] : ['Sleep 7-8h', 'Reduce sugar/fat', '3x/week light exercise']) as string[] },
-            ]
-      ) as any[];
-
-      setResult({
-        score: painLevel,
-        severity,
-        summary: locale === 'zh' ? summaryZh : summaryEn,
-        locationLabel,
-        typeLabel,
-        recommendations: recs,
-      });
-
-      setTimeout(() => {
-        resultRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 50);
-    }, 1500);
+    setResult(null);
   };
 
-  // 将locations和painTypes数组移到组件内部，这样可以使用t()函数
-  const locations = [
-    { value: 'lower_abdomen', label: t('painTracker.lowerAbdomen') },
-    { value: 'lower_back', label: t('painTracker.lowerBack') },
-    { value: 'thighs', label: t('painTracker.thighs') },
-    { value: 'other', label: t('painTracker.other') }
-  ];
+  const handleStopRecording = () => {
+    setIsRecording(false);
+    setResult({
+      level: painLevel,
+      location: painLocation,
+      type: painType,
+      timestamp: new Date().toLocaleString(),
+      recommendations: getRecommendations(painLevel, painLocation, painType)
+    });
+  };
 
-  const painTypes = [
-    { value: 'cramping', label: t('painTracker.cramping') },
-    { value: 'dull_pain', label: t('painTracker.dullPain') },
-    { value: 'sharp_pain', label: t('painTracker.sharpPain') },
-    { value: 'other', label: t('painTracker.other') }
-  ];
+  const getRecommendations = (level: number, location: string, type: string): string[] => {
+    const recommendations: string[] = [];
+    
+    if (level >= 7) {
+      recommendations.push(locale === 'zh' ? '建议咨询医生' : 'Consider consulting a doctor');
+    }
+    
+    if (level >= 5) {
+      recommendations.push(locale === 'zh' ? '尝试热敷疗法' : 'Try heat therapy');
+      recommendations.push(locale === 'zh' ? '考虑非处方止痛药' : 'Consider over-the-counter pain relief');
+    }
+    
+    if (level >= 3) {
+      recommendations.push(locale === 'zh' ? '进行轻度运动' : 'Try light exercise');
+      recommendations.push(locale === 'zh' ? '保持充足休息' : 'Get adequate rest');
+    }
+    
+    return recommendations;
+  };
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-      {/* Breadcrumb */}
-      <nav className="flex items-center space-x-2 text-sm text-neutral-600">
-        <Link href={`/${locale}/interactive-tools`} className="hover:text-primary-600 transition-colors">
-          {locale === 'zh' ? '互动工具' : 'Interactive Tools'}
-        </Link>
-        <span>/</span>
-        <span className="text-neutral-800">
-          {locale === 'zh' ? '疼痛追踪' : 'Pain Tracking'}
-        </span>
-      </nav>
-
-      {/* Page Header */}
-      <header className="text-center py-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-primary-700 mb-4">
-          {t('painTracker.title')}
-        </h1>
-        <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-          {t('painTracker.description')}
-        </p>
-      </header>
-
-      {/* Interactive Pain Tracker UI */}
-      <div className="bg-white rounded-lg shadow-sm p-8">
-        <div className="text-center space-y-6">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-100 rounded-full">
-            <svg className="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-            </svg>
-          </div>
-          
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              {t('painTracker.toolTitle')}
-            </h2>
-            <p className="text-gray-600 max-w-lg mx-auto mb-6">
-              {t('painTracker.toolDescription')}
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 py-8">
+      <div className="max-w-4xl mx-auto px-4">
+        <div className="bg-white rounded-lg shadow-lg p-8">
+          <div className="text-center mb-8">
+            <h1 className="text-3xl font-bold text-gray-800 mb-4">
+              {locale === 'zh' ? '疼痛追踪工具' : 'Pain Tracking Tool'}
+            </h1>
+            <p className="text-gray-600">
+              {locale === 'zh' 
+                ? '记录您的疼痛情况，获取个性化建议'
+                : 'Record your pain levels and get personalized recommendations'
+              }
             </p>
           </div>
 
-          {/* Interactive Pain Recording Form */}
-          <div className="max-w-md mx-auto space-y-4">
-            <div className="text-left">
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                {t('painTracker.painLevel')}
-              </label>
-              <input 
-                type="range" 
-                min="1" 
-                max="10" 
-                value={painLevel}
-                onChange={(e) => setPainLevel(parseInt(e.target.value))}
-                className="w-full pain-scale cursor-pointer outline-none rounded-lg"
-                style={{
-                  backgroundImage: `${gradientFill}, ${trackBase}`,
-                  backgroundSize: `${percent}% 100%, 100% 100%`,
-                  backgroundRepeat: 'no-repeat'
-                }}
-              />
-              <div className="flex justify-between text-xs text-gray-500 mt-1">
-                <span>1</span>
-                <span>5</span>
-                <span>10</span>
-              </div>
-              <div className="text-center mt-2">
-                <span className="text-lg font-semibold text-primary-600">{painLevel}</span>
-              </div>
-            </div>
-
-            <div className="text-left">
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                {t('painTracker.painLocation')}
-              </label>
-              <select 
-                value={painLocation}
-                onChange={(e) => setPainLocation(e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
-              >
-                <option value="">{t('painTracker.painLocationPlaceholder')}</option>
-                {locations.map((location) => (
-                  <option key={location.value} value={location.value}>
-                    {location.label}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <div className="text-left">
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                {t('painTracker.painType')}
-              </label>
-              <select 
-                value={painType}
-                onChange={(e) => setPainType(e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
-              >
-                <option value="">{t('painTracker.painTypePlaceholder')}</option>
-                {painTypes.map((type) => (
-                  <option key={type.value} value={type.value}>
-                    {type.label}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <button 
-              onClick={handleRecordPain}
-              disabled={isRecording || !painLocation || !painType}
-              className={`w-full py-2 px-4 rounded-md transition-colors ${
-                isRecording || !painLocation || !painType
-                  ? 'bg-gray-400 cursor-not-allowed'
-                  : 'bg-primary-600 hover:bg-primary-700'
-              } text-white`}
-            >
-              {isRecording ? (
-                <div className="flex items-center justify-center">
-                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                  {t('painTracker.recording')}
+          {!isRecording && !result && (
+            <div className="space-y-6">
+              <div>
+                <label className="block text-lg font-medium text-gray-700 mb-3">
+                  {locale === 'zh' ? '疼痛强度 (1-10)' : 'Pain Level (1-10)'}
+                </label>
+                <div className="flex items-center space-x-4">
+                  <span className="text-sm text-gray-500">1</span>
+                  <input
+                    type="range"
+                    min="1"
+                    max="10"
+                    value={painLevel}
+                    onChange={(e) => setPainLevel(parseInt(e.target.value))}
+                    className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+                  />
+                  <span className="text-sm text-gray-500">10</span>
+                  <span className="text-xl font-bold text-purple-600 w-8 text-center">
+                    {painLevel}
+                  </span>
                 </div>
-              ) : (
-                t('painTracker.recordPain')
-              )}
-            </button>
+              </div>
 
-            {(painLocation || painType) && (
-              <div className="mt-4 p-3 bg-blue-50 rounded-md">
-                <p className="text-sm text-blue-800">
-                  {locale === 'zh' 
-                    ? `已选择：疼痛程度 ${painLevel}/10${painLocation ? `，位置：${locations.find(l => l.value === painLocation)?.label}` : ''}${painType ? `，类型：${painTypes.find(t => t.value === painType)?.label}` : ''}`
-                    : `Selected: Pain level ${painLevel}/10${painLocation ? `, Location: ${locations.find(l => l.value === painLocation)?.label}` : ''}${painType ? `, Type: ${painTypes.find(t => t.value === painType)?.label}` : ''}`
-                  }
-                </p>
+              <div>
+                <label className="block text-lg font-medium text-gray-700 mb-3">
+                  {locale === 'zh' ? '疼痛位置' : 'Pain Location'}
+                </label>
+                <select
+                  value={painLocation}
+                  onChange={(e) => setPainLocation(e.target.value)}
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                >
+                  <option value="">
+                    {locale === 'zh' ? '选择疼痛位置' : 'Select pain location'}
+                  </option>
+                  <option value="lower-abdomen">
+                    {locale === 'zh' ? '下腹部' : 'Lower abdomen'}
+                  </option>
+                  <option value="back">
+                    {locale === 'zh' ? '背部' : 'Back'}
+                  </option>
+                  <option value="thighs">
+                    {locale === 'zh' ? '大腿' : 'Thighs'}
+                  </option>
+                  <option value="other">
+                    {locale === 'zh' ? '其他' : 'Other'}
+                  </option>
+                </select>
               </div>
-            )}
-          </div>
-        </div>
-      </div>
 
-      {result && (
-        <div ref={resultRef} className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-xl p-6 sm:p-8">
-          <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 max-w-4xl mx-auto">
-            <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <div>
+                <label className="block text-lg font-medium text-gray-700 mb-3">
+                  {locale === 'zh' ? '疼痛类型' : 'Pain Type'}
+                </label>
+                <select
+                  value={painType}
+                  onChange={(e) => setPainType(e.target.value)}
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                >
+                  <option value="">
+                    {locale === 'zh' ? '选择疼痛类型' : 'Select pain type'}
+                  </option>
+                  <option value="cramping">
+                    {locale === 'zh' ? '痉挛性疼痛' : 'Cramping'}
+                  </option>
+                  <option value="sharp">
+                    {locale === 'zh' ? '尖锐疼痛' : 'Sharp pain'}
+                  </option>
+                  <option value="dull">
+                    {locale === 'zh' ? '钝痛' : 'Dull ache'}
+                  </option>
+                  <option value="throbbing">
+                    {locale === 'zh' ? '搏动性疼痛' : 'Throbbing'}
+                  </option>
+                </select>
               </div>
-              <h2 className="text-3xl font-bold text-neutral-900">{locale === 'zh' ? '记录结果' : 'Record Result'}</h2>
-            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="card text-center">
-                <h3 className="text-sm font-medium text-neutral-600 mb-2">{locale === 'zh' ? '今天的评分' : "Today's Score"}</h3>
-                <p className="text-3xl font-extrabold text-primary-700">{result.score}/10</p>
-              </div>
-              <div className="card text-center">
-                <h3 className="text-sm font-medium text-neutral-600 mb-2">{locale === 'zh' ? '疼痛位置' : 'Location'}</h3>
-                <p className="text-xl font-bold text-neutral-900">{result.locationLabel}</p>
-              </div>
-              <div className="card text-center">
-                <h3 className="text-sm font-medium text-neutral-600 mb-2">{locale === 'zh' ? '疼痛类型' : 'Type'}</h3>
-                <p className="text-xl font-bold text-neutral-900">{result.typeLabel}</p>
-              </div>
-            </div>
-
-            <div className="mb-8">
-              <h3 className="text-xl font-semibold text-neutral-900 mb-4">{locale === 'zh' ? '结果摘要' : 'Summary'}</h3>
-              <div className="card">
-                <p className="text-neutral-700 leading-relaxed">{result.summary}</p>
-              </div>
-            </div>
-
-            <div className="mb-8">
-              <h3 className="text-xl font-semibold text-neutral-900 mb-4">{locale === 'zh' ? '建议方案' : 'Recommendations'}</h3>
-              <div className="space-y-4">
-                {result.recommendations.map((rec) => (
-                  <div key={rec.id} className="card">
-                    <div className="flex items-start justify-between mb-3">
-                      <h4 className="text-lg font-semibold text-neutral-900">{rec.title}</h4>
-                      <span className={`px-3 py-1 rounded-full text-xs font-medium ${rec.priority === 'high' ? 'bg-red-100 text-red-700' : rec.priority === 'medium' ? 'bg-yellow-100 text-yellow-700' : 'bg-green-100 text-green-700'}`}>
-                        {locale === 'zh' ? (rec.priority === 'high' ? '高优先级' : rec.priority === 'medium' ? '中优先级' : '低优先级') : rec.priority}
-                      </span>
-                    </div>
-                    <p className="text-neutral-700 mb-3 leading-relaxed">{rec.description}</p>
-                    <p className="text-sm text-neutral-500 mb-3"><strong>{locale === 'zh' ? '时间框架：' : 'Timeframe: '}</strong>{rec.timeframe}</p>
-                    <h5 className="font-medium text-neutral-900 mb-2">{locale === 'zh' ? '行动步骤' : 'Action Steps'}</h5>
-                    <ul className="list-disc list-inside text-sm text-neutral-700 space-y-1">
-                      {rec.actionSteps.map((s, i) => (<li key={i}>{s}</li>))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button onClick={() => setResult(null)} className="px-6 py-3 border-2 border-primary-600 text-primary-600 rounded-lg font-medium hover:bg-primary-50 transition-colors">
-                {locale === 'zh' ? '继续记录' : 'Record Another'}
+              <button
+                onClick={handleStartRecording}
+                className="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors font-medium"
+              >
+                {locale === 'zh' ? '开始记录' : 'Start Recording'}
               </button>
             </div>
-          </div>
+          )}
+
+          {isRecording && (
+            <div className="text-center">
+              <div className="mb-6">
+                <div className="w-16 h-16 bg-red-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-8 h-8 bg-white rounded-full"></div>
+                </div>
+                <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                  {locale === 'zh' ? '正在记录...' : 'Recording...'}
+                </h2>
+                <p className="text-gray-600">
+                  {locale === 'zh' ? '当前疼痛强度' : 'Current pain level'}: {painLevel}
+                </p>
+              </div>
+              
+              <button
+                onClick={handleStopRecording}
+                className="bg-red-600 text-white py-3 px-6 rounded-lg hover:bg-red-700 transition-colors font-medium"
+              >
+                {locale === 'zh' ? '停止记录' : 'Stop Recording'}
+              </button>
+            </div>
+          )}
+
+          {result && (
+            <div className="space-y-6">
+              <div className="text-center">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                  {locale === 'zh' ? '记录完成' : 'Recording Complete'}
+                </h2>
+                <p className="text-gray-600">
+                  {locale === 'zh' ? '记录时间' : 'Recorded at'}: {result.timestamp}
+                </p>
+              </div>
+
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                  {locale === 'zh' ? '记录详情' : 'Record Details'}
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div>
+                    <span className="text-sm text-gray-500">
+                      {locale === 'zh' ? '疼痛强度' : 'Pain Level'}
+                    </span>
+                    <p className="text-xl font-bold text-purple-600">{result.level}/10</p>
+                  </div>
+                  <div>
+                    <span className="text-sm text-gray-500">
+                      {locale === 'zh' ? '位置' : 'Location'}
+                    </span>
+                    <p className="text-lg font-medium text-gray-800">{result.location}</p>
+                  </div>
+                  <div>
+                    <span className="text-sm text-gray-500">
+                      {locale === 'zh' ? '类型' : 'Type'}
+                    </span>
+                    <p className="text-lg font-medium text-gray-800">{result.type}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                  {locale === 'zh' ? '建议措施' : 'Recommendations'}
+                </h3>
+                <ul className="space-y-2">
+                  {result.recommendations.map((rec, index) => (
+                    <li key={index} className="flex items-start space-x-3">
+                      <span className="text-blue-600 mt-1">•</span>
+                      <span className="text-gray-700">{rec}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="flex justify-center space-x-4">
+                <button
+                  onClick={() => {
+                    setResult(null);
+                    setPainLevel(5);
+                    setPainLocation('');
+                    setPainType('');
+                  }}
+                  className="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+                >
+                  {locale === 'zh' ? '重新记录' : 'Record Again'}
+                </button>
+                <Link
+                  href={`/${locale}/interactive-tools`}
+                  className="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  {locale === 'zh' ? '返回工具' : 'Back to Tools'}
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 }

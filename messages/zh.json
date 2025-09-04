@@ -40,6 +40,16 @@
       "description": "专业的经期健康咨询团队，24小时内回复您的痛经缓解、健康管理、技术支持等问题"
     }
   },
+  "assessment": {
+    "meta": {
+      "title": "智能症状评估 - PeriodHub | 专业经期健康评估工具",
+      "description": "PeriodHub智能症状评估：科学评估经期症状，获取个性化建议和治疗方案。专业的经期健康评估工具，帮助您了解身体状况。",
+      "ogTitle": "智能症状评估 - PeriodHub",
+      "ogDescription": "专业经期健康评估工具，科学分析症状，提供个性化建议",
+      "twitterTitle": "智能症状评估 - PeriodHub",
+      "twitterDescription": "专业的经期健康评估工具"
+    }
+  },
   "common": {
     "PeriodHub": "经期健康中心",
     "home": "首页",

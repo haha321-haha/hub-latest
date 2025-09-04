@@ -40,6 +40,16 @@
       "description": "Professional menstrual health consultation team, 24-hour response for period pain relief, health management, and technical support questions"
     }
   },
+  "assessment": {
+    "meta": {
+      "title": "Smart Symptom Assessment - PeriodHub | Professional Menstrual Health Assessment Tool",
+      "description": "PeriodHub Smart Symptom Assessment: Scientifically evaluate menstrual symptoms and get personalized recommendations and treatment plans. Professional menstrual health assessment tool to help you understand your physical condition.",
+      "ogTitle": "Smart Symptom Assessment - PeriodHub",
+      "ogDescription": "Professional menstrual health assessment tool with scientific symptom analysis and personalized recommendations",
+      "twitterTitle": "Smart Symptom Assessment - PeriodHub",
+      "twitterDescription": "Professional menstrual health assessment tool"
+    }
+  },
   "common": {
     "PeriodHub": "Period Hub",
     "home": "Home",
