@@ -1462,6 +1462,11 @@
       "timing": "痉挛首次出现时开始使用，持续1-2天",
       "mechanism": "阻断前列腺素合成（COX-1/COX-2抑制）",
       "contraindications": "哮喘、胃溃疡、肾病患者避免使用"
+    },
+    "cycleTracker": {
+      "title": "智能周期追踪器",
+      "description": "智能追踪月经周期，预测下次月经时间，记录症状变化，帮助您更好地了解身体规律。",
+      "cta": "开始追踪"
     }
   },
   "searchBox": {
@@ -1472,11 +1477,6 @@
       "summary": "摘要",
       "tag": "标签",
       "content": "内容"
-    },
-    "cycleTracker": {
-      "title": "智能周期追踪器",
-      "description": "智能追踪月经周期，预测下次月经时间，记录症状变化，帮助您更好地了解身体规律。",
-      "cta": "开始追踪"
     }
   },
   "downloadButton": {
