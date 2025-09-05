@@ -75,52 +75,9 @@ const nextConfig = {
   // 🚀 SEO优化 - 301重定向配置
   async redirects() {
     return [
-      // 🚨 修复IndexNow索引问题 - 添加语言前缀重定向
-      {
-        source: '/articles/personal-health-profile',
-        destination: '/zh/articles/personal-health-profile',
-        permanent: true,
-      },
-      {
-        source: '/articles/pain-complications-management',
-        destination: '/zh/articles/pain-complications-management',
-        permanent: true,
-      },
-      {
-        source: '/articles/health-tracking-and-analysis',
-        destination: '/zh/articles/health-tracking-and-analysis',
-        permanent: true,
-      },
-      {
-        source: '/articles/evidence-based-pain-guidance',
-        destination: '/zh/articles/evidence-based-pain-guidance',
-        permanent: true,
-      },
-      {
-        source: '/articles/sustainable-health-management',
-        destination: '/zh/articles/sustainable-health-management',
-        permanent: true,
-      },
-      {
-        source: '/articles/anti-inflammatory-diet-guide',
-        destination: '/zh/articles/anti-inflammatory-diet-guide',
-        permanent: true,
-      },
-      {
-        source: '/articles/long-term-healthy-lifestyle-guide',
-        destination: '/zh/articles/long-term-healthy-lifestyle-guide',
-        permanent: true,
-      },
-      {
-        source: '/articles/period-friendly-recipes',
-        destination: '/zh/articles/period-friendly-recipes',
-        permanent: true,
-      },
-      {
-        source: '/articles/iud-comprehensive-guide',
-        destination: '/zh/articles/iud-comprehensive-guide',
-        permanent: true,
-      },
+      // 🚨 修复IndexNow索引问题 - 添加语言前缀重定向（临时禁用，避免重定向循环）
+      // 注意：这些重定向与next-intl中间件冲突，导致重定向循环
+      // 解决方案：让next-intl中间件处理语言前缀，不在此处添加重定向
       
       // 处理重复的下载页面 - 支持多语言
       {

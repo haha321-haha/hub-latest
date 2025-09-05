@@ -9,17 +9,34 @@ const intlMiddleware = createMiddleware({
   localeDetection: true,
   // 🔧 可选：设置默认行为更精确控制
   alternateLinks: false, // 如果不需要自动生成alternate links
-  // 🔧 SEO优化：使用301永久重定向
-  localePrefix: 'as-needed',
+  // 🔧 SEO优化：使用always确保语言前缀始终存在
+  localePrefix: 'always',
 });
 
 export default function middleware(request: NextRequest) {
-  // 完全依赖next-intl的自动重定向机制
-  // next-intl会自动处理 / -> /zh 的重定向，状态码统一为302
-  // 🎯 双重保险：主方案依赖next-intl，备用方案在app/page.tsx
-  
-  // 处理特殊路径的重定向
   const { pathname } = request.nextUrl;
+  
+  // 🚨 修复IndexNow索引问题 - 处理无语言前缀的文章URL
+  const articleRedirects = [
+    'personal-health-profile',
+    'pain-complications-management', 
+    'health-tracking-and-analysis',
+    'evidence-based-pain-guidance',
+    'sustainable-health-management',
+    'anti-inflammatory-diet-guide',
+    'long-term-healthy-lifestyle-guide',
+    'period-friendly-recipes',
+    'iud-comprehensive-guide'
+  ];
+  
+  // 检查是否是文章URL且缺少语言前缀
+  for (const articleSlug of articleRedirects) {
+    if (pathname === `/articles/${articleSlug}`) {
+      const url = request.nextUrl.clone();
+      url.pathname = `/zh/articles/${articleSlug}`;
+      return Response.redirect(url, 301);
+    }
+  }
   
   // 特殊路径的301重定向
   if (pathname === '/teen-health') {
