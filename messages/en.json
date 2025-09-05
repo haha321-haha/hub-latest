@@ -2130,6 +2130,8 @@
       "dataSource": "Data source: Based on user feedback and medical research statistics"
     },
     "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to common questions about menstrual health",
       "q1": {
         "question": "What are the fastest ways to relieve menstrual cramps?",
         "answer": "The fastest menstrual cramp relief methods include: heat therapy on lower abdomen and back, gentle abdominal massage, light exercise like yoga, NSAIDs like ibuprofen, and adequate rest. Combining multiple methods works best."

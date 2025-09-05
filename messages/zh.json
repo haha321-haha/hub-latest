@@ -1043,6 +1043,14 @@
     }
   },
   "interactiveTools": {
+    "meta": {
+      "title": "交互式健康工具 - 经期管理助手",
+      "description": "使用我们的专业工具追踪症状、评估疼痛水平，更好地管理您的月经健康",
+      "ogTitle": "交互式月经健康工具 | 症状追踪与疼痛管理",
+      "ogDescription": "专业的月经健康管理工具，帮助您追踪症状、记录疼痛水平，获得个性化健康建议",
+      "twitterTitle": "交互式月经健康工具",
+      "twitterDescription": "追踪症状、管理疼痛、优化月经健康的专业工具"
+    },
     "breadcrumb": {
       "home": "首页",
       "interactiveTools": "互动工具"
