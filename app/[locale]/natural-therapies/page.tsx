@@ -881,36 +881,6 @@ export default function NaturalTherapiesPage({
               </div>
             </div>
 
-            {/* Quick Links */}
-            <div className="bg-white rounded-lg shadow-sm p-4 sm:p-6 lg:p-8">
-              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
-                {locale === 'zh' ? '相关资源' : 'Related Resources'}
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                <Link
-                  href={`/${locale}/interactive-tools/period-pain-assessment`}
-                  className="block p-4 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors"
-                >
-                  <h3 className="font-semibold text-blue-800">
-                    {locale === 'zh' ? '痛经评估工具' : 'Pain Assessment Tool'}
-                  </h3>
-                  <p className="text-sm text-blue-600">
-                    {locale === 'zh' ? '评估痛经程度' : 'Assess pain level'}
-                  </p>
-                </Link>
-                <Link
-                  href={`/${locale}/scenario-solutions`}
-                  className="block p-4 bg-green-50 border border-green-200 rounded-lg hover:bg-green-100 transition-colors"
-                >
-                  <h3 className="font-semibold text-green-800">
-                    {locale === 'zh' ? '场景解决方案' : 'Scenario Solutions'}
-                  </h3>
-                  <p className="text-sm text-green-600">
-                    {locale === 'zh' ? '针对性解决方案' : 'Targeted solutions'}
-                  </p>
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </div>
