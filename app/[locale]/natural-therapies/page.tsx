@@ -886,7 +886,7 @@ export default function NaturalTherapiesPage({
       </div>
 
       {/* Medical Disclaimer */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 py-8">
         <section className="bg-primary-50 border-l-4 border-primary-500 p-4 sm:p-6 rounded-r-lg">
           <p className="text-sm sm:text-base text-neutral-700 leading-relaxed break-words">
             <strong className="text-primary-700">
