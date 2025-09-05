@@ -2129,38 +2129,6 @@
     "healthStatistics": {
       "dataSource": "Data source: Based on user feedback and medical research statistics"
     },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Find answers to common questions about menstrual health",
-      "q1": {
-        "question": "What are the fastest ways to relieve menstrual cramps?",
-        "answer": "The fastest menstrual cramp relief methods include: heat therapy on lower abdomen and back, gentle abdominal massage, light exercise like yoga, NSAIDs like ibuprofen, and adequate rest. Combining multiple methods works best."
-      },
-      "q2": {
-        "question": "What is considered a normal menstrual cycle?",
-        "answer": "A normal menstrual cycle ranges from 21-35 days, with an average of 28 days. Menstruation typically lasts 3-7 days. Consult a gynecologist if cycles are consistently irregular."
-      },
-      "q3": {
-        "question": "How does Traditional Chinese Medicine treat irregular periods?",
-        "answer": "TCM treats irregular periods through syndrome differentiation: acupuncture to regulate qi and blood, herbal formulas, dietary therapy, and lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
-      },
-      "q4": {
-        "question": "When is the most effective time to take Ibuprofen?",
-        "answer": "Ibuprofen is most effective when taken at the onset of pain, typically taking effect in 30-60 minutes. It's recommended to take it when pain first starts or when you anticipate pain coming, rather than waiting until the pain becomes severe."
-      },
-      "q5": {
-        "question": "How many times can I take Ibuprofen per day?",
-        "answer": "Ibuprofen can be taken every 6-8 hours, up to 4 times per day. Adult single dose is 200-400mg, with a maximum total daily dose of 2400mg. Do not use continuously for more than 3 days; consult a doctor if pain persists."
-      },
-      "q6": {
-        "question": "Which has fewer side effects: Naproxen or Ibuprofen?",
-        "answer": "Naproxen typically has fewer side effects because it's taken less frequently (every 8-12 hours). However, both may cause stomach discomfort, so it's recommended to take with food. Those with stomach, heart, or kidney/liver problems should use with caution."
-      },
-      "q7": {
-        "question": "Can I take both Ibuprofen and Naproxen together for period pain?",
-        "answer": "It's not recommended to take both Ibuprofen and Naproxen together as they are both NSAIDs, which increases the risk of side effects. Choose one medication, and if it's not effective, consult a doctor to adjust your medication plan."
-      }
-    },
     "features": {
       "title": "Professional Features",
       "subtitle": "Comprehensive menstrual health management services for you",
@@ -2234,6 +2202,38 @@
         "primary": "[ZH] 开始使用",
         "secondary": "[ZH] 了解更多"
       }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about menstrual health",
+    "q1": {
+      "question": "What are the fastest ways to relieve menstrual cramps?",
+      "answer": "The fastest menstrual cramp relief methods include: heat therapy on lower abdomen and back, gentle abdominal massage, light exercise like yoga, NSAIDs like ibuprofen, and adequate rest. Combining multiple methods works best."
+    },
+    "q2": {
+      "question": "What is considered a normal menstrual cycle?",
+      "answer": "A normal menstrual cycle ranges from 21-35 days, with an average of 28 days. Menstruation typically lasts 3-7 days. Consult a gynecologist if cycles are consistently irregular."
+    },
+    "q3": {
+      "question": "How does Traditional Chinese Medicine treat irregular periods?",
+      "answer": "TCM treats irregular periods through syndrome differentiation: acupuncture to regulate qi and blood, herbal formulas, dietary therapy, and lifestyle adjustments. Professional TCM diagnosis is needed for personalized treatment."
+    },
+    "q4": {
+      "question": "When is the most effective time to take Ibuprofen?",
+      "answer": "Ibuprofen is most effective when taken at the onset of pain, typically taking effect in 30-60 minutes. It's recommended to take it when pain first starts or when you anticipate pain coming, rather than waiting until the pain becomes severe."
+    },
+    "q5": {
+      "question": "How many times can I take Ibuprofen per day?",
+      "answer": "Ibuprofen can be taken every 6-8 hours, up to 4 times per day. Adult single dose is 200-400mg, with a maximum total daily dose of 2400mg. Do not use continuously for more than 3 days; consult a doctor if pain persists."
+    },
+    "q6": {
+      "question": "Which has fewer side effects: Naproxen or Ibuprofen?",
+      "answer": "Naproxen typically has fewer side effects because it's taken less frequently (every 8-12 hours). However, both may cause stomach discomfort, so it's recommended to take with food. Those with stomach, heart, or kidney/liver problems should use with caution."
+    },
+    "q7": {
+      "question": "Can I take both Ibuprofen and Naproxen together for period pain?",
+      "answer": "It's not recommended to take both Ibuprofen and Naproxen together as they are both NSAIDs, which increases the risk of side effects. Choose one medication, and if it's not effective, consult a doctor to adjust your medication plan."
     }
   },
   "homeClean": {
