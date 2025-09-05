@@ -885,6 +885,19 @@ export default function NaturalTherapiesPage({
         </div>
       </div>
 
+      {/* Medical Disclaimer */}
+      <section className="bg-primary-50 border-l-4 border-primary-500 p-4 rounded-r-lg">
+        <p className="text-neutral-700">
+          <strong className="text-primary-700">
+            {locale === 'zh' ? '医疗免责声明：' : 'Medical Disclaimer:'}
+          </strong>
+          {locale === 'zh'
+            ? '本指南中的信息仅供教育目的，不应替代专业医疗建议、诊断或治疗。如有任何健康问题，请咨询合格的医疗保健提供者。'
+            : 'The information in this guide is for educational purposes only and should not replace professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare provider for any health concerns.'
+          }
+        </p>
+      </section>
+
       {/* 底部推荐工具 */}
       <BottomRecommendations currentPage="natural-therapies" />
     </>
