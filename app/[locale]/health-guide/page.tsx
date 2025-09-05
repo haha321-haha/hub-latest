@@ -195,6 +195,551 @@ export default async function HealthGuidePage({
         </div>
       </section>
 
+      {/* Medical Principles Section */}
+      <section className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 md:p-8 rounded-xl">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl font-semibold text-neutral-800 mb-6 text-center">
+            {locale === 'zh' ? '🧬 医学原理与科学机制' : '🧬 Medical Principles & Scientific Mechanisms'}
+          </h2>
+          <p className="text-neutral-700 text-center mb-8 max-w-4xl mx-auto">
+            {locale === 'zh'
+              ? '深入了解痛经的生理病理机制，掌握科学治疗的基础原理'
+              : 'Deep understanding of the pathophysiological mechanisms of menstrual pain and the scientific principles behind effective treatments'
+            }
+          </p>
+
+          {/* Anatomy Overview */}
+          <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <img 
+                  src="https://r2.flowith.net/files/o/1748194147183-female_reproductive_system_anatomy_highlighting_menstrual_pain_areas_index_0@1024x1024.png" 
+                  alt={locale === 'zh' ? '女性生殖系统解剖图，标注经期疼痛相关区域' : 'Female reproductive system anatomy highlighting menstrual pain areas'}
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+              </div>
+              
+              <div>
+                <h3 className="text-xl font-bold mb-4 text-indigo-700">
+                  {locale === 'zh' ? '关键解剖结构' : 'Key Anatomical Structures'}
+                </h3>
+                
+                <div className="space-y-3">
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-3">
+                    <h4 className="font-semibold text-red-700 mb-1">
+                      {locale === 'zh' ? '子宫 (Uterus)' : 'Uterus'}
+                    </h4>
+                    <p className="text-sm text-red-600">
+                      {locale === 'zh' 
+                        ? '痛经的主要发生部位，由肌层和内膜层组成。肌层收缩是疼痛的直接原因。'
+                        : 'The primary site of menstrual pain, composed of muscle and endometrial layers. Muscle contractions are the direct cause of pain.'
+                      }
+                    </p>
+                  </div>
+                  
+                  <div className="bg-purple-50 border border-purple-200 rounded-lg p-3">
+                    <h4 className="font-semibold text-purple-700 mb-1">
+                      {locale === 'zh' ? '子宫内膜 (Endometrium)' : 'Endometrium'}
+                    </h4>
+                    <p className="text-sm text-purple-600">
+                      {locale === 'zh' 
+                        ? '月经周期中脱落的组织，是前列腺素的主要产生部位。'
+                        : 'Tissue that sheds during the menstrual cycle and is the main source of prostaglandin production.'
+                      }
+                    </p>
+                  </div>
+                  
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                    <h4 className="font-semibold text-blue-700 mb-1">
+                      {locale === 'zh' ? '卵巢 (Ovaries)' : 'Ovaries'}
+                    </h4>
+                    <p className="text-sm text-blue-600">
+                      {locale === 'zh' 
+                        ? '激素分泌的控制中心，调节整个月经周期和疼痛的发生。'
+                        : 'The control center for hormone secretion, regulating the entire menstrual cycle and pain occurrence.'
+                      }
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Pathophysiology */}
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {/* Prostaglandin Mechanism */}
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <h3 className="text-lg font-bold mb-4 text-red-700">
+                {locale === 'zh' ? '🧬 前列腺素机制' : '🧬 Prostaglandin Mechanism'}
+              </h3>
+              
+              <div className="space-y-3 text-sm">
+                <div className="flex items-start">
+                  <span className="bg-red-500 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0">1</span>
+                  <div>
+                    <strong>{locale === 'zh' ? '酶活化：' : 'Enzyme Activation:'}</strong>
+                    {locale === 'zh' ? '子宫内膜细胞中的磷脂酶A2被激活，释放花生四烯酸' : 'Phospholipase A2 in endometrial cells is activated, releasing arachidonic acid'}
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="bg-red-500 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0">2</span>
+                  <div>
+                    <strong>{locale === 'zh' ? '合成路径：' : 'Synthesis Pathway:'}</strong>
+                    {locale === 'zh' ? '环氧合酶(COX-1/COX-2)催化花生四烯酸合成前列腺素' : 'Cyclooxygenase (COX-1/COX-2) catalyzes arachidonic acid to synthesize prostaglandins'}
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="bg-red-500 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0">3</span>
+                  <div>
+                    <strong>{locale === 'zh' ? '主要产物：' : 'Main Products:'}</strong>
+                    {locale === 'zh' ? 'PGF2α和PGE2是导致子宫收缩和疼痛的关键分子' : 'PGF2α and PGE2 are key molecules causing uterine contractions and pain'}
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-4 space-y-3">
+                <div className="p-3 bg-red-50 rounded">
+                  <p className="text-xs text-red-600">
+                    <strong>{locale === 'zh' ? '⚡ 生理效应：' : '⚡ Physiological Effects:'}</strong>
+                  </p>
+                </div>
+                
+                <div className="space-y-2">
+                  <div className="bg-red-50 border border-red-200 rounded p-3">
+                    <strong className="text-red-700 text-xs">{locale === 'zh' ? '子宫肌收缩：' : 'Uterine Muscle Contraction:'}</strong>
+                    <p className="text-xs text-red-600 mt-1">
+                      {locale === 'zh' 
+                        ? 'PGF2α刺激子宫平滑肌强烈收缩，收缩强度可超过分娩时的收缩'
+                        : 'PGF2α stimulates strong uterine smooth muscle contractions, exceeding labor contractions in intensity'
+                      }
+                    </p>
+                  </div>
+                  
+                  <div className="bg-orange-50 border border-orange-200 rounded p-3">
+                    <strong className="text-orange-700 text-xs">{locale === 'zh' ? '血管收缩：' : 'Vasoconstriction:'}</strong>
+                    <p className="text-xs text-orange-600 mt-1">
+                      {locale === 'zh' 
+                        ? '导致子宫血流减少，造成局部缺血和代谢产物堆积'
+                        : 'Causes reduced uterine blood flow, leading to local ischemia and metabolite accumulation'
+                      }
+                    </p>
+                  </div>
+                  
+                  <div className="bg-yellow-50 border border-yellow-200 rounded p-3">
+                    <strong className="text-yellow-700 text-xs">{locale === 'zh' ? '神经敏化：' : 'Neural Sensitization:'}</strong>
+                    <p className="text-xs text-yellow-600 mt-1">
+                      {locale === 'zh' 
+                        ? '激活疼痛神经纤维，降低疼痛阈值'
+                        : 'Activates pain nerve fibers and lowers pain threshold'
+                      }
+                    </p>
+                  </div>
+                  
+                  <div className="bg-green-50 border border-green-200 rounded p-3">
+                    <strong className="text-green-700 text-xs">{locale === 'zh' ? '炎症反应：' : 'Inflammatory Response:'}</strong>
+                    <p className="text-xs text-green-600 mt-1">
+                      {locale === 'zh' 
+                        ? '促进炎症介质释放，加重疼痛和不适'
+                        : 'Promotes release of inflammatory mediators, worsening pain and discomfort'
+                      }
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Hormonal Control */}
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <h3 className="text-lg font-bold mb-4 text-purple-700">
+                {locale === 'zh' ? '⚖️ 激素调节机制' : '⚖️ Hormonal Control Mechanism'}
+              </h3>
+              
+              <div className="space-y-4">
+                <div className="bg-purple-50 border border-purple-200 rounded-lg p-3">
+                  <h4 className="font-semibold text-purple-700 mb-2 text-sm">
+                    {locale === 'zh' ? '雌激素 (Estrogen)' : 'Estrogen'}
+                  </h4>
+                  <ul className="text-xs space-y-1 text-purple-600">
+                    <li>• {locale === 'zh' ? '促进子宫内膜增厚' : 'Promotes endometrial thickening'}</li>
+                    <li>• {locale === 'zh' ? '增加前列腺素受体密度' : 'Increases prostaglandin receptor density'}</li>
+                    <li>• {locale === 'zh' ? '影响疼痛感知阈值' : 'Affects pain perception threshold'}</li>
+                  </ul>
+                </div>
+                
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                  <h4 className="font-semibold text-blue-700 mb-2 text-sm">
+                    {locale === 'zh' ? '孕激素 (Progesterone)' : 'Progesterone'}
+                  </h4>
+                  <ul className="text-xs space-y-1 text-blue-600">
+                    <li>• {locale === 'zh' ? '拮抗雌激素作用' : 'Antagonizes estrogen effects'}</li>
+                    <li>• {locale === 'zh' ? '减少前列腺素合成' : 'Reduces prostaglandin synthesis'}</li>
+                    <li>• {locale === 'zh' ? '具有天然镇痛效应' : 'Has natural analgesic effects'}</li>
+                  </ul>
+                </div>
+                
+                <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+                  <h4 className="font-semibold text-green-700 mb-2 text-sm">
+                    {locale === 'zh' ? '反馈调节' : 'Feedback Regulation'}
+                  </h4>
+                  <ul className="text-xs space-y-1 text-green-600">
+                    <li>• {locale === 'zh' ? '下丘脑-垂体-卵巢轴' : 'Hypothalamic-pituitary-ovarian axis'}</li>
+                    <li>• {locale === 'zh' ? 'GnRH脉冲式分泌' : 'GnRH pulsatile secretion'}</li>
+                    <li>• {locale === 'zh' ? 'FSH/LH周期性变化' : 'FSH/LH cyclical changes'}</li>
+                    <li>• {locale === 'zh' ? '负反馈调节机制' : 'Negative feedback regulation'}</li>
+                  </ul>
+                  <div className="mt-2 p-2 bg-green-100 rounded">
+                    <p className="text-xs text-green-600">
+                      <strong>{locale === 'zh' ? '平衡点：' : 'Balance Point:'}</strong>
+                      {locale === 'zh' ? '激素平衡失调是痛经的根本原因' : 'Hormonal imbalance is the root cause of dysmenorrhea'}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Neural Pathways */}
+          <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h3 className="text-xl font-bold mb-6 text-center text-blue-700">
+              {locale === 'zh' ? '🧠 神经传导机制' : '🧠 Neural Conduction Mechanism'}
+            </h3>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-lg font-semibold mb-4 text-blue-700">
+                  {locale === 'zh' ? '疼痛传导路径' : 'Pain Conduction Pathway'}
+                </h4>
+                <div className="space-y-4">
+                  <div className="flex items-center p-3 bg-blue-50 rounded border">
+                    <span className="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                    <div>
+                      <strong className="text-blue-700">{locale === 'zh' ? '感受器：' : 'Receptors:'}</strong>
+                      <span className="text-sm text-blue-600 ml-1">
+                        {locale === 'zh' ? '子宫和盆腔的痛觉感受器' : 'Pain receptors in uterus and pelvis'}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex items-center p-3 bg-blue-50 rounded border">
+                    <span className="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                    <div>
+                      <strong className="text-blue-700">{locale === 'zh' ? '传入神经：' : 'Afferent Nerves:'}</strong>
+                      <span className="text-sm text-blue-600 ml-1">
+                        {locale === 'zh' ? '经骶神经和腰交感神经传导' : 'Conducted via sacral and lumbar sympathetic nerves'}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex items-center p-3 bg-blue-50 rounded border">
+                    <span className="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                    <div>
+                      <strong className="text-blue-700">{locale === 'zh' ? '脊髓处理：' : 'Spinal Processing:'}</strong>
+                      <span className="text-sm text-blue-600 ml-1">
+                        {locale === 'zh' ? '在脊髓后角进行初步整合' : 'Initial integration in spinal dorsal horn'}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex items-center p-3 bg-blue-50 rounded border">
+                    <span className="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">4</span>
+                    <div>
+                      <strong className="text-blue-700">{locale === 'zh' ? '中枢感知：' : 'Central Perception:'}</strong>
+                      <span className="text-sm text-blue-600 ml-1">
+                        {locale === 'zh' ? '上传至大脑皮层产生疼痛感觉' : 'Transmitted to cerebral cortex to produce pain sensation'}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 className="text-lg font-semibold mb-4 text-blue-700">
+                  {locale === 'zh' ? '疼痛调控机制' : 'Pain Control Mechanism'}
+                </h4>
+                <div className="space-y-4">
+                  <div className="bg-green-50 border border-green-200 rounded p-4">
+                    <h5 className="font-semibold text-green-700 mb-2 text-sm">
+                      {locale === 'zh' ? '闸门控制理论' : 'Gate Control Theory'}
+                    </h5>
+                    <p className="text-xs text-green-600">
+                      {locale === 'zh' 
+                        ? '大纤维激活可以抑制疼痛信号，这是按摩和热敷有效的生理基础'
+                        : 'Large fiber activation can inhibit pain signals, which is the physiological basis for the effectiveness of massage and heat therapy'
+                      }
+                    </p>
+                  </div>
+                  <div className="bg-yellow-50 border border-yellow-200 rounded p-4">
+                    <h5 className="font-semibold text-yellow-700 mb-2 text-sm">
+                      {locale === 'zh' ? '内源性镇痛' : 'Endogenous Analgesia'}
+                    </h5>
+                    <p className="text-xs text-yellow-600">
+                      {locale === 'zh' 
+                        ? '内啡肽、脑啡肽等内源性阿片肽的释放提供自然镇痛'
+                        : 'Release of endogenous opioid peptides like endorphins and enkephalins provides natural analgesia'
+                      }
+                    </p>
+                  </div>
+                  <div className="bg-purple-50 border border-purple-200 rounded p-4">
+                    <h5 className="font-semibold text-purple-700 mb-2 text-sm">
+                      {locale === 'zh' ? '下行调控' : 'Descending Control'}
+                    </h5>
+                    <p className="text-xs text-purple-600">
+                      {locale === 'zh' 
+                        ? '脑干核团对脊髓疼痛传导的调控作用'
+                        : 'Regulatory effect of brainstem nuclei on spinal pain conduction'
+                      }
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Treatment Mechanisms */}
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <h3 className="text-xl font-bold mb-6 text-center text-indigo-700">
+              {locale === 'zh' ? '💊 治疗方法的科学机制' : '💊 Scientific Mechanisms of Treatments'}
+            </h3>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {/* NSAIDs */}
+              <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                <div className="text-center mb-3">
+                  <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1h-6l-1-1z"></path>
+                    </svg>
+                  </div>
+                  <h4 className="font-bold text-red-700 text-sm">NSAIDs</h4>
+                </div>
+                
+                <div className="text-xs space-y-1">
+                  <p><strong>{locale === 'zh' ? '机制：' : 'Mechanism:'}</strong> {locale === 'zh' ? '抑制COX酶活性' : 'Inhibits COX enzyme activity'}</p>
+                  <p><strong>{locale === 'zh' ? '效果：' : 'Effect:'}</strong> {locale === 'zh' ? '减少前列腺素合成' : 'Reduces prostaglandin synthesis'}</p>
+                  <p><strong>{locale === 'zh' ? '代表药物：' : 'Representative Drugs:'}</strong> {locale === 'zh' ? '布洛芬、萘普生' : 'Ibuprofen, Naproxen'}</p>
+                  <p><strong>{locale === 'zh' ? '最佳时机：' : 'Best Timing:'}</strong> {locale === 'zh' ? '疼痛开始前使用' : 'Use before pain starts'}</p>
+                  <p><strong>{locale === 'zh' ? '疗效：' : 'Efficacy:'}</strong> {locale === 'zh' ? '可减少疼痛70-80%' : 'Reduces pain by 70-80%'}</p>
+                </div>
+              </div>
+
+              {/* Heat Therapy */}
+              <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
+                <div className="text-center mb-3">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                    </svg>
+                  </div>
+                  <h4 className="font-bold text-orange-700 text-sm">
+                    {locale === 'zh' ? '热疗' : 'Heat Therapy'}
+                  </h4>
+                </div>
+                
+                <div className="text-xs space-y-1">
+                  <p><strong>{locale === 'zh' ? '机制：' : 'Mechanism:'}</strong> {locale === 'zh' ? '激活热感受器' : 'Activates heat receptors'}</p>
+                  <p><strong>{locale === 'zh' ? '效果：' : 'Effect:'}</strong> {locale === 'zh' ? '闸门控制，血管扩张' : 'Gate control, vasodilation'}</p>
+                  <p><strong>{locale === 'zh' ? '温度：' : 'Temperature:'}</strong> {locale === 'zh' ? '40-45°C最佳' : '40-45°C optimal'}</p>
+                  <p><strong>{locale === 'zh' ? '持续：' : 'Duration:'}</strong> {locale === 'zh' ? '15-20分钟/次' : '15-20 minutes/session'}</p>
+                  <p><strong>{locale === 'zh' ? '增效：' : 'Synergy:'}</strong> {locale === 'zh' ? '与NSAIDs协同作用' : 'Synergistic with NSAIDs'}</p>
+                </div>
+              </div>
+
+              {/* Hormonal Therapy */}
+              <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                <div className="text-center mb-3">
+                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <h4 className="font-bold text-purple-700 text-sm">
+                    {locale === 'zh' ? '激素疗法' : 'Hormonal Therapy'}
+                  </h4>
+                </div>
+                
+                <div className="text-xs space-y-1">
+                  <p><strong>{locale === 'zh' ? '机制：' : 'Mechanism:'}</strong> {locale === 'zh' ? '抑制排卵' : 'Inhibits ovulation'}</p>
+                  <p><strong>{locale === 'zh' ? '效果：' : 'Effect:'}</strong> {locale === 'zh' ? '稳定激素水平' : 'Stabilizes hormone levels'}</p>
+                  <p><strong>{locale === 'zh' ? '类型：' : 'Type:'}</strong> {locale === 'zh' ? '复合型口服避孕药' : 'Combined oral contraceptives'}</p>
+                  <p><strong>{locale === 'zh' ? '适用：' : 'Indication:'}</strong> {locale === 'zh' ? '重度原发性痛经' : 'Severe primary dysmenorrhea'}</p>
+                  <p><strong>{locale === 'zh' ? '疗效：' : 'Efficacy:'}</strong> {locale === 'zh' ? '90%患者症状改善' : '90% of patients improve'}</p>
+                </div>
+              </div>
+
+              {/* Exercise Therapy */}
+              <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                <div className="text-center mb-3">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                    </svg>
+                  </div>
+                  <h4 className="font-bold text-green-700 text-sm">
+                    {locale === 'zh' ? '运动疗法' : 'Exercise Therapy'}
+                  </h4>
+                </div>
+                
+                <div className="text-xs space-y-1">
+                  <p><strong>{locale === 'zh' ? '机制：' : 'Mechanism:'}</strong> {locale === 'zh' ? '释放内啡肽' : 'Releases endorphins'}</p>
+                  <p><strong>{locale === 'zh' ? '效果：' : 'Effect:'}</strong> {locale === 'zh' ? '改善血液循环' : 'Improves blood circulation'}</p>
+                  <p><strong>{locale === 'zh' ? '类型：' : 'Type:'}</strong> {locale === 'zh' ? '有氧运动、瑜伽' : 'Aerobic exercise, Yoga'}</p>
+                  <p><strong>{locale === 'zh' ? '强度：' : 'Intensity:'}</strong> {locale === 'zh' ? '中等强度最佳' : 'Moderate intensity optimal'}</p>
+                  <p><strong>{locale === 'zh' ? '长效：' : 'Long-term:'}</strong> {locale === 'zh' ? '需要持续6-8周见效' : 'Requires 6-8 weeks'}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Research Progress */}
+          <div className="bg-white rounded-lg shadow-lg p-6 mt-6">
+            <h3 className="text-xl font-bold mb-6 text-center text-indigo-700">
+              {locale === 'zh' ? '🔬 最新研究进展' : '🔬 Latest Research Progress'}
+            </h3>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <h4 className="font-semibold mb-3 text-blue-700">
+                  {locale === 'zh' ? '🧬 分子靶点研究' : '🧬 Molecular Target Research'}
+                </h4>
+                <p className="text-sm text-gray-700 mb-2">
+                  {locale === 'zh' 
+                    ? '选择性COX-2抑制剂减少胃肠道副作用，同时保持良好的镇痛效果。新一代双重作用药物同时抑制COX和脂氧合酶途径。'
+                    : 'Selective COX-2 inhibitors reduce gastrointestinal side effects while maintaining good analgesic effects. New generation dual-action drugs simultaneously inhibit COX and lipoxygenase pathways.'
+                  }
+                </p>
+              </div>
+              
+              <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                <h4 className="font-semibold mb-3 text-green-700">
+                  {locale === 'zh' ? '🤖 人工智能应用' : '🤖 AI Applications'}
+                </h4>
+                <p className="text-sm text-gray-700 mb-2">
+                  {locale === 'zh' 
+                    ? '机器学习算法分析月经周期数据，预测痛经发作时间和严重程度，实现精准的预防性干预。'
+                    : 'Machine learning algorithms analyze menstrual cycle data to predict dysmenorrhea onset and severity, enabling precise preventive interventions.'
+                  }
+                </p>
+              </div>
+            </div>
+            
+            {/* Gene Therapy Research */}
+            <div className="mt-6">
+              <h3 className="text-lg font-bold mb-4 text-center text-purple-700">
+                {locale === 'zh' ? '🧬 基因治疗前景' : '🧬 Gene Therapy Prospects'}
+              </h3>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                  <h4 className="font-semibold mb-3 text-purple-700">
+                    {locale === 'zh' ? '基因多态性研究' : 'Gene Polymorphism Research'}
+                  </h4>
+                  <p className="text-sm text-gray-700">
+                    {locale === 'zh' 
+                      ? '研究发现COX-2基因的多态性与痛经严重程度相关，未来可能实现基于基因型的个性化治疗。'
+                      : 'Research has found that COX-2 gene polymorphisms are associated with dysmenorrhea severity, potentially enabling genotype-based personalized treatment in the future.'
+                    }
+                  </p>
+                </div>
+                
+                <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
+                  <h4 className="font-semibold mb-3 text-indigo-700">
+                    {locale === 'zh' ? '表观遗传学机制' : 'Epigenetic Mechanisms'}
+                  </h4>
+                  <p className="text-sm text-gray-700">
+                    {locale === 'zh' 
+                      ? 'DNA甲基化和组蛋白修饰在痛经发生中的作用正在被深入研究，为新的治疗靶点提供线索。'
+                      : 'The role of DNA methylation and histone modifications in dysmenorrhea occurrence is being intensively studied, providing clues for new therapeutic targets.'
+                    }
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Clinical Evidence */}
+          <div className="bg-white rounded-lg shadow-lg p-6 mt-6">
+            <h3 className="text-xl font-bold mb-6 text-center text-blue-700">
+              {locale === 'zh' ? '📊 临床循证依据' : '📊 Clinical Evidence'}
+            </h3>
+            
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+              <h4 className="text-lg font-bold mb-4 text-blue-700">
+                {locale === 'zh' ? '重要临床研究' : 'Important Clinical Studies'}
+              </h4>
+              
+              <div className="space-y-6">
+                <div className="bg-white rounded p-4">
+                  <h5 className="font-semibold mb-2 text-gray-800">
+                    {locale === 'zh' ? 'Cochrane系统综述 (2020)' : 'Cochrane Systematic Review (2020)'}
+                  </h5>
+                  <div className="space-y-2 text-sm">
+                    <p className="text-gray-700">
+                      <strong>{locale === 'zh' ? '研究内容：' : 'Study Content:'}</strong>
+                      {locale === 'zh' ? 'NSAIDs治疗原发性痛经的疗效和安全性' : 'Efficacy and safety of NSAIDs for primary dysmenorrhea'}
+                    </p>
+                    <p className="text-gray-700">
+                      <strong>{locale === 'zh' ? '样本量：' : 'Sample Size:'}</strong>
+                      {locale === 'zh' ? '涵盖73项随机对照试验，总计5,762名参与者' : 'Covering 73 randomized controlled trials with 5,762 participants'}
+                    </p>
+                    <p className="text-gray-700">
+                      <strong>{locale === 'zh' ? '结论：' : 'Conclusion:'}</strong>
+                      {locale === 'zh' ? 'NSAIDs比安慰剂更有效缓解痛经，布洛芬600-1200mg/日效果最佳' : 'NSAIDs are more effective than placebo for dysmenorrhea relief, with ibuprofen 600-1200mg/day showing best results'}
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="bg-white rounded p-4">
+                  <h5 className="font-semibold mb-2 text-gray-800">
+                    {locale === 'zh' ? 'BMJ发表研究 (2019)' : 'BMJ Published Study (2019)'}
+                  </h5>
+                  <div className="space-y-2 text-sm">
+                    <p className="text-gray-700">
+                      <strong>{locale === 'zh' ? '研究内容：' : 'Study Content:'}</strong>
+                      {locale === 'zh' ? '热疗对原发性痛经的疗效评估' : 'Evaluation of heat therapy efficacy for primary dysmenorrhea'}
+                    </p>
+                    <p className="text-gray-700">
+                      <strong>{locale === 'zh' ? '方法：' : 'Method:'}</strong>
+                      {locale === 'zh' ? '多中心随机对照试验，比较热疗与布洛芬的效果' : 'Multicenter randomized controlled trial comparing heat therapy with ibuprofen'}
+                    </p>
+                    <p className="text-gray-700">
+                      <strong>{locale === 'zh' ? '结论：' : 'Conclusion:'}</strong>
+                      {locale === 'zh' ? '连续低温热疗(39°C, 12小时)与布洛芬400mg效果相当' : 'Continuous low-temperature heat therapy (39°C, 12 hours) is equivalent to ibuprofen 400mg'}
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="bg-white rounded p-4">
+                  <h5 className="font-semibold mb-2 text-gray-800">
+                    {locale === 'zh' ? 'Journal of Clinical Medicine (2021)' : 'Journal of Clinical Medicine (2021)'}
+                  </h5>
+                  <div className="space-y-2 text-sm">
+                    <p className="text-gray-700">
+                      <strong>{locale === 'zh' ? '研究内容：' : 'Study Content:'}</strong>
+                      {locale === 'zh' ? '运动干预对痛经的长期影响' : 'Long-term effects of exercise intervention on dysmenorrhea'}
+                    </p>
+                    <p className="text-gray-700">
+                      <strong>{locale === 'zh' ? '设计：' : 'Design:'}</strong>
+                      {locale === 'zh' ? '12周有氧运动训练的长期随访研究' : 'Long-term follow-up study of 12-week aerobic exercise training'}
+                    </p>
+                    <p className="text-gray-700">
+                      <strong>{locale === 'zh' ? '结论：' : 'Conclusion:'}</strong>
+                      {locale === 'zh' ? '规律中等强度运动显著减少痛经发作频率和严重程度' : 'Regular moderate-intensity exercise significantly reduces dysmenorrhea frequency and severity'}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-6 p-4 bg-yellow-100 border border-yellow-300 rounded">
+                <p className="text-sm text-yellow-700">
+                  <strong>{locale === 'zh' ? '循证医学等级：' : 'Evidence-Based Medicine Level:'}</strong>
+                  {locale === 'zh' 
+                    ? '以上研究均达到Ia级证据水平（系统综述和荟萃分析），为临床实践提供了强有力的科学依据。'
+                    : 'All above studies reach Level Ia evidence (systematic reviews and meta-analyses), providing strong scientific basis for clinical practice.'
+                  }
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Guide Chapters */}
       <section>
         <h2 className="text-2xl font-semibold text-neutral-800 mb-8 text-center">

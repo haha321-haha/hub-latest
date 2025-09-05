@@ -214,7 +214,7 @@ export default function NaturalTherapiesPage({
                       <div className="flex-1">
                         <h3 className="text-xl sm:text-2xl font-bold text-red-700 mb-1">
                           {locale === 'zh' ? '热敷疗法' : 'Heat Therapy'}
-                        </h3>
+                      </h3>
                         <p className="text-red-600 font-medium text-sm sm:text-base">
                           {locale === 'zh' ? '科学验证的首选缓解方法' : 'Scientifically validated preferred relief method'}
                         </p>
@@ -261,17 +261,17 @@ export default function NaturalTherapiesPage({
                               : 'Heat activates large-diameter nerve fibers in the skin, which inhibit pain fiber signals at the spinal level, effectively "closing the gate" before pain signals reach the brain.'
                             }
                           </p>
-                        </div>
+                  </div>
                         <div className="border-l-4 border-orange-400 pl-4">
                           <h5 className="font-semibold text-orange-700 mb-1">
                             {locale === 'zh' ? '血管扩张与循环改善' : 'Vasodilation & Circulation Improvement'}
                           </h5>
                           <p className="text-sm text-gray-700">
-                            {locale === 'zh'
+                    {locale === 'zh'
                               ? '热量使局部血管平滑肌松弛，血管直径增加20-30%，血流量增加40-50%，改善的血液循环带走痛性代谢产物。'
                               : 'Heat relaxes local vascular smooth muscle, increasing vessel diameter by 20-30% and blood flow by 40-50%, improving circulation to remove pain-causing metabolites.'
-                            }
-                          </p>
+                    }
+                  </p>
                         </div>
                       </div>
                     </div>
@@ -297,22 +297,22 @@ export default function NaturalTherapiesPage({
                       <div className="w-12 h-12 flex items-center justify-center rounded-full bg-green-100 text-green-600 mr-4">
                         <span className="text-2xl">🌿</span>
                       </div>
-                      <div>
+                    <div>
                         <h3 className="text-2xl font-bold text-green-700">
                           {locale === 'zh' ? '草本疗法' : 'Herbal Therapy'}
-                        </h3>
+                      </h3>
                         <p className="text-green-600 font-medium">
                           {locale === 'zh' ? '植物药学的科学应用' : 'Scientific application of plant medicine'}
-                        </p>
-                      </div>
+                      </p>
                     </div>
+                  </div>
                     
                     <p className="text-gray-700 mb-6">
-                      {locale === 'zh'
+                    {locale === 'zh'
                         ? '草本疗法利用植物的天然活性成分调节激素平衡、减少炎症，是温和而有效的调理方式。'
-                        : 'Herbal therapy uses natural active compounds from plants to regulate hormonal balance and reduce inflammation.'
-                      }
-                    </p>
+                      : 'Herbal therapy uses natural active compounds from plants to regulate hormonal balance and reduce inflammation.'
+                    }
+                  </p>
                     
                     {/* Key Herbs Section */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
@@ -381,22 +381,22 @@ export default function NaturalTherapiesPage({
                       <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mr-4">
                         <span className="text-2xl">🍎</span>
                       </div>
-                      <div>
+                    <div>
                         <h3 className="text-2xl font-bold text-blue-700">
-                          {locale === 'zh' ? '饮食调整' : 'Dietary Adjustment'}
-                        </h3>
+                        {locale === 'zh' ? '饮食调整' : 'Dietary Adjustment'}
+                      </h3>
                         <p className="text-blue-600 font-medium">
                           {locale === 'zh' ? '抗炎饮食的科学应用' : 'Scientific application of anti-inflammatory diet'}
-                        </p>
-                      </div>
+                      </p>
                     </div>
+                  </div>
                     
                     <p className="text-gray-700 mb-6">
-                      {locale === 'zh'
-                        ? '通过科学的饮食调整，补充关键营养素，减少炎症反应，从根本上改善痛经症状。'
-                        : 'Through scientific dietary adjustments and key nutrient supplementation, reduce inflammatory responses.'
-                      }
-                    </p>
+                    {locale === 'zh'
+                      ? '通过科学的饮食调整，补充关键营养素，减少炎症反应，从根本上改善痛经症状。'
+                      : 'Through scientific dietary adjustments and key nutrient supplementation, reduce inflammatory responses.'
+                    }
+                  </p>
                     
                     {/* Key Nutrients Section */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-4 sm:mb-6">
@@ -459,7 +459,7 @@ export default function NaturalTherapiesPage({
                             <li>• {locale === 'zh' ? '精制碳水化合物' : 'Refined carbohydrates'}</li>
                             <li>• {locale === 'zh' ? '过量咖啡因' : 'Excessive caffeine'}</li>
                             <li>• {locale === 'zh' ? '加工肉类' : 'Processed meats'}</li>
-                          </ul>
+                  </ul>
                         </div>
                       </div>
                     </div>
@@ -473,22 +473,22 @@ export default function NaturalTherapiesPage({
                       <div className="w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 mr-4">
                         <span className="text-2xl">🧘‍♀️</span>
                       </div>
-                      <div>
+                    <div>
                         <h3 className="text-2xl font-bold text-purple-700">
-                          {locale === 'zh' ? '瑜伽运动' : 'Yoga & Exercise'}
-                        </h3>
+                        {locale === 'zh' ? '瑜伽运动' : 'Yoga & Exercise'}
+                      </h3>
                         <p className="text-purple-600 font-medium">
                           {locale === 'zh' ? '身心合一的自然疗法' : 'Mind-body integrated natural therapy'}
-                        </p>
-                      </div>
+                      </p>
                     </div>
+                  </div>
                     
                     <p className="text-gray-700 mb-6">
-                      {locale === 'zh'
-                        ? '特定的瑜伽体式和温和运动可以缓解盆腔紧张、改善血液循环，同时释放内啡肽缓解疼痛。'
+                    {locale === 'zh'
+                      ? '特定的瑜伽体式和温和运动可以缓解盆腔紧张、改善血液循环，同时释放内啡肽缓解疼痛。'
                         : 'Specific yoga poses and gentle exercises can relieve pelvic tension and improve blood circulation while releasing endorphins to relieve pain.'
-                      }
-                    </p>
+                    }
+                  </p>
                     
                     {/* Key Poses Section */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
@@ -544,7 +544,7 @@ export default function NaturalTherapiesPage({
                             <li>• {locale === 'zh' ? '避免倒立体式' : 'Avoid inverted poses'}</li>
                             <li>• {locale === 'zh' ? '不要过度拉伸' : 'Don\'t overstretch'}</li>
                             <li>• {locale === 'zh' ? '倾听身体信号' : 'Listen to your body\'s signals'}</li>
-                          </ul>
+                  </ul>
                         </div>
                       </div>
                     </div>
@@ -558,22 +558,22 @@ export default function NaturalTherapiesPage({
                       <div className="w-12 h-12 flex items-center justify-center rounded-full bg-yellow-100 text-yellow-600 mr-4">
                         <span className="text-2xl">🌸</span>
                       </div>
-                      <div>
+                    <div>
                         <h3 className="text-2xl font-bold text-yellow-700">
-                          {locale === 'zh' ? '芳香疗法' : 'Aromatherapy'}
-                        </h3>
+                        {locale === 'zh' ? '芳香疗法' : 'Aromatherapy'}
+                      </h3>
                         <p className="text-yellow-600 font-medium">
                           {locale === 'zh' ? '气味分子的治疗科学' : 'Therapeutic science of aromatic molecules'}
-                        </p>
-                      </div>
+                      </p>
                     </div>
+                  </div>
                     
                     <p className="text-gray-700 mb-6">
-                      {locale === 'zh'
-                        ? '通过天然植物精油的芳香分子，调节神经系统，缓解疼痛和情绪紧张。'
-                        : 'Uses aromatic molecules from natural plant essential oils to regulate the nervous system and relieve pain and emotional tension.'
-                      }
-                    </p>
+                    {locale === 'zh'
+                      ? '通过天然植物精油的芳香分子，调节神经系统，缓解疼痛和情绪紧张。'
+                      : 'Uses aromatic molecules from natural plant essential oils to regulate the nervous system and relieve pain and emotional tension.'
+                    }
+                  </p>
                     
                     {/* Key Oils Section */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-4 sm:mb-6">
@@ -662,10 +662,10 @@ export default function NaturalTherapiesPage({
                       <div className="w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 mr-4">
                         <span className="text-2xl">🪡</span>
                       </div>
-                      <div>
+                    <div>
                         <h3 className="text-2xl font-bold text-orange-700">
-                          {locale === 'zh' ? '针灸艾灸' : 'Acupuncture & Moxibustion'}
-                        </h3>
+                        {locale === 'zh' ? '针灸艾灸' : 'Acupuncture & Moxibustion'}
+                      </h3>
                         <p className="text-orange-600 font-medium">
                           {locale === 'zh' ? '传统智慧的现代验证' : 'Traditional wisdom with modern validation'}
                         </p>
@@ -736,22 +736,22 @@ export default function NaturalTherapiesPage({
                       <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 mr-4">
                         <span className="text-2xl">🧠</span>
                       </div>
-                      <div>
+                    <div>
                         <h3 className="text-2xl font-bold text-indigo-700">
                           {locale === 'zh' ? '心理调节技术' : 'Psychological Techniques'}
-                        </h3>
+                      </h3>
                         <p className="text-indigo-600 font-medium">
                           {locale === 'zh' ? '身心合一的疼痛管理' : 'Mind-body integrated pain management'}
-                        </p>
-                      </div>
+                      </p>
                     </div>
+                  </div>
                     
                     <p className="text-gray-700 mb-6">
-                      {locale === 'zh'
-                        ? '通过心理调节技术，降低疼痛敏感性，减少焦虑和压力，提高疼痛耐受性。'
-                        : 'Uses psychological techniques to reduce pain sensitivity, decrease anxiety and stress, improve pain tolerance.'
-                      }
-                    </p>
+                    {locale === 'zh'
+                      ? '通过心理调节技术，降低疼痛敏感性，减少焦虑和压力，提高疼痛耐受性。'
+                      : 'Uses psychological techniques to reduce pain sensitivity, decrease anxiety and stress, improve pain tolerance.'
+                    }
+                  </p>
                     
                     {/* Techniques Section */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
@@ -799,22 +799,22 @@ export default function NaturalTherapiesPage({
                       <div className="w-12 h-12 flex items-center justify-center rounded-full bg-pink-100 text-pink-600 mr-4">
                         <span className="text-2xl">📋</span>
                       </div>
-                      <div>
+                    <div>
                         <h3 className="text-2xl font-bold text-pink-700">
                           {locale === 'zh' ? '综合治疗方案' : 'Comprehensive Treatment Plans'}
-                        </h3>
+                      </h3>
                         <p className="text-pink-600 font-medium">
                           {locale === 'zh' ? '个性化组合策略' : 'Personalized combination strategies'}
-                        </p>
-                      </div>
+                      </p>
                     </div>
+                  </div>
                     
                     <p className="text-gray-700 mb-6">
-                      {locale === 'zh'
-                        ? '根据个人体质和症状特点，制定个性化的综合治疗方案，多种疗法协同作用，效果更佳。'
-                        : 'Develop personalized comprehensive treatment plans based on individual constitution and symptoms for synergistic effects.'
-                      }
-                    </p>
+                    {locale === 'zh'
+                      ? '根据个人体质和症状特点，制定个性化的综合治疗方案，多种疗法协同作用，效果更佳。'
+                      : 'Develop personalized comprehensive treatment plans based on individual constitution and symptoms for synergistic effects.'
+                    }
+                  </p>
                     
                     {/* Pain Level Plans */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-4 sm:mb-6">
@@ -872,7 +872,7 @@ export default function NaturalTherapiesPage({
                             <li>• {locale === 'zh' ? '寒性体质：重点温热疗法' : 'Cold constitution: Focus on warming therapies'}</li>
                             <li>• {locale === 'zh' ? '热性体质：选择清凉镇静方法' : 'Hot constitution: Choose cooling and calming methods'}</li>
                             <li>• {locale === 'zh' ? '气虚体质：温和方法，避免过度刺激' : 'Qi deficiency: Gentle methods, avoid overstimulation'}</li>
-                          </ul>
+                  </ul>
                         </div>
                       </div>
                     </div>
