@@ -55,13 +55,33 @@ export function getAllArticles(locale: string = 'en'): Article[] {
   }
 }
 
+// Slug映射表 - 处理URL slug与实际文件名的映射
+const slugMapping: Record<string, string> = {
+  // IndexNow索引问题修复映射
+  'pain-complications-management': 'menstrual-pain-complications-management',
+  'health-tracking-and-analysis': 'personal-menstrual-health-profile',
+  'evidence-based-pain-guidance': 'menstrual-pain-medical-guide',
+  'sustainable-health-management': 'menstrual-preventive-care-complete-plan',
+  'anti-inflammatory-diet-guide': 'anti-inflammatory-diet-period-pain',
+  'iud-comprehensive-guide': 'comprehensive-iud-guide',
+  // 其他可能的映射
+  'long-term-healthy-lifestyle-guide': 'long-term-healthy-lifestyle-guide', // 新创建的文件
+};
+
 export function getArticleBySlug(slug: string, locale: string = 'en'): Article | null {
   try {
     const articlesPath = locale === 'zh'
       ? path.join(articlesDirectory, 'zh')
       : path.join(articlesDirectory, 'en');
 
-    const fullPath = path.join(articlesPath, `${slug}.md`);
+    // 首先尝试直接映射的slug
+    let actualSlug = slugMapping[slug] || slug;
+    let fullPath = path.join(articlesPath, `${actualSlug}.md`);
+
+    // 如果映射的文件不存在，尝试原始slug
+    if (!fs.existsSync(fullPath)) {
+      fullPath = path.join(articlesPath, `${slug}.md`);
+    }
 
     if (!fs.existsSync(fullPath)) {
       return null;

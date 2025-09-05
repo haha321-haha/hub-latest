@@ -92,7 +92,17 @@ export async function generateStaticParams() {
     'ginger-menstrual-pain-relief-guide',                           // immediate-5
     'comprehensive-report-non-medical-factors-menstrual-pain',      // management-1 & management-7
     'period-pain-simulator-accuracy-analysis',                     // management-8
-    'medication-vs-natural-remedies-menstrual-pain'                // management-9
+    'medication-vs-natural-remedies-menstrual-pain',               // management-9
+
+    // 🚨 修复IndexNow索引问题 - 添加缺失的slug映射
+    'pain-complications-management',                                // 对应 menstrual-pain-complications-management
+    'health-tracking-and-analysis',                                 // 对应 personal-menstrual-health-profile
+    'evidence-based-pain-guidance',                                 // 对应 menstrual-pain-medical-guide
+    'sustainable-health-management',                                // 对应 menstrual-preventive-care-complete-plan
+    'personal-health-profile',                                      // 已存在，确保包含
+    'anti-inflammatory-diet-guide',                                 // 对应 anti-inflammatory-diet-period-pain
+    'long-term-healthy-lifestyle-guide',                           // 需要创建对应文章
+    'iud-comprehensive-guide'                                       // 对应 comprehensive-iud-guide
   ];
 
   const params = [];
