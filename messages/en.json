@@ -2343,14 +2343,6 @@
   "organization": {
     "description": "Professional menstrual health management platform"
   },
-  "hero": {
-    "title": "[ZH] 经期健康管理专家",
-    "subtitle": "[ZH] 科学的经期追踪、健康建议和个性化护理方案",
-    "cta": {
-      "primary": "[ZH] 开始使用",
-      "secondary": "[ZH] 了解更多"
-    }
-  },
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Find answers to common questions about menstrual health",
