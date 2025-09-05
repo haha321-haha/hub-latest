@@ -58,6 +58,7 @@ export function getAllArticles(locale: string = 'en'): Article[] {
 // Slug映射表 - 处理URL slug与实际文件名的映射
 const slugMapping: Record<string, string> = {
   // IndexNow索引问题修复映射
+  'personal-health-profile': 'personal-menstrual-health-profile', // 修复404问题
   'pain-complications-management': 'menstrual-pain-complications-management',
   'health-tracking-and-analysis': 'personal-menstrual-health-profile',
   'evidence-based-pain-guidance': 'menstrual-pain-medical-guide',
