@@ -84,7 +84,7 @@ const RecommendationCard = ({ title, description, icon, link, color }: Recommend
         </div>
         <p className="text-sm mb-4 opacity-90">{description}</p>
         <div className="flex items-center text-sm font-medium group-hover:translate-x-1 transition-transform duration-200">
-          了解更多 →
+          {icon} {title === '场景解决方案' ? '生活场景全覆盖' : '个性化症状分析'}
         </div>
       </div>
     </Link>
