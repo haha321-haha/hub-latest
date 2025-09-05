@@ -2170,10 +2170,10 @@
       "scenarios": {
         "cta": "查看方案 →"
       }
-    },
-    "organization": {
-      "description": "专业的女性月经健康管理平台"
     }
+  },
+  "organization": {
+    "description": "专业的女性月经健康管理平台"
   },
   "faq": {
     "title": "常见问题",
