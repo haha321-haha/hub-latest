@@ -78,9 +78,9 @@ const RecommendationCard = ({ title, description, icon, link, color }: Recommend
   // 根据卡片类型设置不同的图标组合
   const getIcons = () => {
     if (title === '场景解决方案') {
-      return { mainIcon: '🏠', actionIcon: '🏠' };
+      return { mainIcon: '🏠', actionIcon: '🏡' };
     } else {
-      return { mainIcon: '📊', actionIcon: '📊' };
+      return { mainIcon: '📊', actionIcon: '📈' };
     }
   };
 
