@@ -248,7 +248,7 @@ export default async function HealthGuidePage({
               href={`/${locale}/immediate-relief`}
               className="text-primary-600 hover:text-primary-700 font-medium text-sm"
             >
-              {locale === 'zh' ? '查看场景解决方案' : 'View Scenario Solutions'} →
+              {locale === 'zh' ? '方法与技巧' : 'Methods & Techniques'} →
             </Link>
           </div>
           
