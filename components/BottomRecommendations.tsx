@@ -69,12 +69,6 @@ const BottomRecommendations = ({ currentPage }: BottomRecommendationsProps) => {
 };
 
 const RecommendationCard = ({ title, description, icon, link, color }: RecommendationItem) => {
-  const colorClasses = {
-    blue: 'border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100',
-    green: 'border-green-200 bg-green-50 text-green-700 hover:bg-green-100',
-    purple: 'border-purple-200 bg-purple-50 text-purple-700 hover:bg-purple-100'
-  };
-
   // 根据卡片类型设置不同的图标组合
   const getIcons = () => {
     if (title === '场景解决方案') {
@@ -88,13 +82,13 @@ const RecommendationCard = ({ title, description, icon, link, color }: Recommend
 
   return (
     <Link href={link} className="block group">
-      <div className={`p-4 sm:p-6 rounded-lg border-2 ${colorClasses[color]} transition-all duration-200 group-hover:shadow-lg`}>
+      <div className="bg-white rounded-lg border border-gray-200 p-4 sm:p-6 hover:shadow-md transition-all duration-200">
         <div className="flex items-center mb-3">
           <span className="text-2xl mr-3">{mainIcon}</span>
-          <h3 className="text-lg font-semibold">{title}</h3>
+          <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
         </div>
-        <p className="text-sm mb-4 opacity-90 leading-relaxed">{description}</p>
-        <div className="flex items-center text-sm font-medium group-hover:translate-x-1 transition-transform duration-200">
+        <p className="text-sm text-gray-600 mb-4 leading-relaxed">{description}</p>
+        <div className="flex items-center text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors duration-200">
           <span className="text-base mr-2">{actionIcon}</span>
           {title === '场景解决方案' ? '生活场景全覆盖' : '个性化症状分析'}
         </div>
