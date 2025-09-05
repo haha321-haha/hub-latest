@@ -58,7 +58,7 @@ const BottomRecommendations = ({ currentPage }: BottomRecommendationsProps) => {
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">相关工具</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
           {currentRecommendations.map((rec, index) => (
             <RecommendationCard key={index} {...rec} />
           ))}
@@ -75,16 +75,28 @@ const RecommendationCard = ({ title, description, icon, link, color }: Recommend
     purple: 'border-purple-200 bg-purple-50 text-purple-700 hover:bg-purple-100'
   };
 
+  // 根据卡片类型设置不同的图标组合
+  const getIcons = () => {
+    if (title === '场景解决方案') {
+      return { mainIcon: '🏠', actionIcon: '🏠' };
+    } else {
+      return { mainIcon: '📊', actionIcon: '📊' };
+    }
+  };
+
+  const { mainIcon, actionIcon } = getIcons();
+
   return (
     <Link href={link} className="block group">
-      <div className={`p-6 rounded-lg border-2 ${colorClasses[color]} transition-all duration-200 group-hover:shadow-lg`}>
+      <div className={`p-4 sm:p-6 rounded-lg border-2 ${colorClasses[color]} transition-all duration-200 group-hover:shadow-lg`}>
         <div className="flex items-center mb-3">
-          <span className="text-2xl mr-3">{icon}</span>
+          <span className="text-2xl mr-3">{mainIcon}</span>
           <h3 className="text-lg font-semibold">{title}</h3>
         </div>
-        <p className="text-sm mb-4 opacity-90">{description}</p>
+        <p className="text-sm mb-4 opacity-90 leading-relaxed">{description}</p>
         <div className="flex items-center text-sm font-medium group-hover:translate-x-1 transition-transform duration-200">
-          {icon} {title === '场景解决方案' ? '生活场景全覆盖' : '个性化症状分析'}
+          <span className="text-base mr-2">{actionIcon}</span>
+          {title === '场景解决方案' ? '生活场景全覆盖' : '个性化症状分析'}
         </div>
       </div>
     </Link>
