@@ -886,8 +886,8 @@ export default function NaturalTherapiesPage({
       </div>
 
       {/* Medical Disclaimer */}
-      <section className="bg-primary-50 border-l-4 border-primary-500 p-4 rounded-r-lg">
-        <p className="text-neutral-700">
+      <section className="bg-primary-50 border-l-4 border-primary-500 p-4 sm:p-6 rounded-r-lg">
+        <p className="text-sm sm:text-base text-neutral-700 leading-relaxed">
           <strong className="text-primary-700">
             {locale === 'zh' ? '医疗免责声明：' : 'Medical Disclaimer:'}
           </strong>
