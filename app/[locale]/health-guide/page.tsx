@@ -244,8 +244,8 @@ export default async function HealthGuidePage({
                 : 'Need immediate relief? Check our quick solutions.'
               }
             </p>
-            <Link 
-              href={`/${locale}/scenario-solutions`}
+                        <Link
+              href={`/${locale}/immediate-relief`}
               className="text-primary-600 hover:text-primary-700 font-medium text-sm"
             >
               {locale === 'zh' ? '查看场景解决方案' : 'View Scenario Solutions'} →
