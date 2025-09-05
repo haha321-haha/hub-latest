@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { unstable_setRequestLocale as setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
+import BottomRecommendations from '@/components/BottomRecommendations';
 
 // SEO Metadata - 实现你建议的长标题策略
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
@@ -913,6 +914,9 @@ export default function NaturalTherapiesPage({
           </div>
         </div>
       </div>
+
+      {/* 底部推荐工具 */}
+      <BottomRecommendations currentPage="natural-therapies" />
     </>
   );
 }

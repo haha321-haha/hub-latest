@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import StructuredData from '@/components/StructuredData';
 import { Locale, locales } from '@/i18n';
+import BottomRecommendations from '@/components/BottomRecommendations';
 
 // Generate metadata for the page
 export async function generateMetadata({
@@ -285,6 +286,9 @@ export default async function HealthGuidePage({
           </section>
         </div>
       </div>
+
+      {/* 底部推荐工具 */}
+      <BottomRecommendations currentPage="health-guide" />
     </div>
   );
 }
