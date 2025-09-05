@@ -612,6 +612,153 @@
     "actions": {
       "startPractice": "Start Practice →",
       "learnMore": "Learn More →"
+    },
+    "gentleMovementDetails": {
+      "yogaPoses": {
+        "title": "Yoga Poses for Relief",
+        "poses": [
+          {
+            "name": "Cat-Cow Pose",
+            "description": "Gently arch and round your back while on hands and knees",
+            "benefits": "Relieves lower back tension and improves spinal flexibility"
+          },
+          {
+            "name": "Child's Pose",
+            "description": "Kneel and sit back on your heels, then fold forward with arms extended",
+            "benefits": "Relaxes the pelvis and stretches the lower back"
+          },
+          {
+            "name": "Supine Twist",
+            "description": "Lie on your back, bring knees to chest, then drop them to one side",
+            "benefits": "Releases tension in the lower back and hips"
+          }
+        ]
+      },
+      "breathingExercises": {
+        "title": "Breathing Techniques",
+        "exercises": [
+          {
+            "name": "4-7-8 Breathing",
+            "steps": "Inhale for 4 counts, hold for 7, exhale for 8",
+            "benefits": "Activates parasympathetic nervous system, reduces stress"
+          },
+          {
+            "name": "Diaphragmatic Breathing",
+            "steps": "Breathe deeply into your belly, expanding on inhale",
+            "benefits": "Promotes relaxation and reduces muscle tension"
+          }
+        ]
+      },
+      "timing": {
+        "title": "When to Practice",
+        "preventive": "Daily practice during non-menstrual days",
+        "during": "At the first sign of cramps",
+        "continuous": "Throughout the day as needed"
+      }
+    },
+    "acupressureDetails": {
+      "title": "Key Acupressure Points",
+      "acupoints": [
+        {
+          "name": "Sanyinjiao (SP6)",
+          "location": "3 finger widths above inner ankle bone",
+          "method": "Apply firm pressure for 2-3 minutes",
+          "benefits": "Regulates menstruation and relieves pelvic pain"
+        },
+        {
+          "name": "Guanyuan (CV4)",
+          "location": "3 finger widths below navel",
+          "method": "Gentle circular massage for 5 minutes",
+          "benefits": "Strengthens reproductive system and reduces cramps"
+        },
+        {
+          "name": "Taichong (LV3)",
+          "location": "Between big toe and second toe, on top of foot",
+          "method": "Press firmly for 1-2 minutes",
+          "benefits": "Regulates liver qi and reduces emotional stress"
+        }
+      ],
+      "technique": {
+        "title": "Massage Technique",
+        "pressure": "Apply firm but comfortable pressure",
+        "time": "Hold each point for 2-3 minutes",
+        "duration": "Hold each point for 2-3 minutes",
+        "frequency": "Repeat 2-3 times daily during pain",
+        "precautions": "Note: Self-massage is supplementary only, cannot replace professional acupuncture treatment"
+      }
+    },
+    "combinationTherapy": {
+      "title": "Combination Therapy for Enhanced Relief",
+      "subtitle": "Combining multiple techniques can provide more effective relief than using them individually.",
+      "description": "Combining multiple techniques can provide more effective relief than using them individually.",
+      "combinations": [
+        {
+          "level": "Heat + Breathing",
+          "name": "Heat + Breathing",
+          "description": "Apply heat while practicing deep breathing",
+          "benefits": "Enhanced relaxation and pain reduction",
+          "methods": [
+            "Apply heat pack to lower abdomen",
+            "Practice 4-7-8 breathing technique",
+            "Maintain for 15-20 minutes"
+          ]
+        },
+        {
+          "level": "Acupressure + Movement",
+          "name": "Acupressure + Movement",
+          "description": "Gentle massage followed by light stretching",
+          "benefits": "Improved circulation and muscle relaxation",
+          "methods": [
+            "Massage SP6 acupoint for 2-3 minutes",
+            "Perform gentle pelvic tilts",
+            "Follow with light stretching"
+          ]
+        },
+        {
+          "level": "Heat + Acupressure",
+          "name": "Heat + Acupressure",
+          "description": "Warm compress on acupressure points",
+          "benefits": "Increased effectiveness of pressure point therapy",
+          "methods": [
+            "Apply warm compress to acupoints",
+            "Massage while heat is applied",
+            "Continue for 10-15 minutes"
+          ]
+        }
+      ]
+    },
+    "emergencyResponse": {
+      "title": "Emergency Response Protocol",
+      "subtitle": "When pain reaches severe levels (7+ on pain scale), follow these immediate steps:",
+      "description": "When pain reaches severe levels (7+ on pain scale), follow these immediate steps:",
+      "immediateActions": [
+        "Apply heat immediately (40-45°C)",
+        "Take prescribed pain medication if available",
+        "Practice 4-7-8 breathing technique",
+        "Find comfortable position (fetal position recommended)",
+        "Contact healthcare provider if pain persists"
+      ],
+      "medicalIndicators": {
+        "title": "Seek Medical Attention If:",
+        "indicators": [
+          "Pain level 8+ that doesn't respond to treatment",
+          "Severe nausea or vomiting",
+          "Fever above 100.4°F (38°C)",
+          "Unusual bleeding patterns",
+          "Pain that worsens over time"
+        ]
+      },
+      "emergencyKit": {
+        "title": "Emergency Relief Kit",
+        "description": "Keep these items readily available:",
+        "items": [
+          "Heat pack or hot water bottle",
+          "Pain medication (as prescribed)",
+          "Comfortable clothing",
+          "Water bottle",
+          "Emergency contact numbers"
+        ]
+      }
     }
   },
   "naturalTherapiesPage": {

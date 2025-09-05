@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -37,14 +36,14 @@ export async function generateMetadata({
   };
 }
 
-export default function ImmediateReliefPage({
+export default async function ImmediateReliefPage({
   params: { locale }
 }: {
   params: { locale: string }
 }) {
   // Get translations for the immediate relief page
-  const t = useTranslations('immediateReliefPage');
-  const commonT = useTranslations('common');
+  const t = await getTranslations({ locale, namespace: 'immediateReliefPage' });
+  const commonT = await getTranslations({ locale, namespace: 'common' });
   
   // 结构化数据
   const structuredData = {
