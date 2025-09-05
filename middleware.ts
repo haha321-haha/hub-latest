@@ -38,6 +38,13 @@ export default function middleware(request: NextRequest) {
     }
   }
   
+  // 🚨 修复重复内容问题 - 将重复URL重定向到主URL
+  if (pathname === '/zh/articles/health-tracking-and-analysis') {
+    const url = request.nextUrl.clone();
+    url.pathname = '/zh/articles/personal-health-profile';
+    return Response.redirect(url, 301);
+  }
+  
   // 特殊路径的301重定向
   if (pathname === '/teen-health') {
     const url = request.nextUrl.clone();
