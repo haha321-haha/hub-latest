@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 
+// Sitemap generator for periodhub.health
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.periodhub.health';
   const currentDate = new Date();
