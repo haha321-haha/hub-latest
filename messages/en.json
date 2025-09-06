@@ -1685,7 +1685,304 @@
   },
   "healthGuidePage": {
     "title": "Comprehensive Menstrual Health Guide - Medical Knowledge & Scientific Management",
-    "description": "Complete menstrual health guide covering causes, symptom identification, treatment methods, and lifestyle management. Based on latest medical research, providing scientific and practical health management strategies to help women better understand and address menstrual health issues. Includes global perspectives, lifestyle advice, and medical care guidance."
+    "description": "Complete menstrual health guide covering causes, symptom identification, treatment methods, and lifestyle management. Based on latest medical research, providing scientific and practical health management strategies to help women better understand and address menstrual health issues. Includes global perspectives, lifestyle advice, and medical care guidance.",
+    "keywords": "menstrual health guide,period health management,period pain causes,period pain treatment,lifestyle management,medical knowledge,health strategies",
+    "sections": {
+      "understandingPain": {
+        "title": "Understanding Menstrual Pain",
+        "description": "Deep dive into the causes, types, and physiological mechanisms of menstrual pain"
+      },
+      "reliefMethods": {
+        "title": "A-Z Relief Methods",
+        "description": "Comprehensive relief methods from A to Z, including immediate and long-term strategies"
+      },
+      "lifestyleManagement": {
+        "title": "Lifestyle Management",
+        "description": "Improve menstrual health through diet, exercise, and daily habits"
+      },
+      "whenSeekHelp": {
+        "title": "When to Seek Help",
+        "description": "Recognize symptoms and situations that require medical attention"
+      },
+      "mythsFacts": {
+        "title": "Myths vs Facts",
+        "description": "Clarify common misconceptions about menstrual health"
+      },
+      "globalPerspective": {
+        "title": "Global Perspectives",
+        "description": "Explore traditional therapies and cultural perspectives from around the world"
+      }
+    },
+    "hero": {
+      "title": "Comprehensive Menstrual Health Guide",
+      "subtitle": "Professional Medical Knowledge & Scientific Management",
+      "description": "Your complete menstrual health resource, from basics to advanced management strategies, helping you understand and manage your menstrual health comprehensively."
+    },
+    "whyGuide": {
+      "title": "Why This Guide?",
+      "description": "Menstrual pain affects the quality of life for millions of women worldwide. This comprehensive guide brings together the latest scientific research, traditional wisdom, and practical strategies to provide you with a complete knowledge system for better understanding, managing, and relieving menstrual discomfort."
+    },
+    "tools": {
+      "title": "🔧 Recommended Tools",
+      "painAssessment": {
+        "title": "Pain Assessment",
+        "description": "Assess pain severity"
+      },
+      "painTracker": {
+        "title": "Pain Tracker",
+        "description": "Track pain patterns"
+      },
+      "symptomAssessment": {
+        "title": "Symptom Assessment",
+        "description": "Comprehensive menstrual symptom evaluation"
+      },
+      "lifestyleGuide": {
+        "title": "Lifestyle Guide",
+        "description": "Personalized health recommendations"
+      }
+    },
+    "medicalPrinciples": {
+      "title": "🧬 Medical Principles & Scientific Mechanisms",
+      "description": "Deep understanding of the pathophysiological mechanisms of menstrual pain and the scientific principles behind effective treatments",
+      "anatomy": {
+        "title": "Key Anatomical Structures",
+        "imageAlt": "Female reproductive system anatomy highlighting menstrual pain areas",
+        "uterus": {
+          "title": "Uterus",
+          "description": "The primary site of menstrual pain, composed of muscle and endometrial layers. Muscle contractions are the direct cause of pain."
+        },
+        "endometrium": {
+          "title": "Endometrium",
+          "description": "Tissue that sheds during the menstrual cycle and is the main source of prostaglandin production."
+        },
+        "ovaries": {
+          "title": "Ovaries",
+          "description": "The control center for hormone secretion, regulating the entire menstrual cycle and pain occurrence."
+        }
+      },
+      "prostaglandinMechanism": {
+        "title": "🧬 Prostaglandin Mechanism",
+        "molecularEffects": {
+          "title": "Molecular Effects",
+          "enzymeActivation": {
+            "title": "Enzyme Activation:",
+            "description": "Phospholipase A2 in endometrial cells is activated, releasing arachidonic acid"
+          },
+          "synthesisPathway": {
+            "title": "Synthesis Pathway:",
+            "description": "Cyclooxygenase (COX-1/COX-2) catalyzes arachidonic acid to synthesize prostaglandins"
+          },
+          "mainProducts": {
+            "title": "Main Products:",
+            "description": "PGF2α and PGE2 are key molecules causing uterine contractions and pain"
+          }
+        },
+        "physiologicalEffects": {
+          "title": "⚡ Physiological Effects:",
+          "uterineContraction": {
+            "title": "Uterine Muscle Contraction:",
+            "description": "PGF2α stimulates strong uterine smooth muscle contractions, with intensity exceeding labor contractions"
+          },
+          "vasoconstriction": {
+            "title": "Vasoconstriction:",
+            "description": "Causes reduced uterine blood flow, leading to local ischemia and metabolite accumulation"
+          },
+          "neuralSensitization": {
+            "title": "Neural Sensitization:",
+            "description": "Activates pain nerve fibers, lowering pain threshold"
+          },
+          "inflammatoryResponse": {
+            "title": "Inflammatory Response:",
+            "description": "Promotes release of inflammatory mediators, exacerbating pain and discomfort"
+          }
+        }
+      },
+      "hormonalControl": {
+        "title": "⚖️ Hormonal Control Mechanism",
+        "estrogen": {
+          "title": "Estrogen",
+          "promotesThickening": "Promotes endometrial thickening",
+          "increasesSensitivity": "Increases uterine muscle sensitivity to prostaglandins",
+          "peaksBeforeOvulation": "Peaks before ovulation"
+        },
+        "progesterone": {
+          "title": "Progesterone",
+          "inhibitsContraction": "Inhibits uterine muscle contractions",
+          "stabilizesEndometrium": "Stabilizes endometrium",
+          "declinesBeforeMenstruation": "Declines sharply before menstruation"
+        },
+        "feedbackRegulation": {
+          "title": "Feedback Regulation",
+          "hypothalamicPituitaryOvarian": "Hypothalamic-pituitary-ovarian axis",
+          "gnrhPulsatileSecretion": "GnRH pulsatile secretion",
+          "fshLhCyclicalChanges": "FSH/LH cyclical changes",
+          "negativeFeedbackMechanism": "Negative feedback mechanism",
+          "balancePoint": "Balance point: Hormonal imbalance is the root cause of menstrual pain"
+        }
+      },
+      "neuralConduction": {
+        "title": "🧠 Neural Conduction Mechanism",
+        "painPathway": {
+          "title": "Pain Conduction Pathway",
+          "receptors": {
+            "title": "Receptors:",
+            "description": "Pain receptors in uterus and pelvic region"
+          },
+          "afferentNerves": {
+            "title": "Afferent Nerves:",
+            "description": "Conducted via sacral and lumbar sympathetic nerves"
+          },
+          "spinalProcessing": {
+            "title": "Spinal Processing:",
+            "description": "Initial integration in spinal dorsal horn"
+          },
+          "centralPerception": {
+            "title": "Central Perception:",
+            "description": "Transmitted to cerebral cortex to produce pain sensation"
+          }
+        },
+        "painControl": {
+          "title": "Pain Control Mechanism",
+          "gateControlTheory": {
+            "title": "Gate Control Theory",
+            "description": "Large fiber activation can inhibit pain signals, which is the physiological basis for the effectiveness of massage and heat therapy"
+          },
+          "endogenousAnalgesia": {
+            "title": "Endogenous Analgesia",
+            "description": "Release of endogenous opioid peptides like endorphins and enkephalins provides natural pain relief"
+          },
+          "descendingControl": {
+            "title": "Descending Control",
+            "description": "Brainstem nuclei regulate spinal pain conduction"
+          }
+        }
+      },
+      "treatmentMechanisms": {
+        "title": "💊 Scientific Mechanisms of Treatments",
+        "nsaids": {
+          "title": "NSAIDs",
+          "mechanism": "Mechanism:",
+          "mechanismDescription": "Inhibits COX enzyme activity",
+          "effect": "Effect:",
+          "effectDescription": "Reduces prostaglandin synthesis",
+          "representativeDrugs": "Representative Drugs:",
+          "representativeDrugsDescription": "Ibuprofen, Naproxen",
+          "bestTiming": "Best Timing:",
+          "bestTimingDescription": "Use before pain starts",
+          "efficacy": "Efficacy:",
+          "efficacyDescription": "Reduces pain by 70-80%"
+        },
+        "heatTherapy": {
+          "title": "Heat Therapy",
+          "mechanism": "Mechanism:",
+          "mechanismDescription": "Activates heat receptors",
+          "effect": "Effect:",
+          "effectDescription": "Gate control, vasodilation",
+          "temperature": "Temperature:",
+          "temperatureDescription": "40-45°C optimal",
+          "duration": "Duration:",
+          "durationDescription": "15-20 minutes per session",
+          "synergy": "Synergy:",
+          "synergyDescription": "Synergistic with NSAIDs"
+        },
+        "hormonalTherapy": {
+          "title": "Hormonal Therapy",
+          "mechanism": "Mechanism:",
+          "mechanismDescription": "Inhibits ovulation",
+          "effect": "Effect:",
+          "effectDescription": "Stabilizes hormone levels",
+          "type": "Type:",
+          "typeDescription": "Combined oral contraceptives",
+          "applicable": "Applicable:",
+          "applicableDescription": "Severe primary dysmenorrhea",
+          "efficacy": "Efficacy:",
+          "efficacyDescription": "90% of patients show improvement"
+        },
+        "exerciseTherapy": {
+          "title": "Exercise Therapy",
+          "mechanism": "Mechanism:",
+          "mechanismDescription": "Releases endorphins",
+          "effect": "Effect:",
+          "effectDescription": "Improves blood circulation",
+          "type": "Type:",
+          "typeDescription": "Aerobic exercise, yoga",
+          "intensity": "Intensity:",
+          "intensityDescription": "Moderate intensity optimal",
+          "longTerm": "Long-term:",
+          "longTermDescription": "Requires 6-8 weeks of consistent practice"
+        }
+      },
+      "researchProgress": {
+        "title": "🔬 Latest Research Progress",
+        "molecularTargets": {
+          "title": "🧬 Molecular Target Research",
+          "description": "Novel drug development targeting key molecules like COX-2 and prostaglandin receptors, improving treatment efficacy while reducing side effects"
+        },
+        "aiApplications": {
+          "title": "🤖 AI Applications",
+          "description": "Using machine learning algorithms to analyze menstrual pain patterns, providing personalized treatment plans and predictive models"
+        }
+      },
+      "geneTherapy": {
+        "title": "🧬 Gene Therapy Prospects",
+        "genePolymorphism": {
+          "title": "Gene Polymorphism Research",
+          "description": "Research shows that COX-2 gene polymorphisms are associated with dysmenorrhea severity, potentially enabling genotype-based personalized treatment in the future"
+        },
+        "epigeneticMechanisms": {
+          "title": "Epigenetic Mechanisms",
+          "description": "The role of DNA methylation and histone modifications in dysmenorrhea development is being intensively studied, providing clues for new therapeutic targets"
+        }
+      },
+      "clinicalEvidence": {
+        "title": "📊 Clinical Evidence",
+        "importantStudies": {
+          "title": "Important Clinical Studies",
+          "cochrane2020": {
+            "title": "Cochrane Systematic Review (2020)",
+            "studyContent": "Study Content:",
+            "studyContentDescription": "Efficacy and safety of NSAIDs for primary dysmenorrhea",
+            "sampleSize": "Sample Size:",
+            "sampleSizeDescription": "Covering 73 randomized controlled trials with 5,762 participants",
+            "conclusion": "Conclusion:",
+            "conclusionDescription": "NSAIDs are more effective than placebo for dysmenorrhea relief, with ibuprofen 600-1200mg/day showing best results"
+          },
+          "bmj2019": {
+            "title": "BMJ Published Study (2019)",
+            "studyContent": "Study Content:",
+            "studyContentDescription": "Evaluation of heat therapy efficacy for primary dysmenorrhea",
+            "method": "Method:",
+            "methodDescription": "Multicenter randomized controlled trial comparing heat therapy with ibuprofen",
+            "conclusion": "Conclusion:",
+            "conclusionDescription": "Continuous low-temperature heat therapy (39°C, 12 hours) equivalent to ibuprofen 400mg"
+          },
+          "jcm2021": {
+            "title": "Journal of Clinical Medicine (2021)",
+            "studyContent": "Study Content:",
+            "studyContentDescription": "Long-term effects of exercise intervention on dysmenorrhea",
+            "design": "Design:",
+            "designDescription": "12-week aerobic exercise training with long-term follow-up study",
+            "conclusion": "Conclusion:",
+            "conclusionDescription": "Regular moderate-intensity exercise significantly reduces dysmenorrhea frequency and severity"
+          }
+        },
+        "evidenceLevel": {
+          "title": "Evidence-Based Medicine Level",
+          "description": "All above studies reached Level Ia evidence (systematic reviews and meta-analyses), providing strong scientific basis for clinical practice"
+        }
+      }
+    },
+    "quickAccess": {
+      "title": "Quick Access",
+      "emergencyRelief": "Emergency Relief",
+      "emergencyReliefDescription": "Immediate methods to relieve menstrual pain",
+      "methodsTechniques": "Methods & Techniques",
+      "personalizedAssessment": "Personalized Assessment",
+      "personalizedAssessmentDescription": "Get personalized recommendations based on your symptoms",
+      "startAssessment": "Start Assessment",
+      "medicalDisclaimer": "Medical Disclaimer:",
+      "medicalDisclaimerText": "This guide is for reference only and cannot replace professional medical advice. Please seek medical attention for severe symptoms."
+    }
   },
   "teenHealth": {
     "meta": {
