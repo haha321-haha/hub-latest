@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Debug: Log environment variable (will be visible in build logs)
   console.log('Sitemap baseUrl:', baseUrl);
   console.log('NEXT_PUBLIC_BASE_URL env var:', process.env.NEXT_PUBLIC_BASE_URL);
+  console.log('Environment check - NODE_ENV:', process.env.NODE_ENV);
   
   const currentDate = new Date();
   
