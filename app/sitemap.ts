@@ -1,10 +1,13 @@
 import { MetadataRoute } from 'next';
 
-// Sitemap generator for periodhub.health - Force www prefix
+// Sitemap generator for periodhub.health - Environment variable with fallback
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Force www prefix for production sitemap
-  // Temporary hardcode to ensure www prefix in production
-  const baseUrl = 'https://www.periodhub.health';
+  // Environment variable with production fallback
+  const getBaseUrl = () => {
+    return process.env.NEXT_PUBLIC_BASE_URL || 'https://www.periodhub.health';
+  };
+  
+  const baseUrl = getBaseUrl();
   
   // Debug: Log environment variable (will be visible in build logs)
   console.log('Sitemap baseUrl:', baseUrl);
