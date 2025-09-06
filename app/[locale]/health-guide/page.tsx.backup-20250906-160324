@@ -212,18 +212,11 @@ export default async function HealthGuidePage({
           <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
-                <picture>
-                  <source media="(min-width: 768px)" srcSet="/images/medical/_---female_reproductive_system_anatomy_800x800.webp" type="image/webp" />
-                  <source media="(min-width: 768px)" srcSet="/images/medical/_---female_reproductive_system_anatomy_800x800.png" type="image/png" />
-                  <source media="(max-width: 767px)" srcSet="/images/medical/_---female_reproductive_system_anatomy_400x400.webp" type="image/webp" />
-                  <source media="(max-width: 767px)" srcSet="/images/medical/_---female_reproductive_system_anatomy_400x400.png" type="image/png" />
-                  <img 
-                    src="/images/medical/_---female_reproductive_system_anatomy_800x800.png" 
-                    alt={locale === 'zh' ? '女性生殖系统解剖图，标注经期疼痛相关区域' : 'Female reproductive system anatomy highlighting menstrual pain areas'}
-                    className="w-full h-auto rounded-lg shadow-md"
-                    loading="lazy"
-                  />
-                </picture>
+                <img 
+                  src="https://r2.flowith.net/files/o/1748194147183-female_reproductive_system_anatomy_highlighting_menstrual_pain_areas_index_0@1024x1024.png" 
+                  alt={locale === 'zh' ? '女性生殖系统解剖图，标注经期疼痛相关区域' : 'Female reproductive system anatomy highlighting menstrual pain areas'}
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
               </div>
               
               <div>

@@ -6,14 +6,14 @@ date: "2024-12-19"
 reading_time: "25分钟"
 category: "自然疗法"
 tags: ["精油疗法", "痛经缓解", "自然疗法", "芳香疗法", "女性健康"]
-featured_image: "https://r2.flowith.net/files/o/1749296122605-lavender_essential_oil_aesthetic_composition_index_0@1024x1024.png"
+featured_image: "/images/essential-oils/lavender_essential_oil_800x800.png"
 seo_title: "精油芳香疗法缓解痛经：科学有效的自然疗法指南"
 seo_description: "专业详解6种核心精油缓解痛经的科学原理与使用方法。薰衣草、肉桂、玫瑰等精油的功效、安全指南，基于科学研究的自然痛经缓解方案。"
 ---
 
 # 精油芳香疗法缓解痛经：全面指南
 
-![精油芳香疗法](https://r2.flowith.net/files/o/1749296122605-lavender_essential_oil_aesthetic_composition_index_0@1024x1024.png)
+![精油芳香疗法](/images/essential-oils/lavender_essential_oil_800x800.png)
 
 ## 引言
 
@@ -36,7 +36,7 @@ seo_description: "专业详解6种核心精油缓解痛经的科学原理与使�
 
 ### 1. 薰衣草精油 (Lavender)
 
-![薰衣草精油](https://r2.flowith.net/files/o/1749296122605-lavender_essential_oil_aesthetic_composition_index_0@1024x1024.png)
+![薰衣草精油](/images/essential-oils/lavender_essential_oil_800x800.png)
 
 **主要功效**：镇痛、镇静、抗痉挛、改善情绪。
 
@@ -56,7 +56,7 @@ seo_description: "专业详解6种核心精油缓解痛经的科学原理与使�
 
 ### 2. 肉桂精油 (Cinnamon)
 
-![肉桂精油](https://r2.flowith.net/files/o/1749296116036-cinnamon_essential_oil_aesthetic_composition_index_1@1024x1024.png)
+![肉桂精油](/images/essential-oils/cinnamon_essential_oil_800x800.png)
 
 **主要功效**：温热、促进血液循环、抗炎、抗痉挛。
 
@@ -73,7 +73,7 @@ seo_description: "专业详解6种核心精油缓解痛经的科学原理与使�
 
 ### 3. 玫瑰精油 (Rose)
 
-![玫瑰精油](https://r2.flowith.net/files/o/1749296239761-elegant_romantic_rose_essential_oil_composition_index_2@1536x1024.png)
+![玫瑰精油](/images/essential-oils/rose_essential_oil_800x800.png)
 
 **主要功效**：平衡荷尔蒙、抗抑郁、镇痛、舒缓情绪。
 
@@ -91,7 +91,7 @@ seo_description: "专业详解6种核心精油缓解痛经的科学原理与使�
 
 ### 4. 马郁兰精油 (Marjoram)
 
-![马郁兰精油](https://r2.flowith.net/files/o/1749296205527-marjoram_essential_oil_aesthetic_image_index_3@1536x1024.png)
+![马郁兰精油](/images/essential-oils/marjoram_essential_oil_800x800.png)
 
 **主要功效**：抗痉挛、抗炎、镇痛、放松肌肉。
 
@@ -107,7 +107,7 @@ seo_description: "专业详解6种核心精油缓解痛经的科学原理与使�
 
 ### 5. 生姜精油 (Ginger)
 
-![生姜精油](https://r2.flowith.net/files/o/1749296135747-fresh_ginger_and_essential_oil_aesthetic_image_index_4@1024x1024.png)
+![生姜精油](/images/essential-oils/ginger_essential_oil_800x800.png)
 
 **主要功效**：温热、促进血液循环、抗炎、抗痉挛。
 
@@ -124,7 +124,7 @@ seo_description: "专业详解6种核心精油缓解痛经的科学原理与使�
 
 ### 6. 罗马洋甘菊精油 (Roman Chamomile)
 
-![罗马洋甘菊精油](https://r2.flowith.net/files/o/1749296123349-roman_chamomile_essential_oil_aesthetic_display_index_5@1024x1024.png)
+![罗马洋甘菊精油](/images/essential-oils/chamomile_essential_oil_800x800.png)
 
 **主要功效**：抗痉挛、消炎、镇静、舒缓情绪。
 

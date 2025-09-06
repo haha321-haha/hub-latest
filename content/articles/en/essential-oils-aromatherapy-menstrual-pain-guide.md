@@ -6,14 +6,14 @@ date: "2024-12-19"
 reading_time: "25 minutes"
 category: "Natural Therapy"
 tags: ["essential oil therapy", "menstrual pain relief", "natural therapy", "aromatherapy", "women's health"]
-featured_image: "https://r2.flowith.net/files/o/1749296122605-lavender_essential_oil_aesthetic_composition_index_0@1024x1024.png"
+featured_image: "/images/essential-oils/lavender_essential_oil_800x800.png"
 seo_title: "Essential Oils for Menstrual Pain Relief: Science-Based Natural Therapy Guide"
 seo_description: "Professional guide to 6 core essential oils for menstrual pain relief. Scientific principles and usage methods for lavender, cinnamon, rose oils with safety guidelines based on research."
 ---
 
 # Essential Oils Aromatherapy for Menstrual Pain Relief: Complete Guide
 
-![Essential Oils Aromatherapy](https://r2.flowith.net/files/o/1749296122605-lavender_essential_oil_aesthetic_composition_index_0@1024x1024.png)
+![Essential Oils Aromatherapy](/images/essential-oils/lavender_essential_oil_800x800.png)
 
 ## Introduction
 
@@ -36,7 +36,7 @@ The scientific principles behind essential oil aromatherapy for menstrual pain r
 
 ### 1. Lavender Essential Oil
 
-![Lavender Essential Oil](https://r2.flowith.net/files/o/1749296122605-lavender_essential_oil_aesthetic_composition_index_0@1024x1024.png)
+![Lavender Essential Oil](/images/essential-oils/lavender_essential_oil_800x800.png)
 
 **Main Benefits**: Analgesic, sedative, antispasmodic, mood improvement.
 
@@ -56,7 +56,7 @@ The scientific principles behind essential oil aromatherapy for menstrual pain r
 
 ### 2. Cinnamon Essential Oil
 
-![Cinnamon Essential Oil](https://r2.flowith.net/files/o/1749296116036-cinnamon_essential_oil_aesthetic_composition_index_1@1024x1024.png)
+![Cinnamon Essential Oil](/images/essential-oils/cinnamon_essential_oil_800x800.png)
 
 **Main Benefits**: Warming, promotes blood circulation, anti-inflammatory, antispasmodic.
 
@@ -73,7 +73,7 @@ The scientific principles behind essential oil aromatherapy for menstrual pain r
 
 ### 3. Rose Essential Oil
 
-![Rose Essential Oil](https://r2.flowith.net/files/o/1749296239761-elegant_romantic_rose_essential_oil_composition_index_2@1536x1024.png)
+![Rose Essential Oil](/images/essential-oils/rose_essential_oil_800x800.png)
 
 **Main Benefits**: Hormone balancing, antidepressant, analgesic, mood soothing.
 
@@ -91,7 +91,7 @@ The scientific principles behind essential oil aromatherapy for menstrual pain r
 
 ### 4. Marjoram Essential Oil
 
-![Marjoram Essential Oil](https://r2.flowith.net/files/o/1749296205527-marjoram_essential_oil_aesthetic_image_index_3@1536x1024.png)
+![Marjoram Essential Oil](/images/essential-oils/marjoram_essential_oil_800x800.png)
 
 **Main Benefits**: Antispasmodic, anti-inflammatory, analgesic, muscle relaxation.
 
@@ -107,7 +107,7 @@ The scientific principles behind essential oil aromatherapy for menstrual pain r
 
 ### 5. Ginger Essential Oil
 
-![Ginger Essential Oil](https://r2.flowith.net/files/o/1749296135747-fresh_ginger_and_essential_oil_aesthetic_image_index_4@1024x1024.png)
+![Ginger Essential Oil](/images/essential-oils/ginger_essential_oil_800x800.png)
 
 **Main Benefits**: Warming, promotes blood circulation, anti-inflammatory, antispasmodic.
 
@@ -124,7 +124,7 @@ The scientific principles behind essential oil aromatherapy for menstrual pain r
 
 ### 6. Roman Chamomile Essential Oil
 
-![Roman Chamomile Essential Oil](https://r2.flowith.net/files/o/1749296123349-roman_chamomile_essential_oil_aesthetic_display_index_5@1024x1024.png)
+![Roman Chamomile Essential Oil](/images/essential-oils/chamomile_essential_oil_800x800.png)
 
 **Main Benefits**: Antispasmodic, anti-inflammatory, sedative, mood soothing.
 
