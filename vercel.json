@@ -2,7 +2,7 @@
   "framework": "nextjs",
   "buildCommand": "npm run build",
   "env": {
-    "NEXT_PUBLIC_BASE_URL": "https://periodhub.health",
+    "NEXT_PUBLIC_BASE_URL": "https://www.periodhub.health",
     "NEXT_TELEMETRY_DISABLED": "1"
   },
   "functions": {

@@ -189,8 +189,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-
-
   // PDF 资源文件 - 只包含有语言后缀的文件（用户实际需要的）
   const pdfFiles = [
     // 中文版PDF
