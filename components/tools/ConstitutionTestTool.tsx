@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 interface ConstitutionTestToolProps {
   locale?: string;
@@ -16,6 +17,7 @@ export default function ConstitutionTestTool({ locale = 'zh' }: ConstitutionTest
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [showResult, setShowResult] = useState(false);
+  const t = useTranslations('constitutionTest');
 
   const questions: Question[] = locale === 'zh' ? [
     {
@@ -117,7 +119,7 @@ export default function ConstitutionTestTool({ locale = 'zh' }: ConstitutionTest
     return (
       <div className="bg-green-50 rounded-xl p-6">
         <h3 className="text-xl font-bold text-green-700 mb-4">
-          {locale === 'zh' ? '测试结果' : 'Test Result'}
+          {t('testResult')}
         </h3>
         <div className="mb-4">
           <div className="text-lg font-semibold text-green-600">{result.type}</div>
@@ -127,7 +129,7 @@ export default function ConstitutionTestTool({ locale = 'zh' }: ConstitutionTest
           onClick={resetTest}
           className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg"
         >
-          {locale === 'zh' ? '重新测试' : 'Retake Test'}
+          {t('retakeTest')}
         </button>
       </div>
     );

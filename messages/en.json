@@ -425,6 +425,10 @@
   "breadcrumb": {
     "home": "Home"
   },
+  "constitutionTest": {
+    "testResult": "Test Result",
+    "retakeTest": "Retake Test"
+  },
     "resources": {
       "painTrackingForm": {
         "title": "Pain Tracking Form",

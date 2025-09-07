@@ -425,6 +425,10 @@
     "breadcrumb": {
       "home": "首页"
     },
+    "constitutionTest": {
+      "testResult": "测试结果",
+      "retakeTest": "重新测试"
+    },
     "resources": {
       "painTrackingForm": {
         "title": "疼痛追踪表",
