@@ -101,6 +101,9 @@
       "precisionPrediction": "精准预测",
       "precisionPredictionDesc": "基于数据的周期预测"
     },
+    "immediateRelief": "⚡ 即时缓解",
+    "toolsCount": "5个",
+    "articlesCount": "66篇",
     "cta": {
       "primary": "开始探索",
       "secondary": "了解更多"
@@ -421,11 +424,6 @@
     },
     "breadcrumb": {
       "home": "首页"
-    },
-    "hero": {
-      "immediateRelief": "⚡ 即时缓解",
-      "toolsCount": "5个",
-      "articlesCount": "66篇"
     },
     "resources": {
       "painTrackingForm": {

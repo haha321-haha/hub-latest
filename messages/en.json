@@ -100,6 +100,9 @@
       "precisionPrediction": "Precision Prediction",
       "precisionPredictionDesc": "Data-driven cycle prediction"
     },
+    "immediateRelief": "⚡ Immediate Relief",
+    "toolsCount": "5",
+    "articlesCount": "66",
     "cta": {
       "primary": "Start Exploring",
       "secondary": "Learn More"
@@ -421,11 +424,6 @@
   },
   "breadcrumb": {
     "home": "Home"
-  },
-  "hero": {
-    "immediateRelief": "⚡ Immediate Relief",
-    "toolsCount": "5",
-    "articlesCount": "66"
   },
     "resources": {
       "painTrackingForm": {
