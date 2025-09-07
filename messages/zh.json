@@ -441,6 +441,14 @@
       "updated": "更新时间：",
       "locale": "zh-CN"
     },
+    "pdfCenterOptimized": {
+      "searchPlaceholder": "搜索PDF资源...",
+      "filter": "筛选",
+      "all": "全部",
+      "noMatchingResources": "未找到匹配的资源",
+      "downloadNow": "立即下载",
+      "loadMore": "加载更多"
+    },
     "resources": {
       "painTrackingForm": {
         "title": "疼痛追踪表",

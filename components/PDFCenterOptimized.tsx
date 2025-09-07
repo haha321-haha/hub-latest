@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { Search, Filter, Download, Star, Clock, Tag, ChevronRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 // import { PDFResource, PDFCategory } from '../types/pdf';
 // import { PDF_CATEGORIES, PDF_RESOURCES } from '../config/pdfResources';
 
@@ -42,6 +43,7 @@ export default function PDFCenterOptimized({
   showFilters = true,
   maxResults = 20
 }: PDFCenterOptimizedProps) {
+  const t = useTranslations('pdfCenterOptimized');
   const [selectedCategory, setSelectedCategory] = useState<PDFCategory | 'all'>(initialCategory || 'all');
   const [searchQuery, setSearchQuery] = useState('');
   const [filters, setFilters] = useState<PDFFilterOptions>({});
@@ -108,7 +110,7 @@ export default function PDFCenterOptimized({
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="text"
-              placeholder={locale === 'zh' ? '搜索PDF资源...' : 'Search PDF resources...'}
+              placeholder={t('searchPlaceholder')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
@@ -121,7 +123,7 @@ export default function PDFCenterOptimized({
               className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-purple-600 transition-colors"
             >
               <Filter className="w-4 h-4" />
-              {locale === 'zh' ? '筛选' : 'Filter'}
+              {t('filter')}
             </button>
           )}
         </div>
@@ -138,7 +140,7 @@ export default function PDFCenterOptimized({
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
-            {locale === 'zh' ? '全部' : 'All'} ({PDF_RESOURCES.length})
+            {t('all')} ({PDF_RESOURCES.length})
           </button>
           
           {PDF_CATEGORIES.map((category) => (
@@ -166,7 +168,7 @@ export default function PDFCenterOptimized({
         {filteredResources.length === 0 ? (
           <div className="text-center py-12 text-gray-500">
             <Search className="w-12 h-12 mx-auto mb-4 opacity-50" />
-            <p>{locale === 'zh' ? '未找到匹配的资源' : 'No matching resources found'}</p>
+            <p>{t('noMatchingResources')}</p>
           </div>
         ) : (
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -229,7 +231,7 @@ export default function PDFCenterOptimized({
                     className="w-full flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-4 rounded-lg transition-colors"
                   >
                     <Download className="w-4 h-4" />
-                    {locale === 'zh' ? '立即下载' : 'Download Now'}
+                    {t('downloadNow')}
                   </button>
                 </div>
               );
@@ -242,7 +244,7 @@ export default function PDFCenterOptimized({
       {filteredResources.length === maxResults && (
         <div className="text-center">
           <button className="px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors">
-            {locale === 'zh' ? '加载更多' : 'Load More'}
+            {t('loadMore')}
           </button>
         </div>
       )}

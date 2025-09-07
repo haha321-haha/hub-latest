@@ -441,6 +441,14 @@
     "updated": "Updated: ",
     "locale": "en-US"
   },
+  "pdfCenterOptimized": {
+    "searchPlaceholder": "Search PDF resources...",
+    "filter": "Filter",
+    "all": "All",
+    "noMatchingResources": "No matching resources found",
+    "downloadNow": "Download Now",
+    "loadMore": "Load More"
+  },
     "resources": {
       "painTrackingForm": {
         "title": "Pain Tracking Form",
