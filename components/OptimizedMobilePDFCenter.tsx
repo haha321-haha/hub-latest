@@ -42,7 +42,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
   const [isEmergencyMode, setIsEmergencyMode] = useState(false);
 
   // 获取翻译函数 - 移到组件顶部，避免条件性调用
-  const t = useTranslations('downloadsPage.resources');
+  const t = useTranslations('pdfCenter');
   const articlesT = useTranslations('articlesPage.categories');
 
   // 类别标题翻译

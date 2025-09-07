@@ -28,7 +28,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
   const router = useRouter();
   
   // 🌐 翻译系统
-  const t = useTranslations('pdfCenter.search');
+  const t = useTranslations('pdfCenter');
   
   // 计算总资源数
   const totalResources = SITE_CONFIG.statistics.articles + SITE_CONFIG.statistics.pdfResources;
