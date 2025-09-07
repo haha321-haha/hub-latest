@@ -348,25 +348,25 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         },
         {
           id: 'immediate-5',
-          title: locale === 'zh' ? '生姜经期疼痛缓解指南' : 'Ginger Menstrual Pain Relief Guide',
+          title: t('immediate.gingerRelief'),
           type: 'article' as const,
-          readTime: locale === 'zh' ? '12分钟' : '12 min read',
+          readTime: t('immediate.gingerReliefTime'),
           category: 'immediate',
           keywords: locale === 'zh' ? ['生姜', '缓解', '疼痛', '自然', '天然'] : ['ginger', 'relief', 'pain', 'natural', 'herbal']
         },
         {
           id: 'immediate-6',
-          title: locale === 'zh' ? '非甾体抗炎药专业指南' : 'NSAID Professional Guide',
+          title: t('immediate.nsaidGuide'),
           type: 'article' as const,
-          readTime: locale === 'zh' ? '15分钟' : '15 min read',
+          readTime: t('immediate.nsaidGuideTime'),
           category: 'immediate',
           keywords: locale === 'zh' ? ['止痛药', '药物', '医学', '专业', '抗炎', '治疗'] : ['pain', 'medication', 'medical', 'professional', 'anti-inflammatory', 'treatment']
         },
         {
           id: 'immediate-7',
-          title: locale === 'zh' ? '特定痛经管理指南' : 'Specific Menstrual Pain Management',
+          title: t('immediate.specificManagement'),
           type: 'article' as const,
-          readTime: locale === 'zh' ? '20分钟' : '20 min read',
+          readTime: t('immediate.specificManagementTime'),
           category: 'immediate'
         },
         // 即时缓解PDF (7个：3个现有 + 4个新增)

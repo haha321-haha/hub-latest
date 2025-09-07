@@ -476,8 +476,11 @@
         "painTrackingForm": "疼痛追踪表格",
         "painTrackingFormTime": "PDF",
         "painTrackingFormDesc": "记录和追踪疼痛程度的专业表格",
-        "campusChecklist": "校园紧急检查清单",
-        "campusChecklistTime": "PDF"
+      "campusChecklist": "校园紧急检查清单",
+      "campusChecklistTime": "PDF",
+      "campusChecklistDesc": "校园环境中经期紧急情况的应对清单",
+      "specificPainManagementPdf": "特定痛经管理指南PDF",
+      "specificPainManagementPdfTime": "PDF"
       }
     },
     "resources": {
