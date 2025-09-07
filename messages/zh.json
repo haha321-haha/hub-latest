@@ -429,6 +429,14 @@
       "testResult": "测试结果",
       "retakeTest": "重新测试"
     },
+    "pdfCard": {
+      "featured": "推荐",
+      "category": "分类",
+      "downloadPdf": "下载PDF",
+      "htmlPreview": "HTML预览",
+      "copyLink": "复制链接",
+      "openInNewTab": "新窗口打开"
+    },
     "resources": {
       "painTrackingForm": {
         "title": "疼痛追踪表",

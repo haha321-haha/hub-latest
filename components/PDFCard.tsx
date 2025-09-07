@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Download, ExternalLink, Copy, Check, Eye } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { LocalizedPDFResource, Locale } from '@/types/pdf';
 import { 
   formatFileSize, 
@@ -28,6 +29,7 @@ export default function PDFCard({
 }: PDFCardProps) {
   const [isDownloading, setIsDownloading] = useState(false);
   const [copied, setCopied] = useState(false);
+  const t = useTranslations('pdfCard');
 
   const handleDownload = async () => {
     if (isDownloading) return;
@@ -75,7 +77,7 @@ export default function PDFCard({
       {resource.featured && (
         <div className="absolute top-3 right-3 z-10">
           <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs px-2 py-1 rounded-full font-medium">
-            {locale === 'zh' ? '推荐' : 'Featured'}
+            {t('featured')}
           </div>
         </div>
       )}
@@ -84,7 +86,7 @@ export default function PDFCard({
       <div className={`absolute top-3 left-3 z-10 ${categoryBgClass} px-2 py-1 rounded-lg text-xs font-medium`}>
         <span className="mr-1">{resource.icon}</span>
         <span className="text-gray-700">
-          {locale === 'zh' ? '分类' : 'Category'}
+          {t('category')}
         </span>
       </div>
 
@@ -144,12 +146,12 @@ export default function PDFCard({
             {isDownloading ? (
               <>
                 <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                <span>{locale === 'zh' ? '下载PDF' : 'Download PDF'}</span>
+                <span>{t('downloadPdf')}</span>
               </>
             ) : (
               <>
                 <Download className="w-4 h-4" />
-                <span>{locale === 'zh' ? '下载PDF' : 'Download PDF'}</span>
+                <span>{t('downloadPdf')}</span>
               </>
             )}
           </button>
@@ -158,7 +160,7 @@ export default function PDFCard({
           <button
             onClick={() => window.open(`/${locale}/resources/${resource.id}`, '_blank')}
             className="p-2.5 bg-blue-100 hover:bg-blue-200 rounded-lg transition-colors group/preview"
-            title={locale === 'zh' ? 'HTML预览' : 'HTML Preview'}
+            title={t('htmlPreview')}
           >
             <Eye className="w-4 h-4 text-blue-600 group-hover/preview:text-blue-800" />
           </button>
@@ -167,7 +169,7 @@ export default function PDFCard({
           <button
             onClick={handleCopyLink}
             className="p-2.5 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors group/copy"
-            title={locale === 'zh' ? '复制链接' : 'Copy Link'}
+            title={t('copyLink')}
           >
             {copied ? (
               <Check className="w-4 h-4 text-green-600" />
@@ -180,7 +182,7 @@ export default function PDFCard({
           <button
             onClick={() => window.open(resource.downloadUrl, '_blank')}
             className="p-2.5 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors group/external"
-            title={locale === 'zh' ? '新窗口打开' : 'Open in New Tab'}
+            title={t('openInNewTab')}
           >
             <ExternalLink className="w-4 h-4 text-gray-600 group-hover/external:text-gray-800" />
           </button>

@@ -429,6 +429,14 @@
     "testResult": "Test Result",
     "retakeTest": "Retake Test"
   },
+  "pdfCard": {
+    "featured": "Featured",
+    "category": "Category",
+    "downloadPdf": "Download PDF",
+    "htmlPreview": "HTML Preview",
+    "copyLink": "Copy Link",
+    "openInNewTab": "Open in New Tab"
+  },
     "resources": {
       "painTrackingForm": {
         "title": "Pain Tracking Form",
