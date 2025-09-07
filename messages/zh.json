@@ -761,7 +761,194 @@
     "traditionalPractices": "传统习俗",
     "consistencyIsKeyTitle": "持之以恒是关键",
     "consistencyIsKeyText": "整合这些自然方法需要时间和坚持。请对自己保持耐心，并专注于培养可持续的习惯，以支持您整个生理周期（而不仅仅是经期）的身体健康。",
-    "contentSectionTitle": "相关疗法与指南"
+    "contentSectionTitle": "相关疗法与指南",
+    "meta": {
+      "title": "痛经自然疗法大全 | 8种科学验证的缓解方法 [2025] - PeriodHub",
+      "description": "探索8种科学验证的痛经自然疗法：从热敷到瑜伽，从草药到针灸。基于循证医学的完整指南，适用于青少年到职场女性。无副作用，安全有效。",
+      "keywords": "痛经自然疗法,痛经缓解方法,经期疼痛自然疗法,痛经调理,经期不适,自然止痛,热敷缓解痛经,瑜伽缓解痛经,草药治疗痛经,针灸治疗痛经,按摩缓解痛经,热敷,敷热水袋,暖宝宝,按摩,揉肚子,止痛药,痛经快速缓解5分钟,青少年痛经怎么办,职场女性痛经应对,无药物痛经缓解"
+    },
+    "hero": {
+      "title": "自然疗法",
+      "subtitle": "通过科学的自然疗法，安全有效地缓解痛经"
+    },
+    "scientificFoundation": {
+      "title": "自然疗法的科学基础",
+      "description": "自然疗法通过激活人体自愈机制，调动内在资源来缓解疼痛。现代医学研究证实，许多传统自然疗法具有明确的生理学基础，能够有效影响疼痛传导、炎症反应和肌肉功能。",
+      "benefits": {
+        "noSideEffects": {
+          "title": "无副作用",
+          "description": "避免药物依赖和不良反应"
+        },
+        "holisticApproach": {
+          "title": "整体调理",
+          "description": "改善整体健康状态"
+        },
+        "costEffective": {
+          "title": "经济实用",
+          "description": "成本低廉，易于实施"
+        }
+      }
+    },
+    "therapies": {
+      "title": "自然疗法详细指南",
+      "heatTherapy": {
+        "title": "热敷疗法",
+        "subtitle": "科学验证的首选缓解方法",
+        "description": "热敷疗法是最有效、应用最广泛的痛经自然缓解方法之一。它通过激活人体天然止痛机制和改善血液循环来发挥作用。",
+        "parameters": {
+          "title": "科学参数",
+          "temperature": "温度：",
+          "duration": "时长：",
+          "frequency": "频率：",
+          "timing": "时机：",
+          "mechanism": "作用机制：",
+          "temperatureValue": "40-45°C (104-113°F)",
+          "durationValue": "15-20分钟 / minutes",
+          "frequencyValue": "根据需要使用，最多3-4次/天",
+          "timingValue": "疼痛开始时，持续2-3天",
+          "mechanismValue": "增加血流，放松子宫肌肉"
+        },
+        "mechanism": {
+          "title": "科学机制深度解析",
+          "gateControl": {
+            "title": "闸门控制理论",
+            "description": "热敷激活大直径神经纤维，通过脊髓的闸门控制机制抑制疼痛信号传导。"
+          },
+          "vasodilation": {
+            "title": "血管扩张与循环改善",
+            "description": "热量使局部血管扩张，改善血流，减少肌肉紧张。"
+          }
+        },
+        "safety": {
+          "title": "安全注意事项",
+          "guidelines": [
+            "避免温度超过48°C，存在烫伤风险",
+            "糖尿病患者需谨慎使用",
+            "皮肤破损或感染时禁用"
+          ]
+        }
+      },
+      "herbalTherapy": {
+        "title": "草本疗法",
+        "subtitle": "植物药学的科学应用",
+        "description": "草本疗法利用植物化合物自然调节人体的炎症反应和疼痛感知机制。",
+        "herbs": {
+          "ginger": {
+            "title": "生姜 - 温阳散寒",
+            "activeCompounds": "活性成分：",
+            "mechanism": "作用机制：",
+            "clinicalEvidence": "临床证据：",
+            "activeCompoundsValue": "6-姜酚、8-姜酚",
+            "mechanismValue": "抑制环氧化酶-2，减少前列腺素合成",
+            "clinicalEvidenceValue": "每日1-1.5g生姜粉，减轻痛经强度达62%"
+          },
+          "angelica": {
+            "title": "当归 - 妇科圣药",
+            "activeCompounds": "活性成分：",
+            "mechanism": "作用机制：",
+            "classicFormula": "经典方剂：",
+            "activeCompoundsValue": "挥发油、有机酸、多糖类",
+            "mechanismValue": "双向调节子宫平滑肌，改善微循环",
+            "classicFormulaValue": "四物汤、当归补血汤"
+          }
+        },
+        "usage": {
+          "title": "使用指导",
+          "gingerTea": {
+            "title": "生姜茶制作",
+            "description": "鲜姜15g + 红糖30g，煮水15分钟，适于寒性痛经"
+          },
+          "angelicaDecoction": {
+            "title": "当归煎剂",
+            "description": "15-30g水煎，经前一周开始服用，连续3-5天"
+          }
+        },
+        "safety": {
+          "title": "安全提醒",
+          "guidelines": [
+            "首次使用应咨询中医师或药师",
+            "孕妇或备孕期妇女禁用活血化瘀类中药",
+            "注意观察过敏反应，如有不适立即停用"
+          ]
+        }
+      },
+      "dietaryAdjustment": {
+        "title": "饮食调整",
+        "subtitle": "抗炎饮食的科学应用",
+        "description": "饮食调整可以通过有针对性的营养素摄入，显著减少炎症并改善经期健康。",
+        "nutrients": {
+          "omega3": {
+            "title": "Omega-3脂肪酸",
+            "sources": "来源：",
+            "mechanism": "作用机制：",
+            "sourcesValue": "深海鱼、亚麻籽、核桃",
+            "mechanismValue": "抑制前列腺素合成，减少炎症"
+          },
+          "magnesium": {
+            "title": "镁元素",
+            "sources": "来源：",
+            "mechanism": "作用机制：",
+            "sourcesValue": "坚果、绿叶蔬菜、全谷物",
+            "mechanismValue": "放松肌肉，缓解痉挛"
+          },
+          "vitaminB6": {
+            "title": "维生素B6",
+            "sources": "来源：",
+            "mechanism": "作用机制：",
+            "sourcesValue": "香蕉、土豆、鸡肉",
+            "mechanismValue": "调节激素平衡"
+          }
+        },
+        "foods": {
+          "title": "抗炎食物推荐",
+          "recommended": {
+            "title": "推荐食物",
+            "list": [
+              "三文鱼、沙丁鱼（富含Omega-3）",
+              "菠菜、羽衣甘蓝（富含镁）",
+              "姜黄、生姜（天然抗炎）",
+              "浆果类（抗氧化）"
+            ]
+          },
+          "avoid": {
+            "title": "避免食物",
+            "list": [
+              "高糖食物（增加炎症）",
+              "精制碳水化合物",
+              "过量咖啡因",
+              "加工肉类"
+            ]
+          }
+        }
+      },
+      "yogaExercise": {
+        "title": "瑜伽运动",
+        "subtitle": "身心合一的自然疗法",
+        "description": "瑜伽和温和运动将身体运动与心理放松相结合，通过多种机制提供全面的疼痛缓解。",
+        "poses": {
+          "title": "推荐瑜伽体式",
+          "catCow": {
+            "title": "猫牛式",
+            "description": "缓解下背部紧张，改善脊柱灵活性"
+          },
+          "childPose": {
+            "title": "婴儿式",
+            "description": "放松盆腔，拉伸下背部"
+          },
+          "supineTwist": {
+            "title": "仰卧扭转",
+            "description": "释放下背部和髋部紧张"
+          }
+        },
+        "science": {
+          "title": "运动科学原理",
+          "endorphinRelease": "内啡肽释放：",
+          "bloodCirculation": "血液循环：",
+          "endorphinReleaseValue": "运动促进天然止痛物质分泌",
+          "bloodCirculationValue": "改善盆腔和子宫血流"
+        }
+      }
+    }
   },
   "culturalCharmsPage": {
     "title": "探索文化中的慰藉：符咒与传统疗愈符号",
@@ -1949,6 +2136,19 @@
       "startAssessment": "开始评估",
       "medicalDisclaimer": "医疗免责声明：",
       "medicalDisclaimerText": "本指南仅供参考，不能替代专业医疗建议。如有严重症状，请及时就医。"
+    },
+    "bottomRecommendations": {
+      "title": "相关工具",
+      "scenarioSolutions": {
+        "title": "场景解决方案",
+        "description": "从居家到外出，全方位经期不适解决方案",
+        "actionText": "生活场景全覆盖"
+      },
+      "symptomAssessment": {
+        "title": "症状评估工具",
+        "description": "科学评估经期症状，获取个性化建议",
+        "actionText": "个性化症状分析"
+      }
     }
   },
   "teenHealth": {

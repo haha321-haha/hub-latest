@@ -774,7 +774,194 @@
     "traditionalPractices": "Traditional Practices",
     "consistencyIsKeyTitle": "Consistency is Key",
     "consistencyIsKeyText": "Integrating these natural approaches takes time and consistency. Be patient with yourself and focus on building sustainable habits that support your body throughout your entire cycle, not just during your period.",
-    "contentSectionTitle": "Relevant Therapies & Guides"
+    "contentSectionTitle": "Relevant Therapies & Guides",
+    "meta": {
+      "title": "Complete Natural Menstrual Pain Relief Guide | 8 Science-Backed Methods [2025] - PeriodHub",
+      "description": "Explore 8 science-backed natural therapies for menstrual pain: from heat therapy to yoga, herbs to acupuncture. Complete evidence-based guide for teens to working women.",
+      "keywords": "natural menstrual pain relief,period pain natural remedies,menstrual cramps natural treatment,heat therapy period pain,yoga for menstrual cramps,herbal remedies period pain,acupuncture menstrual pain,massage period cramps,drug-free period pain relief"
+    },
+    "hero": {
+      "title": "Natural Therapies",
+      "subtitle": "Safe and effective menstrual pain relief through scientific natural therapies"
+    },
+    "scientificFoundation": {
+      "title": "Scientific Foundation of Natural Therapies",
+      "description": "Natural therapies activate the body's self-healing mechanisms and mobilize internal resources to relieve pain. Modern medical research confirms that many traditional natural therapies have clear physiological foundations that effectively influence pain transmission, inflammatory responses, and muscle function.",
+      "benefits": {
+        "noSideEffects": {
+          "title": "No Side Effects",
+          "description": "Avoid drug dependence and adverse reactions"
+        },
+        "holisticApproach": {
+          "title": "Holistic Approach",
+          "description": "Improve overall health status"
+        },
+        "costEffective": {
+          "title": "Cost-Effective",
+          "description": "Low cost, easy to implement"
+        }
+      }
+    },
+    "therapies": {
+      "title": "Comprehensive Natural Therapy Guide",
+      "heatTherapy": {
+        "title": "Heat Therapy",
+        "subtitle": "Scientifically validated preferred relief method",
+        "description": "Heat therapy is one of the most effective and widely used natural methods for menstrual pain relief. It works by activating the body's natural pain relief mechanisms and improving blood circulation.",
+        "parameters": {
+          "title": "Scientific Parameters",
+          "temperature": "Temperature: ",
+          "duration": "Duration: ",
+          "frequency": "Frequency: ",
+          "timing": "Timing: ",
+          "mechanism": "Mechanism: ",
+          "temperatureValue": "40-45°C (104-113°F)",
+          "durationValue": "15-20 minutes / minutes",
+          "frequencyValue": "As needed, up to 3-4 times daily",
+          "timingValue": "At onset of pain, continue for 2-3 days",
+          "mechanismValue": "Increases blood flow, relaxes uterine muscles"
+        },
+        "mechanism": {
+          "title": "Scientific Mechanism Analysis",
+          "gateControl": {
+            "title": "Gate Control Theory",
+            "description": "Heat activates large-diameter nerve fibers, which inhibit pain signal transmission through the spinal cord's gate control mechanism."
+          },
+          "vasodilation": {
+            "title": "Vasodilation & Circulation Improvement",
+            "description": "Heat causes local blood vessel dilation, improving blood flow and reducing muscle tension."
+          }
+        },
+        "safety": {
+          "title": "Safety Guidelines",
+          "guidelines": [
+            "Avoid temperatures above 48°C to prevent burns",
+            "Use with caution in diabetic patients",
+            "Avoid on broken or infected skin"
+          ]
+        }
+      },
+      "herbalTherapy": {
+        "title": "Herbal Therapy",
+        "subtitle": "Scientific application of plant medicine",
+        "description": "Herbal therapy uses plant-based compounds to naturally regulate the body's inflammatory response and pain perception mechanisms.",
+        "herbs": {
+          "ginger": {
+            "title": "Ginger - Warming & Anti-inflammatory",
+            "activeCompounds": "Active compounds: ",
+            "mechanism": "Mechanism: ",
+            "clinicalEvidence": "Clinical evidence: ",
+            "activeCompoundsValue": "6-gingerol, 8-gingerol",
+            "mechanismValue": "Inhibits COX-2, reduces prostaglandin synthesis",
+            "clinicalEvidenceValue": "1-1.5g ginger powder daily reduces pain intensity by 62%"
+          },
+          "angelica": {
+            "title": "Angelica - Women's Tonic",
+            "activeCompounds": "Active compounds: ",
+            "mechanism": "Mechanism: ",
+            "classicFormula": "Classic formula: ",
+            "activeCompoundsValue": "Volatile oils, organic acids, polysaccharides",
+            "mechanismValue": "Bidirectional regulation of uterine smooth muscle, improves microcirculation",
+            "classicFormulaValue": "Si Wu Tang, Dang Gui Bu Xue Tang"
+          }
+        },
+        "usage": {
+          "title": "Usage Guidelines",
+          "gingerTea": {
+            "title": "Ginger Tea Preparation",
+            "description": "Fresh ginger 15g + brown sugar 30g, boil for 15 minutes, suitable for cold-type dysmenorrhea"
+          },
+          "angelicaDecoction": {
+            "title": "Angelica Decoction",
+            "description": "15-30g decoction, start one week before menstruation, continue for 3-5 days"
+          }
+        },
+        "safety": {
+          "title": "Safety Reminder",
+          "guidelines": [
+            "Consult TCM practitioner or pharmacist before first use",
+            "Avoid blood-activating herbs during pregnancy or when trying to conceive",
+            "Watch for allergic reactions, discontinue if discomfort occurs"
+          ]
+        }
+      },
+      "dietaryAdjustment": {
+        "title": "Dietary Adjustment",
+        "subtitle": "Scientific application of anti-inflammatory diet",
+        "description": "Dietary adjustments can significantly reduce inflammation and improve menstrual health through targeted nutrient intake.",
+        "nutrients": {
+          "omega3": {
+            "title": "Omega-3 Fatty Acids",
+            "sources": "Sources: ",
+            "mechanism": "Mechanism: ",
+            "sourcesValue": "Deep-sea fish, flaxseed, walnuts",
+            "mechanismValue": "Inhibits prostaglandin synthesis, reduces inflammation"
+          },
+          "magnesium": {
+            "title": "Magnesium",
+            "sources": "Sources: ",
+            "mechanism": "Mechanism: ",
+            "sourcesValue": "Nuts, leafy greens, whole grains",
+            "mechanismValue": "Relaxes muscles, relieves cramps"
+          },
+          "vitaminB6": {
+            "title": "Vitamin B6",
+            "sources": "Sources: ",
+            "mechanism": "Mechanism: ",
+            "sourcesValue": "Bananas, potatoes, chicken",
+            "mechanismValue": "Regulates hormonal balance"
+          }
+        },
+        "foods": {
+          "title": "Anti-inflammatory Foods",
+          "recommended": {
+            "title": "Recommended Foods",
+            "list": [
+              "Salmon, sardines (rich in Omega-3)",
+              "Spinach, kale (rich in magnesium)",
+              "Turmeric, ginger (natural anti-inflammatory)",
+              "Berries (antioxidant-rich)"
+            ]
+          },
+          "avoid": {
+            "title": "Foods to Avoid",
+            "list": [
+              "High-sugar foods (increase inflammation)",
+              "Refined carbohydrates",
+              "Excessive caffeine",
+              "Processed meats"
+            ]
+          }
+        }
+      },
+      "yogaExercise": {
+        "title": "Yoga & Exercise",
+        "subtitle": "Mind-body integrated natural therapy",
+        "description": "Yoga and gentle exercise combine physical movement with mental relaxation, providing comprehensive pain relief through multiple mechanisms.",
+        "poses": {
+          "title": "Recommended Yoga Poses",
+          "catCow": {
+            "title": "Cat-Cow Pose",
+            "description": "Relieves lower back tension, improves spinal flexibility"
+          },
+          "childPose": {
+            "title": "Child's Pose",
+            "description": "Relaxes pelvis, stretches lower back"
+          },
+          "supineTwist": {
+            "title": "Supine Twist",
+            "description": "Releases lower back and hip tension"
+          }
+        },
+        "science": {
+          "title": "Exercise Science",
+          "endorphinRelease": "Endorphin release: ",
+          "bloodCirculation": "Blood circulation: ",
+          "endorphinReleaseValue": "Exercise promotes natural pain-relieving substances",
+          "bloodCirculationValue": "Improves pelvic and uterine blood flow"
+        }
+      }
+    }
   },
   "culturalCharmsPage": {
     "title": "Exploring Cultural Comfort: Charms and Traditional Healing Symbols",
@@ -1053,12 +1240,7 @@
       "startButton": "Start Diagnosis"
     },
     "toolsIntroduction": "Our interactive tools are designed to empower you with knowledge and personalized strategies for managing your menstrual health. By understanding your unique symptoms and patterns, you can make informed decisions and find more effective relief.",
-    "developmentNote": "We are continuously developing new tools and resources. Check back often for updates!",
-    "cycleTracker": {
-      "title": "Smart Cycle Tracker",
-      "description": "Intelligently track your menstrual cycle, predict your next period, record symptom changes, and help you better understand your body's patterns.",
-      "cta": "Start Tracking"
-    }
+    "developmentNote": "We are continuously developing new tools and resources. Check back often for updates!"
   },
   "interactiveTools": {
     "breadcrumb": {
@@ -1516,12 +1698,7 @@
       "relaxation": "Relaxation"
     },
     "tip": "💡 Tip: Find a comfortable sitting or lying position, relax all muscles. Beginners should do 3-4 cycles.",
-    "timeUnit": "s",
-    "cycleTracker": {
-      "title": "Smart Cycle Tracker",
-      "description": "Intelligently track your menstrual cycle, predict your next period, record symptom changes, and help you better understand your body's patterns.",
-      "cta": "Start Tracking"
-    }
+    "timeUnit": "s"
   },
   "tools": {
     "title": "Interactive Tools",
@@ -1982,6 +2159,19 @@
       "startAssessment": "Start Assessment",
       "medicalDisclaimer": "Medical Disclaimer:",
       "medicalDisclaimerText": "This guide is for reference only and cannot replace professional medical advice. Please seek medical attention for severe symptoms."
+    },
+    "bottomRecommendations": {
+      "title": "Related Tools",
+      "scenarioSolutions": {
+        "title": "Scenario Solutions",
+        "description": "From home to going out, comprehensive menstrual discomfort solutions",
+        "actionText": "Full coverage of life scenarios"
+      },
+      "symptomAssessment": {
+        "title": "Symptom Assessment Tool",
+        "description": "Scientifically assess menstrual symptoms, get personalized advice",
+        "actionText": "Personalized symptom analysis"
+      }
     }
   },
   "teenHealth": {
@@ -2515,7 +2705,6 @@
         }
       }
     },
-    "safetyTitle": "Safe Usage Guidelines",
     "safetyTitle": "Safety Guidelines",
     "contraindications": "Contraindications",
     "contraindicationsList": {
