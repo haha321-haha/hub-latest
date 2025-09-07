@@ -9,6 +9,7 @@ import React from 'react';
 import { LocalizedPDFResource, Locale } from '@/types/pdf';
 import { getAlternateLanguageLabel, trackPDFDownload, formatFileSize } from '@/utils/pdfHelpers';
 import DownloadButton from '@/components/DownloadButton';
+import { useTranslations } from 'next-intl';
 
 interface PDFCardProps {
   resource: LocalizedPDFResource;
@@ -23,6 +24,8 @@ export default function PDFCard({
   showDetails = true,
   className = ''
 }: PDFCardProps) {
+  const t = useTranslations('pdfCardPdf');
+  
   const handleDownload = () => {
     trackPDFDownload(resource.id, locale);
   };
@@ -92,9 +95,9 @@ export default function PDFCard({
       {showDetails && resource.updatedAt && (
         <div className="mt-4 pt-3 border-t border-gray-100">
           <p className="text-xs text-gray-400">
-            {locale === 'zh' ? '更新时间：' : 'Updated: '}
+            {t('updated')}
             {new Date(resource.updatedAt).toLocaleDateString(
-              locale === 'zh' ? 'zh-CN' : 'en-US',
+              t('locale'),
               {
                 year: 'numeric',
                 month: 'short',

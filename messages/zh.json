@@ -437,6 +437,10 @@
       "copyLink": "复制链接",
       "openInNewTab": "新窗口打开"
     },
+    "pdfCardPdf": {
+      "updated": "更新时间：",
+      "locale": "zh-CN"
+    },
     "resources": {
       "painTrackingForm": {
         "title": "疼痛追踪表",

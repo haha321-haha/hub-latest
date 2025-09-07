@@ -437,6 +437,10 @@
     "copyLink": "Copy Link",
     "openInNewTab": "Open in New Tab"
   },
+  "pdfCardPdf": {
+    "updated": "Updated: ",
+    "locale": "en-US"
+  },
     "resources": {
       "painTrackingForm": {
         "title": "Pain Tracking Form",
