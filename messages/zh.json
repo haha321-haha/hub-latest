@@ -309,7 +309,7 @@
       "description": "专业的经期健康PDF资源下载中心，提供管理工具、健康指南、沟通指导和教育资源",
       "keywords": "经期健康,PDF下载,健康管理,女性健康,经期指南"
     },
-    "search": {
+    "searchExtended": {
       "placeholder": "搜索{totalResources}个资源... 试试：疼痛、缓解、营养、运动、医学、沟通",
       "placeholderShort": "搜索资源...",
       "keywords": {
@@ -331,7 +331,7 @@
       "message": "我们为您精心准备了12个专业PDF资源，涵盖4大核心分类，支持中英双语下载。每个资源都经过专业团队精心制作，确保内容的科学性和实用性。",
       "status": "系统运行正常"
     },
-    "stats": {
+    "statsExtended": {
       "totalResources": "总资源数",
       "categories": "分类数量",
       "languages": "支持语言",
@@ -339,7 +339,7 @@
       "showing": "显示",
       "resources": "个资源"
     },
-    "categories": {
+    "categoriesExtended": {
       "managementTools": {
         "title": "管理工具",
         "description": "实用的经期管理和追踪工具"
@@ -367,7 +367,7 @@
       "underDevelopment": "此资源正在开发中，敬请期待完整内容。",
       "moreInfo": "如需更多信息，请访问："
     },
-    "categories": {
+    "categoriesSimple": {
       "immediate": "即时缓解方案",
       "preparation": "计划与准备",
       "learning": "学习与理解",
@@ -402,13 +402,13 @@
       "preview": "预览",
       "useInteractiveTools": "使用互动工具"
     },
-    "search": {
+    "searchSimple": {
       "placeholder": "搜索资源...",
       "whatHelp": "我现在需要什么帮助？",
       "needMoreHelp": "需要更多帮助？",
       "exploreTools": "探索我们的互动工具获得个性化建议"
     },
-    "stats": {
+    "statsSimple": {
       "resources": "个资源",
       "totalResources": "总资源",
       "categories": "分类",
@@ -456,32 +456,519 @@
       "featuredResources": "特色资源",
       "allResources": "全部资源",
       "viewAllResources": "查看全部资源"
+    }
     },
     "simplePdfCenter": {
+      "title": "文章PDF下载中心",
+      "description": "66个精选资源，基于紧急程度智能分类，让您在需要时快速找到合适的解决方案",
       "immediate": {
-        "quickRelief": "5分钟快速缓解痛经技巧",
-        "quickReliefTime": "5分钟",
-        "heatTherapy": "热疗完整指南",
-        "heatTherapyTime": "8分钟",
-        "painVsOther": "经期疼痛与其他腹痛鉴别指南",
-        "painVsOtherTime": "25分钟",
-        "naturalTherapy": "自然物理疗法综合指南",
-        "naturalTherapyTime": "12分钟",
-        "gingerRelief": "生姜经期疼痛缓解指南",
-        "gingerReliefTime": "12分钟",
-        "nsaidGuide": "非甾体抗炎药专业指南",
-        "nsaidGuideTime": "15分钟",
-        "specificManagement": "特定痛经管理指南",
-        "specificManagementTime": "20分钟",
-        "painTrackingForm": "疼痛追踪表格",
-        "painTrackingFormTime": "PDF",
-        "painTrackingFormDesc": "记录和追踪疼痛程度的专业表格",
-      "campusChecklist": "校园紧急检查清单",
-      "campusChecklistTime": "PDF",
-      "campusChecklistDesc": "校园环境中经期紧急情况的应对清单",
-      "specificPainManagementPdf": "特定痛经管理指南PDF",
-      "specificPainManagementPdfTime": "PDF"
-      }
+        "articles": {
+          "quickRelief": {
+            "title": "5分钟快速缓解痛经技巧",
+            "readTime": "5分钟",
+            "keywords": "疼痛, 缓解, 快速, 技巧"
+          },
+          "heatTherapy": {
+            "title": "热疗完整指南",
+            "readTime": "8分钟",
+            "keywords": "热疗, 温暖, 缓解, 治疗"
+          },
+          "painVsOther": {
+            "title": "经期疼痛与其他腹痛鉴别指南",
+            "readTime": "25分钟"
+          },
+          "naturalTherapy": {
+            "title": "自然物理疗法综合指南",
+            "readTime": "12分钟",
+            "keywords": "按摩, 物理, 自然, 疗法, 缓解, 治疗"
+          },
+          "gingerRelief": {
+            "title": "生姜经期疼痛缓解指南",
+            "readTime": "12分钟",
+            "keywords": "生姜, 缓解, 疼痛, 自然, 草药"
+          },
+          "nsaidGuide": {
+            "title": "非甾体抗炎药专业指南",
+            "readTime": "15分钟",
+            "keywords": "疼痛, 药物, 医学, 专业, 抗炎, 治疗"
+          },
+          "specificManagement": {
+            "title": "特定痛经管理指南",
+            "readTime": "20分钟"
+          }
+        },
+        "pdfs": {
+          "painTrackingForm": {
+            "title": "疼痛追踪表格",
+            "readTime": "PDF",
+            "keywords": "疼痛, 追踪, 记录, 监测, 管理",
+            "description": "记录和追踪疼痛程度的专业表格"
+          },
+          "campusChecklist": {
+            "title": "校园紧急检查清单",
+            "readTime": "PDF",
+            "keywords": "校园, 紧急, 清单, 学生, 危机",
+            "description": "校园环境中经期紧急情况的应对清单"
+          },
+          "specificPainManagementPdf": {
+            "title": "特定痛经管理指南PDF",
+            "readTime": "PDF",
+            "keywords": "特定, 痛经, 管理, 指南, 专业",
+            "description": "针对特定类型痛经的专业管理指南"
+          },
+          "emergencyPainReliefCard": {
+            "title": "急救疼痛缓解卡片",
+            "readTime": "PDF",
+            "keywords": "急救, 疼痛, 缓解, 卡片, 紧急",
+            "description": "紧急情况下的疼痛缓解快速指南卡片"
+          },
+          "fiveMinuteReliefChecklist": {
+            "title": "5分钟缓解清单",
+            "readTime": "PDF", 
+            "keywords": "5分钟, 缓解, 清单, 快速, 即时",
+            "description": "5分钟内快速缓解疼痛的步骤清单"
+          },
+          "heatTherapyGuidePdf": {
+            "title": "热疗指南PDF",
+            "readTime": "PDF",
+            "keywords": "热疗, 指南, 温热, 缓解, 治疗",
+            "description": "热疗缓解疼痛的详细使用指南"
+          },
+          "workplaceReliefToolkit": {
+            "title": "职场缓解工具包",
+            "readTime": "PDF",
+            "keywords": "职场, 缓解, 工具包, 办公, 应急",
+            "description": "职场环境中的疼痛缓解工具和技巧"
+          }
+        }
+      },
+      "preparation": {
+        "articles": {
+          "preventiveCare": {
+            "title": "完整预防护理计划",
+            "readTime": "22分钟",
+            "keywords": "预防, 护理, 健康, 管理, 规划"
+          },
+          "sleepQuality": {
+            "title": "综合睡眠质量指南",
+            "readTime": "20分钟",
+            "keywords": "睡眠, 质量, 改善, 休息, 恢复"
+          },
+          "stressManagement": {
+            "title": "完整压力管理指南",
+            "readTime": "22分钟",
+            "keywords": "压力, 管理, 心理, 健康, 缓解"
+          },
+          "baduanjinExercise": {
+            "title": "站桩八段锦疼痛缓解",
+            "readTime": "18分钟",
+            "keywords": "运动, 八段锦, 气功, 缓解, 锻炼"
+          },
+          "antiInflammatoryDiet": {
+            "title": "经期疼痛抗炎饮食",
+            "readTime": "18分钟",
+            "keywords": "饮食, 营养, 抗炎, 疼痛, 食物"
+          },
+          "magnesiumGutHealth": {
+            "title": "镁与肠道健康指南",
+            "readTime": "16分钟",
+            "keywords": "镁, 肠道, 健康, 矿物质, 补充"
+          },
+          "periodFriendlyRecipes": {
+            "title": "经期友好食谱",
+            "readTime": "12分钟",
+            "keywords": "食谱, 饮食, 营养, 健康, 美味"
+          }
+        },
+        "pdfs": {
+          "healthyHabitsChecklist": {
+            "title": "健康习惯检查清单",
+            "readTime": "PDF",
+            "keywords": "健康, 习惯, 清单, 规划, 日常",
+            "description": "建立健康生活方式习惯的专业清单"
+          },
+          "nutritionPlan": {
+            "title": "月经周期营养计划",
+            "readTime": "PDF",
+            "keywords": "营养, 计划, 饮食, 健康, 周期",
+            "description": "月经周期支持的个性化营养计划"
+          },
+          "exerciseRoutine": {
+            "title": "经期友好运动计划",
+            "readTime": "PDF",
+            "keywords": "运动, 计划, 经期, 健康, 锻炼",
+            "description": "专为经期设计的温和运动计划"
+          },
+          "stressReliefTechniques": {
+            "title": "压力缓解技巧指南",
+            "readTime": "PDF",
+            "keywords": "压力, 缓解, 技巧, 心理, 健康",
+            "description": "有效的压力管理和缓解技巧"
+          },
+          "sleepOptimization": {
+            "title": "睡眠优化指南",
+            "readTime": "PDF",
+            "keywords": "睡眠, 优化, 质量, 休息, 健康",
+            "description": "改善睡眠质量的实用指南"
+          },
+          "preventiveCarePlan": {
+            "title": "预防护理计划",
+            "readTime": "PDF",
+            "keywords": "预防, 护理, 计划, 健康, 管理",
+            "description": "全面的预防性健康护理计划"
+          },
+          "lifestyleAssessment": {
+            "title": "生活方式评估工具",
+            "readTime": "PDF",
+            "keywords": "生活方式, 评估, 工具, 健康, 分析",
+            "description": "评估和改善生活方式的专业工具"
+          },
+          "magnesiumGuide": {
+            "title": "镁与肠道健康指南",
+            "readTime": "PDF",
+            "keywords": "镁, 肠道, 健康, 矿物质, 补充",
+            "description": "镁元素与肠道健康关系的综合指南"
+          },
+          "baduanjinGuide": {
+            "title": "站桩八段锦图解指南",
+            "readTime": "PDF",
+            "keywords": "运动, 八段锦, 气功, 缓解, 锻炼",
+            "description": "传统八段锦和站桩练习的详细图解教程"
+          },
+          "monthlyPlanner": {
+            "title": "月度准备计划表",
+            "readTime": "PDF",
+            "keywords": "月度, 计划, 准备, 管理, 安排",
+            "description": "提前进行经期健康管理的月度计划工具"
+          },
+          "stressWorkbook": {
+            "title": "压力管理工作手册",
+            "readTime": "PDF",
+            "keywords": "压力, 管理, 工作手册, 心理, 健康",
+            "description": "经期压力管理的实用工作手册和指南"
+          },
+          "sleepGuide": {
+            "title": "睡眠质量改善指南",
+            "readTime": "PDF",
+            "keywords": "睡眠, 质量, 改善, 休息, 恢复",
+            "description": "经期睡眠优化的详细指导和实用技巧"
+          }
+        }
+      },
+      "learning": {
+        "articles": {
+          "painMechanisms": {
+            "title": "经期疼痛机制深度解析",
+            "readTime": "25分钟",
+            "keywords": "疼痛, 机制, 医学, 科学, 理解"
+          },
+          "hormoneBalance": {
+            "title": "荷尔蒙平衡与经期健康",
+            "readTime": "28分钟",
+            "keywords": "荷尔蒙, 平衡, 健康, 内分泌, 调节"
+          },
+          "medicalTreatments": {
+            "title": "医学治疗方法对比",
+            "readTime": "30分钟",
+            "keywords": "医学, 治疗, 方法, 对比, 专业"
+          },
+          "naturalRemedies": {
+            "title": "自然疗法科学依据",
+            "readTime": "22分钟",
+            "keywords": "自然, 疗法, 科学, 依据, 研究"
+          },
+          "nutritionScience": {
+            "title": "营养科学与经期健康",
+            "readTime": "24分钟",
+            "keywords": "营养, 科学, 健康, 经期, 研究"
+          },
+          "exerciseScience": {
+            "title": "运动科学与疼痛缓解",
+            "readTime": "20分钟",
+            "keywords": "运动, 科学, 疼痛, 缓解, 研究"
+          },
+          "psychologicalFactors": {
+            "title": "心理因素与疼痛感知",
+            "readTime": "26分钟",
+            "keywords": "心理, 因素, 疼痛, 感知, 情绪"
+          },
+          "researchUpdates": {
+            "title": "最新研究进展",
+            "readTime": "18分钟",
+            "keywords": "研究, 进展, 最新, 科学, 发现"
+          },
+          "caseStudies": {
+            "title": "成功案例研究",
+            "readTime": "32分钟",
+            "keywords": "案例, 研究, 成功, 经验, 分析"
+          },
+          "expertInsights": {
+            "title": "专家深度见解",
+            "readTime": "35分钟",
+            "keywords": "专家, 见解, 深度, 专业, 分析"
+          },
+          "globalPerspectives": {
+            "title": "全球视角与文化差异",
+            "readTime": "28分钟",
+            "keywords": "全球, 视角, 文化, 差异, 比较"
+          },
+          "futureTrends": {
+            "title": "未来发展趋势",
+            "readTime": "20分钟",
+            "keywords": "未来, 趋势, 发展, 预测, 展望"
+          },
+          "technologyIntegration": {
+            "title": "技术与健康管理融合",
+            "readTime": "24分钟",
+            "keywords": "技术, 健康, 管理, 融合, 创新"
+          },
+          "exerciseTherapy": {
+            "title": "运动疗法科学原理",
+            "readTime": "22分钟",
+            "keywords": "运动, 疗法, 科学, 原理, 研究"
+          },
+          "medicalResearch": {
+            "title": "医学研究最新进展",
+            "readTime": "26分钟",
+            "keywords": "医学, 研究, 进展, 科学, 临床"
+          },
+          "traditionalMedicine": {
+            "title": "传统医学与现代结合",
+            "readTime": "28分钟",
+            "keywords": "传统, 医学, 现代, 结合, 中医"
+          },
+          "communicationSkills": {
+            "title": "医患沟通技巧",
+            "readTime": "18分钟",
+            "keywords": "沟通, 技巧, 医患, 交流, 理解"
+          },
+          "selfCareStrategies": {
+            "title": "自我护理策略",
+            "readTime": "20分钟",
+            "keywords": "自我, 护理, 策略, 健康, 管理"
+          },
+          "longTermManagement": {
+            "title": "长期健康管理",
+            "readTime": "30分钟",
+            "keywords": "长期, 健康, 管理, 持续, 改善"
+          },
+          "lifecycleAnalysis": {
+            "title": "女性生命周期痛经特点全解析",
+            "readTime": "32分钟",
+            "keywords": "生命周期, 女性, 痛经, 特点, 分析"
+          },
+          "painMechanism": {
+            "title": "经期疼痛机制深度解析",
+            "readTime": "25分钟",
+            "keywords": "疼痛, 机制, 医学, 科学, 理解"
+          },
+          "technologyInnovation": {
+            "title": "技术与健康管理融合",
+            "readTime": "24分钟",
+            "keywords": "技术, 健康, 管理, 融合, 创新"
+          }
+        },
+        "pdfs": {
+          "naturalTherapyAssessment": {
+            "title": "自然疗法评估",
+            "readTime": "PDF",
+            "keywords": "自然, 疗法, 评估, 工具, 工具",
+            "description": "评估自然疗法适用性的专业工具"
+          },
+          "hormoneTestingGuide": {
+            "title": "荷尔蒙检测指南",
+            "readTime": "PDF",
+            "keywords": "荷尔蒙, 检测, 指南, 医学, 诊断",
+            "description": "荷尔蒙水平检测详细指南"
+          },
+          "nutritionalAnalysis": {
+            "title": "营养分析报告模板",
+            "readTime": "PDF",
+            "keywords": "营养, 分析, 报告, 模板, 评估",
+            "description": "个人营养分析专业模板"
+          },
+          "exerciseProgram": {
+            "title": "个性化运动计划",
+            "readTime": "PDF",
+            "keywords": "个性化, 运动, 计划, 训练, 计划",
+            "description": "痛经管理的个性化运动训练计划"
+          },
+          "psychologicalAssessment": {
+            "title": "心理评估工具包",
+            "readTime": "PDF",
+            "keywords": "心理, 评估, 工具, 包, 测试, 评估",
+            "description": "心理评估工具专业集合"
+          },
+          "researchSummary": {
+            "title": "2024年痛经研究总结",
+            "readTime": "PDF",
+            "keywords": "研究, 总结, 2024, 科学, 进展",
+            "description": "2024年痛经相关研究最新总结"
+          },
+          "cycleEducationGuide": {
+            "title": "月经周期教育指南",
+            "readTime": "PDF",
+            "keywords": "月经, 周期, 教育, 指南, 知识",
+            "description": "月经周期知识综合教育指南"
+          },
+          "consultationPreparation": {
+            "title": "医疗咨询准备指南",
+            "readTime": "PDF",
+            "keywords": "医疗, 咨询, 准备, 指南, 医生",
+            "description": "医疗预约前的准备工作和问题清单"
+          },
+          "innovationReport": {
+            "title": "创新研究报告",
+            "readTime": "PDF",
+            "keywords": "创新, 研究, 报告, 技术, 发展",
+            "description": "经期健康领域的创新研究报告"
+          },
+          "globalHealthReport": {
+            "title": "全球健康视角报告",
+            "readTime": "PDF",
+            "keywords": "全球, 健康, 视角, 报告, 国际",
+            "description": "全球痛经管理现状和发展趋势报告"
+          },
+          "technologyGuide": {
+            "title": "数字健康工具指南",
+            "readTime": "PDF",
+            "keywords": "数字, 健康, 工具, 指南, 技术",
+            "description": "数字健康管理工具使用指南"
+          }
+        }
+      },
+      "management": {
+        "articles": {
+          "longTermStrategy": {
+            "title": "长期管理策略",
+            "readTime": "35分钟",
+            "keywords": "长期, 管理, 策略, 规划, 持续"
+          },
+          "lifestyleOptimization": {
+            "title": "生活方式优化",
+            "readTime": "30分钟",
+            "keywords": "生活方式, 优化, 改善, 健康, 习惯"
+          },
+          "healthMonitoring": {
+            "title": "健康监测系统",
+            "readTime": "25分钟",
+            "keywords": "健康, 监测, 系统, 追踪, 管理"
+          },
+          "preventiveMeasures": {
+            "title": "预防措施实施",
+            "readTime": "28分钟",
+            "keywords": "预防, 措施, 实施, 保护, 健康"
+          },
+          "sustainablePractices": {
+            "title": "可持续实践方法",
+            "readTime": "32分钟",
+            "keywords": "可持续, 实践, 方法, 长期, 发展"
+          },
+          "communitySupport": {
+            "title": "社区支持网络",
+            "readTime": "20分钟",
+            "keywords": "社区, 支持, 网络, 互助, 分享"
+          },
+          "professionalGuidance": {
+            "title": "专业指导服务",
+            "readTime": "24分钟",
+            "keywords": "专业, 指导, 服务, 咨询, 支持"
+          },
+          "technologyIntegration": {
+            "title": "技术集成应用",
+            "readTime": "26分钟",
+            "keywords": "技术, 集成, 应用, 数字化, 智能"
+          },
+          "qualityImprovement": {
+            "title": "质量持续改进",
+            "readTime": "22分钟",
+            "keywords": "质量, 持续, 改进, 优化, 提升"
+          }
+        },
+        "pdfs": {
+          "managementPlan": {
+            "title": "长期管理计划",
+            "readTime": "PDF",
+            "keywords": "管理, 计划, 长期, 策略, 规划",
+            "description": "个性化的长期健康管理计划"
+          },
+          "lifestyleGuide": {
+            "title": "生活方式指南",
+            "readTime": "PDF",
+            "keywords": "生活方式, 指南, 健康, 习惯, 改善",
+            "description": "全面的生活方式优化指南"
+          },
+          "monitoringTools": {
+            "title": "监测工具包",
+            "readTime": "PDF",
+            "keywords": "监测, 工具, 包, 追踪, 分析",
+            "description": "专业的健康监测工具包"
+          },
+          "preventionChecklist": {
+            "title": "预防措施清单",
+            "readTime": "PDF",
+            "keywords": "预防, 措施, 清单, 保护, 健康",
+            "description": "全面的预防措施实施清单"
+          },
+          "sustainabilityGuide": {
+            "title": "可持续实践指南",
+            "readTime": "PDF",
+            "keywords": "可持续, 实践, 指南, 长期, 发展",
+            "description": "可持续健康实践的详细指南"
+          },
+          "communityResources": {
+            "title": "社区资源手册",
+            "readTime": "PDF",
+            "keywords": "社区, 资源, 手册, 支持, 网络",
+            "description": "社区支持和资源网络手册"
+          }
+        }
+      },
+      "categories": {
+        "immediate": "即时缓解",
+        "preparation": "计划准备",
+        "learning": "学习理解",
+        "management": "长期管理"
+      },
+      "subtitles": {
+        "immediate": "快速疼痛缓解，立即见效",
+        "preparation": "提前准备，预防疼痛",
+        "learning": "深度理解，科学管理",
+        "management": "长期规划，持续改进"
+      },
+      "helpSection": {
+        "title": "我现在需要什么帮助？",
+        "needMoreHelp": "需要更多帮助？",
+        "exploreTools": "探索我们的互动工具获得个性化建议"
+      },
+      "ui": {
+        "placeholder": "搜索 {totalResources} 个资源...",
+        "ariaLabel": "搜索资源",
+        "helpText": "搜索 {totalResources} 个专业资源",
+        "searchHints": {
+          "desktop": "试试关键词：热疗、按摩、疼痛缓解、药物",
+          "mobile": "试试：热疗、按摩、疼痛"
+        },
+        "stats": {
+          "totalResources": "总资源数",
+          "categories": "分类数",
+          "evidenceBased": "循证医学"
+        },
+        "buttons": {
+          "read": "阅读",
+          "share": "分享",
+          "download": "下载",
+          "preview": "预览"
+        },
+        "alerts": {
+          "noResults": "未找到相关资源",
+          "searchError": "搜索出错，请重试"
+        }
+      },
+      "share": {
+        "title": "分享资源",
+        "message": "来自 Period Hub 的有用资源",
+        "success": "分享成功！"
     },
     "resources": {
       "painTrackingForm": {

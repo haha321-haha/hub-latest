@@ -17,7 +17,7 @@ interface Resource {
   type: 'article' | 'pdf';
   readTime?: string;
   category: string;
-  keywords?: string[];
+  keywords?: string;
   description?: string;
 }
 
@@ -303,6 +303,606 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
     return subtitles[key as keyof typeof subtitles] || key;
   };
 
+  // 🚀 阶段1：即时缓解类资源数据生成器
+  const generateImmediateResources = () => {
+    const articles = [
+        {
+          id: 'immediate-1',
+        title: t('immediate.articles.quickRelief.title'),
+          type: 'article' as const,
+        readTime: t('immediate.articles.quickRelief.readTime'),
+          category: 'immediate',
+        keywords: t('immediate.articles.quickRelief.keywords')
+        },
+        {
+          id: 'immediate-2',
+        title: t('immediate.articles.heatTherapy.title'),
+          type: 'article' as const,
+        readTime: t('immediate.articles.heatTherapy.readTime'),
+          category: 'immediate',
+        keywords: t('immediate.articles.heatTherapy.keywords')
+        },
+        {
+          id: 'immediate-3',
+        title: t('immediate.articles.painVsOther.title'),
+          type: 'article' as const,
+        readTime: t('immediate.articles.painVsOther.readTime'),
+          category: 'immediate'
+        },
+        {
+          id: 'immediate-4',
+        title: t('immediate.articles.naturalTherapy.title'),
+          type: 'article' as const,
+        readTime: t('immediate.articles.naturalTherapy.readTime'),
+          category: 'immediate',
+        keywords: t('immediate.articles.naturalTherapy.keywords')
+        },
+        {
+          id: 'immediate-5',
+        title: t('immediate.articles.gingerRelief.title'),
+          type: 'article' as const,
+        readTime: t('immediate.articles.gingerRelief.readTime'),
+          category: 'immediate',
+        keywords: t('immediate.articles.gingerRelief.keywords')
+        },
+        {
+          id: 'immediate-6',
+        title: t('immediate.articles.nsaidGuide.title'),
+          type: 'article' as const,
+        readTime: t('immediate.articles.nsaidGuide.readTime'),
+          category: 'immediate',
+        keywords: t('immediate.articles.nsaidGuide.keywords')
+        },
+        {
+          id: 'immediate-7',
+        title: t('immediate.articles.specificManagement.title'),
+          type: 'article' as const,
+        readTime: t('immediate.articles.specificManagement.readTime'),
+          category: 'immediate'
+      }
+    ];
+
+    const pdfs = [
+        {
+          id: 'immediate-pdf-1',
+        title: t('immediate.pdfs.painTrackingForm.title'),
+          type: 'pdf' as const,
+        readTime: t('immediate.pdfs.painTrackingForm.readTime'),
+          category: 'immediate',
+        keywords: t('immediate.pdfs.painTrackingForm.keywords'),
+        description: t('immediate.pdfs.painTrackingForm.description')
+        },
+        {
+          id: 'immediate-pdf-2',
+        title: t('immediate.pdfs.campusChecklist.title'),
+          type: 'pdf' as const,
+        readTime: t('immediate.pdfs.campusChecklist.readTime'),
+          category: 'immediate',
+        keywords: t('immediate.pdfs.campusChecklist.keywords'),
+        description: t('immediate.pdfs.campusChecklist.description')
+        },
+        {
+          id: 'immediate-pdf-3',
+        title: t('immediate.pdfs.specificPainManagementPdf.title'),
+          type: 'pdf' as const,
+        readTime: t('immediate.pdfs.specificPainManagementPdf.readTime'),
+          category: 'immediate',
+        keywords: t('immediate.pdfs.specificPainManagementPdf.keywords'),
+        description: t('immediate.pdfs.specificPainManagementPdf.description')
+        },
+        {
+          id: 'immediate-pdf-4',
+        title: t('immediate.pdfs.emergencyPainReliefCard.title'),
+          type: 'pdf' as const,
+        readTime: t('immediate.pdfs.emergencyPainReliefCard.readTime'),
+          category: 'immediate',
+        keywords: t('immediate.pdfs.emergencyPainReliefCard.keywords'),
+        description: t('immediate.pdfs.emergencyPainReliefCard.description')
+        },
+        {
+          id: 'immediate-pdf-5',
+        title: t('immediate.pdfs.fiveMinuteReliefChecklist.title'),
+          type: 'pdf' as const,
+        readTime: t('immediate.pdfs.fiveMinuteReliefChecklist.readTime'),
+          category: 'immediate',
+        keywords: t('immediate.pdfs.fiveMinuteReliefChecklist.keywords'),
+        description: t('immediate.pdfs.fiveMinuteReliefChecklist.description')
+        },
+        {
+          id: 'immediate-pdf-6',
+        title: t('immediate.pdfs.heatTherapyGuidePdf.title'),
+          type: 'pdf' as const,
+        readTime: t('immediate.pdfs.heatTherapyGuidePdf.readTime'),
+          category: 'immediate',
+        keywords: t('immediate.pdfs.heatTherapyGuidePdf.keywords'),
+        description: t('immediate.pdfs.heatTherapyGuidePdf.description')
+        },
+        {
+          id: 'immediate-pdf-7',
+        title: t('immediate.pdfs.workplaceReliefToolkit.title'),
+          type: 'pdf' as const,
+        readTime: t('immediate.pdfs.workplaceReliefToolkit.readTime'),
+          category: 'immediate',
+        keywords: t('immediate.pdfs.workplaceReliefToolkit.keywords'),
+        description: t('immediate.pdfs.workplaceReliefToolkit.description')
+      }
+    ];
+
+    return [...articles, ...pdfs];
+  };
+
+  // 🚀 阶段2：计划准备类资源数据生成器
+  const generatePreparationResources = () => {
+    const articles = [
+        {
+          id: 'preparation-1',
+        title: t('preparation.articles.preventiveCare.title'),
+          type: 'article' as const,
+        readTime: t('preparation.articles.preventiveCare.readTime'),
+        category: 'preparation',
+        keywords: t('preparation.articles.preventiveCare.keywords')
+        },
+        {
+          id: 'preparation-2',
+        title: t('preparation.articles.sleepQuality.title'),
+          type: 'article' as const,
+        readTime: t('preparation.articles.sleepQuality.readTime'),
+        category: 'preparation',
+        keywords: t('preparation.articles.sleepQuality.keywords')
+        },
+        {
+          id: 'preparation-3',
+        title: t('preparation.articles.stressManagement.title'),
+          type: 'article' as const,
+        readTime: t('preparation.articles.stressManagement.readTime'),
+        category: 'preparation',
+        keywords: t('preparation.articles.stressManagement.keywords')
+        },
+        {
+          id: 'preparation-4',
+        title: t('preparation.articles.baduanjinExercise.title'),
+          type: 'article' as const,
+        readTime: t('preparation.articles.baduanjinExercise.readTime'),
+          category: 'preparation',
+        keywords: t('preparation.articles.baduanjinExercise.keywords')
+        },
+        {
+          id: 'preparation-5',
+        title: t('preparation.articles.antiInflammatoryDiet.title'),
+          type: 'article' as const,
+        readTime: t('preparation.articles.antiInflammatoryDiet.readTime'),
+          category: 'preparation',
+        keywords: t('preparation.articles.antiInflammatoryDiet.keywords')
+        },
+        {
+          id: 'preparation-6',
+        title: t('preparation.articles.magnesiumGutHealth.title'),
+          type: 'article' as const,
+        readTime: t('preparation.articles.magnesiumGutHealth.readTime'),
+        category: 'preparation',
+        keywords: t('preparation.articles.magnesiumGutHealth.keywords')
+        },
+        {
+          id: 'preparation-7',
+        title: t('preparation.articles.periodFriendlyRecipes.title'),
+          type: 'article' as const,
+        readTime: t('preparation.articles.periodFriendlyRecipes.readTime'),
+        category: 'preparation',
+        keywords: t('preparation.articles.periodFriendlyRecipes.keywords')
+      }
+    ];
+
+    const pdfs = [
+        {
+          id: 'preparation-pdf-1',
+        title: t('preparation.pdfs.healthyHabitsChecklist.title'),
+          type: 'pdf' as const,
+        readTime: t('preparation.pdfs.healthyHabitsChecklist.readTime'),
+          category: 'preparation',
+        keywords: t('preparation.pdfs.healthyHabitsChecklist.keywords'),
+        description: t('preparation.pdfs.healthyHabitsChecklist.description')
+        },
+        {
+          id: 'preparation-pdf-2',
+        title: t('preparation.pdfs.nutritionPlan.title'),
+          type: 'pdf' as const,
+        readTime: t('preparation.pdfs.nutritionPlan.readTime'),
+          category: 'preparation',
+        keywords: t('preparation.pdfs.nutritionPlan.keywords'),
+        description: t('preparation.pdfs.nutritionPlan.description')
+        },
+        {
+          id: 'preparation-pdf-3',
+        title: t('preparation.pdfs.magnesiumGuide.title'),
+          type: 'pdf' as const,
+        readTime: t('preparation.pdfs.magnesiumGuide.readTime'),
+          category: 'preparation',
+        keywords: t('preparation.pdfs.magnesiumGuide.keywords'),
+        description: t('preparation.pdfs.magnesiumGuide.description')
+        },
+        {
+          id: 'preparation-pdf-4',
+        title: t('preparation.pdfs.baduanjinGuide.title'),
+          type: 'pdf' as const,
+        readTime: t('preparation.pdfs.baduanjinGuide.readTime'),
+          category: 'preparation',
+        keywords: t('preparation.pdfs.baduanjinGuide.keywords'),
+        description: t('preparation.pdfs.baduanjinGuide.description')
+        },
+        {
+          id: 'preparation-pdf-5',
+        title: t('preparation.pdfs.monthlyPlanner.title'),
+          type: 'pdf' as const,
+        readTime: t('preparation.pdfs.monthlyPlanner.readTime'),
+          category: 'preparation',
+        keywords: t('preparation.pdfs.monthlyPlanner.keywords'),
+        description: t('preparation.pdfs.monthlyPlanner.description')
+        },
+        {
+          id: 'preparation-pdf-6',
+        title: t('preparation.pdfs.stressWorkbook.title'),
+          type: 'pdf' as const,
+        readTime: t('preparation.pdfs.stressWorkbook.readTime'),
+          category: 'preparation',
+        keywords: t('preparation.pdfs.stressWorkbook.keywords'),
+        description: t('preparation.pdfs.stressWorkbook.description')
+        },
+        {
+          id: 'preparation-pdf-7',
+        title: t('preparation.pdfs.sleepGuide.title'),
+          type: 'pdf' as const,
+        readTime: t('preparation.pdfs.sleepGuide.readTime'),
+          category: 'preparation',
+        keywords: t('preparation.pdfs.sleepGuide.keywords'),
+        description: t('preparation.pdfs.sleepGuide.description')
+      }
+    ];
+
+    return [...articles, ...pdfs];
+  };
+
+  // 🚀 阶段3：学习理解类资源数据生成器
+  const generateLearningResources = () => {
+    const articles = [
+      {
+        id: 'learning-1',
+        title: t('learning.articles.lifecycleAnalysis.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.lifecycleAnalysis.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.lifecycleAnalysis.keywords')
+      },
+      {
+        id: 'learning-2',
+        title: t('learning.articles.painMechanism.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.painMechanism.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.painMechanism.keywords')
+      },
+      {
+        id: 'learning-3',
+        title: t('learning.articles.hormoneBalance.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.hormoneBalance.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.hormoneBalance.keywords')
+      },
+      {
+        id: 'learning-4',
+        title: t('learning.articles.nutritionScience.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.nutritionScience.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.nutritionScience.keywords')
+      },
+      {
+        id: 'learning-5',
+        title: t('learning.articles.exerciseTherapy.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.exerciseTherapy.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.exerciseTherapy.keywords')
+      },
+      {
+        id: 'learning-6',
+        title: t('learning.articles.psychologicalFactors.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.psychologicalFactors.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.psychologicalFactors.keywords')
+      },
+      {
+        id: 'learning-7',
+        title: t('learning.articles.medicalResearch.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.medicalResearch.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.medicalResearch.keywords')
+      },
+      {
+        id: 'learning-8',
+        title: t('learning.articles.traditionalMedicine.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.traditionalMedicine.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.traditionalMedicine.keywords')
+      },
+      {
+        id: 'learning-9',
+        title: t('learning.articles.globalPerspectives.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.globalPerspectives.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.globalPerspectives.keywords')
+      },
+      {
+        id: 'learning-10',
+        title: t('learning.articles.technologyInnovation.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.technologyInnovation.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.technologyInnovation.keywords')
+      },
+      {
+        id: 'learning-11',
+        title: t('learning.articles.communicationSkills.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.communicationSkills.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.communicationSkills.keywords')
+      },
+      {
+        id: 'learning-12',
+        title: t('learning.articles.selfCareStrategies.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.selfCareStrategies.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.selfCareStrategies.keywords')
+      },
+      {
+        id: 'learning-13',
+        title: t('learning.articles.longTermManagement.title'),
+        type: 'article' as const,
+        readTime: t('learning.articles.longTermManagement.readTime'),
+        category: 'learning',
+        keywords: t('learning.articles.longTermManagement.keywords')
+      }
+    ];
+
+    const pdfs = [
+      {
+        id: 'learning-pdf-1',
+        title: t('learning.pdfs.naturalTherapyAssessment.title'),
+        type: 'pdf' as const,
+        readTime: t('learning.pdfs.naturalTherapyAssessment.readTime'),
+        category: 'learning',
+        keywords: t('learning.pdfs.naturalTherapyAssessment.keywords'),
+        description: t('learning.pdfs.naturalTherapyAssessment.description')
+      },
+      {
+        id: 'learning-pdf-2',
+        title: t('learning.pdfs.hormoneTestingGuide.title'),
+        type: 'pdf' as const,
+        readTime: t('learning.pdfs.hormoneTestingGuide.readTime'),
+        category: 'learning',
+        keywords: t('learning.pdfs.hormoneTestingGuide.keywords'),
+        description: t('learning.pdfs.hormoneTestingGuide.description')
+      },
+      {
+        id: 'learning-pdf-3',
+        title: t('learning.pdfs.nutritionalAnalysis.title'),
+        type: 'pdf' as const,
+        readTime: t('learning.pdfs.nutritionalAnalysis.readTime'),
+        category: 'learning',
+        keywords: t('learning.pdfs.nutritionalAnalysis.keywords'),
+        description: t('learning.pdfs.nutritionalAnalysis.description')
+      },
+      {
+        id: 'learning-pdf-4',
+        title: t('learning.pdfs.exerciseProgram.title'),
+        type: 'pdf' as const,
+        readTime: t('learning.pdfs.exerciseProgram.readTime'),
+        category: 'learning',
+        keywords: t('learning.pdfs.exerciseProgram.keywords'),
+        description: t('learning.pdfs.exerciseProgram.description')
+      },
+      {
+        id: 'learning-pdf-5',
+        title: t('learning.pdfs.psychologicalAssessment.title'),
+        type: 'pdf' as const,
+        readTime: t('learning.pdfs.psychologicalAssessment.readTime'),
+        category: 'learning',
+        keywords: t('learning.pdfs.psychologicalAssessment.keywords'),
+        description: t('learning.pdfs.psychologicalAssessment.description')
+      },
+      {
+        id: 'learning-pdf-6',
+        title: t('learning.pdfs.researchSummary.title'),
+        type: 'pdf' as const,
+        readTime: t('learning.pdfs.researchSummary.readTime'),
+        category: 'learning',
+        keywords: t('learning.pdfs.researchSummary.keywords'),
+        description: t('learning.pdfs.researchSummary.description')
+      },
+      {
+        id: 'learning-pdf-7',
+        title: t('learning.pdfs.cycleEducationGuide.title'),
+        type: 'pdf' as const,
+        readTime: t('learning.pdfs.cycleEducationGuide.readTime'),
+        category: 'learning',
+        keywords: t('learning.pdfs.cycleEducationGuide.keywords'),
+        description: t('learning.pdfs.cycleEducationGuide.description')
+      },
+      {
+        id: 'learning-pdf-8',
+        title: t('learning.pdfs.consultationPreparation.title'),
+        type: 'pdf' as const,
+        readTime: t('learning.pdfs.consultationPreparation.readTime'),
+        category: 'learning',
+        keywords: t('learning.pdfs.consultationPreparation.keywords'),
+        description: t('learning.pdfs.consultationPreparation.description')
+      },
+      {
+        id: 'learning-pdf-9',
+        title: t('learning.pdfs.globalHealthReport.title'),
+        type: 'pdf' as const,
+        readTime: t('learning.pdfs.globalHealthReport.readTime'),
+        category: 'learning',
+        keywords: t('learning.pdfs.globalHealthReport.keywords'),
+        description: t('learning.pdfs.globalHealthReport.description')
+      },
+      {
+        id: 'learning-pdf-10',
+        title: t('learning.pdfs.technologyGuide.title'),
+        type: 'pdf' as const,
+        readTime: t('learning.pdfs.technologyGuide.readTime'),
+        category: 'learning',
+        keywords: t('learning.pdfs.technologyGuide.keywords'),
+        description: t('learning.pdfs.technologyGuide.description')
+      }
+    ];
+
+    return [...articles, ...pdfs];
+  };
+
+  // 🚀 阶段4：长期管理类资源数据生成器
+  const generateManagementResources = () => {
+    const articles = [
+      {
+        id: 'management-1',
+        title: t('management.articles.longTermStrategy.title'),
+        type: 'article' as const,
+        readTime: t('management.articles.longTermStrategy.readTime'),
+        category: 'management',
+        keywords: t('management.articles.longTermStrategy.keywords')
+      },
+      {
+        id: 'management-2',
+        title: t('management.articles.lifestyleOptimization.title'),
+        type: 'article' as const,
+        readTime: t('management.articles.lifestyleOptimization.readTime'),
+        category: 'management',
+        keywords: t('management.articles.lifestyleOptimization.keywords')
+      },
+      {
+        id: 'management-3',
+        title: t('management.articles.healthMonitoring.title'),
+        type: 'article' as const,
+        readTime: t('management.articles.healthMonitoring.readTime'),
+        category: 'management',
+        keywords: t('management.articles.healthMonitoring.keywords')
+      },
+      {
+        id: 'management-4',
+        title: t('management.articles.preventiveMeasures.title'),
+        type: 'article' as const,
+        readTime: t('management.articles.preventiveMeasures.readTime'),
+        category: 'management',
+        keywords: t('management.articles.preventiveMeasures.keywords')
+      },
+      {
+        id: 'management-5',
+        title: t('management.articles.sustainablePractices.title'),
+        type: 'article' as const,
+        readTime: t('management.articles.sustainablePractices.readTime'),
+        category: 'management',
+        keywords: t('management.articles.sustainablePractices.keywords')
+      },
+      {
+        id: 'management-6',
+        title: t('management.articles.communitySupport.title'),
+        type: 'article' as const,
+        readTime: t('management.articles.communitySupport.readTime'),
+        category: 'management',
+        keywords: t('management.articles.communitySupport.keywords')
+      },
+      {
+        id: 'management-7',
+        title: t('management.articles.professionalGuidance.title'),
+        type: 'article' as const,
+        readTime: t('management.articles.professionalGuidance.readTime'),
+        category: 'management',
+        keywords: t('management.articles.professionalGuidance.keywords')
+      },
+      {
+        id: 'management-8',
+        title: t('management.articles.technologyIntegration.title'),
+        type: 'article' as const,
+        readTime: t('management.articles.technologyIntegration.readTime'),
+        category: 'management',
+        keywords: t('management.articles.technologyIntegration.keywords')
+      },
+      {
+        id: 'management-9',
+        title: t('management.articles.qualityImprovement.title'),
+        type: 'article' as const,
+        readTime: t('management.articles.qualityImprovement.readTime'),
+        category: 'management',
+        keywords: t('management.articles.qualityImprovement.keywords')
+      }
+    ];
+
+    const pdfs = [
+      {
+        id: 'management-pdf-1',
+        title: t('management.pdfs.managementPlan.title'),
+        type: 'pdf' as const,
+        readTime: t('management.pdfs.managementPlan.readTime'),
+        category: 'management',
+        keywords: t('management.pdfs.managementPlan.keywords'),
+        description: t('management.pdfs.managementPlan.description')
+      },
+      {
+        id: 'management-pdf-2',
+        title: t('management.pdfs.lifestyleGuide.title'),
+        type: 'pdf' as const,
+        readTime: t('management.pdfs.lifestyleGuide.readTime'),
+        category: 'management',
+        keywords: t('management.pdfs.lifestyleGuide.keywords'),
+        description: t('management.pdfs.lifestyleGuide.description')
+      },
+      {
+        id: 'management-pdf-3',
+        title: t('management.pdfs.monitoringTools.title'),
+        type: 'pdf' as const,
+        readTime: t('management.pdfs.monitoringTools.readTime'),
+        category: 'management',
+        keywords: t('management.pdfs.monitoringTools.keywords'),
+        description: t('management.pdfs.monitoringTools.description')
+      },
+      {
+        id: 'management-pdf-4',
+        title: t('management.pdfs.preventionChecklist.title'),
+        type: 'pdf' as const,
+        readTime: t('management.pdfs.preventionChecklist.readTime'),
+        category: 'management',
+        keywords: t('management.pdfs.preventionChecklist.keywords'),
+        description: t('management.pdfs.preventionChecklist.description')
+      },
+      {
+        id: 'management-pdf-5',
+        title: t('management.pdfs.sustainabilityGuide.title'),
+        type: 'pdf' as const,
+        readTime: t('management.pdfs.sustainabilityGuide.readTime'),
+        category: 'management',
+        keywords: t('management.pdfs.sustainabilityGuide.keywords'),
+        description: t('management.pdfs.sustainabilityGuide.description')
+      },
+      {
+        id: 'management-pdf-6',
+        title: t('management.pdfs.communityResources.title'),
+        type: 'pdf' as const,
+        readTime: t('management.pdfs.communityResources.readTime'),
+        category: 'management',
+        keywords: t('management.pdfs.communityResources.keywords'),
+        description: t('management.pdfs.communityResources.description')
+      }
+    ];
+
+    return [...articles, ...pdfs];
+  };
+
   // 🚀 完整的资源数据 - 基于实际需求的49个资源
   const categories = {
     immediate: {
@@ -313,127 +913,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       color: 'from-red-500 to-red-600',
       bgColor: 'bg-red-50',
       borderColor: 'border-red-200',
-      resources: [
-        // 即时缓解文章 (7篇)
-        {
-          id: 'immediate-1',
-          title: t('immediate.quickRelief'),
-          type: 'article' as const,
-          readTime: t('immediate.quickReliefTime'),
-          category: 'immediate',
-          keywords: locale === 'zh' ? ['疼痛', '缓解', '快速', '技巧'] : ['pain', 'relief', 'quick', 'techniques']
-        },
-        {
-          id: 'immediate-2',
-          title: t('immediate.heatTherapy'),
-          type: 'article' as const,
-          readTime: t('immediate.heatTherapyTime'),
-          category: 'immediate',
-          keywords: locale === 'zh' ? ['热敷', '敷热水袋', '暖宝宝', '热疗', '温热', '缓解'] : ['heat', 'therapy', 'warm', 'relief', 'thermal', 'treatment']
-        },
-        {
-          id: 'immediate-3',
-          title: t('immediate.painVsOther'),
-          type: 'article' as const,
-          readTime: t('immediate.painVsOtherTime'),
-          category: 'immediate'
-        },
-        {
-          id: 'immediate-4',
-          title: t('immediate.naturalTherapy'),
-          type: 'article' as const,
-          readTime: t('immediate.naturalTherapyTime'),
-          category: 'immediate',
-          keywords: locale === 'zh' ? ['按摩', '揉肚子', '物理', '自然', '疗法', '缓解'] : ['massage', 'physical', 'natural', 'therapy', 'relief', 'treatment']
-        },
-        {
-          id: 'immediate-5',
-          title: t('immediate.gingerRelief'),
-          type: 'article' as const,
-          readTime: t('immediate.gingerReliefTime'),
-          category: 'immediate',
-          keywords: locale === 'zh' ? ['生姜', '缓解', '疼痛', '自然', '天然'] : ['ginger', 'relief', 'pain', 'natural', 'herbal']
-        },
-        {
-          id: 'immediate-6',
-          title: t('immediate.nsaidGuide'),
-          type: 'article' as const,
-          readTime: t('immediate.nsaidGuideTime'),
-          category: 'immediate',
-          keywords: locale === 'zh' ? ['止痛药', '药物', '医学', '专业', '抗炎', '治疗'] : ['pain', 'medication', 'medical', 'professional', 'anti-inflammatory', 'treatment']
-        },
-        {
-          id: 'immediate-7',
-          title: t('immediate.specificManagement'),
-          type: 'article' as const,
-          readTime: t('immediate.specificManagementTime'),
-          category: 'immediate'
-        },
-        // 即时缓解PDF (7个：3个现有 + 4个新增)
-        {
-          id: 'immediate-pdf-1',
-          title: locale === 'zh' ? '疼痛追踪表格' : 'Pain Tracking Form',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'immediate',
-          keywords: locale === 'zh' ? ['疼痛', '追踪', '记录', '监测', '管理'] : ['pain', 'tracking', 'record', 'monitoring', 'management'],
-          description: locale === 'zh' ? '记录和追踪疼痛程度的专业表格' : 'Professional form for tracking and recording pain levels'
-        },
-        {
-          id: 'immediate-pdf-2',
-          title: locale === 'zh' ? '校园紧急检查清单' : 'Campus Emergency Checklist',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'immediate',
-          keywords: locale === 'zh' ? ['校园', '紧急', '检查', '学生', '应急'] : ['campus', 'emergency', 'checklist', 'student', 'crisis'],
-          description: locale === 'zh' ? '校园环境中经期紧急情况的应对清单' : 'Emergency response checklist for menstrual situations on campus'
-        },
-        {
-          id: 'immediate-pdf-3',
-          title: locale === 'zh' ? '特定痛经管理指南PDF' : 'Specific Pain Management Guide PDF',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'immediate',
-          keywords: locale === 'zh' ? ['痛经', '管理', '指南', '治疗', '缓解'] : ['dysmenorrhea', 'management', 'guide', 'treatment', 'relief'],
-          description: locale === 'zh' ? '针对特定痛经类型的专业管理指南' : 'Professional management guide for specific types of dysmenorrhea'
-        },
-        {
-          id: 'immediate-pdf-4',
-          title: locale === 'zh' ? '紧急疼痛缓解卡片' : 'Emergency Pain Relief Card',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'immediate',
-          keywords: locale === 'zh' ? ['紧急', '缓解', '卡片', '便携', '快速'] : ['emergency', 'relief', 'card', 'portable', 'quick'],
-          description: locale === 'zh' ? '便携式紧急疼痛缓解方法速查卡' : 'Portable quick reference card for emergency pain relief methods'
-        },
-        {
-          id: 'immediate-pdf-5',
-          title: locale === 'zh' ? '5分钟快速缓解检查清单' : '5-Minute Quick Relief Checklist',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'immediate',
-          keywords: locale === 'zh' ? ['5分钟', '快速', '缓解', '检查', '步骤'] : ['5-minute', 'quick', 'relief', 'checklist', 'steps'],
-          description: locale === 'zh' ? '即时可用的5分钟快速缓解步骤清单' : 'Instant-use 5-minute quick relief step checklist'
-        },
-        {
-          id: 'immediate-pdf-6',
-          title: locale === 'zh' ? '热疗完整指南PDF版' : 'Complete Heat Therapy Guide PDF',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'immediate',
-          keywords: locale === 'zh' ? ['热敷', '敷热水袋', '暖宝宝', '热疗', '指南', '温热', '治疗', '方法'] : ['heat', 'therapy', 'warm', 'thermal', 'treatment', 'methods', 'guide'],
-          description: locale === 'zh' ? '详细的热疗使用方法和注意事项指南' : 'Detailed guide on heat therapy methods and precautions'
-        },
-        {
-          id: 'immediate-pdf-7',
-          title: locale === 'zh' ? '职场疼痛缓解工具包' : 'Workplace Pain Relief Toolkit',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'immediate',
-          keywords: locale === 'zh' ? ['职场', '工作', '缓解', '工具', '办公'] : ['workplace', 'office', 'relief', 'toolkit', 'professional'],
-          description: locale === 'zh' ? '办公环境下的疼痛管理和缓解方案' : 'Pain management and relief solutions for office environments'
-        }
-      ]
+      resources: generateImmediateResources()
     },
     preparation: {
       id: 'preparation',
@@ -443,124 +923,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       color: 'from-orange-500 to-orange-600',
       bgColor: 'bg-orange-50',
       borderColor: 'border-orange-200',
-      resources: [
-        // 计划准备文章 (7篇)
-        {
-          id: 'preparation-1',
-          title: locale === 'zh' ? '经期预防性护理完全方案' : 'Complete Preventive Care Plan',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '22分钟' : '22 min read',
-          category: 'preparation'
-        },
-        {
-          id: 'preparation-2',
-          title: locale === 'zh' ? '经期睡眠质量全面改善指南' : 'Comprehensive Sleep Quality Guide',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '20分钟' : '20 min read',
-          category: 'preparation'
-        },
-        {
-          id: 'preparation-3',
-          title: locale === 'zh' ? '经期压力管理完全指南' : 'Complete Stress Management Guide',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '22分钟' : '22 min read',
-          category: 'preparation'
-        },
-        {
-          id: 'preparation-4',
-          title: locale === 'zh' ? '站桩八段锦经期疼痛缓解' : 'Zhan Zhuang Baduanjin for Pain Relief',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '18分钟' : '18 min read',
-          category: 'preparation',
-          keywords: locale === 'zh' ? ['运动', '八段锦', '站桩', '缓解', '锻炼'] : ['exercise', 'baduanjin', 'qigong', 'relief', 'workout']
-        },
-        {
-          id: 'preparation-5',
-          title: locale === 'zh' ? '抗炎饮食与经期疼痛' : 'Anti-inflammatory Diet for Period Pain',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '18分钟' : '18 min read',
-          category: 'preparation',
-          keywords: locale === 'zh' ? ['饮食', '营养', '抗炎', '疼痛', '食物'] : ['diet', 'nutrition', 'anti-inflammatory', 'pain', 'food']
-        },
-        {
-          id: 'preparation-6',
-          title: locale === 'zh' ? '镁与肠道健康综合指南' : 'Magnesium and Gut Health Guide',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '16分钟' : '16 min read',
-          category: 'preparation'
-        },
-        {
-          id: 'preparation-7',
-          title: locale === 'zh' ? '经期友好食谱' : 'Period-Friendly Recipes',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '12分钟' : '12 min read',
-          category: 'preparation'
-        },
-        // 计划准备PDF (7个：4个现有 + 3个新增)
-        {
-          id: 'preparation-pdf-1',
-          title: locale === 'zh' ? '健康习惯检查清单' : 'Healthy Habits Checklist',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'preparation',
-          keywords: locale === 'zh' ? ['健康', '习惯', '检查', '清单', '计划'] : ['health', 'habits', 'checklist', 'planning', 'routine'],
-          description: locale === 'zh' ? '建立健康生活习惯的专业检查清单' : 'Professional checklist for establishing healthy lifestyle habits'
-        },
-        {
-          id: 'preparation-pdf-2',
-          title: locale === 'zh' ? '经期营养计划' : 'Menstrual Cycle Nutrition Plan',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'preparation',
-          keywords: locale === 'zh' ? ['营养', '计划', '饮食', '健康', '周期'] : ['nutrition', 'plan', 'diet', 'health', 'cycle'],
-          description: locale === 'zh' ? '针对月经周期的个性化营养补充计划' : 'Personalized nutrition plan for menstrual cycle support'
-        },
-        {
-          id: 'preparation-pdf-3',
-          title: locale === 'zh' ? '镁与肠道健康指南' : 'Magnesium Gut Health Guide',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'preparation',
-          keywords: locale === 'zh' ? ['镁', '肠道', '健康', '矿物质', '补充'] : ['magnesium', 'gut', 'health', 'minerals', 'supplement'],
-          description: locale === 'zh' ? '镁元素与肠道健康的综合指导手册' : 'Comprehensive guide on magnesium and gut health connection'
-        },
-        {
-          id: 'preparation-pdf-4',
-          title: locale === 'zh' ? '站桩八段锦图解指南' : 'Zhan Zhuang Baduanjin Illustrated Guide',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'preparation',
-          keywords: locale === 'zh' ? ['运动', '八段锦', '站桩', '缓解', '锻炼'] : ['exercise', 'baduanjin', 'qigong', 'relief', 'workout'],
-          description: locale === 'zh' ? '传统八段锦和站桩功法的详细图解教程' : 'Detailed illustrated tutorial for traditional Baduanjin and Zhan Zhuang exercises'
-        },
-        {
-          id: 'preparation-pdf-5',
-          title: locale === 'zh' ? '月度准备计划表' : 'Monthly Preparation Planner',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'preparation',
-          keywords: locale === 'zh' ? ['月度', '计划', '准备', '管理', '安排'] : ['monthly', 'planning', 'preparation', 'management', 'schedule'],
-          description: locale === 'zh' ? '提前规划经期健康管理的月度计划工具' : 'Monthly planning tool for advance menstrual health management'
-        },
-        {
-          id: 'preparation-pdf-6',
-          title: locale === 'zh' ? '压力管理工作册' : 'Stress Management Workbook',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'preparation',
-          keywords: locale === 'zh' ? ['压力', '管理', '工作册', '心理', '调节'] : ['stress', 'management', 'workbook', 'mental', 'wellness'],
-          description: locale === 'zh' ? '经期压力管理的实用练习册和指导手册' : 'Practical workbook and guide for menstrual stress management'
-        },
-        {
-          id: 'preparation-pdf-7',
-          title: locale === 'zh' ? '睡眠质量改善指南' : 'Sleep Quality Improvement Guide',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'preparation',
-          keywords: locale === 'zh' ? ['睡眠', '质量', '改善', '休息', '恢复'] : ['sleep', 'quality', 'improvement', 'rest', 'recovery'],
-          description: locale === 'zh' ? '经期睡眠优化的详细指导和实用技巧' : 'Detailed guidance and practical tips for menstrual sleep optimization'
-        }
-      ]
+      resources: generatePreparationResources()
     },
     learning: {
       id: 'learning',
@@ -570,192 +933,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       color: 'from-blue-500 to-blue-600',
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200',
-      resources: [
-        // 学习理解文章 (13篇)
-        {
-          id: 'learning-1',
-          title: locale === 'zh' ? '女性生命周期痛经特点全解析' : 'Women\'s Lifecycle Pain Analysis',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '24分钟' : '24 min read',
-          category: 'learning'
-        },
-        {
-          id: 'learning-2',
-          title: locale === 'zh' ? '2024年痛经研究进展报告' : '2024 Menstrual Pain Research Progress',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '18分钟' : '18 min read',
-          category: 'learning'
-        },
-        {
-          id: 'learning-3',
-          title: locale === 'zh' ? '了解您的生理周期' : 'Understanding Your Cycle',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '25分钟' : '25 min read',
-          category: 'learning'
-        },
-        {
-          id: 'learning-4',
-          title: locale === 'zh' ? '美国痛经治疗医疗保险覆盖指南' : 'US Insurance Coverage Guide',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '25分钟' : '25 min read',
-          category: 'learning'
-        },
-        {
-          id: 'learning-5',
-          title: locale === 'zh' ? '经期疼痛的隐藏元凶' : 'Hidden Culprits of Period Pain',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '20分钟' : '20 min read',
-          category: 'learning'
-        },
-        {
-          id: 'learning-6',
-          title: locale === 'zh' ? '经期疼痛常见问题专家解答' : 'Expert FAQ on Period Pain',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '18分钟' : '18 min read',
-          category: 'learning'
-        },
-        {
-          id: 'learning-7',
-          title: locale === 'zh' ? '何时就医：经期疼痛警示信号' : 'When to See Doctor: Warning Signs',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '10分钟' : '10 min read',
-          category: 'learning'
-        },
-        {
-          id: 'learning-8',
-          title: locale === 'zh' ? '何时寻求医疗护理综合指南' : 'When to Seek Medical Care Guide',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '15分钟' : '15 min read',
-          category: 'learning'
-        },
-        {
-          id: 'learning-9',
-          title: locale === 'zh' ? '痛经综合医学指南' : 'Comprehensive Medical Guide',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '30分钟' : '30 min read',
-          category: 'learning',
-          keywords: locale === 'zh' ? ['医学', '综合', '指南', '专业', '治疗'] : ['medical', 'comprehensive', 'guide', 'professional', 'treatment']
-        },
-        {
-          id: 'learning-10',
-          title: locale === 'zh' ? '经期疼痛并发症管理' : 'Pain Complications Management',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '22分钟' : '22 min read',
-          category: 'learning'
-        },
-        {
-          id: 'learning-11',
-          title: locale === 'zh' ? '宫内节育器综合指南' : 'IUD Comprehensive Guide',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '28分钟' : '28 min read',
-          category: 'learning'
-        },
-        {
-          id: 'learning-12',
-          title: locale === 'zh' ? '循证医学痛经指南' : 'Evidence-Based Pain Guide',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '32分钟' : '32 min read',
-          category: 'learning'
-        },
-        {
-          id: 'learning-13',
-          title: locale === 'zh' ? '精油芳疗经期疼痛指南' : 'Essential Oils Pain Relief Guide',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '14分钟' : '14 min read',
-          category: 'learning'
-        },
-        // 学习理解PDF (10个：6个现有 + 4个新增)
-        {
-          id: 'learning-pdf-1',
-          title: locale === 'zh' ? '自然疗法评估表' : 'Natural Therapy Assessment',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'learning',
-          keywords: locale === 'zh' ? ['自然', '疗法', '评估', '表格', '选择'] : ['natural', 'therapy', 'assessment', 'evaluation', 'selection'],
-          description: locale === 'zh' ? '评估和选择适合个人的自然疗法方案' : 'Assessment tool for selecting suitable natural therapy approaches'
-        },
-        {
-          id: 'learning-pdf-2',
-          title: locale === 'zh' ? '痛经并发症管理' : 'Pain Complications Management PDF',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'learning',
-          keywords: locale === 'zh' ? ['并发症', '管理', '医学', '专业', '治疗'] : ['complications', 'management', 'medical', 'professional', 'treatment'],
-          description: locale === 'zh' ? '痛经相关并发症的识别和管理指南' : 'Guide for identifying and managing menstrual pain complications'
-        },
-        {
-          id: 'learning-pdf-3',
-          title: locale === 'zh' ? '教师健康手册' : 'Teacher Health Manual',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'learning',
-          keywords: locale === 'zh' ? ['教师', '健康', '手册', '教育', '工作'] : ['teacher', 'health', 'manual', 'education', 'workplace'],
-          description: locale === 'zh' ? '教育工作者的健康管理和职业保健手册' : 'Health management and occupational wellness manual for educators'
-        },
-        {
-          id: 'learning-pdf-4',
-          title: locale === 'zh' ? '教师协作手册' : 'Teacher Collaboration Handbook',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'learning',
-          keywords: locale === 'zh' ? ['教师', '协作', '沟通', '合作', '指导'] : ['teacher', 'collaboration', 'communication', 'cooperation', 'guidance'],
-          description: locale === 'zh' ? '教师间协作和学生健康支持的指导手册' : 'Guidance manual for teacher collaboration and student health support'
-        },
-        {
-          id: 'learning-pdf-5',
-          title: locale === 'zh' ? '家长沟通指南' : 'Parent Communication Guide',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'learning',
-          keywords: locale === 'zh' ? ['沟通', '家长', '对话', '交流', '指导'] : ['communication', 'parent', 'dialogue', 'conversation', 'guidance'],
-          description: locale === 'zh' ? '与家长就青春期健康问题进行有效沟通的指南' : 'Guide for effective communication with parents about adolescent health'
-        },
-        {
-          id: 'learning-pdf-6',
-          title: locale === 'zh' ? '美国保险快速参考卡' : 'US Insurance Quick Reference',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'learning',
-          keywords: locale === 'zh' ? ['保险', '美国', '参考', '医疗', '覆盖'] : ['insurance', 'USA', 'reference', 'medical', 'coverage'],
-          description: locale === 'zh' ? '美国医疗保险中经期健康服务的快速参考' : 'Quick reference for menstrual health services under US health insurance'
-        },
-        {
-          id: 'learning-pdf-7',
-          title: locale === 'zh' ? '月经周期教育指南' : 'Menstrual Cycle Education Guide',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'learning',
-          keywords: locale === 'zh' ? ['教育', '周期', '生理', '科学', '知识'] : ['education', 'cycle', 'physiology', 'science', 'knowledge'],
-          description: locale === 'zh' ? '全面的月经周期科学教育和健康知识材料' : 'Comprehensive scientific education material about menstrual cycle and health'
-        },
-        {
-          id: 'learning-pdf-8',
-          title: locale === 'zh' ? '2024痛经研究摘要' : '2024 Pain Research Summary',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'learning',
-          keywords: locale === 'zh' ? ['研究', '2024', '最新', '科学', '进展'] : ['research', '2024', 'latest', 'science', 'progress'],
-          description: locale === 'zh' ? '2024年最新痛经研究成果和科学进展汇总' : '2024 latest menstrual pain research findings and scientific progress summary'
-        },
-        {
-          id: 'learning-pdf-9',
-          title: locale === 'zh' ? '就医咨询准备指南' : 'Medical Consultation Preparation Guide',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'learning',
-          keywords: locale === 'zh' ? ['就医', '咨询', '准备', '医生', '问诊'] : ['medical', 'consultation', 'preparation', 'doctor', 'appointment'],
-          description: locale === 'zh' ? '就医前的准备工作和问题清单指导' : 'Guidance for preparation and question checklist before medical appointments'
-        },
-        {
-          id: 'learning-pdf-10',
-          title: locale === 'zh' ? '全球健康视角报告' : 'Global Health Perspectives Report',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'learning',
-          keywords: locale === 'zh' ? ['全球', '视角', '文化', '国际', '比较'] : ['global', 'perspectives', 'cultural', 'international', 'comparative'],
-          description: locale === 'zh' ? '不同文化背景下经期健康管理方法的比较研究' : 'Comparative study of menstrual health management across different cultural backgrounds'
-        }
-      ]
+      resources: generateLearningResources()
     },
     management: {
       id: 'management',
@@ -765,128 +943,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       color: 'from-green-500 to-green-600',
       bgColor: 'bg-green-50',
       borderColor: 'border-green-200',
-      resources: [
-        // 长期管理文章 (9篇)
-        {
-          id: 'management-1',
-          title: locale === 'zh' ? '推荐阅读清单' : 'Recommended Reading List',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '35分钟' : '35 min read',
-          category: 'management'
-        },
-        {
-          id: 'management-2',
-          title: locale === 'zh' ? '有效草药茶经期疼痛缓解' : 'Herbal Tea Pain Relief',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '15分钟' : '15 min read',
-          category: 'management'
-        },
-        {
-          id: 'management-3',
-          title: locale === 'zh' ? '全球传统经期疼痛缓解方法' : 'Global Traditional Pain Relief',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '25分钟' : '25 min read',
-          category: 'management'
-        },
-        {
-          id: 'management-4',
-          title: locale === 'zh' ? '个人经期健康档案' : 'Personal Health Profile',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '20分钟' : '20 min read',
-          category: 'management'
-        },
-        {
-          id: 'management-5',
-          title: locale === 'zh' ? '抗炎饮食缓解经期疼痛指南' : 'Anti-inflammatory Diet Guide',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '18分钟' : '18 min read',
-          category: 'management'
-        },
-        {
-          id: 'management-6',
-          title: locale === 'zh' ? '经期友好营养食谱' : 'Period-Friendly Nutrition Recipes',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '12分钟' : '12 min read',
-          category: 'management',
-          keywords: locale === 'zh' ? ['营养', '食谱', '友好', '饮食', '健康'] : ['nutrition', 'recipes', 'friendly', 'diet', 'health']
-        },
-        {
-          id: 'management-7',
-          title: locale === 'zh' ? '长期健康生活方式指南' : 'Long-term Healthy Lifestyle Guide',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '30分钟' : '30 min read',
-          category: 'management'
-        },
-        {
-          id: 'management-8',
-          title: locale === 'zh' ? '经期健康追踪与分析' : 'Health Tracking and Analysis',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '22分钟' : '22 min read',
-          category: 'management'
-        },
-        {
-          id: 'management-9',
-          title: locale === 'zh' ? '可持续健康管理策略' : 'Sustainable Health Management',
-          type: 'article' as const,
-          readTime: locale === 'zh' ? '28分钟' : '28 min read',
-          category: 'management'
-        },
-        // 长期管理PDF (6个：全新分类)
-        {
-          id: 'management-pdf-1',
-          title: locale === 'zh' ? '长期健康规划师' : 'Long-term Health Planner',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'management',
-          keywords: locale === 'zh' ? ['长期', '健康', '规划', '目标', '计划'] : ['long-term', 'health', 'planning', 'goals', 'strategy'],
-          description: locale === 'zh' ? '年度健康管理和目标设定的专业工具' : 'Professional tool for annual health management and goal setting'
-        },
-        {
-          id: 'management-pdf-2',
-          title: locale === 'zh' ? '个人健康日记模板' : 'Personal Health Journal Template',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'management',
-          keywords: locale === 'zh' ? ['日记', '模板', '记录', '追踪', '个人'] : ['journal', 'template', 'record', 'tracking', 'personal'],
-          description: locale === 'zh' ? '长期健康追踪和记录的日记模板工具' : 'Journal template tool for long-term health tracking and recording'
-        },
-        {
-          id: 'management-pdf-3',
-          title: locale === 'zh' ? '营养膳食规划工具包' : 'Nutrition Meal Planning Kit',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'management',
-          keywords: locale === 'zh' ? ['营养', '膳食', '规划', '工具', '饮食'] : ['nutrition', 'meal', 'planning', 'toolkit', 'diet'],
-          description: locale === 'zh' ? '长期营养管理和膳食规划的实用工具包' : 'Practical toolkit for long-term nutrition management and meal planning'
-        },
-        {
-          id: 'management-pdf-4',
-          title: locale === 'zh' ? '运动计划构建器' : 'Exercise Routine Builder',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'management',
-          keywords: locale === 'zh' ? ['运动', '计划', '构建', '锻炼', '健身'] : ['exercise', 'routine', 'builder', 'workout', 'fitness'],
-          description: locale === 'zh' ? '个性化运动计划制定和执行的指导工具' : 'Guidance tool for creating and implementing personalized exercise routines'
-        },
-        {
-          id: 'management-pdf-5',
-          title: locale === 'zh' ? '生活方式评估工具包' : 'Lifestyle Assessment Toolkit',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'management',
-          keywords: locale === 'zh' ? ['生活方式', '评估', '工具', '健康', '分析'] : ['lifestyle', 'assessment', 'toolkit', 'health', 'analysis'],
-          description: locale === 'zh' ? '全面的生活方式健康评估和优化工具' : 'Comprehensive lifestyle health assessment and optimization tool'
-        },
-        {
-          id: 'management-pdf-6',
-          title: locale === 'zh' ? '可持续健康策略指南' : 'Sustainable Health Strategies Guide',
-          type: 'pdf' as const,
-          readTime: locale === 'zh' ? 'PDF' : 'PDF',
-          category: 'management',
-          keywords: locale === 'zh' ? ['可持续', '策略', '健康', '管理', '长期'] : ['sustainable', 'strategies', 'health', 'management', 'long-term'],
-          description: locale === 'zh' ? '长期可持续健康管理策略的指导手册' : 'Guidance manual for long-term sustainable health management strategies'
-        }
-      ]
+      resources: generateManagementResources()
     }
   };
 
@@ -902,124 +959,83 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       const titleMatch = resource.title.toLowerCase().includes(term);
       
       // 搜索关键词
-      const keywordMatch = resource.keywords?.some((keyword: string) => 
-        keyword.toLowerCase().includes(term)
-      ) || false;
+      const keywordMatch = resource.keywords?.toLowerCase().includes(term) || false;
       
       // 搜索描述
       const descriptionMatch = resource.description?.toLowerCase().includes(term) || false;
       
-      // 6个核心关键词的特殊匹配逻辑
-      const coreKeywordMatches = {
-        // 热敷相关匹配
-        '热敷': term.includes('热敷') && (
-          resource.title.toLowerCase().includes('热') || 
-          resource.keywords?.some(k => k.toLowerCase().includes('热敷') || k.toLowerCase().includes('热疗'))
-        ),
-        '敷热水袋': term.includes('敷热水袋') && (
-          resource.title.toLowerCase().includes('热') || 
-          resource.keywords?.some(k => k.toLowerCase().includes('敷热水袋') || k.toLowerCase().includes('热疗'))
-        ),
-        '暖宝宝': term.includes('暖宝宝') && (
-          resource.title.toLowerCase().includes('热') || 
-          resource.keywords?.some(k => k.toLowerCase().includes('暖宝宝') || k.toLowerCase().includes('热疗'))
-        ),
-        // 按摩相关匹配
-        '按摩': term.includes('按摩') && (
-          resource.title.toLowerCase().includes('按摩') || 
-          resource.keywords?.some(k => k.toLowerCase().includes('按摩'))
-        ),
-        '揉肚子': term.includes('揉肚子') && (
-          resource.title.toLowerCase().includes('按摩') || 
-          resource.keywords?.some(k => k.toLowerCase().includes('揉肚子') || k.toLowerCase().includes('按摩'))
-        ),
-        // 止痛药相关匹配
-        '止痛药': term.includes('止痛药') && (
-          resource.title.toLowerCase().includes('药') || 
-          resource.keywords?.some(k => k.toLowerCase().includes('止痛药') || k.toLowerCase().includes('药物'))
-        )
-      };
-      
-      // 检查是否有任何核心关键词匹配
-      const hasCoreKeywordMatch = Object.values(coreKeywordMatches).some(match => match);
-      
-      return titleMatch || keywordMatch || descriptionMatch || hasCoreKeywordMatch;
+      return titleMatch || keywordMatch || descriptionMatch;
     });
   };
-
-  // 根据搜索词获取要显示的资源
-  const filteredResources = searchTerm ? searchResources(searchTerm) : [];
 
   // 🎨 Phase 1: 移动优先的ResourceCard组件
   const ResourceCard = ({ resource }: { resource: Resource }) => {
     const isLoading = (action: string) => loadingStates[`${resource.id}${action ? `-${action}` : ''}`] || false;
 
     return (
-      <div className="bg-white rounded-xl p-3 sm:p-4 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-200 touch-manipulation">
-        {/* 移动优化：标题和类型标签 */}
-        <div className="flex items-start justify-between mb-3">
-          <div className="flex-1 mr-2 sm:mr-3 min-w-0">
-            <h3 className="font-semibold text-gray-800 text-sm sm:text-base leading-tight mb-2 line-clamp-2">
+      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 sm:p-6 hover:shadow-md transition-shadow duration-200">
+        <div className="flex flex-col space-y-3">
+          <div className="flex items-start justify-between">
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 leading-tight">
               {resource.title}
             </h3>
-            <div className="flex items-center space-x-2 flex-wrap">
-              <span className={`text-xs px-2 py-1 rounded-full font-medium whitespace-nowrap ${
-                resource.type === 'article'
-                  ? 'bg-blue-100 text-blue-600'
-                  : 'bg-orange-100 text-orange-600'
-              }`}>
-                {resource.type === 'article' ? (locale === 'zh' ? '文章' : 'Article') : 'PDF'}
-              </span>
-              <span className="text-xs text-gray-500 whitespace-nowrap">{resource.readTime}</span>
-            </div>
+            <span className="text-xs sm:text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded-full whitespace-nowrap ml-2">
+              {resource.readTime}
+            </span>
           </div>
-
-          {/* 移动优化：分享按钮 - 更大的触摸区域 */}
-          <button
-            onClick={() => handleShare(resource.id, resource.title, resource.type)}
-            className="p-2 sm:p-2 text-gray-400 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
-            title={locale === 'zh' ? '分享' : 'Share'}
-            aria-label={locale === 'zh' ? '分享此资源' : 'Share this resource'}
-          >
-            <Share2 className="w-4 h-4 sm:w-5 sm:h-5" />
-          </button>
-        </div>
-
-        {/* 移动优化：按钮组 */}
-        <div className="flex items-center justify-end space-x-1 sm:space-x-2">
-          {resource.type === 'article' ? (
-            // 文章：单个"阅读全文"按钮 - 移动优化
-            <button
-              onClick={() => handleArticleRead(resource.id)}
-              disabled={isLoading('')}
-              className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-purple-600 text-white text-xs sm:text-sm font-medium rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[44px] touch-manipulation"
-              aria-label={locale === 'zh' ? '阅读完整文章' : 'Read full article'}
-            >
-              {isLoading('') ? (
-                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-              ) : (
-                <BookOpen className="w-4 h-4" />
-              )}
-              <span className="hidden xs:inline sm:inline">{locale === 'zh' ? '阅读全文' : 'Read Full'}</span>
-              <span className="xs:hidden">{locale === 'zh' ? '阅读' : 'Read'}</span>
-            </button>
-          ) : (
-            // PDF：预览和下载按钮 - 移动优化
-            <div className="flex space-x-1 sm:space-x-2">
+          
+          {resource.description && (
+            <p className="text-sm text-gray-600 leading-relaxed">
+              {resource.description}
+            </p>
+          )}
+          
+          {resource.keywords && (
+            <div className="flex flex-wrap gap-1">
+              <span className="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded-full">
+                {resource.keywords}
+              </span>
+            </div>
+          )}
+          
+          <div className="flex flex-wrap gap-2 pt-2">
+            {resource.type === 'article' ? (
+              <button
+                onClick={() => handleArticleRead(resource.id)}
+                disabled={isLoading('read')}
+                className="flex items-center space-x-1 px-3 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[44px] touch-manipulation"
+                aria-label={locale === 'zh' ? '阅读文章' : 'Read article'}
+              >
+                {isLoading('read') ? (
+                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                ) : (
+                  <span>{t('ui.buttons.read')}</span>
+                )}
+              </button>
+            ) : (
               <button
                 onClick={() => handlePDFPreview(resource.id)}
                 disabled={isLoading('preview')}
-                className="flex items-center space-x-1 px-2 sm:px-3 py-2 bg-purple-600 text-white text-xs sm:text-sm font-medium rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[44px] touch-manipulation"
-                aria-label={locale === 'zh' ? '预览PDF内容' : 'Preview PDF content'}
+                className="flex items-center space-x-1 px-3 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[44px] touch-manipulation"
+                aria-label={locale === 'zh' ? '预览PDF' : 'Preview PDF'}
               >
                 {isLoading('preview') ? (
                   <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
                 ) : (
-                  <Eye className="w-4 h-4" />
+                  <span>{t('ui.buttons.preview')}</span>
                 )}
-                <span className="hidden xs:inline">{locale === 'zh' ? '预览' : 'Preview'}</span>
               </button>
-
+            )}
+            
+            <button
+              onClick={() => handleShare(resource.id, resource.title, resource.type)}
+              className="flex items-center space-x-1 px-3 py-2 bg-gray-600 text-white text-sm font-medium rounded-lg hover:bg-gray-700 transition-colors min-h-[44px] touch-manipulation"
+              aria-label={locale === 'zh' ? '分享资源' : 'Share resource'}
+            >
+              <span>{t('ui.buttons.share')}</span>
+            </button>
+            
+            {resource.type === 'pdf' && (
               <button
                 onClick={() => handlePDFDownload(resource.id, resource.title)}
                 disabled={isLoading('download')}
@@ -1031,10 +1047,10 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
                 ) : (
                   <Download className="w-4 h-4" />
                 )}
-                <span className="hidden xs:inline">{locale === 'zh' ? '下载' : 'Download'}</span>
+                <span className="hidden xs:inline">{t('ui.buttons.download')}</span>
               </button>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     );
@@ -1043,18 +1059,18 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
   const CategorySection = ({ category }: { category: any }) => (
     <div className="mb-8">
       <div className="flex items-center mb-4">
-        <div className={`p-2 rounded-lg mr-3 bg-gradient-to-r ${category.color} text-white`}>
-          {category.icon}
+        <div className={`p-2 rounded-lg ${category.bgColor} ${category.borderColor} border`}>
+          <div className={`text-white ${category.color.includes('from-') ? 'bg-gradient-to-r ' + category.color : category.color}`}>
+            {category.icon}
+          </div>
         </div>
-        <div>
-          <h2 className="text-lg font-bold text-gray-800">{category.title}</h2>
+        <div className="ml-3">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900">{category.title}</h2>
           <p className="text-sm text-gray-600">{category.subtitle}</p>
         </div>
-        <div className="ml-auto">
-          <span className="text-lg font-bold text-gray-600">{category.resources.length}</span>
-        </div>
       </div>
-      <div className="grid gap-3">
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {category.resources.map((resource: Resource) => (
           <ResourceCard key={resource.id} resource={resource} />
         ))}
@@ -1063,139 +1079,121 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
   );
 
   return (
-    <div className="max-w-4xl mx-auto px-3 sm:px-4 lg:px-0">
-      {/* 🔍 增强搜索区域 - 带关键词建议 */}
-      <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg mb-4 sm:mb-6">
-        <div className="relative">
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 sm:w-5 sm:h-5" />
-          <input
-            type="text"
-            placeholder={t('placeholder', { totalResources })}
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-9 sm:pl-10 pr-4 py-2.5 sm:py-3 text-sm sm:text-base border-2 border-gray-200 rounded-lg sm:rounded-xl focus:border-purple-500 focus:outline-none bg-white touch-manipulation"
-            aria-label={t('ariaLabel')}
-            title={t('helpText', { totalResources })}
-          />
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* 页面标题 */}
+        <div className="text-center mb-8">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            {t('title')}
+          </h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            {t('description')}
+          </p>
         </div>
-        
-        {/* 💡 搜索提示 - 仅在空搜索时显示 */}
-        {!searchTerm && (
-          <div className="mt-2 text-xs text-gray-500 text-center">
-            <span className="hidden sm:inline">
-              {locale === 'zh' ? '试试关键词：热敷、敷热水袋、暖宝宝、按摩、揉肚子、止痛药' : 'Try keywords: heat, massage, pain relief, medication'}
-            </span>
-            <span className="sm:hidden">
-              {locale === 'zh' ? '试试：热敷、按摩、止痛药' : 'Try: heat, massage, pain'}
-            </span>
-          </div>
-        )}
-      </div>
 
-      {/* 移动优化：分类选择 */}
-      <div className="bg-gradient-to-br from-pink-50 to-purple-50 p-4 sm:p-6 rounded-xl sm:rounded-2xl mb-4 sm:mb-6 border border-pink-100">
-        <h2 className="text-base sm:text-lg font-bold text-gray-800 mb-3 sm:mb-4 text-center">
-          {locale === 'zh' ? '我现在需要什么帮助？' : 'What help do I need now?'}
-        </h2>
-        <div className="space-y-2 sm:space-y-3">
-          {Object.values(categories).map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setActiveCategory(category.id)}
-              className={`w-full p-3 sm:p-4 rounded-lg sm:rounded-xl text-left transition-all duration-200 border-2 touch-manipulation min-h-[60px] sm:min-h-[auto] ${
-                activeCategory === category.id
-                  ? `bg-gradient-to-r ${category.color} text-white border-transparent shadow-lg scale-105`
-                  : `${category.bgColor} ${category.borderColor} text-gray-700 hover:shadow-md hover:scale-102`
-              }`}
-              aria-label={`${category.title} - ${category.resources.length} ${locale === 'zh' ? '个资源' : 'resources'}`}
-            >
-              <div className="flex items-center">
-                <div className={`p-1.5 sm:p-2 rounded-lg mr-2 sm:mr-3 flex-shrink-0 ${
-                  activeCategory === category.id
-                    ? 'bg-white/20'
-                    : `bg-gradient-to-r ${category.color} text-white`
-                }`}>
-                  {React.cloneElement(category.icon, {
-                    className: 'w-4 h-4 sm:w-5 sm:h-5'
-                  })}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="font-semibold text-sm sm:text-base truncate">{category.title}</div>
-                  <div className={`text-xs sm:text-sm line-clamp-1 ${
-                    activeCategory === category.id ? 'text-white/80' : 'text-gray-500'
-                  }`}>
-                    {category.subtitle}
-                  </div>
-                </div>
-                <div className={`text-lg sm:text-xl font-bold flex-shrink-0 ${
-                  activeCategory === category.id ? 'text-white' : 'text-gray-600'
-                }`}>
-                  {category.resources.length}
-                </div>
-              </div>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* 内容区域 */}
-      {searchTerm ? (
-        // 显示搜索结果
+        {/* 搜索框 */}
         <div className="mb-8">
-          <div className="flex items-center mb-4">
-            <div className="p-2 rounded-lg mr-3 bg-gradient-to-r from-purple-500 to-purple-600 text-white">
-              <Search className="w-6 h-6" />
+          <div className="relative max-w-2xl mx-auto">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+            <input
+              type="text"
+              placeholder={t('ui.placeholder', { totalResources })}
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg"
+              aria-label={t('ui.ariaLabel')}
+            />
+          </div>
+          <p className="text-center text-sm text-gray-500 mt-2">
+            {t('ui.searchHints.desktop')}
+          </p>
+        </div>
+
+        {/* 我现在需要什么帮助？板块 */}
+        <div className="mb-8">
+          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 text-center">
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">
+              {t('helpSection.title')}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {Object.values(categories).map((category: any) => (
+                <button
+                  key={category.id}
+                  onClick={() => setActiveCategory(category.id)}
+                  className={`p-4 rounded-lg border-2 transition-all duration-200 ${
+                    activeCategory === category.id
+                      ? `${category.borderColor} border-opacity-100 bg-gradient-to-br ${category.bgColor} text-white`
+                      : 'border-gray-200 hover:border-gray-300 bg-white text-gray-700 hover:shadow-md'
+                  }`}
+                >
+                  <div className="flex flex-col items-center space-y-2">
+                    <div className={`p-2 rounded-lg ${category.bgColor} ${category.borderColor} border`}>
+                      <div className={`text-white ${category.color.includes('from-') ? 'bg-gradient-to-r ' + category.color : category.color}`}>
+                        {category.icon}
+                      </div>
+                    </div>
+                    <div className="text-center">
+                      <h3 className="font-semibold text-sm">{category.title}</h3>
+                      <p className="text-xs opacity-80 mt-1">{category.subtitle}</p>
+                    </div>
+                    <div className="text-lg font-bold">{category.resources.length}</div>
+                  </div>
+                </button>
+              ))}
             </div>
-            <div>
-              <h2 className="text-lg font-bold text-gray-800">
-                {locale === 'zh' ? '搜索结果' : 'Search Results'}
-              </h2>
-              <p className="text-sm text-gray-600">
-                {locale === 'zh' 
-                  ? `找到 ${filteredResources.length} 个相关资源` 
-                  : `Found ${filteredResources.length} relevant resources`}
-              </p>
+            <div className="mt-4 pt-4 border-t border-gray-200">
+              <p className="text-sm text-gray-600 mb-2">{t('helpSection.needMoreHelp')}</p>
+              <button
+                onClick={() => router.push(`/${locale}/interactive-tools`)}
+                className="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                {t('helpSection.exploreTools')}
+              </button>
             </div>
           </div>
-          <div className="grid gap-3">
-            {filteredResources.length > 0 ? (
-              filteredResources.map((resource: Resource) => (
+        </div>
+
+        {/* 统计信息 */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+          <div className="bg-white p-4 rounded-lg shadow-sm text-center">
+            <div className="text-2xl font-bold text-blue-600">{totalResources}</div>
+            <div className="text-sm text-gray-600">{t('ui.stats.totalResources')}</div>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow-sm text-center">
+            <div className="text-2xl font-bold text-green-600">4</div>
+            <div className="text-sm text-gray-600">{t('ui.stats.categories')}</div>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow-sm text-center">
+            <div className="text-2xl font-bold text-purple-600">100%</div>
+            <div className="text-sm text-gray-600">{t('ui.stats.evidenceBased')}</div>
+          </div>
+        </div>
+
+        {/* 搜索结果或分类展示 */}
+        {searchTerm ? (
+          <div>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">
+              {t('ui.searchResults.title')}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {searchResources(searchTerm).map((resource: Resource) => (
                 <ResourceCard key={resource.id} resource={resource} />
-              ))
-            ) : (
-              <div className="text-center py-8 text-gray-500">
-                <Search className="w-12 h-12 mx-auto mb-4 text-gray-300" />
-                <p className="text-lg mb-2">
-                  {locale === 'zh' ? '未找到相关资源' : 'No resources found'}
-                </p>
-                <p className="text-sm">
-                  {locale === 'zh' 
-                    ? '试试搜索：热敷、敷热水袋、暖宝宝、按摩、揉肚子、止痛药' 
-                    : 'Try searching: heat, massage, pain relief, medication, warm, therapy'}
-                </p>
+              ))}
+            </div>
+            {searchResources(searchTerm).length === 0 && (
+              <div className="text-center py-8">
+                <p className="text-gray-500 mb-2">{t('ui.searchResults.noResults')}</p>
+                <p className="text-sm text-gray-400">{t('ui.searchResults.suggestions')}</p>
               </div>
             )}
           </div>
-        </div>
-      ) : (
-        // 显示分类内容
-        <CategorySection category={categories[activeCategory as keyof typeof categories]} />
-      )}
-
-      {/* 统计信息 */}
-      <div className="grid grid-cols-3 gap-4 mt-8 mb-6">
-        <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-          <div className="text-2xl font-bold text-purple-600 mb-1">{totalResources}</div>
-          <div className="text-xs text-gray-600">{locale === 'zh' ? '总资源' : 'Total Resources'}</div>
-        </div>
-        <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-          <div className="text-2xl font-bold text-pink-600 mb-1">{Object.keys(categories).length}</div>
-          <div className="text-xs text-gray-600">{locale === 'zh' ? '分类' : 'Categories'}</div>
-        </div>
-        <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-          <div className="text-2xl font-bold text-green-600 mb-1">100%</div>
-          <div className="text-xs text-gray-600">{locale === 'zh' ? '循证' : 'Evidence-Based'}</div>
-        </div>
+        ) : (
+          <div>
+            {Object.values(categories).map((category: any) => (
+              <CategorySection key={category.id} category={category} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
