@@ -48,20 +48,20 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
   // 类别标题翻译
   const getCategoryTitle = (key: string) => {
     const titles = {
-      immediate: locale === 'zh' ? '立即帮助' : 'Immediate Help',
-      preparation: locale === 'zh' ? '计划准备' : 'Planning & Preparation',
-      learning: locale === 'zh' ? '深入了解' : 'Learning & Understanding',
-      longterm: locale === 'zh' ? '长期管理' : 'Long-term Management'
+      immediate: t('mobileCategories.immediate'),
+      preparation: t('mobileCategories.preparation'),
+      learning: t('mobileCategories.learning'),
+      longterm: t('mobileCategories.longterm')
     };
     return titles[key as keyof typeof titles] || key;
   };
 
   const getCategorySubtitle = (key: string) => {
     const subtitles = {
-      immediate: locale === 'zh' ? '现在就疼！马上需要缓解' : 'Pain right now! Need immediate relief',
-      preparation: locale === 'zh' ? '提前准备，从容应对' : 'Prepare ahead, handle with confidence',
-      learning: locale === 'zh' ? '了解原理，科学管理' : 'Understand principles, manage scientifically',
-      longterm: locale === 'zh' ? '建立习惯，持续改善' : 'Build habits, continuous improvement'
+      immediate: t('mobileDescriptions.immediate'),
+      preparation: t('mobileDescriptions.preparation'),
+      learning: t('mobileDescriptions.learning'),
+      longterm: t('mobileDescriptions.longterm')
     };
     return subtitles[key as keyof typeof subtitles] || key;
   };
@@ -244,19 +244,19 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
   const getPriorityBadge = (priority: string) => {
     const badges = {
       highest: {
-        text: locale === 'zh' ? '最推荐' : 'Top Pick',
+        text: t('labels.topPick'),
         color: 'bg-red-500 text-white'
       },
       high: {
-        text: locale === 'zh' ? '推荐' : 'Recommended',
+        text: t('labels.recommended'),
         color: 'bg-orange-500 text-white'
       },
       medium: {
-        text: locale === 'zh' ? '重要' : 'Important',
+        text: t('labels.important'),
         color: 'bg-yellow-500 text-white'
       },
       low: {
-        text: locale === 'zh' ? '选读' : 'Optional',
+        text: t('labels.optional'),
         color: 'bg-gray-500 text-white'
       }
     };
@@ -265,12 +265,12 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
 
   // 快速筛选标签
   const quickFilters = [
-    { key: '疼痛', label: locale === 'zh' ? '疼痛' : 'Pain', category: 'immediate' },
-    { key: '缓解', label: locale === 'zh' ? '缓解' : 'Relief', category: 'immediate' },
-    { key: '营养', label: locale === 'zh' ? '营养' : 'Nutrition', category: 'preparation' },
-    { key: '运动', label: locale === 'zh' ? '运动' : 'Exercise', category: 'preparation' },
-    { key: '医学', label: locale === 'zh' ? '医学' : 'Medical', category: 'learning' },
-    { key: '沟通', label: locale === 'zh' ? '沟通' : 'Communication', category: 'learning' }
+    { key: '疼痛', label: t('keywords.pain'), category: 'immediate' },
+    { key: '缓解', label: t('keywords.relief'), category: 'immediate' },
+    { key: '营养', label: t('keywords.nutrition'), category: 'preparation' },
+    { key: '运动', label: t('keywords.exercise'), category: 'preparation' },
+    { key: '医学', label: t('keywords.medical'), category: 'learning' },
+    { key: '沟通', label: t('keywords.communication'), category: 'learning' }
   ];
 
   // PDF文件名获取 - 从统一配置获取
@@ -376,7 +376,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
               href={`/${locale}/articles/${resource.slug}`}
               className="flex-1 bg-purple-600 text-white py-2 px-3 rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors text-center block"
             >
-              {locale === 'zh' ? '阅读文章' : 'Read Article'}
+              {t('actions.readArticle')}
             </a>
           ) : (
             <>
@@ -385,7 +385,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
                 className="flex-1 bg-blue-600 text-white py-2 px-3 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors flex items-center justify-center"
               >
                 <Eye className="w-3 h-3 mr-1" />
-                {locale === 'zh' ? '预览' : 'Preview'}
+                {t('actions.preview')}
               </button>
               <button
                 onClick={() => handlePDFDownload(resource.id!)}
@@ -421,7 +421,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
         </div>
         <div className="text-right">
           <div className="text-2xl font-bold text-gray-900">{category.resources.length}</div>
-          <div className="text-xs text-gray-500">{locale === 'zh' ? '个资源' : 'resources'}</div>
+          <div className="text-xs text-gray-500">{t('stats.resources')}</div>
         </div>
       </div>
 
@@ -456,7 +456,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
         {/* Emergency Decision Tree */}
         <div className="bg-gradient-to-br from-pink-50 to-purple-50 p-6 rounded-2xl mb-6 border border-pink-100">
           <h2 className="text-lg font-bold text-gray-800 mb-4 text-center">
-            {locale === 'zh' ? '我现在需要什么帮助？' : 'What help do I need now?'}
+            {t('search.whatHelp')}
           </h2>
           <div className="space-y-3">
             {Object.values(optimizedCategories).map((category) => (
@@ -502,7 +502,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="text"
-              placeholder={locale === 'zh' ? '搜索资源...' : 'Search resources...'}
+              placeholder={t('search.placeholder')}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-10 pr-4 py-3 text-base border-2 border-gray-200 rounded-xl focus:border-purple-500 focus:outline-none bg-white"
@@ -539,31 +539,31 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
         <div className="grid grid-cols-3 gap-4 mt-8 mb-6">
           <div className="bg-white rounded-xl p-4 text-center shadow-sm">
             <div className="text-2xl font-bold text-purple-600 mb-1">38</div>
-            <div className="text-xs text-gray-600">{locale === 'zh' ? '总资源' : 'Total Resources'}</div>
+            <div className="text-xs text-gray-600">{t('stats.totalResources')}</div>
           </div>
           <div className="bg-white rounded-xl p-4 text-center shadow-sm">
             <div className="text-2xl font-bold text-pink-600 mb-1">4</div>
-            <div className="text-xs text-gray-600">{locale === 'zh' ? '分类' : 'Categories'}</div>
+            <div className="text-xs text-gray-600">{t('stats.categories')}</div>
           </div>
           <div className="bg-white rounded-xl p-4 text-center shadow-sm">
             <div className="text-2xl font-bold text-green-600 mb-1">100%</div>
-            <div className="text-xs text-gray-600">{locale === 'zh' ? '循证' : 'Evidence-Based'}</div>
+            <div className="text-xs text-gray-600">{t('stats.evidenceBased')}</div>
           </div>
         </div>
 
         {/* CTA */}
         <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-6 text-white text-center">
           <h3 className="text-lg font-bold mb-2">
-            {locale === 'zh' ? '需要更多帮助？' : 'Need More Help?'}
+            {t('search.needMoreHelp')}
           </h3>
           <p className="text-sm opacity-90 mb-4">
-            {locale === 'zh' ? '探索我们的互动工具获得个性化建议' : 'Explore our interactive tools for personalized recommendations'}
+            {t('search.exploreTools')}
           </p>
           <a
             href={`/${locale}/interactive-tools`}
             className="inline-block bg-white text-purple-600 px-6 py-2 rounded-xl font-semibold text-sm hover:bg-gray-50 transition-colors"
           >
-            {locale === 'zh' ? '使用互动工具' : 'Use Interactive Tools'}
+            {t('actions.useInteractiveTools')}
           </a>
         </div>
       </div>

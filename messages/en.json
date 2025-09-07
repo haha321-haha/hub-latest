@@ -376,6 +376,49 @@
     "learning": "Deep understanding",
     "management": "Continuous improvement"
   },
+  "mobileCategories": {
+    "immediate": "Immediate Help",
+    "preparation": "Planning & Preparation",
+    "learning": "Learning & Understanding",
+    "longterm": "Long-term Management"
+  },
+  "mobileDescriptions": {
+    "immediate": "Pain right now! Need immediate relief",
+    "preparation": "Prepare ahead, handle with confidence",
+    "learning": "Understand principles, manage scientifically",
+    "longterm": "Build habits, continuous improvement"
+  },
+  "labels": {
+    "topPick": "Top Pick",
+    "recommended": "Recommended",
+    "important": "Important",
+    "optional": "Optional"
+  },
+  "actions": {
+    "readArticle": "Read Article",
+    "preview": "Preview",
+    "useInteractiveTools": "Use Interactive Tools"
+  },
+  "search": {
+    "placeholder": "Search resources...",
+    "whatHelp": "What help do I need now?",
+    "needMoreHelp": "Need More Help?",
+    "exploreTools": "Explore our interactive tools for personalized recommendations"
+  },
+  "stats": {
+    "resources": "resources",
+    "totalResources": "Total Resources",
+    "categories": "Categories",
+    "evidenceBased": "Evidence-Based"
+  },
+  "keywords": {
+    "pain": "Pain",
+    "relief": "Relief",
+    "nutrition": "Nutrition",
+    "exercise": "Exercise",
+    "medical": "Medical",
+    "communication": "Communication"
+  },
     "resources": {
       "painTrackingForm": {
         "title": "Pain Tracking Form",

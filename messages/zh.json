@@ -376,6 +376,49 @@
       "learning": "深入了解知识",
       "management": "持续改善健康"
     },
+    "mobileCategories": {
+      "immediate": "立即帮助",
+      "preparation": "计划准备",
+      "learning": "深入了解",
+      "longterm": "长期管理"
+    },
+    "mobileDescriptions": {
+      "immediate": "现在就疼！马上需要缓解",
+      "preparation": "提前准备，从容应对",
+      "learning": "了解原理，科学管理",
+      "longterm": "建立习惯，持续改善"
+    },
+    "labels": {
+      "topPick": "最推荐",
+      "recommended": "推荐",
+      "important": "重要",
+      "optional": "选读"
+    },
+    "actions": {
+      "readArticle": "阅读文章",
+      "preview": "预览",
+      "useInteractiveTools": "使用互动工具"
+    },
+    "search": {
+      "placeholder": "搜索资源...",
+      "whatHelp": "我现在需要什么帮助？",
+      "needMoreHelp": "需要更多帮助？",
+      "exploreTools": "探索我们的互动工具获得个性化建议"
+    },
+    "stats": {
+      "resources": "个资源",
+      "totalResources": "总资源",
+      "categories": "分类",
+      "evidenceBased": "循证"
+    },
+    "keywords": {
+      "pain": "疼痛",
+      "relief": "缓解",
+      "nutrition": "营养",
+      "exercise": "运动",
+      "medical": "医学",
+      "communication": "沟通"
+    },
     "resources": {
       "painTrackingForm": {
         "title": "疼痛追踪表",
