@@ -457,6 +457,38 @@
     "allResources": "All Resources",
     "viewAllResources": "View All Resources"
   },
+  "simplePdfCenter": {
+    "immediate": {
+      "quickRelief": "5-Minute Quick Period Pain Relief",
+      "quickReliefTime": "5 min read",
+      "heatTherapy": "Complete Heat Therapy Guide",
+      "heatTherapyTime": "8 min read",
+      "painVsOther": "Menstrual Pain vs Other Abdominal Pain Guide",
+      "painVsOtherTime": "25 min read",
+      "naturalTherapy": "Natural Physical Therapy Guide",
+      "naturalTherapyTime": "12 min read",
+      "gingerRelief": "Ginger Menstrual Pain Relief Guide",
+      "gingerReliefTime": "12 min read",
+      "nsaidGuide": "NSAID Professional Guide",
+      "nsaidGuideTime": "15 min read",
+      "specificManagement": "Specific Menstrual Pain Management",
+      "specificManagementTime": "20 min read",
+      "painTrackingForm": "Pain Tracking Form",
+      "painTrackingFormTime": "PDF",
+      "painTrackingFormDesc": "Professional form for tracking and recording pain levels",
+      "campusChecklist": "Campus Emergency Checklist",
+      "campusChecklistTime": "PDF",
+      "gingerRelief": "Ginger Menstrual Pain Relief Guide",
+      "gingerReliefTime": "12 min read",
+      "nsaidGuide": "NSAID Professional Guide",
+      "nsaidGuideTime": "15 min read",
+      "specificManagement": "Specific Menstrual Pain Management",
+      "specificManagementTime": "20 min read",
+      "painTrackingForm": "Pain Tracking Form",
+      "painTrackingFormTime": "PDF",
+      "painTrackingFormDesc": "Professional form for tracking and recording pain levels"
+    }
+  },
     "resources": {
       "painTrackingForm": {
         "title": "Pain Tracking Form",

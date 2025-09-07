@@ -28,7 +28,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
   const router = useRouter();
   
   // 🌐 翻译系统
-  const t = useTranslations('pdfCenter');
+  const t = useTranslations('simplePdfCenter');
   
   // 计算总资源数
   const totalResources = SITE_CONFIG.statistics.articles + SITE_CONFIG.statistics.pdfResources;
@@ -317,32 +317,32 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         // 即时缓解文章 (7篇)
         {
           id: 'immediate-1',
-          title: locale === 'zh' ? '5分钟快速缓解痛经技巧' : '5-Minute Quick Period Pain Relief',
+          title: t('immediate.quickRelief'),
           type: 'article' as const,
-          readTime: locale === 'zh' ? '5分钟' : '5 min read',
+          readTime: t('immediate.quickReliefTime'),
           category: 'immediate',
           keywords: locale === 'zh' ? ['疼痛', '缓解', '快速', '技巧'] : ['pain', 'relief', 'quick', 'techniques']
         },
         {
           id: 'immediate-2',
-          title: locale === 'zh' ? '热疗完整指南' : 'Complete Heat Therapy Guide',
+          title: t('immediate.heatTherapy'),
           type: 'article' as const,
-          readTime: locale === 'zh' ? '8分钟' : '8 min read',
+          readTime: t('immediate.heatTherapyTime'),
           category: 'immediate',
           keywords: locale === 'zh' ? ['热敷', '敷热水袋', '暖宝宝', '热疗', '温热', '缓解'] : ['heat', 'therapy', 'warm', 'relief', 'thermal', 'treatment']
         },
         {
           id: 'immediate-3',
-          title: locale === 'zh' ? '经期疼痛与其他腹痛鉴别指南' : 'Menstrual Pain vs Other Abdominal Pain Guide',
+          title: t('immediate.painVsOther'),
           type: 'article' as const,
-          readTime: locale === 'zh' ? '25分钟' : '25 min read',
+          readTime: t('immediate.painVsOtherTime'),
           category: 'immediate'
         },
         {
           id: 'immediate-4',
-          title: locale === 'zh' ? '自然物理疗法综合指南' : 'Natural Physical Therapy Guide',
+          title: t('immediate.naturalTherapy'),
           type: 'article' as const,
-          readTime: locale === 'zh' ? '12分钟' : '12 min read',
+          readTime: t('immediate.naturalTherapyTime'),
           category: 'immediate',
           keywords: locale === 'zh' ? ['按摩', '揉肚子', '物理', '自然', '疗法', '缓解'] : ['massage', 'physical', 'natural', 'therapy', 'relief', 'treatment']
         },

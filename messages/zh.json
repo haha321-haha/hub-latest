@@ -457,6 +457,29 @@
       "allResources": "全部资源",
       "viewAllResources": "查看全部资源"
     },
+    "simplePdfCenter": {
+      "immediate": {
+        "quickRelief": "5分钟快速缓解痛经技巧",
+        "quickReliefTime": "5分钟",
+        "heatTherapy": "热疗完整指南",
+        "heatTherapyTime": "8分钟",
+        "painVsOther": "经期疼痛与其他腹痛鉴别指南",
+        "painVsOtherTime": "25分钟",
+        "naturalTherapy": "自然物理疗法综合指南",
+        "naturalTherapyTime": "12分钟",
+        "gingerRelief": "生姜经期疼痛缓解指南",
+        "gingerReliefTime": "12分钟",
+        "nsaidGuide": "非甾体抗炎药专业指南",
+        "nsaidGuideTime": "15分钟",
+        "specificManagement": "特定痛经管理指南",
+        "specificManagementTime": "20分钟",
+        "painTrackingForm": "疼痛追踪表格",
+        "painTrackingFormTime": "PDF",
+        "painTrackingFormDesc": "记录和追踪疼痛程度的专业表格",
+        "campusChecklist": "校园紧急检查清单",
+        "campusChecklistTime": "PDF"
+      }
+    },
     "resources": {
       "painTrackingForm": {
         "title": "疼痛追踪表",
