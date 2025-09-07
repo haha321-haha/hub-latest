@@ -419,6 +419,14 @@
       "medical": "医学",
       "communication": "沟通"
     },
+    "breadcrumb": {
+      "home": "首页"
+    },
+    "hero": {
+      "immediateRelief": "⚡ 即时缓解",
+      "toolsCount": "5个",
+      "articlesCount": "66篇"
+    },
     "resources": {
       "painTrackingForm": {
         "title": "疼痛追踪表",

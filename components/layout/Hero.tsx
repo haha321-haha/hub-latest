@@ -101,7 +101,7 @@ export default function Hero() {
                   size="lg" 
                   className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 min-w-[200px] group"
                 >
-                  {locale === 'zh' ? '⚡ 即时缓解' : '⚡ Immediate Relief'}
+                  {t('immediateRelief')}
                   <ArrowRight className="w-5 h-5 ml-2 inline-block group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
@@ -129,13 +129,13 @@ export default function Hero() {
             <div className="flex items-center justify-center lg:justify-start space-x-8 mt-8">
               <div className="text-center">
                 <div className="text-2xl font-bold">
-                  {locale === 'zh' ? '5个' : '5'}
+                  {t('toolsCount')}
                 </div>
                 <div className="text-sm opacity-80">{t('stats.tools')}</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold">
-                  {locale === 'zh' ? '66篇' : '66'}
+                  {t('articlesCount')}
                 </div>
                 <div className="text-sm opacity-80">{t('stats.content')}</div>
               </div>

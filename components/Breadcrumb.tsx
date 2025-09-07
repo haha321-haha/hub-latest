@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { ChevronRight, Home } from 'lucide-react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 interface BreadcrumbItem {
   label: string;
@@ -16,6 +16,7 @@ interface BreadcrumbProps {
 
 export default function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
   const locale = useLocale();
+  const t = useTranslations('pdfCenter.breadcrumb');
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -24,7 +25,7 @@ export default function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
       {
         "@type": "ListItem",
         "position": 1,
-        "name": locale === 'zh' ? '首页' : 'Home',
+        "name": t('home'),
         "item": `https://periodhub.health/${locale}`
       },
       ...items.map((item, index) => ({
@@ -55,7 +56,7 @@ export default function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
               className="flex items-center hover:text-primary-600 transition-colors"
             >
               <Home className="w-4 h-4 mr-1" />
-              {locale === 'zh' ? '首页' : 'Home'}
+              {t('home')}
             </Link>
           </li>
           
