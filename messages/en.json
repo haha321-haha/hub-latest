@@ -449,6 +449,14 @@
     "downloadNow": "Download Now",
     "loadMore": "Load More"
   },
+  "articlesPdfSection": {
+    "resources": "Resources",
+    "categories": "Categories",
+    "featured": "Featured",
+    "featuredResources": "Featured Resources",
+    "allResources": "All Resources",
+    "viewAllResources": "View All Resources"
+  },
     "resources": {
       "painTrackingForm": {
         "title": "Pain Tracking Form",

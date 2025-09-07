@@ -18,7 +18,7 @@ interface ArticlesPDFSectionProps {
 }
 
 export default function ArticlesPDFSection({ locale, className = '' }: ArticlesPDFSectionProps) {
-  const t = useTranslations('pdfCenter');
+  const t = useTranslations('articlesPdfSection');
   const tDownloads = useTranslations('downloadsPage.resources');
 
   // 获取所有PDF资源并本地化
@@ -60,19 +60,19 @@ export default function ArticlesPDFSection({ locale, className = '' }: ArticlesP
           <div className="text-center">
             <div className="text-3xl font-bold text-purple-600 mb-1">{stats.totalPDFs}</div>
             <div className="text-sm text-gray-500">
-              {locale === 'zh' ? '个资源' : 'Resources'}
+              {t('resources')}
             </div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-pink-600 mb-1">{stats.totalCategories}</div>
             <div className="text-sm text-gray-500">
-              {locale === 'zh' ? '个分类' : 'Categories'}
+              {t('categories')}
             </div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-indigo-600 mb-1">{stats.featuredCount}</div>
             <div className="text-sm text-gray-500">
-              {locale === 'zh' ? '个特色' : 'Featured'}
+              {t('featured')}
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function ArticlesPDFSection({ locale, className = '' }: ArticlesP
           <div className="flex items-center gap-2 mb-6">
             <span className="text-2xl">⭐</span>
             <h3 className="text-xl font-bold text-gray-800">
-              {locale === 'zh' ? '特色资源' : 'Featured Resources'}
+              {t('featuredResources')}
             </h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -105,7 +105,7 @@ export default function ArticlesPDFSection({ locale, className = '' }: ArticlesP
         <div className="flex items-center gap-2 mb-6">
           <span className="text-2xl">📚</span>
           <h3 className="text-xl font-bold text-gray-800">
-            {locale === 'zh' ? '全部资源' : 'All Resources'}
+            {t('allResources')}
           </h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -127,7 +127,7 @@ export default function ArticlesPDFSection({ locale, className = '' }: ArticlesP
           href={`/${locale}/downloads`}
           className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium py-3 px-6 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
         >
-          <span>{locale === 'zh' ? '查看全部资源' : 'View All Resources'}</span>
+          <span>{t('viewAllResources')}</span>
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>

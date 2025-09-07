@@ -449,6 +449,14 @@
       "downloadNow": "立即下载",
       "loadMore": "加载更多"
     },
+    "articlesPdfSection": {
+      "resources": "个资源",
+      "categories": "个分类",
+      "featured": "个特色",
+      "featuredResources": "特色资源",
+      "allResources": "全部资源",
+      "viewAllResources": "查看全部资源"
+    },
     "resources": {
       "painTrackingForm": {
         "title": "疼痛追踪表",
