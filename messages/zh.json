@@ -354,6 +354,28 @@
         "description": "全面的经期健康教育材料"
       }
     },
+    "alerts": {
+      "resourceMappingError": "资源映射错误，请联系技术支持",
+      "linkCopied": "链接已复制到剪贴板",
+      "downloadFailed": "下载失败"
+    },
+    "share": {
+      "source": "来源：Period Hub 健康资源中心",
+      "underDevelopment": "此资源正在开发中，敬请期待完整内容。",
+      "moreInfo": "如需更多信息，请访问："
+    },
+    "categories": {
+      "immediate": "即时缓解方案",
+      "preparation": "计划与准备",
+      "learning": "学习与理解",
+      "management": "长期管理"
+    },
+    "subtitles": {
+      "immediate": "快速缓解疼痛",
+      "preparation": "提前准备管理",
+      "learning": "深入了解知识",
+      "management": "持续改善健康"
+    },
     "resources": {
       "painTrackingForm": {
         "title": "疼痛追踪表",

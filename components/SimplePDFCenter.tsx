@@ -170,7 +170,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       
       if (!previewId) {
         console.error(`No preview ID found for PDF: ${pdfId}`);
-        alert(locale === 'zh' ? '资源映射错误，请联系技术支持' : 'Resource mapping error, please contact support');
+        alert(t('alerts.resourceMappingError'));
         return;
       }
 
@@ -213,10 +213,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
 
     } catch (error) {
       console.error('PDF下载错误:', error);
-      alert(locale === 'zh' 
-        ? `下载失败: ${error instanceof Error ? error.message : '未知错误'}` 
-        : `Download failed: ${error instanceof Error ? error.message : 'Unknown error'}`
-      );
+      alert(t('alerts.downloadFailed'));
     } finally {
       setLoadingStates(prev => ({ ...prev, [`${pdfId}-download`]: false }));
     }
@@ -240,14 +237,14 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       } else {
         // 降级到复制链接
         await navigator.clipboard.writeText(shareUrl);
-        alert(locale === 'zh' ? '链接已复制到剪贴板' : 'Link copied to clipboard');
+        alert(t('alerts.linkCopied'));
       }
     } catch (error) {
       console.error('Share error:', error);
       // 最后的降级方案
       try {
         await navigator.clipboard.writeText(shareUrl);
-        alert(locale === 'zh' ? '链接已复制到剪贴板' : 'Link copied to clipboard');
+        alert(t('alerts.linkCopied'));
       } catch (clipboardError) {
         console.error('Clipboard error:', clipboardError);
       }
@@ -275,11 +272,11 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
 <body>
     <div class="header">
         <h1 class="title">${title}</h1>
-        <p>${locale === 'zh' ? '来源：Period Hub 健康资源中心' : 'Source: Period Hub Health Resource Center'}</p>
+        <p>${t('share.source')}</p>
     </div>
     <div class="content">
-        <p>${locale === 'zh' ? '此资源正在开发中，敬请期待完整内容。' : 'This resource is under development. Complete content coming soon.'}</p>
-        <p>${locale === 'zh' ? '如需更多信息，请访问：' : 'For more information, visit:'} <a href="https://periodhub.health">periodhub.health</a></p>
+        <p>${t('share.underDevelopment')}</p>
+        <p>${t('share.moreInfo')} <a href="https://periodhub.health">periodhub.health</a></p>
     </div>
 </body>
 </html>`;
@@ -288,20 +285,20 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
   // 🔥 应用类型安全的翻译核心 - 消除硬编码
   const getCategoryTitle = (key: string) => {
     const titles = {
-      immediate: locale === 'zh' ? '即时缓解方案' : 'Immediate Relief',
-      preparation: locale === 'zh' ? '计划与准备' : 'Planning & Preparation',
-      learning: locale === 'zh' ? '学习与理解' : 'Learning & Understanding',
-      management: locale === 'zh' ? '长期管理' : 'Long-term Management'
+      immediate: t('categories.immediate'),
+      preparation: t('categories.preparation'),
+      learning: t('categories.learning'),
+      management: t('categories.management')
     };
     return titles[key as keyof typeof titles] || key;
   };
 
   const getCategorySubtitle = (key: string) => {
     const subtitles = {
-      immediate: locale === 'zh' ? '快速缓解疼痛' : 'Quick pain relief',
-      preparation: locale === 'zh' ? '提前准备管理' : 'Advance planning',
-      learning: locale === 'zh' ? '深入了解知识' : 'Deep understanding',
-      management: locale === 'zh' ? '持续改善健康' : 'Continuous improvement'
+      immediate: t('subtitles.immediate'),
+      preparation: t('subtitles.preparation'),
+      learning: t('subtitles.learning'),
+      management: t('subtitles.management')
     };
     return subtitles[key as keyof typeof subtitles] || key;
   };

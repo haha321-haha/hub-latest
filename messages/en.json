@@ -349,11 +349,33 @@
         "title": "Communication Guidance",
         "description": "Effective communication skills and advice"
       },
-      "educationalResources": {
-        "title": "Educational Resources",
-        "description": "Comprehensive menstrual health educational materials"
-      }
-    },
+    "educationalResources": {
+      "title": "Educational Resources",
+      "description": "Comprehensive menstrual health educational materials"
+    }
+  },
+  "alerts": {
+    "resourceMappingError": "Resource mapping error, please contact support",
+    "linkCopied": "Link copied to clipboard",
+    "downloadFailed": "Download failed"
+  },
+  "share": {
+    "source": "Source: Period Hub Health Resource Center",
+    "underDevelopment": "This resource is under development. Complete content coming soon.",
+    "moreInfo": "For more information, visit:"
+  },
+  "categories": {
+    "immediate": "Immediate Relief",
+    "preparation": "Planning & Preparation",
+    "learning": "Learning & Understanding",
+    "management": "Long-term Management"
+  },
+  "subtitles": {
+    "immediate": "Quick pain relief",
+    "preparation": "Advance planning",
+    "learning": "Deep understanding",
+    "management": "Continuous improvement"
+  },
     "resources": {
       "painTrackingForm": {
         "title": "Pain Tracking Form",
