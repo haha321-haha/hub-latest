@@ -30,4 +30,4 @@ Allow: /zh/scenario-solutions/
 Allow: /en/scenario-solutions/
 
 # Sitemap
-Sitemap: https://periodhub.health/sitemap.xml
+Sitemap: https://www.periodhub.health/sitemap.xml
