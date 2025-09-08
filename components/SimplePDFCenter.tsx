@@ -32,7 +32,12 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
   const t = useTranslations('simplePdfCenter');
   
   // 🚨 紧急关键词检测系统
-  const urgentKeywords = t('simplePdfCenter.urgentKeywords');
+  const urgentKeywords = [
+    "疼", "痛", "现在", "马上", "缓解", "紧急", "急", "快", "立即", "立刻",
+    "热敷", "敷热水袋", "暖宝宝", "按摩", "揉肚子", "止痛药",
+    "热疗法", "热疗", "温热疗法", "热敷疗法", "热敷治疗",
+    "疼痛", "痛经", "经期疼痛", "月经痛", "生理痛"
+  ];
   
   // 🔍 6个用户搜索关键词映射系统
   const userSearchKeywords = {
