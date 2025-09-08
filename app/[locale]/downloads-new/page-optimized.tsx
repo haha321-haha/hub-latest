@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ArrowLeft, Download } from 'lucide-react';
 import { Locale, locales } from '@/i18n';
 import OptimizedMobilePDFCenter from '@/components/OptimizedMobilePDFCenter';
+import { SITE_CONFIG } from '@/config/site.config';
 
 // Generate metadata for the page
 export async function generateMetadata({
@@ -60,17 +61,17 @@ export default async function DownloadsNewPage({
           </h1>
           
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6">
-            38个精选资源，基于紧急程度智能分类。从立即缓解到长期管理，为您的经期健康提供全方位支持。
+            {SITE_CONFIG.statistics.articles + SITE_CONFIG.statistics.pdfResources}个精选资源，基于紧急程度智能分类。从立即缓解到长期管理，为您的经期健康提供全方位支持。
           </p>
           
           {/* 快速统计 */}
           <div className="grid grid-cols-3 gap-4 max-w-md mx-auto mb-8">
             <div className="text-center">
-              <div className="text-2xl font-bold text-purple-600">42</div>
+              <div className="text-2xl font-bold text-purple-600">{SITE_CONFIG.statistics.articles}</div>
               <div className="text-sm text-gray-500">专业文章</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-pink-600">24</div>
+              <div className="text-2xl font-bold text-pink-600">{SITE_CONFIG.statistics.pdfResources}</div>
               <div className="text-sm text-gray-500">实用PDF</div>
             </div>
             <div className="text-center">

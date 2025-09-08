@@ -16,23 +16,53 @@ export interface PDFResource {
   fileSize?: number;
   createdAt?: string;
   updatedAt?: string;
+  // 多语言版本支持
+  versions?: {
+    zh: {
+      title: string;
+      description: string;
+    };
+    en: {
+      title: string;
+      description: string;
+    };
+    zhEn: {
+      title: string;
+      description: string;
+    };
+  };
 }
 
 export const pdfResources: PDFResource[] = [
   {
-    id: 'pain-tracker-guide',
-    title: '疼痛追踪指南',
-    titleKey: 'painTrackerGuide.title',
+    id: 'pain-tracking-form',
+    title: '疼痛追踪表',
+    titleKey: 'painTrackingForm.title',
     description: '详细的疼痛追踪方法和记录技巧',
-    descriptionKey: 'painTrackerGuide.description',
-    filename: 'pain-tracker-guide.pdf',
+    descriptionKey: 'painTrackingForm.description',
+    filename: 'pain-tracking-form.pdf',
     category: 'management-tools',
     size: '2.5MB',
-    downloadUrl: '/downloads/pain-tracker-guide.pdf',
+    downloadUrl: '/downloads/pain-tracking-form.pdf',
     icon: '📊',
     fileSize: 2500,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    // 多语言版本支持
+    versions: {
+      zh: {
+        title: '疼痛追踪表',
+        description: '详细的疼痛追踪方法和记录技巧'
+      },
+      en: {
+        title: 'Pain Tracking Form',
+        description: 'Detailed pain tracking methods and recording techniques'
+      },
+      zhEn: {
+        title: 'Pain Tracking Form / 疼痛追踪表',
+        description: 'Detailed pain tracking methods and recording techniques / 详细的疼痛追踪方法和记录技巧'
+      }
+    }
   },
   {
     id: 'constitution-guide',
@@ -62,23 +92,38 @@ export const pdfResources: PDFResource[] = [
     icon: '🏫',
     fileSize: 1800,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    versions: {
+      zh: {
+        title: '校园应急清单',
+        description: '学生专用的经期应急处理指南和必备物品清单'
+      },
+      en: {
+        title: 'Campus Emergency Checklist',
+        description: 'Student-specific menstrual emergency handling guide and essential items checklist'
+      },
+      zhEn: {
+        title: 'Campus Emergency Checklist / 校园应急清单',
+        description: 'Student-specific menstrual emergency handling guide and essential items checklist / 学生专用的经期应急处理指南和必备物品清单'
+      }
+    }
   },
-  {
-    id: 'menstrual-health-handbook',
-    title: '月经健康手册',
-    titleKey: 'menstrualHealthHandbook.title',
-    description: '全面的月经健康知识和护理指南',
-    descriptionKey: 'menstrualHealthHandbook.description',
-    filename: 'menstrual-health-handbook.pdf',
-    category: 'health-management',
-    size: '4.1MB',
-    downloadUrl: '/downloads/menstrual-health-handbook.pdf',
-    icon: '📚',
-    fileSize: 4100,
-    createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
-  },
+  // 注释：menstrual-health-handbook.pdf 文件不存在，暂时移除配置
+  // {
+  //   id: 'menstrual-health-handbook',
+  //   title: '月经健康手册',
+  //   titleKey: 'menstrualHealthHandbook.title',
+  //   description: '全面的月经健康知识和护理指南',
+  //   descriptionKey: 'menstrualHealthHandbook.description',
+  //   filename: 'menstrual-health-handbook.pdf',
+  //   category: 'health-management',
+  //   size: '4.1MB',
+  //   downloadUrl: '/downloads/menstrual-health-handbook.pdf',
+  //   icon: '📚',
+  //   fileSize: 4100,
+  //   createdAt: '2024-01-15',
+  //   updatedAt: '2024-01-15'
+  // },
   {
     id: 'pain-tracking-form',
     title: '疼痛追踪表',
@@ -152,7 +197,21 @@ export const pdfResources: PDFResource[] = [
     icon: '👨‍👩‍👧',
     fileSize: 4200,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    versions: {
+      zh: {
+        title: '家长沟通指导手册',
+        description: '帮助家长理解青春期女儿的生理变化'
+      },
+      en: {
+        title: 'Parent Communication Guide',
+        description: 'Helping parents understand their adolescent daughter\'s physiological changes'
+      },
+      zhEn: {
+        title: 'Parent Communication Guide / 家长沟通指导手册',
+        description: 'Helping parents understand their adolescent daughter\'s physiological changes / 帮助家长理解青春期女儿的生理变化'
+      }
+    }
   },
   {
     id: 'teacher-health-manual',
@@ -167,7 +226,21 @@ export const pdfResources: PDFResource[] = [
     icon: '👩‍🏫',
     fileSize: 3900,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    versions: {
+      zh: {
+        title: '教师健康管理手册',
+        description: '学校环境下的经期健康管理'
+      },
+      en: {
+        title: 'Teacher Health Management Manual',
+        description: 'Menstrual health management in school environment'
+      },
+      zhEn: {
+        title: 'Teacher Health Management Manual / 教师健康管理手册',
+        description: 'Menstrual health management in school environment / 学校环境下的经期健康管理'
+      }
+    }
   },
   {
     id: 'teacher-collaboration-handbook',
@@ -197,7 +270,21 @@ export const pdfResources: PDFResource[] = [
     icon: '🎯',
     fileSize: 4500,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    versions: {
+      zh: {
+        title: '特定痛经管理指南',
+        description: '针对不同类型痛经的个性化方案'
+      },
+      en: {
+        title: 'Specific Menstrual Pain Management Guide',
+        description: 'Personalized solutions for different types of menstrual pain'
+      },
+      zhEn: {
+        title: 'Specific Menstrual Pain Management Guide / 特定痛经管理指南',
+        description: 'Personalized solutions for different types of menstrual pain / 针对不同类型痛经的个性化方案'
+      }
+    }
   },
   {
     id: 'menstrual-pain-complications-management',
@@ -215,15 +302,15 @@ export const pdfResources: PDFResource[] = [
     updatedAt: '2024-01-15'
   },
   {
-    id: 'magnesium-gut-health-guide',
+    id: 'magnesium-gut-health-menstrual-pain-guide',
     title: '镁与肠道健康指南',
     titleKey: 'magnesiumGutHealthGuide.title',
     description: '镁元素对经期健康的重要作用',
     descriptionKey: 'magnesiumGutHealthGuide.description',
-    filename: 'magnesium-gut-health-guide.pdf',
+    filename: 'magnesium-gut-health-menstrual-pain-guide.pdf',
     category: 'health-management',
     size: '3.3MB',
-    downloadUrl: '/downloads/magnesium-gut-health-guide.pdf',
+    downloadUrl: '/downloads/magnesium-gut-health-menstrual-pain-guide.pdf',
     icon: '💊',
     fileSize: 3300,
     createdAt: '2024-01-15',

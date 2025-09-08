@@ -1,0 +1,17 @@
+{
+  "name": "period-hub-scripts",
+  "version": "1.0.0",
+  "description": "Period Hub 维护脚本集合",
+  "scripts": {
+    "validate-pdfs": "node validate-pdfs.js",
+    "check-consistency": "node validate-pdfs.js",
+    "health-check": "node validate-pdfs.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

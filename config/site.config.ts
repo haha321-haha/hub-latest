@@ -9,8 +9,8 @@ export const SITE_CONFIG = {
   
   // 统计数据 - 从硬编码中提取
   statistics: {
-    articles: 42,
-    pdfResources: 24,
+    articles: 43,  // 修正为实际文章数量（中文或英文版本）
+    pdfResources: 13,  // 修正为实际核心资源数量
     interactiveTools: 5,
     supportHours: 24
   },

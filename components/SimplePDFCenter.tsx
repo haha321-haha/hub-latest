@@ -1030,6 +1030,28 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
   };
 
   // 🚀 完整的资源数据 - 基于实际需求的49个资源
+  // 计算每个分类的实际资源数量
+  const getCategoryResourceCount = (categoryId: string) => {
+    // PDF分类到SimplePDFCenter分类的映射
+    const pdfCategoryMapping = {
+      'immediate': ['management-tools', 'health-management'],
+      'preparation': ['health-management', 'educational-resources'],
+      'learning': ['educational-resources', 'communication-guidance'],
+      'management': ['management-tools', 'communication-guidance']
+    };
+    
+    // 计算该分类的文章数量（基于硬编码的分类资源）
+    const categoryArticles = categories[categoryId as keyof typeof categories]?.resources?.length || 0;
+    
+    // 计算该分类的PDF数量
+    const mappedCategories = pdfCategoryMapping[categoryId as keyof typeof pdfCategoryMapping] || [];
+    const categoryPDFs = PDF_RESOURCES.filter(pdf => 
+      mappedCategories.includes(pdf.category)
+    ).length;
+    
+    return categoryArticles + categoryPDFs;
+  };
+
   const categories = {
     immediate: {
       id: 'immediate',
@@ -1039,7 +1061,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       color: 'from-red-500 to-red-600',
       bgColor: 'bg-red-50',
       borderColor: 'border-red-200',
-      resources: generateImmediateResources()
+      resources: generateImmediateResources(),
+      resourceCount: getCategoryResourceCount('immediate')
     },
     preparation: {
       id: 'preparation',
@@ -1049,7 +1072,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       color: 'from-orange-500 to-orange-600',
       bgColor: 'bg-orange-50',
       borderColor: 'border-orange-200',
-      resources: generatePreparationResources()
+      resources: generatePreparationResources(),
+      resourceCount: getCategoryResourceCount('preparation')
     },
     learning: {
       id: 'learning',
@@ -1059,7 +1083,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       color: 'from-blue-500 to-blue-600',
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200',
-      resources: generateLearningResources()
+      resources: generateLearningResources(),
+      resourceCount: getCategoryResourceCount('learning')
     },
     management: {
       id: 'management',
@@ -1069,7 +1094,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       color: 'from-green-500 to-green-600',
       bgColor: 'bg-green-50',
       borderColor: 'border-green-200',
-      resources: generateManagementResources()
+      resources: generateManagementResources(),
+      resourceCount: getCategoryResourceCount('management')
     }
   };
 
@@ -1078,7 +1104,20 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
     if (!searchTerm.trim()) return [];
     
     const term = searchTerm.toLowerCase();
-    const allResources: Resource[] = Object.values(categories).flatMap(cat => cat.resources as Resource[]);
+    // 使用所有实际资源进行搜索，而不是硬编码的分类资源
+    const allResources: Resource[] = [
+      ...Object.values(categories).flatMap(cat => cat.resources as Resource[]),
+      // 添加所有PDF资源
+      ...PDF_RESOURCES.map(pdf => ({
+        id: pdf.id,
+        title: pdf.title,
+        type: 'pdf' as const,
+        readTime: pdf.readTime || '5分钟',
+        category: pdf.category || 'immediate',
+        keywords: pdf.keywords || '',
+        description: pdf.description || ''
+      }))
+    ];
     
     // 英文关键词映射到中文关键词
     const englishToChineseKeywords = {
@@ -1318,7 +1357,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
                       <h3 className="font-semibold text-xs sm:text-sm leading-tight">{category.title}</h3>
                       <p className="text-xs opacity-80 mt-1 hidden sm:block">{category.subtitle}</p>
                     </div>
-                    <div className="text-sm sm:text-lg font-bold">{category.resources.length}</div>
+                    <div className="text-sm sm:text-lg font-bold">{category.resourceCount}</div>
                   </div>
                 </button>
               ))}
@@ -1371,9 +1410,62 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           </div>
         ) : (
           <div>
-            {Object.values(categories).map((category: any) => (
-              <CategorySection key={category.id} category={category} />
-            ))}
+            {/* 显示当前选中分类的所有资源 */}
+            {(() => {
+              const currentCategory = categories[activeCategory as keyof typeof categories];
+              if (!currentCategory) return null;
+              
+              // PDF分类到SimplePDFCenter分类的映射
+              const pdfCategoryMapping = {
+                'immediate': ['management-tools', 'health-management'],
+                'preparation': ['health-management', 'educational-resources'],
+                'learning': ['educational-resources', 'communication-guidance'],
+                'management': ['management-tools', 'communication-guidance']
+              };
+              
+              // 获取该分类的所有实际资源（包括文章和PDF）
+              const categoryResources = [
+                ...currentCategory.resources,
+                ...PDF_RESOURCES
+                  .filter(pdf => {
+                    const mappedCategories = pdfCategoryMapping[activeCategory as keyof typeof pdfCategoryMapping] || [];
+                    return mappedCategories.includes(pdf.category);
+                  })
+                  .map(pdf => ({
+                    id: pdf.id,
+                    title: pdf.title,
+                    type: 'pdf' as const,
+                    readTime: pdf.readTime || '5分钟',
+                    category: activeCategory,
+                    keywords: pdf.keywords || '',
+                    description: pdf.description || ''
+                  }))
+              ];
+              
+              return (
+                <div className="mb-6 sm:mb-8">
+                  <div className="flex items-center mb-4 px-2">
+                    <div className={`p-1.5 sm:p-2 rounded-lg ${currentCategory.bgColor} ${currentCategory.borderColor} border`}>
+                      <div className={`text-white ${currentCategory.color.includes('from-') ? 'bg-gradient-to-r ' + currentCategory.color : currentCategory.color}`}>
+                        {currentCategory.icon}
+                      </div>
+                    </div>
+                    <div className="ml-3">
+                      <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900">{currentCategory.title}</h2>
+                      <p className="text-xs sm:text-sm text-gray-600">{currentCategory.subtitle}</p>
+                    </div>
+                    <div className="ml-auto text-sm sm:text-base font-semibold text-gray-500">
+                      {categoryResources.length} 个资源
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
+                    {categoryResources.map((resource: Resource) => (
+                      <ResourceCard key={resource.id} resource={resource} />
+                    ))}
+                  </div>
+                </div>
+              );
+            })()}
           </div>
         )}
       </div>
