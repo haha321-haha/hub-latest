@@ -77,7 +77,22 @@ export const pdfResources: PDFResource[] = [
     icon: '🌿',
     fileSize: 3200,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    // 多语言版本支持
+    versions: {
+      zh: {
+        title: '中医体质养生指南',
+        description: '基于中医体质理论的个性化养生建议'
+      },
+      en: {
+        title: 'TCM Constitution Health Guide',
+        description: 'Personalized health recommendations based on TCM constitution theory'
+      },
+      zhEn: {
+        title: 'TCM Constitution Health Guide / 中医体质养生指南',
+        description: 'Personalized health recommendations based on TCM constitution theory / 基于中医体质理论的个性化养生建议'
+      }
+    }
   },
   {
     id: 'campus-emergency-checklist',
@@ -137,7 +152,22 @@ export const pdfResources: PDFResource[] = [
     icon: '📊',
     fileSize: 2800,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    // 多语言版本支持
+    versions: {
+      zh: {
+        title: '疼痛追踪表',
+        description: '详细的疼痛追踪方法和记录技巧'
+      },
+      en: {
+        title: 'Pain Tracking Form',
+        description: 'Detailed pain tracking methods and recording techniques'
+      },
+      zhEn: {
+        title: 'Pain Tracking Form / 疼痛追踪表',
+        description: 'Detailed pain tracking methods and recording techniques / 详细的疼痛追踪方法和记录技巧'
+      }
+    }
   },
   {
     id: 'menstrual-cycle-nutrition-plan',
@@ -152,7 +182,22 @@ export const pdfResources: PDFResource[] = [
     icon: '🥗',
     fileSize: 3500,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    // 多语言版本支持
+    versions: {
+      zh: {
+        title: '经期营养计划',
+        description: '科学的经期营养指导方案'
+      },
+      en: {
+        title: 'Menstrual Cycle Nutrition Plan',
+        description: 'Scientific menstrual nutrition guidance program'
+      },
+      zhEn: {
+        title: 'Menstrual Cycle Nutrition Plan / 经期营养计划',
+        description: 'Scientific menstrual nutrition guidance program / 科学的经期营养指导方案'
+      }
+    }
   },
   {
     id: 'healthy-habits-checklist',
@@ -167,7 +212,22 @@ export const pdfResources: PDFResource[] = [
     icon: '✅',
     fileSize: 2200,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    // 多语言版本支持
+    versions: {
+      zh: {
+        title: '健康习惯清单',
+        description: '建立有益于经期健康的日常习惯'
+      },
+      en: {
+        title: 'Healthy Habits Checklist',
+        description: 'Establish daily habits beneficial for menstrual health'
+      },
+      zhEn: {
+        title: 'Healthy Habits Checklist / 健康习惯清单',
+        description: 'Establish daily habits beneficial for menstrual health / 建立有益于经期健康的日常习惯'
+      }
+    }
   },
   {
     id: 'natural-therapy-assessment',
@@ -182,7 +242,22 @@ export const pdfResources: PDFResource[] = [
     icon: '🌿',
     fileSize: 3800,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    // 多语言版本支持
+    versions: {
+      zh: {
+        title: '自然疗法效果评估表',
+        description: '系统评估不同自然疗法的个人效果'
+      },
+      en: {
+        title: 'Natural Therapy Assessment',
+        description: 'Systematically evaluate the personal effectiveness of different natural therapies'
+      },
+      zhEn: {
+        title: 'Natural Therapy Assessment / 自然疗法效果评估表',
+        description: 'Systematically evaluate the personal effectiveness of different natural therapies / 系统评估不同自然疗法的个人效果'
+      }
+    }
   },
   {
     id: 'parent-communication-guide',
@@ -255,7 +330,22 @@ export const pdfResources: PDFResource[] = [
     icon: '🤝',
     fileSize: 3600,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    // 多语言版本支持
+    versions: {
+      zh: {
+        title: '教师协作手册',
+        description: '多学科教师间的协作机制'
+      },
+      en: {
+        title: 'Teacher Collaboration Handbook',
+        description: 'Collaborative mechanisms between multidisciplinary teachers'
+      },
+      zhEn: {
+        title: 'Teacher Collaboration Handbook / 教师协作手册',
+        description: 'Collaborative mechanisms between multidisciplinary teachers / 多学科教师间的协作机制'
+      }
+    }
   },
   {
     id: 'specific-menstrual-pain-management-guide',
@@ -299,7 +389,22 @@ export const pdfResources: PDFResource[] = [
     icon: '⚠️',
     fileSize: 3700,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    // 多语言版本支持
+    versions: {
+      zh: {
+        title: '并发症管理指南',
+        description: '识别经期并发症的早期征象'
+      },
+      en: {
+        title: 'Complications Management Guide',
+        description: 'Identify early signs of menstrual complications'
+      },
+      zhEn: {
+        title: 'Complications Management Guide / 并发症管理指南',
+        description: 'Identify early signs of menstrual complications / 识别经期并发症的早期征象'
+      }
+    }
   },
   {
     id: 'magnesium-gut-health-menstrual-pain-guide',
@@ -314,7 +419,22 @@ export const pdfResources: PDFResource[] = [
     icon: '💊',
     fileSize: 3300,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    // 多语言版本支持
+    versions: {
+      zh: {
+        title: '镁与肠道健康指南',
+        description: '镁元素对经期健康的重要作用'
+      },
+      en: {
+        title: 'Magnesium & Gut Health Guide',
+        description: 'The important role of magnesium in menstrual health'
+      },
+      zhEn: {
+        title: 'Magnesium & Gut Health Guide / 镁与肠道健康指南',
+        description: 'The important role of magnesium in menstrual health / 镁元素对经期健康的重要作用'
+      }
+    }
   },
   {
     id: 'zhan-zhuang-baduanjin-illustrated-guide',
@@ -329,7 +449,22 @@ export const pdfResources: PDFResource[] = [
     icon: '🧘‍♀️',
     fileSize: 4800,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    // 多语言版本支持
+    versions: {
+      zh: {
+        title: '站桩八段锦图解指南',
+        description: '传统中医养生功法的现代应用'
+      },
+      en: {
+        title: 'Zhan Zhuang Baduanjin Illustrated Guide',
+        description: 'Modern application of traditional TCM health practices'
+      },
+      zhEn: {
+        title: 'Zhan Zhuang Baduanjin Illustrated Guide / 站桩八段锦图解指南',
+        description: 'Modern application of traditional TCM health practices / 传统中医养生功法的现代应用'
+      }
+    }
   },
   {
     id: 'us-insurance-quick-reference-card',
@@ -344,7 +479,22 @@ export const pdfResources: PDFResource[] = [
     icon: '🏥',
     fileSize: 2900,
     createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+    updatedAt: '2024-01-15',
+    // 多语言版本支持
+    versions: {
+      zh: {
+        title: '美国医疗保险快速参考卡',
+        description: '2025年Medicare Part D覆盖缺口期完全取消'
+      },
+      en: {
+        title: 'US Insurance Quick Reference Card',
+        description: 'Complete elimination of Medicare Part D coverage gap in 2025'
+      },
+      zhEn: {
+        title: 'US Insurance Quick Reference Card / 美国医疗保险快速参考卡',
+        description: 'Complete elimination of Medicare Part D coverage gap in 2025 / 2025年Medicare Part D覆盖缺口期完全取消'
+      }
+    }
   }
 ];
 
