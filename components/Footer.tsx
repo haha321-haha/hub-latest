@@ -21,35 +21,35 @@ export default function Footer() {
               periodhub.health
             </Link>
             <p className="mt-2 text-sm text-neutral-600 max-w-xs">
-              {locale === 'en' ? 'Professional menstrual health information platform' : '专业经期健康信息平台'}
+              {t('description')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="font-semibold text-neutral-800 mb-4">{locale === 'en' ? 'Links' : '链接'}</h3>
+            <h3 className="font-semibold text-neutral-800 mb-4">{t('linksTitle')}</h3>
             <nav className="flex flex-col space-y-2">
               <Link href={`/${locale}/privacy-policy`} className="text-sm text-neutral-600 hover:text-primary-600 transition-colors">
-                {locale === 'en' ? 'Privacy Policy' : '隐私政策'}
+                {t('privacy')}
               </Link>
               <Link href={`/${locale}/terms-of-service`} className="text-sm text-neutral-600 hover:text-primary-600 transition-colors">
-                {locale === 'en' ? 'Terms of Service' : '服务条款'}
+                {t('terms')}
               </Link>
               <Link href={`/${locale}/medical-disclaimer`} className="text-sm text-neutral-600 hover:text-primary-600 transition-colors">
-                {locale === 'en' ? 'Medical Disclaimer' : '医疗免责声明'}
+                {t('medicalDisclaimer')}
               </Link>
               <Link href={`/${locale}/downloads`} className="text-sm text-neutral-600 hover:text-primary-600 transition-colors">
-                {locale === 'en' ? 'PDF Download Center' : '文章PDF下载中心'}
+                {t('articles')}
               </Link>
               <Link href={`/${locale}/natural-therapies`} className="text-sm text-neutral-600 hover:text-primary-600 transition-colors">
-                {locale === 'en' ? 'Natural Therapies' : '平时调理'}
+                {t('naturalTherapies')}
               </Link>
             </nav>
           </div>
 
           {/* Contact Information */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="font-semibold text-neutral-800 mb-4">{locale === 'en' ? 'Contact' : '联系我们'}</h3>
+            <h3 className="font-semibold text-neutral-800 mb-4">{t('contactTitle')}</h3>
             <a
               href="mailto:tiyibaofu@outlook.com"
               className="text-sm text-neutral-600 hover:text-primary-600 transition-colors"
@@ -79,13 +79,10 @@ export default function Footer() {
         {/* Copyright and Medical Disclaimer */}
         <div className="mt-8 pt-8 border-t border-neutral-200 text-center">
           <p className="text-sm text-neutral-500">
-            © {currentYear} periodhub.health. {locale === 'en' ? 'All rights reserved.' : '版权所有。'}
+            {t('copyright', { currentYear })}
           </p>
           <p className="mt-4 text-xs text-neutral-500 max-w-2xl mx-auto">
-            {locale === 'en'
-              ? 'Medical Disclaimer: The content on this website is for informational and educational purposes only and is not intended to be a substitute for professional medical advice, diagnosis, or treatment. We are not healthcare professionals. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. In case of emergency, seek immediate medical attention. Use of this website does not establish a doctor-patient relationship.'
-              : '医疗免责声明：本网站内容仅供信息和教育目的，不能替代专业医疗建议、诊断或治疗。我们不是医疗专业人员。如有任何医疗问题，请咨询您的医生或其他合格的医疗服务提供者。紧急情况下，请立即寻求医疗救助。使用本网站不构成医患关系。'
-            }
+            {t('medicalDisclaimerFull')}
           </p>
         </div>
       </div>

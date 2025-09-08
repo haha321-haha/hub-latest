@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menstrual Pain Symptom Tracking Form | periodhub.health</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 12px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* 📱 Mobile Optimization */
+        @media (max-width: 768px) {
+            body {
+                padding: 8px;
+            }
+            .container {
+                padding: 16px;
+                border-radius: 8px;
+            }
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #e91e63;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            color: #e91e63;
+            margin: 0;
+            font-size: 28px;
+        }
+        .header p {
+            color: #666;
+            margin: 10px 0 0 0;
+            font-size: 16px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #333;
+            border-left: 4px solid #e91e63;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-table td {
+            height: 40px;
+        }
+        .instructions {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 20px;
+        }
+        .warning {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 14px;
+        }
+        .checkbox-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .pain-scale {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .scale-item {
+            text-align: center;
+            flex: 1;
+        }
+        .scale-number {
+            font-weight: bold;
+            color: #e91e63;
+            font-size: 18px;
+        }
+        .scale-desc {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Menstrual Pain Symptom Tracking Form</h1>
+            <p>Professional form for detailed recording of menstrual pain symptoms, trigger factors, and relief methods</p>
+            <p style="font-size: 14px; color: #999;">periodhub.health | Women's Health Management Tools</p>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 Instructions for Use</h3>
+            <ul>
+                <li>Fill out the form promptly when symptoms occur to ensure accuracy</li>
+                <li>If you try multiple relief methods, evaluate each one separately</li>
+                <li>Continuous recording over several menstrual cycles can help you discover patterns and the most effective relief strategies</li>
+                <li>We recommend printing multiple copies or copying the table content to an electronic document</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Pain Intensity Rating Scale</h2>
+            <div class="pain-scale">
+                <div class="scale-item">
+                    <div class="scale-number">1-2</div>
+                    <div class="scale-desc">Mild Pain<br>No impact on daily activities</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">3-4</div>
+                    <div class="scale-desc">Light Pain<br>Slight discomfort</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">5-6</div>
+                    <div class="scale-desc">Moderate Pain<br>Affects work efficiency</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">7-8</div>
+                    <div class="scale-desc">Severe Pain<br>Requires rest</div>
+                </div>
+                <div class="scale-item">
+                    <div class="scale-number">9-10</div>
+                    <div class="scale-desc">Extreme Pain<br>Unbearable</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Symptom Tracking Record</h2>
+            <table class="form-table">
+                <thead>
+                    <tr>
+                        <th style="width: 12%;">Date & Time</th>
+                        <th style="width: 20%;">Symptom Description</th>
+                        <th style="width: 10%;">Pain Level<br>(1-10)</th>
+                        <th style="width: 18%;">Possible Triggers</th>
+                        <th style="width: 20%;">Relief Methods Used</th>
+                        <th style="width: 12%;">Method Effectiveness</th>
+                        <th style="width: 8%;">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example row -->
+                    <tr style="background-color: #f8f9fa;">
+                        <td style="font-size: 12px; color: #666;">Example:<br>2024-01-15<br>2:30 PM</td>
+                        <td style="font-size: 12px; color: #666;">Lower abdominal cramps<br>Lower back pain<br>Mild headache</td>
+                        <td style="font-size: 12px; color: #666; text-align: center;">6</td>
+                        <td style="font-size: 12px; color: #666;">High stress<br>Lack of sleep<br>Cold drinks</td>
+                        <td style="font-size: 12px; color: #666;">Heat therapy 30min<br>Ginger tea<br>Light yoga</td>
+                        <td style="font-size: 12px; color: #666;">Moderate relief</td>
+                        <td style="font-size: 12px; color: #666;">Workday<br>Anxious mood</td>
+                    </tr>
+                    <!-- Blank record rows -->
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Common Symptoms Reference</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                <div>
+                    <h4>🔸 Pain Symptoms</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ Abdominal cramps</div>
+                        <div class="checkbox-item">☐ Lower back pain</div>
+                        <div class="checkbox-item">☐ Headache</div>
+                        <div class="checkbox-item">☐ Inner thigh pain</div>
+                    </div>
+                </div>
+                <div>
+                    <h4>🔸 Other Symptoms</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ Nausea/vomiting</div>
+                        <div class="checkbox-item">☐ Fatigue</div>
+                        <div class="checkbox-item">☐ Mood changes</div>
+                        <div class="checkbox-item">☐ Bloating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Trigger Factors Reference</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+                <div>
+                    <h4>🔸 Lifestyle</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ Stress</div>
+                        <div class="checkbox-item">☐ Lack of sleep</div>
+                        <div class="checkbox-item">☐ Cold exposure</div>
+                        <div class="checkbox-item">☐ Specific activities</div>
+                    </div>
+                </div>
+                <div>
+                    <h4>🔸 Dietary Factors</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ Cold drinks</div>
+                        <div class="checkbox-item">☐ Spicy food</div>
+                        <div class="checkbox-item">☐ Caffeine</div>
+                        <div class="checkbox-item">☐ High sugar foods</div>
+                    </div>
+                </div>
+                <div>
+                    <h4>🔸 Other Factors</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ Emotional changes</div>
+                        <div class="checkbox-item">☐ Environmental changes</div>
+                        <div class="checkbox-item">☐ Medication effects</div>
+                        <div class="checkbox-item">☐ No obvious triggers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Relief Methods Reference</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                <div>
+                    <h4>🔸 Physical Therapy</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ Heat therapy (abdomen/back)</div>
+                        <div class="checkbox-item">☐ Light exercise (yoga, walking)</div>
+                        <div class="checkbox-item">☐ Acupressure</div>
+                        <div class="checkbox-item">☐ Massage</div>
+                    </div>
+                </div>
+                <div>
+                    <h4>🔸 Other Methods</h4>
+                    <div class="checkbox-list">
+                        <div class="checkbox-item">☐ Herbal tea/drinks (ginger tea, etc.)</div>
+                        <div class="checkbox-item">☐ Meditation/deep breathing</div>
+                        <div class="checkbox-item">☐ Rest/sleep</div>
+                        <div class="checkbox-item">☐ Pain medication (specify name)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Effectiveness Assessment Criteria</h2>
+            <table>
+                <tr>
+                    <th style="width: 20%;">Assessment Level</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><strong>No Effect</strong></td>
+                    <td>No pain relief, no symptom improvement</td>
+                </tr>
+                <tr>
+                    <td><strong>Slight Relief</strong></td>
+                    <td>Pain slightly reduced, but significant discomfort remains</td>
+                </tr>
+                <tr>
+                    <td><strong>Moderate Relief</strong></td>
+                    <td>Pain significantly reduced, can perform some daily activities</td>
+                </tr>
+                <tr>
+                    <td><strong>Significant Relief</strong></td>
+                    <td>Pain mostly or completely gone, return to normal activities</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="warning">
+            <h3>⚠️ Important Notice</h3>
+            <p><strong>This form is a personal symptom tracking tool and cannot replace professional medical diagnosis.</strong></p>
+            <p>If your menstrual pain symptoms are severe, persistent, or accompanied by the following conditions, please consult a doctor promptly:</p>
+            <ul>
+                <li>Pain level reaches 8 or above and lasts for extended periods</li>
+                <li>Accompanied by fever, abnormal bleeding, or discharge</li>
+                <li>Sudden changes in pain patterns</li>
+                <li>Complete ineffectiveness of usual relief methods</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 periodhub.health | Professional Women's Health Management Platform</p>
+            <p>For more health resources, visit: <strong>periodhub.health</strong></p>
+        </div>
+    </div>
+</body>
+</html>

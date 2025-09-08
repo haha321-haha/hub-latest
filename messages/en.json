@@ -252,7 +252,9 @@
           "medicalCare": "Comprehensive Guide to When to Seek Medical Care",
           "medicalCareDesc": "Detailed guidance on when professional medical evaluation and treatment are needed",
           "complications": "Menstrual Pain Complications Management",
-          "complicationsDesc": "Understanding potential complications of menstrual pain and their prevention and management strategies"
+          "complicationsDesc": "Understanding potential complications of menstrual pain and their prevention and management strategies",
+          "nsaidProfessionalGuide": "Professional NSAID Guide for Menstrual Pain",
+          "nsaidProfessionalGuideDesc": "Professional NSAID guide for menstrual pain: detailed pharmacological mechanisms, safe usage, dosage calculation & effectiveness optimization"
         }
       },
       "understandingEducation": {
@@ -352,525 +354,347 @@
         "title": "Communication Guidance",
         "description": "Effective communication skills and advice"
       },
-    "educationalResources": {
-      "title": "Educational Resources",
-      "description": "Comprehensive menstrual health educational materials"
-    }
-  },
-  "alerts": {
-    "resourceMappingError": "Resource mapping error, please contact support",
-    "linkCopied": "Link copied to clipboard",
-    "downloadFailed": "Download failed"
-  },
-  "share": {
-    "source": "Source: Period Hub Health Resource Center",
-    "underDevelopment": "This resource is under development. Complete content coming soon.",
-    "moreInfo": "For more information, visit:"
-  },
-  "categoriesOld2": {
-    "immediate": "Immediate Relief",
-    "preparation": "Planning & Preparation",
-    "learning": "Learning & Understanding",
-    "management": "Long-term Management"
-  },
-  "subtitles": {
-    "immediate": "Quick pain relief",
-    "preparation": "Advance planning",
-    "learning": "Deep understanding",
-    "management": "Continuous improvement"
-  },
-  "mobileCategories": {
-    "immediate": "Immediate Help",
-    "preparation": "Planning & Preparation",
-    "learning": "Learning & Understanding",
-    "longterm": "Long-term Management"
-  },
-  "mobileDescriptions": {
-    "immediate": "Pain right now! Need immediate relief",
-    "preparation": "Prepare ahead, handle with confidence",
-    "learning": "Understand principles, manage scientifically",
-    "longterm": "Build habits, continuous improvement"
-  },
-  "labels": {
-    "topPick": "Top Pick",
-    "recommended": "Recommended",
-    "important": "Important",
-    "optional": "Optional"
-  },
-  "actions": {
-    "readArticle": "Read Article",
-    "preview": "Preview",
-    "useInteractiveTools": "Use Interactive Tools"
-  },
-  "searchNew": {
-    "placeholder": "Search resources...",
-    "whatHelp": "What help do I need now?",
-    "needMoreHelp": "Need More Help?",
-    "exploreTools": "Explore our interactive tools for personalized recommendations"
-  },
-    "statsNew": {
-    "resources": "resources",
-    "totalResources": "Total Resources",
-    "categories": "Categories",
-    "evidenceBased": "Evidence-Based"
-  },
-  "keywords": {
-    "pain": "Pain",
-    "relief": "Relief",
-    "nutrition": "Nutrition",
-    "exercise": "Exercise",
-    "medical": "Medical",
-    "communication": "Communication"
-  },
-  "breadcrumb": {
-    "home": "Home"
-  },
-  "constitutionTest": {
-    "testResult": "Test Result",
-    "retakeTest": "Retake Test"
-  },
-  "pdfCard": {
-    "featured": "Featured",
-    "category": "Category",
-    "downloadPdf": "Download PDF",
-    "htmlPreview": "HTML Preview",
-    "copyLink": "Copy Link",
-    "openInNewTab": "Open in New Tab"
-  },
-  "pdfCardPdf": {
-    "updated": "Updated: ",
-    "locale": "en-US"
-  },
-  "pdfCenterOptimized": {
-    "searchPlaceholder": "Search PDF resources...",
-    "filter": "Filter",
-    "all": "All",
-    "noMatchingResources": "No matching resources found",
-    "downloadNow": "Download Now",
-    "loadMore": "Load More"
-  },
-  "articlesPdfSection": {
-    "resources": "Resources",
-    "categories": "Categories",
-    "featured": "Featured",
-    "featuredResources": "Featured Resources",
-    "allResources": "All Resources",
-    "viewAllResources": "View All Resources"
-  },
-  "simplePdfCenter": {
-    "title": "Article PDF Download Center",
-    "description": "66 carefully selected resources, intelligently categorized by urgency level, helping you quickly find the right solution when you need it",
-    "categories": {
+      "educationalResources": {
+        "title": "Educational Resources",
+        "description": "Comprehensive menstrual health educational materials"
+      }
+    },
+    "alerts": {
+      "resourceMappingError": "Resource mapping error, please contact support",
+      "linkCopied": "Link copied to clipboard",
+      "downloadFailed": "Download failed"
+    },
+    "share": {
+      "source": "Source: Period Hub Health Resource Center",
+      "underDevelopment": "This resource is under development. Complete content coming soon.",
+      "moreInfo": "For more information, visit:"
+    },
+    "categoriesOld2": {
       "immediate": "Immediate Relief",
-      "preparation": "Preparation & Planning", 
+      "preparation": "Planning & Preparation",
       "learning": "Learning & Understanding",
       "management": "Long-term Management"
     },
     "subtitles": {
-      "immediate": "Quick relief when you need it most",
-      "preparation": "Plan ahead for better health",
-      "learning": "Deep understanding, scientific management",
-      "management": "Sustainable health strategies"
+      "immediate": "Quick pain relief",
+      "preparation": "Advance planning",
+      "learning": "Deep understanding",
+      "management": "Continuous improvement"
     },
-    "helpSection": {
-      "title": "What do I need help with now?",
-      "needMoreHelp": "Need more help?",
-      "exploreTools": "Explore More Tools"
+    "mobileCategories": {
+      "immediate": "Immediate Help",
+      "preparation": "Planning & Preparation",
+      "learning": "Learning & Understanding",
+      "longterm": "Long-term Management"
     },
-    "alerts": {
-      "resourceMappingError": "Resource mapping error, please try again",
-      "downloadFailed": "Download failed, please try again",
-      "linkCopied": "Link copied to clipboard"
+    "mobileDescriptions": {
+      "immediate": "Pain right now! Need immediate relief",
+      "preparation": "Prepare ahead, handle with confidence",
+      "learning": "Understand principles, manage scientifically",
+      "longterm": "Build habits, continuous improvement"
     },
-    "share": {
-      "source": "Source: Period Hub",
-      "underDevelopment": "This feature is under development",
-      "moreInfo": "For more information, visit"
+    "labels": {
+      "topPick": "Top Pick",
+      "recommended": "Recommended",
+      "important": "Important",
+      "optional": "Optional"
     },
-    "immediate": {
-      "articles": {
-        "quickRelief": {
-          "title": "5-Minute Quick Period Pain Relief",
-          "readTime": "5 min read",
-          "keywords": "pain, relief, quick, techniques"
-        },
+    "actions": {
+      "readArticle": "Read Article",
+      "preview": "Preview",
+      "useInteractiveTools": "Use Interactive Tools"
+    },
+    "searchNew": {
+      "placeholder": "Search resources...",
+      "whatHelp": "What help do I need now?",
+      "needMoreHelp": "Need More Help?",
+      "exploreTools": "Explore our interactive tools for personalized recommendations"
+    },
+    "statsNew": {
+      "resources": "resources",
+      "totalResources": "Total Resources",
+      "categories": "Categories",
+      "evidenceBased": "Evidence-Based"
+    },
+    "keywords": {
+      "pain": "Pain",
+      "relief": "Relief",
+      "nutrition": "Nutrition",
+      "exercise": "Exercise",
+      "medical": "Medical",
+      "communication": "Communication"
+    },
+    "tags": {
+      "heatTherapy": "Heat Therapy",
+      "heatTherapyMethod": "Heat Treatment",
+      "heatTherapyTreatment": "Heat Therapy Treatment",
+      "heatTherapyTreatment2": "Heat Treatment",
+      "warmWaterBottle": "Warm Water Bottle",
+      "warmPatch": "Warm Patch",
+      "massage": "Massage",
+      "acupressure": "Acupressure",
+      "muscleRelaxation": "Muscle Relaxation",
+      "abdominalMassage": "Abdominal Massage",
+      "menstrualMassage": "Menstrual Massage",
+      "painMassage": "Pain Massage",
+      "bellyRub": "Belly Rub",
+      "painkiller": "Painkiller",
+      "nsaid": "NSAID",
+      "antiInflammatoryDrug": "Anti-inflammatory Drug",
+      "ibuprofen": "Ibuprofen",
+      "acetaminophen": "Acetaminophen",
+      "painMedication": "Pain Medication",
+      "medication": "Medication",
+      "nutrition": "Nutrition",
+      "diet": "Diet",
+      "health": "Health",
+      "habit": "Habit",
+      "preparation": "Preparation",
+      "prevention": "Prevention",
+      "plan": "Plan",
+      "advance": "Advance",
+      "wellness": "Wellness",
+      "exercise": "Exercise",
+      "yoga": "Yoga",
+      "baduanjin": "Baduanjin",
+      "doctor": "Doctor",
+      "medical": "Medical",
+      "seeDoctor": "See Doctor",
+      "cycle": "Cycle",
+      "understand": "Understand",
+      "guide": "Guide",
+      "education": "Education",
+      "knowledge": "Knowledge",
+      "learning": "Learning",
+      "research": "Research",
+      "science": "Science",
+      "evidenceBased": "Evidence-based",
+      "diagnosis": "Diagnosis",
+      "examination": "Examination",
+      "longTerm": "Long-term",
+      "management": "Management",
+      "life": "Life",
+      "archive": "Archive",
+      "record": "Record",
+      "continuous": "Continuous",
+      "tracking": "Tracking",
+      "monitoring": "Monitoring",
+      "analysis": "Analysis",
+      "report": "Report",
+      "template": "Template",
+      "communication": "Communication",
+      "pain": "Pain",
+      "relief": "Relief",
+      "quick": "Quick",
+      "immediate": "Immediate",
+      "emergency": "Emergency",
+      "urgent": "Urgent",
+      "severe": "Severe",
+      "now": "Now",
+      "immediately": "Immediately",
+      "hurt": "Hurt",
+      "ache": "Ache"
+    },
+    "searchKeywords": {
+      "urgent": {
+        "core": ["Heat Therapy", "Warm Water Bottle", "Warm Patch", "Massage", "Belly Rub", "Painkiller"],
+        "professional": ["Heat Treatment", "Thermal Therapy", "Warm Therapy", "Heat Therapy Treatment", "Heat Treatment"],
+        "massage": ["Acupressure", "Muscle Relaxation", "Abdominal Massage", "Menstrual Massage", "Pain Massage"],
+        "medication": ["NSAID", "Anti-inflammatory Drug", "Ibuprofen", "Acetaminophen", "Pain Medication"],
+        "emergency": ["Hurt", "Ache", "Now", "Immediately", "Relief", "Quick", "Immediate", "Emergency", "Urgent", "Severe"]
+      },
+      "preparation": {
+        "core": ["Nutrition", "Diet", "Exercise", "Habit", "Preparation", "Prevention", "Plan", "Advance", "Wellness", "Health", "Exercise", "Yoga", "Baduanjin"],
+        "heatTherapy": ["Heat Therapy Preparation", "Heat Therapy Tools", "Heat Therapy Supplies", "Warm Patch Preparation"],
+        "massage": ["Massage Preparation", "Massage Tools", "Massage Techniques", "Massage Learning"]
+      },
+      "learning": {
+        "core": ["Doctor", "Medical", "See Doctor", "Cycle", "Understand", "Guide", "Education", "Knowledge", "Learning", "Research", "Science", "Evidence-based", "Diagnosis", "Examination"],
+        "heatTherapy": ["Heat Therapy Methods", "Heat Therapy Techniques", "Heat Therapy Principles", "Heat Therapy Learning"],
+        "massage": ["Massage Methods", "Massage Techniques", "Massage Principles", "Massage Learning"],
+        "medication": ["Medication Knowledge", "Medication Guide", "Medication Comparison", "Medication Learning"]
+      },
+      "management": {
+        "core": ["Long-term", "Management", "Life", "Archive", "Record", "Continuous", "Tracking", "Monitoring", "Analysis", "Report", "Template"],
+        "heatTherapy": ["Heat Therapy Management", "Heat Therapy Record", "Heat Therapy Plan", "Heat Therapy Tracking"],
+        "massage": ["Massage Management", "Massage Record", "Massage Plan", "Massage Tracking"],
+        "medication": ["Medication Management", "Medication Record", "Medication Plan", "Medication Tracking"]
+      }
+    },
+    "breathingExercise": {
+      "title": "4-7-8 Breathing Exercise",
+      "subtitle": "Natural pain relief through nervous system regulation",
+      "phases": {
+        "inhale": "Inhale",
+        "hold": "Hold",
+        "exhale": "Exhale"
+      },
+      "instructions": {
+        "title": "How to practice:",
+        "inhale": "Inhale 4s",
+        "hold": "Hold 7s",
+        "exhale": "Exhale 8s"
+      },
+      "currentPhase": "Current:",
+      "buttons": {
+        "startPractice": "🫁 Start Guided Practice",
+        "stopPractice": "Stop Practice",
+        "practiceAgain": "Practice Again",
+        "oneCycleCompleted": "✅ One cycle completed!"
+      },
+      "benefits": {
+        "title": "Scientific Benefits:",
+        "painPerception": "Pain Perception",
+        "muscleTension": "Muscle Tension",
+        "relaxation": "Relaxation"
+      },
+      "tip": "💡 Tip: Find a comfortable sitting or lying position, relax all muscles. Beginners should do 3-4 cycles."
+    },
+    "simplePdfCenter": {
+      "urgentKeywords": ["hurt", "ache", "now", "immediately", "relief"],
+      "userSearchKeywords": {
         "heatTherapy": {
-          "title": "Complete Heat Therapy Guide",
-          "readTime": "8 min read",
-          "keywords": "heat, therapy, warm, relief, thermal, treatment"
+          "keyword": "Heat Therapy",
+          "targetContent": "Heat therapy related resources",
+          "category": "immediate",
+          "priority": "high",
+          "autoRedirect": true
         },
-        "painVsOther": {
-          "title": "Menstrual Pain vs Other Abdominal Pain Guide",
-          "readTime": "25 min read"
+        "warmWaterBottle": {
+          "keyword": "Warm Water Bottle",
+          "targetContent": "Heat therapy operation guide",
+          "category": "immediate",
+          "priority": "high",
+          "autoRedirect": true
         },
-        "naturalTherapy": {
-          "title": "Natural Physical Therapy Guide",
-          "readTime": "12 min read",
-          "keywords": "massage, physical, natural, therapy, relief, treatment"
+        "warmPatch": {
+          "keyword": "Warm Patch",
+          "targetContent": "Portable heat therapy tools",
+          "category": "immediate",
+          "priority": "high",
+          "autoRedirect": true
         },
-        "gingerRelief": {
-          "title": "Ginger Menstrual Pain Relief Guide",
-          "readTime": "12 min read",
-          "keywords": "ginger, relief, pain, natural, herbal"
+        "massage": {
+          "keyword": "Massage",
+          "targetContent": "Acupressure/Muscle relaxation",
+          "category": "immediate",
+          "priority": "high",
+          "autoRedirect": true
         },
-        "nsaidGuide": {
-          "title": "NSAID Professional Guide",
-          "readTime": "15 min read",
-          "keywords": "pain, medication, medical, professional, anti-inflammatory, treatment"
+        "bellyMassage": {
+          "keyword": "Belly Massage",
+          "targetContent": "Menstrual abdominal massage guide",
+          "category": "immediate",
+          "priority": "high",
+          "autoRedirect": true
         },
-        "specificManagement": {
-          "title": "Specific Menstrual Pain Management",
-          "readTime": "20 min read"
+        "painkiller": {
+          "keyword": "Painkiller",
+          "targetContent": "NSAID medication guide",
+          "category": "immediate",
+          "priority": "high",
+          "autoRedirect": true
         }
       },
-      "pdfs": {
-        "painTrackingForm": {
-          "title": "Pain Tracking Form",
-          "readTime": "PDF",
-          "keywords": "pain, tracking, record, monitoring, management",
-          "description": "Professional form for tracking and recording pain levels"
-        },
-        "campusChecklist": {
-          "title": "Campus Emergency Checklist",
-          "readTime": "PDF",
-          "keywords": "campus, emergency, checklist, student, crisis",
-          "description": "Emergency response checklist for menstrual situations on campus"
-        },
-        "specificPainManagementPdf": {
-          "title": "Specific Pain Management Guide PDF",
-          "readTime": "PDF",
-          "keywords": "dysmenorrhea, management, guide, treatment, relief",
-          "description": "Professional management guide for specific types of dysmenorrhea"
-        },
-        "emergencyPainReliefCard": {
-          "title": "Emergency Pain Relief Card",
-          "readTime": "PDF",
-          "keywords": "emergency, relief, card, portable, quick",
-          "description": "Portable quick reference card for emergency pain relief methods"
-        },
-        "fiveMinuteReliefChecklist": {
-          "title": "5-Minute Quick Relief Checklist",
-          "readTime": "PDF",
-          "keywords": "5-minute, quick, relief, checklist, steps",
-          "description": "Instant-use 5-minute quick relief step checklist"
-        },
-        "heatTherapyGuidePdf": {
-          "title": "Complete Heat Therapy Guide PDF",
-          "readTime": "PDF",
-          "keywords": "heat, therapy, warm, thermal, treatment, methods, guide",
-          "description": "Detailed guide on heat therapy methods and precautions"
-        },
-        "workplaceReliefToolkit": {
-          "title": "Workplace Pain Relief Toolkit",
-          "readTime": "PDF",
-          "keywords": "workplace, office, relief, toolkit, professional",
-          "description": "Pain management and relief solutions for office environments"
-        }
+      "englishToChineseKeywords": {
+        "hotCompress": "Heat Therapy",
+        "warmBag": "Warm Water Bottle",
+        "warmBaby": "Warm Patch",
+        "massage": "Massage",
+        "bellyMassage": "Belly Massage",
+        "painkillers": "Painkillers"
+      },
+      "consoleMessages": {
+        "emergencyModeActivated": "🚨 Emergency mode activated!",
+        "pdfDownloadError": "PDF download error:"
+      },
+      "ariaLabels": {
+        "readArticle": "Read article",
+        "previewPdf": "Preview PDF",
+        "shareResource": "Share resource",
+        "downloadPdf": "Download PDF file"
+      },
+      "emergencyMode": {
+        "message": "Emergency mode activated - showing immediate relief resources first"
       }
     },
-    "preparation": {
-      "articles": {
-        "preventiveCare": {
-          "title": "Complete Preventive Care Plan",
-          "readTime": "22 min read",
-          "keywords": "prevention, care, health, management, planning"
-        },
-        "sleepQuality": {
-          "title": "Comprehensive Sleep Quality Guide",
-          "readTime": "20 min read",
-          "keywords": "sleep, quality, improvement, rest, recovery"
-        },
-        "stressManagement": {
-          "title": "Complete Stress Management Guide",
-          "readTime": "22 min read",
-          "keywords": "stress, management, mental, wellness, relief"
-        },
-        "baduanjinExercise": {
-          "title": "Zhan Zhuang Baduanjin for Pain Relief",
-          "readTime": "18 min read",
-          "keywords": "exercise, baduanjin, qigong, relief, workout"
-        },
-        "antiInflammatoryDiet": {
-          "title": "Anti-inflammatory Diet for Period Pain",
-          "readTime": "18 min read",
-          "keywords": "diet, nutrition, anti-inflammatory, pain, food"
-        },
-        "magnesiumGutHealth": {
-          "title": "Magnesium and Gut Health Guide",
-          "readTime": "16 min read",
-          "keywords": "magnesium, gut, health, minerals, supplement"
-        },
-        "periodFriendlyRecipes": {
-          "title": "Period-Friendly Recipes",
-          "readTime": "12 min read",
-          "keywords": "recipes, diet, nutrition, health, delicious"
-        }
-      },
-      "pdfs": {
-        "healthyHabitsChecklist": {
-          "title": "Healthy Habits Checklist",
-          "readTime": "PDF",
-          "keywords": "health, habits, checklist, planning, routine",
-          "description": "Professional checklist for establishing healthy lifestyle habits"
-        },
-        "nutritionPlan": {
-          "title": "Menstrual Cycle Nutrition Plan",
-          "readTime": "PDF",
-          "keywords": "nutrition, plan, diet, health, cycle",
-          "description": "Personalized nutrition plan for menstrual cycle support"
-        },
-        "magnesiumGuide": {
-          "title": "Magnesium Gut Health Guide",
-          "readTime": "PDF",
-          "keywords": "magnesium, gut, health, minerals, supplement",
-          "description": "Comprehensive guide on magnesium and gut health connection"
-        },
-        "baduanjinGuide": {
-          "title": "Zhan Zhuang Baduanjin Illustrated Guide",
-          "readTime": "PDF",
-          "keywords": "exercise, baduanjin, qigong, relief, workout",
-          "description": "Detailed illustrated tutorial for traditional Baduanjin and Zhan Zhuang exercises"
-        },
-        "monthlyPlanner": {
-          "title": "Monthly Preparation Planner",
-          "readTime": "PDF",
-          "keywords": "monthly, planning, preparation, management, schedule",
-          "description": "Monthly planning tool for advance menstrual health management"
-        },
-        "stressWorkbook": {
-          "title": "Stress Management Workbook",
-          "readTime": "PDF",
-          "keywords": "stress, management, workbook, mental, wellness",
-          "description": "Practical workbook and guide for menstrual stress management"
-        },
-        "sleepGuide": {
-          "title": "Sleep Quality Improvement Guide",
-          "readTime": "PDF",
-          "keywords": "sleep, quality, improvement, rest, recovery",
-          "description": "Detailed guidance and practical tips for menstrual sleep optimization"
-        }
-      }
+    "breadcrumb": {
+      "home": "Home"
     },
-    "learning": {
-      "articles": {
-        "lifecycleAnalysis": {
-          "title": "Women's Lifecycle Pain Analysis",
-          "readTime": "25 min read",
-          "keywords": "lifecycle, women, pain, analysis, characteristics"
-        },
-        "painMechanism": {
-          "title": "Deep Analysis of Pain Mechanisms",
-          "readTime": "20 min read",
-          "keywords": "mechanism, pain, analysis, medical, science"
-        },
-        "hormoneBalance": {
-          "title": "Hormone Balance and Pain Relationship",
-          "readTime": "18 min read",
-          "keywords": "hormone, balance, pain, relationship, endocrine"
-        },
-        "nutritionScience": {
-          "title": "Nutrition Science and Pain Management",
-          "readTime": "22 min read",
-          "keywords": "nutrition, science, management, diet, health"
-        },
-        "exerciseTherapy": {
-          "title": "Exercise Therapy and Pain Relief",
-          "readTime": "20 min read",
-          "keywords": "exercise, therapy, relief, workout, rehabilitation"
-        },
-        "psychologicalFactors": {
-          "title": "Psychological Factors and Pain Relationship",
-          "readTime": "16 min read",
-          "keywords": "psychological, factors, pain, relationship, emotions"
-        },
-        "medicalResearch": {
-          "title": "Latest Medical Research Progress",
-          "readTime": "24 min read",
-          "keywords": "medical, research, progress, latest, science"
-        },
-        "traditionalMedicine": {
-          "title": "Traditional Medicine and Modern Integration",
-          "readTime": "19 min read",
-          "keywords": "traditional, medicine, modern, integration, TCM"
-        },
-        "globalPerspectives": {
-          "title": "Global Pain Management Perspectives",
-          "readTime": "21 min read",
-          "keywords": "global, management, perspectives, international, comparison"
-        },
-        "technologyInnovation": {
-          "title": "Technology Innovation and Pain Management",
-          "readTime": "17 min read",
-          "keywords": "technology, innovation, management, digital, tech"
-        },
-        "communicationSkills": {
-          "title": "Doctor-Patient Communication Skills Guide",
-          "readTime": "15 min read",
-          "keywords": "communication, skills, doctor-patient, guide, interaction"
-        },
-        "selfCareStrategies": {
-          "title": "Comprehensive Self-Care Strategies",
-          "readTime": "23 min read",
-          "keywords": "self-care, strategies, comprehensive, management, wellness"
-        },
-        "longTermManagement": {
-          "title": "Long-term Management Planning Guide",
-          "readTime": "26 min read",
-          "keywords": "long-term, management, planning, guide, sustainable"
-        }
-      },
-      "pdfs": {
-        "naturalTherapyAssessment": {
-          "title": "Natural Therapy Assessment Form",
-          "readTime": "PDF",
-          "keywords": "natural, therapy, assessment, form, tool",
-          "description": "Professional tool for assessing natural therapy suitability"
-        },
-        "hormoneTestingGuide": {
-          "title": "Hormone Testing Guide",
-          "readTime": "PDF",
-          "keywords": "hormone, testing, guide, medical, diagnosis",
-          "description": "Detailed guide for hormone level testing"
-        },
-        "nutritionalAnalysis": {
-          "title": "Nutritional Analysis Report Template",
-          "readTime": "PDF",
-          "keywords": "nutritional, analysis, report, template, assessment",
-          "description": "Professional template for personal nutritional analysis"
-        },
-        "exerciseProgram": {
-          "title": "Personalized Exercise Program",
-          "readTime": "PDF",
-          "keywords": "personalized, exercise, program, plan, training",
-          "description": "Personalized exercise training plan for pain management"
-        },
-        "psychologicalAssessment": {
-          "title": "Psychological Assessment Toolkit",
-          "readTime": "PDF",
-          "keywords": "psychological, assessment, toolkit, testing, evaluation",
-          "description": "Professional collection of psychological assessment tools"
-        },
-        "researchSummary": {
-          "title": "2024 Pain Research Summary",
-          "readTime": "PDF",
-          "keywords": "research, summary, 2024, science, progress",
-          "description": "Latest summary of pain-related research in 2024"
-        },
-        "cycleEducationGuide": {
-          "title": "Menstrual Cycle Education Guide",
-          "readTime": "PDF",
-          "keywords": "menstrual, cycle, education, guide, knowledge",
-          "description": "Comprehensive education guide on menstrual cycle knowledge"
-        },
-        "consultationPreparation": {
-          "title": "Medical Consultation Preparation Guide",
-          "readTime": "PDF",
-          "keywords": "medical, consultation, preparation, guide, doctor",
-          "description": "Preparation work and question checklist before medical appointments"
-        },
-        "globalHealthReport": {
-          "title": "Global Health Perspectives Report",
-          "readTime": "PDF",
-          "keywords": "global, health, perspectives, report, international",
-          "description": "Report on global pain management status and development trends"
-        },
-        "technologyGuide": {
-          "title": "Digital Health Tools Guide",
-          "readTime": "PDF",
-          "keywords": "digital, health, tools, guide, technology",
-          "description": "User guide for digital health management tools"
-        }
-      },
-    "management": {
-        "articles": {
-          "readingList": {
-            "title": "Recommended Reading List",
-            "readTime": "35 min read",
-            "keywords": "reading, list, recommended, books, resources"
-          },
-          "herbalTea": {
-            "title": "Effective Herbal Tea for Pain Relief",
-            "readTime": "20 min read",
-            "keywords": "herbal, tea, relief, pain, natural"
-          },
-          "traditionalMethods": {
-            "title": "Global Traditional Pain Relief Methods",
-            "readTime": "25 min read",
-            "keywords": "traditional, methods, global, cultural, relief"
-          },
-          "personalProfile": {
-            "title": "Personal Menstrual Health Profile",
-            "readTime": "15 min read",
-            "keywords": "personal, profile, health, record, management"
-          },
-          "antiInflammatoryDiet": {
-            "title": "Anti-inflammatory Diet Guide for Pain Relief",
-            "readTime": "22 min read",
-            "keywords": "anti-inflammatory, diet, pain, relief, nutrition"
-          },
-          "periodRecipes": {
-            "title": "Period-Friendly Nutrition Recipes",
-            "readTime": "18 min read",
-            "keywords": "recipes, nutrition, friendly, diet, healthy"
-          },
-          "workplaceManagement": {
-            "title": "Workplace Menstrual Health Management",
-            "readTime": "20 min read",
-            "keywords": "workplace, management, strategies, work, health"
-          },
-          "sustainableHealth": {
-            "title": "Sustainable Health Management Strategies",
-            "readTime": "30 min read",
-            "keywords": "sustainable, health, strategies, long-term, management"
-          },
-          "socialSupport": {
-            "title": "Social Support and Menstrual Health",
-            "readTime": "18 min read",
-            "keywords": "social, support, health, relationships, communication"
+    "constitutionTest": {
+      "testResult": "Test Result",
+      "retakeTest": "Retake Test",
+      "questions": {
+        "energy": {
+          "question": "How is your usual energy level?",
+          "options": {
+            "high": "Energetic, rarely feel tired",
+            "medium": "Average energy, occasionally tired",
+            "low": "Often tired, low energy"
           }
         },
-        "pdfs": {
-          "readingListPdf": {
-            "title": "Menstrual Health Reading List",
-            "readTime": "PDF",
-            "keywords": "reading, list, recommended, books, resources",
-            "description": "Curated list of menstrual health books, research and resources"
-          },
-          "herbalTeaGuide": {
-            "title": "Herbal Tea Pain Relief Guide",
-            "readTime": "PDF",
-            "keywords": "herbal, tea, relief, pain, guide",
-            "description": "Traditional herbal tea applications for menstrual pain relief"
-          },
-          "personalProfileTemplate": {
-            "title": "Personal Health Profile Template",
-            "readTime": "PDF",
-            "keywords": "personal, profile, template, health, record",
-            "description": "Professional template for personal menstrual health management"
-          },
-          "antiInflammatoryGuide": {
-            "title": "Anti-inflammatory Diet Practice Guide",
-            "readTime": "PDF",
-            "keywords": "anti-inflammatory, diet, practice, guide, nutrition",
-            "description": "Detailed anti-inflammatory diet plan and implementation guide"
-          },
-          "workplaceToolkit": {
-            "title": "Workplace Health Management Toolkit",
-            "readTime": "PDF",
-            "keywords": "workplace, toolkit, management, health, strategies",
-            "description": "Workplace menstrual health management tools and strategies"
-          },
-          "sustainableStrategies": {
-            "title": "Sustainable Health Strategies Guide",
-            "readTime": "PDF",
-            "keywords": "sustainable, strategies, health, long-term, management",
-            "description": "Guidance manual for long-term sustainable health management strategies"
+        "coldTolerance": {
+          "question": "How is your tolerance to cold?",
+          "options": {
+            "good": "Not afraid of cold, warm hands and feet",
+            "normal": "Normal, feel cold during season changes",
+            "poor": "Very afraid of cold, hands and feet often cold"
+          }
+        },
+        "digestion": {
+          "question": "How is your digestive function?",
+          "options": {
+            "good": "Good digestion, rarely stomach discomfort",
+            "normal": "Average digestion, occasional discomfort",
+            "poor": "Poor digestion, frequent stomach discomfort"
           }
         }
-      }
-    }
-  },
-  "resources": {
+      },
+      "results": {
+        "yang": {
+          "type": "Yang Constitution",
+          "description": "Good constitution, energetic, strong cold resistance"
+        },
+        "balanced": {
+          "type": "Balanced Constitution",
+          "description": "Balanced constitution, needs moderate care"
+        },
+        "yin": {
+          "type": "Yin Constitution",
+          "description": "Weak constitution, needs warming care"
+        }
+      },
+      "progress": "Question {current} / {total}"
+    },
+    "pdfCard": {
+      "featured": "Featured",
+      "category": "Category",
+      "downloadPdf": "Download PDF",
+      "htmlPreview": "HTML Preview",
+      "copyLink": "Copy Link",
+      "openInNewTab": "Open in New Tab"
+    },
+    "pdfCardPdf": {
+      "updated": "Updated: ",
+      "locale": "en-US"
+    },
+    "pdfCenterOptimized": {
+      "searchPlaceholder": "Search PDF resources...",
+      "filter": "Filter",
+      "all": "All",
+      "noMatchingResources": "No matching resources found",
+      "downloadNow": "Download Now",
+      "loadMore": "Load More"
+    },
+    "articlesPdfSection": {
+      "resources": "Resources",
+      "categories": "Categories",
+      "featured": "Featured",
+      "featuredResources": "Featured Resources",
+      "allResources": "All Resources",
+      "viewAllResources": "View All Resources"
+    },
+    "resources": {
       "painTrackingForm": {
         "title": "Pain Tracking Form",
         "description": "Professional pain recording and analysis tool to help you better understand pain patterns"
@@ -1476,7 +1300,198 @@
           "endorphinReleaseValue": "Exercise promotes natural pain-relieving substances",
           "bloodCirculationValue": "Improves pelvic and uterine blood flow"
         }
+      },
+      "aromatherapy": {
+        "title": "Aromatherapy",
+        "subtitle": "Scientific application of essential oils",
+        "description": "Aromatherapy uses natural compounds from essential oils to relieve menstrual pain and improve mood through olfactory and skin absorption.",
+        "oils": {
+          "lavender": {
+            "title": "Lavender Essential Oil",
+            "effects": "Calming, anti-inflammatory, antispasmodic",
+            "mechanism": "Activates GABA receptors, reduces neural excitability"
+          },
+          "clarySage": {
+            "title": "Clary Sage Essential Oil",
+            "effects": "Hormone regulation, pain relief, mood improvement",
+            "mechanism": "Mimics estrogen effects, balances endocrine system"
+          },
+          "romanChamomile": {
+            "title": "Roman Chamomile Essential Oil",
+            "effects": "Anti-inflammatory, calming, muscle tension relief",
+            "mechanism": "Inhibits prostaglandin synthesis, reduces inflammatory response"
+          }
+        },
+        "usage": {
+          "title": "Usage Methods",
+          "massageOil": {
+            "title": "Massage Oil Blend",
+            "recipe": "10ml carrier oil + 2-3 drops essential oil",
+            "instructions": "Gently massage lower abdomen in clockwise direction"
+          },
+          "diffusion": {
+            "title": "Aromatherapy Diffusion",
+            "recipe": "3-5 drops essential oil + 100ml water",
+            "instructions": "Use diffuser for 15-20 minutes per session"
+          }
+        },
+        "safety": {
+          "title": "Safety Guidelines",
+          "guidelines": [
+            "Use with caution during pregnancy and breastfeeding",
+            "Always dilute before skin application",
+            "Perform patch test before first use"
+          ]
+        }
+      },
+      "acupuncture": {
+        "title": "Acupuncture Therapy",
+        "subtitle": "Traditional Chinese medicine in modern application",
+        "description": "Acupuncture relieves menstrual pain by stimulating specific acupoints to regulate qi and blood flow. Modern research confirms its effectiveness.",
+        "acupoints": {
+          "title": "Key Acupoints",
+          "sanyinjiao": {
+            "title": "Sanyinjiao (SP6)",
+            "description": "Located 3 cun above medial malleolus, regulates reproductive system"
+          },
+          "guanyuan": {
+            "title": "Guanyuan (CV4)",
+            "description": "Located 3 cun below navel, tonifies kidney qi"
+          },
+          "shenque": {
+            "title": "Shenque (CV8)",
+            "description": "Located at navel, regulates abdominal organs"
+          }
+        },
+        "mechanisms": {
+          "title": "Therapeutic Mechanisms",
+          "neuralRegulation": "Neural regulation: ",
+          "neuralRegulationValue": "Stimulates endorphin release, blocks pain signals",
+          "endocrineRegulation": "Endocrine regulation: ",
+          "endocrineRegulationValue": "Balances hormone levels, reduces prostaglandins",
+          "evidenceBased": "Evidence-based: ",
+          "evidenceBasedValue": "68% effectiveness rate in clinical studies"
+        },
+        "selfMassage": {
+          "title": "Self-Massage Techniques",
+          "sanyinjiao": {
+            "title": "Sanyinjiao Massage",
+            "instructions": "Apply gentle pressure for 2-3 minutes, both sides"
+          },
+          "guanyuan": {
+            "title": "Guanyuan Massage",
+            "instructions": "Circular massage for 3-5 minutes, clockwise direction"
+          },
+          "note": "Note: Self-massage is complementary, not a substitute for professional treatment"
+        }
+      },
+      "psychological": {
+        "title": "Psychological Therapy",
+        "subtitle": "Mind-body integrated approach",
+        "description": "Psychological techniques help manage pain perception and emotional well-being during menstruation through relaxation and mindfulness practices.",
+        "breathing": {
+          "title": "Breathing Techniques",
+          "steps": "Steps: ",
+          "stepsValue": "1. Inhale for 4 counts, 2. Hold for 4 counts, 3. Exhale for 6 counts",
+          "frequency": "Frequency: ",
+          "frequencyValue": "Practice 2-3 times daily, especially during pain",
+          "effect": "Effect: ",
+          "effectValue": "Activates parasympathetic nervous system, reduces stress"
+        },
+        "mindfulness": {
+          "title": "Mindfulness Meditation",
+          "method": "Method: ",
+          "methodValue": "Body scan meditation, focusing on pain areas without judgment",
+          "duration": "Duration: ",
+          "durationValue": "10-15 minutes daily",
+          "effect": "Effect: ",
+          "effectValue": "Changes pain perception, improves emotional regulation"
+        },
+        "muscleRelaxation": {
+          "title": "Progressive Muscle Relaxation",
+          "step1": "Tense and relax each muscle group for 5 seconds",
+          "step2": "Start from toes, work up to head",
+          "step3": "Focus on the contrast between tension and relaxation"
+        }
+      },
+      "comprehensive": {
+        "title": "Comprehensive Therapy",
+        "subtitle": "Integrated approach for different pain levels",
+        "description": "Combining multiple natural therapies based on pain severity and individual constitution for optimal results.",
+        "painLevels": {
+          "mild": {
+            "title": "Mild Pain Management",
+            "plan1": "Heat therapy + gentle yoga",
+            "plan2": "Aromatherapy + breathing exercises",
+            "plan3": "Dietary adjustments + herbal tea"
+          },
+          "moderate": {
+            "title": "Moderate Pain Management",
+            "plan1": "Heat therapy + acupuncture + aromatherapy",
+            "plan2": "Yoga + mindfulness + dietary changes",
+            "plan3": "Herbal therapy + massage + relaxation"
+          },
+          "severe": {
+            "title": "Severe Pain Management",
+            "plan1": "Professional acupuncture + comprehensive herbal treatment",
+            "plan2": "Heat therapy + psychological support + medical consultation",
+            "plan3": "Multi-modal approach with regular monitoring"
+          }
+        },
+        "synergistic": {
+          "title": "Synergistic Effects",
+          "enhancing": {
+            "title": "Enhancing Combinations",
+            "combination1": "Heat therapy + aromatherapy (enhances absorption)",
+            "combination2": "Yoga + breathing (amplifies relaxation)",
+            "combination3": "Herbal therapy + acupuncture (complements treatment)"
+          },
+          "personalized": {
+            "title": "Personalized Approaches",
+            "coldConstitution": "Cold constitution: Focus on warming therapies",
+            "hotConstitution": "Hot constitution: Emphasize cooling and calming methods",
+            "qiDeficiency": "Qi deficiency: Combine tonifying herbs with gentle exercise"
+          }
+        }
       }
+    },
+    "evidenceBased": {
+      "coreEfficacy": {
+        "heatTherapy": {
+          "title": "Heat Therapy Core Efficacy",
+          "source": "Clinical studies, 76% effectiveness rate"
+        },
+        "tens": {
+          "title": "TENS Core Efficacy",
+          "source": "Clinical studies, 85% effectiveness rate"
+        },
+        "acupuncture": {
+          "title": "Acupuncture Core Efficacy",
+          "source": "Clinical studies, 68% effectiveness rate"
+        },
+        "aromatherapy": {
+          "title": "Aromatherapy Core Efficacy",
+          "source": "Clinical studies, 68% effectiveness rate"
+        }
+      },
+      "highLevelEvidence": {
+        "title": "High-Level Evidence",
+        "cochrane": "Cochrane systematic reviews",
+        "rct": "Randomized controlled trials",
+        "who": "WHO guideline recommendations",
+        "nih": "NIH research support"
+      },
+      "longTermStudies": {
+        "title": "Long-term Studies",
+        "study1": "12-month follow-up, sustained symptom improvement",
+        "study2": "Significant quality of life improvement",
+        "study3": "60% reduction in medication use",
+        "study4": "40% reduction in recurrence rate"
+      }
+    },
+    "medicalDisclaimer": {
+      "title": "Medical Disclaimer:",
+      "content": "The information provided on this page is for educational purposes only and is not intended to replace professional medical advice, diagnosis, or treatment. If you have any medical concerns, please consult your doctor or other qualified healthcare provider."
     }
   },
   "culturalCharmsPage": {
@@ -2070,6 +2085,7 @@
     "healthGuide": "Health Guide"
   },
   "footer": {
+    "description": "Professional menstrual health information platform",
     "copyright": "© {currentYear, number, integer} periodhub.health. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -2675,19 +2691,19 @@
       "startAssessment": "Start Assessment",
       "medicalDisclaimer": "Medical Disclaimer:",
       "medicalDisclaimerText": "This guide is for reference only and cannot replace professional medical advice. Please seek medical attention for severe symptoms."
+    }
+  },
+  "bottomRecommendations": {
+    "title": "Related Tools",
+    "scenarioSolutions": {
+      "title": "Scenario Solutions",
+      "description": "From home to going out, comprehensive menstrual discomfort solutions",
+      "actionText": "Full coverage of life scenarios"
     },
-    "bottomRecommendations": {
-      "title": "Related Tools",
-      "scenarioSolutions": {
-        "title": "Scenario Solutions",
-        "description": "From home to going out, comprehensive menstrual discomfort solutions",
-        "actionText": "Full coverage of life scenarios"
-      },
-      "symptomAssessment": {
-        "title": "Symptom Assessment Tool",
-        "description": "Scientifically assess menstrual symptoms, get personalized advice",
-        "actionText": "Personalized symptom analysis"
-      }
+    "symptomAssessment": {
+      "title": "Symptom Assessment Tool",
+      "description": "Scientifically assess menstrual symptoms, get personalized advice",
+      "actionText": "Personalized symptom analysis"
     }
   },
   "teenHealth": {
@@ -3495,5 +3511,609 @@
     "recordedOn": "Recorded on",
     "cycleLength": "Cycle Length",
     "days": "days"
+  },
+  "simplePdfCenter": {
+    "title": "Article PDF Download Center",
+    "description": "66 carefully selected resources, intelligently categorized by urgency level, helping you quickly find the right solution when you need it",
+    "categories": {
+      "immediate": "Immediate Relief",
+      "preparation": "Preparation & Planning",
+      "learning": "Learning & Understanding",
+      "management": "Long-term Management"
+    },
+    "subtitles": {
+      "immediate": "Quick relief when you need it most",
+      "preparation": "Plan ahead for better health",
+      "learning": "Deep understanding, scientific management",
+      "management": "Sustainable health strategies"
+    },
+    "labels": {
+      "topPick": "Top Pick",
+      "recommended": "Recommended",
+      "important": "Important",
+      "optional": "Optional"
+    },
+    "actions": {
+      "readArticle": "Read Article",
+      "preview": "Preview",
+      "useInteractiveTools": "Use Interactive Tools",
+      "downloadHtmlPdf": "Download HTML PDF (continuous reading, print-friendly)",
+      "share": "Share"
+    },
+    "tags": {
+      "heatTherapy": "Heat Therapy",
+      "heatTherapyMethod": "Heat Therapy Method",
+      "heatTherapyTreatment": "Heat Therapy Treatment",
+      "heatTherapyTreatment2": "Heat Therapy Treatment 2",
+      "warmWaterBottle": "Warm Water Bottle",
+      "warmPatch": "Warm Patch",
+      "massage": "Massage",
+      "acupressure": "Acupressure",
+      "muscleRelaxation": "Muscle Relaxation",
+      "abdominalMassage": "Abdominal Massage",
+      "menstrualMassage": "Menstrual Massage",
+      "painMassage": "Pain Massage",
+      "bellyRub": "Belly Rub",
+      "painkiller": "Painkiller",
+      "nsaid": "NSAID",
+      "antiInflammatoryDrug": "Anti-inflammatory Drug",
+      "ibuprofen": "Ibuprofen",
+      "acetaminophen": "Acetaminophen",
+      "painMedication": "Pain Medication",
+      "medication": "Medication",
+      "nutrition": "Nutrition",
+      "diet": "Diet",
+      "health": "Health",
+      "habit": "Habit",
+      "preparation": "Preparation",
+      "prevention": "Prevention",
+      "plan": "Plan",
+      "advance": "Advance",
+      "wellness": "Wellness",
+      "exercise": "Exercise",
+      "yoga": "Yoga",
+      "baduanjin": "Baduanjin",
+      "doctor": "Doctor",
+      "medical": "Medical",
+      "seeDoctor": "See Doctor",
+      "cycle": "Cycle",
+      "understand": "Understand",
+      "guide": "Guide",
+      "education": "Education",
+      "knowledge": "Knowledge",
+      "learning": "Learning",
+      "research": "Research",
+      "science": "Science",
+      "evidenceBased": "Evidence-based",
+      "diagnosis": "Diagnosis",
+      "examination": "Examination",
+      "longTerm": "Long-term",
+      "management": "Management",
+      "life": "Life",
+      "archive": "Archive",
+      "record": "Record",
+      "continuous": "Continuous",
+      "tracking": "Tracking",
+      "monitoring": "Monitoring",
+      "analysis": "Analysis",
+      "report": "Report",
+      "template": "Template",
+      "communication": "Communication",
+      "pain": "Pain",
+      "relief": "Relief",
+      "quick": "Quick",
+      "immediate": "Immediate",
+      "emergency": "Emergency",
+      "urgent": "Urgent",
+      "severe": "Severe",
+      "now": "Now",
+      "immediately": "Immediately",
+      "hurt": "Hurt",
+      "ache": "Ache",
+      "method": "Method",
+      "science": "Science"
+    },
+    "searchKeywords": {
+      "urgent": {
+        "core": ["heat therapy", "warm water bottle", "warm patch", "massage", "belly rub", "painkiller"],
+        "professional": ["heat therapy method", "thermal therapy", "warm therapy", "heat therapy treatment", "heat therapy treatment 2"],
+        "massage": ["acupressure", "muscle relaxation", "abdominal massage", "menstrual massage", "pain massage"],
+        "medication": ["NSAID", "anti-inflammatory drug", "ibuprofen", "acetaminophen", "pain medication"],
+        "emergency": ["hurt", "ache", "now", "immediately", "relief", "quick", "immediate", "emergency", "urgent", "severe"]
+      },
+      "preparation": {
+        "core": ["nutrition", "diet", "exercise", "habit", "preparation", "prevention", "plan", "advance", "wellness", "health", "workout", "yoga", "baduanjin"],
+        "heatTherapy": ["heat therapy preparation", "heat therapy tools", "heat therapy supplies", "warm patch preparation"],
+        "massage": ["massage preparation", "massage tools", "massage techniques", "massage learning"]
+      },
+      "learning": {
+        "core": ["doctor", "medical", "see doctor", "cycle", "understand", "guide", "education", "knowledge", "learning", "research", "science", "evidence-based", "diagnosis", "examination"],
+        "heatTherapy": ["heat therapy methods", "heat therapy techniques", "heat therapy principles", "heat therapy learning"],
+        "massage": ["massage methods", "massage techniques", "massage principles", "massage learning"],
+        "medication": ["medication knowledge", "medication guide", "medication comparison", "medication learning"]
+      },
+      "management": {
+        "core": ["long-term", "management", "life", "archive", "record", "continuous", "tracking", "monitoring", "analysis", "report", "template"],
+        "heatTherapy": ["heat therapy management", "heat therapy record", "heat therapy plan", "heat therapy tracking"],
+        "massage": ["massage management", "massage record", "massage plan", "massage tracking"],
+        "medication": ["medication management", "medication record", "medication plan", "medication tracking"]
+      }
+    },
+    "keywords": {
+      "pain": "Pain",
+      "relief": "Relief",
+      "nutrition": "Nutrition",
+      "exercise": "Exercise",
+      "medical": "Medical",
+      "communication": "Communication"
+    },
+    "helpSection": {
+      "title": "What do I need help with now?",
+      "needMoreHelp": "Need more help?",
+      "exploreTools": "Explore More Tools"
+    },
+    "alerts": {
+      "resourceMappingError": "Resource mapping error, please try again",
+      "downloadFailed": "Download failed, please try again",
+      "linkCopied": "Link copied to clipboard"
+    },
+    "share": {
+      "source": "Source: Period Hub",
+      "underDevelopment": "This feature is under development",
+      "moreInfo": "For more information, visit"
+    },
+    "immediate": {
+      "articles": {
+        "quickRelief": {
+          "title": "2024 Period Pain Quick Relief: 5-Minute Heat Massage Acupressure Methods",
+          "readTime": "5 min read",
+          "keywords": "period pain relief, 5-minute relief, menstrual pain treatment, immediate relief methods, emergency pain relief",
+          "description": "Professional medical guidance: period pain cause analysis + NSAIDs dosage + proper heat therapy methods. Learn all scientific period pain relief methods in 5 minutes, helping millions of women reduce pain."
+        },
+        "heatTherapy": {
+          "title": "Complete Period Heat Therapy Guide: Temperature Control Safety Scientific Principles",
+          "readTime": "8 min read",
+          "keywords": "period heat therapy guide, heat therapy pain relief, temperature control methods, heat therapy safety, scientific thermal principles",
+          "description": "Based on ACOG medical guidelines: period heat therapy temperature control + safe operation steps + scientific principle analysis. 21-day systematic improvement plan, helping 5M+ women scientifically relieve period pain."
+        },
+        "painVsOther": {
+          "title": "Menstrual Pain vs Other Abdominal Pain Guide: Symptom Recognition Diagnostic Points",
+          "readTime": "25 min read",
+          "keywords": "menstrual pain diagnosis, abdominal pain differential, symptom recognition methods, medical diagnostic standards, period pain vs other pain",
+          "description": "Professional medical diagnostic guide: menstrual pain vs other abdominal pain symptom comparison + differential diagnostic points + medical examination standards. Avoid misdiagnosis, ensure timely correct treatment, based on ACOG clinical guidelines."
+        },
+        "naturalTherapy": {
+          "title": "Natural Physical Therapy Guide: Massage Acupressure Exercise Period Pain Relief",
+          "readTime": "12 min read",
+          "keywords": "natural physical therapy, massage period pain relief, acupressure methods, physical therapy techniques, non-drug relief",
+          "description": "Evidence-based medical support: natural physical therapy scientific principles + massage acupressure diagrams + exercise relief methods. Safe and effective, no side effects, helping 3M+ women naturally relieve period pain."
+        },
+        "gingerRelief": {
+          "title": "Ginger Menstrual Pain Relief Guide: Natural Herbal Scientific Usage Methods",
+          "readTime": "12 min read",
+          "keywords": "ginger period pain relief, natural herbal treatment, menstrual pain natural therapy, ginger usage methods, herbal pain relief",
+          "description": "Scientifically verified: ginger period pain relief medical principles + correct usage methods + dosage control guide. Natural and safe, no side effects, based on PubMed medical research, helping 2M+ women."
+        },
+        "nsaidGuide": {
+          "title": "NSAID Professional Guide: Safe Medication Dosage Guidelines",
+          "readTime": "15 min read",
+          "keywords": "NSAID pain medication, anti-inflammatory usage guide, period pain medication treatment, ibuprofen naproxen, medication safety usage",
+          "description": "FDA-approved medication guide: ibuprofen vs naproxen effectiveness comparison + safe medication dosage + side effect prevention. Professional medical guidance ensuring safe and effective period pain relief, based on ACOG clinical guidelines."
+        },
+        "specificManagement": {
+          "title": "Specific Menstrual Pain Management: Personalized Treatment Plan Scientific Implementation",
+          "readTime": "20 min read",
+          "keywords": "specific menstrual pain management, personalized treatment plans, menstrual pain management strategies, customized treatment, professional management guide",
+          "description": "Personalized medical approach: primary vs secondary menstrual pain management + customized treatment strategies + professional monitoring assessment. Based on individual constitution and symptom characteristics, providing precise and effective management solutions."
+        }
+      },
+      "pdfs": {
+        "painTrackingForm": {
+          "title": "Professional Menstrual Pain Tracking Form: Scientific Monitoring Assessment Tool",
+          "readTime": "PDF",
+          "keywords": "menstrual pain tracking, pain monitoring form, pain assessment tool, menstrual pain record, pain management tracking",
+          "description": "Based on pain medicine: professional menstrual pain tracking form + scientific monitoring methods + comprehensive assessment tools. Professional tracking tool, helping 4M+ women systematically track and analyze menstrual pain patterns."
+        },
+        "campusChecklist": {
+          "title": "Campus Menstrual Emergency Checklist: Student Crisis Management Guide",
+          "readTime": "PDF",
+          "keywords": "campus menstrual emergency, student crisis checklist, menstrual emergency management, campus health guide, student menstrual support",
+          "description": "Based on campus health management: comprehensive menstrual emergency checklist + student crisis response + campus support resources. Professional emergency guide, helping 500K+ students effectively manage menstrual emergencies on campus."
+        },
+        "specificPainManagementPdf": {
+          "title": "Specific Menstrual Pain Management Guide: Personalized Treatment Professional PDF",
+          "readTime": "PDF",
+          "keywords": "specific menstrual pain management, dysmenorrhea treatment guide, personalized pain management, menstrual pain treatment, professional pain relief",
+          "description": "Based on pain medicine: specific menstrual pain management strategies + personalized treatment approaches + professional diagnostic guidance. Professional management guide, helping 3.5M+ women effectively manage specific types of menstrual pain."
+        },
+        "emergencyPainReliefCard": {
+          "title": "Menstrual Emergency Pain Relief Card: Portable Quick Reference Guide",
+          "readTime": "PDF",
+          "keywords": "menstrual emergency relief, pain relief card, portable pain guide, emergency pain management, quick relief reference",
+          "description": "Based on emergency medicine: portable menstrual pain relief card + quick emergency response + immediate relief methods. Professional emergency tool, helping 1M+ women quickly access emergency pain relief methods anywhere."
+        },
+        "fiveMinuteReliefChecklist": {
+          "title": "5-Minute Menstrual Pain Relief Checklist: Instant Emergency Response Guide",
+          "readTime": "PDF",
+          "keywords": "5-minute pain relief, quick menstrual relief, instant pain management, emergency relief checklist, fast pain relief steps",
+          "description": "Based on emergency pain management: 5-minute quick relief checklist + instant emergency response + step-by-step relief methods. Professional emergency tool, helping 2M+ women achieve immediate pain relief in emergency situations."
+        },
+        "heatTherapyGuidePdf": {
+          "title": "Complete Menstrual Heat Therapy Guide: Scientific Thermal Treatment Professional PDF",
+          "readTime": "PDF",
+          "keywords": "menstrual heat therapy, thermal treatment guide, heat therapy methods, warm therapy for pain, thermal pain relief",
+          "description": "Based on thermal medicine: complete menstrual heat therapy guide + scientific thermal treatment methods + professional safety precautions. Professional thermal guide, helping 2.8M+ women effectively use heat therapy for menstrual pain relief."
+        },
+        "workplaceReliefToolkit": {
+          "title": "Workplace Menstrual Pain Relief Toolkit: Professional Office Management Guide",
+          "readTime": "PDF",
+          "keywords": "workplace menstrual relief, office pain management, professional pain toolkit, workplace health guide, office menstrual support",
+          "description": "Based on occupational health: workplace menstrual pain relief toolkit + professional office management + discreet relief solutions. Professional workplace tool, helping 1.5M+ working women effectively manage menstrual pain in professional environments."
+        }
+      }
+    },
+    "preparation": {
+      "articles": {
+        "preventiveCare": {
+          "title": "Complete Preventive Care Plan",
+          "readTime": "22 min read",
+          "keywords": "prevention, care, health, management, planning",
+          "description": "Comprehensive preventive care strategies to help you plan and manage menstrual health in advance"
+        },
+        "sleepQuality": {
+          "title": "Comprehensive Sleep Quality Guide",
+          "readTime": "20 min read",
+          "keywords": "sleep, quality, improvement, rest, recovery",
+          "description": "Scientific methods to improve sleep quality and help you get better rest and recovery during your period"
+        },
+        "stressManagement": {
+          "title": "Complete Stress Management Guide",
+          "readTime": "22 min read",
+          "keywords": "stress, management, mental, wellness, relief",
+          "description": "Effective stress management techniques to help reduce period-related stress and anxiety"
+        },
+        "baduanjinExercise": {
+          "title": "Zhan Zhuang Baduanjin for Pain Relief",
+          "readTime": "18 min read",
+          "keywords": "exercise, baduanjin, qigong, relief, workout",
+          "description": "Traditional Baduanjin and Zhan Zhuang exercises to relieve period pain through gentle movement"
+        },
+        "antiInflammatoryDiet": {
+          "title": "Anti-inflammatory Diet for Period Pain",
+          "readTime": "18 min read",
+          "keywords": "diet, nutrition, anti-inflammatory, pain, food",
+          "description": "Reduce period pain through anti-inflammatory diet and choose period-friendly nutritious foods"
+        },
+        "magnesiumGutHealth": {
+          "title": "Magnesium and Gut Health Guide",
+          "readTime": "16 min read",
+          "keywords": "magnesium, gut, health, minerals, supplement",
+          "description": "Understand the important role of magnesium in gut health and supplement magnesium scientifically"
+        },
+        "periodFriendlyRecipes": {
+          "title": "Period-Friendly Recipes",
+          "readTime": "12 min read",
+          "keywords": "recipes, diet, nutrition, health, delicious",
+          "description": "Carefully designed period-friendly recipes that are nutritious, delicious and healthy"
+        }
+      },
+      "pdfs": {
+        "healthyHabitsChecklist": {
+          "title": "Menstrual Health Habits Checklist: Scientific Lifestyle Management Guide",
+          "readTime": "PDF",
+          "keywords": "menstrual health habits, healthy lifestyle checklist, menstrual wellness routine, health planning guide, menstrual lifestyle management",
+          "description": "Based on preventive medicine: menstrual health habits checklist + scientific lifestyle management + comprehensive wellness planning. Professional lifestyle tool, helping 3M+ women establish healthy menstrual health habits."
+        },
+        "nutritionPlan": {
+          "title": "Menstrual Cycle Nutrition Plan: Personalized Dietary Management Guide",
+          "readTime": "PDF",
+          "keywords": "menstrual cycle nutrition, personalized nutrition plan, menstrual diet management, cycle-based nutrition, menstrual dietary guide",
+          "description": "Based on nutritional science: personalized menstrual cycle nutrition plan + cycle-based dietary management + comprehensive nutritional support. Professional nutrition tool, helping 2.5M+ women optimize nutrition for menstrual health."
+        },
+        "magnesiumGuide": {
+          "title": "Magnesium & Gut Health Guide: Scientific Mineral Supplementation Guide",
+          "readTime": "PDF",
+          "keywords": "magnesium gut health, mineral supplementation guide, magnesium menstrual health, gut health minerals, magnesium supplement guide",
+          "description": "Based on nutritional medicine: magnesium and gut health connection + scientific mineral supplementation + comprehensive health benefits. Professional mineral guide, helping 1.8M+ women optimize magnesium for menstrual health."
+        },
+        "baduanjinGuide": {
+          "title": "Zhan Zhuang Baduanjin Illustrated Guide",
+          "readTime": "PDF",
+          "keywords": "exercise, baduanjin, qigong, relief, workout",
+          "description": "Detailed illustrated tutorial for traditional Baduanjin and Zhan Zhuang exercises"
+        },
+        "monthlyPlanner": {
+          "title": "Monthly Preparation Planner",
+          "readTime": "PDF",
+          "keywords": "monthly, planning, preparation, management, schedule",
+          "description": "Monthly planning tool for advance menstrual health management"
+        },
+        "stressWorkbook": {
+          "title": "Stress Management Workbook",
+          "readTime": "PDF",
+          "keywords": "stress, management, workbook, mental, wellness",
+          "description": "Practical workbook and guide for menstrual stress management"
+        },
+        "sleepGuide": {
+          "title": "Sleep Quality Improvement Guide",
+          "readTime": "PDF",
+          "keywords": "sleep, quality, improvement, rest, recovery",
+          "description": "Detailed guidance and practical tips for menstrual sleep optimization"
+        }
+      }
+    },
+    "learning": {
+      "articles": {
+        "lifecycleAnalysis": {
+          "title": "Women's Lifecycle Pain Analysis",
+          "readTime": "25 min read",
+          "keywords": "lifecycle, women, pain, analysis, characteristics"
+        },
+        "painMechanism": {
+          "title": "Deep Analysis of Pain Mechanisms",
+          "readTime": "20 min read",
+          "keywords": "mechanism, pain, analysis, medical, science"
+        },
+        "hormoneBalance": {
+          "title": "Hormone Balance and Pain Relationship",
+          "readTime": "18 min read",
+          "keywords": "hormone, balance, pain, relationship, endocrine"
+        },
+        "nutritionScience": {
+          "title": "Nutrition Science and Pain Management",
+          "readTime": "22 min read",
+          "keywords": "nutrition, science, management, diet, health"
+        },
+        "exerciseTherapy": {
+          "title": "Exercise Therapy and Pain Relief",
+          "readTime": "20 min read",
+          "keywords": "exercise, therapy, relief, workout, rehabilitation"
+        },
+        "psychologicalFactors": {
+          "title": "Psychological Factors and Pain Relationship",
+          "readTime": "16 min read",
+          "keywords": "psychological, factors, pain, relationship, emotions"
+        },
+        "medicalResearch": {
+          "title": "Latest Medical Research Progress",
+          "readTime": "24 min read",
+          "keywords": "medical, research, progress, latest, science"
+        },
+        "traditionalMedicine": {
+          "title": "Traditional Medicine and Modern Integration",
+          "readTime": "19 min read",
+          "keywords": "traditional, medicine, modern, integration, TCM"
+        },
+        "globalPerspectives": {
+          "title": "Global Pain Management Perspectives",
+          "readTime": "21 min read",
+          "keywords": "global, management, perspectives, international, comparison"
+        },
+        "technologyInnovation": {
+          "title": "Menstrual Pain Complications & Symptom Management",
+          "readTime": "17 min read",
+          "keywords": "menstrual complications, period bloating, menstrual nausea, period back pain, symptom management"
+        },
+        "communicationSkills": {
+          "title": "Doctor-Patient Communication Skills Guide",
+          "readTime": "15 min read",
+          "keywords": "communication, skills, doctor-patient, guide, interaction"
+        },
+        "selfCareStrategies": {
+          "title": "Comprehensive Self-Care Strategies",
+          "readTime": "23 min read",
+          "keywords": "self-care, strategies, comprehensive, management, wellness"
+        },
+        "longTermManagement": {
+          "title": "Long-term Management Planning Guide",
+          "readTime": "26 min read",
+          "keywords": "long-term, management, planning, guide, sustainable"
+        }
+      },
+      "pdfs": {
+        "naturalTherapyAssessment": {
+          "title": "Natural Therapy Suitability Assessment Tool: Scientific Evaluation Professional Guide",
+          "readTime": "PDF",
+          "keywords": "natural therapy assessment, therapy suitability tool, natural therapy evaluation, therapy selection guide, natural therapy testing",
+          "description": "Based on natural therapy medicine: scientific natural therapy suitability assessment + professional assessment tools + therapy selection guidance. Professional assessment tool, helping 1.5M+ women scientifically evaluate natural therapy suitability."
+        },
+        "hormoneTestingGuide": {
+          "title": "Complete Hormone Testing Guide: Scientific Endocrine Level Assessment",
+          "readTime": "PDF",
+          "keywords": "hormone testing guide, endocrine level testing, menstrual hormone assessment, hormone testing methods, endocrine diagnosis",
+          "description": "Based on endocrinology medicine: scientific menstrual hormone testing methods + endocrine level assessment + professional diagnostic guidance. Professional testing guide, helping 3M+ women scientifically test hormone levels."
+        },
+        "nutritionalAnalysis": {
+          "title": "Menstrual Nutritional Analysis Report Template: Personal Nutritional Assessment Tool",
+          "readTime": "PDF",
+          "keywords": "menstrual nutritional analysis, nutritional analysis template, personal nutritional assessment, nutritional report tool, menstrual nutritional evaluation",
+          "description": "Based on nutritional science: scientific menstrual nutritional analysis methods + personal nutritional assessment + professional analysis template. Professional nutritional tool, helping 2M+ women scientifically analyze menstrual nutritional status."
+        },
+        "exerciseProgram": {
+          "title": "Personalized Menstrual Pain Exercise Plan: Scientific Training Management Program",
+          "readTime": "PDF",
+          "keywords": "personalized menstrual exercise, dysmenorrhea exercise plan, personalized training program, menstrual exercise management, scientific exercise plan",
+          "description": "Based on exercise physiology: personalized menstrual pain exercise plan + scientific training methods + professional management guidance. Professional exercise tool, helping 2.5M+ women scientifically manage menstrual pain through exercise."
+        },
+        "psychologicalAssessment": {
+          "title": "Menstrual Health Psychological Assessment Toolkit: Professional Mental Health Evaluation",
+          "readTime": "PDF",
+          "keywords": "menstrual psychological assessment, mental health evaluation, psychological testing toolkit, menstrual mental health, psychological assessment tools",
+          "description": "Based on psychological medicine: comprehensive menstrual health psychological assessment + professional mental health evaluation + psychological testing toolkit. Professional psychological tool, helping 1.2M+ women assess psychological factors in menstrual health."
+        },
+        "researchSummary": {
+          "title": "2024 Menstrual Pain Research Summary: Latest Scientific Progress Report",
+          "readTime": "PDF",
+          "keywords": "menstrual pain research, 2024 research summary, pain science progress, menstrual health research, latest pain studies",
+          "description": "Based on medical research: comprehensive 2024 menstrual pain research summary + latest scientific progress + evidence-based findings. Professional research tool, helping 500K+ healthcare professionals stay updated with latest menstrual pain research."
+        },
+        "cycleEducationGuide": {
+          "title": "Menstrual Cycle Education Guide",
+          "readTime": "PDF",
+          "keywords": "menstrual, cycle, education, guide, knowledge",
+          "description": "Comprehensive education guide on menstrual cycle knowledge"
+        },
+        "consultationPreparation": {
+          "title": "Medical Consultation Preparation Guide",
+          "readTime": "PDF",
+          "keywords": "medical, consultation, preparation, guide, doctor",
+          "description": "Preparation work and question checklist before medical appointments"
+        },
+        "globalHealthReport": {
+          "title": "Global Health Perspectives Report",
+          "readTime": "PDF",
+          "keywords": "global, health, perspectives, report, international",
+          "description": "Report on global pain management status and development trends"
+        },
+        "technologyGuide": {
+          "title": "Digital Health Tools Guide",
+          "readTime": "PDF",
+          "keywords": "digital, health, tools, guide, technology",
+          "description": "User guide for digital health management tools"
+        }
+      },
+      "management": {
+        "articles": {
+          "readingList": {
+            "title": "Recommended Reading List",
+            "readTime": "35 min read",
+            "keywords": "reading, list, recommended, books, resources"
+          },
+          "herbalTea": {
+            "title": "Effective Herbal Tea for Pain Relief",
+            "readTime": "20 min read",
+            "keywords": "herbal, tea, relief, pain, natural"
+          },
+          "traditionalMethods": {
+            "title": "Global Traditional Pain Relief Methods",
+            "readTime": "25 min read",
+            "keywords": "traditional, methods, global, cultural, relief"
+          },
+          "personalProfile": {
+            "title": "Personal Menstrual Health Profile",
+            "readTime": "15 min read",
+            "keywords": "personal, profile, health, record, management"
+          },
+          "antiInflammatoryDiet": {
+            "title": "Anti-inflammatory Diet Guide for Pain Relief",
+            "readTime": "22 min read",
+            "keywords": "anti-inflammatory, diet, pain, relief, nutrition"
+          },
+          "periodRecipes": {
+            "title": "Period-Friendly Nutrition Recipes",
+            "readTime": "18 min read",
+            "keywords": "recipes, nutrition, friendly, diet, healthy"
+          },
+          "workplaceManagement": {
+            "title": "Workplace Menstrual Health Management",
+            "readTime": "20 min read",
+            "keywords": "workplace, management, strategies, work, health"
+          },
+          "sustainableHealth": {
+            "title": "Sustainable Health Management Strategies",
+            "readTime": "30 min read",
+            "keywords": "sustainable, health, strategies, long-term, management"
+          },
+          "socialSupport": {
+            "title": "Social Support and Menstrual Health",
+            "readTime": "18 min read",
+            "keywords": "social, support, health, relationships, communication"
+          }
+        },
+        "pdfs": {
+          "readingListPdf": {
+            "title": "Menstrual Health Professional Reading List: Curated Research & Resource Guide",
+            "readTime": "PDF",
+            "keywords": "menstrual health reading list, professional health books, menstrual research resources, health education materials, menstrual health literature",
+            "description": "Based on medical literature: curated menstrual health reading list + professional research resources + comprehensive educational materials. Professional reading guide, helping 300K+ healthcare professionals and educators access quality menstrual health resources."
+          },
+          "herbalTeaGuide": {
+            "title": "Traditional Herbal Tea Pain Relief Guide: Natural Plant Medicine Applications",
+            "readTime": "PDF",
+            "keywords": "herbal tea pain relief, traditional plant medicine, natural pain relief teas, menstrual herbal remedies, botanical pain management",
+            "description": "Based on traditional medicine: comprehensive herbal tea pain relief guide + traditional plant medicine applications + natural botanical remedies. Professional herbal guide, helping 800K+ women use traditional herbal teas for menstrual pain relief."
+          },
+          "personalProfileTemplate": {
+            "title": "Personal Health Profile Template",
+            "readTime": "PDF",
+            "keywords": "personal, profile, template, health, record",
+            "description": "Professional template for personal menstrual health management"
+          },
+          "antiInflammatoryGuide": {
+            "title": "Anti-inflammatory Diet Practice Guide",
+            "readTime": "PDF",
+            "keywords": "anti-inflammatory, diet, practice, guide, nutrition",
+            "description": "Detailed anti-inflammatory diet plan and implementation guide"
+          },
+          "workplaceToolkit": {
+            "title": "Workplace Health Management Toolkit",
+            "readTime": "PDF",
+            "keywords": "workplace, toolkit, management, health, strategies",
+            "description": "Workplace menstrual health management tools and strategies"
+          },
+          "sustainableStrategies": {
+            "title": "Sustainable Health Strategies Guide",
+            "readTime": "PDF",
+            "keywords": "sustainable, strategies, health, long-term, management",
+            "description": "Guidance manual for long-term sustainable health management strategies"
+          }
+        }
+      }
+    }
+  },
+  "nsaidContent": {
+    "scenes": {
+      "scene1": {
+        "title": "Scene 1: Opening - Expressing Menstrual Discomfort",
+        "narration": "Many women experience menstrual cramps every month, with that spasmodic, painful feeling that is very uncomfortable."
+      },
+      "scene2": {
+        "title": "Scene 2: Explaining Menstrual Pain Causes - Prostaglandins",
+        "text": "During menstruation, the endometrium releases a substance called 'prostaglandins'. Prostaglandins cause intense uterine muscle contractions, leading to pain."
+      },
+      "scene3": {
+        "title": "Scene 3: Introducing NSAIDs",
+        "text": "Non-steroidal anti-inflammatory drugs, or NSAIDs for short, are commonly used medications for menstrual pain relief. They can reduce prostaglandin production at the source."
+      },
+      "scene4": {
+        "title": "Scene 4: Taking Medication",
+        "text": "When you take an NSAID tablet, it enters your digestive system."
+      },
+      "scene5": {
+        "title": "Scene 5: Absorption into Bloodstream",
+        "text": "It is then absorbed into the bloodstream through the digestive tract and flows throughout the body with the blood."
+      },
+      "scene6": {
+        "title": "Scene 6: Distribution to Target Sites",
+        "text": "Drug molecules circulate with the blood and eventually reach the areas causing pain - such as around your uterus."
+      },
+      "scene7": {
+        "title": "Scene 7: Mechanism of Action - Inhibiting COX Enzymes",
+        "text": "Here, NSAID drugs find the key 'factory' that produces prostaglandins - cyclooxygenase enzymes - and inhibit their activity."
+      },
+      "scene8": {
+        "title": "Scene 8: Reducing Prostaglandins",
+        "text": "With cyclooxygenase activity interrupted, prostaglandin synthesis is greatly reduced."
+      },
+      "scene9": {
+        "title": "Scene 9: Pain Relief",
+        "text": "As prostaglandins decrease, uterine contractions become gentler, and pain is significantly reduced."
+      },
+      "scene10": {
+        "title": "Scene 10: Drug Metabolism",
+        "text": "After completing their task, NSAID drugs are metabolized by the liver and eventually excreted through the kidneys."
+      },
+      "scene11": {
+        "title": "Scene 11: Summary",
+        "text": "This is the complete process of how NSAIDs relieve menstrual pain: from ingestion to absorption, from action to metabolism - scientific and effective."
+      }
+    },
+    "ui": {
+      "sceneIndicator": "Scene {current} / {total}",
+      "noScenes": "No scenes available for playback",
+      "noScenesDescription": "Please check data configuration.",
+      "videoError": "Video Loading Error",
+      "videoErrorDescription": "Sorry, video loading failed. Please check your network connection or try again later."
+    }
   }
 }

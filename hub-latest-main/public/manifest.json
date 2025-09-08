@@ -1,0 +1,75 @@
+{
+  "name": "periodhub.health - 经期健康指南",
+  "short_name": "periodhub.health",
+  "description": "您的贴心伙伴，提供有效方案与支持资源，助您轻松应对痛经困扰。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9333ea",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "zh-CN",
+  "categories": [
+    "health",
+    "medical",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "即时缓解",
+      "short_name": "即时缓解",
+      "description": "快速缓解痛经的技巧和方法",
+      "url": "/zh/instant-relief",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "文章中心",
+      "short_name": "文章",
+      "description": "专业健康文章和PDF资源",
+      "url": "/zh/articles",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "互动工具",
+      "short_name": "工具",
+      "description": "症状评估和疼痛追踪工具",
+      "url": "/zh/interactive-tools",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

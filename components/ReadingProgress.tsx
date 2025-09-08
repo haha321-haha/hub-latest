@@ -62,11 +62,11 @@ export default function ReadingProgress({ locale }: ReadingProgressProps) {
         />
       </div>
 
-      {/* 返回顶部按钮 */}
+      {/* 返回顶部按钮 - 移动端优化 */}
       {showBackToTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 w-12 h-12 bg-purple-600 text-white rounded-full shadow-lg hover:bg-purple-700 transition-all duration-200 z-40 flex items-center justify-center"
+          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 w-12 h-12 bg-purple-600 text-white rounded-full shadow-lg hover:bg-purple-700 transition-all duration-200 z-40 flex items-center justify-center touch-manipulation"
           aria-label={text.backToTop}
         >
           <ArrowUp className="w-5 h-5" />

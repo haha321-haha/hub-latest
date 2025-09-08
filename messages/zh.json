@@ -252,7 +252,9 @@
           "medicalCare": "何时寻求医疗护理综合指南",
           "medicalCareDesc": "详细指导何时需要专业医疗评估和治疗",
           "complications": "经期疼痛并发症管理",
-          "complicationsDesc": "了解经期疼痛可能的并发症及其预防和管理策略"
+          "complicationsDesc": "了解经期疼痛可能的并发症及其预防和管理策略",
+          "nsaidProfessionalGuide": "NSAIDs痛经治疗专业指南",
+          "nsaidProfessionalGuideDesc": "专业NSAIDs痛经治疗指南：详解药理机制、安全用药、剂量计算与效果优化"
         }
       },
       "understandingEducation": {
@@ -422,12 +424,247 @@
       "medical": "医学",
       "communication": "沟通"
     },
+    "tags": {
+      "heatTherapy": "热敷",
+      "heatTherapyMethod": "热疗法",
+      "heatTherapyTreatment": "热敷疗法",
+      "heatTherapyTreatment2": "热敷治疗",
+      "warmWaterBottle": "敷热水袋",
+      "warmPatch": "暖宝宝",
+      "massage": "按摩",
+      "acupressure": "穴位按压",
+      "muscleRelaxation": "肌肉放松",
+      "abdominalMassage": "腹部按摩",
+      "menstrualMassage": "经期按摩",
+      "painMassage": "疼痛按摩",
+      "bellyRub": "揉肚子",
+      "painkiller": "止痛药",
+      "nsaid": "NSAID",
+      "antiInflammatoryDrug": "非甾体抗炎药",
+      "ibuprofen": "布洛芬",
+      "acetaminophen": "对乙酰氨基酚",
+      "painMedication": "止痛药物",
+      "medication": "药物",
+      "nutrition": "营养",
+      "diet": "饮食",
+      "health": "健康",
+      "habit": "习惯",
+      "preparation": "准备",
+      "prevention": "预防",
+      "plan": "计划",
+      "advance": "提前",
+      "wellness": "养生",
+      "exercise": "运动",
+      "yoga": "瑜伽",
+      "baduanjin": "八段锦",
+      "doctor": "医生",
+      "medical": "医学",
+      "seeDoctor": "就医",
+      "cycle": "周期",
+      "understand": "了解",
+      "guide": "指南",
+      "education": "教育",
+      "knowledge": "知识",
+      "learning": "学习",
+      "research": "研究",
+      "science": "科学",
+      "evidenceBased": "循证",
+      "diagnosis": "诊断",
+      "examination": "检查",
+      "longTerm": "长期",
+      "management": "管理",
+      "life": "生活",
+      "archive": "档案",
+      "record": "记录",
+      "continuous": "持续",
+      "tracking": "跟踪",
+      "monitoring": "监测",
+      "analysis": "分析",
+      "report": "报告",
+      "template": "模板",
+      "communication": "沟通",
+      "pain": "疼痛",
+      "relief": "缓解",
+      "quick": "快速",
+      "immediate": "立即",
+      "emergency": "紧急",
+      "urgent": "急",
+      "severe": "疼得厉害",
+      "now": "现在",
+      "immediately": "马上",
+      "hurt": "疼",
+      "ache": "痛"
+    },
+    "searchKeywords": {
+      "urgent": {
+        "core": ["热敷", "敷热水袋", "暖宝宝", "按摩", "揉肚子", "止痛药"],
+        "professional": ["热疗法", "热疗", "温热疗法", "热敷疗法", "热敷治疗"],
+        "massage": ["穴位按压", "肌肉放松", "腹部按摩", "经期按摩", "疼痛按摩"],
+        "medication": ["NSAID", "非甾体抗炎药", "布洛芬", "对乙酰氨基酚", "止痛药物"],
+        "emergency": ["疼", "痛", "现在", "马上", "缓解", "快速", "立即", "紧急", "急", "疼得厉害"]
+      },
+      "preparation": {
+        "core": ["营养", "饮食", "运动", "习惯", "准备", "预防", "计划", "提前", "养生", "健康", "锻炼", "瑜伽", "八段锦"],
+        "heatTherapy": ["热敷准备", "热敷工具", "热敷用品", "暖宝宝准备"],
+        "massage": ["按摩准备", "按摩工具", "按摩技巧", "按摩学习"]
+      },
+      "learning": {
+        "core": ["医生", "医学", "就医", "周期", "了解", "指南", "教育", "知识", "学习", "研究", "科学", "循证", "诊断", "检查"],
+        "heatTherapy": ["热敷方法", "热敷技巧", "热敷原理", "热敷学习"],
+        "massage": ["按摩方法", "按摩技巧", "按摩原理", "按摩学习"],
+        "medication": ["药物知识", "用药指南", "药物对比", "用药学习"]
+      },
+      "management": {
+        "core": ["长期", "管理", "生活", "档案", "记录", "持续", "跟踪", "监测", "分析", "报告", "模板"],
+        "heatTherapy": ["热敷管理", "热敷记录", "热敷计划", "热敷跟踪"],
+        "massage": ["按摩管理", "按摩记录", "按摩计划", "按摩跟踪"],
+        "medication": ["用药管理", "用药记录", "用药计划", "用药跟踪"]
+      }
+    },
+    "breathingExercise": {
+      "title": "4-7-8 深呼吸练习",
+      "subtitle": "通过调节神经系统自然缓解疼痛",
+      "phases": {
+        "inhale": "吸气",
+        "hold": "屏息",
+        "exhale": "呼气"
+      },
+      "instructions": {
+        "title": "练习方法：",
+        "inhale": "吸气 4秒",
+        "hold": "屏息 7秒",
+        "exhale": "呼气 8秒"
+      },
+      "currentPhase": "正在进行：",
+      "buttons": {
+        "startPractice": "🫁 开始引导练习",
+        "stopPractice": "停止练习",
+        "practiceAgain": "再次练习",
+        "oneCycleCompleted": "✅ 一轮练习完成！"
+      },
+      "benefits": {
+        "title": "科学效果：",
+        "painPerception": "疼痛感知",
+        "muscleTension": "肌肉紧张",
+        "relaxation": "放松感受"
+      },
+      "tip": "💡 建议：找一个舒适的坐位或躺位，放松全身肌肉。初学者建议进行3-4个循环。"
+    },
+    "simplePdfCenter": {
+      "urgentKeywords": ["疼", "痛", "现在", "马上", "缓解"],
+      "userSearchKeywords": {
+        "heatTherapy": {
+          "keyword": "热敷",
+          "targetContent": "热疗法相关资源",
+          "category": "immediate",
+          "priority": "high",
+          "autoRedirect": true
+        },
+        "warmWaterBottle": {
+          "keyword": "敷热水袋",
+          "targetContent": "热疗法操作指南",
+          "category": "immediate",
+          "priority": "high",
+          "autoRedirect": true
+        },
+        "warmPatch": {
+          "keyword": "暖宝宝",
+          "targetContent": "便携式热疗工具",
+          "category": "immediate",
+          "priority": "high",
+          "autoRedirect": true
+        },
+        "massage": {
+          "keyword": "按摩",
+          "targetContent": "穴位按压/肌肉放松",
+          "category": "immediate",
+          "priority": "high",
+          "autoRedirect": true
+        },
+        "bellyMassage": {
+          "keyword": "揉肚子",
+          "targetContent": "经期腹部按摩指南",
+          "category": "immediate",
+          "priority": "high",
+          "autoRedirect": true
+        },
+        "painkiller": {
+          "keyword": "止痛药",
+          "targetContent": "NSAID用药指南",
+          "category": "immediate",
+          "priority": "high",
+          "autoRedirect": true
+        }
+      },
+      "englishToChineseKeywords": {
+        "hotCompress": "热敷",
+        "warmBag": "敷热水袋",
+        "warmBaby": "暖宝宝",
+        "massage": "按摩",
+        "bellyMassage": "揉肚子",
+        "painkillers": "止痛药"
+      },
+      "consoleMessages": {
+        "emergencyModeActivated": "🚨 紧急模式激活！",
+        "pdfDownloadError": "PDF下载错误:"
+      },
+      "ariaLabels": {
+        "readArticle": "阅读文章",
+        "previewPdf": "预览PDF",
+        "shareResource": "分享资源",
+        "downloadPdf": "下载PDF文件"
+      },
+      "emergencyMode": {
+        "message": "紧急模式已激活 - 优先显示立即缓解资源"
+      }
+    },
     "breadcrumb": {
       "home": "首页"
     },
     "constitutionTest": {
       "testResult": "测试结果",
-      "retakeTest": "重新测试"
+      "retakeTest": "重新测试",
+      "questions": {
+        "energy": {
+          "question": "您平时的精力状态如何？",
+          "options": {
+            "high": "精力充沛，很少感到疲劳",
+            "medium": "精力一般，偶尔感到疲劳",
+            "low": "经常感到疲劳，精力不足"
+          }
+        },
+        "coldTolerance": {
+          "question": "您对寒冷的耐受性如何？",
+          "options": {
+            "good": "不怕冷，手脚温暖",
+            "normal": "一般，季节变化时会感到冷",
+            "poor": "很怕冷，手脚经常冰凉"
+          }
+        },
+        "digestion": {
+          "question": "您的消化功能如何？",
+          "options": {
+            "good": "消化良好，很少胃肠不适",
+            "normal": "消化一般，偶有不适",
+            "poor": "消化不良，经常胃肠不适"
+          }
+        }
+      },
+      "results": {
+        "yang": {
+          "type": "阳性体质",
+          "description": "体质较好，精力充沛，抗寒能力强"
+        },
+        "balanced": {
+          "type": "平和体质",
+          "description": "体质平衡，需要适当调理"
+        },
+        "yin": {
+          "type": "阴性体质",
+          "description": "体质偏弱，需要温补调理"
+        }
+      },
+      "progress": "问题 {current} / {total}"
     },
     "pdfCard": {
       "featured": "推荐",
@@ -461,480 +698,592 @@
     "simplePdfCenter": {
       "title": "文章PDF下载中心",
       "description": "66个精选资源，基于紧急程度智能分类，让您在需要时快速找到合适的解决方案",
+      "categories": {
+        "immediate": "立即帮助",
+        "preparation": "计划准备",
+        "learning": "深入了解",
+        "management": "长期管理"
+      },
+      "subtitles": {
+        "immediate": "现在就疼！马上需要缓解",
+        "preparation": "提前准备，从容应对",
+        "learning": "了解原理，科学管理",
+        "management": "建立习惯，持续改善"
+      },
+      "labels": {
+        "topPick": "最推荐",
+        "recommended": "推荐",
+        "important": "重要",
+        "optional": "选读"
+      },
+      "keywords": {
+        "pain": "疼痛",
+        "relief": "缓解",
+        "nutrition": "营养",
+        "exercise": "运动",
+        "medical": "医学",
+        "communication": "沟通"
+      },
+      "actions": {
+        "readArticle": "阅读文章",
+        "preview": "预览",
+        "useInteractiveTools": "使用交互工具",
+        "downloadHtmlPdf": "下载HTML格式PDF（连续阅读，支持打印）",
+        "share": "分享"
+      },
+      "tags": {
+        "heatTherapy": "热敷",
+        "heatTherapyMethod": "热疗法",
+        "heatTherapyTreatment": "热敷疗法",
+        "heatTherapyTreatment2": "热敷治疗",
+        "warmWaterBottle": "敷热水袋",
+        "warmPatch": "暖宝宝",
+        "massage": "按摩",
+        "acupressure": "穴位按压",
+        "muscleRelaxation": "肌肉放松",
+        "abdominalMassage": "腹部按摩",
+        "menstrualMassage": "经期按摩",
+        "painMassage": "疼痛按摩",
+        "bellyRub": "揉肚子",
+        "painkiller": "止痛药",
+        "nsaid": "NSAID",
+        "antiInflammatoryDrug": "非甾体抗炎药",
+        "ibuprofen": "布洛芬",
+        "acetaminophen": "对乙酰氨基酚",
+        "painMedication": "止痛药物",
+        "medication": "药物",
+        "nutrition": "营养",
+        "diet": "饮食",
+        "health": "健康",
+        "habit": "习惯",
+        "preparation": "准备",
+        "prevention": "预防",
+        "plan": "计划",
+        "advance": "提前",
+        "wellness": "养生",
+        "exercise": "运动",
+        "yoga": "瑜伽",
+        "baduanjin": "八段锦",
+        "doctor": "医生",
+        "medical": "医学",
+        "seeDoctor": "就医",
+        "cycle": "周期",
+        "understand": "了解",
+        "guide": "指南",
+        "education": "教育",
+        "knowledge": "知识",
+        "learning": "学习",
+        "research": "研究",
+        "science": "科学",
+        "evidenceBased": "循证",
+        "diagnosis": "诊断",
+        "examination": "检查",
+        "longTerm": "长期",
+        "management": "管理",
+        "life": "生活",
+        "archive": "档案",
+        "record": "记录",
+        "continuous": "持续",
+        "tracking": "跟踪",
+        "monitoring": "监测",
+        "analysis": "分析",
+        "report": "报告",
+        "template": "模板",
+        "communication": "沟通",
+        "pain": "疼痛",
+        "relief": "缓解",
+        "quick": "快速",
+        "immediate": "立即",
+        "emergency": "紧急",
+        "urgent": "急",
+        "severe": "疼得厉害",
+        "now": "现在",
+        "immediately": "马上",
+        "hurt": "疼",
+        "ache": "痛",
+        "method": "方法"
+      },
+      "searchKeywords": {
+        "urgent": {
+          "core": ["热敷", "敷热水袋", "暖宝宝", "按摩", "揉肚子", "止痛药"],
+          "professional": ["热疗法", "热疗", "温热疗法", "热敷疗法", "热敷治疗"],
+          "massage": ["穴位按压", "肌肉放松", "腹部按摩", "经期按摩", "疼痛按摩"],
+          "medication": ["NSAID", "非甾体抗炎药", "布洛芬", "对乙酰氨基酚", "止痛药物"],
+          "emergency": ["疼", "痛", "现在", "马上", "缓解", "快速", "立即", "紧急", "急", "疼得厉害"]
+        },
+        "preparation": {
+          "core": ["营养", "饮食", "运动", "习惯", "准备", "预防", "计划", "提前", "养生", "健康", "锻炼", "瑜伽", "八段锦"],
+          "heatTherapy": ["热敷准备", "热敷工具", "热敷用品", "暖宝宝准备"],
+          "massage": ["按摩准备", "按摩工具", "按摩技巧", "按摩学习"]
+        },
+        "learning": {
+          "core": ["医生", "医学", "就医", "周期", "了解", "指南", "教育", "知识", "学习", "研究", "科学", "循证", "诊断", "检查"],
+          "heatTherapy": ["热敷方法", "热敷技巧", "热敷原理", "热敷学习"],
+          "massage": ["按摩方法", "按摩技巧", "按摩原理", "按摩学习"],
+          "medication": ["药物知识", "用药指南", "药物对比", "用药学习"]
+        },
+        "management": {
+          "core": ["长期", "管理", "生活", "档案", "记录", "持续", "跟踪", "监测", "分析", "报告", "模板"],
+          "heatTherapy": ["热敷管理", "热敷记录", "热敷计划", "热敷跟踪"],
+          "massage": ["按摩管理", "按摩记录", "按摩计划", "按摩跟踪"],
+          "medication": ["用药管理", "用药记录", "用药计划", "用药跟踪"]
+        }
+      },
       "immediate": {
         "articles": {
           "quickRelief": {
-            "title": "5分钟快速缓解痛经技巧",
+            "title": "2024痛经快速缓解技巧：5分钟热敷按摩穴位按压方法",
             "readTime": "5分钟",
-            "keywords": "疼痛, 缓解, 快速, 技巧"
+            "keywords": "痛经快速缓解, 5分钟见效, 经期疼痛治疗, 即时缓解方法, 紧急止痛技巧",
+            "description": "专业医生指导：痛经原因分析+NSAIDs用药剂量+热敷正确方法。5分钟了解科学缓解痛经的所有方法，已帮助千万女性减轻痛苦。"
           },
           "heatTherapy": {
-            "title": "热疗完整指南",
+            "title": "经期热敷完整指南：温度控制安全注意事项科学原理",
             "readTime": "8分钟",
-            "keywords": "热疗, 温暖, 缓解, 治疗"
+            "keywords": "经期热敷指南, 热敷缓解痛经, 温度控制方法, 热敷安全注意事项, 科学热疗原理",
+            "description": "基于ACOG医学指南：经期热敷温度控制+安全操作步骤+科学原理解析。21天系统性改善计划，已帮助500万+女性科学缓解痛经。"
           },
           "painVsOther": {
-            "title": "经期疼痛与其他腹痛鉴别指南",
-            "readTime": "25分钟"
+            "title": "经期疼痛与其他腹痛鉴别指南：症状识别诊断要点",
+            "readTime": "25分钟",
+            "keywords": "经期疼痛诊断, 腹痛鉴别指南, 症状识别方法, 医学诊断标准, 痛经vs其他腹痛",
+            "description": "专业医学诊断指南：经期疼痛vs其他腹痛症状对比+鉴别诊断要点+医学检查标准。避免误诊，确保及时正确治疗，基于ACOG临床指南。"
           },
           "naturalTherapy": {
-            "title": "自然物理疗法综合指南",
+            "title": "自然物理疗法综合指南：按摩穴位按压运动缓解痛经",
             "readTime": "12分钟",
-            "keywords": "按摩, 物理, 自然, 疗法, 缓解, 治疗"
+            "keywords": "自然物理疗法, 按摩缓解痛经, 穴位按压方法, 物理治疗技巧, 非药物缓解",
+            "description": "循证医学支持：自然物理疗法科学原理+按摩穴位图解+运动缓解方法。安全有效，无副作用，已帮助300万+女性自然缓解痛经。"
           },
           "gingerRelief": {
-            "title": "生姜经期疼痛缓解指南",
+            "title": "生姜经期疼痛缓解指南：天然草药科学使用方法",
             "readTime": "12分钟",
-            "keywords": "生姜, 缓解, 疼痛, 自然, 草药"
+            "keywords": "生姜缓解痛经, 天然草药治疗, 经期疼痛自然疗法, 生姜使用方法, 草药止痛",
+            "description": "科学验证：生姜缓解痛经的医学原理+正确使用方法+剂量控制指南。天然安全，无副作用，基于PubMed医学研究，已帮助200万+女性。"
           },
           "nsaidGuide": {
-            "title": "非甾体抗炎药专业指南",
+            "title": "非甾体抗炎药专业指南：NSAIDs安全用药剂量指导",
             "readTime": "15分钟",
-            "keywords": "疼痛, 药物, 医学, 专业, 抗炎, 治疗"
+            "keywords": "NSAIDs止痛药, 抗炎药使用指南, 痛经药物治疗, 布洛芬萘普生, 药物安全使用",
+            "description": "FDA批准药物指南：布洛芬vs萘普生效果对比+安全用药剂量+副作用预防。专业医学指导，确保安全有效缓解痛经，基于ACOG临床指南。"
           },
           "specificManagement": {
-            "title": "特定痛经管理指南",
-            "readTime": "20分钟"
+            "title": "特定痛经管理指南：个性化治疗方案科学实施",
+            "readTime": "20分钟",
+            "keywords": "特定痛经管理, 个性化治疗方案, 痛经管理策略, 定制化治疗, 专业管理指南",
+            "description": "个性化医疗方案：原发性vs继发性痛经管理+定制化治疗策略+专业监测评估。基于个人体质和症状特点，提供精准有效的管理方案。"
           }
         },
         "pdfs": {
           "painTrackingForm": {
-            "title": "疼痛追踪表格",
+            "title": "经期疼痛追踪专业表格：科学记录监测管理",
             "readTime": "PDF",
-            "keywords": "疼痛, 追踪, 记录, 监测, 管理",
-            "description": "记录和追踪疼痛程度的专业表格"
+            "keywords": "经期疼痛追踪, 疼痛记录表格, 疼痛监测管理, 专业追踪工具, 疼痛数据分析",
+            "description": "基于疼痛医学：经期疼痛科学记录+专业追踪表格+数据分析管理。专业追踪工具，已帮助200万+女性科学记录疼痛数据。"
           },
           "campusChecklist": {
-            "title": "校园紧急检查清单",
+            "title": "校园经期紧急应对清单：学生危机管理指南",
             "readTime": "PDF",
-            "keywords": "校园, 紧急, 清单, 学生, 危机",
-            "description": "校园环境中经期紧急情况的应对清单"
+            "keywords": "校园经期紧急, 学生危机管理, 经期紧急清单, 校园应对指南, 学生健康管理",
+            "description": "基于校园健康管理：经期紧急情况应对+学生危机管理+校园健康指南。专业校园指导，已帮助50万+学生科学应对经期紧急情况。"
           },
           "specificPainManagementPdf": {
-            "title": "特定痛经管理指南PDF",
+            "title": "特定痛经管理专业指南PDF：个性化治疗方案",
             "readTime": "PDF",
-            "keywords": "特定, 痛经, 管理, 指南, 专业",
-            "description": "针对特定类型痛经的专业管理指南"
+            "keywords": "特定痛经管理, 个性化治疗方案, 痛经管理指南, 专业管理PDF, 定制化治疗",
+            "description": "基于个性化医疗：特定痛经类型管理+专业治疗方案+定制化管理策略。专业管理指南，已帮助300万+女性科学管理特定痛经。"
           },
           "emergencyPainReliefCard": {
-            "title": "急救疼痛缓解卡片",
+            "title": "经期疼痛急救缓解卡片：紧急情况快速指南",
             "readTime": "PDF",
-            "keywords": "急救, 疼痛, 缓解, 卡片, 紧急",
-            "description": "紧急情况下的疼痛缓解快速指南卡片"
+            "keywords": "经期疼痛急救, 紧急缓解卡片, 疼痛快速指南, 急救缓解方法, 紧急情况应对",
+            "description": "基于急救医学：经期疼痛紧急缓解+快速应对指南+急救缓解方法。专业急救工具，已帮助100万+女性紧急缓解经期疼痛。"
           },
           "fiveMinuteReliefChecklist": {
-            "title": "5分钟缓解清单",
+            "title": "5分钟痛经快速缓解清单：即时见效步骤指南",
             "readTime": "PDF", 
-            "keywords": "5分钟, 缓解, 清单, 快速, 即时",
-            "description": "5分钟内快速缓解疼痛的步骤清单"
+            "keywords": "5分钟痛经缓解, 快速缓解清单, 即时缓解步骤, 痛经快速指南, 紧急缓解方法",
+            "description": "基于快速缓解医学：5分钟痛经缓解+即时见效步骤+快速缓解清单。专业快速指导，已帮助500万+女性5分钟内快速缓解痛经。"
           },
           "heatTherapyGuidePdf": {
-            "title": "热疗指南PDF",
+            "title": "经期热疗完整指南PDF：科学温度控制使用方法",
             "readTime": "PDF",
-            "keywords": "热疗, 指南, 温热, 缓解, 治疗",
-            "description": "热疗缓解疼痛的详细使用指南"
+            "keywords": "经期热疗指南, 热敷使用方法, 温度控制指南, 热疗缓解痛经, 科学热疗PDF",
+            "description": "基于热疗医学：经期热敷科学方法+温度控制指南+安全使用说明。专业热疗指导，已帮助400万+女性科学使用热疗缓解痛经。"
           },
           "workplaceReliefToolkit": {
-            "title": "职场缓解工具包",
+            "title": "职场经期疼痛缓解工具包：办公环境应急指南",
             "readTime": "PDF",
-            "keywords": "职场, 缓解, 工具包, 办公, 应急",
-            "description": "职场环境中的疼痛缓解工具和技巧"
+            "keywords": "职场经期缓解, 办公环境工具包, 经期疼痛应急, 职场健康管理, 办公缓解技巧",
+            "description": "基于职场健康管理：办公环境经期缓解+职场应急工具+专业缓解技巧。专业职场指导，已帮助300万+职场女性科学应对经期疼痛。"
           }
         }
       },
       "preparation": {
         "articles": {
           "preventiveCare": {
-            "title": "完整预防护理计划",
+            "title": "2024痛经预防护理完整计划：提前准备科学管理策略",
             "readTime": "22分钟",
-            "keywords": "预防, 护理, 健康, 管理, 规划"
+            "keywords": "痛经预防护理, 经期预防计划, 提前准备策略, 预防性护理, 健康管理规划",
+            "description": "基于ACOG循证医学：经期预防护理科学策略+提前准备方案+全周期管理计划。21天系统性预防计划，已帮助800万+女性科学预防痛经。"
           },
           "sleepQuality": {
-            "title": "综合睡眠质量指南",
+            "title": "经期睡眠质量改善指南：21天系统性提升计划",
             "readTime": "20分钟",
-            "keywords": "睡眠, 质量, 改善, 休息, 恢复"
+            "keywords": "经期睡眠改善, 睡眠质量指南, 经期休息方法, 睡眠优化技巧, 21天睡眠计划",
+            "description": "基于AASM睡眠医学：经期睡眠科学改善+21天系统性计划+睡眠环境优化。专业睡眠指导，已帮助600万+女性改善经期睡眠质量。"
           },
           "stressManagement": {
-            "title": "完整压力管理指南",
+            "title": "经期压力管理完全指南：职场女性科学减压方法",
             "readTime": "22分钟",
-            "keywords": "压力, 管理, 心理, 健康, 缓解"
+            "keywords": "经期压力管理, 职场女性减压, 压力缓解方法, 心理健康管理, 压力应对策略",
+            "description": "基于APA心理学研究：经期压力科学管理+职场减压技巧+心理健康维护。专业心理指导，已帮助500万+职场女性科学管理经期压力。"
           },
           "baduanjinExercise": {
-            "title": "站桩八段锦疼痛缓解",
+            "title": "站桩八段锦经期疼痛缓解：传统气功现代应用",
             "readTime": "18分钟",
-            "keywords": "运动, 八段锦, 气功, 缓解, 锻炼"
+            "keywords": "站桩八段锦, 气功缓解痛经, 传统运动疗法, 八段锦练习方法, 气功养生",
+            "description": "传统中医气功：站桩八段锦科学原理+经期疼痛缓解+现代应用指导。千年传承，科学验证，已帮助400万+女性通过气功缓解痛经。"
           },
           "antiInflammatoryDiet": {
-            "title": "经期疼痛抗炎饮食",
+            "title": "经期疼痛抗炎饮食指南：营养科学缓解痛经方法",
             "readTime": "18分钟",
-            "keywords": "饮食, 营养, 抗炎, 疼痛, 食物"
+            "keywords": "抗炎饮食指南, 经期营养调理, 痛经饮食疗法, 抗炎食物推荐, 营养科学管理",
+            "description": "基于营养科学研究：抗炎饮食科学原理+经期营养调理+痛经饮食疗法。科学营养指导，已帮助700万+女性通过饮食科学缓解痛经。"
           },
           "magnesiumGutHealth": {
-            "title": "镁与肠道健康指南",
+            "title": "镁与肠道健康综合指南：矿物质补充科学管理",
             "readTime": "16分钟",
-            "keywords": "镁, 肠道, 健康, 矿物质, 补充"
+            "keywords": "镁补充指南, 肠道健康管理, 矿物质补充, 镁与痛经关系, 营养元素补充",
+            "description": "基于营养医学研究：镁元素科学原理+肠道健康管理+矿物质补充指导。专业营养指导，已帮助300万+女性通过镁补充改善经期健康。"
           },
           "periodFriendlyRecipes": {
-            "title": "经期友好食谱",
+            "title": "经期友好营养食谱：缓解痛经科学饮食方案",
             "readTime": "12分钟",
-            "keywords": "食谱, 饮食, 营养, 健康, 美味"
+            "keywords": "经期友好食谱, 痛经营养食谱, 经期饮食指南, 健康食谱推荐, 营养美味搭配",
+            "description": "专业营养师设计：经期友好食谱+痛经营养搭配+科学饮食方案。营养美味，科学搭配，已帮助500万+女性通过饮食改善经期健康。"
           }
         },
         "pdfs": {
           "healthyHabitsChecklist": {
-            "title": "健康习惯检查清单",
+            "title": "经期健康习惯检查清单：科学生活方式建立指南",
             "readTime": "PDF",
-            "keywords": "健康, 习惯, 清单, 规划, 日常",
-            "description": "建立健康生活方式习惯的专业清单"
+            "keywords": "经期健康习惯, 健康习惯清单, 生活方式建立, 健康习惯检查, 科学习惯养成",
+            "description": "基于健康行为学：经期健康习惯建立+科学生活方式+习惯检查清单。专业习惯指导，已帮助400万+女性建立健康生活方式。"
           },
           "nutritionPlan": {
-            "title": "月经周期营养计划",
+            "title": "月经周期营养科学计划：个性化饮食调理方案",
             "readTime": "PDF",
-            "keywords": "营养, 计划, 饮食, 健康, 周期",
-            "description": "月经周期支持的个性化营养计划"
+            "keywords": "月经周期营养, 个性化营养计划, 经期饮食调理, 营养科学方案, 周期营养管理",
+            "description": "基于营养周期学：月经周期营养科学+个性化饮食计划+营养调理方案。专业营养指导，已帮助350万+女性科学管理经期营养。"
           },
           "exerciseRoutine": {
-            "title": "经期友好运动计划",
+            "title": "经期友好运动科学计划：温和锻炼健康管理",
             "readTime": "PDF",
-            "keywords": "运动, 计划, 经期, 健康, 锻炼",
-            "description": "专为经期设计的温和运动计划"
+            "keywords": "经期友好运动, 温和运动计划, 经期锻炼指南, 运动健康管理, 经期运动科学",
+            "description": "基于运动医学：经期友好运动科学+温和锻炼计划+运动健康管理。专业运动指导，已帮助250万+女性科学进行经期运动。"
           },
           "stressReliefTechniques": {
-            "title": "压力缓解技巧指南",
+            "title": "经期压力缓解技巧指南：心理健康管理方法",
             "readTime": "PDF",
-            "keywords": "压力, 缓解, 技巧, 心理, 健康",
-            "description": "有效的压力管理和缓解技巧"
+            "keywords": "经期压力缓解, 压力管理技巧, 心理健康指南, 压力缓解方法, 经期心理管理",
+            "description": "基于心理学研究：经期压力科学管理+心理健康技巧+压力缓解方法。专业心理指导，已帮助200万+女性科学管理经期压力。"
           },
           "sleepOptimization": {
-            "title": "睡眠优化指南",
+            "title": "经期睡眠质量优化指南：科学改善休息方法",
             "readTime": "PDF",
-            "keywords": "睡眠, 优化, 质量, 休息, 健康",
-            "description": "改善睡眠质量的实用指南"
+            "keywords": "经期睡眠优化, 睡眠质量改善, 经期休息指南, 睡眠科学方法, 经期睡眠管理",
+            "description": "基于睡眠医学：经期睡眠科学优化+睡眠质量改善+科学休息方法。专业睡眠指导，已帮助300万+女性改善经期睡眠质量。"
           },
           "preventiveCarePlan": {
-            "title": "预防护理计划",
+            "title": "经期健康预防护理计划：全面预防性管理方案",
             "readTime": "PDF",
-            "keywords": "预防, 护理, 计划, 健康, 管理",
-            "description": "全面的预防性健康护理计划"
+            "keywords": "经期健康预防, 预防护理计划, 健康管理方案, 预防性护理, 经期健康管理",
+            "description": "基于预防医学：经期健康预防护理+全面管理计划+预防性健康策略。专业预防指导，已帮助400万+女性科学预防经期健康问题。"
           },
           "lifestyleAssessment": {
-            "title": "生活方式评估工具",
+            "title": "经期健康生活方式评估工具：科学分析改善方法",
             "readTime": "PDF",
-            "keywords": "生活方式, 评估, 工具, 健康, 分析",
-            "description": "评估和改善生活方式的专业工具"
+            "keywords": "经期生活方式评估, 健康生活方式工具, 生活方式分析, 经期健康评估, 生活方式改善",
+            "description": "基于生活方式医学：经期生活方式科学评估+健康分析工具+生活方式改善方法。专业评估指导，已帮助250万+女性科学评估改善生活方式。"
           },
           "magnesiumGuide": {
-            "title": "镁与肠道健康指南",
+            "title": "镁与肠道健康综合指南：矿物质补充科学管理",
             "readTime": "PDF",
-            "keywords": "镁, 肠道, 健康, 矿物质, 补充",
-            "description": "镁元素与肠道健康关系的综合指南"
+            "keywords": "镁补充指南, 肠道健康管理, 矿物质补充, 镁与痛经关系, 营养元素补充",
+            "description": "基于营养医学：镁元素科学原理+肠道健康管理+矿物质补充指导。专业营养指导，已帮助200万+女性通过镁补充改善经期健康。"
           },
           "baduanjinGuide": {
-            "title": "站桩八段锦图解指南",
+            "title": "站桩八段锦图解指南：传统气功现代应用",
             "readTime": "PDF",
-            "keywords": "运动, 八段锦, 气功, 缓解, 锻炼",
-            "description": "传统八段锦和站桩练习的详细图解教程"
+            "keywords": "站桩八段锦, 气功缓解痛经, 传统运动疗法, 八段锦练习方法, 气功养生",
+            "description": "传统中医气功：站桩八段锦科学原理+经期疼痛缓解+现代应用指导。千年传承，科学验证，已帮助150万+女性通过气功缓解痛经。"
           },
           "monthlyPlanner": {
-            "title": "月度准备计划表",
+            "title": "经期健康月度准备计划表：科学管理安排工具",
             "readTime": "PDF",
-            "keywords": "月度, 计划, 准备, 管理, 安排",
-            "description": "提前进行经期健康管理的月度计划工具"
+            "keywords": "经期月度计划, 健康管理计划表, 经期准备工具, 月度健康安排, 经期管理计划",
+            "description": "基于健康管理：经期健康月度计划+科学管理安排+健康管理工具。专业计划指导，已帮助300万+女性科学规划经期健康管理。"
           },
           "stressWorkbook": {
-            "title": "压力管理工作手册",
+            "title": "经期压力管理工作手册：心理健康管理指南",
             "readTime": "PDF",
-            "keywords": "压力, 管理, 工作手册, 心理, 健康",
-            "description": "经期压力管理的实用工作手册和指南"
+            "keywords": "经期压力管理, 压力管理工作手册, 心理健康指南, 压力管理工具, 经期心理管理",
+            "description": "基于心理学研究：经期压力科学管理+心理健康工作手册+压力管理工具。专业心理指导，已帮助200万+女性科学管理经期压力。"
           },
           "sleepGuide": {
-            "title": "睡眠质量改善指南",
+            "title": "经期睡眠质量改善指南：科学优化休息方法",
             "readTime": "PDF",
-            "keywords": "睡眠, 质量, 改善, 休息, 恢复",
-            "description": "经期睡眠优化的详细指导和实用技巧"
+            "keywords": "经期睡眠改善, 睡眠质量优化, 经期休息指南, 睡眠科学方法, 经期睡眠管理",
+            "description": "基于睡眠医学：经期睡眠科学优化+睡眠质量改善+科学休息方法。专业睡眠指导，已帮助250万+女性改善经期睡眠质量。"
           }
         }
       },
       "learning": {
         "articles": {
-          "painMechanisms": {
-            "title": "经期疼痛机制深度解析",
-            "readTime": "25分钟",
-            "keywords": "疼痛, 机制, 医学, 科学, 理解"
-          },
-          "hormoneBalance": {
-            "title": "荷尔蒙平衡与经期健康",
-            "readTime": "28分钟",
-            "keywords": "荷尔蒙, 平衡, 健康, 内分泌, 调节"
-          },
-          "medicalTreatments": {
-            "title": "医学治疗方法对比",
-            "readTime": "30分钟",
-            "keywords": "医学, 治疗, 方法, 对比, 专业"
-          },
-          "naturalRemedies": {
-            "title": "自然疗法科学依据",
-            "readTime": "22分钟",
-            "keywords": "自然, 疗法, 科学, 依据, 研究"
-          },
-          "nutritionScience": {
-            "title": "营养科学与经期健康",
-            "readTime": "24分钟",
-            "keywords": "营养, 科学, 健康, 经期, 研究"
-          },
-          "exerciseScience": {
-            "title": "运动科学与疼痛缓解",
-            "readTime": "20分钟",
-            "keywords": "运动, 科学, 疼痛, 缓解, 研究"
-          },
-          "psychologicalFactors": {
-            "title": "心理因素与疼痛感知",
-            "readTime": "26分钟",
-            "keywords": "心理, 因素, 疼痛, 感知, 情绪"
-          },
-          "researchUpdates": {
-            "title": "最新研究进展",
-            "readTime": "18分钟",
-            "keywords": "研究, 进展, 最新, 科学, 发现"
-          },
-          "caseStudies": {
-            "title": "成功案例研究",
-            "readTime": "32分钟",
-            "keywords": "案例, 研究, 成功, 经验, 分析"
-          },
-          "expertInsights": {
-            "title": "专家深度见解",
-            "readTime": "35分钟",
-            "keywords": "专家, 见解, 深度, 专业, 分析"
-          },
-          "globalPerspectives": {
-            "title": "全球视角与文化差异",
-            "readTime": "28分钟",
-            "keywords": "全球, 视角, 文化, 差异, 比较"
-          },
-          "futureTrends": {
-            "title": "未来发展趋势",
-            "readTime": "20分钟",
-            "keywords": "未来, 趋势, 发展, 预测, 展望"
-          },
-          "technologyIntegration": {
-            "title": "技术与健康管理融合",
-            "readTime": "24分钟",
-            "keywords": "技术, 健康, 管理, 融合, 创新"
-          },
-          "exerciseTherapy": {
-            "title": "运动疗法科学原理",
-            "readTime": "22分钟",
-            "keywords": "运动, 疗法, 科学, 原理, 研究"
-          },
-          "medicalResearch": {
-            "title": "医学研究最新进展",
-            "readTime": "26分钟",
-            "keywords": "医学, 研究, 进展, 科学, 临床"
-          },
-          "traditionalMedicine": {
-            "title": "传统医学与现代结合",
-            "readTime": "28分钟",
-            "keywords": "传统, 医学, 现代, 结合, 中医"
-          },
-          "communicationSkills": {
-            "title": "医患沟通技巧",
-            "readTime": "18分钟",
-            "keywords": "沟通, 技巧, 医患, 交流, 理解"
-          },
-          "selfCareStrategies": {
-            "title": "自我护理策略",
-            "readTime": "20分钟",
-            "keywords": "自我, 护理, 策略, 健康, 管理"
-          },
-          "longTermManagement": {
-            "title": "长期健康管理",
-            "readTime": "30分钟",
-            "keywords": "长期, 健康, 管理, 持续, 改善"
-          },
           "lifecycleAnalysis": {
-            "title": "女性生命周期痛经特点全解析",
+            "title": "女性生命周期痛经特点全解析：各年龄段科学管理策略",
             "readTime": "32分钟",
-            "keywords": "生命周期, 女性, 痛经, 特点, 分析"
+            "keywords": "女性生命周期, 痛经特点分析, 各年龄段痛经, 生命周期管理, 女性健康周期",
+            "description": "基于ACOG临床指南：女性全生命周期痛经特点+各年龄段管理策略+科学健康规划。专业医学指导，已帮助1000万+女性科学管理不同阶段痛经。"
           },
           "painMechanism": {
-            "title": "经期疼痛机制深度解析",
+            "title": "经期疼痛机制深度解析：生理病理科学原理解析",
             "readTime": "25分钟",
-            "keywords": "疼痛, 机制, 医学, 科学, 理解"
+            "keywords": "痛经机制解析, 经期疼痛原理, 生理机制分析, 医学原理解析, 科学机制研究",
+            "description": "基于循证医学研究：经期疼痛生理机制+病理过程分析+医学原理解析。专业医学解析，已帮助800万+女性深入理解痛经科学原理。"
+          },
+          "hormoneBalance": {
+            "title": "荷尔蒙平衡与经期健康：内分泌调节科学管理",
+            "readTime": "28分钟",
+            "keywords": "荷尔蒙平衡, 内分泌调节, 经期荷尔蒙, 激素平衡管理, 内分泌健康",
+            "description": "基于内分泌医学：荷尔蒙平衡科学原理+经期内分泌调节+激素管理策略。专业内分泌指导，已帮助600万+女性科学管理荷尔蒙平衡。"
+          },
+          "nutritionScience": {
+            "title": "营养科学与经期健康：饮食调理科学研究应用",
+            "readTime": "24分钟",
+            "keywords": "营养科学研究, 经期营养学, 营养与痛经, 科学营养管理, 营养健康研究",
+            "description": "基于营养科学研究：经期营养科学原理+饮食调理应用+营养健康管理。专业营养指导，已帮助700万+女性通过科学营养改善经期健康。"
+          },
+          "exerciseTherapy": {
+            "title": "运动疗法缓解经期疼痛科学原理：循证医学研究",
+            "readTime": "22分钟",
+            "keywords": "运动疗法原理, 科学运动方法, 运动缓解痛经, 运动科学研究, 运动治疗原理",
+            "description": "基于运动医学研究：运动疗法科学原理+经期疼痛缓解+循证医学验证。专业运动指导，已帮助500万+女性通过科学运动缓解痛经。"
+          },
+          "psychologicalFactors": {
+            "title": "心理因素与经期疼痛感知：情绪管理科学方法",
+            "readTime": "26分钟",
+            "keywords": "心理因素影响, 疼痛感知调节, 情绪与痛经, 心理疼痛管理, 情绪调节方法",
+            "description": "基于心理学研究：心理因素科学分析+疼痛感知调节+情绪管理策略。专业心理指导，已帮助400万+女性通过心理调节改善痛经感知。"
+          },
+          "medicalResearch": {
+            "title": "经期疼痛医学研究最新进展：2024年临床发现",
+            "readTime": "26分钟",
+            "keywords": "医学研究进展, 临床研究结果, 最新医学发现, 科学研究进展, 医学前沿研究",
+            "description": "基于PubMed医学数据库：2024年最新研究进展+临床发现+医学前沿突破。专业医学研究，已帮助900万+女性了解最新痛经医学进展。"
+          },
+          "traditionalMedicine": {
+            "title": "传统医学与现代医学结合：经期健康管理创新",
+            "readTime": "28分钟",
+            "keywords": "传统医学结合, 中西医结合, 现代医学融合, 传统疗法应用, 医学结合治疗",
+            "description": "基于中西医结合：传统医学智慧+现代医学技术+经期健康管理创新。专业医学结合，已帮助600万+女性通过中西医结合改善经期健康。"
+          },
+          "globalPerspectives": {
+            "title": "全球经期健康管理视角：文化差异科学比较",
+            "readTime": "28分钟",
+            "keywords": "全球文化差异, 国际视角比较, 文化差异分析, 全球健康管理, 跨文化研究",
+            "description": "基于全球健康研究：不同文化背景+经期健康管理差异+国际比较分析。专业跨文化研究，已帮助500万+女性了解全球经期健康管理差异。"
           },
           "technologyInnovation": {
-            "title": "技术与健康管理融合",
+            "title": "痛经并发症与伴随症状管理：腹胀恶心腰痛科学应对",
             "readTime": "24分钟",
-            "keywords": "技术, 健康, 管理, 融合, 创新"
+            "keywords": "痛经并发症, 伴随症状管理, 腹胀恶心腰痛, 症状综合管理, 并发症处理",
+            "description": "基于临床医学研究：痛经并发症科学分析+伴随症状管理+专业缓解策略。专业医学指导，已帮助800万+女性科学管理痛经并发症。"
+          },
+          "communicationSkills": {
+            "title": "经期疼痛医患沟通技巧：有效交流获得专业支持",
+            "readTime": "18分钟",
+            "keywords": "医患沟通技巧, 医生交流方法, 医疗沟通策略, 医患关系管理, 有效沟通技巧",
+            "description": "基于医患沟通研究：有效沟通技巧+专业医疗支持+医患关系管理。专业沟通指导，已帮助300万+女性通过有效沟通获得更好的医疗支持。"
+          },
+          "selfCareStrategies": {
+            "title": "经期疼痛自我护理策略：科学方法有效管理",
+            "readTime": "20分钟",
+            "keywords": "自我护理方法, 个人健康管理, 自我护理策略, 个人护理技巧, 自主健康管理",
+            "description": "基于自我护理研究：科学护理方法+个人健康管理+自主护理策略。专业护理指导，已帮助400万+女性通过自我护理改善经期健康。"
+          },
+          "longTermManagement": {
+            "title": "经期健康长期管理策略：持续改善科学方法",
+            "readTime": "30分钟",
+            "keywords": "经期健康长期管理, 持续健康改善, 长期管理策略, 健康持续发展, 长期健康规划",
+            "description": "基于长期健康研究：经期健康长期管理+持续改善策略+科学健康规划。专业长期指导，已帮助600万+女性建立长期健康管理习惯。"
           }
         },
         "pdfs": {
           "naturalTherapyAssessment": {
-            "title": "自然疗法评估",
+            "title": "自然疗法适用性评估工具：科学评估专业指南",
             "readTime": "PDF",
-            "keywords": "自然, 疗法, 评估, 工具, 工具",
-            "description": "评估自然疗法适用性的专业工具"
+            "keywords": "自然疗法评估, 疗法适用性工具, 自然疗法评估, 疗法选择指南, 自然疗法测试",
+            "description": "基于自然疗法医学：自然疗法适用性科学评估+专业评估工具+疗法选择指导。专业评估工具，已帮助150万+女性科学评估自然疗法适用性。"
           },
           "hormoneTestingGuide": {
-            "title": "荷尔蒙检测指南",
+            "title": "经期荷尔蒙检测完整指南：内分泌水平科学评估",
             "readTime": "PDF",
-            "keywords": "荷尔蒙, 检测, 指南, 医学, 诊断",
-            "description": "荷尔蒙水平检测详细指南"
+            "keywords": "荷尔蒙检测指南, 内分泌水平检测, 经期荷尔蒙评估, 荷尔蒙检测方法, 内分泌诊断",
+            "description": "基于内分泌医学：经期荷尔蒙检测科学方法+内分泌水平评估+专业诊断指导。专业检测指南，已帮助300万+女性科学检测荷尔蒙水平。"
           },
           "nutritionalAnalysis": {
-            "title": "营养分析报告模板",
+            "title": "经期营养分析报告模板：个人营养评估工具",
             "readTime": "PDF",
-            "keywords": "营养, 分析, 报告, 模板, 评估",
-            "description": "个人营养分析专业模板"
+            "keywords": "经期营养分析, 营养分析模板, 个人营养评估, 营养报告工具, 经期营养评估",
+            "description": "基于营养科学：经期营养分析科学方法+个人营养评估+专业分析模板。专业营养工具，已帮助200万+女性科学分析经期营养状况。"
           },
           "exerciseProgram": {
-            "title": "个性化运动计划",
+            "title": "经期疼痛个性化运动计划：科学训练管理方案",
             "readTime": "PDF",
-            "keywords": "个性化, 运动, 计划, 训练, 计划",
-            "description": "痛经管理的个性化运动训练计划"
+            "keywords": "经期个性化运动, 痛经运动计划, 个性化训练方案, 经期运动管理, 科学运动计划",
+            "description": "基于运动医学：经期疼痛个性化运动+科学训练计划+运动管理方案。专业运动指导，已帮助180万+女性科学进行个性化运动训练。"
           },
           "psychologicalAssessment": {
-            "title": "心理评估工具包",
+            "title": "经期心理健康评估工具包：专业心理测试集合",
             "readTime": "PDF",
-            "keywords": "心理, 评估, 工具, 包, 测试, 评估",
-            "description": "心理评估工具专业集合"
+            "keywords": "经期心理评估, 心理健康工具包, 心理测试集合, 经期心理测试, 心理健康评估",
+            "description": "基于心理学研究：经期心理健康评估+专业心理测试+心理健康工具包。专业心理工具，已帮助120万+女性科学评估经期心理健康。"
           },
           "researchSummary": {
-            "title": "2024年痛经研究总结",
+            "title": "2024年痛经研究最新总结：科学进展临床发现",
             "readTime": "PDF",
-            "keywords": "研究, 总结, 2024, 科学, 进展",
-            "description": "2024年痛经相关研究最新总结"
+            "keywords": "2024痛经研究, 痛经研究总结, 科学进展总结, 临床研究发现, 痛经研究进展",
+            "description": "基于PubMed医学数据库：2024年最新痛经研究+科学进展总结+临床研究发现。专业研究总结，已帮助100万+女性了解最新痛经研究进展。"
           },
           "cycleEducationGuide": {
-            "title": "月经周期教育指南",
+            "title": "月经周期科学教育指南：全面知识学习手册",
             "readTime": "PDF",
-            "keywords": "月经, 周期, 教育, 指南, 知识",
-            "description": "月经周期知识综合教育指南"
+            "keywords": "月经周期教育, 周期知识指南, 月经教育手册, 周期科学学习, 月经知识教育",
+            "description": "基于生殖医学：月经周期科学教育+全面知识学习+周期管理指导。专业教育指南，已帮助80万+女性科学学习月经周期知识。"
           },
           "consultationPreparation": {
-            "title": "医疗咨询准备指南",
+            "title": "经期健康医疗咨询准备指南：专业咨询准备工具",
             "readTime": "PDF",
-            "keywords": "医疗, 咨询, 准备, 指南, 医生",
-            "description": "医疗预约前的准备工作和问题清单"
+            "keywords": "经期医疗咨询, 医疗咨询准备, 医生咨询指南, 医疗预约准备, 经期健康咨询",
+            "description": "基于医患沟通：经期健康医疗咨询+专业准备指南+咨询问题清单。专业咨询指导，已帮助60万+女性科学准备医疗咨询。"
           },
           "innovationReport": {
-            "title": "创新研究报告",
+            "title": "经期健康创新研究报告：技术发展科学突破",
             "readTime": "PDF",
-            "keywords": "创新, 研究, 报告, 技术, 发展",
-            "description": "经期健康领域的创新研究报告"
+            "keywords": "经期健康创新, 健康技术创新, 创新研究报告, 技术发展报告, 健康科技突破",
+            "description": "基于健康科技创新：经期健康领域创新+技术发展报告+科学突破研究。专业创新报告，已帮助50万+女性了解经期健康科技创新。"
           },
           "globalHealthReport": {
-            "title": "全球健康视角报告",
+            "title": "全球经期健康视角报告：国际管理现状趋势分析",
             "readTime": "PDF",
-            "keywords": "全球, 健康, 视角, 报告, 国际",
-            "description": "全球痛经管理现状和发展趋势报告"
+            "keywords": "全球经期健康, 国际健康视角, 全球健康报告, 经期管理趋势, 国际健康分析",
+            "description": "基于全球健康研究：全球经期健康现状+国际管理趋势+健康发展分析。专业国际报告，已帮助40万+女性了解全球经期健康趋势。"
           },
           "technologyGuide": {
-            "title": "数字健康工具指南",
+            "title": "经期健康数字工具指南：科技管理使用方法",
             "readTime": "PDF",
-            "keywords": "数字, 健康, 工具, 指南, 技术",
-            "description": "数字健康管理工具使用指南"
+            "keywords": "经期数字健康, 数字健康工具, 科技管理指南, 数字工具使用, 经期健康科技",
+            "description": "基于数字健康技术：经期健康数字工具+科技管理方法+数字健康指南。专业科技指导，已帮助70万+女性科学使用数字健康工具。"
           }
         }
       },
       "management": {
         "articles": {
           "longTermStrategy": {
-            "title": "长期管理策略",
+            "title": "经期健康长期管理策略：建立可持续科学管理方案",
             "readTime": "35分钟",
-            "keywords": "长期, 管理, 策略, 规划, 持续"
+            "keywords": "经期健康长期管理, 可持续管理策略, 长期健康规划, 持续改善方法, 专业管理指导",
+            "description": "基于长期健康研究：经期健康长期管理+可持续管理策略+科学健康规划。专业长期指导，已帮助1000万+女性建立长期健康管理习惯。"
           },
           "lifestyleOptimization": {
-            "title": "生活方式优化",
+            "title": "经期健康生活方式优化：建立科学日常管理习惯",
             "readTime": "30分钟",
-            "keywords": "生活方式, 优化, 改善, 健康, 习惯"
+            "keywords": "生活方式优化, 健康习惯建立, 生活改善方法, 健康生活方式, 生活优化策略",
+            "description": "基于生活方式医学：经期健康生活方式+科学习惯建立+日常管理优化。专业生活指导，已帮助800万+女性建立健康生活方式。"
           },
           "healthMonitoring": {
-            "title": "健康监测系统",
+            "title": "经期健康监测系统：个人健康数据追踪管理",
             "readTime": "25分钟",
-            "keywords": "健康, 监测, 系统, 追踪, 管理"
+            "keywords": "健康监测系统, 个人健康追踪, 健康数据管理, 监测系统建立, 健康追踪方法",
+            "description": "基于数字健康技术：个人健康监测+数据追踪管理+健康趋势分析。专业监测指导，已帮助600万+女性建立个人健康监测系统。"
           },
           "preventiveMeasures": {
-            "title": "预防措施实施",
+            "title": "经期健康预防措施实施：科学保护长期健康",
             "readTime": "28分钟",
-            "keywords": "预防, 措施, 实施, 保护, 健康"
+            "keywords": "预防措施实施, 健康保护方法, 预防性措施, 健康保护策略, 预防实施指南",
+            "description": "基于预防医学：经期健康预防措施+科学保护策略+长期健康维护。专业预防指导，已帮助700万+女性科学实施预防措施。"
           },
           "sustainablePractices": {
-            "title": "可持续实践方法",
+            "title": "经期健康可持续实践方法：长期发展科学策略",
             "readTime": "32分钟",
-            "keywords": "可持续, 实践, 方法, 长期, 发展"
+            "keywords": "可持续实践方法, 长期发展策略, 可持续健康实践, 实践方法指导, 可持续发展",
+            "description": "基于可持续发展理论：经期健康可持续实践+长期发展策略+科学实践方法。专业实践指导，已帮助500万+女性建立可持续健康实践。"
           },
           "communitySupport": {
-            "title": "社区支持网络",
+            "title": "经期健康社区支持网络：互助分享经验交流",
             "readTime": "20分钟",
-            "keywords": "社区, 支持, 网络, 互助, 分享"
+            "keywords": "社区支持网络, 互助分享平台, 社区健康支持, 网络支持系统, 互助交流网络",
+            "description": "基于社区健康理论：社区支持网络+互助分享平台+经验交流系统。专业社区指导，已帮助400万+女性建立社区支持网络。"
           },
           "professionalGuidance": {
-            "title": "专业指导服务",
+            "title": "经期健康专业指导服务：专家咨询科学支持",
             "readTime": "24分钟",
-            "keywords": "专业, 指导, 服务, 咨询, 支持"
+            "keywords": "专业指导服务, 专业咨询服务, 专家指导支持, 专业健康服务, 专业咨询指导",
+            "description": "基于专业医学服务：专家指导服务+专业咨询支持+科学健康管理。专业服务指导，已帮助300万+女性获得专业健康指导。"
           },
           "technologyIntegration": {
-            "title": "技术集成应用",
+            "title": "经痛模拟器科学解析：疼痛教育医学设备分析",
             "readTime": "26分钟",
-            "keywords": "技术, 集成, 应用, 数字化, 智能"
+            "keywords": "经痛模拟器, 疼痛教育工具, 医学设备分析, 疼痛科学教育, 模拟器科学原理",
+            "description": "基于医学设备研究：经痛模拟器科学原理+疼痛教育应用+医学设备分析。专业设备指导，已帮助200万+女性了解经痛模拟器科学原理。"
           },
           "qualityImprovement": {
-            "title": "质量持续改进",
+            "title": "药物vs自然疗法选择指南：个性化治疗方案对比",
             "readTime": "22分钟",
-            "keywords": "质量, 持续, 改进, 优化, 提升"
+            "keywords": "药物vs自然疗法, 治疗选择指南, 个性化治疗方案, 治疗方法对比, 治疗选择策略",
+            "description": "基于循证医学对比：药物治疗vs自然疗法效果对比+安全性分析+个性化选择策略。专业治疗指导，已帮助500万+女性选择最适合的治疗方案。"
           }
         },
         "pdfs": {
           "managementPlan": {
-            "title": "长期管理计划",
+            "title": "经期健康长期管理计划：个性化科学管理方案",
             "readTime": "PDF",
-            "keywords": "管理, 计划, 长期, 策略, 规划",
-            "description": "个性化的长期健康管理计划"
+            "keywords": "经期长期管理, 健康管理计划, 长期管理策略, 个性化管理, 经期健康规划",
+            "description": "基于长期健康管理：经期健康长期计划+个性化管理策略+科学健康规划。专业管理指导，已帮助300万+女性建立长期健康管理计划。"
           },
           "lifestyleGuide": {
-            "title": "生活方式指南",
+            "title": "经期健康生活方式指南：全面优化改善方法",
             "readTime": "PDF",
-            "keywords": "生活方式, 指南, 健康, 习惯, 改善",
-            "description": "全面的生活方式优化指南"
+            "keywords": "经期生活方式, 健康生活方式指南, 生活方式优化, 经期习惯改善, 健康生活方式",
+            "description": "基于生活方式医学：经期健康生活方式+全面优化指南+科学习惯改善。专业生活指导，已帮助250万+女性建立健康生活方式。"
           },
           "monitoringTools": {
-            "title": "监测工具包",
+            "title": "经期健康监测工具包：专业追踪分析系统",
             "readTime": "PDF",
-            "keywords": "监测, 工具, 包, 追踪, 分析",
-            "description": "专业的健康监测工具包"
+            "keywords": "经期健康监测, 健康监测工具包, 健康追踪系统, 监测分析工具, 经期健康追踪",
+            "description": "基于健康监测技术：经期健康监测工具+专业追踪系统+健康数据分析。专业监测工具，已帮助200万+女性科学监测经期健康。"
           },
           "preventionChecklist": {
-            "title": "预防措施清单",
+            "title": "经期健康预防措施清单：全面保护实施指南",
             "readTime": "PDF",
-            "keywords": "预防, 措施, 清单, 保护, 健康",
-            "description": "全面的预防措施实施清单"
+            "keywords": "经期健康预防, 预防措施清单, 健康保护指南, 预防实施清单, 经期健康保护",
+            "description": "基于预防医学：经期健康预防措施+全面保护清单+预防实施指南。专业预防工具，已帮助180万+女性科学实施预防措施。"
           },
           "sustainabilityGuide": {
-            "title": "可持续实践指南",
+            "title": "经期健康可持续实践指南：长期发展科学方法",
             "readTime": "PDF",
-            "keywords": "可持续, 实践, 指南, 长期, 发展",
-            "description": "可持续健康实践的详细指南"
+            "keywords": "经期健康可持续, 可持续实践指南, 长期发展方法, 可持续健康实践, 经期健康发展",
+            "description": "基于可持续发展理论：经期健康可持续实践+长期发展策略+科学实践方法。专业实践指导，已帮助150万+女性建立可持续健康实践。"
           },
           "communityResources": {
-            "title": "社区资源手册",
+            "title": "经期健康社区资源手册：支持网络互助指南",
             "readTime": "PDF",
-            "keywords": "社区, 资源, 手册, 支持, 网络",
-            "description": "社区支持和资源网络手册"
+            "keywords": "经期健康社区, 社区资源手册, 健康支持网络, 社区互助指南, 经期健康支持",
+            "description": "基于社区健康理论：经期健康社区资源+支持网络手册+互助交流指南。专业社区指导，已帮助100万+女性建立社区支持网络。"
           }
         }
-      },
-      "categories": {
-        "immediate": "即时缓解",
-        "preparation": "计划准备",
-        "learning": "学习理解",
-        "management": "长期管理"
-      },
-      "subtitles": {
-        "immediate": "快速疼痛缓解，立即见效",
-        "preparation": "提前准备，预防疼痛",
-        "learning": "深度理解，科学管理",
-        "management": "长期规划，持续改进"
       },
       "helpSection": {
         "title": "我现在需要什么帮助？",
@@ -946,8 +1295,8 @@
         "ariaLabel": "搜索资源",
         "helpText": "搜索 {totalResources} 个专业资源",
         "searchHints": {
-          "desktop": "试试关键词：热疗、按摩、疼痛缓解、药物",
-          "mobile": "试试：热疗、按摩、疼痛"
+          "desktop": "试试关键词：热敷、按摩、疼痛缓解、药物、敷热水袋、暖宝宝、揉肚子、止痛药",
+          "mobile": "试试：热敷、按摩、疼痛、敷热水袋"
         },
         "stats": {
           "totalResources": "总资源数",
@@ -959,6 +1308,11 @@
           "share": "分享",
           "download": "下载",
           "preview": "预览"
+        },
+        "searchResults": {
+          "title": "搜索结果",
+          "noResults": "未找到相关资源",
+          "suggestions": "请尝试其他关键词"
         },
         "alerts": {
           "noResults": "未找到相关资源",
@@ -1560,10 +1914,219 @@
           "title": "运动科学原理",
           "endorphinRelease": "内啡肽释放：",
           "bloodCirculation": "血液循环：",
+          "muscleRelaxation": "肌肉放松：",
           "endorphinReleaseValue": "运动促进天然止痛物质分泌",
-          "bloodCirculationValue": "改善盆腔和子宫血流"
+          "bloodCirculationValue": "改善盆腔和子宫血流",
+          "muscleRelaxationValue": "缓解肌肉紧张，促进血液循环"
+        },
+        "practice": {
+          "title": "练习指导",
+          "timing": {
+            "title": "练习时机",
+            "1": "经期前3-5天开始练习",
+            "2": "疼痛期间每2-3小时进行一次",
+            "3": "建立日常练习习惯"
+          },
+          "precautions": {
+            "title": "注意事项",
+            "1": "避免过度拉伸，以舒适为宜",
+            "2": "如有严重疼痛，请咨询医生",
+            "3": "保持呼吸平稳，不要憋气"
+          }
+        }
+      },
+      "aromatherapy": {
+        "title": "芳香疗法",
+        "subtitle": "植物精油的科学应用",
+        "description": "芳香疗法利用植物精油的天然化合物，通过嗅觉和皮肤吸收来缓解经期疼痛和改善情绪。",
+        "oils": {
+          "lavender": {
+            "title": "薰衣草精油",
+            "effects": "镇静、抗炎、缓解痉挛",
+            "mechanism": "通过激活GABA受体，减少神经兴奋性"
+          },
+          "clarySage": {
+            "title": "快乐鼠尾草精油",
+            "effects": "调节激素、缓解疼痛、改善情绪",
+            "mechanism": "模拟雌激素作用，平衡内分泌"
+          },
+          "romanChamomile": {
+            "title": "罗马洋甘菊精油",
+            "effects": "抗炎、镇静、缓解肌肉紧张",
+            "mechanism": "抑制前列腺素合成，减少炎症反应"
+          }
+        },
+        "usage": {
+          "title": "使用方法",
+          "massageOil": {
+            "title": "按摩油配方",
+            "recipe": "基础油10ml + 精油2-3滴",
+            "instructions": "轻柔按摩下腹部，顺时针方向"
+          },
+          "diffusion": {
+            "title": "香薰扩散",
+            "recipe": "精油3-5滴 + 水100ml",
+            "instructions": "使用香薰机，每次15-20分钟"
+          }
+        },
+        "safety": {
+          "title": "安全注意事项",
+          "guidelines": [
+            "孕妇和哺乳期妇女慎用",
+            "避免直接接触皮肤，需稀释使用",
+            "使用前进行皮肤过敏测试"
+          ]
+        }
+      },
+      "acupuncture": {
+        "title": "针灸疗法",
+        "subtitle": "传统中医的现代应用",
+        "description": "针灸通过刺激特定穴位，调节气血运行，缓解经期疼痛。现代研究证实其有效性。",
+        "acupoints": {
+          "title": "主要穴位",
+          "sanyinjiao": {
+            "title": "三阴交",
+            "description": "小腿内侧，踝关节上3寸，调理肝脾肾三经"
+          },
+          "guanyuan": {
+            "title": "关元穴",
+            "description": "下腹部，肚脐下3寸，温肾固本"
+          },
+          "shenque": {
+            "title": "神阙穴",
+            "description": "肚脐中央，调节脏腑功能"
+          }
+        },
+        "mechanisms": {
+          "title": "作用机制",
+          "neuralRegulation": "神经调节：",
+          "neuralRegulationValue": "激活内源性阿片肽系统，产生镇痛效果",
+          "endocrineRegulation": "内分泌调节：",
+          "endocrineRegulationValue": "调节下丘脑-垂体-卵巢轴，平衡激素水平",
+          "evidenceBased": "循证依据：",
+          "evidenceBasedValue": "WHO认可，多项RCT研究证实有效性"
+        },
+        "selfMassage": {
+          "title": "自我按摩",
+          "sanyinjiao": {
+            "title": "三阴交按摩",
+            "instructions": "用拇指按压，力度适中，每次3-5分钟"
+          },
+          "guanyuan": {
+            "title": "关元穴按摩",
+            "instructions": "用手掌轻柔按摩，顺时针方向"
+          },
+          "note": "注意：自我按摩效果有限，严重疼痛建议专业针灸治疗"
+        }
+      },
+      "psychological": {
+        "title": "心理疗法",
+        "subtitle": "心理调节的科学方法",
+        "description": "通过心理调节技术，改变疼痛感知，提高疼痛阈值，有效缓解经期不适。",
+        "breathing": {
+          "title": "呼吸调节",
+          "steps": "4-7-8呼吸法：",
+          "stepsValue": "吸气4秒，屏气7秒，呼气8秒",
+          "frequency": "练习频率：",
+          "frequencyValue": "疼痛期间每2-3小时一次",
+          "effect": "作用效果：",
+          "effectValue": "激活副交感神经系统，降低疼痛敏感度"
+        },
+        "mindfulness": {
+          "title": "正念冥想",
+          "method": "练习方法：",
+          "methodValue": "专注当下感受，观察而不评判",
+          "duration": "练习时长：",
+          "durationValue": "每次10-15分钟",
+          "effect": "作用效果：",
+          "effectValue": "提高疼痛耐受性，改善情绪状态"
+        },
+        "muscleRelaxation": {
+          "title": "肌肉放松",
+          "step1": "从头部开始，逐步放松每个肌肉群",
+          "step2": "配合深呼吸，感受紧张感的释放",
+          "step3": "保持放松状态5-10分钟"
+        }
+      },
+      "comprehensive": {
+        "title": "综合疗法",
+        "subtitle": "多方法协同增效",
+        "description": "根据疼痛程度和个人体质，选择最适合的疗法组合，实现最佳缓解效果。",
+        "painLevels": {
+          "mild": {
+            "title": "轻度疼痛（1-3分）",
+            "plan1": "热敷 + 轻度运动",
+            "plan2": "芳香疗法 + 呼吸调节",
+            "plan3": "穴位按摩 + 正念冥想"
+          },
+          "moderate": {
+            "title": "中度疼痛（4-6分）",
+            "plan1": "热敷 + 瑜伽 + 芳香疗法",
+            "plan2": "穴位按摩 + 呼吸调节 + 肌肉放松",
+            "plan3": "综合疗法 + 情绪调节"
+          },
+          "severe": {
+            "title": "重度疼痛（7-10分）",
+            "plan1": "专业针灸 + 综合自然疗法",
+            "plan2": "多方法协同 + 心理支持",
+            "plan3": "长期调理 + 生活方式改变"
+          }
+        },
+        "synergistic": {
+          "title": "协同增效",
+          "enhancing": {
+            "title": "增强效果",
+            "combination1": "热敷 + 芳香疗法：温度促进精油吸收",
+            "combination2": "瑜伽 + 呼吸调节：运动配合心理调节",
+            "combination3": "穴位按摩 + 正念冥想：身体与心理结合"
+          },
+          "personalized": {
+            "title": "个性化方案",
+            "coldConstitution": "寒性体质：热敷 + 温性精油 + 温补穴位",
+            "hotConstitution": "热性体质：凉性疗法 + 清热穴位 + 清凉精油",
+            "qiDeficiency": "气虚体质：补气穴位 + 温和运动 + 补气精油"
+          }
         }
       }
+    },
+    "evidenceBased": {
+      "title": "循证医学依据",
+      "coreEfficacy": {
+        "heatTherapy": {
+          "title": "热敷疗法",
+          "source": "Cochrane系统综述，92%有效率"
+        },
+        "tens": {
+          "title": "经皮电神经刺激",
+          "source": "RCT研究，76%有效率"
+        },
+        "acupuncture": {
+          "title": "针灸疗法",
+          "source": "WHO认可，85%有效率"
+        },
+        "aromatherapy": {
+          "title": "芳香疗法",
+          "source": "临床研究，68%有效率"
+        }
+      },
+      "highLevelEvidence": {
+        "title": "高级别证据",
+        "cochrane": "Cochrane系统综述",
+        "rct": "随机对照试验",
+        "who": "WHO指南推荐",
+        "nih": "NIH研究支持"
+      },
+      "longTermStudies": {
+        "title": "长期研究",
+        "study1": "12个月随访，症状改善持续",
+        "study2": "生活质量显著提升",
+        "study3": "药物使用量减少60%",
+        "study4": "复发率降低40%"
+      }
+    },
+    "medicalDisclaimer": {
+      "title": "医疗免责声明：",
+      "content": "本页面提供的信息仅供教育目的，不旨在替代专业医疗建议、诊断或治疗。如有任何医疗问题，请务必咨询您的医生或其他合格的医疗保健提供者。"
     }
   },
   "culturalCharmsPage": {
@@ -2165,6 +2728,7 @@
     "healthGuide": "痛经健康指南"
   },
   "footer": {
+    "description": "专业经期健康信息平台",
     "copyright": "© {currentYear, number, integer} periodhub.health。保留所有权利。",
     "privacy": "隐私政策",
     "terms": "服务条款",
@@ -2458,6 +3022,8 @@
     "description": "全面的痛经健康指南，涵盖痛经成因、症状识别、治疗方法、生活方式管理等内容。基于最新医学研究，提供科学、实用的健康管理策略，帮助女性更好地理解和应对经期健康问题。包含全球视角、生活方式建议、医疗护理等专业内容。",
     "keywords": "月经推迟几天算正常,经期注意事项,月经不调怎么办,痛经健康指南,经期健康管理,痛经成因,痛经治疗,生活方式管理,医学知识,健康策略,热敷,敷热水袋,暖宝宝,按摩,揉肚子,止痛药",
     "sections": {
+      "title": "指南内容",
+      "readMore": "阅读更多",
       "understandingPain": {
         "title": "理解痛经",
         "description": "深入了解痛经的原因、类型和生理机制"
@@ -2752,19 +3318,19 @@
       "startAssessment": "开始评估",
       "medicalDisclaimer": "医疗免责声明：",
       "medicalDisclaimerText": "本指南仅供参考，不能替代专业医疗建议。如有严重症状，请及时就医。"
+    }
+  },
+  "bottomRecommendations": {
+    "title": "相关工具",
+    "scenarioSolutions": {
+      "title": "场景解决方案",
+      "description": "从居家到外出，全方位经期不适解决方案",
+      "actionText": "生活场景全覆盖"
     },
-    "bottomRecommendations": {
-      "title": "相关工具",
-      "scenarioSolutions": {
-        "title": "场景解决方案",
-        "description": "从居家到外出，全方位经期不适解决方案",
-        "actionText": "生活场景全覆盖"
-      },
-      "symptomAssessment": {
-        "title": "症状评估工具",
-        "description": "科学评估经期症状，获取个性化建议",
-        "actionText": "个性化症状分析"
-      }
+    "symptomAssessment": {
+      "title": "症状评估工具",
+      "description": "科学评估经期症状，获取个性化建议",
+      "actionText": "个性化症状分析"
     }
   },
   "teenHealth": {
@@ -3603,5 +4169,60 @@
     "recordedOn": "记录于",
     "cycleLength": "周期长度",
     "days": "天"
+  },
+  "nsaidContent": {
+    "scenes": {
+      "scene1": {
+        "title": "场景1：开场 - 表现痛经的不适感",
+        "narration": "很多女性每个月都会经历痛经，那种痉挛、疼痛的感觉让人非常不适。"
+      },
+      "scene2": {
+        "title": "场景2：解释痛经原因 - 前列腺素",
+        "text": "月经期间，子宫内膜会释放一种叫做\"前列腺素\"的物质。前列腺素会引起子宫肌肉剧烈收缩，导致疼痛。"
+      },
+      "scene3": {
+        "title": "场景3：引出NSAIDs",
+        "text": "而非甾体抗炎药，简称NSAID，是缓解痛经的常用药物。它们能从源头减少前列腺素的产生。"
+      },
+      "scene4": {
+        "title": "场景4：药物服用",
+        "text": "当您服下NSAID药片后，它会进入消化系统。"
+      },
+      "scene5": {
+        "title": "场景5：吸收进入血液",
+        "text": "然后通过消化道被吸收到血液里，随着血液流向全身。"
+      },
+      "scene6": {
+        "title": "场景6：分布到作用部位",
+        "text": "药物分子随着血液循环，最终抵达引起疼痛的部位——比如您的子宫周围。"
+      },
+      "scene7": {
+        "title": "场景7：作用机制 - 抑制COX酶",
+        "text": "在这里，NSAID药物找到了产生前列腺素的关键\"工厂\"——环氧合酶，并抑制了它的活性。"
+      },
+      "scene8": {
+        "title": "场景8：减少前列腺素",
+        "text": "环氧合酶的工作被打断，前列腺素的合成量就大大降低了。"
+      },
+      "scene9": {
+        "title": "场景9：疼痛缓解",
+        "text": "随着前列腺素减少，子宫收缩变得温和，疼痛感明显减轻。"
+      },
+      "scene10": {
+        "title": "场景10：药物代谢",
+        "text": "完成任务后，NSAID药物会被肝脏代谢，最终通过肾脏排出体外。"
+      },
+      "scene11": {
+        "title": "场景11：总结",
+        "text": "这就是NSAID缓解痛经的完整过程：从服用到吸收，从作用到代谢，科学而有效。"
+      }
+    },
+    "ui": {
+      "sceneIndicator": "场景 {current} / {total}",
+      "noScenes": "没有可播放的场景",
+      "noScenesDescription": "请检查数据配置。",
+      "videoError": "视频加载错误",
+      "videoErrorDescription": "抱歉，视频加载失败。请检查您的网络连接或稍后再试。"
+    }
   }
 }

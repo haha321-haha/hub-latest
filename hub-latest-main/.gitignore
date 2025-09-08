@@ -1,0 +1,180 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+
+# Production
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+logs/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.backup
+*.bak
+backup-*/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# TypeScript
+*.tsbuildinfo
+
+# Vercel
+.vercel
+
+# Build artifacts
+.next/
+out/
+dist/
+
+# Development files
+.recovery/
+recovery-*/
+logs/
+*.log
+
+# Large generated files
+*.zip
+*.tar.gz
+*.rar
+
+# Local development
+.local/
+.temp/
+
+# Test files
+test-results/
+coverage/
+
+# Cache directories
+.cache/
+.parcel-cache/
+.next/cache/
+
+# Generated PDF files (keep source files only)
+public/downloads/*.pdf
+public/pdf-files/*.pdf
+!public/downloads/*.html
+!public/pdf-files/*.html
+
+# Chinese documentation (keep only essential files)
+修复建议文档/
+参考代码/
+修复日志-*.md
+
+# Recovery and temporary directories
+recovered/
+recovery-backups/
+recovery-workspace/
+
+# Development scripts (keep main scripts only)
+scripts/verify-*.js
+scripts/test-*.js
+scripts/fix-*.js
+
+# Node modules (always exclude)
+node_modules/
+
+# Lock files (optional - uncomment if needed)
+# package-lock.json
+# yarn.lock
+
+# Build info
+tsconfig.tsbuildinfo

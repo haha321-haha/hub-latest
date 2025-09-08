@@ -41,43 +41,97 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
   const [loadedCategories, setLoadedCategories] = useState(['immediate']); // 渐进式加载
   const [isEmergencyMode, setIsEmergencyMode] = useState(false);
 
-  // 获取翻译函数 - 移到组件顶部，避免条件性调用
-  const t = useTranslations('pdfCenter');
+  // 获取翻译函数 - 使用正确的翻译键
+  const t = useTranslations('simplePdfCenter');
   const articlesT = useTranslations('articlesPage.categories');
 
-  // 类别标题翻译
+  // 类别标题翻译 - 使用正确的翻译键
   const getCategoryTitle = (key: string) => {
     const titles = {
-      immediate: t('mobileCategories.immediate'),
-      preparation: t('mobileCategories.preparation'),
-      learning: t('mobileCategories.learning'),
-      longterm: t('mobileCategories.longterm')
+      immediate: t('categories.immediate'),
+      preparation: t('categories.preparation'),
+      learning: t('categories.learning'),
+      longterm: t('categories.management')
     };
     return titles[key as keyof typeof titles] || key;
   };
 
   const getCategorySubtitle = (key: string) => {
     const subtitles = {
-      immediate: t('mobileDescriptions.immediate'),
-      preparation: t('mobileDescriptions.preparation'),
-      learning: t('mobileDescriptions.learning'),
-      longterm: t('mobileDescriptions.longterm')
+      immediate: t('subtitles.immediate'),
+      preparation: t('subtitles.preparation'),
+      learning: t('subtitles.learning'),
+      longterm: t('subtitles.management')
     };
     return subtitles[key as keyof typeof subtitles] || key;
   };
 
   // 从统一配置获取PDF资源并转换为组件格式
-  const convertPDFToResource = (pdfResource: any): Resource => ({
-    type: 'pdf' as const,
-    title: t(pdfResource.titleKey), // 使用翻译后的标题
-    icon: pdfResource.icon,
-    size: `${pdfResource.fileSize}KB`,
-    priority: pdfResource.featured ? 'highest' : 'high',
-    tags: ['PDF', '下载'],
-    id: pdfResource.id
-  });
+  const convertPDFToResource = (pdfResource: any): Resource => {
+    // 根据PDF ID映射到正确的翻译键路径
+    const getTranslationKey = (id: string) => {
+      const keyMap: Record<string, string> = {
+        'pain-tracking-form': 'immediate.pdfs.painTrackingForm.title',
+        'campus-emergency-checklist': 'immediate.pdfs.campusChecklist.title',
+        'specific-menstrual-pain-management-guide': 'immediate.pdfs.specificPainManagementPdf.title',
+        'healthy-habits-checklist': 'preparation.pdfs.healthyHabitsChecklist.title',
+        'menstrual-cycle-nutrition-plan': 'preparation.pdfs.nutritionPlan.title',
+        'magnesium-gut-health-guide': 'preparation.pdfs.magnesiumGuide.title',
+        'zhan-zhuang-baduanjin-illustrated-guide': 'preparation.pdfs.baduanjinGuide.title',
+        'natural-therapy-assessment': 'learning.pdfs.naturalTherapyAssessment.title',
+        'hormone-testing-guide': 'learning.pdfs.hormoneTestingGuide.title',
+        'nutritional-analysis': 'learning.pdfs.nutritionalAnalysis.title',
+        'exercise-program': 'learning.pdfs.exerciseProgram.title',
+        'reading-list-pdf': 'management.pdfs.readingListPdf.title',
+        'herbal-tea-guide': 'management.pdfs.herbalTeaGuide.title',
+        'personal-profile-template': 'management.pdfs.personalProfileTemplate.title',
+        'anti-inflammatory-guide': 'management.pdfs.antiInflammatoryGuide.title'
+      };
+      return keyMap[id] || pdfResource.titleKey;
+    };
 
-  // 创建文章资源的翻译函数
+    // 根据PDF类型设置不同的标签
+    const getPDFTags = (id: string): string[] => {
+      const tagMap: Record<string, string[]> = {
+        // 热敷相关
+        'pain-tracking-form': [t('tags.heatTherapy'), t('tags.heatTherapyMethod'), t('tags.heatTherapyTreatment'), t('tags.warmWaterBottle'), t('tags.warmPatch'), t('tags.pain'), t('tags.relief')],
+        'campus-emergency-checklist': [t('tags.heatTherapy'), t('tags.heatTherapyMethod'), t('tags.emergency'), t('tags.pain'), t('tags.relief')],
+        'specific-menstrual-pain-management-guide': [t('tags.heatTherapy'), t('tags.heatTherapyMethod'), t('tags.management'), t('tags.relief')],
+        
+        // 按摩相关
+        'natural-therapy-assessment': [t('tags.massage'), t('tags.acupressure'), t('tags.bellyRub'), t('tags.abdominalMassage'), t('tags.menstrualMassage'), t('tags.painMassage')],
+        'hormone-testing-guide': [t('tags.massage'), t('tags.acupressure'), t('tags.medical'), t('tags.examination')],
+        'nutritional-analysis': [t('tags.massage'), t('tags.acupressure'), t('tags.nutrition'), t('tags.health')],
+        'exercise-program': [t('tags.massage'), t('tags.acupressure'), t('tags.exercise'), t('tags.exercise')],
+        
+        // 止痛药相关
+        'reading-list-pdf': [t('tags.painkiller'), t('tags.nsaid'), t('tags.medication'), t('tags.learning'), t('tags.management'), t('tags.communication')],
+        'herbal-tea-guide': [t('tags.painkiller'), t('tags.medication'), t('tags.medication'), t('tags.medication'), t('tags.communication')],
+        'personal-profile-template': [t('tags.painkiller'), t('tags.medication'), t('tags.management'), t('tags.record'), t('tags.communication')],
+        'anti-inflammatory-guide': [t('tags.painkiller'), t('tags.nsaid'), t('tags.medication'), t('tags.medication'), t('tags.communication')],
+        
+        // 其他
+        'healthy-habits-checklist': [t('tags.nutrition'), t('tags.health'), t('tags.habit'), t('tags.preparation')],
+        'menstrual-cycle-nutrition-plan': [t('tags.nutrition'), t('tags.diet'), t('tags.plan'), t('tags.preparation')],
+        'magnesium-gut-health-guide': [t('tags.nutrition'), t('tags.health'), t('tags.learning')],
+        'zhan-zhuang-baduanjin-illustrated-guide': [t('tags.exercise'), t('tags.exercise'), t('tags.baduanjin'), t('tags.preparation')]
+      };
+      
+      return tagMap[id] || [t('tags.pain'), t('tags.relief')];
+    };
+
+    return {
+      type: 'pdf' as const,
+      title: t(getTranslationKey(pdfResource.id)), // 使用正确的翻译键路径
+      icon: pdfResource.icon,
+      size: `${pdfResource.fileSize}KB`,
+      priority: pdfResource.featured ? 'highest' : 'high',
+      tags: getPDFTags(pdfResource.id), // 使用动态标签
+      id: pdfResource.id
+    };
+  };
+
+  // 创建文章资源的翻译函数 - 使用正确的翻译键
   const createArticleResource = (
     categoryKey: string,
     articleKey: string,
@@ -108,12 +162,12 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
       priority: 'critical',
       loadPriority: 1,
       resources: [
-        // 文章资源 - 使用翻译键
-        createArticleResource('immediateRelief', 'fiveMinuteRelief', 5, 'highest', ['疼痛', '缓解', '快速'], '5-minute-period-pain-relief'),
-        createArticleResource('understandingEducation', 'painDifferential', 25, 'highest', ['自检', '安全', '鉴别'], 'menstrual-pain-vs-other-abdominal-pain-guide'),
-        createArticleResource('immediateRelief', 'heatTherapy', 8, 'high', ['热敷', '方法', '科学'], 'heat-therapy-complete-guide'),
-        createArticleResource('naturalTherapies', 'physicalTherapy', 12, 'high', ['腰痛', '护理', '缓解'], 'menstrual-back-pain-comprehensive-care-guide'),
-        createArticleResource('naturalTherapies', 'traditionalMethods', 12, 'high', ['生姜', '自然疗法', '缓解'], 'ginger-menstrual-pain-relief-guide'),
+        // 文章资源 - 使用正确的翻译键
+        createArticleResource('immediateRelief', 'fiveMinuteRelief', 5, 'highest', [t('tags.pain'), t('tags.relief'), t('tags.quick')], '5-minute-period-pain-relief'),
+        createArticleResource('understandingEducation', 'painDifferential', 25, 'highest', [t('tags.examination'), t('tags.health'), t('tags.diagnosis')], 'menstrual-pain-vs-other-abdominal-pain-guide'),
+        createArticleResource('immediateRelief', 'heatTherapy', 8, 'high', [t('tags.heatTherapy'), t('tags.method'), t('tags.science')], 'heat-therapy-complete-guide'),
+        createArticleResource('naturalTherapies', 'physicalTherapy', 12, 'high', [t('tags.pain'), t('tags.health'), t('tags.relief')], 'menstrual-back-pain-comprehensive-care-guide'),
+        createArticleResource('naturalTherapies', 'traditionalMethods', 12, 'high', [t('tags.medication'), t('tags.medication'), t('tags.relief')], 'ginger-menstrual-pain-relief-guide'),
         // PDF资源 - 从统一配置获取
         ...PDF_RESOURCES.filter(pdf =>
           ['pain-tracking-form', 'campus-emergency-checklist', 'specific-menstrual-pain-management-guide'].includes(pdf.id)
@@ -131,11 +185,11 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
       priority: 'important',
       loadPriority: 2,
       resources: [
-        // 文章资源 - 使用翻译键
-        createArticleResource('nutritionHealth', 'preventiveCare', 22, 'highest', ['预防性护理', '全周期管理', '循证医学'], 'menstrual-preventive-care-complete-plan'),
-        createArticleResource('nutritionHealth', 'sleepQuality', 20, 'highest', ['睡眠质量', '21天计划', '睡眠卫生'], 'comprehensive-menstrual-sleep-quality-guide'),
-        createArticleResource('nutritionHealth', 'stressManagement', 22, 'highest', ['压力管理', '职场健康', '心理调节'], 'menstrual-stress-management-complete-guide'),
-        createArticleResource('naturalTherapies', 'zhanZhuang', 18, 'high', ['运动', '八段锦', '缓解'], 'zhan-zhuang-baduanjin-for-menstrual-pain-relief'),
+        // 文章资源 - 使用正确的翻译键
+        createArticleResource('nutritionHealth', 'preventiveCare', 22, 'highest', [t('tags.prevention'), t('tags.cycle'), t('tags.evidenceBased')], 'menstrual-preventive-care-complete-plan'),
+        createArticleResource('nutritionHealth', 'sleepQuality', 20, 'highest', [t('tags.health'), t('tags.plan'), t('tags.health')], 'comprehensive-menstrual-sleep-quality-guide'),
+        createArticleResource('nutritionHealth', 'stressManagement', 22, 'highest', [t('tags.management'), t('tags.health'), t('tags.management')], 'menstrual-stress-management-complete-guide'),
+        createArticleResource('naturalTherapies', 'zhanZhuang', 18, 'high', [t('tags.exercise'), t('tags.baduanjin'), t('tags.relief')], 'zhan-zhuang-baduanjin-for-menstrual-pain-relief'),
         // PDF资源 - 从统一配置获取
         ...PDF_RESOURCES.filter(pdf =>
           ['healthy-habits-checklist', 'menstrual-cycle-nutrition-plan', 'magnesium-gut-health-guide', 'zhan-zhuang-baduanjin-illustrated-guide'].includes(pdf.id)
@@ -154,19 +208,29 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
       loadPriority: 3,
       resources: [
         // 文章资源 - 使用翻译键
-        createArticleResource('understandingEducation', 'lifecycleAnalysis', 24, 'highest', ['生命周期', '年龄特点', '科学管理'], 'womens-lifecycle-menstrual-pain-analysis'),
-        createArticleResource('understandingEducation', 'researchProgress2024', 18, 'highest', ['循证医学', '研究进展', '新药开发'], 'menstrual-pain-research-progress-2024'),
-        createArticleResource('understandingEducation', 'painDifferential', 25, 'highest', ['痛经鉴别', '腹痛诊断', '危险信号'], 'menstrual-pain-vs-other-abdominal-pain-guide'),
+        createArticleResource('understandingEducation', 'lifecycleAnalysis', 24, 'highest', [t('tags.cycle'), t('tags.cycle'), t('tags.management')], 'womens-lifecycle-menstrual-pain-analysis'),
+        createArticleResource('understandingEducation', 'researchProgress2024', 18, 'highest', [t('tags.evidenceBased'), t('tags.research'), t('tags.medication'), t('tags.painkiller'), t('tags.nsaid')], 'menstrual-pain-research-progress-2024'),
+        createArticleResource('medicalGuidance', 'nsaidProfessionalGuide', 25, 'highest', [t('tags.nsaid'), t('tags.painkiller'), t('tags.medication'), t('tags.medication'), t('tags.medication')], 'nsaid-menstrual-pain-professional-guide'),
+        {
+          type: 'article' as const,
+          title: '痛经安全用药全指南：布洛芬/萘普生等NSAIDs使用规范',
+          readTime: locale === 'zh' ? '20分钟' : '20 min read',
+          priority: 'highest' as const,
+          tags: [t('tags.nsaid'), t('tags.painkiller'), t('tags.ibuprofen'), t('tags.medication'), t('tags.medication'), t('tags.medication')],
+          id: 'medication-guide',
+          slug: 'downloads/medication-guide'
+        },
+        createArticleResource('understandingEducation', 'painDifferential', 25, 'highest', [t('tags.diagnosis'), t('tags.diagnosis'), t('tags.emergency')], 'menstrual-pain-vs-other-abdominal-pain-guide'),
 
-        createArticleResource('understandingEducation', 'understandingCycle', 25, 'high', ['周期', '教育', '基础'], 'understanding-your-cycle'),
+        createArticleResource('understandingEducation', 'understandingCycle', 25, 'high', [t('tags.cycle'), t('tags.education'), t('tags.knowledge')], 'understanding-your-cycle'),
 
-        createArticleResource('understandingEducation', 'insuranceCoverage', 25, 'high', ['医疗保险', 'ACA政策', '保险理赔'], 'us-menstrual-pain-insurance-coverage-guide'),
+        createArticleResource('understandingEducation', 'insuranceCoverage', 25, 'high', [t('tags.medical'), t('tags.medical'), t('tags.medical'), t('tags.communication')], 'us-menstrual-pain-insurance-coverage-guide'),
 
-        createArticleResource('medicalGuidance', 'whenToSeeDoctor', 10, 'highest', ['就医', '预警', '安全'], 'when-to-see-doctor-period-pain'),
-        createArticleResource('medicalGuidance', 'medicalCare', 15, 'high', ['医疗', '护理', '指南'], 'when-to-seek-medical-care-comprehensive-guide'),
+        createArticleResource('medicalGuidance', 'whenToSeeDoctor', 10, 'highest', [t('tags.seeDoctor'), t('tags.emergency'), t('tags.health'), t('tags.communication')], 'when-to-see-doctor-period-pain'),
+        createArticleResource('medicalGuidance', 'medicalCare', 15, 'high', [t('tags.medical'), t('tags.health'), t('tags.guide'), t('tags.communication')], 'when-to-seek-medical-care-comprehensive-guide'),
         // PDF资源 - 从统一配置获取
         ...PDF_RESOURCES.filter(pdf =>
-          ['natural-therapy-assessment', 'menstrual-pain-complications-management', 'teacher-health-manual', 'teacher-collaboration-handbook', 'parent-communication-guide', 'us-insurance-quick-reference-card'].includes(pdf.id)
+          ['natural-therapy-assessment', 'hormone-testing-guide', 'nutritional-analysis', 'exercise-program'].includes(pdf.id)
         ).map(convertPDFToResource)
       ]
     },
@@ -192,10 +256,47 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
 
   // 智能搜索算法
   const semanticSearch = useMemo(() => {
-    const urgentKeywords = ['疼', '痛', '现在', '马上', '缓解', '快速', '立即'];
-    const preparationKeywords = ['营养', '饮食', '运动', '习惯', '准备', '预防'];
-    const learningKeywords = ['医生', '医学', '就医', '周期', '了解', '指南', '教育', '知识'];
-    const managementKeywords = ['长期', '管理', '生活', '档案', '记录', '持续'];
+    // 直接使用翻译文件中的数组，而不是通过 t() 函数
+    const urgentKeywords = [
+      // 6个核心关键词及其同义词
+      "热敷", "敷热水袋", "暖宝宝", "按摩", "揉肚子", "止痛药",
+      // 专业术语映射
+      "热疗法", "热疗", "温热疗法", "热敷疗法", "热敷治疗",
+      // 按摩相关
+      "穴位按压", "肌肉放松", "腹部按摩", "经期按摩", "疼痛按摩",
+      // 药物相关
+      "NSAID", "非甾体抗炎药", "布洛芬", "对乙酰氨基酚", "止痛药物",
+      // 其他紧急相关词汇
+      "疼", "痛", "现在", "马上", "缓解", "快速", "立即", "紧急", "急", "疼得厉害"
+    ];
+    
+    const preparationKeywords = [
+      "营养", "饮食", "运动", "习惯", "准备", "预防", "计划", "提前", "养生", "健康", "锻炼", "瑜伽", "八段锦",
+      // 热敷相关准备
+      "热敷准备", "热敷工具", "热敷用品", "暖宝宝准备",
+      // 按摩相关准备
+      "按摩准备", "按摩工具", "按摩技巧", "按摩学习"
+    ];
+    
+    const learningKeywords = [
+      "医生", "医学", "就医", "周期", "了解", "指南", "教育", "知识", "学习", "研究", "科学", "循证", "诊断", "检查",
+      // 热敷学习
+      "热敷方法", "热敷技巧", "热敷原理", "热敷学习",
+      // 按摩学习
+      "按摩方法", "按摩技巧", "按摩原理", "按摩学习",
+      // 药物学习
+      "药物知识", "用药指南", "药物对比", "用药学习"
+    ];
+    
+    const managementKeywords = [
+      "长期", "管理", "生活", "档案", "记录", "持续", "跟踪", "监测", "分析", "报告", "模板",
+      // 热敷管理
+      "热敷管理", "热敷记录", "热敷计划", "热敷跟踪",
+      // 按摩管理
+      "按摩管理", "按摩记录", "按摩计划", "按摩跟踪",
+      // 药物管理
+      "用药管理", "用药记录", "用药计划", "用药跟踪"
+    ];
 
     if (!searchTerm) return null;
 
@@ -214,6 +315,107 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
     return null;
   }, [searchTerm]);
 
+  // 内容搜索逻辑 - 搜索资源标题、标签等
+  // 智能内容搜索功能 - 支持模糊匹配和语义理解
+  const contentSearch = useMemo(() => {
+    if (!searchTerm) return null;
+
+    const term = searchTerm.toLowerCase();
+    const allResources = Object.values(optimizedCategories).flatMap(category => category.resources);
+
+    // 定义同义词映射表
+    const synonymMap: Record<string, string[]> = {
+      [t('tags.heatTherapy')]: [t('tags.heatTherapyMethod'), t('tags.heatTherapyTreatment'), t('tags.heatTherapyTreatment2'), t('tags.warmWaterBottle'), t('tags.warmPatch')],
+      [t('tags.massage')]: [t('tags.acupressure'), t('tags.muscleRelaxation'), t('tags.abdominalMassage'), t('tags.menstrualMassage'), t('tags.painMassage'), t('tags.bellyRub')],
+      [t('tags.painkiller')]: [t('tags.nsaid'), t('tags.antiInflammatoryDrug'), t('tags.ibuprofen'), t('tags.acetaminophen'), t('tags.painMedication'), t('tags.medication')],
+      [t('tags.warmPatch')]: [t('tags.heatTherapy'), t('tags.heatTherapyMethod'), t('tags.heatTherapyTreatment')],
+      [t('tags.bellyRub')]: [t('tags.massage'), t('tags.abdominalMassage'), t('tags.menstrualMassage'), t('tags.painMassage')],
+      [t('tags.warmWaterBottle')]: [t('tags.heatTherapy'), t('tags.heatTherapyMethod'), t('tags.heatTherapyTreatment')]
+    };
+
+    // 获取搜索词的所有同义词
+    const getSynonyms = (searchTerm: string): string[] => {
+      const synonyms: string[] = [searchTerm];
+      for (const [key, values] of Object.entries(synonymMap)) {
+        if (key.includes(searchTerm) || searchTerm.includes(key)) {
+          synonyms.push(...values);
+        }
+        if (values.some(v => v.includes(searchTerm) || searchTerm.includes(v))) {
+          synonyms.push(key, ...values);
+        }
+      }
+      return [...new Set(synonyms)]; // 去重
+    };
+
+    const synonyms = getSynonyms(term);
+    
+    // 计算资源相关性评分 - 修复评分算法
+    const calculateRelevanceScore = (resource: any): number => {
+      const searchableText = [
+        resource.title,
+        resource.tags.join(' '),
+        resource.type
+      ].join(' ').toLowerCase();
+
+      let score = 0;
+      let maxPossibleScore = 0;
+      
+      // 精确匹配得分最高 (100分)
+      if (searchableText.includes(term)) {
+        score += 100;
+        maxPossibleScore = 100;
+      } else {
+        // 同义词匹配 (80分)
+        let synonymMatch = false;
+        synonyms.forEach(synonym => {
+          if (searchableText.includes(synonym.toLowerCase())) {
+            score += 80;
+            synonymMatch = true;
+          }
+        });
+        
+        if (synonymMatch) {
+          maxPossibleScore = 80;
+        } else {
+          // 部分匹配 (30分)
+          if (term.length >= 2) {
+            for (let i = 0; i <= term.length - 2; i++) {
+              const substring = term.substring(i, i + 2);
+              if (searchableText.includes(substring)) {
+                score += 30;
+                maxPossibleScore = 30;
+                break;
+              }
+            }
+          }
+          
+          // 标签匹配 (20分)
+          resource.tags.forEach((tag: string) => {
+            const tagLower = tag.toLowerCase();
+            if (tagLower.includes(term) || term.includes(tagLower)) {
+              score += 20;
+              if (maxPossibleScore < 20) maxPossibleScore = 20;
+            }
+          });
+        }
+      }
+      
+      // 确保分数不超过100
+      return Math.min(score, 100);
+    };
+
+    // 过滤并评分
+    const scoredResources = allResources
+      .map(resource => ({
+        ...resource,
+        relevanceScore: calculateRelevanceScore(resource)
+      }))
+      .filter(resource => resource.relevanceScore > 0)
+      .sort((a, b) => b.relevanceScore - a.relevanceScore);
+
+    return scoredResources;
+  }, [searchTerm, optimizedCategories]);
+
   // 渐进式加载
   useEffect(() => {
     if (activeCategory && !loadedCategories.includes(activeCategory)) {
@@ -223,7 +425,10 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
 
   // 紧急模式检测
   useEffect(() => {
-    const urgentTerms = ['疼', '痛', '现在', '马上', '急'];
+    const urgentTerms = [
+      t('tags.hurt'), t('tags.ache'), t('tags.now'), t('tags.immediately'), t('tags.urgent'), 
+      t('tags.heatTherapy'), t('tags.massage'), t('tags.emergency'), t('tags.severe')
+    ];
     const isUrgent = urgentTerms.some(term => searchTerm.includes(term));
     setIsEmergencyMode(isUrgent);
     
@@ -263,7 +468,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
     return badges[priority as keyof typeof badges] || badges.low;
   };
 
-  // 快速筛选标签
+  // 快速筛选标签 - 使用正确的翻译键
   const quickFilters = [
     { key: '疼痛', label: t('keywords.pain'), category: 'immediate' },
     { key: '缓解', label: t('keywords.relief'), category: 'immediate' },
@@ -373,7 +578,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
         <div className="flex gap-2">
           {resource.type === 'article' ? (
             <a
-              href={`/${locale}/articles/${resource.slug}`}
+              href={`/${locale}/${resource.slug}`}
               className="flex-1 bg-purple-600 text-white py-2 px-3 rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors text-center block"
             >
               {t('actions.readArticle')}
@@ -390,14 +595,14 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
               <button
                 onClick={() => handlePDFDownload(resource.id!)}
                 className="px-3 py-2 bg-purple-600 text-white rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors flex items-center justify-center"
-                title="下载HTML格式PDF（连续阅读，支持打印）"
+                title={t('actions.downloadHtmlPdf')}
               >
                 <Download className="w-3 h-3" />
               </button>
               <button
                 onClick={() => handleShare(resource)}
                 className="px-3 py-2 border border-gray-200 rounded-lg text-sm text-gray-600 hover:bg-gray-50 transition-colors"
-                title="分享"
+                title={t('actions.share')}
               >
                 <ExternalLink className="w-3 h-3" />
               </button>
@@ -421,7 +626,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
         </div>
         <div className="text-right">
           <div className="text-2xl font-bold text-gray-900">{category.resources.length}</div>
-          <div className="text-xs text-gray-500">{t('stats.resources')}</div>
+          <div className="text-xs text-gray-500">{locale === 'zh' ? '个资源' : 'resources'}</div>
         </div>
       </div>
 
@@ -442,7 +647,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
           onClick={() => setActiveCategory(category.id)}
           className="w-full mt-4 py-3 border-2 border-dashed border-gray-300 rounded-xl text-gray-600 hover:border-purple-300 hover:text-purple-600 transition-colors"
         >
-{locale === 'zh' ? `查看全部 ${category.resources.length} 个资源 →` : `View all ${category.resources.length} resources →`}
+          {locale === 'zh' ? `查看全部 ${category.resources.length} 个资源 →` : `View all ${category.resources.length} resources →`}
         </button>
       )}
     </div>
@@ -450,13 +655,36 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* 移动端优化样式 */}
+      <style jsx>{`
+        @media (max-width: 640px) {
+          button, a[role="button"] {
+            min-height: 44px; /* 触摸友好 */
+          }
+          
+          h1 { line-height: 1.2; }
+          h2, h3 { line-height: 1.3; }
+          
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+        
+        /* 超小屏幕优化 */
+        @media (max-width: 375px) {
+          h1 { font-size: 1.5rem; }
+          h2 { font-size: 1.25rem; }
+        }
+      `}</style>
+      
       {/* Main Content */}
       <div className="px-4 py-6 max-w-md mx-auto">
 
         {/* Emergency Decision Tree */}
         <div className="bg-gradient-to-br from-pink-50 to-purple-50 p-6 rounded-2xl mb-6 border border-pink-100">
           <h2 className="text-lg font-bold text-gray-800 mb-4 text-center">
-            {t('search.whatHelp')}
+            {locale === 'zh' ? '我现在需要什么帮助？' : 'What help do I need now?'}
           </h2>
           <div className="space-y-3">
             {Object.values(optimizedCategories).map((category) => (
@@ -502,7 +730,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="text"
-              placeholder={t('search.placeholder')}
+              placeholder={locale === 'zh' ? '搜索资源...' : 'Search resources...'}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-10 pr-4 py-3 text-base border-2 border-gray-200 rounded-xl focus:border-purple-500 focus:outline-none bg-white"
@@ -527,7 +755,51 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
         </div>
 
         {/* Content Sections */}
-        {activeCategory === 'all' ? (
+        {searchTerm && contentSearch ? (
+          // 显示搜索结果
+          <div className="mb-6 pb-20">
+            <div className="bg-blue-50 rounded-2xl p-6 border border-blue-200">
+              <h2 className="text-lg font-bold text-gray-800 mb-4">
+                {locale === 'zh' ? `搜索结果 (${contentSearch.length}个)` : `Search Results (${contentSearch.length})`}
+              </h2>
+              <div className="grid gap-3 max-h-60 sm:max-h-80 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 relative">
+                {/* 滚动提示 */}
+                {contentSearch.length > 2 && (
+                  <div className="absolute top-0 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded-b-lg z-10">
+                    {locale === 'zh' ? '向下滚动查看更多' : 'Scroll for more'}
+                  </div>
+                )}
+                {contentSearch.map((resource, index) => (
+                  <div key={index} className="relative">
+                    <ResourceCard resource={resource} categoryColor="from-blue-500 to-blue-600" />
+                    {/* 相关性评分和匹配原因 */}
+                    <div className="mt-2 flex items-center justify-between text-xs text-gray-600">
+                      <div className="flex items-center space-x-2">
+                        <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+                          {locale === 'zh' ? `相关性: ${resource.relevanceScore}%` : `Relevance: ${resource.relevanceScore}%`}
+                        </span>
+                        {resource.relevanceScore >= 100 && (
+                          <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full">
+                            {locale === 'zh' ? '精确匹配' : 'Exact Match'}
+                          </span>
+                        )}
+                        {resource.relevanceScore >= 80 && resource.relevanceScore < 100 && (
+                          <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">
+                            {locale === 'zh' ? '同义词匹配' : 'Synonym Match'}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                {/* 底部渐变遮罩提示 */}
+                {contentSearch.length > 2 && (
+                  <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-blue-50 to-transparent pointer-events-none"></div>
+                )}
+              </div>
+            </div>
+          </div>
+        ) : activeCategory === 'all' ? (
           Object.values(optimizedCategories).map((category) => (
             <CategorySection key={category.id} category={category} />
           ))
@@ -538,32 +810,34 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
         {/* Stats */}
         <div className="grid grid-cols-3 gap-4 mt-8 mb-6">
           <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-            <div className="text-2xl font-bold text-purple-600 mb-1">38</div>
-            <div className="text-xs text-gray-600">{t('stats.totalResources')}</div>
+            <div className="text-2xl font-bold text-purple-600 mb-1">
+              {Object.values(optimizedCategories).reduce((total, category) => total + category.resources.length, 0)}
+            </div>
+            <div className="text-xs text-gray-600">{locale === 'zh' ? '总资源' : 'Total Resources'}</div>
           </div>
           <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-            <div className="text-2xl font-bold text-pink-600 mb-1">4</div>
-            <div className="text-xs text-gray-600">{t('stats.categories')}</div>
+            <div className="text-2xl font-bold text-pink-600 mb-1">{Object.keys(optimizedCategories).length}</div>
+            <div className="text-xs text-gray-600">{locale === 'zh' ? '分类' : 'Categories'}</div>
           </div>
           <div className="bg-white rounded-xl p-4 text-center shadow-sm">
             <div className="text-2xl font-bold text-green-600 mb-1">100%</div>
-            <div className="text-xs text-gray-600">{t('stats.evidenceBased')}</div>
+            <div className="text-xs text-gray-600">{locale === 'zh' ? '循证' : 'Evidence-Based'}</div>
           </div>
         </div>
 
         {/* CTA */}
         <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-6 text-white text-center">
           <h3 className="text-lg font-bold mb-2">
-            {t('search.needMoreHelp')}
+            {locale === 'zh' ? '需要更多帮助？' : 'Need More Help?'}
           </h3>
           <p className="text-sm opacity-90 mb-4">
-            {t('search.exploreTools')}
+            {locale === 'zh' ? '探索我们的互动工具获得个性化建议' : 'Explore our interactive tools for personalized recommendations'}
           </p>
           <a
             href={`/${locale}/interactive-tools`}
             className="inline-block bg-white text-purple-600 px-6 py-2 rounded-xl font-semibold text-sm hover:bg-gray-50 transition-colors"
           >
-            {t('actions.useInteractiveTools')}
+            {locale === 'zh' ? '使用互动工具' : 'Use Interactive Tools'}
           </a>
         </div>
       </div>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>致教师 / 学校卫生室手册 - periodhub.health</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #e91e63;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #e91e63;
+            font-size: 28px;
+            margin: 0;
+        }
+        .header p {
+            color: #666;
+            font-size: 14px;
+            margin: 10px 0 0 0;
+        }
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        .section h2 {
+            color: #e91e63;
+            font-size: 18px;
+            border-left: 4px solid #e91e63;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        .section h3 {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .emergency-protocol {
+            background: #fff3e0;
+            border: 2px solid #ff9800;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .emergency-protocol h3 {
+            color: #ff9800;
+            margin-top: 0;
+        }
+        .teaching-tips {
+            background: #e8f5e8;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .teaching-tips h3 {
+            color: #4caf50;
+            margin-top: 0;
+        }
+        .supplies-list {
+            background: #f3e5f5;
+            border: 2px solid #9c27b0;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .supplies-list h3 {
+            color: #9c27b0;
+            margin-top: 0;
+        }
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+        .checklist li {
+            margin-bottom: 8px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+            font-weight: bold;
+        }
+        .protocol-steps {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+        .protocol-steps li {
+            counter-increment: step-counter;
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .protocol-steps li:before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #e91e63;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .age-group {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .age-group h3 {
+            color: #2196f3;
+            margin-top: 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 12px;
+        }
+        @media print {
+            body { margin: 0; padding: 15px; }
+            .section { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>致教师 / 学校卫生室手册</h1>
+        <p>经期健康教育与应急处理指南 | periodhub.health</p>
+        <p>为教育工作者提供专业支持</p>
+    </div>
+
+    <div class="section">
+        <h2>🎯 教育目标与重要性</h2>
+        <p>经期健康教育是学校健康教育的重要组成部分，旨在：</p>
+        <ul class="checklist">
+            <li>帮助学生正确认识月经这一自然生理现象</li>
+            <li>消除对月经的恐惧、羞耻和误解</li>
+            <li>教授正确的卫生知识和自我护理方法</li>
+            <li>培养学生的健康意识和自我保护能力</li>
+            <li>创造支持性的校园环境</li>
+        </ul>
+    </div>
+
+    <div class="age-group">
+        <h3>📚 不同年龄段的教育重点</h3>
+        <p><strong>小学高年级（9-12岁）：</strong></p>
+        <ul>
+            <li>基础生理知识，为青春期做准备</li>
+            <li>强调月经是正常的生理现象</li>
+            <li>基本卫生知识</li>
+        </ul>
+        
+        <p><strong>初中阶段（12-15岁）：</strong></p>
+        <ul>
+            <li>详细的月经生理机制</li>
+            <li>卫生用品的使用方法</li>
+            <li>痛经的应对方法</li>
+            <li>心理调适技巧</li>
+        </ul>
+        
+        <p><strong>高中阶段（15-18岁）：</strong></p>
+        <ul>
+            <li>深入的生殖健康知识</li>
+            <li>月经异常的识别</li>
+            <li>生活方式对月经的影响</li>
+            <li>就医指导</li>
+        </ul>
+    </div>
+
+    <div class="teaching-tips">
+        <h3>💡 教学方法与技巧</h3>
+        <ul>
+            <li><strong>创造安全环境</strong> - 确保讨论环境私密、舒适</li>
+            <li><strong>使用科学术语</strong> - 避免俚语或委婉语，使用准确的医学术语</li>
+            <li><strong>鼓励提问</strong> - 营造开放的氛围，欢迎学生提问</li>
+            <li><strong>个体差异</strong> - 强调每个人的情况都不完全相同</li>
+            <li><strong>正面引导</strong> - 强调月经是健康和成熟的标志</li>
+            <li><strong>互动教学</strong> - 使用图表、模型等教学工具</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🚨 应急处理协议</h2>
+        
+        <div class="emergency-protocol">
+            <h3>学生突然来月经的处理步骤</h3>
+            <ol class="protocol-steps">
+                <li><strong>保持冷静和理解</strong> - 以平和、支持的态度对待</li>
+                <li><strong>提供隐私保护</strong> - 避免在其他学生面前讨论</li>
+                <li><strong>提供卫生用品</strong> - 从应急包中取出卫生巾</li>
+                <li><strong>指导使用方法</strong> - 如果学生不熟悉，简单指导</li>
+                <li><strong>检查衣物</strong> - 如有污染，提供清洁或更换方案</li>
+                <li><strong>联系家长</strong> - 根据学校政策和学生意愿决定</li>
+                <li><strong>记录情况</strong> - 在学生健康档案中做简要记录</li>
+            </ol>
+        </div>
+
+        <div class="emergency-protocol">
+            <h3>学生痛经严重的处理步骤</h3>
+            <ol class="protocol-steps">
+                <li><strong>评估疼痛程度</strong> - 询问疼痛强度（1-10分）</li>
+                <li><strong>提供休息环境</strong> - 安排到卫生室或安静地方休息</li>
+                <li><strong>基础缓解措施</strong> - 提供热水袋、温水</li>
+                <li><strong>考虑药物</strong> - 根据学校政策，可提供非处方止痛药</li>
+                <li><strong>监测症状</strong> - 观察是否有其他症状</li>
+                <li><strong>联系家长</strong> - 如症状严重或持续，及时联系家长</li>
+                <li><strong>必要时就医</strong> - 如出现异常症状，立即送医</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="supplies-list">
+        <h3>📦 卫生室必备用品清单</h3>
+        <h4>卫生用品</h4>
+        <ul class="checklist">
+            <li>日用卫生巾（多种尺寸）</li>
+            <li>夜用卫生巾</li>
+            <li>护垫</li>
+            <li>湿纸巾</li>
+            <li>一次性内裤</li>
+            <li>密封袋</li>
+        </ul>
+        
+        <h4>缓解用品</h4>
+        <ul class="checklist">
+            <li>热水袋</li>
+            <li>暖宝宝</li>
+            <li>布洛芬或对乙酰氨基酚</li>
+            <li>保温杯</li>
+            <li>小毛巾</li>
+        </ul>
+        
+        <h4>清洁用品</h4>
+        <ul class="checklist">
+            <li>洗手液</li>
+            <li>消毒湿巾</li>
+            <li>垃圾袋</li>
+            <li>备用衣物（如可能）</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>⚠️ 需要特别关注的情况</h2>
+        
+        <h3>立即联系家长的情况</h3>
+        <ul class="checklist">
+            <li>疼痛剧烈，无法正常活动</li>
+            <li>大量出血（1小时内湿透超大号卫生巾）</li>
+            <li>伴有发热、呕吐、晕厥</li>
+            <li>学生表现出极度焦虑或恐惧</li>
+        </ul>
+
+        <h3>需要医疗关注的症状</h3>
+        <ul class="checklist">
+            <li>持续剧烈疼痛，止痛药无效</li>
+            <li>异常大量出血</li>
+            <li>伴有高热（>38.5°C）</li>
+            <li>意识模糊或晕厥</li>
+            <li>呼吸困难或胸痛</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🤝 与家长的沟通</h2>
+        
+        <h3>沟通要点</h3>
+        <ul class="checklist">
+            <li>客观描述学生在校情况</li>
+            <li>避免医学诊断，仅描述观察到的症状</li>
+            <li>建议家长关注女儿的月经健康</li>
+            <li>提供学校的支持措施信息</li>
+            <li>必要时建议就医</li>
+        </ul>
+
+        <h3>沟通示例</h3>
+        <p><em>"您好，今天您的女儿在学校出现了痛经症状，我们已经提供了基础的缓解措施。建议您关注她的月经情况，如果疼痛持续或加重，建议咨询医生。"</em></p>
+    </div>
+
+    <div class="section">
+        <h2>📋 记录与隐私保护</h2>
+        
+        <h3>记录要求</h3>
+        <ul class="checklist">
+            <li>记录日期、时间、症状</li>
+            <li>记录采取的措施</li>
+            <li>记录学生反应和改善情况</li>
+            <li>记录是否联系家长</li>
+        </ul>
+
+        <h3>隐私保护</h3>
+        <ul class="checklist">
+            <li>严格保护学生隐私</li>
+            <li>不在其他学生面前讨论</li>
+            <li>记录信息仅限相关人员查看</li>
+            <li>遵守学校隐私政策</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🏫 创建支持性校园环境</h2>
+        
+        <h3>设施建议</h3>
+        <ul class="checklist">
+            <li>女厕所配备卫生用品自动售卖机</li>
+            <li>提供免费的应急卫生用品</li>
+            <li>确保女厕所的隐私和清洁</li>
+            <li>卫生室配备专门的休息区域</li>
+        </ul>
+
+        <h3>政策建议</h3>
+        <ul class="checklist">
+            <li>制定明确的经期健康支持政策</li>
+            <li>允许学生因严重痛经请假</li>
+            <li>培训所有相关教职员工</li>
+            <li>定期更新健康教育课程内容</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📞 紧急联系信息模板</h2>
+        <div style="border: 1px solid #ddd; padding: 15px; margin: 15px 0;">
+            <p><strong>学生姓名：</strong>___________________ <strong>班级：</strong>___________</p>
+            <p><strong>家长姓名：</strong>___________________ <strong>联系电话：</strong>___________</p>
+            <p><strong>紧急联系人：</strong>_______________ <strong>联系电话：</strong>___________</p>
+            <p><strong>已知健康状况：</strong>_________________________________</p>
+            <p><strong>常用药物：</strong>_____________________________________</p>
+            <p><strong>过敏信息：</strong>_____________________________________</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>本手册由 periodhub.health 专业团队制作</p>
+        <p>更多资源请访问：www.periodhub.health</p>
+        <p>如有疑问，请咨询专业医疗人员</p>
+    </div>
+</body>
+</html>

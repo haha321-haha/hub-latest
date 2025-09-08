@@ -34,10 +34,14 @@ const nextConfig = {
     // 🎯 其他性能优化
     optimizeCss: true, // CSS优化
     scrollRestoration: true, // 滚动位置恢复
+    // 📱 移动端性能优化
+    optimizeServerReact: true, // 服务端React优化
+    // 🚀 代码分割优化
+    esmExternals: 'loose', // 更好的ESM支持
   },
 
-  // 构建优化
-  transpilePackages: ['lucide-react', 'next-intl'],
+  // 构建优化 - 移除冲突的配置
+  transpilePackages: ['next-intl'],
   
   // 编译器优化
   compiler: {
@@ -241,6 +245,11 @@ const nextConfig = {
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
+          },
+          // 📱 移动端图片优化
+          {
+            key: 'Vary',
+            value: 'Accept, Accept-Encoding',
           },
         ],
       },

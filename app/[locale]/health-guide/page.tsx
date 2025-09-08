@@ -698,7 +698,7 @@ export default async function HealthGuidePage({
                 {chapter.description}
               </p>
               <div className="flex items-center text-primary-600 group-hover:text-primary-700 font-medium">
-                {t('readMore')}
+                {t('sections.readMore')}
                 <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>站桩与八段锦图解指导手册 - periodhub.health</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #e91e63;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #e91e63;
+            font-size: 28px;
+            margin: 0;
+        }
+        .header p {
+            color: #666;
+            font-size: 14px;
+            margin: 10px 0 0 0;
+        }
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        .section h2 {
+            color: #e91e63;
+            font-size: 18px;
+            border-left: 4px solid #e91e63;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        .section h3 {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .posture-guide {
+            background: #f8f9fa;
+            border: 2px solid #6c757d;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .posture-guide.zhan-zhuang {
+            border-color: #28a745;
+            background: #e8f5e8;
+        }
+        .posture-guide.baduanjin {
+            border-color: #007bff;
+            background: #e3f2fd;
+        }
+        .image-placeholder {
+            width: 200px;
+            height: 250px;
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        .image-placeholder .icon {
+            font-size: 48px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+        .image-placeholder .text {
+            color: #666;
+            font-size: 12px;
+            text-align: center;
+        }
+        .description {
+            flex: 1;
+        }
+        .key-points {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .key-points h4 {
+            color: #ff9800;
+            margin-top: 0;
+        }
+        .breathing-guide {
+            background: #e8f5e8;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .breathing-guide h4 {
+            color: #4caf50;
+            margin-top: 0;
+        }
+        .step-by-step {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+        .step-by-step li {
+            counter-increment: step-counter;
+            margin-bottom: 15px;
+            padding-left: 40px;
+            position: relative;
+        }
+        .step-by-step li:before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #e91e63;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .warning-box {
+            background: #fff3e0;
+            border: 2px solid #ff9800;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .warning-box h4 {
+            color: #ff9800;
+            margin-top: 0;
+        }
+        .cycle-guide {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .cycle-phase {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+        .cycle-phase.pre-menstrual {
+            border-color: #ff9800;
+            background: #fff3e0;
+        }
+        .cycle-phase.menstrual {
+            border-color: #e91e63;
+            background: #fce4ec;
+        }
+        .cycle-phase.post-menstrual {
+            border-color: #4caf50;
+            background: #e8f5e8;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 12px;
+        }
+        @media print {
+            body { margin: 0; padding: 15px; }
+            .section { page-break-inside: avoid; }
+            .posture-guide { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>站桩、八段锦与太极拳图解指导手册</h1>
+        <p>传统功法缓解痛经的专业图解指南 | periodhub.health</p>
+        <p>结合图片说明，科学练习，安全有效</p>
+    </div>
+
+    <div class="section">
+        <h2>📖 使用说明</h2>
+        <p>本手册结合详细的动作图解和文字说明，为您提供站桩与八段锦的专业指导。请在专业人士指导下练习，确保动作标准和安全。</p>
+        
+        <div class="warning-box">
+            <h4>⚠️ 重要提醒</h4>
+            <ul>
+                <li>初学者请在专业指导下练习</li>
+                <li>经期练习需根据身体状况调整强度</li>
+                <li>如有严重痛经，请及时就医</li>
+                <li>练习过程中如有不适，立即停止</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🧘‍♀️ 站桩功法图解</h2>
+        
+        <div class="posture-guide zhan-zhuang">
+            <div class="image-placeholder">
+                <div class="icon">🧘‍♀️</div>
+                <div class="text">浑圆桩标准姿势<br>（建议参考专业图解）</div>
+            </div>
+            <div class="description">
+                <h3>浑圆桩基本姿势</h3>
+                <ol class="step-by-step">
+                    <li><strong>脚部定位</strong>：两脚平行站立，距离与肩同宽，脚尖微内扣</li>
+                    <li><strong>腿部调整</strong>：膝盖微屈15-20度，大腿肌肉适度放松</li>
+                    <li><strong>骨盆调整</strong>：坐胯圆裆，髋关节微微下沉</li>
+                    <li><strong>手臂环抱</strong>：双手在腹前环抱，如抱大气球</li>
+                    <li><strong>头颈调整</strong>：百会虚领，下颌微收</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="key-points">
+            <h4>🎯 针对痛经的关键要点</h4>
+            <ul>
+                <li><strong>盆腔放松</strong>：特别关注髋关节和骨盆区域的松沉</li>
+                <li><strong>意守下丹田</strong>：将意念轻轻放在肚脐下三寸处</li>
+                <li><strong>温暖感受</strong>：想象下腹部温暖、气血充盈</li>
+            </ul>
+        </div>
+
+        <div class="breathing-guide">
+            <h4>🌬️ 呼吸配合要领</h4>
+            <p><strong>腹式呼吸法</strong>：吸气时腹部自然扩张，呼气时腹部自然收缩。呼吸节奏缓慢均匀，一呼一吸约6-8秒。</p>
+            <p><strong>意念导引</strong>：吸气时想象清新气息进入下丹田，呼气时想象浊气排出。</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🤸‍♀️ 八段锦动作图解</h2>
+        
+        <div class="posture-guide baduanjin">
+            <div class="image-placeholder">
+                <div class="icon">🙌</div>
+                <div class="text">第一段：两手托天理三焦<br>（建议参考专业图解）</div>
+            </div>
+            <div class="description">
+                <h3>第一段：两手托天理三焦</h3>
+                <ol class="step-by-step">
+                    <li><strong>起势</strong>：两手从体侧缓缓向上抬起，掌心向上</li>
+                    <li><strong>托天</strong>：双手上托至头顶，脚后跟轻提</li>
+                    <li><strong>下落</strong>：翻掌下落，脚后跟落地</li>
+                </ol>
+                <p><strong>对痛经的益处</strong>：全身拉伸，理顺三焦气机，缓解气滞胀痛。</p>
+            </div>
+        </div>
+
+        <div class="posture-guide baduanjin">
+            <div class="image-placeholder">
+                <div class="icon">🏹</div>
+                <div class="text">第二段：左右开弓似射雕<br>（建议参考专业图解）</div>
+            </div>
+            <div class="description">
+                <h3>第二段：左右开弓似射雕</h3>
+                <ol class="step-by-step">
+                    <li><strong>马步站立</strong>：两脚开立呈马步</li>
+                    <li><strong>开弓动作</strong>：左手如持弓，右手如拉弦</li>
+                    <li><strong>左右交替</strong>：换方向重复动作</li>
+                </ol>
+                <p><strong>对痛经的益处</strong>：舒展肺部肩背，调理肝气，适合肝郁气滞型痛经。</p>
+            </div>
+        </div>
+
+        <div class="posture-guide baduanjin">
+            <div class="image-placeholder">
+                <div class="icon">🌊</div>
+                <div class="text">第五段：摇头摆尾去心火<br>（建议参考专业图解）</div>
+            </div>
+            <div class="description">
+                <h3>第五段：摇头摆尾去心火（重点推荐）</h3>
+                <ol class="step-by-step">
+                    <li><strong>马步准备</strong>：两脚开立，双手叉腰</li>
+                    <li><strong>侧弯摆动</strong>：上身向左下倾，臀部向右后摆</li>
+                    <li><strong>头部配合</strong>：头向右转看右脚跟</li>
+                    <li><strong>换向重复</strong>：右侧动作要领相同</li>
+                </ol>
+                <p><strong>对痛经的特殊益处</strong>：直接按摩盆腔，改善盆腔血液循环，对血瘀型痛经效果显著。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🥋 太极拳动作图解</h2>
+
+        <div class="posture-guide taichi">
+            <div class="image-placeholder">
+                <div class="icon">🌊</div>
+                <div class="text">起势调息<br>（建议参考专业图解）</div>
+            </div>
+            <div class="description">
+                <h3>起势调息</h3>
+                <ol class="step-by-step">
+                    <li><strong>自然站立</strong>：双脚与肩同宽，全身放松</li>
+                    <li><strong>调整呼吸</strong>：深呼吸3-5次，调整身心状态</li>
+                    <li><strong>意念集中</strong>：排除杂念，专注当下</li>
+                </ol>
+                <p><strong>对痛经的益处</strong>：建立身心连接，为后续练习做好准备，有助于放松紧张情绪。</p>
+            </div>
+        </div>
+
+        <div class="posture-guide taichi">
+            <div class="image-placeholder">
+                <div class="icon">🐎</div>
+                <div class="text">左右野马分鬃<br>（建议参考专业图解）</div>
+            </div>
+            <div class="description">
+                <h3>左右野马分鬃（重点推荐）</h3>
+                <ol class="step-by-step">
+                    <li><strong>抱球准备</strong>：双手如抱球状，左手在上</li>
+                    <li><strong>转腰迈步</strong>：重心左移，右脚向右前方迈出</li>
+                    <li><strong>分手推掌</strong>：左手向左上推，右手向右下按</li>
+                    <li><strong>换向重复</strong>：左右交替进行</li>
+                </ol>
+                <p><strong>对痛经的特殊益处</strong>：腰胯转动促进盆腔血液循环，手臂开合疏通上焦气机，重心转移改善整体气血运行。</p>
+            </div>
+        </div>
+
+        <div class="posture-guide taichi">
+            <div class="image-placeholder">
+                <div class="icon">🕊️</div>
+                <div class="text">白鹤亮翅<br>（建议参考专业图解）</div>
+            </div>
+            <div class="description">
+                <h3>白鹤亮翅</h3>
+                <ol class="step-by-step">
+                    <li><strong>重心后移</strong>：重心移至右腿，左脚尖点地</li>
+                    <li><strong>展翅动作</strong>：右手上提至额前，左手下按至胯旁</li>
+                    <li><strong>身体后仰</strong>：身体微微后仰，如白鹤展翅</li>
+                </ol>
+                <p><strong>对痛经的益处</strong>：胸部开展疏肝理气，脊柱伸展改善神经传导，单腿支撑增强下肢稳定性。</p>
+            </div>
+        </div>
+
+        <div class="posture-guide taichi">
+            <div class="image-placeholder">
+                <div class="icon">🤲</div>
+                <div class="text">搂膝拗步<br>（建议参考专业图解）</div>
+            </div>
+            <div class="description">
+                <h3>搂膝拗步</h3>
+                <ol class="step-by-step">
+                    <li><strong>搂膝动作</strong>：左手向前下方搂过，如搂膝状</li>
+                    <li><strong>推掌迈步</strong>：右手向前推出，左脚向前成弓步</li>
+                    <li><strong>协调配合</strong>：手脚动作协调一致</li>
+                </ol>
+                <p><strong>对痛经的益处</strong>：腰部前屈后伸按摩腰骶部，下肢弓步加强盆腔肌群，手臂推拉调节上下气机。</p>
+            </div>
+        </div>
+
+        <div class="key-points">
+            <h4>🎯 太极拳练习要点</h4>
+            <ul>
+                <li><strong>动作缓慢</strong>：如行云流水，绵绵不断</li>
+                <li><strong>呼吸自然</strong>：与动作协调配合，不可强求</li>
+                <li><strong>意念集中</strong>：心静体松，达到身心合一</li>
+                <li><strong>虚实分明</strong>：明确重心转移，体会虚实变化</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📅 月经周期练习指导</h2>
+        
+        <div class="cycle-guide">
+            <div class="cycle-phase pre-menstrual">
+                <h3>🌸 经前期</h3>
+                <p><strong>重点</strong>：疏肝理气、活血化瘀</p>
+                <ul style="text-align: left;">
+                    <li>站桩：20-30分钟</li>
+                    <li>八段锦：重点第二、五段</li>
+                    <li>太极拳：野马分鬃、白鹤亮翅</li>
+                    <li>完整套路：30-45分钟</li>
+                </ul>
+            </div>
+
+            <div class="cycle-phase menstrual">
+                <h3>🩸 经期</h3>
+                <p><strong>重点</strong>：柔和调息、温经止痛</p>
+                <ul style="text-align: left;">
+                    <li>站桩：10-15分钟（降低强度）</li>
+                    <li>八段锦：选择柔和段式</li>
+                    <li>太极拳：起势调息、缓慢动作</li>
+                    <li>避免：大幅度动作</li>
+                </ul>
+            </div>
+
+            <div class="cycle-phase post-menstrual">
+                <h3>🌱 经后期</h3>
+                <p><strong>重点</strong>：培补元气、滋养肝肾</p>
+                <ul style="text-align: left;">
+                    <li>站桩：恢复常规练习</li>
+                    <li>八段锦：重点第三、六、七段</li>
+                    <li>太极拳：完整套路练习</li>
+                    <li>完整套路：30-60分钟</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>⚠️ 注意事项与禁忌</h2>
+        
+        <div class="warning-box">
+            <h4>不适宜练习的情况</h4>
+            <ul>
+                <li>急性疾病期、发热、活动性出血</li>
+                <li>严重心血管疾病、未控制的高血压</li>
+                <li>骨关节疾病急性期</li>
+                <li>经期剧烈疼痛、晕厥等严重症状</li>
+            </ul>
+        </div>
+
+        <div class="key-points">
+            <h4>练习环境建议</h4>
+            <ul>
+                <li>选择安静、通风良好的空间</li>
+                <li>穿着宽松、舒适的运动服装</li>
+                <li>使用防滑瑜伽垫确保安全</li>
+                <li>准备温水以备练习后补充</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>本手册由 periodhub.health 专业团队制作</p>
+        <p>更多资源请访问：www.periodhub.health</p>
+        <p>如有疑问，请咨询专业医疗人员或功法指导师</p>
+        <p>图片说明：建议结合专业图解资料进行学习，确保动作标准</p>
+    </div>
+</body>
+</html>

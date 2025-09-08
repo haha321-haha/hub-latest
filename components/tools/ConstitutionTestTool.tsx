@@ -19,60 +19,32 @@ export default function ConstitutionTestTool({ locale = 'zh' }: ConstitutionTest
   const [showResult, setShowResult] = useState(false);
   const t = useTranslations('constitutionTest');
 
-  const questions: Question[] = locale === 'zh' ? [
+  const questions: Question[] = [
     {
       id: 'energy',
-      question: '您平时的精力状态如何？',
+      question: t('questions.energy.question'),
       options: [
-        { value: 'high', label: '精力充沛，很少感到疲劳', score: 3 },
-        { value: 'medium', label: '精力一般，偶尔感到疲劳', score: 2 },
-        { value: 'low', label: '经常感到疲劳，精力不足', score: 1 }
+        { value: 'high', label: t('questions.energy.options.high'), score: 3 },
+        { value: 'medium', label: t('questions.energy.options.medium'), score: 2 },
+        { value: 'low', label: t('questions.energy.options.low'), score: 1 }
       ]
     },
     {
       id: 'cold_tolerance',
-      question: '您对寒冷的耐受性如何？',
+      question: t('questions.coldTolerance.question'),
       options: [
-        { value: 'good', label: '不怕冷，手脚温暖', score: 3 },
-        { value: 'normal', label: '一般，季节变化时会感到冷', score: 2 },
-        { value: 'poor', label: '很怕冷，手脚经常冰凉', score: 1 }
+        { value: 'good', label: t('questions.coldTolerance.options.good'), score: 3 },
+        { value: 'normal', label: t('questions.coldTolerance.options.normal'), score: 2 },
+        { value: 'poor', label: t('questions.coldTolerance.options.poor'), score: 1 }
       ]
     },
     {
       id: 'digestion',
-      question: '您的消化功能如何？',
+      question: t('questions.digestion.question'),
       options: [
-        { value: 'good', label: '消化良好，很少胃肠不适', score: 3 },
-        { value: 'normal', label: '消化一般，偶有不适', score: 2 },
-        { value: 'poor', label: '消化不良，经常胃肠不适', score: 1 }
-      ]
-    }
-  ] : [
-    {
-      id: 'energy',
-      question: 'How is your usual energy level?',
-      options: [
-        { value: 'high', label: 'Energetic, rarely feel tired', score: 3 },
-        { value: 'medium', label: 'Average energy, occasionally tired', score: 2 },
-        { value: 'low', label: 'Often tired, low energy', score: 1 }
-      ]
-    },
-    {
-      id: 'cold_tolerance',
-      question: 'How is your tolerance to cold?',
-      options: [
-        { value: 'good', label: 'Not afraid of cold, warm hands and feet', score: 3 },
-        { value: 'normal', label: 'Normal, feel cold during season changes', score: 2 },
-        { value: 'poor', label: 'Very afraid of cold, hands and feet often cold', score: 1 }
-      ]
-    },
-    {
-      id: 'digestion',
-      question: 'How is your digestive function?',
-      options: [
-        { value: 'good', label: 'Good digestion, rarely stomach discomfort', score: 3 },
-        { value: 'normal', label: 'Average digestion, occasional discomfort', score: 2 },
-        { value: 'poor', label: 'Poor digestion, frequent stomach discomfort', score: 1 }
+        { value: 'good', label: t('questions.digestion.options.good'), score: 3 },
+        { value: 'normal', label: t('questions.digestion.options.normal'), score: 2 },
+        { value: 'poor', label: t('questions.digestion.options.poor'), score: 1 }
       ]
     }
   ];
@@ -94,17 +66,11 @@ export default function ConstitutionTestTool({ locale = 'zh' }: ConstitutionTest
     const percentage = (totalScore / maxScore) * 100;
 
     if (percentage >= 80) {
-      return locale === 'zh' 
-        ? { type: '阳性体质', description: '体质较好，精力充沛，抗寒能力强' }
-        : { type: 'Yang Constitution', description: 'Good constitution, energetic, strong cold resistance' };
+      return { type: t('results.yang.type'), description: t('results.yang.description') };
     } else if (percentage >= 60) {
-      return locale === 'zh'
-        ? { type: '平和体质', description: '体质平衡，需要适当调理' }
-        : { type: 'Balanced Constitution', description: 'Balanced constitution, needs moderate care' };
+      return { type: t('results.balanced.type'), description: t('results.balanced.description') };
     } else {
-      return locale === 'zh'
-        ? { type: '阴性体质', description: '体质偏弱，需要温补调理' }
-        : { type: 'Yin Constitution', description: 'Weak constitution, needs warming care' };
+      return { type: t('results.yin.type'), description: t('results.yin.description') };
     }
   };
 
@@ -139,7 +105,7 @@ export default function ConstitutionTestTool({ locale = 'zh' }: ConstitutionTest
     <div className="bg-purple-50 rounded-xl p-6">
       <div className="mb-4">
         <div className="text-sm text-purple-600 mb-2">
-          {locale === 'zh' ? `问题 ${currentQuestion + 1} / ${questions.length}` : `Question ${currentQuestion + 1} / ${questions.length}`}
+          {t('progress', { current: currentQuestion + 1, total: questions.length })}
         </div>
         <div className="w-full bg-purple-200 rounded-full h-2">
           <div 

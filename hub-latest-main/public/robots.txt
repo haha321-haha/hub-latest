@@ -1,0 +1,32 @@
+# SEO优化 - 阻止搜索引擎索引测试和开发页面
+User-agent: *
+Allow: /
+
+# 阻止测试页面
+Disallow: /test*
+Disallow: /*/test*
+Disallow: /dev*
+Disallow: /*/dev*
+Disallow: /staging*
+Disallow: /*/staging*
+
+# 阻止重复内容
+Disallow: /*?*download=*
+Disallow: /*?*test=*
+Disallow: /*?*debug=*
+
+# 允许重要页面
+Allow: /$
+Allow: /zh$
+Allow: /en$
+Allow: /zh/health-guide$
+Allow: /en/health-guide$
+Allow: /zh/articles$
+Allow: /en/articles$
+Allow: /zh/downloads$
+Allow: /en/downloads$
+Allow: /zh/interactive-tools$
+Allow: /en/interactive-tools$
+
+# Sitemap
+Sitemap: https://periodhub.health/sitemap.xml

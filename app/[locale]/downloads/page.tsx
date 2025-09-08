@@ -2,7 +2,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { Download } from 'lucide-react';
 import { Locale, locales } from '@/i18n';
-import SimplePDFCenter from '@/components/SimplePDFCenter';
+import OptimizedMobilePDFCenter from '@/components/OptimizedMobilePDFCenter';
 import { SITE_CONFIG } from '@/config/site.config';
 
 // Generate metadata for the page
@@ -107,8 +107,8 @@ export default async function DownloadsPage({
           </div>
         </header>
 
-        {/* 🚀 简化版PDF中心组件 - 修复空白页面问题 */}
-        <SimplePDFCenter locale={locale} />
+        {/* 🚀 优化版移动端PDF中心组件 - 实现"我现在需要什么帮助？"界面 */}
+        <OptimizedMobilePDFCenter locale={locale} />
 
         {/* 💡 用户反馈组件 */}
         <div className="fixed bottom-4 right-4 z-50 max-w-xs">

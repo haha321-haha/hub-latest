@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { useAppTranslations } from '@/hooks/useAppTranslations';
 
 interface NSAIDContentProps {
   content: string;
@@ -92,6 +93,9 @@ function processNSAIDContent(content: string): string {
 }
 
 export default function NSAIDContent({ content }: NSAIDContentProps) {
+  // 获取翻译函数
+  const { t } = useAppTranslations('nsaidContent');
+  
   // Component rendering - reduced logging for production
 
   useEffect(() => {
@@ -647,68 +651,68 @@ export default function NSAIDContent({ content }: NSAIDContentProps) {
       const scenes = [
         {
           id: 1,
-          title: "场景1：开场 - 表现痛经的不适感",
+          title: t('scenes.scene1.title'),
           videoUrl: "https://v3.fal.media/files/monkey/OMrBMAEeA1my97zJzH64q_output.mp4",
-          narration: "很多女性每个月都会经历痛经，那种痉挛、疼痛的感觉让人非常不适。"
+          narration: t('scenes.scene1.narration')
         },
         {
           id: 2,
-          title: '场景2：解释痛经原因 - 前列腺素',
-          text: '月经期间，子宫内膜会释放一种叫做"前列腺素"的物质。前列腺素会引起子宫肌肉剧烈收缩，导致疼痛。',
+          title: t('scenes.scene2.title'),
+          text: t('scenes.scene2.text'),
           videoUrl: 'https://v3.fal.media/files/panda/DJlINSBKErKOTTRW4scwG_output.mp4'
         },
         {
           id: 3,
-          title: '场景3：引出NSAIDs',
-          text: '而非甾体抗炎药，简称NSAID，是缓解痛经的常用药物。它们能从源头减少前列腺素的产生。',
+          title: t('scenes.scene3.title'),
+          text: t('scenes.scene3.text'),
           videoUrl: 'https://v3.fal.media/files/monkey/sRVoOWjzmaoyzF7cure1m_output.mp4'
         },
         {
           id: 4,
-          title: '场景4：药物服用',
-          text: '当您服下NSAID药片后，它会进入消化系统。',
+          title: t('scenes.scene4.title'),
+          text: t('scenes.scene4.text'),
           videoUrl: 'https://v3.fal.media/files/lion/O4Ys7oYqfMg3M0jR80mhw_output.mp4'
         },
         {
           id: 5,
-          title: '场景5：吸收进入血液',
-          text: '然后通过消化道被吸收到血液里，随着血液流向全身。',
+          title: t('scenes.scene5.title'),
+          text: t('scenes.scene5.text'),
           videoUrl: 'https://v3.fal.media/files/elephant/ejMBtuanCnJ9v_RH-3gXc_output.mp4'
         },
         {
           id: 6,
-          title: '场景6：分布到作用部位',
-          text: '药物分子随着血液循环，最终抵达引起疼痛的部位——比如您的子宫周围。',
+          title: t('scenes.scene6.title'),
+          text: t('scenes.scene6.text'),
           videoUrl: 'https://v3.fal.media/files/lion/_wrFzYC89XCXhT08_ldCQ_output.mp4'
         },
         {
           id: 7,
-          title: '场景7：作用机制 - 抑制COX酶',
-          text: '在这里，NSAID药物找到了产生前列腺素的关键"工厂"——环氧合酶，并抑制了它的活性。',
+          title: t('scenes.scene7.title'),
+          text: t('scenes.scene7.text'),
           videoUrl: 'https://v3.fal.media/files/zebra/-3fM_hp6Ze7ceOdKospQ-_output.mp4'
         },
         {
           id: 8,
-          title: '场景8：减少前列腺素',
-          text: '环氧合酶的工作被打断，前列腺素的合成量就大大降低了。',
+          title: t('scenes.scene8.title'),
+          text: t('scenes.scene8.text'),
           videoUrl: 'https://v3.fal.media/files/koala/-0hQKGQ9lIMGoyG_jRw2H_output.mp4'
         },
         {
           id: 9,
-          title: '场景9：疼痛缓解',
-          text: '随着前列腺素减少，子宫收缩变得温和，疼痛感明显减轻。',
+          title: t('scenes.scene9.title'),
+          text: t('scenes.scene9.text'),
           videoUrl: 'https://v3.fal.media/files/monkey/OMrBMAEeA1my97zJzH64q_output.mp4'
         },
         {
           id: 10,
-          title: '场景10：药物代谢',
-          text: '完成任务后，NSAID药物会被肝脏代谢，最终通过肾脏排出体外。',
+          title: t('scenes.scene10.title'),
+          text: t('scenes.scene10.text'),
           videoUrl: 'https://v3.fal.media/files/panda/DJlINSBKErKOTTRW4scwG_output.mp4'
         },
         {
           id: 11,
-          title: '场景11：总结',
-          text: '这就是NSAID缓解痛经的完整过程：从服用到吸收，从作用到代谢，科学而有效。',
+          title: t('scenes.scene11.title'),
+          text: t('scenes.scene11.text'),
           videoUrl: 'https://v3.fal.media/files/monkey/sRVoOWjzmaoyzF7cure1m_output.mp4'
         }
       ];
@@ -726,7 +730,7 @@ export default function NSAIDContent({ content }: NSAIDContentProps) {
         // Update UI elements
         if (sceneTitle) sceneTitle.textContent = scene.title;
         if (narrationText) narrationText.textContent = scene.text || scene.narration || '';
-        if (sceneIndicator) sceneIndicator.textContent = `场景 ${scene.id} / ${scenes.length}`;
+        if (sceneIndicator) sceneIndicator.textContent = t('ui.sceneIndicator', { current: scene.id, total: scenes.length });
 
         // Load video
         if (videoPlayer && scene.videoUrl) {
@@ -774,8 +778,8 @@ export default function NSAIDContent({ content }: NSAIDContentProps) {
         // Video error handling
         videoPlayer.addEventListener('error', (e) => {
           console.error('Video error:', e);
-          if (narrationText) narrationText.textContent = '抱歉，视频加载失败。请检查您的网络连接或稍后再试。';
-          if (sceneTitle) sceneTitle.textContent = '视频加载错误';
+          if (narrationText) narrationText.textContent = t('ui.videoErrorDescription');
+          if (sceneTitle) sceneTitle.textContent = t('ui.videoError');
         });
       }
 
@@ -796,11 +800,11 @@ export default function NSAIDContent({ content }: NSAIDContentProps) {
       if (scenes.length > 0) {
         loadScene(0);
       } else {
-        if (sceneTitle) sceneTitle.textContent = "没有可播放的场景";
-        if (narrationText) narrationText.textContent = "请检查数据配置。";
+        if (sceneTitle) sceneTitle.textContent = t('ui.noScenes');
+        if (narrationText) narrationText.textContent = t('ui.noScenesDescription');
         if (prevButton) (prevButton as HTMLButtonElement).disabled = true;
         if (nextButton) (nextButton as HTMLButtonElement).disabled = true;
-        if (sceneIndicator) sceneIndicator.textContent = "场景 0 / 0";
+        if (sceneIndicator) sceneIndicator.textContent = t('ui.sceneIndicator', { current: 0, total: 0 });
       }
 
       // Enhanced video player setup with debugging

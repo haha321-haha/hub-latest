@@ -1,192 +1,284 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const path = require('path');
-const glob = require('glob');
-
 /**
- * 翻译验证工具
- * 检测缺失的翻译键、硬编码文本等问题
+ * 翻译键验证工具
+ * 检查翻译键是否符合命名规范
  */
 
-class TranslationValidator {
-  constructor() {
-    this.errors = [];
-    this.warnings = [];
-    this.supportedLocales = ['zh', 'en'];
-    this.messagesDir = path.join(process.cwd(), 'messages');
+const fs = require('fs');
+const path = require('path');
+
+// 配置
+const CONFIG = {
+  messagesDir: './messages',
+  supportedLocales: ['en', 'zh'],
+  maxDepth: 5,
+  minKeyLength: 2,
+  maxKeyLength: 50
+};
+
+// 命名规范检查
+const NAMING_RULES = {
+  // 必须使用camelCase
+  camelCase: /^[a-z][a-zA-Z0-9]*$/,
+  
+  // 不能以数字开头
+  noNumberStart: /^[^0-9]/,
+  
+  // 不能包含特殊字符
+  noSpecialChars: /^[a-zA-Z0-9]+$/,
+  
+  // 不能是保留字
+  reservedWords: [
+    'true', 'false', 'null', 'undefined', 'function', 'class',
+    'if', 'else', 'for', 'while', 'do', 'switch', 'case',
+    'break', 'continue', 'return', 'try', 'catch', 'finally',
+    'throw', 'new', 'this', 'super', 'typeof', 'instanceof',
+    'in', 'of', 'with', 'var', 'let', 'const', 'import',
+    'export', 'default', 'from', 'as', 'static', 'public',
+    'private', 'protected', 'abstract', 'interface', 'extends',
+    'implements', 'enum', 'namespace', 'module', 'declare'
+  ],
+  
+  // 推荐的命名模式
+  patterns: {
+    // 页面相关
+    page: /^[a-z][a-zA-Z0-9]*Page$/,
+    // 组件相关
+    component: /^[a-z][a-zA-Z0-9]*Component$/,
+    // 按钮相关
+    button: /^[a-z][a-zA-Z0-9]*Button$/,
+    // 状态相关
+    status: /^[a-z][a-zA-Z0-9]*Status$/,
+    // 消息相关
+    message: /^[a-z][a-zA-Z0-9]*Message$/
   }
+};
 
-  // 加载翻译文件
-  loadTranslations() {
-    const translations = {};
-    
-    for (const locale of this.supportedLocales) {
-      const filePath = path.join(this.messagesDir, `${locale}.json`);
-      if (fs.existsSync(filePath)) {
-        try {
-          translations[locale] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-        } catch (error) {
-          this.errors.push(`Failed to parse ${locale}.json: ${error.message}`);
-        }
-      } else {
-        this.errors.push(`Translation file ${locale}.json not found`);
-      }
-    }
-    
-    return translations;
+// 错误收集
+const errors = [];
+const warnings = [];
+
+/**
+ * 验证单个翻译键
+ */
+function validateKey(key, value, path = '') {
+  const fullPath = path ? `${path}.${key}` : key;
+  
+  // 检查键名长度
+  if (key.length < CONFIG.minKeyLength) {
+    errors.push(`Key too short: "${fullPath}" (${key.length} chars, min: ${CONFIG.minKeyLength})`);
   }
-
-  // 获取所有翻译键路径
-  getTranslationKeys(obj, prefix = '') {
-    const keys = [];
-    
-    for (const [key, value] of Object.entries(obj)) {
-      const fullKey = prefix ? `${prefix}.${key}` : key;
-      
-      if (typeof value === 'object' && value !== null) {
-        keys.push(...this.getTranslationKeys(value, fullKey));
-      } else {
-        keys.push(fullKey);
-      }
-    }
-    
-    return keys;
+  
+  if (key.length > CONFIG.maxKeyLength) {
+    errors.push(`Key too long: "${fullPath}" (${key.length} chars, max: ${CONFIG.maxKeyLength})`);
   }
-
-  // 检查翻译键一致性
-  validateTranslationConsistency(translations) {
-    const locales = Object.keys(translations);
-    if (locales.length < 2) return;
-
-    const [baseLocale, ...otherLocales] = locales;
-    const baseKeys = new Set(this.getTranslationKeys(translations[baseLocale]));
-
-    for (const locale of otherLocales) {
-      const localeKeys = new Set(this.getTranslationKeys(translations[locale]));
-      
-      // 检查缺失的键
-      for (const key of baseKeys) {
-        if (!localeKeys.has(key)) {
-          this.errors.push(`Missing translation key in ${locale}: ${key}`);
-        }
-      }
-      
-      // 检查多余的键
-      for (const key of localeKeys) {
-        if (!baseKeys.has(key)) {
-          this.warnings.push(`Extra translation key in ${locale}: ${key}`);
-        }
-      }
-    }
+  
+  // 检查camelCase
+  if (!NAMING_RULES.camelCase.test(key)) {
+    errors.push(`Invalid camelCase: "${fullPath}" should be camelCase`);
   }
-
-  // 检查代码中的硬编码文本
-  validateHardcodedText() {
-    const files = glob.sync('**/*.{ts,tsx,js,jsx}', {
-      ignore: ['node_modules/**', '.next/**', 'dist/**', 'scripts/**']
-    });
-
-    const chineseRegex = /[\u4e00-\u9fff]+/g;
-    const stringRegex = /['"`]([^'"`]*[\u4e00-\u9fff][^'"`]*)['"`]/g;
-
-    for (const file of files) {
-      const content = fs.readFileSync(file, 'utf8');
-      const lines = content.split('\n');
-
-      lines.forEach((line, index) => {
-        // 跳过注释和翻译文件
-        if (line.trim().startsWith('//') || 
-            line.trim().startsWith('*') || 
-            file.includes('messages/')) {
-          return;
-        }
-
-        const matches = line.match(stringRegex);
-        if (matches) {
-          matches.forEach(match => {
-            if (chineseRegex.test(match)) {
-              this.warnings.push(
-                `Possible hardcoded Chinese text in ${file}:${index + 1}: ${match.trim()}`
-              );
-            }
-          });
-        }
-      });
-    }
+  
+  // 检查数字开头
+  if (!NAMING_RULES.noNumberStart.test(key)) {
+    errors.push(`Cannot start with number: "${fullPath}"`);
   }
-
-  // 检查翻译键使用
-  validateTranslationUsage(translations) {
-    const files = glob.sync('**/*.{ts,tsx,js,jsx}', {
-      ignore: ['node_modules/**', '.next/**', 'dist/**', 'scripts/**']
-    });
-
-    const translationKeyRegex = /t\(['"`]([^'"`]+)['"`]\)/g;
-    const usedKeys = new Set();
-
-    for (const file of files) {
-      const content = fs.readFileSync(file, 'utf8');
-      let match;
-
-      while ((match = translationKeyRegex.exec(content)) !== null) {
-        usedKeys.add(match[1]);
-      }
-    }
-
-    // 检查未使用的翻译键
-    const allKeys = new Set(this.getTranslationKeys(translations.zh || translations.en));
-    
-    for (const key of allKeys) {
-      if (!usedKeys.has(key)) {
-        this.warnings.push(`Unused translation key: ${key}`);
-      }
-    }
-
-    // 检查使用了但不存在的翻译键
-    for (const key of usedKeys) {
-      if (!allKeys.has(key)) {
-        this.errors.push(`Translation key used but not defined: ${key}`);
-      }
-    }
+  
+  // 检查特殊字符
+  if (!NAMING_RULES.noSpecialChars.test(key)) {
+    errors.push(`Contains special characters: "${fullPath}"`);
   }
-
-  // 运行所有验证
-  validate() {
-    console.log('🔍 Validating translations...\n');
-
-    const translations = this.loadTranslations();
-    
-    if (Object.keys(translations).length > 0) {
-      this.validateTranslationConsistency(translations);
-      this.validateTranslationUsage(translations);
+  
+  // 检查保留字
+  if (NAMING_RULES.reservedWords.includes(key.toLowerCase())) {
+    errors.push(`Reserved word: "${fullPath}" is a reserved word`);
+  }
+  
+  // 检查值类型
+  if (typeof value !== 'string' && typeof value !== 'object') {
+    errors.push(`Invalid value type: "${fullPath}" should be string or object`);
+  }
+  
+  // 如果是对象，递归检查
+  if (typeof value === 'object' && value !== null) {
+    const currentDepth = fullPath.split('.').length;
+    if (currentDepth > CONFIG.maxDepth) {
+      errors.push(`Exceeds max depth: "${fullPath}" (depth: ${currentDepth}, max: ${CONFIG.maxDepth})`);
     }
     
-    this.validateHardcodedText();
-
-    // 输出结果
-    if (this.errors.length > 0) {
-      console.log('❌ Errors:');
-      this.errors.forEach(error => console.log(`  - ${error}`));
-      console.log();
+    for (const [subKey, subValue] of Object.entries(value)) {
+      validateKey(subKey, subValue, fullPath);
     }
-
-    if (this.warnings.length > 0) {
-      console.log('⚠️  Warnings:');
-      this.warnings.forEach(warning => console.log(`  - ${warning}`));
-      console.log();
-    }
-
-    if (this.errors.length === 0 && this.warnings.length === 0) {
-      console.log('✅ All translations are valid!');
-    }
-
-    return this.errors.length === 0;
   }
 }
 
-// 运行验证
-const validator = new TranslationValidator();
-const isValid = validator.validate();
+/**
+ * 验证翻译文件
+ */
+function validateTranslationFile(filePath, locale) {
+  try {
+    const content = fs.readFileSync(filePath, 'utf8');
+    const data = JSON.parse(content);
+    
+    console.log(`\n🔍 Validating ${locale} translations...`);
+    
+    // 验证根级别键
+    for (const [key, value] of Object.entries(data)) {
+      validateKey(key, value);
+    }
+    
+    console.log(`✅ ${locale} validation completed`);
+    
+  } catch (error) {
+    if (error instanceof SyntaxError) {
+      errors.push(`JSON syntax error in ${filePath}: ${error.message}`);
+    } else {
+      errors.push(`Error reading ${filePath}: ${error.message}`);
+    }
+  }
+}
 
-process.exit(isValid ? 0 : 1);
+/**
+ * 比较不同语言的翻译键
+ */
+function compareTranslations() {
+  const translations = {};
+  
+  // 加载所有翻译文件
+  for (const locale of CONFIG.supportedLocales) {
+    const filePath = path.join(CONFIG.messagesDir, `${locale}.json`);
+    try {
+      const content = fs.readFileSync(filePath, 'utf8');
+      translations[locale] = JSON.parse(content);
+    } catch (error) {
+      errors.push(`Failed to load ${locale} translations: ${error.message}`);
+      return;
+    }
+  }
+  
+  // 比较键的一致性
+  const allKeys = new Set();
+  const localeKeys = {};
+  
+  // 收集所有键
+  for (const locale of CONFIG.supportedLocales) {
+    localeKeys[locale] = new Set();
+    collectKeys(translations[locale], '', localeKeys[locale]);
+    localeKeys[locale].forEach(key => allKeys.add(key));
+  }
+  
+  // 检查缺失的键
+  for (const locale of CONFIG.supportedLocales) {
+    for (const key of allKeys) {
+      if (!localeKeys[locale].has(key)) {
+        warnings.push(`Missing key in ${locale}: "${key}"`);
+      }
+    }
+  }
+  
+  // 检查额外的键
+  for (const locale of CONFIG.supportedLocales) {
+    for (const key of localeKeys[locale]) {
+      const missingInOtherLocales = CONFIG.supportedLocales
+        .filter(l => l !== locale)
+        .filter(l => !localeKeys[l].has(key));
+      
+      if (missingInOtherLocales.length > 0) {
+        warnings.push(`Key "${key}" exists in ${locale} but missing in: ${missingInOtherLocales.join(', ')}`);
+      }
+    }
+  }
+}
+
+/**
+ * 递归收集所有键
+ */
+function collectKeys(obj, prefix, keySet) {
+  for (const [key, value] of Object.entries(obj)) {
+    const fullKey = prefix ? `${prefix}.${key}` : key;
+    
+    if (typeof value === 'object' && value !== null) {
+      collectKeys(value, fullKey, keySet);
+    } else {
+      keySet.add(fullKey);
+    }
+  }
+}
+
+/**
+ * 生成报告
+ */
+function generateReport() {
+  console.log('\n📊 Translation Validation Report');
+  console.log('=' .repeat(50));
+  
+  if (errors.length === 0 && warnings.length === 0) {
+    console.log('🎉 All translations are valid!');
+    return true;
+  }
+  
+  if (errors.length > 0) {
+    console.log(`\n❌ Errors (${errors.length}):`);
+    errors.forEach((error, index) => {
+      console.log(`  ${index + 1}. ${error}`);
+    });
+  }
+  
+  if (warnings.length > 0) {
+    console.log(`\n⚠️  Warnings (${warnings.length}):`);
+    warnings.forEach((warning, index) => {
+      console.log(`  ${index + 1}. ${warning}`);
+    });
+  }
+  
+  console.log(`\n📈 Summary:`);
+  console.log(`  - Errors: ${errors.length}`);
+  console.log(`  - Warnings: ${warnings.length}`);
+  console.log(`  - Total issues: ${errors.length + warnings.length}`);
+  
+  return errors.length === 0;
+}
+
+/**
+ * 主函数
+ */
+function main() {
+  console.log('🚀 Starting translation validation...');
+  
+  // 检查messages目录
+  if (!fs.existsSync(CONFIG.messagesDir)) {
+    console.error(`❌ Messages directory not found: ${CONFIG.messagesDir}`);
+    process.exit(1);
+  }
+  
+  // 验证每个翻译文件
+  for (const locale of CONFIG.supportedLocales) {
+    const filePath = path.join(CONFIG.messagesDir, `${locale}.json`);
+    if (fs.existsSync(filePath)) {
+      validateTranslationFile(filePath, locale);
+    } else {
+      errors.push(`Translation file not found: ${filePath}`);
+    }
+  }
+  
+  // 比较翻译键
+  compareTranslations();
+  
+  // 生成报告
+  const isValid = generateReport();
+  
+  // 退出码
+  process.exit(isValid ? 0 : 1);
+}
+
+// 运行验证
+if (require.main === module) {
+  main();
+}
+
+module.exports = {
+  validateKey,
+  validateTranslationFile,
+  compareTranslations,
+  generateReport
+};

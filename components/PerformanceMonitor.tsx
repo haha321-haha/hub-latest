@@ -74,12 +74,12 @@ export function PerformanceMetricsDisplay() {
   }
 
   return (
-    <div className="fixed bottom-4 right-4 bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-50 max-w-xs">
+    <div className="fixed bottom-4 right-4 bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-50 max-w-xs hidden sm:block">
       <div className="flex justify-between items-center mb-2">
         <h3 className="font-semibold text-gray-800">Performance Metrics</h3>
         <button
           onClick={() => setIsVisible(false)}
-          className="text-gray-500 hover:text-gray-700"
+          className="text-gray-500 hover:text-gray-700 min-h-[44px] min-w-[44px] flex items-center justify-center"
         >
           ×
         </button>

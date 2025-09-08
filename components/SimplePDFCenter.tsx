@@ -25,10 +25,93 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
   const [activeCategory, setActiveCategory] = useState('immediate');
   const [searchTerm, setSearchTerm] = useState('');
   const [loadingStates, setLoadingStates] = useState<Record<string, boolean>>({});
+  const [isEmergencyMode, setIsEmergencyMode] = useState(false);
   const router = useRouter();
   
   // 🌐 翻译系统
   const t = useTranslations('simplePdfCenter');
+  
+  // 🚨 紧急关键词检测系统
+  const urgentKeywords = t('simplePdfCenter.urgentKeywords');
+  
+  // 🔍 6个用户搜索关键词映射系统
+  const userSearchKeywords = {
+    [t('simplePdfCenter.userSearchKeywords.heatTherapy.keyword')]: { 
+      targetContent: t('simplePdfCenter.userSearchKeywords.heatTherapy.targetContent'), 
+      category: 'immediate', 
+      priority: 'high',
+      autoRedirect: true
+    },
+    [t('simplePdfCenter.userSearchKeywords.warmWaterBottle.keyword')]: { 
+      targetContent: t('simplePdfCenter.userSearchKeywords.warmWaterBottle.targetContent'), 
+      category: 'immediate', 
+      priority: 'high',
+      autoRedirect: true
+    },
+    [t('simplePdfCenter.userSearchKeywords.warmPatch.keyword')]: { 
+      targetContent: t('simplePdfCenter.userSearchKeywords.warmPatch.targetContent'), 
+      category: 'immediate', 
+      priority: 'high',
+      autoRedirect: true
+    },
+    [t('simplePdfCenter.userSearchKeywords.massage.keyword')]: { 
+      targetContent: t('simplePdfCenter.userSearchKeywords.massage.targetContent'), 
+      category: 'immediate', 
+      priority: 'high',
+      autoRedirect: true
+    },
+    [t('simplePdfCenter.userSearchKeywords.bellyMassage.keyword')]: { 
+      targetContent: t('simplePdfCenter.userSearchKeywords.bellyMassage.targetContent'), 
+      category: 'immediate', 
+      priority: 'high',
+      autoRedirect: true
+    },
+    [t('simplePdfCenter.userSearchKeywords.painkiller.keyword')]: { 
+      targetContent: t('simplePdfCenter.userSearchKeywords.painkiller.targetContent'), 
+      category: 'immediate', 
+      priority: 'high',
+      autoRedirect: true
+    }
+  };
+
+  // 🚨 紧急模式检测函数
+  const detectEmergencyMode = (searchTerm: string) => {
+    const hasUrgentKeyword = urgentKeywords.some(keyword => 
+      searchTerm.toLowerCase().includes(keyword.toLowerCase())
+    );
+    
+    if (hasUrgentKeyword && !isEmergencyMode) {
+      setIsEmergencyMode(true);
+      setActiveCategory('immediate');
+      console.log(t('simplePdfCenter.consoleMessages.emergencyModeActivated'));
+    } else if (!hasUrgentKeyword && isEmergencyMode) {
+      setIsEmergencyMode(false);
+    }
+  };
+
+  // 🔍 智能搜索处理函数
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSearchTerm(value);
+    
+    // 检测紧急模式
+    detectEmergencyMode(value);
+    
+    // 检查6个关键词映射
+    if (value.trim()) {
+      const matchedKeyword = Object.keys(userSearchKeywords).find(keyword => 
+        value.toLowerCase().includes(keyword.toLowerCase())
+      );
+      
+      if (matchedKeyword) {
+        const mapping = userSearchKeywords[matchedKeyword as keyof typeof userSearchKeywords];
+        if (mapping.autoRedirect) {
+          setActiveCategory(mapping.category);
+          console.log(`🎯 自动跳转到分类: ${mapping.category} - ${mapping.targetContent}`);
+        }
+      }
+    }
+  };
   
   // 计算总资源数
   const totalResources = SITE_CONFIG.statistics.articles + SITE_CONFIG.statistics.pdfResources;
@@ -69,15 +152,15 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
     'learning-13': 'essential-oils-aromatherapy-menstrual-pain-guide', // 精油芳疗经期疼痛指南
 
     // 长期管理类文章 (9篇) - 基于实际资源定义
-    'management-1': 'recommended-reading-list',                     // 推荐阅读清单
-    'management-2': 'herbal-tea-menstrual-pain-relief',            // 有效草药茶经期疼痛缓解
-    'management-3': 'global-traditional-menstrual-pain-relief',    // 全球传统经期疼痛缓解方法
-    'management-4': 'personal-menstrual-health-profile',           // 个人经期健康档案
-    'management-5': 'herbal-tea-menstrual-pain-relief',           // 抗炎饮食缓解经期疼痛指南 (修复：使用现有文章)
-    'management-6': 'period-friendly-recipes',                     // 经期友好营养食谱
-    'management-7': 'comprehensive-report-non-medical-factors-menstrual-pain', // 长期健康生活方式指南
-    'management-8': 'period-pain-simulator-accuracy-analysis',     // 经期健康追踪与分析
-    'management-9': 'medication-vs-natural-remedies-menstrual-pain' // 可持续健康管理策略
+    'management-1': 'long-term-healthy-lifestyle-guide',           // 长期管理策略
+    'management-2': 'comprehensive-menstrual-sleep-quality-guide', // 生活方式优化
+    'management-3': 'personal-menstrual-health-profile',           // 健康监测系统
+    'management-4': 'menstrual-preventive-care-complete-plan',     // 预防措施实施
+    'management-5': 'comprehensive-report-non-medical-factors-menstrual-pain', // 可持续实践方法
+    'management-6': 'global-traditional-menstrual-pain-relief',    // 社区支持网络
+    'management-7': 'comprehensive-medical-guide-to-dysmenorrhea', // 专业指导服务
+    'management-8': 'period-pain-simulator-accuracy-analysis',     // 技术集成应用
+    'management-9': 'medication-vs-natural-remedies-menstrual-pain' // 质量持续改进
   };
 
   const handleArticleRead = (articleId: string) => {
@@ -212,7 +295,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
       console.log(`PDF下载成功: ${title}`);
 
     } catch (error) {
-      console.error('PDF下载错误:', error);
+      console.error(t('simplePdfCenter.consoleMessages.pdfDownloadError'), error);
       alert(t('alerts.downloadFailed'));
     } finally {
       setLoadingStates(prev => ({ ...prev, [`${pdfId}-download`]: false }));
@@ -312,7 +395,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
         readTime: t('immediate.articles.quickRelief.readTime'),
           category: 'immediate',
-        keywords: t('immediate.articles.quickRelief.keywords')
+        keywords: t('immediate.articles.quickRelief.keywords'),
+        description: t('immediate.articles.quickRelief.description')
         },
         {
           id: 'immediate-2',
@@ -320,14 +404,17 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
         readTime: t('immediate.articles.heatTherapy.readTime'),
           category: 'immediate',
-        keywords: t('immediate.articles.heatTherapy.keywords')
+        keywords: t('immediate.articles.heatTherapy.keywords'),
+        description: t('immediate.articles.heatTherapy.description')
         },
         {
           id: 'immediate-3',
         title: t('immediate.articles.painVsOther.title'),
           type: 'article' as const,
         readTime: t('immediate.articles.painVsOther.readTime'),
-          category: 'immediate'
+          category: 'immediate',
+        keywords: t('immediate.articles.painVsOther.keywords'),
+        description: t('immediate.articles.painVsOther.description')
         },
         {
           id: 'immediate-4',
@@ -335,7 +422,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
         readTime: t('immediate.articles.naturalTherapy.readTime'),
           category: 'immediate',
-        keywords: t('immediate.articles.naturalTherapy.keywords')
+        keywords: t('immediate.articles.naturalTherapy.keywords'),
+        description: t('immediate.articles.naturalTherapy.description')
         },
         {
           id: 'immediate-5',
@@ -343,7 +431,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
         readTime: t('immediate.articles.gingerRelief.readTime'),
           category: 'immediate',
-        keywords: t('immediate.articles.gingerRelief.keywords')
+        keywords: t('immediate.articles.gingerRelief.keywords'),
+        description: t('immediate.articles.gingerRelief.description')
         },
         {
           id: 'immediate-6',
@@ -351,14 +440,17 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
         readTime: t('immediate.articles.nsaidGuide.readTime'),
           category: 'immediate',
-        keywords: t('immediate.articles.nsaidGuide.keywords')
+        keywords: t('immediate.articles.nsaidGuide.keywords'),
+        description: t('immediate.articles.nsaidGuide.description')
         },
         {
           id: 'immediate-7',
         title: t('immediate.articles.specificManagement.title'),
           type: 'article' as const,
         readTime: t('immediate.articles.specificManagement.readTime'),
-          category: 'immediate'
+          category: 'immediate',
+        keywords: t('immediate.articles.specificManagement.keywords'),
+        description: t('immediate.articles.specificManagement.description')
       }
     ];
 
@@ -440,7 +532,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
         readTime: t('preparation.articles.preventiveCare.readTime'),
         category: 'preparation',
-        keywords: t('preparation.articles.preventiveCare.keywords')
+        keywords: t('preparation.articles.preventiveCare.keywords'),
+        description: t('preparation.articles.preventiveCare.description')
         },
         {
           id: 'preparation-2',
@@ -448,7 +541,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
         readTime: t('preparation.articles.sleepQuality.readTime'),
         category: 'preparation',
-        keywords: t('preparation.articles.sleepQuality.keywords')
+        keywords: t('preparation.articles.sleepQuality.keywords'),
+        description: t('preparation.articles.sleepQuality.description')
         },
         {
           id: 'preparation-3',
@@ -456,7 +550,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
         readTime: t('preparation.articles.stressManagement.readTime'),
         category: 'preparation',
-        keywords: t('preparation.articles.stressManagement.keywords')
+        keywords: t('preparation.articles.stressManagement.keywords'),
+        description: t('preparation.articles.stressManagement.description')
         },
         {
           id: 'preparation-4',
@@ -464,7 +559,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
         readTime: t('preparation.articles.baduanjinExercise.readTime'),
           category: 'preparation',
-        keywords: t('preparation.articles.baduanjinExercise.keywords')
+        keywords: t('preparation.articles.baduanjinExercise.keywords'),
+        description: t('preparation.articles.baduanjinExercise.description')
         },
         {
           id: 'preparation-5',
@@ -472,7 +568,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
         readTime: t('preparation.articles.antiInflammatoryDiet.readTime'),
           category: 'preparation',
-        keywords: t('preparation.articles.antiInflammatoryDiet.keywords')
+        keywords: t('preparation.articles.antiInflammatoryDiet.keywords'),
+        description: t('preparation.articles.antiInflammatoryDiet.description')
         },
         {
           id: 'preparation-6',
@@ -480,7 +577,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
         readTime: t('preparation.articles.magnesiumGutHealth.readTime'),
         category: 'preparation',
-        keywords: t('preparation.articles.magnesiumGutHealth.keywords')
+        keywords: t('preparation.articles.magnesiumGutHealth.keywords'),
+        description: t('preparation.articles.magnesiumGutHealth.description')
         },
         {
           id: 'preparation-7',
@@ -488,7 +586,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           type: 'article' as const,
         readTime: t('preparation.articles.periodFriendlyRecipes.readTime'),
         category: 'preparation',
-        keywords: t('preparation.articles.periodFriendlyRecipes.keywords')
+        keywords: t('preparation.articles.periodFriendlyRecipes.keywords'),
+        description: t('preparation.articles.periodFriendlyRecipes.description')
       }
     ];
 
@@ -570,7 +669,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.lifecycleAnalysis.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.lifecycleAnalysis.keywords')
+        keywords: t('learning.articles.lifecycleAnalysis.keywords'),
+        description: t('learning.articles.lifecycleAnalysis.description')
       },
       {
         id: 'learning-2',
@@ -578,7 +678,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.painMechanism.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.painMechanism.keywords')
+        keywords: t('learning.articles.painMechanism.keywords'),
+        description: t('learning.articles.painMechanism.description')
       },
       {
         id: 'learning-3',
@@ -586,7 +687,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.hormoneBalance.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.hormoneBalance.keywords')
+        keywords: t('learning.articles.hormoneBalance.keywords'),
+        description: t('learning.articles.hormoneBalance.description')
       },
       {
         id: 'learning-4',
@@ -594,7 +696,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.nutritionScience.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.nutritionScience.keywords')
+        keywords: t('learning.articles.nutritionScience.keywords'),
+        description: t('learning.articles.nutritionScience.description')
       },
       {
         id: 'learning-5',
@@ -602,7 +705,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.exerciseTherapy.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.exerciseTherapy.keywords')
+        keywords: t('learning.articles.exerciseTherapy.keywords'),
+        description: t('learning.articles.exerciseTherapy.description')
       },
       {
         id: 'learning-6',
@@ -610,7 +714,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.psychologicalFactors.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.psychologicalFactors.keywords')
+        keywords: t('learning.articles.psychologicalFactors.keywords'),
+        description: t('learning.articles.psychologicalFactors.description')
       },
       {
         id: 'learning-7',
@@ -618,7 +723,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.medicalResearch.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.medicalResearch.keywords')
+        keywords: t('learning.articles.medicalResearch.keywords'),
+        description: t('learning.articles.medicalResearch.description')
       },
       {
         id: 'learning-8',
@@ -626,7 +732,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.traditionalMedicine.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.traditionalMedicine.keywords')
+        keywords: t('learning.articles.traditionalMedicine.keywords'),
+        description: t('learning.articles.traditionalMedicine.description')
       },
       {
         id: 'learning-9',
@@ -634,7 +741,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.globalPerspectives.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.globalPerspectives.keywords')
+        keywords: t('learning.articles.globalPerspectives.keywords'),
+        description: t('learning.articles.globalPerspectives.description')
       },
       {
         id: 'learning-10',
@@ -642,7 +750,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.technologyInnovation.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.technologyInnovation.keywords')
+        keywords: t('learning.articles.technologyInnovation.keywords'),
+        description: t('learning.articles.technologyInnovation.description')
       },
       {
         id: 'learning-11',
@@ -650,7 +759,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.communicationSkills.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.communicationSkills.keywords')
+        keywords: t('learning.articles.communicationSkills.keywords'),
+        description: t('learning.articles.communicationSkills.description')
       },
       {
         id: 'learning-12',
@@ -658,7 +768,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.selfCareStrategies.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.selfCareStrategies.keywords')
+        keywords: t('learning.articles.selfCareStrategies.keywords'),
+        description: t('learning.articles.selfCareStrategies.description')
       },
       {
         id: 'learning-13',
@@ -666,7 +777,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('learning.articles.longTermManagement.readTime'),
         category: 'learning',
-        keywords: t('learning.articles.longTermManagement.keywords')
+        keywords: t('learning.articles.longTermManagement.keywords'),
+        description: t('learning.articles.longTermManagement.description')
       }
     ];
 
@@ -775,7 +887,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('management.articles.longTermStrategy.readTime'),
         category: 'management',
-        keywords: t('management.articles.longTermStrategy.keywords')
+        keywords: t('management.articles.longTermStrategy.keywords'),
+        description: t('management.articles.longTermStrategy.description')
       },
       {
         id: 'management-2',
@@ -783,7 +896,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('management.articles.lifestyleOptimization.readTime'),
         category: 'management',
-        keywords: t('management.articles.lifestyleOptimization.keywords')
+        keywords: t('management.articles.lifestyleOptimization.keywords'),
+        description: t('management.articles.lifestyleOptimization.description')
       },
       {
         id: 'management-3',
@@ -791,7 +905,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('management.articles.healthMonitoring.readTime'),
         category: 'management',
-        keywords: t('management.articles.healthMonitoring.keywords')
+        keywords: t('management.articles.healthMonitoring.keywords'),
+        description: t('management.articles.healthMonitoring.description')
       },
       {
         id: 'management-4',
@@ -799,7 +914,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('management.articles.preventiveMeasures.readTime'),
         category: 'management',
-        keywords: t('management.articles.preventiveMeasures.keywords')
+        keywords: t('management.articles.preventiveMeasures.keywords'),
+        description: t('management.articles.preventiveMeasures.description')
       },
       {
         id: 'management-5',
@@ -807,7 +923,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('management.articles.sustainablePractices.readTime'),
         category: 'management',
-        keywords: t('management.articles.sustainablePractices.keywords')
+        keywords: t('management.articles.sustainablePractices.keywords'),
+        description: t('management.articles.sustainablePractices.description')
       },
       {
         id: 'management-6',
@@ -815,7 +932,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('management.articles.communitySupport.readTime'),
         category: 'management',
-        keywords: t('management.articles.communitySupport.keywords')
+        keywords: t('management.articles.communitySupport.keywords'),
+        description: t('management.articles.communitySupport.description')
       },
       {
         id: 'management-7',
@@ -823,7 +941,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('management.articles.professionalGuidance.readTime'),
         category: 'management',
-        keywords: t('management.articles.professionalGuidance.keywords')
+        keywords: t('management.articles.professionalGuidance.keywords'),
+        description: t('management.articles.professionalGuidance.description')
       },
       {
         id: 'management-8',
@@ -831,7 +950,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('management.articles.technologyIntegration.readTime'),
         category: 'management',
-        keywords: t('management.articles.technologyIntegration.keywords')
+        keywords: t('management.articles.technologyIntegration.keywords'),
+        description: t('management.articles.technologyIntegration.description')
       },
       {
         id: 'management-9',
@@ -839,7 +959,8 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         type: 'article' as const,
         readTime: t('management.articles.qualityImprovement.readTime'),
         category: 'management',
-        keywords: t('management.articles.qualityImprovement.keywords')
+        keywords: t('management.articles.qualityImprovement.keywords'),
+        description: t('management.articles.qualityImprovement.description')
       }
     ];
 
@@ -947,24 +1068,62 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
     }
   };
 
-  // 🔍 搜索过滤逻辑 - 增强6个核心关键词匹配
+  // 🔍 增强的搜索过滤逻辑 - 支持紧急关键词和6个用户关键词
   const searchResources = (searchTerm: string): Resource[] => {
     if (!searchTerm.trim()) return [];
     
     const term = searchTerm.toLowerCase();
     const allResources: Resource[] = Object.values(categories).flatMap(cat => cat.resources as Resource[]);
     
+    // 英文关键词映射到中文关键词
+    const englishToChineseKeywords = {
+      'hot compress': t('simplePdfCenter.englishToChineseKeywords.hotCompress'),
+      'warm bag': t('simplePdfCenter.englishToChineseKeywords.warmBag'),
+      'warm baby': t('simplePdfCenter.englishToChineseKeywords.warmBaby'),
+      'massage': t('simplePdfCenter.englishToChineseKeywords.massage'),
+      'belly massage': t('simplePdfCenter.englishToChineseKeywords.bellyMassage'),
+      'painkillers': t('simplePdfCenter.englishToChineseKeywords.painkillers')
+    };
+    
+    // 获取对应的中文关键词（如果搜索的是英文）
+    const chineseKeyword = englishToChineseKeywords[term as keyof typeof englishToChineseKeywords];
+    
     return allResources.filter((resource: Resource) => {
       // 搜索标题
       const titleMatch = resource.title.toLowerCase().includes(term);
       
-      // 搜索关键词
+      // 搜索关键词 - 修复：检查关键词字符串中是否包含搜索词
       const keywordMatch = resource.keywords?.toLowerCase().includes(term) || false;
       
       // 搜索描述
       const descriptionMatch = resource.description?.toLowerCase().includes(term) || false;
       
-      return titleMatch || keywordMatch || descriptionMatch;
+      // 紧急关键词匹配 - 修复：直接匹配搜索词
+      const urgentMatch = urgentKeywords.some(keyword => 
+        term.includes(keyword.toLowerCase()) && (
+          resource.title.toLowerCase().includes(keyword.toLowerCase()) ||
+          resource.keywords?.toLowerCase().includes(keyword.toLowerCase())
+        )
+      );
+      
+      // 用户搜索关键词匹配 - 修复：支持中英文关键词映射
+      const userKeywordMatch = Object.keys(userSearchKeywords).some(keyword => {
+        // 检查搜索词是否包含中文关键词
+        const chineseMatch = term.includes(keyword.toLowerCase()) && (
+          resource.title.toLowerCase().includes(keyword.toLowerCase()) ||
+          resource.keywords?.toLowerCase().includes(keyword.toLowerCase())
+        );
+        
+        // 检查搜索词是否包含对应的英文关键词
+        const englishMatch = chineseKeyword && keyword === chineseKeyword && (
+          resource.title.toLowerCase().includes(term) ||
+          resource.keywords?.toLowerCase().includes(term)
+        );
+        
+        return chineseMatch || englishMatch;
+      });
+      
+      return titleMatch || keywordMatch || descriptionMatch || urgentMatch || userKeywordMatch;
     });
   };
 
@@ -973,19 +1132,19 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
     const isLoading = (action: string) => loadingStates[`${resource.id}${action ? `-${action}` : ''}`] || false;
 
     return (
-      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 sm:p-6 hover:shadow-md transition-shadow duration-200">
-        <div className="flex flex-col space-y-3">
-          <div className="flex items-start justify-between">
-            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 leading-tight">
+      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-3 sm:p-4 lg:p-6 hover:shadow-md transition-shadow duration-200">
+        <div className="flex flex-col space-y-2 sm:space-y-3">
+          <div className="flex items-start justify-between gap-2">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 leading-tight flex-1">
               {resource.title}
             </h3>
-            <span className="text-xs sm:text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded-full whitespace-nowrap ml-2">
+            <span className="text-xs sm:text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded-full whitespace-nowrap flex-shrink-0">
               {resource.readTime}
             </span>
           </div>
           
           {resource.description && (
-            <p className="text-sm text-gray-600 leading-relaxed">
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
               {resource.description}
             </p>
           )}
@@ -998,16 +1157,16 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
             </div>
           )}
           
-          <div className="flex flex-wrap gap-2 pt-2">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-2">
             {resource.type === 'article' ? (
               <button
                 onClick={() => handleArticleRead(resource.id)}
                 disabled={isLoading('read')}
-                className="flex items-center space-x-1 px-3 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[44px] touch-manipulation"
-                aria-label={locale === 'zh' ? '阅读文章' : 'Read article'}
+                className="flex items-center justify-center space-x-1 px-2 sm:px-3 py-2 bg-blue-600 text-white text-xs sm:text-sm font-medium rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[44px] touch-manipulation flex-1 sm:flex-none"
+                aria-label={t('simplePdfCenter.ariaLabels.readArticle')}
               >
                 {isLoading('read') ? (
-                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                  <div className="w-3 h-3 sm:w-4 sm:h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
                 ) : (
                   <span>{t('ui.buttons.read')}</span>
                 )}
@@ -1016,11 +1175,11 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
               <button
                 onClick={() => handlePDFPreview(resource.id)}
                 disabled={isLoading('preview')}
-                className="flex items-center space-x-1 px-3 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[44px] touch-manipulation"
-                aria-label={locale === 'zh' ? '预览PDF' : 'Preview PDF'}
+                className="flex items-center justify-center space-x-1 px-2 sm:px-3 py-2 bg-green-600 text-white text-xs sm:text-sm font-medium rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[44px] touch-manipulation flex-1 sm:flex-none"
+                aria-label={t('simplePdfCenter.ariaLabels.previewPdf')}
               >
                 {isLoading('preview') ? (
-                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                  <div className="w-3 h-3 sm:w-4 sm:h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
                 ) : (
                   <span>{t('ui.buttons.preview')}</span>
                 )}
@@ -1029,25 +1188,26 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
             
             <button
               onClick={() => handleShare(resource.id, resource.title, resource.type)}
-              className="flex items-center space-x-1 px-3 py-2 bg-gray-600 text-white text-sm font-medium rounded-lg hover:bg-gray-700 transition-colors min-h-[44px] touch-manipulation"
-              aria-label={locale === 'zh' ? '分享资源' : 'Share resource'}
+              className="flex items-center justify-center space-x-1 px-2 sm:px-3 py-2 bg-gray-600 text-white text-xs sm:text-sm font-medium rounded-lg hover:bg-gray-700 transition-colors min-h-[44px] touch-manipulation flex-1 sm:flex-none"
+              aria-label={t('simplePdfCenter.ariaLabels.shareResource')}
             >
-              <span>{t('ui.buttons.share')}</span>
+              <span className="hidden sm:inline">{t('ui.buttons.share')}</span>
+              <span className="sm:hidden">分享</span>
             </button>
             
             {resource.type === 'pdf' && (
               <button
                 onClick={() => handlePDFDownload(resource.id, resource.title)}
                 disabled={isLoading('download')}
-                className="flex items-center space-x-1 px-2 sm:px-3 py-2 bg-gray-100 text-gray-700 text-xs sm:text-sm font-medium rounded-lg hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[44px] touch-manipulation"
-                aria-label={locale === 'zh' ? '下载PDF文件' : 'Download PDF file'}
+                className="flex items-center justify-center space-x-1 px-2 py-2 bg-gray-100 text-gray-700 text-xs font-medium rounded-lg hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors min-h-[44px] touch-manipulation flex-1 sm:flex-none"
+                aria-label={t('simplePdfCenter.ariaLabels.downloadPdf')}
               >
                 {isLoading('download') ? (
-                  <div className="w-4 h-4 border-2 border-gray-600 border-t-transparent rounded-full animate-spin" />
+                  <div className="w-3 h-3 sm:w-4 sm:h-4 border-2 border-gray-600 border-t-transparent rounded-full animate-spin" />
                 ) : (
-                  <Download className="w-4 h-4" />
+                  <Download className="w-3 h-3 sm:w-4 sm:h-4" />
                 )}
-                <span className="hidden xs:inline">{t('ui.buttons.download')}</span>
+                <span className="hidden sm:inline">{t('ui.buttons.download')}</span>
               </button>
             )}
           </div>
@@ -1057,20 +1217,20 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
   };
 
   const CategorySection = ({ category }: { category: any }) => (
-    <div className="mb-8">
-      <div className="flex items-center mb-4">
-        <div className={`p-2 rounded-lg ${category.bgColor} ${category.borderColor} border`}>
+    <div className="mb-6 sm:mb-8">
+      <div className="flex items-center mb-4 px-2">
+        <div className={`p-1.5 sm:p-2 rounded-lg ${category.bgColor} ${category.borderColor} border`}>
           <div className={`text-white ${category.color.includes('from-') ? 'bg-gradient-to-r ' + category.color : category.color}`}>
             {category.icon}
           </div>
         </div>
         <div className="ml-3">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900">{category.title}</h2>
-          <p className="text-sm text-gray-600">{category.subtitle}</p>
+          <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900">{category.title}</h2>
+          <p className="text-xs sm:text-sm text-gray-600">{category.subtitle}</p>
         </div>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
         {category.resources.map((resource: Resource) => (
           <ResourceCard key={resource.id} resource={resource} />
         ))}
@@ -1080,63 +1240,80 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 py-4 sm:py-8">
         {/* 页面标题 */}
-        <div className="text-center mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 px-2">
             {t('title')}
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
             {t('description')}
           </p>
         </div>
 
-        {/* 搜索框 */}
-        <div className="mb-8">
-          <div className="relative max-w-2xl mx-auto">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+        {/* 紧急模式提示 */}
+        {isEmergencyMode && (
+          <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+            <div className="flex items-center space-x-2">
+              <AlertCircle className="w-5 h-5 text-red-600" />
+              <p className="text-red-800 font-medium">
+                {t('simplePdfCenter.emergencyMode.message')}
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* 搜索框 - 移动端优化 */}
+        <div className="mb-6 sm:mb-8">
+          <div className="relative max-w-2xl mx-auto px-2">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 sm:w-5 sm:h-5" />
             <input
               type="text"
               placeholder={t('ui.placeholder', { totalResources })}
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg"
+              onChange={handleSearchChange}
+              className={`w-full pl-9 sm:pl-10 pr-4 py-2.5 sm:py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base sm:text-lg touch-manipulation ${
+                isEmergencyMode 
+                  ? 'border-red-300 bg-red-50 focus:ring-red-500' 
+                  : 'border-gray-300'
+              }`}
               aria-label={t('ui.ariaLabel')}
             />
           </div>
-          <p className="text-center text-sm text-gray-500 mt-2">
-            {t('ui.searchHints.desktop')}
+          <p className="text-center text-xs sm:text-sm text-gray-500 mt-2 px-4">
+            <span className="hidden sm:inline">{t('ui.searchHints.desktop')}</span>
+            <span className="sm:hidden">{t('ui.searchHints.mobile')}</span>
           </p>
         </div>
 
-        {/* 我现在需要什么帮助？板块 */}
-        <div className="mb-8">
-          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 text-center">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">
+        {/* 我现在需要什么帮助？板块 - 移动端优化 */}
+        <div className="mb-6 sm:mb-8">
+          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 sm:p-6 text-center">
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-900 mb-4 px-2">
               {t('helpSection.title')}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
               {Object.values(categories).map((category: any) => (
                 <button
                   key={category.id}
                   onClick={() => setActiveCategory(category.id)}
-                  className={`p-4 rounded-lg border-2 transition-all duration-200 ${
+                  className={`p-3 sm:p-4 rounded-lg border-2 transition-all duration-200 min-h-[120px] sm:min-h-[140px] touch-manipulation ${
                     activeCategory === category.id
                       ? `${category.borderColor} border-opacity-100 bg-gradient-to-br ${category.bgColor} text-white`
                       : 'border-gray-200 hover:border-gray-300 bg-white text-gray-700 hover:shadow-md'
                   }`}
                 >
-                  <div className="flex flex-col items-center space-y-2">
-                    <div className={`p-2 rounded-lg ${category.bgColor} ${category.borderColor} border`}>
+                  <div className="flex flex-col items-center space-y-2 h-full justify-between">
+                    <div className={`p-1.5 sm:p-2 rounded-lg ${category.bgColor} ${category.borderColor} border`}>
                       <div className={`text-white ${category.color.includes('from-') ? 'bg-gradient-to-r ' + category.color : category.color}`}>
                         {category.icon}
                       </div>
                     </div>
-                    <div className="text-center">
-                      <h3 className="font-semibold text-sm">{category.title}</h3>
-                      <p className="text-xs opacity-80 mt-1">{category.subtitle}</p>
+                    <div className="text-center flex-1 flex flex-col justify-center">
+                      <h3 className="font-semibold text-xs sm:text-sm leading-tight">{category.title}</h3>
+                      <p className="text-xs opacity-80 mt-1 hidden sm:block">{category.subtitle}</p>
                     </div>
-                    <div className="text-lg font-bold">{category.resources.length}</div>
+                    <div className="text-sm sm:text-lg font-bold">{category.resources.length}</div>
                   </div>
                 </button>
               ))}
@@ -1153,37 +1330,37 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
           </div>
         </div>
 
-        {/* 统计信息 */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-          <div className="bg-white p-4 rounded-lg shadow-sm text-center">
-            <div className="text-2xl font-bold text-blue-600">{totalResources}</div>
-            <div className="text-sm text-gray-600">{t('ui.stats.totalResources')}</div>
+        {/* 统计信息 - 移动端优化 */}
+        <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-6 sm:mb-8">
+          <div className="bg-white p-3 sm:p-4 rounded-lg shadow-sm text-center">
+            <div className="text-lg sm:text-2xl font-bold text-blue-600">{totalResources}</div>
+            <div className="text-xs sm:text-sm text-gray-600 leading-tight">{t('ui.stats.totalResources')}</div>
           </div>
-          <div className="bg-white p-4 rounded-lg shadow-sm text-center">
-            <div className="text-2xl font-bold text-green-600">4</div>
-            <div className="text-sm text-gray-600">{t('ui.stats.categories')}</div>
+          <div className="bg-white p-3 sm:p-4 rounded-lg shadow-sm text-center">
+            <div className="text-lg sm:text-2xl font-bold text-green-600">4</div>
+            <div className="text-xs sm:text-sm text-gray-600 leading-tight">{t('ui.stats.categories')}</div>
           </div>
-          <div className="bg-white p-4 rounded-lg shadow-sm text-center">
-            <div className="text-2xl font-bold text-purple-600">100%</div>
-            <div className="text-sm text-gray-600">{t('ui.stats.evidenceBased')}</div>
+          <div className="bg-white p-3 sm:p-4 rounded-lg shadow-sm text-center">
+            <div className="text-lg sm:text-2xl font-bold text-purple-600">100%</div>
+            <div className="text-xs sm:text-sm text-gray-600 leading-tight">{t('ui.stats.evidenceBased')}</div>
           </div>
         </div>
 
-        {/* 搜索结果或分类展示 */}
+        {/* 搜索结果或分类展示 - 移动端优化 */}
         {searchTerm ? (
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-900 mb-4 px-2">
               {t('ui.searchResults.title')}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
               {searchResources(searchTerm).map((resource: Resource) => (
                 <ResourceCard key={resource.id} resource={resource} />
               ))}
             </div>
             {searchResources(searchTerm).length === 0 && (
-              <div className="text-center py-8">
-                <p className="text-gray-500 mb-2">{t('ui.searchResults.noResults')}</p>
-                <p className="text-sm text-gray-400">{t('ui.searchResults.suggestions')}</p>
+              <div className="text-center py-6 sm:py-8 px-4">
+                <p className="text-gray-500 mb-2 text-sm sm:text-base">{t('ui.searchResults.noResults')}</p>
+                <p className="text-xs sm:text-sm text-gray-400">{t('ui.searchResults.suggestions')}</p>
               </div>
             )}
           </div>
