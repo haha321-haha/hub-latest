@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Locale } from '@/i18n';
 import { SITE_CONFIG } from '@/config/site.config';
+import { PDF_RESOURCES } from '@/config/pdfResources';
 
 interface SimplePDFCenterProps {
   locale: Locale;
@@ -1031,7 +1032,7 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
 
   // 🚀 完整的资源数据 - 基于实际需求的49个资源
   // 计算每个分类的实际资源数量
-  const getCategoryResourceCount = (categoryId: string) => {
+  const getCategoryResourceCount = (categoryId: string): number => {
     // PDF分类到SimplePDFCenter分类的映射
     const pdfCategoryMapping = {
       'immediate': ['management-tools', 'health-management'],
@@ -1112,9 +1113,9 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
         id: pdf.id,
         title: pdf.title,
         type: 'pdf' as const,
-        readTime: pdf.readTime || '5分钟',
+        readTime: 'PDF',
         category: pdf.category || 'immediate',
-        keywords: pdf.keywords || '',
+        keywords: '',
         description: pdf.description || ''
       }))
     ];
@@ -1435,9 +1436,9 @@ const SimplePDFCenter: React.FC<SimplePDFCenterProps> = ({ locale }) => {
                     id: pdf.id,
                     title: pdf.title,
                     type: 'pdf' as const,
-                    readTime: pdf.readTime || '5分钟',
+                    readTime: 'PDF',
                     category: activeCategory,
-                    keywords: pdf.keywords || '',
+                    keywords: '',
                     description: pdf.description || ''
                   }))
               ];

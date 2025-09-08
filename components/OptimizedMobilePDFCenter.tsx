@@ -19,7 +19,7 @@ interface Resource {
   size?: string;
   priority: 'highest' | 'high' | 'medium' | 'low';
   tags: string[];
-  id?: string;
+  id: string;
   slug?: string;
 }
 
@@ -198,13 +198,13 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
     }
     
     return {
-      type: 'article' as const,
+    type: 'article' as const,
       title,
-      readTime: locale === 'zh' ? `${readTimeMinutes}分钟` : `${readTimeMinutes} min read`,
-      priority,
-      tags,
-      id: slug,
-      slug
+    readTime: locale === 'zh' ? `${readTimeMinutes}分钟` : `${readTimeMinutes} min read`,
+    priority,
+    tags,
+    id: slug,
+    slug
     };
   };
 
@@ -312,7 +312,9 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
       // 选择额外的资源来达到目标数量 - 使用稳定的排序避免水合错误
       const needed = targetCount - resources.length;
       // 使用稳定的排序而不是随机排序，避免服务器端和客户端不一致
-      const sorted = allResources.sort((a, b) => a.id.localeCompare(b.id));
+      const sorted = allResources
+        .filter(resource => resource.id) // 过滤掉没有id的资源
+        .sort((a, b) => a.id!.localeCompare(b.id!));
       additionalResources.push(...sorted.slice(0, needed));
     }
     
