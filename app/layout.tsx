@@ -13,7 +13,7 @@ import PerformanceMonitor from '@/components/PerformanceMonitor';
 
 // 🚀 Core Web Vitals 优化的根布局
 export const metadata: Metadata = {
-  metadataBase: new URL('https://periodhub.health'),
+  metadataBase: new URL('https://www.periodhub.health'),
   title: {
     default: 'PeriodHub - 专业痛经缓解方法和月经健康管理平台',
     template: '%s | PeriodHub'
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'zh_CN',
-    url: 'https://periodhub.health',
+    url: 'https://www.periodhub.health',
     siteName: 'PeriodHub',
     title: 'PeriodHub - 专业女性健康管理平台',
     description: '专业的女性月经健康管理平台，提供中西医结合的痛经解决方案。',

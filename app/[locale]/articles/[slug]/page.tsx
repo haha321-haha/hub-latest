@@ -134,7 +134,7 @@ export async function generateMetadata({
   const description = locale === 'zh' ? (article.summary_zh || article.summary) : article.summary;
   const seoTitle = locale === 'zh' ? (article.seo_title_zh || title) : (article.seo_title || title);
   const seoDescription = locale === 'zh' ? (article.seo_description_zh || description) : (article.seo_description || description);
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://periodhub.health';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.periodhub.health';
   const canonicalUrl = article.canonical_url || `/${locale}/articles/${slug}`;
   const articleUrl = `${baseUrl}${canonicalUrl}`;
 
@@ -205,7 +205,7 @@ export default async function ArticlePage({
   // Check if this article contains Mermaid charts
   const hasMermaidCharts = article.content.includes('```mermaid');
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://period-hub.com'
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.periodhub.health'
   const articleUrl = `${baseUrl}/${locale}/articles/${slug}`
 
   return (
