@@ -70,7 +70,7 @@ const nextConfig = {
 
   // 环境变量
   env: {
-    NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL || 'https://periodhub.health',
+    NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.periodhub.health',
   },
 
   // SEO优化
