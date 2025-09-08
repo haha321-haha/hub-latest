@@ -1,32 +1,33 @@
-# SEO优化 - 阻止搜索引擎索引测试和开发页面
+# SEO优化 - 允许搜索引擎索引所有重要页面
 User-agent: *
 Allow: /
 
-# 阻止测试页面
-Disallow: /test*
-Disallow: /*/test*
-Disallow: /dev*
-Disallow: /*/dev*
-Disallow: /staging*
-Disallow: /*/staging*
+# 只阻止明确的测试和开发页面
+Disallow: /test/
+Disallow: /dev/
+Disallow: /staging/
+Disallow: /_next/
+Disallow: /api/
 
-# 阻止重复内容
-Disallow: /*?*download=*
-Disallow: /*?*test=*
+# 阻止查询参数重复内容（但允许正常页面）
 Disallow: /*?*debug=*
+Disallow: /*?*test=*
 
-# 允许重要页面
-Allow: /$
-Allow: /zh$
-Allow: /en$
-Allow: /zh/health-guide$
-Allow: /en/health-guide$
-Allow: /zh/articles$
-Allow: /en/articles$
-Allow: /zh/downloads$
-Allow: /en/downloads$
-Allow: /zh/interactive-tools$
-Allow: /en/interactive-tools$
+# 允许所有语言版本的重要页面
+Allow: /zh/
+Allow: /en/
+Allow: /zh/health-guide/
+Allow: /en/health-guide/
+Allow: /zh/articles/
+Allow: /en/articles/
+Allow: /zh/downloads/
+Allow: /en/downloads/
+Allow: /zh/interactive-tools/
+Allow: /en/interactive-tools/
+Allow: /zh/teen-health/
+Allow: /en/teen-health/
+Allow: /zh/scenario-solutions/
+Allow: /en/scenario-solutions/
 
 # Sitemap
 Sitemap: https://periodhub.health/sitemap.xml

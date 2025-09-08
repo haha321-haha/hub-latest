@@ -26,7 +26,12 @@ export default function middleware(request: NextRequest) {
     'anti-inflammatory-diet-guide',
     'long-term-healthy-lifestyle-guide',
     'period-friendly-recipes',
-    'iud-comprehensive-guide'
+    'iud-comprehensive-guide',
+    // 添加更多缺失的文章slug
+    'ginger-menstrual-pain-relief-guide',
+    'comprehensive-report-non-medical-factors-menstrual-pain',
+    'period-pain-simulator-accuracy-analysis',
+    'medication-vs-natural-remedies-menstrual-pain'
   ];
   
   // 检查是否是文章URL且缺少语言前缀
@@ -39,17 +44,44 @@ export default function middleware(request: NextRequest) {
   }
   
   // 🚨 修复重复内容问题 - 将重复URL重定向到主URL
-  if (pathname === '/zh/articles/health-tracking-and-analysis') {
-    const url = request.nextUrl.clone();
-    url.pathname = '/zh/articles/personal-health-profile';
-    return Response.redirect(url, 301);
+  const duplicateRedirects = {
+    '/zh/articles/health-tracking-and-analysis': '/zh/articles/personal-health-profile',
+    '/zh/articles/pain-complications-management': '/zh/articles/menstrual-pain-complications-management',
+    '/zh/articles/evidence-based-pain-guidance': '/zh/articles/menstrual-pain-medical-guide',
+    '/zh/articles/sustainable-health-management': '/zh/articles/menstrual-preventive-care-complete-plan',
+    '/zh/articles/anti-inflammatory-diet-guide': '/zh/articles/anti-inflammatory-diet-period-pain',
+    '/zh/articles/iud-comprehensive-guide': '/zh/articles/comprehensive-iud-guide',
+    '/zh/articles/long-term-healthy-lifestyle-guide': '/zh/articles/menstrual-preventive-care-complete-plan'
+  };
+  
+  for (const [from, to] of Object.entries(duplicateRedirects)) {
+    if (pathname === from) {
+      const url = request.nextUrl.clone();
+      url.pathname = to;
+      return Response.redirect(url, 301);
+    }
   }
   
   // 特殊路径的301重定向
-  if (pathname === '/teen-health') {
-    const url = request.nextUrl.clone();
-    url.pathname = '/zh/teen-health';
-    return Response.redirect(url, 301);
+  const specialRedirects = {
+    '/teen-health': '/zh/teen-health',
+    '/health-guide': '/zh/health-guide',
+    '/articles': '/zh/articles',
+    '/downloads': '/zh/downloads',
+    '/interactive-tools': '/zh/interactive-tools',
+    '/immediate-relief': '/zh/immediate-relief',
+    '/natural-therapies': '/zh/natural-therapies',
+    '/scenario-solutions': '/zh/scenario-solutions',
+    '/cultural-charms': '/zh/cultural-charms',
+    '/special-therapies': '/zh/special-therapies'
+  };
+  
+  for (const [from, to] of Object.entries(specialRedirects)) {
+    if (pathname === from) {
+      const url = request.nextUrl.clone();
+      url.pathname = to;
+      return Response.redirect(url, 301);
+    }
   }
   
   return intlMiddleware(request);

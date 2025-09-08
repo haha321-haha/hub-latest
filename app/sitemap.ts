@@ -166,6 +166,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     articlePages.push(`/zh/articles/${slug}`);
     articlePages.push(`/en/articles/${slug}`);
   }
+  
+  // 添加缺失的文章页面（修复404错误）
+  const missingArticleSlugs = [
+    'ginger-menstrual-pain-relief-guide',
+    'comprehensive-report-non-medical-factors-menstrual-pain',
+    'period-pain-simulator-accuracy-analysis',
+    'medication-vs-natural-remedies-menstrual-pain'
+  ];
+  
+  for (const slug of missingArticleSlugs) {
+    articlePages.push(`/zh/articles/${slug}`);
+    articlePages.push(`/en/articles/${slug}`);
+  }
 
   // 所有页面
   const allPages = [...staticPages, ...articlePages];

@@ -134,8 +134,8 @@ export async function generateMetadata({
   const description = locale === 'zh' ? (article.summary_zh || article.summary) : article.summary;
   const seoTitle = locale === 'zh' ? (article.seo_title_zh || title) : (article.seo_title || title);
   const seoDescription = locale === 'zh' ? (article.seo_description_zh || description) : (article.seo_description || description);
-  const canonicalUrl = article.canonical_url || `/${locale}/articles/${slug}`;
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://periodhub.health';
+  const canonicalUrl = article.canonical_url || `/${locale}/articles/${slug}`;
   const articleUrl = `${baseUrl}${canonicalUrl}`;
 
   return {
