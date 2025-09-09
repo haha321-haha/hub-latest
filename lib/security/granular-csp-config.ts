@@ -40,6 +40,7 @@ export interface CSPDirectives {
   'base-uri'?: string[];
   'form-action'?: string[];
   'frame-ancestors'?: string[];
+  'frame-src'?: string[];
   'worker-src'?: string[];
   'manifest-src'?: string[];
   'require-sri-for'?: string[];
@@ -306,7 +307,7 @@ export class GranularCSPManager {
     Object.entries(directives).forEach(([directive, sources]) => {
       if (sources && sources.length > 0) {
         // 处理特殊指令
-        let processedSources = sources.map(source => {
+        let processedSources = sources.map((source: string) => {
           if (source === '{NONCE}') {
             return `'nonce-${this.nonce}'`;
           }
