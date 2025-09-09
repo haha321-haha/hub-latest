@@ -41,7 +41,7 @@ export default async function LifeStagesScenarioPage({ params: { locale } }: Pro
   const lifeStages = [
     {
       stage: locale === 'zh' ? '青春期专项方案' : 'Adolescence Program',
-      ageRange: '12-18岁',
+      ageRange: locale === 'zh' ? '12-18岁' : '12-18 years',
       icon: <BookOpen className="w-8 h-8" />,
       color: 'bg-blue-50 text-blue-600',
       borderColor: 'border-blue-200',
@@ -81,7 +81,7 @@ export default async function LifeStagesScenarioPage({ params: { locale } }: Pro
     },
     {
       stage: locale === 'zh' ? '备孕期专项方案' : 'Pre-pregnancy Program',
-      ageRange: '25-35岁',
+      ageRange: locale === 'zh' ? '25-35岁' : '25-35 years',
       icon: <Baby className="w-8 h-8" />,
       color: 'bg-green-50 text-green-600',
       borderColor: 'border-green-200',
@@ -121,7 +121,7 @@ export default async function LifeStagesScenarioPage({ params: { locale } }: Pro
     },
     {
       stage: locale === 'zh' ? '围绝经期专项方案' : 'Perimenopause Program',
-      ageRange: '45-55岁',
+      ageRange: locale === 'zh' ? '45-55岁' : '45-55 years',
       icon: <Flower className="w-8 h-8" />,
       color: 'bg-purple-50 text-purple-600',
       borderColor: 'border-purple-200',
