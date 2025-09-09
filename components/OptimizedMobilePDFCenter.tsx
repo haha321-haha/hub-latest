@@ -248,15 +248,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
         createArticleResource('understandingEducation', 'lifecycleAnalysis', 24, 'highest', [t('tags.cycle'), t('tags.cycle'), t('tags.management')], 'womens-lifecycle-menstrual-pain-analysis'),
         createArticleResource('understandingEducation', 'researchProgress2024', 18, 'highest', [t('tags.evidenceBased'), t('tags.research'), t('tags.medication'), t('tags.painkiller'), t('tags.nsaid')], 'menstrual-pain-research-progress-2024'),
         createArticleResource('medicalGuidance', 'nsaidProfessionalGuide', 25, 'highest', [t('tags.nsaid'), t('tags.painkiller'), t('tags.medication'), t('tags.medication'), t('tags.medication')], 'nsaid-menstrual-pain-professional-guide'),
-        {
-          type: 'article' as const,
-          title: '痛经安全用药全指南：布洛芬/萘普生等NSAIDs使用规范',
-          readTime: locale === 'zh' ? '20分钟' : '20 min read',
-          priority: 'highest' as const,
-          tags: [t('tags.nsaid'), t('tags.painkiller'), t('tags.ibuprofen'), t('tags.medication'), t('tags.medication'), t('tags.medication')],
-          id: 'medication-guide',
-          slug: 'downloads/medication-guide'
-        },
+        createArticleResource('medicalGuidance', 'medicationGuide', 20, 'highest', [t('tags.nsaid'), t('tags.painkiller'), t('tags.ibuprofen'), t('tags.medication'), t('tags.medication'), t('tags.medication')], 'medication-guide'),
         createArticleResource('understandingEducation', 'painDifferential', 25, 'highest', [t('tags.diagnosis'), t('tags.diagnosis'), t('tags.emergency')], 'menstrual-pain-vs-other-abdominal-pain-guide'),
         createArticleResource('understandingEducation', 'understandingCycle', 25, 'high', [t('tags.cycle'), t('tags.education'), t('tags.knowledge')], 'understanding-your-cycle'),
         createArticleResource('understandingEducation', 'insuranceCoverage', 25, 'high', [t('tags.medical'), t('tags.medical'), t('tags.medical'), t('tags.communication')], 'us-menstrual-pain-insurance-coverage-guide'),
