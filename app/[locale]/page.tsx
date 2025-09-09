@@ -8,44 +8,24 @@ import NavigationTabs from '@/components/NavigationTabs';
 
 // 页面级别的metadata
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const isZh = locale === 'zh';
+  const t = await getTranslations({ locale, namespace: 'homePageContent' });
 
   return {
-    title: isZh
-      ? 'PeriodHub - 专业痛经缓解方法和月经健康管理平台 | 科学指导，贴心陪伴'
-      : 'PeriodHub - Professional Menstrual Health Management Platform | Scientific Guidance',
-    description: isZh
-      ? 'PeriodHub专业痛经缓解方案与经期健康管理平台。基于42篇医学指南和24个自测工具，已帮助60万+女性科学应对痛经困扰，获取个性化解决方案，改善生活质量。'
-      : 'PeriodHub - Professional menstrual health platform with 42 medical guidelines and 24 assessment tools. Board-certified OB/GYN reviewed content helping 600K+ women.',
-    keywords: isZh ? [
-      '痛经怎么缓解最快方法', '痛经吃什么药最有效', '月经推迟几天算正常', '月经量少是什么原因',
-      '痛经缓解', '月经疼痛', '经期健康', '女性健康', '月经健康管理', '经期疼痛怎么办', '中医调理',
-      '热敷', '敷热水袋', '暖宝宝', '按摩', '揉肚子', '止痛药',
-      '月经周期', '经期护理', '生理期', '大姨妈', '例假', '月经不调', '经期症状'
-    ] : [
-      'menstrual cramps relief', 'period pain remedies', 'how to stop period pain', 'natural period pain relief',
-      'menstrual health', 'period tracking', 'women health', 'dysmenorrhea treatment'
-    ],
+    title: t('seo.title'),
+    description: t('seo.description'),
+    keywords: t('seo.keywords').split(','),
     openGraph: {
-      title: isZh
-        ? 'PeriodHub - 专业痛经缓解方法和月经健康管理平台'
-        : 'PeriodHub - Professional Menstrual Health Management Platform',
-      description: isZh
-        ? '专业的女性月经健康管理平台，提供科学的痛经缓解方法和个性化健康建议。'
-        : 'Professional menstrual health management platform providing scientific period pain relief methods.',
+      title: t('seo.ogTitle'),
+      description: t('seo.ogDescription'),
       url: `https://www.periodhub.health/${locale}`,
       siteName: 'PeriodHub',
-      locale: isZh ? 'zh_CN' : 'en_US',
+      locale: locale === 'zh' ? 'zh_CN' : 'en_US',
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: isZh
-        ? 'PeriodHub - 专业痛经缓解方法和月经健康管理平台'
-        : 'PeriodHub - Professional Menstrual Health Management Platform',
-      description: isZh
-        ? '专业的女性月经健康管理平台，提供科学的痛经缓解方法。'
-        : 'Professional menstrual health management platform.',
+      title: t('seo.ogTitle'),
+      description: t('seo.ogDescription'),
     },
     alternates: {
       canonical: `https://www.periodhub.health/${locale}`,

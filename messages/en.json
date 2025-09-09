@@ -773,6 +773,18 @@
   "downloadsPage": {
     "title": "PDF Resource Download Center",
     "description": "Download professionally crafted PDF guides, forms, and tools to help you better manage your menstrual health. All resources are available in both Chinese and English.",
+    "seo": {
+      "title": "Articles PDF Download Center - Period Hub Professional Menstrual Health Resources",
+      "description": "Period Hub Articles PDF Download Center, 38 curated menstrual health resources, intelligently categorized by urgency, supporting bilingual downloads",
+      "keywords": "menstrual health,PDF download,period pain relief,article resources,Period Hub"
+    },
+    "banner": {
+      "newVersion": "🎉 New PDF Download Center - 38 curated resources, mobile-optimized experience, urgency-based smart categorization"
+    },
+    "navigation": {
+      "backToArticles": "Back to Articles"
+    },
+    "pageTitle": "📚 Articles PDF Download Center",
     "stats": {
       "totalResources": "Professional Resources",
       "categories": "Categories",
@@ -3005,6 +3017,13 @@
   "homePageContent": {
     "searchPlaceholder": "🔍 Quick search for pain relief solutions...",
     "searchTips": "💡 Try searching \"5-minute relief\", \"heat therapy\", \"prostaglandins\"",
+    "seo": {
+      "title": "PeriodHub - Professional Menstrual Health Management Platform | Scientific Guidance",
+      "description": "PeriodHub - Professional menstrual health platform with 42 medical guidelines and 24 assessment tools. Board-certified OB/GYN reviewed content helping 600K+ women.",
+      "keywords": "menstrual cramps relief,period pain remedies,how to stop period pain,natural period pain relief,menstrual health,period tracking,women health,dysmenorrhea treatment",
+      "ogTitle": "PeriodHub - Professional Menstrual Health Management Platform",
+      "ogDescription": "Professional menstrual health management platform providing scientific period pain relief methods."
+    },
     "statistics": {
       "title": "Data-Driven Results",
       "description": "Statistics based on real user feedback and scientific research",

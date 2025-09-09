@@ -1403,6 +1403,18 @@
   "downloadsPage": {
     "title": "PDF资源下载中心",
     "description": "下载专业制作的PDF指南、表格和工具，帮助您更好地管理经期健康。所有资源均提供中英文版本。",
+    "seo": {
+      "title": "文章PDF下载中心 - Period Hub 经期健康专业资源",
+      "description": "Period Hub文章PDF下载中心，38个精选经期健康资源，基于紧急程度智能分类，支持中英双语下载",
+      "keywords": "经期健康,PDF下载,痛经缓解,文章资源,Period Hub"
+    },
+    "banner": {
+      "newVersion": "🎉 全新PDF下载中心 - 38个精选资源，移动端优化体验，基于紧急程度智能分类"
+    },
+    "navigation": {
+      "backToArticles": "返回文章"
+    },
+    "pageTitle": "📚 文章PDF下载中心",
     "stats": {
       "totalResources": "专业资源",
       "categories": "分类目录",
@@ -3948,6 +3960,13 @@
   "homePageContent": {
     "searchPlaceholder": "🔍 快速搜索痛经解决方案...",
     "searchTips": "💡 试试搜索\"5分钟缓解\"、\"热敷\"、\"前列腺素\"",
+    "seo": {
+      "title": "PeriodHub - 专业痛经缓解方法和月经健康管理平台 | 科学指导，贴心陪伴",
+      "description": "PeriodHub专业痛经缓解方案与经期健康管理平台。基于42篇医学指南和24个自测工具，已帮助60万+女性科学应对痛经困扰，获取个性化解决方案，改善生活质量。",
+      "keywords": "痛经怎么缓解最快方法,痛经吃什么药最有效,月经推迟几天算正常,月经量少是什么原因,痛经缓解,月经疼痛,经期健康,女性健康,月经健康管理,经期疼痛怎么办,中医调理,热敷,敷热水袋,暖宝宝,按摩,揉肚子,止痛药,月经周期,经期护理,生理期,大姨妈,例假,月经不调,经期症状",
+      "ogTitle": "PeriodHub - 专业痛经缓解方法和月经健康管理平台",
+      "ogDescription": "专业的女性月经健康管理平台，提供科学的痛经缓解方法和个性化健康建议。"
+    },
     "statistics": {
       "title": "数据说话，效果可见",
       "description": "基于真实用户反馈和科学研究的数据统计",

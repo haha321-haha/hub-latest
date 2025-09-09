@@ -12,10 +12,12 @@ export async function generateMetadata({
 }: {
   params: { locale: Locale }
 }): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'downloadsPage' });
+  
   return {
-    title: `文章PDF下载中心 - Period Hub 经期健康专业资源`,
-    description: `Period Hub文章PDF下载中心，38个精选经期健康资源，基于紧急程度智能分类，支持中英双语下载`,
-    keywords: '经期健康,PDF下载,痛经缓解,文章资源,Period Hub',
+    title: t('seo.title'),
+    description: t('seo.description'),
+    keywords: t('seo.keywords'),
   };
 }
 
@@ -30,12 +32,13 @@ export default async function DownloadsNewPage({
   params: { locale: Locale }
 }) {
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'downloadsPage' });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100">
       {/* 新版本标识横幅 */}
       <div className="bg-gradient-to-r from-green-400 to-blue-500 text-white p-3 text-center text-sm font-medium">
-        🎉 全新PDF下载中心 - 38个精选资源，移动端优化体验，基于紧急程度智能分类
+        {t('banner.newVersion')}
       </div>
 
       <div className="container mx-auto px-4 py-8">
@@ -46,7 +49,7 @@ export default async function DownloadsNewPage({
             className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium transition-colors group"
           >
             <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-            <span>返回文章</span>
+            <span>{t('navigation.backToArticles')}</span>
           </Link>
         </div>
 
@@ -57,7 +60,7 @@ export default async function DownloadsNewPage({
           </div>
           
           <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-            📚 文章PDF下载中心
+            {t('pageTitle')}
           </h1>
           
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6">

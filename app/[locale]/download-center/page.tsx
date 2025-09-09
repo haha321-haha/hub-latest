@@ -12,10 +12,12 @@ export async function generateMetadata({
 }: {
   params: { locale: Locale }
 }): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'downloadsPage' });
+  
   return {
-    title: `文章PDF下载中心 - Period Hub 经期健康专业资源`,
-    description: `Period Hub文章PDF下载中心，38个精选经期健康资源，基于紧急程度智能分类，支持中英双语下载`,
-    keywords: '经期健康,PDF下载,痛经缓解,文章资源,Period Hub',
+    title: t('seo.title'),
+    description: t('seo.description'),
+    keywords: t('seo.keywords'),
   };
 }
 
