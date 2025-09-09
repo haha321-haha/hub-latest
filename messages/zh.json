@@ -4039,24 +4039,24 @@
     }
   },
   "breathingExercise": {
-    "title": "[ZH] 4-7-8 Breathing Exercise",
-    "description": "[ZH] Based on scientifically validated 4-7-8 breathing method, quickly relieve pain through nervous system regulation. No download required, start practicing immediately.",
+    "title": "4-7-8呼吸练习",
+    "description": "基于科学验证的4-7-8呼吸法，通过调节神经系统快速缓解疼痛。无需下载，立即开始练习。",
     "usageTips": {
-      "title": "[ZH] Usage Tips:",
+      "title": "使用建议：",
       "bestTiming": {
-        "title": "[ZH] Best Timing:",
-        "items": "[ZH] When pain just starts,When feeling anxious,Before sleep for relaxation"
+        "title": "最佳时机：",
+        "items": "疼痛刚开始时,感到焦虑紧张时,睡前放松时"
       },
       "precautions": {
-        "title": "[ZH] Precautions:",
-        "items": "[ZH] Find comfortable sitting or lying position,Beginners: 3-4 cycles are enough,Stop if feeling dizzy"
+        "title": "注意事项：",
+        "items": "找舒适的坐位或躺位,初学者3-4个循环即可,如感到头晕请停止练习"
       }
     },
-    "subtitle": "[ZH] Natural pain relief through nervous system regulation",
+    "subtitle": "通过神经系统调节实现自然疼痛缓解",
     "phases": {
-      "inhale": "[ZH] Inhale",
-      "hold": "[ZH] Hold",
-      "exhale": "[ZH] Exhale"
+      "inhale": "吸气",
+      "hold": "屏气",
+      "exhale": "呼气"
     },
     "instructions": {
       "title": "练习指导",
@@ -4072,13 +4072,13 @@
     },
     "currentPhase": "当前阶段：",
     "benefits": {
-      "title": "[ZH] Scientific Benefits:",
-      "painPerception": "[ZH] Pain Perception",
-      "muscleTension": "[ZH] Muscle Tension",
-      "relaxation": "[ZH] Relaxation"
+      "title": "科学益处：",
+      "painPerception": "疼痛感知",
+      "muscleTension": "肌肉紧张",
+      "relaxation": "放松程度"
     },
-    "tip": "[ZH] 💡 Tip: Find a comfortable sitting or lying position, relax all muscles. Beginners should do 3-4 cycles.",
-    "timeUnit": "[ZH] s"
+    "tip": "💡 提示：找舒适的坐位或躺位，放松所有肌肉。初学者做3-4个循环即可。",
+    "timeUnit": "秒"
   },
   "articles": {
     "insuranceGuide": {
