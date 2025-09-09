@@ -1,0 +1,181 @@
+{
+  "timestamp": "2025-09-09T04:39:20.758Z",
+  "summary": {
+    "totalExpectedImages": 17,
+    "totalFoundImages": 17,
+    "missingImages": 0,
+    "totalUsage": 6,
+    "usageWithAlt": 5,
+    "usageWithoutAlt": 1
+  },
+  "fileCheck": {
+    "medical": [
+      {
+        "name": "female_reproductive_system_anatomy_800x800.png",
+        "path": "public/images/medical/female_reproductive_system_anatomy_800x800.png",
+        "size": 243134,
+        "exists": true
+      },
+      {
+        "name": "female_reproductive_system_anatomy_400x400.png",
+        "path": "public/images/medical/female_reproductive_system_anatomy_400x400.png",
+        "size": 163823,
+        "exists": true
+      },
+      {
+        "name": "female_reproductive_system_anatomy_800x800.webp",
+        "path": "public/images/medical/female_reproductive_system_anatomy_800x800.webp",
+        "size": 84856,
+        "exists": true
+      },
+      {
+        "name": "female_reproductive_system_anatomy_400x400.webp",
+        "path": "public/images/medical/female_reproductive_system_anatomy_400x400.webp",
+        "size": 17690,
+        "exists": true
+      }
+    ],
+    "essentialOils": [
+      {
+        "name": "lavender_essential_oil_800x800.webp",
+        "path": "public/images/essential-oils/lavender_essential_oil_800x800.webp",
+        "size": 167190,
+        "exists": true
+      },
+      {
+        "name": "lavender_essential_oil_400x400.webp",
+        "path": "public/images/essential-oils/lavender_essential_oil_400x400.webp",
+        "size": 26847,
+        "exists": true
+      },
+      {
+        "name": "cinnamon_essential_oil_800x800.webp",
+        "path": "public/images/essential-oils/cinnamon_essential_oil_800x800.webp",
+        "size": 163027,
+        "exists": true
+      },
+      {
+        "name": "cinnamon_essential_oil_400x400.webp",
+        "path": "public/images/essential-oils/cinnamon_essential_oil_400x400.webp",
+        "size": 62928,
+        "exists": true
+      },
+      {
+        "name": "rose_essential_oil_800x800.webp",
+        "path": "public/images/essential-oils/rose_essential_oil_800x800.webp",
+        "size": 230261,
+        "exists": true
+      },
+      {
+        "name": "rose_essential_oil_400x400.webp",
+        "path": "public/images/essential-oils/rose_essential_oil_400x400.webp",
+        "size": 25334,
+        "exists": true
+      },
+      {
+        "name": "marjoram_essential_oil_800x800.webp",
+        "path": "public/images/essential-oils/marjoram_essential_oil_800x800.webp",
+        "size": 83325,
+        "exists": true
+      },
+      {
+        "name": "marjoram_essential_oil_400x400.webp",
+        "path": "public/images/essential-oils/marjoram_essential_oil_400x400.webp",
+        "size": 32005,
+        "exists": true
+      },
+      {
+        "name": "ginger_essential_oil_800x800.webp",
+        "path": "public/images/essential-oils/ginger_essential_oil_800x800.webp",
+        "size": 300401,
+        "exists": true
+      },
+      {
+        "name": "ginger_essential_oil_400x400.webp",
+        "path": "public/images/essential-oils/ginger_essential_oil_400x400.webp",
+        "size": 57605,
+        "exists": true
+      },
+      {
+        "name": "chamomile_essential_oil_800x800.webp",
+        "path": "public/images/essential-oils/chamomile_essential_oil_800x800.webp",
+        "size": 61706,
+        "exists": true
+      },
+      {
+        "name": "chamomile_essential_oil_400x400.webp",
+        "path": "public/images/essential-oils/chamomile_essential_oil_400x400.webp",
+        "size": 22188,
+        "exists": true
+      }
+    ],
+    "tools": [
+      {
+        "name": "assessment-illustration.jpg",
+        "path": "public/images/tools/assessment-illustration.jpg",
+        "size": 29471,
+        "exists": true
+      }
+    ],
+    "missing": []
+  },
+  "usageCheck": [
+    {
+      "file": "app/[locale]/test-image-quality/page.tsx",
+      "line": 33,
+      "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "imageSrc": "/images/tools/assessment-illustration.jpg",
+      "hasAlt": true,
+      "altText": "Original Next.js Image - Default Quality"
+    },
+    {
+      "file": "app/[locale]/test-image-quality/page.tsx",
+      "line": 49,
+      "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "imageSrc": "/images/tools/assessment-illustration.jpg",
+      "hasAlt": true,
+      "altText": "OptimizedImage - High Quality 95"
+    },
+    {
+      "file": "app/[locale]/test-image-quality/page.tsx",
+      "line": 66,
+      "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "imageSrc": "/images/tools/assessment-illustration.jpg",
+      "hasAlt": true,
+      "altText": "OptimizedImage - Medium Quality 80"
+    },
+    {
+      "file": "app/[locale]/test-image-quality/page.tsx",
+      "line": 83,
+      "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "imageSrc": "/images/tools/assessment-illustration.jpg",
+      "hasAlt": true,
+      "altText": "Responsive Image Test"
+    },
+    {
+      "file": "app/[locale]/interactive-tools/page.tsx",
+      "line": 174,
+      "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "imageSrc": "/images/tools/assessment-illustration.jpg",
+      "hasAlt": true,
+      "altText": "Woman using digital health assessment tool on tablet in comfortable home setting"
+    },
+    {
+      "file": "app/[locale]/health-guide/page.tsx",
+      "line": 195,
+      "lineContent": "src=\"/images/medical/female_reproductive_system_anatomy_800x800.png\"",
+      "imageSrc": "/images/medical/female_reproductive_system_anatomy_800x800.png",
+      "hasAlt": false,
+      "altText": null
+    }
+  ],
+  "recommendations": [
+    {
+      "type": "missing_alt",
+      "message": "发现 1 个图片使用缺少alt属性",
+      "details": [
+        "app/[locale]/health-guide/page.tsx:195"
+      ]
+    }
+  ]
+}

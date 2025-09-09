@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-09-09T04:15:34.339Z",
+  "summary": {
+    "totalImages": 4,
+    "totalIssues": 0,
+    "missingAlt": 0,
+    "emptyAlt": 0,
+    "genericAlt": 0,
+    "seoUnfriendly": 0
+  },
+  "imageUsage": [
+    {
+      "file": "lib/pain-tracker/export/ChartRenderer.ts",
+      "line": 261,
+      "lineContent": "<img src=\"${chartImages.trendChart}\" alt=\"Pain trend chart showing pain levels over time\" class=\"chart-image\" />",
+      "imageSrc": "${chartImages.trendChart}",
+      "fullTag": "<img src=\"${chartImages.trendChart}\" alt=\"Pain trend chart showing pain levels over time\" class=\"chart-image\" />",
+      "hasAlt": true,
+      "altValue": "Pain trend chart showing pain levels over time"
+    },
+    {
+      "file": "lib/pain-tracker/export/ChartRenderer.ts",
+      "line": 270,
+      "lineContent": "<img src=\"${chartImages.distributionChart}\" alt=\"Pain level distribution chart\" class=\"chart-image\" />",
+      "imageSrc": "${chartImages.distributionChart}",
+      "fullTag": "<img src=\"${chartImages.distributionChart}\" alt=\"Pain level distribution chart\" class=\"chart-image\" />",
+      "hasAlt": true,
+      "altValue": "Pain level distribution chart"
+    },
+    {
+      "file": "lib/pain-tracker/export/ChartRenderer.ts",
+      "line": 279,
+      "lineContent": "<img src=\"${chartImages.painTypeChart}\" alt=\"Pain type distribution chart\" class=\"chart-image\" />",
+      "imageSrc": "${chartImages.painTypeChart}",
+      "fullTag": "<img src=\"${chartImages.painTypeChart}\" alt=\"Pain type distribution chart\" class=\"chart-image\" />",
+      "hasAlt": true,
+      "altValue": "Pain type distribution chart"
+    },
+    {
+      "file": "lib/pain-tracker/export/ChartRenderer.ts",
+      "line": 288,
+      "lineContent": "<img src=\"${chartImages.cyclePatternChart}\" alt=\"Menstrual cycle pain patterns chart\" class=\"chart-image\" />",
+      "imageSrc": "${chartImages.cyclePatternChart}",
+      "fullTag": "<img src=\"${chartImages.cyclePatternChart}\" alt=\"Menstrual cycle pain patterns chart\" class=\"chart-image\" />",
+      "hasAlt": true,
+      "altValue": "Menstrual cycle pain patterns chart"
+    }
+  ],
+  "issues": {
+    "missingAlt": [],
+    "emptyAlt": [],
+    "genericAlt": [],
+    "seoUnfriendly": []
+  },
+  "recommendations": []
+}

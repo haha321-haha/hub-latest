@@ -14,6 +14,10 @@ interface OptimizedImageProps {
   placeholder?: 'blur' | 'empty';
   blurDataURL?: string;
   quality?: number;
+  // SEO和可访问性增强
+  title?: string;
+  caption?: string;
+  isDecorative?: boolean; // 是否为装饰性图片
 }
 
 export default function OptimizedImage({
@@ -26,10 +30,31 @@ export default function OptimizedImage({
   priority = false,
   placeholder = 'empty',
   blurDataURL,
-  quality = 95
+  quality = 95,
+  title,
+  caption,
+  isDecorative = false
 }: OptimizedImageProps) {
   const [imageError, setImageError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+
+  // 智能alt文本处理
+  const getOptimizedAlt = () => {
+    // 如果是装饰性图片，使用空alt
+    if (isDecorative) {
+      return '';
+    }
+    
+    // 如果alt为空或太短，生成基于文件名的alt
+    if (!alt || alt.trim().length < 3) {
+      const fileName = src.split('/').pop()?.split('.')[0] || 'image';
+      return `Image: ${fileName.replace(/[-_]/g, ' ')}`;
+    }
+    
+    return alt;
+  };
+
+  const optimizedAlt = getOptimizedAlt();
 
   if (imageError) {
     return (
@@ -61,7 +86,8 @@ export default function OptimizedImage({
       )}
       <Image
         src={src}
-        alt={alt}
+        alt={optimizedAlt}
+        title={title || optimizedAlt}
         width={width}
         height={height}
         className={`${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
@@ -84,6 +110,11 @@ export default function OptimizedImage({
           setIsLoading(false);
         }}
       />
+      {caption && (
+        <figcaption className="text-sm text-gray-600 mt-2 text-center italic">
+          {caption}
+        </figcaption>
+      )}
     </div>
   );
 }

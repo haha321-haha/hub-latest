@@ -1,0 +1,3589 @@
+{
+  "timestamp": "2025-09-09T04:13:10.289Z",
+  "summary": {
+    "totalIssues": 203,
+    "missingAlt": 182,
+    "emptyAlt": 0,
+    "genericAlt": 5,
+    "seoUnfriendly": 16
+  },
+  "issues": {
+    "missingAlt": [
+      {
+        "file": "scripts/performance-test.js",
+        "line": 500,
+        "lineContent": "src=\"/hero-image.jpg\"",
+        "imageSrc": "/hero-image.jpg",
+        "fullTag": "src=\"/hero-image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "scripts/performance-test.js",
+        "line": 509,
+        "lineContent": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "imageSrc": "/image.jpg",
+        "fullTag": "src=\"/image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "scripts/optimize-images.js",
+        "line": 237,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "scripts/optimize-images.js",
+        "line": 255,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "scripts/optimize-images.js",
+        "line": 273,
+        "lineContent": "src=\"/images/optimized/content-image.webp\"",
+        "imageSrc": "/images/optimized/content-image.webp",
+        "fullTag": "src=\"/images/optimized/content-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "scripts/optimize-images.js",
+        "line": 291,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "scripts/mobile-responsive-checker.js",
+        "line": 547,
+        "lineContent": "src=\"/image.jpg\"",
+        "imageSrc": "/image.jpg",
+        "fullTag": "src=\"/image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/performance-test.js",
+        "line": 500,
+        "lineContent": "src=\"/hero-image.jpg\"",
+        "imageSrc": "/hero-image.jpg",
+        "fullTag": "src=\"/hero-image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/performance-test.js",
+        "line": 509,
+        "lineContent": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "imageSrc": "/image.jpg",
+        "fullTag": "src=\"/image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/optimize-images.js",
+        "line": 237,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/optimize-images.js",
+        "line": 255,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/optimize-images.js",
+        "line": 273,
+        "lineContent": "src=\"/images/optimized/content-image.webp\"",
+        "imageSrc": "/images/optimized/content-image.webp",
+        "fullTag": "src=\"/images/optimized/content-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/optimize-images.js",
+        "line": 291,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/mobile-responsive-checker.js",
+        "line": 547,
+        "lineContent": "src=\"/image.jpg\"",
+        "imageSrc": "/image.jpg",
+        "fullTag": "src=\"/image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/performance-test.js",
+        "line": 500,
+        "lineContent": "src=\"/hero-image.jpg\"",
+        "imageSrc": "/hero-image.jpg",
+        "fullTag": "src=\"/hero-image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/performance-test.js",
+        "line": 509,
+        "lineContent": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "imageSrc": "/image.jpg",
+        "fullTag": "src=\"/image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+        "line": 237,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+        "line": 255,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+        "line": 273,
+        "lineContent": "src=\"/images/optimized/content-image.webp\"",
+        "imageSrc": "/images/optimized/content-image.webp",
+        "fullTag": "src=\"/images/optimized/content-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+        "line": 291,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/mobile-responsive-checker.js",
+        "line": 547,
+        "lineContent": "src=\"/image.jpg\"",
+        "imageSrc": "/image.jpg",
+        "fullTag": "src=\"/image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/sharp/lib/resize.js",
+        "line": 132,
+        "lineContent": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+        "imageSrc": "/api-resize-fit.svg",
+        "fullTag": "src=\"/api-resize-fit.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 599,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" layout=\"fill\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 599,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 607,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 607,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 617,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 617,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 625,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 625,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 632,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 632,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" layout=\"fill\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 619,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 619,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 623,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 623,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 629,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 629,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 637,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 637,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 644,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 644,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+        "line": 86,
+        "lineContent": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+        "imageSrc": "example.svg",
+        "fullTag": "<img src=\"example.svg\" role=\"img\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+        "line": 86,
+        "lineContent": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+        "imageSrc": "example.svg",
+        "fullTag": "src=\"example.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+        "line": 188,
+        "lineContent": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+        "imageSrc": "xyz",
+        "fullTag": "<img src=\"xyz\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+        "line": 267,
+        "lineContent": "code: '<Image src=\"xyz\" />',",
+        "imageSrc": "xyz",
+        "fullTag": "<Image src=\"xyz\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/app/[locale]/page.tsx",
+        "line": 268,
+        "lineContent": "src=\"/images/infographics/stats-infographic.svg\"",
+        "imageSrc": "/images/infographics/stats-infographic.svg",
+        "fullTag": "src=\"/images/infographics/stats-infographic.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+        "line": 22,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+        "line": 38,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+        "line": 55,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+        "line": 72,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/app/[locale]/interactive-tools/page.tsx",
+        "line": 157,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/sharp/lib/resize.js",
+        "line": 132,
+        "lineContent": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+        "imageSrc": "/api-resize-fit.svg",
+        "fullTag": "src=\"/api-resize-fit.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 599,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" layout=\"fill\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 599,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 607,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 607,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 617,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 617,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 625,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 625,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 632,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 632,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" layout=\"fill\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+        "line": 619,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+        "line": 619,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+        "line": 623,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+        "line": 623,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+        "line": 629,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+        "line": 629,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+        "line": 637,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+        "line": 637,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+        "line": 644,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+        "line": 644,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+        "line": 86,
+        "lineContent": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+        "imageSrc": "example.svg",
+        "fullTag": "<img src=\"example.svg\" role=\"img\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+        "line": 86,
+        "lineContent": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+        "imageSrc": "example.svg",
+        "fullTag": "src=\"example.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+        "line": 188,
+        "lineContent": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+        "imageSrc": "xyz",
+        "fullTag": "<img src=\"xyz\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+        "line": 267,
+        "lineContent": "code: '<Image src=\"xyz\" />',",
+        "imageSrc": "xyz",
+        "fullTag": "<Image src=\"xyz\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/app/[locale]/page.tsx",
+        "line": 268,
+        "lineContent": "src=\"/images/infographics/stats-infographic.svg\"",
+        "imageSrc": "/images/infographics/stats-infographic.svg",
+        "fullTag": "src=\"/images/infographics/stats-infographic.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/app/[locale]/test-image-quality/page.tsx",
+        "line": 22,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/app/[locale]/test-image-quality/page.tsx",
+        "line": 38,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/app/[locale]/test-image-quality/page.tsx",
+        "line": 55,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/app/[locale]/test-image-quality/page.tsx",
+        "line": 72,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/app/[locale]/interactive-tools/page.tsx",
+        "line": 157,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/scripts/performance-test.js",
+        "line": 500,
+        "lineContent": "src=\"/hero-image.jpg\"",
+        "imageSrc": "/hero-image.jpg",
+        "fullTag": "src=\"/hero-image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/scripts/performance-test.js",
+        "line": 509,
+        "lineContent": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "imageSrc": "/image.jpg",
+        "fullTag": "src=\"/image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+        "line": 237,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+        "line": 255,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+        "line": 273,
+        "lineContent": "src=\"/images/optimized/content-image.webp\"",
+        "imageSrc": "/images/optimized/content-image.webp",
+        "fullTag": "src=\"/images/optimized/content-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+        "line": 291,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/scripts/mobile-responsive-checker.js",
+        "line": 547,
+        "lineContent": "src=\"/image.jpg\"",
+        "imageSrc": "/image.jpg",
+        "fullTag": "src=\"/image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/sharp/lib/resize.js",
+        "line": 132,
+        "lineContent": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+        "imageSrc": "/api-resize-fit.svg",
+        "fullTag": "src=\"/api-resize-fit.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 599,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" layout=\"fill\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 599,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 607,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 607,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 617,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 617,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 625,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 625,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 632,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 632,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" layout=\"fill\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 619,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 619,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 623,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 623,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 629,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 629,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 637,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 637,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 644,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+        "line": 644,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+        "line": 86,
+        "lineContent": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+        "imageSrc": "example.svg",
+        "fullTag": "<img src=\"example.svg\" role=\"img\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+        "line": 86,
+        "lineContent": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+        "imageSrc": "example.svg",
+        "fullTag": "src=\"example.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+        "line": 188,
+        "lineContent": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+        "imageSrc": "xyz",
+        "fullTag": "<img src=\"xyz\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+        "line": 267,
+        "lineContent": "code: '<Image src=\"xyz\" />',",
+        "imageSrc": "xyz",
+        "fullTag": "<Image src=\"xyz\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/app/[locale]/page.tsx",
+        "line": 268,
+        "lineContent": "src=\"/images/infographics/stats-infographic.svg\"",
+        "imageSrc": "/images/infographics/stats-infographic.svg",
+        "fullTag": "src=\"/images/infographics/stats-infographic.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+        "line": 22,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+        "line": 38,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+        "line": 55,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+        "line": 72,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/app/[locale]/interactive-tools/page.tsx",
+        "line": 157,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/sharp/lib/resize.js",
+        "line": 132,
+        "lineContent": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+        "imageSrc": "/api-resize-fit.svg",
+        "fullTag": "src=\"/api-resize-fit.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 599,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" layout=\"fill\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 599,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 607,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 607,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 617,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 617,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 625,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 625,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 632,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+        "line": 632,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" layout=\"fill\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+        "line": 611,
+        "lineContent": "// <Image src=\"i.png\" layout=\"fill\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+        "line": 619,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+        "line": 619,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+        "line": 623,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+        "line": 623,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+        "line": 629,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+        "line": 629,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+        "line": 637,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+        "line": 637,
+        "lineContent": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+        "line": 644,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "<Image src=\"i.png\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+        "line": 644,
+        "lineContent": "// <Image src=\"i.png\" />",
+        "imageSrc": "i.png",
+        "fullTag": "src=\"i.png\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+        "line": 86,
+        "lineContent": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+        "imageSrc": "example.svg",
+        "fullTag": "<img src=\"example.svg\" role=\"img\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+        "line": 86,
+        "lineContent": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+        "imageSrc": "example.svg",
+        "fullTag": "src=\"example.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+        "line": 188,
+        "lineContent": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+        "imageSrc": "xyz",
+        "fullTag": "<img src=\"xyz\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "recovered/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+        "line": 267,
+        "lineContent": "code: '<Image src=\"xyz\" />',",
+        "imageSrc": "xyz",
+        "fullTag": "<Image src=\"xyz\" />",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/scripts/performance-test.js",
+        "line": 500,
+        "lineContent": "src=\"/hero-image.jpg\"",
+        "imageSrc": "/hero-image.jpg",
+        "fullTag": "src=\"/hero-image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/scripts/performance-test.js",
+        "line": 509,
+        "lineContent": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "imageSrc": "/image.jpg",
+        "fullTag": "src=\"/image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/scripts/optimize-images.js",
+        "line": 237,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/scripts/optimize-images.js",
+        "line": 255,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/scripts/optimize-images.js",
+        "line": 273,
+        "lineContent": "src=\"/images/optimized/content-image.webp\"",
+        "imageSrc": "/images/optimized/content-image.webp",
+        "fullTag": "src=\"/images/optimized/content-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/scripts/optimize-images.js",
+        "line": 291,
+        "lineContent": "src=\"/images/optimized/hero-image.webp\"",
+        "imageSrc": "/images/optimized/hero-image.webp",
+        "fullTag": "src=\"/images/optimized/hero-image.webp\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/scripts/mobile-responsive-checker.js",
+        "line": 547,
+        "lineContent": "src=\"/image.jpg\"",
+        "imageSrc": "/image.jpg",
+        "fullTag": "src=\"/image.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/app/[locale]/page.tsx",
+        "line": 289,
+        "lineContent": "src=\"/images/infographics/stats-infographic.svg\"",
+        "imageSrc": "/images/infographics/stats-infographic.svg",
+        "fullTag": "src=\"/images/infographics/stats-infographic.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/app/[locale]/test-image-quality/page.tsx",
+        "line": 33,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/app/[locale]/test-image-quality/page.tsx",
+        "line": 49,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/app/[locale]/test-image-quality/page.tsx",
+        "line": 66,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/app/[locale]/test-image-quality/page.tsx",
+        "line": 83,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "hub-latest-main/app/[locale]/interactive-tools/page.tsx",
+        "line": 174,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "app/[locale]/page.tsx",
+        "line": 269,
+        "lineContent": "src=\"/images/infographics/stats-infographic.svg\"",
+        "imageSrc": "/images/infographics/stats-infographic.svg",
+        "fullTag": "src=\"/images/infographics/stats-infographic.svg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "app/[locale]/test-image-quality/page.tsx",
+        "line": 33,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "app/[locale]/test-image-quality/page.tsx",
+        "line": 49,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "app/[locale]/test-image-quality/page.tsx",
+        "line": 66,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "app/[locale]/test-image-quality/page.tsx",
+        "line": 83,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "app/[locale]/interactive-tools/page.tsx",
+        "line": 174,
+        "lineContent": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "imageSrc": "/images/tools/assessment-illustration.jpg",
+        "fullTag": "src=\"/images/tools/assessment-illustration.jpg\"",
+        "hasAlt": false,
+        "altValue": null
+      },
+      {
+        "file": "app/[locale]/health-guide/page.tsx",
+        "line": 195,
+        "lineContent": "src=\"/images/medical/_---female_reproductive_system_anatomy_800x800.png\"",
+        "imageSrc": "/images/medical/_---female_reproductive_system_anatomy_800x800.png",
+        "fullTag": "src=\"/images/medical/_---female_reproductive_system_anatomy_800x800.png\"",
+        "hasAlt": false,
+        "altValue": null
+      }
+    ],
+    "emptyAlt": [],
+    "genericAlt": [
+      {
+        "file": "scripts/performance-test.js",
+        "line": 509,
+        "lineContent": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "imageSrc": "/image.jpg",
+        "fullTag": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "hasAlt": true,
+        "altValue": "Image"
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/performance-test.js",
+        "line": 509,
+        "lineContent": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "imageSrc": "/image.jpg",
+        "fullTag": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "hasAlt": true,
+        "altValue": "Image"
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/performance-test.js",
+        "line": 509,
+        "lineContent": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "imageSrc": "/image.jpg",
+        "fullTag": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "hasAlt": true,
+        "altValue": "Image"
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/scripts/performance-test.js",
+        "line": 509,
+        "lineContent": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "imageSrc": "/image.jpg",
+        "fullTag": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "hasAlt": true,
+        "altValue": "Image"
+      },
+      {
+        "file": "hub-latest-main/scripts/performance-test.js",
+        "line": 509,
+        "lineContent": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "imageSrc": "/image.jpg",
+        "fullTag": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+        "hasAlt": true,
+        "altValue": "Image"
+      }
+    ],
+    "seoUnfriendly": [
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/sharp/lib/resize.js",
+        "line": 132,
+        "lineContent": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+        "imageSrc": "/api-resize-fit.svg",
+        "fullTag": "<img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+        "hasAlt": true,
+        "altValue": "Examples of various values for the fit property when resizing"
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/mermaid/dist/mermaid.min.js",
+        "line": 439,
+        "lineContent": "`}strong({tokens:t}){return`<strong>${this.parser.parseInline(t)}</strong>`}em({tokens:t}){return`<em>${this.parser.parseInline(t)}</em>`}codespan({text:t}){return`<code>${xc(t,!0)}</code>`}br(t){return\"<br>\"}del({tokens:t}){return`<del>${this.parser.parseInline(t)}</del>`}link({href:t,title:e,tokens:r}){let n=this.parser.parseInline(r),i=eQ(t);if(i===null)return n;t=i;let a='<a href=\"'+t+'\"';return e&&(a+=' title=\"'+xc(e)+'\"'),a+=\">\"+n+\"</a>\",a}image({href:t,title:e,text:r,tokens:n}){n&&(r=this.parser.parseInline(n,this.parser.textRenderer));let i=eQ(t);if(i===null)return xc(r);t=i;let a=`<img src=\"${t}\" alt=\"${r}\"`;return e&&(a+=` title=\"${xc(e)}\"`),a+=\">\",a}text(t){return\"tokens\"in t&&t.tokens?this.parser.parseInline(t.tokens):\"escaped\"in t&&t.escaped?t.text:xc(t.text)}},cL=class{static{o(this,\"_\")}strong({text:t}){return t}em({text:t}){return t}codespan({text:t}){return t}del({text:t}){return t}html({text:t}){return t}text({text:t}){return t}link({text:t}){return\"\"+t}image({text:t}){return\"\"+t}br(){return\"\"}},Mu=class eL{static{o(this,\"a\")}options;renderer;textRenderer;constructor(e){this.options=e||Ud,this.options.renderer=this.options.renderer||new GT,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new cL}static parse(e,r){return new eL(r).parse(e)}static parseInline(e,r){return new eL(r).parseInline(e)}parse(e,r=!0){let n=\"\";for(let i=0;i<e.length;i++){let a=e[i];if(this.options.extensions?.renderers?.[a.type]){let l=a,u=this.options.extensions.renderers[l.type].call({parser:this},l);if(u!==!1||![\"space\",\"hr\",\"heading\",\"code\",\"table\",\"blockquote\",\"list\",\"html\",\"paragraph\",\"text\"].includes(l.type)){n+=u||\"\";continue}}let s=a;switch(s.type){case\"space\":{n+=this.renderer.space(s);continue}case\"hr\":{n+=this.renderer.hr(s);continue}case\"heading\":{n+=this.renderer.heading(s);continue}case\"code\":{n+=this.renderer.code(s);continue}case\"table\":{n+=this.renderer.table(s);continue}case\"blockquote\":{n+=this.renderer.blockquote(s);continue}case\"list\":{n+=this.renderer.list(s);continue}case\"html\":{n+=this.renderer.html(s);continue}case\"paragraph\":{n+=this.renderer.paragraph(s);continue}case\"text\":{let l=s,u=this.renderer.text(l);for(;i+1<e.length&&e[i+1].type===\"text\";)l=e[++i],u+=`",
+        "imageSrc": "${t}",
+        "fullTag": "<img src=\"${t}\" alt=\"${r}\"`;return e&&(a+=` title=\"${xc(e)}\"`),a+=\">",
+        "hasAlt": true,
+        "altValue": "${r}"
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/marked/lib/marked.umd.js",
+        "line": 69,
+        "lineContent": "`}strong({tokens:e}){return`<strong>${this.parser.parseInline(e)}</strong>`}em({tokens:e}){return`<em>${this.parser.parseInline(e)}</em>`}codespan({text:e}){return`<code>${w(e,!0)}</code>`}br(e){return\"<br>\"}del({tokens:e}){return`<del>${this.parser.parseInline(e)}</del>`}link({href:e,title:t,tokens:n}){let r=this.parser.parseInline(n),i=V(e);if(i===null)return r;e=i;let s='<a href=\"'+e+'\"';return t&&(s+=' title=\"'+w(t)+'\"'),s+=\">\"+r+\"</a>\",s}image({href:e,title:t,text:n,tokens:r}){r&&(n=this.parser.parseInline(r,this.parser.textRenderer));let i=V(e);if(i===null)return w(n);e=i;let s=`<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">\",s}text(e){return\"tokens\"in e&&e.tokens?this.parser.parseInline(e.tokens):\"escaped\"in e&&e.escaped?e.text:w(e.text)}};var S=class{strong({text:e}){return e}em({text:e}){return e}codespan({text:e}){return e}del({text:e}){return e}html({text:e}){return e}text({text:e}){return e}link({text:e}){return\"\"+e}image({text:e}){return\"\"+e}br(){return\"\"}};var b=class a{options;renderer;textRenderer;constructor(e){this.options=e||O,this.options.renderer=this.options.renderer||new P,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new S}static parse(e,t){return new a(t).parse(e)}static parseInline(e,t){return new a(t).parseInline(e)}parse(e,t=!0){let n=\"\";for(let r=0;r<e.length;r++){let i=e[r];if(this.options.extensions?.renderers?.[i.type]){let o=i,l=this.options.extensions.renderers[o.type].call({parser:this},o);if(l!==!1||![\"space\",\"hr\",\"heading\",\"code\",\"table\",\"blockquote\",\"list\",\"html\",\"paragraph\",\"text\"].includes(o.type)){n+=l||\"\";continue}}let s=i;switch(s.type){case\"space\":{n+=this.renderer.space(s);continue}case\"hr\":{n+=this.renderer.hr(s);continue}case\"heading\":{n+=this.renderer.heading(s);continue}case\"code\":{n+=this.renderer.code(s);continue}case\"table\":{n+=this.renderer.table(s);continue}case\"blockquote\":{n+=this.renderer.blockquote(s);continue}case\"list\":{n+=this.renderer.list(s);continue}case\"html\":{n+=this.renderer.html(s);continue}case\"paragraph\":{n+=this.renderer.paragraph(s);continue}case\"text\":{let o=s,l=this.renderer.text(o);for(;r+1<e.length&&e[r+1].type===\"text\";)o=e[++r],l+=`",
+        "imageSrc": "${e}",
+        "fullTag": "<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">",
+        "hasAlt": true,
+        "altValue": "${n}"
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/marked/lib/marked.esm.js",
+        "line": 69,
+        "lineContent": "`}strong({tokens:e}){return`<strong>${this.parser.parseInline(e)}</strong>`}em({tokens:e}){return`<em>${this.parser.parseInline(e)}</em>`}codespan({text:e}){return`<code>${w(e,!0)}</code>`}br(e){return\"<br>\"}del({tokens:e}){return`<del>${this.parser.parseInline(e)}</del>`}link({href:e,title:t,tokens:n}){let r=this.parser.parseInline(n),i=J(e);if(i===null)return r;e=i;let s='<a href=\"'+e+'\"';return t&&(s+=' title=\"'+w(t)+'\"'),s+=\">\"+r+\"</a>\",s}image({href:e,title:t,text:n,tokens:r}){r&&(n=this.parser.parseInline(r,this.parser.textRenderer));let i=J(e);if(i===null)return w(n);e=i;let s=`<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">\",s}text(e){return\"tokens\"in e&&e.tokens?this.parser.parseInline(e.tokens):\"escaped\"in e&&e.escaped?e.text:w(e.text)}};var S=class{strong({text:e}){return e}em({text:e}){return e}codespan({text:e}){return e}del({text:e}){return e}html({text:e}){return e}text({text:e}){return e}link({text:e}){return\"\"+e}image({text:e}){return\"\"+e}br(){return\"\"}};var R=class l{options;renderer;textRenderer;constructor(e){this.options=e||O,this.options.renderer=this.options.renderer||new P,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new S}static parse(e,t){return new l(t).parse(e)}static parseInline(e,t){return new l(t).parseInline(e)}parse(e,t=!0){let n=\"\";for(let r=0;r<e.length;r++){let i=e[r];if(this.options.extensions?.renderers?.[i.type]){let o=i,a=this.options.extensions.renderers[o.type].call({parser:this},o);if(a!==!1||![\"space\",\"hr\",\"heading\",\"code\",\"table\",\"blockquote\",\"list\",\"html\",\"paragraph\",\"text\"].includes(o.type)){n+=a||\"\";continue}}let s=i;switch(s.type){case\"space\":{n+=this.renderer.space(s);continue}case\"hr\":{n+=this.renderer.hr(s);continue}case\"heading\":{n+=this.renderer.heading(s);continue}case\"code\":{n+=this.renderer.code(s);continue}case\"table\":{n+=this.renderer.table(s);continue}case\"blockquote\":{n+=this.renderer.blockquote(s);continue}case\"list\":{n+=this.renderer.list(s);continue}case\"html\":{n+=this.renderer.html(s);continue}case\"paragraph\":{n+=this.renderer.paragraph(s);continue}case\"text\":{let o=s,a=this.renderer.text(o);for(;r+1<e.length&&e[r+1].type===\"text\";)o=e[++r],a+=`",
+        "imageSrc": "${e}",
+        "fullTag": "<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">",
+        "hasAlt": true,
+        "altValue": "${n}"
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/sharp/lib/resize.js",
+        "line": 132,
+        "lineContent": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+        "imageSrc": "/api-resize-fit.svg",
+        "fullTag": "<img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+        "hasAlt": true,
+        "altValue": "Examples of various values for the fit property when resizing"
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/mermaid/dist/mermaid.min.js",
+        "line": 439,
+        "lineContent": "`}strong({tokens:t}){return`<strong>${this.parser.parseInline(t)}</strong>`}em({tokens:t}){return`<em>${this.parser.parseInline(t)}</em>`}codespan({text:t}){return`<code>${xc(t,!0)}</code>`}br(t){return\"<br>\"}del({tokens:t}){return`<del>${this.parser.parseInline(t)}</del>`}link({href:t,title:e,tokens:r}){let n=this.parser.parseInline(r),i=eQ(t);if(i===null)return n;t=i;let a='<a href=\"'+t+'\"';return e&&(a+=' title=\"'+xc(e)+'\"'),a+=\">\"+n+\"</a>\",a}image({href:t,title:e,text:r,tokens:n}){n&&(r=this.parser.parseInline(n,this.parser.textRenderer));let i=eQ(t);if(i===null)return xc(r);t=i;let a=`<img src=\"${t}\" alt=\"${r}\"`;return e&&(a+=` title=\"${xc(e)}\"`),a+=\">\",a}text(t){return\"tokens\"in t&&t.tokens?this.parser.parseInline(t.tokens):\"escaped\"in t&&t.escaped?t.text:xc(t.text)}},cL=class{static{o(this,\"_\")}strong({text:t}){return t}em({text:t}){return t}codespan({text:t}){return t}del({text:t}){return t}html({text:t}){return t}text({text:t}){return t}link({text:t}){return\"\"+t}image({text:t}){return\"\"+t}br(){return\"\"}},Mu=class eL{static{o(this,\"a\")}options;renderer;textRenderer;constructor(e){this.options=e||Ud,this.options.renderer=this.options.renderer||new GT,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new cL}static parse(e,r){return new eL(r).parse(e)}static parseInline(e,r){return new eL(r).parseInline(e)}parse(e,r=!0){let n=\"\";for(let i=0;i<e.length;i++){let a=e[i];if(this.options.extensions?.renderers?.[a.type]){let l=a,u=this.options.extensions.renderers[l.type].call({parser:this},l);if(u!==!1||![\"space\",\"hr\",\"heading\",\"code\",\"table\",\"blockquote\",\"list\",\"html\",\"paragraph\",\"text\"].includes(l.type)){n+=u||\"\";continue}}let s=a;switch(s.type){case\"space\":{n+=this.renderer.space(s);continue}case\"hr\":{n+=this.renderer.hr(s);continue}case\"heading\":{n+=this.renderer.heading(s);continue}case\"code\":{n+=this.renderer.code(s);continue}case\"table\":{n+=this.renderer.table(s);continue}case\"blockquote\":{n+=this.renderer.blockquote(s);continue}case\"list\":{n+=this.renderer.list(s);continue}case\"html\":{n+=this.renderer.html(s);continue}case\"paragraph\":{n+=this.renderer.paragraph(s);continue}case\"text\":{let l=s,u=this.renderer.text(l);for(;i+1<e.length&&e[i+1].type===\"text\";)l=e[++i],u+=`",
+        "imageSrc": "${t}",
+        "fullTag": "<img src=\"${t}\" alt=\"${r}\"`;return e&&(a+=` title=\"${xc(e)}\"`),a+=\">",
+        "hasAlt": true,
+        "altValue": "${r}"
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/marked/lib/marked.umd.js",
+        "line": 69,
+        "lineContent": "`}strong({tokens:e}){return`<strong>${this.parser.parseInline(e)}</strong>`}em({tokens:e}){return`<em>${this.parser.parseInline(e)}</em>`}codespan({text:e}){return`<code>${w(e,!0)}</code>`}br(e){return\"<br>\"}del({tokens:e}){return`<del>${this.parser.parseInline(e)}</del>`}link({href:e,title:t,tokens:n}){let r=this.parser.parseInline(n),i=V(e);if(i===null)return r;e=i;let s='<a href=\"'+e+'\"';return t&&(s+=' title=\"'+w(t)+'\"'),s+=\">\"+r+\"</a>\",s}image({href:e,title:t,text:n,tokens:r}){r&&(n=this.parser.parseInline(r,this.parser.textRenderer));let i=V(e);if(i===null)return w(n);e=i;let s=`<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">\",s}text(e){return\"tokens\"in e&&e.tokens?this.parser.parseInline(e.tokens):\"escaped\"in e&&e.escaped?e.text:w(e.text)}};var S=class{strong({text:e}){return e}em({text:e}){return e}codespan({text:e}){return e}del({text:e}){return e}html({text:e}){return e}text({text:e}){return e}link({text:e}){return\"\"+e}image({text:e}){return\"\"+e}br(){return\"\"}};var b=class a{options;renderer;textRenderer;constructor(e){this.options=e||O,this.options.renderer=this.options.renderer||new P,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new S}static parse(e,t){return new a(t).parse(e)}static parseInline(e,t){return new a(t).parseInline(e)}parse(e,t=!0){let n=\"\";for(let r=0;r<e.length;r++){let i=e[r];if(this.options.extensions?.renderers?.[i.type]){let o=i,l=this.options.extensions.renderers[o.type].call({parser:this},o);if(l!==!1||![\"space\",\"hr\",\"heading\",\"code\",\"table\",\"blockquote\",\"list\",\"html\",\"paragraph\",\"text\"].includes(o.type)){n+=l||\"\";continue}}let s=i;switch(s.type){case\"space\":{n+=this.renderer.space(s);continue}case\"hr\":{n+=this.renderer.hr(s);continue}case\"heading\":{n+=this.renderer.heading(s);continue}case\"code\":{n+=this.renderer.code(s);continue}case\"table\":{n+=this.renderer.table(s);continue}case\"blockquote\":{n+=this.renderer.blockquote(s);continue}case\"list\":{n+=this.renderer.list(s);continue}case\"html\":{n+=this.renderer.html(s);continue}case\"paragraph\":{n+=this.renderer.paragraph(s);continue}case\"text\":{let o=s,l=this.renderer.text(o);for(;r+1<e.length&&e[r+1].type===\"text\";)o=e[++r],l+=`",
+        "imageSrc": "${e}",
+        "fullTag": "<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">",
+        "hasAlt": true,
+        "altValue": "${n}"
+      },
+      {
+        "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/marked/lib/marked.esm.js",
+        "line": 69,
+        "lineContent": "`}strong({tokens:e}){return`<strong>${this.parser.parseInline(e)}</strong>`}em({tokens:e}){return`<em>${this.parser.parseInline(e)}</em>`}codespan({text:e}){return`<code>${w(e,!0)}</code>`}br(e){return\"<br>\"}del({tokens:e}){return`<del>${this.parser.parseInline(e)}</del>`}link({href:e,title:t,tokens:n}){let r=this.parser.parseInline(n),i=J(e);if(i===null)return r;e=i;let s='<a href=\"'+e+'\"';return t&&(s+=' title=\"'+w(t)+'\"'),s+=\">\"+r+\"</a>\",s}image({href:e,title:t,text:n,tokens:r}){r&&(n=this.parser.parseInline(r,this.parser.textRenderer));let i=J(e);if(i===null)return w(n);e=i;let s=`<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">\",s}text(e){return\"tokens\"in e&&e.tokens?this.parser.parseInline(e.tokens):\"escaped\"in e&&e.escaped?e.text:w(e.text)}};var S=class{strong({text:e}){return e}em({text:e}){return e}codespan({text:e}){return e}del({text:e}){return e}html({text:e}){return e}text({text:e}){return e}link({text:e}){return\"\"+e}image({text:e}){return\"\"+e}br(){return\"\"}};var R=class l{options;renderer;textRenderer;constructor(e){this.options=e||O,this.options.renderer=this.options.renderer||new P,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new S}static parse(e,t){return new l(t).parse(e)}static parseInline(e,t){return new l(t).parseInline(e)}parse(e,t=!0){let n=\"\";for(let r=0;r<e.length;r++){let i=e[r];if(this.options.extensions?.renderers?.[i.type]){let o=i,a=this.options.extensions.renderers[o.type].call({parser:this},o);if(a!==!1||![\"space\",\"hr\",\"heading\",\"code\",\"table\",\"blockquote\",\"list\",\"html\",\"paragraph\",\"text\"].includes(o.type)){n+=a||\"\";continue}}let s=i;switch(s.type){case\"space\":{n+=this.renderer.space(s);continue}case\"hr\":{n+=this.renderer.hr(s);continue}case\"heading\":{n+=this.renderer.heading(s);continue}case\"code\":{n+=this.renderer.code(s);continue}case\"table\":{n+=this.renderer.table(s);continue}case\"blockquote\":{n+=this.renderer.blockquote(s);continue}case\"list\":{n+=this.renderer.list(s);continue}case\"html\":{n+=this.renderer.html(s);continue}case\"paragraph\":{n+=this.renderer.paragraph(s);continue}case\"text\":{let o=s,a=this.renderer.text(o);for(;r+1<e.length&&e[r+1].type===\"text\";)o=e[++r],a+=`",
+        "imageSrc": "${e}",
+        "fullTag": "<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">",
+        "hasAlt": true,
+        "altValue": "${n}"
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/sharp/lib/resize.js",
+        "line": 132,
+        "lineContent": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+        "imageSrc": "/api-resize-fit.svg",
+        "fullTag": "<img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+        "hasAlt": true,
+        "altValue": "Examples of various values for the fit property when resizing"
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/mermaid/dist/mermaid.min.js",
+        "line": 439,
+        "lineContent": "`}strong({tokens:t}){return`<strong>${this.parser.parseInline(t)}</strong>`}em({tokens:t}){return`<em>${this.parser.parseInline(t)}</em>`}codespan({text:t}){return`<code>${xc(t,!0)}</code>`}br(t){return\"<br>\"}del({tokens:t}){return`<del>${this.parser.parseInline(t)}</del>`}link({href:t,title:e,tokens:r}){let n=this.parser.parseInline(r),i=eQ(t);if(i===null)return n;t=i;let a='<a href=\"'+t+'\"';return e&&(a+=' title=\"'+xc(e)+'\"'),a+=\">\"+n+\"</a>\",a}image({href:t,title:e,text:r,tokens:n}){n&&(r=this.parser.parseInline(n,this.parser.textRenderer));let i=eQ(t);if(i===null)return xc(r);t=i;let a=`<img src=\"${t}\" alt=\"${r}\"`;return e&&(a+=` title=\"${xc(e)}\"`),a+=\">\",a}text(t){return\"tokens\"in t&&t.tokens?this.parser.parseInline(t.tokens):\"escaped\"in t&&t.escaped?t.text:xc(t.text)}},cL=class{static{o(this,\"_\")}strong({text:t}){return t}em({text:t}){return t}codespan({text:t}){return t}del({text:t}){return t}html({text:t}){return t}text({text:t}){return t}link({text:t}){return\"\"+t}image({text:t}){return\"\"+t}br(){return\"\"}},Mu=class eL{static{o(this,\"a\")}options;renderer;textRenderer;constructor(e){this.options=e||Ud,this.options.renderer=this.options.renderer||new GT,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new cL}static parse(e,r){return new eL(r).parse(e)}static parseInline(e,r){return new eL(r).parseInline(e)}parse(e,r=!0){let n=\"\";for(let i=0;i<e.length;i++){let a=e[i];if(this.options.extensions?.renderers?.[a.type]){let l=a,u=this.options.extensions.renderers[l.type].call({parser:this},l);if(u!==!1||![\"space\",\"hr\",\"heading\",\"code\",\"table\",\"blockquote\",\"list\",\"html\",\"paragraph\",\"text\"].includes(l.type)){n+=u||\"\";continue}}let s=a;switch(s.type){case\"space\":{n+=this.renderer.space(s);continue}case\"hr\":{n+=this.renderer.hr(s);continue}case\"heading\":{n+=this.renderer.heading(s);continue}case\"code\":{n+=this.renderer.code(s);continue}case\"table\":{n+=this.renderer.table(s);continue}case\"blockquote\":{n+=this.renderer.blockquote(s);continue}case\"list\":{n+=this.renderer.list(s);continue}case\"html\":{n+=this.renderer.html(s);continue}case\"paragraph\":{n+=this.renderer.paragraph(s);continue}case\"text\":{let l=s,u=this.renderer.text(l);for(;i+1<e.length&&e[i+1].type===\"text\";)l=e[++i],u+=`",
+        "imageSrc": "${t}",
+        "fullTag": "<img src=\"${t}\" alt=\"${r}\"`;return e&&(a+=` title=\"${xc(e)}\"`),a+=\">",
+        "hasAlt": true,
+        "altValue": "${r}"
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/marked/lib/marked.umd.js",
+        "line": 69,
+        "lineContent": "`}strong({tokens:e}){return`<strong>${this.parser.parseInline(e)}</strong>`}em({tokens:e}){return`<em>${this.parser.parseInline(e)}</em>`}codespan({text:e}){return`<code>${w(e,!0)}</code>`}br(e){return\"<br>\"}del({tokens:e}){return`<del>${this.parser.parseInline(e)}</del>`}link({href:e,title:t,tokens:n}){let r=this.parser.parseInline(n),i=V(e);if(i===null)return r;e=i;let s='<a href=\"'+e+'\"';return t&&(s+=' title=\"'+w(t)+'\"'),s+=\">\"+r+\"</a>\",s}image({href:e,title:t,text:n,tokens:r}){r&&(n=this.parser.parseInline(r,this.parser.textRenderer));let i=V(e);if(i===null)return w(n);e=i;let s=`<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">\",s}text(e){return\"tokens\"in e&&e.tokens?this.parser.parseInline(e.tokens):\"escaped\"in e&&e.escaped?e.text:w(e.text)}};var S=class{strong({text:e}){return e}em({text:e}){return e}codespan({text:e}){return e}del({text:e}){return e}html({text:e}){return e}text({text:e}){return e}link({text:e}){return\"\"+e}image({text:e}){return\"\"+e}br(){return\"\"}};var b=class a{options;renderer;textRenderer;constructor(e){this.options=e||O,this.options.renderer=this.options.renderer||new P,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new S}static parse(e,t){return new a(t).parse(e)}static parseInline(e,t){return new a(t).parseInline(e)}parse(e,t=!0){let n=\"\";for(let r=0;r<e.length;r++){let i=e[r];if(this.options.extensions?.renderers?.[i.type]){let o=i,l=this.options.extensions.renderers[o.type].call({parser:this},o);if(l!==!1||![\"space\",\"hr\",\"heading\",\"code\",\"table\",\"blockquote\",\"list\",\"html\",\"paragraph\",\"text\"].includes(o.type)){n+=l||\"\";continue}}let s=i;switch(s.type){case\"space\":{n+=this.renderer.space(s);continue}case\"hr\":{n+=this.renderer.hr(s);continue}case\"heading\":{n+=this.renderer.heading(s);continue}case\"code\":{n+=this.renderer.code(s);continue}case\"table\":{n+=this.renderer.table(s);continue}case\"blockquote\":{n+=this.renderer.blockquote(s);continue}case\"list\":{n+=this.renderer.list(s);continue}case\"html\":{n+=this.renderer.html(s);continue}case\"paragraph\":{n+=this.renderer.paragraph(s);continue}case\"text\":{let o=s,l=this.renderer.text(o);for(;r+1<e.length&&e[r+1].type===\"text\";)o=e[++r],l+=`",
+        "imageSrc": "${e}",
+        "fullTag": "<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">",
+        "hasAlt": true,
+        "altValue": "${n}"
+      },
+      {
+        "file": "recovery-workspace/backups/current-20250830-222904/node_modules/marked/lib/marked.esm.js",
+        "line": 69,
+        "lineContent": "`}strong({tokens:e}){return`<strong>${this.parser.parseInline(e)}</strong>`}em({tokens:e}){return`<em>${this.parser.parseInline(e)}</em>`}codespan({text:e}){return`<code>${w(e,!0)}</code>`}br(e){return\"<br>\"}del({tokens:e}){return`<del>${this.parser.parseInline(e)}</del>`}link({href:e,title:t,tokens:n}){let r=this.parser.parseInline(n),i=J(e);if(i===null)return r;e=i;let s='<a href=\"'+e+'\"';return t&&(s+=' title=\"'+w(t)+'\"'),s+=\">\"+r+\"</a>\",s}image({href:e,title:t,text:n,tokens:r}){r&&(n=this.parser.parseInline(r,this.parser.textRenderer));let i=J(e);if(i===null)return w(n);e=i;let s=`<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">\",s}text(e){return\"tokens\"in e&&e.tokens?this.parser.parseInline(e.tokens):\"escaped\"in e&&e.escaped?e.text:w(e.text)}};var S=class{strong({text:e}){return e}em({text:e}){return e}codespan({text:e}){return e}del({text:e}){return e}html({text:e}){return e}text({text:e}){return e}link({text:e}){return\"\"+e}image({text:e}){return\"\"+e}br(){return\"\"}};var R=class l{options;renderer;textRenderer;constructor(e){this.options=e||O,this.options.renderer=this.options.renderer||new P,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new S}static parse(e,t){return new l(t).parse(e)}static parseInline(e,t){return new l(t).parseInline(e)}parse(e,t=!0){let n=\"\";for(let r=0;r<e.length;r++){let i=e[r];if(this.options.extensions?.renderers?.[i.type]){let o=i,a=this.options.extensions.renderers[o.type].call({parser:this},o);if(a!==!1||![\"space\",\"hr\",\"heading\",\"code\",\"table\",\"blockquote\",\"list\",\"html\",\"paragraph\",\"text\"].includes(o.type)){n+=a||\"\";continue}}let s=i;switch(s.type){case\"space\":{n+=this.renderer.space(s);continue}case\"hr\":{n+=this.renderer.hr(s);continue}case\"heading\":{n+=this.renderer.heading(s);continue}case\"code\":{n+=this.renderer.code(s);continue}case\"table\":{n+=this.renderer.table(s);continue}case\"blockquote\":{n+=this.renderer.blockquote(s);continue}case\"list\":{n+=this.renderer.list(s);continue}case\"html\":{n+=this.renderer.html(s);continue}case\"paragraph\":{n+=this.renderer.paragraph(s);continue}case\"text\":{let o=s,a=this.renderer.text(o);for(;r+1<e.length&&e[r+1].type===\"text\";)o=e[++r],a+=`",
+        "imageSrc": "${e}",
+        "fullTag": "<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">",
+        "hasAlt": true,
+        "altValue": "${n}"
+      },
+      {
+        "file": "recovered/node_modules/sharp/lib/resize.js",
+        "line": 132,
+        "lineContent": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+        "imageSrc": "/api-resize-fit.svg",
+        "fullTag": "<img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+        "hasAlt": true,
+        "altValue": "Examples of various values for the fit property when resizing"
+      },
+      {
+        "file": "recovered/node_modules/mermaid/dist/mermaid.min.js",
+        "line": 439,
+        "lineContent": "`}strong({tokens:t}){return`<strong>${this.parser.parseInline(t)}</strong>`}em({tokens:t}){return`<em>${this.parser.parseInline(t)}</em>`}codespan({text:t}){return`<code>${yc(t,!0)}</code>`}br(t){return\"<br>\"}del({tokens:t}){return`<del>${this.parser.parseInline(t)}</del>`}link({href:t,title:e,tokens:r}){let n=this.parser.parseInline(r),i=JK(t);if(i===null)return n;t=i;let a='<a href=\"'+t+'\"';return e&&(a+=' title=\"'+yc(e)+'\"'),a+=\">\"+n+\"</a>\",a}image({href:t,title:e,text:r,tokens:n}){n&&(r=this.parser.parseInline(n,this.parser.textRenderer));let i=JK(t);if(i===null)return yc(r);t=i;let a=`<img src=\"${t}\" alt=\"${r}\"`;return e&&(a+=` title=\"${yc(e)}\"`),a+=\">\",a}text(t){return\"tokens\"in t&&t.tokens?this.parser.parseInline(t.tokens):\"escaped\"in t&&t.escaped?t.text:yc(t.text)}},sL=class{static{o(this,\"_\")}strong({text:t}){return t}em({text:t}){return t}codespan({text:t}){return t}del({text:t}){return t}html({text:t}){return t}text({text:t}){return t}link({text:t}){return\"\"+t}image({text:t}){return\"\"+t}br(){return\"\"}},Ru=class Q9{static{o(this,\"a\")}options;renderer;textRenderer;constructor(e){this.options=e||Pd,this.options.renderer=this.options.renderer||new $T,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new sL}static parse(e,r){return new Q9(r).parse(e)}static parseInline(e,r){return new Q9(r).parseInline(e)}parse(e,r=!0){let n=\"\";for(let i=0;i<e.length;i++){let a=e[i];if(this.options.extensions?.renderers?.[a.type]){let l=a,u=this.options.extensions.renderers[l.type].call({parser:this},l);if(u!==!1||![\"space\",\"hr\",\"heading\",\"code\",\"table\",\"blockquote\",\"list\",\"html\",\"paragraph\",\"text\"].includes(l.type)){n+=u||\"\";continue}}let s=a;switch(s.type){case\"space\":{n+=this.renderer.space(s);continue}case\"hr\":{n+=this.renderer.hr(s);continue}case\"heading\":{n+=this.renderer.heading(s);continue}case\"code\":{n+=this.renderer.code(s);continue}case\"table\":{n+=this.renderer.table(s);continue}case\"blockquote\":{n+=this.renderer.blockquote(s);continue}case\"list\":{n+=this.renderer.list(s);continue}case\"html\":{n+=this.renderer.html(s);continue}case\"paragraph\":{n+=this.renderer.paragraph(s);continue}case\"text\":{let l=s,u=this.renderer.text(l);for(;i+1<e.length&&e[i+1].type===\"text\";)l=e[++i],u+=`",
+        "imageSrc": "${t}",
+        "fullTag": "<img src=\"${t}\" alt=\"${r}\"`;return e&&(a+=` title=\"${yc(e)}\"`),a+=\">",
+        "hasAlt": true,
+        "altValue": "${r}"
+      },
+      {
+        "file": "recovered/node_modules/marked/lib/marked.umd.js",
+        "line": 69,
+        "lineContent": "`}strong({tokens:e}){return`<strong>${this.parser.parseInline(e)}</strong>`}em({tokens:e}){return`<em>${this.parser.parseInline(e)}</em>`}codespan({text:e}){return`<code>${w(e,!0)}</code>`}br(e){return\"<br>\"}del({tokens:e}){return`<del>${this.parser.parseInline(e)}</del>`}link({href:e,title:t,tokens:n}){let r=this.parser.parseInline(n),i=V(e);if(i===null)return r;e=i;let s='<a href=\"'+e+'\"';return t&&(s+=' title=\"'+w(t)+'\"'),s+=\">\"+r+\"</a>\",s}image({href:e,title:t,text:n,tokens:r}){r&&(n=this.parser.parseInline(r,this.parser.textRenderer));let i=V(e);if(i===null)return w(n);e=i;let s=`<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">\",s}text(e){return\"tokens\"in e&&e.tokens?this.parser.parseInline(e.tokens):\"escaped\"in e&&e.escaped?e.text:w(e.text)}};var S=class{strong({text:e}){return e}em({text:e}){return e}codespan({text:e}){return e}del({text:e}){return e}html({text:e}){return e}text({text:e}){return e}link({text:e}){return\"\"+e}image({text:e}){return\"\"+e}br(){return\"\"}};var b=class a{options;renderer;textRenderer;constructor(e){this.options=e||O,this.options.renderer=this.options.renderer||new P,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new S}static parse(e,t){return new a(t).parse(e)}static parseInline(e,t){return new a(t).parseInline(e)}parse(e,t=!0){let n=\"\";for(let r=0;r<e.length;r++){let i=e[r];if(this.options.extensions?.renderers?.[i.type]){let o=i,l=this.options.extensions.renderers[o.type].call({parser:this},o);if(l!==!1||![\"space\",\"hr\",\"heading\",\"code\",\"table\",\"blockquote\",\"list\",\"html\",\"def\",\"paragraph\",\"text\"].includes(o.type)){n+=l||\"\";continue}}let s=i;switch(s.type){case\"space\":{n+=this.renderer.space(s);continue}case\"hr\":{n+=this.renderer.hr(s);continue}case\"heading\":{n+=this.renderer.heading(s);continue}case\"code\":{n+=this.renderer.code(s);continue}case\"table\":{n+=this.renderer.table(s);continue}case\"blockquote\":{n+=this.renderer.blockquote(s);continue}case\"list\":{n+=this.renderer.list(s);continue}case\"html\":{n+=this.renderer.html(s);continue}case\"def\":{n+=this.renderer.def(s);continue}case\"paragraph\":{n+=this.renderer.paragraph(s);continue}case\"text\":{let o=s,l=this.renderer.text(o);for(;r+1<e.length&&e[r+1].type===\"text\";)o=e[++r],l+=`",
+        "imageSrc": "${e}",
+        "fullTag": "<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">",
+        "hasAlt": true,
+        "altValue": "${n}"
+      },
+      {
+        "file": "recovered/node_modules/marked/lib/marked.esm.js",
+        "line": 69,
+        "lineContent": "`}strong({tokens:e}){return`<strong>${this.parser.parseInline(e)}</strong>`}em({tokens:e}){return`<em>${this.parser.parseInline(e)}</em>`}codespan({text:e}){return`<code>${w(e,!0)}</code>`}br(e){return\"<br>\"}del({tokens:e}){return`<del>${this.parser.parseInline(e)}</del>`}link({href:e,title:t,tokens:n}){let r=this.parser.parseInline(n),i=J(e);if(i===null)return r;e=i;let s='<a href=\"'+e+'\"';return t&&(s+=' title=\"'+w(t)+'\"'),s+=\">\"+r+\"</a>\",s}image({href:e,title:t,text:n,tokens:r}){r&&(n=this.parser.parseInline(r,this.parser.textRenderer));let i=J(e);if(i===null)return w(n);e=i;let s=`<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">\",s}text(e){return\"tokens\"in e&&e.tokens?this.parser.parseInline(e.tokens):\"escaped\"in e&&e.escaped?e.text:w(e.text)}};var S=class{strong({text:e}){return e}em({text:e}){return e}codespan({text:e}){return e}del({text:e}){return e}html({text:e}){return e}text({text:e}){return e}link({text:e}){return\"\"+e}image({text:e}){return\"\"+e}br(){return\"\"}};var R=class l{options;renderer;textRenderer;constructor(e){this.options=e||O,this.options.renderer=this.options.renderer||new P,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new S}static parse(e,t){return new l(t).parse(e)}static parseInline(e,t){return new l(t).parseInline(e)}parse(e,t=!0){let n=\"\";for(let r=0;r<e.length;r++){let i=e[r];if(this.options.extensions?.renderers?.[i.type]){let o=i,a=this.options.extensions.renderers[o.type].call({parser:this},o);if(a!==!1||![\"space\",\"hr\",\"heading\",\"code\",\"table\",\"blockquote\",\"list\",\"html\",\"def\",\"paragraph\",\"text\"].includes(o.type)){n+=a||\"\";continue}}let s=i;switch(s.type){case\"space\":{n+=this.renderer.space(s);continue}case\"hr\":{n+=this.renderer.hr(s);continue}case\"heading\":{n+=this.renderer.heading(s);continue}case\"code\":{n+=this.renderer.code(s);continue}case\"table\":{n+=this.renderer.table(s);continue}case\"blockquote\":{n+=this.renderer.blockquote(s);continue}case\"list\":{n+=this.renderer.list(s);continue}case\"html\":{n+=this.renderer.html(s);continue}case\"def\":{n+=this.renderer.def(s);continue}case\"paragraph\":{n+=this.renderer.paragraph(s);continue}case\"text\":{let o=s,a=this.renderer.text(o);for(;r+1<e.length&&e[r+1].type===\"text\";)o=e[++r],a+=`",
+        "imageSrc": "${e}",
+        "fullTag": "<img src=\"${e}\" alt=\"${n}\"`;return t&&(s+=` title=\"${w(t)}\"`),s+=\">",
+        "hasAlt": true,
+        "altValue": "${n}"
+      }
+    ]
+  },
+  "fixes": [
+    {
+      "type": "missing_alt",
+      "file": "scripts/performance-test.js",
+      "line": 500,
+      "currentLine": "src=\"/hero-image.jpg\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/hero-image.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "scripts/performance-test.js",
+      "line": 509,
+      "currentLine": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "<Image src=\"/image.jpg\" fill alt=\"Image\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "scripts/optimize-images.js",
+      "line": 237,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "scripts/optimize-images.js",
+      "line": 255,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "scripts/optimize-images.js",
+      "line": 273,
+      "currentLine": "src=\"/images/optimized/content-image.webp\"",
+      "suggestions": [
+        "Content Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/content-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "scripts/optimize-images.js",
+      "line": 291,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "scripts/mobile-responsive-checker.js",
+      "line": 547,
+      "currentLine": "src=\"/image.jpg\"",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "src=\"/image.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/performance-test.js",
+      "line": 500,
+      "currentLine": "src=\"/hero-image.jpg\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/hero-image.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/performance-test.js",
+      "line": 509,
+      "currentLine": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "<Image src=\"/image.jpg\" fill alt=\"Image\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/optimize-images.js",
+      "line": 237,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/optimize-images.js",
+      "line": 255,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/optimize-images.js",
+      "line": 273,
+      "currentLine": "src=\"/images/optimized/content-image.webp\"",
+      "suggestions": [
+        "Content Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/content-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/optimize-images.js",
+      "line": 291,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/mobile-responsive-checker.js",
+      "line": 547,
+      "currentLine": "src=\"/image.jpg\"",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "src=\"/image.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/performance-test.js",
+      "line": 500,
+      "currentLine": "src=\"/hero-image.jpg\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/hero-image.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/performance-test.js",
+      "line": 509,
+      "currentLine": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "<Image src=\"/image.jpg\" fill alt=\"Image\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+      "line": 237,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+      "line": 255,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+      "line": 273,
+      "currentLine": "src=\"/images/optimized/content-image.webp\"",
+      "suggestions": [
+        "Content Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/content-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+      "line": 291,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/mobile-responsive-checker.js",
+      "line": 547,
+      "currentLine": "src=\"/image.jpg\"",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "src=\"/image.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/sharp/lib/resize.js",
+      "line": 132,
+      "currentLine": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+      "suggestions": [
+        "Api Resize Fit"
+      ],
+      "recommendedFix": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 599,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 599,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 607,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 607,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 617,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 617,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 625,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 625,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 632,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 632,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 619,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 619,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 623,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 623,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 629,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 629,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 637,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 637,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 644,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 644,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+      "line": 86,
+      "currentLine": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+      "suggestions": [
+        "Example"
+      ],
+      "recommendedFix": "{ code: '<img src=\"example.svg\" role=\"img\" />' },"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+      "line": 86,
+      "currentLine": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+      "suggestions": [
+        "Example"
+      ],
+      "recommendedFix": "{ code: '<img src=\"example.svg\" role=\"img\" />' },"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+      "line": 188,
+      "currentLine": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+      "suggestions": [
+        "Xyz"
+      ],
+      "recommendedFix": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+      "line": 267,
+      "currentLine": "code: '<Image src=\"xyz\" />',",
+      "suggestions": [
+        "Xyz"
+      ],
+      "recommendedFix": "code: '<Image src=\"xyz\" />',"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/app/[locale]/page.tsx",
+      "line": 268,
+      "currentLine": "src=\"/images/infographics/stats-infographic.svg\"",
+      "suggestions": [
+        "Stats Infographic",
+        "graph - stats",
+        "Graph - stats"
+      ],
+      "recommendedFix": "src=\"/images/infographics/stats-infographic.svg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+      "line": 22,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+      "line": 38,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+      "line": 55,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+      "line": 72,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/app/[locale]/interactive-tools/page.tsx",
+      "line": 157,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/sharp/lib/resize.js",
+      "line": 132,
+      "currentLine": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+      "suggestions": [
+        "Api Resize Fit"
+      ],
+      "recommendedFix": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 599,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 599,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 607,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 607,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 617,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 617,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 625,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 625,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 632,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 632,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "line": 619,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "line": 619,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "line": 623,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "line": 623,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "line": 629,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "line": 629,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "line": 637,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "line": 637,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "line": 644,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "line": 644,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+      "line": 86,
+      "currentLine": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+      "suggestions": [
+        "Example"
+      ],
+      "recommendedFix": "{ code: '<img src=\"example.svg\" role=\"img\" />' },"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+      "line": 86,
+      "currentLine": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+      "suggestions": [
+        "Example"
+      ],
+      "recommendedFix": "{ code: '<img src=\"example.svg\" role=\"img\" />' },"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+      "line": 188,
+      "currentLine": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+      "suggestions": [
+        "Xyz"
+      ],
+      "recommendedFix": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+      "line": 267,
+      "currentLine": "code: '<Image src=\"xyz\" />',",
+      "suggestions": [
+        "Xyz"
+      ],
+      "recommendedFix": "code: '<Image src=\"xyz\" />',"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/app/[locale]/page.tsx",
+      "line": 268,
+      "currentLine": "src=\"/images/infographics/stats-infographic.svg\"",
+      "suggestions": [
+        "Stats Infographic",
+        "graph - stats",
+        "Graph - stats"
+      ],
+      "recommendedFix": "src=\"/images/infographics/stats-infographic.svg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/app/[locale]/test-image-quality/page.tsx",
+      "line": 22,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/app/[locale]/test-image-quality/page.tsx",
+      "line": 38,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/app/[locale]/test-image-quality/page.tsx",
+      "line": 55,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/app/[locale]/test-image-quality/page.tsx",
+      "line": 72,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/app/[locale]/interactive-tools/page.tsx",
+      "line": 157,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/scripts/performance-test.js",
+      "line": 500,
+      "currentLine": "src=\"/hero-image.jpg\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/hero-image.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/scripts/performance-test.js",
+      "line": 509,
+      "currentLine": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "<Image src=\"/image.jpg\" fill alt=\"Image\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+      "line": 237,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+      "line": 255,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+      "line": 273,
+      "currentLine": "src=\"/images/optimized/content-image.webp\"",
+      "suggestions": [
+        "Content Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/content-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/scripts/optimize-images.js",
+      "line": 291,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/scripts/mobile-responsive-checker.js",
+      "line": 547,
+      "currentLine": "src=\"/image.jpg\"",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "src=\"/image.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/sharp/lib/resize.js",
+      "line": 132,
+      "currentLine": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+      "suggestions": [
+        "Api Resize Fit"
+      ],
+      "recommendedFix": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 599,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 599,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 607,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 607,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 617,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 617,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 625,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 625,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 632,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 632,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 619,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 619,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 623,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 623,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 629,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 629,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 637,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 637,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 644,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "line": 644,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+      "line": 86,
+      "currentLine": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+      "suggestions": [
+        "Example"
+      ],
+      "recommendedFix": "{ code: '<img src=\"example.svg\" role=\"img\" />' },"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+      "line": 86,
+      "currentLine": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+      "suggestions": [
+        "Example"
+      ],
+      "recommendedFix": "{ code: '<img src=\"example.svg\" role=\"img\" />' },"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+      "line": 188,
+      "currentLine": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+      "suggestions": [
+        "Xyz"
+      ],
+      "recommendedFix": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+      "line": 267,
+      "currentLine": "code: '<Image src=\"xyz\" />',",
+      "suggestions": [
+        "Xyz"
+      ],
+      "recommendedFix": "code: '<Image src=\"xyz\" />',"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/app/[locale]/page.tsx",
+      "line": 268,
+      "currentLine": "src=\"/images/infographics/stats-infographic.svg\"",
+      "suggestions": [
+        "Stats Infographic",
+        "graph - stats",
+        "Graph - stats"
+      ],
+      "recommendedFix": "src=\"/images/infographics/stats-infographic.svg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+      "line": 22,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+      "line": 38,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+      "line": 55,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/app/[locale]/test-image-quality/page.tsx",
+      "line": 72,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/app/[locale]/interactive-tools/page.tsx",
+      "line": 157,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/sharp/lib/resize.js",
+      "line": 132,
+      "currentLine": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">",
+      "suggestions": [
+        "Api Resize Fit"
+      ],
+      "recommendedFix": "* <img alt=\"Examples of various values for the fit property when resizing\" width=\"100%\" style=\"aspect-ratio: 998/243\" src=\"/api-resize-fit.svg\">"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 599,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 599,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 607,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 607,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 617,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 617,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 625,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 625,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 632,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "line": 632,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "line": 611,
+      "currentLine": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" layout=\"fill\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "line": 619,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "line": 619,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "line": 623,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "line": 623,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "line": 629,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "line": 629,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "line": 637,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "line": 637,
+      "currentLine": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "line": 644,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "line": 644,
+      "currentLine": "// <Image src=\"i.png\" />",
+      "suggestions": [],
+      "recommendedFix": "// <Image src=\"i.png\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+      "line": 86,
+      "currentLine": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+      "suggestions": [
+        "Example"
+      ],
+      "recommendedFix": "{ code: '<img src=\"example.svg\" role=\"img\" />' },"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+      "line": 86,
+      "currentLine": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+      "suggestions": [
+        "Example"
+      ],
+      "recommendedFix": "{ code: '<img src=\"example.svg\" role=\"img\" />' },"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+      "line": 188,
+      "currentLine": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+      "suggestions": [
+        "Xyz"
+      ],
+      "recommendedFix": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },"
+    },
+    {
+      "type": "missing_alt",
+      "file": "recovered/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+      "line": 267,
+      "currentLine": "code: '<Image src=\"xyz\" />',",
+      "suggestions": [
+        "Xyz"
+      ],
+      "recommendedFix": "code: '<Image src=\"xyz\" />',"
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/scripts/performance-test.js",
+      "line": 500,
+      "currentLine": "src=\"/hero-image.jpg\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/hero-image.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/scripts/performance-test.js",
+      "line": 509,
+      "currentLine": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "<Image src=\"/image.jpg\" fill alt=\"Image\" />"
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/scripts/optimize-images.js",
+      "line": 237,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/scripts/optimize-images.js",
+      "line": 255,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/scripts/optimize-images.js",
+      "line": 273,
+      "currentLine": "src=\"/images/optimized/content-image.webp\"",
+      "suggestions": [
+        "Content Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/content-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/scripts/optimize-images.js",
+      "line": 291,
+      "currentLine": "src=\"/images/optimized/hero-image.webp\"",
+      "suggestions": [
+        "Hero Image"
+      ],
+      "recommendedFix": "src=\"/images/optimized/hero-image.webp\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/scripts/mobile-responsive-checker.js",
+      "line": 547,
+      "currentLine": "src=\"/image.jpg\"",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "src=\"/image.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/app/[locale]/page.tsx",
+      "line": 289,
+      "currentLine": "src=\"/images/infographics/stats-infographic.svg\"",
+      "suggestions": [
+        "Stats Infographic",
+        "graph - stats",
+        "Graph - stats"
+      ],
+      "recommendedFix": "src=\"/images/infographics/stats-infographic.svg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/app/[locale]/test-image-quality/page.tsx",
+      "line": 33,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/app/[locale]/test-image-quality/page.tsx",
+      "line": 49,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/app/[locale]/test-image-quality/page.tsx",
+      "line": 66,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/app/[locale]/test-image-quality/page.tsx",
+      "line": 83,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "hub-latest-main/app/[locale]/interactive-tools/page.tsx",
+      "line": 174,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "app/[locale]/page.tsx",
+      "line": 269,
+      "currentLine": "src=\"/images/infographics/stats-infographic.svg\"",
+      "suggestions": [
+        "Stats Infographic",
+        "graph - stats",
+        "Graph - stats"
+      ],
+      "recommendedFix": "src=\"/images/infographics/stats-infographic.svg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "app/[locale]/test-image-quality/page.tsx",
+      "line": 33,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "app/[locale]/test-image-quality/page.tsx",
+      "line": 49,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "app/[locale]/test-image-quality/page.tsx",
+      "line": 66,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "app/[locale]/test-image-quality/page.tsx",
+      "line": 83,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "app/[locale]/interactive-tools/page.tsx",
+      "line": 174,
+      "currentLine": "src=\"/images/tools/assessment-illustration.jpg\"",
+      "suggestions": [
+        "Assessment Illustration",
+        "Illustration - assessment"
+      ],
+      "recommendedFix": "src=\"/images/tools/assessment-illustration.jpg\""
+    },
+    {
+      "type": "missing_alt",
+      "file": "app/[locale]/health-guide/page.tsx",
+      "line": 195,
+      "currentLine": "src=\"/images/medical/_---female_reproductive_system_anatomy_800x800.png\"",
+      "suggestions": [
+        "Female Reproductive System Anatomy 800x800"
+      ],
+      "recommendedFix": "src=\"/images/medical/_---female_reproductive_system_anatomy_800x800.png\""
+    },
+    {
+      "type": "generic_alt",
+      "file": "scripts/performance-test.js",
+      "line": 509,
+      "currentLine": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+      "currentAlt": "Image",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "<Image src=\"/image.jpg\" fill alt=\"Image\" />"
+    },
+    {
+      "type": "generic_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/scripts/performance-test.js",
+      "line": 509,
+      "currentLine": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+      "currentAlt": "Image",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "<Image src=\"/image.jpg\" fill alt=\"Image\" />"
+    },
+    {
+      "type": "generic_alt",
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/scripts/performance-test.js",
+      "line": 509,
+      "currentLine": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+      "currentAlt": "Image",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "<Image src=\"/image.jpg\" fill alt=\"Image\" />"
+    },
+    {
+      "type": "generic_alt",
+      "file": "recovery-workspace/backups/current-20250830-222904/scripts/performance-test.js",
+      "line": 509,
+      "currentLine": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+      "currentAlt": "Image",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "<Image src=\"/image.jpg\" fill alt=\"Image\" />"
+    },
+    {
+      "type": "generic_alt",
+      "file": "hub-latest-main/scripts/performance-test.js",
+      "line": 509,
+      "currentLine": "<Image src=\"/image.jpg\" fill alt=\"Image\" />",
+      "currentAlt": "Image",
+      "suggestions": [
+        "Image"
+      ],
+      "recommendedFix": "<Image src=\"/image.jpg\" fill alt=\"Image\" />"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "high",
+      "type": "accessibility",
+      "message": "发现 182 个图片缺少alt属性",
+      "impact": "影响可访问性和SEO排名",
+      "action": "为所有图片添加描述性alt属性"
+    },
+    {
+      "priority": "medium",
+      "type": "seo",
+      "message": "发现 5 个图片使用通用alt文本",
+      "impact": "降低SEO效果",
+      "action": "使用更具体和描述性的alt文本"
+    },
+    {
+      "priority": "medium",
+      "type": "best_practices",
+      "message": "建立图片alt标签规范",
+      "impact": "提升整体SEO和可访问性",
+      "action": "制定alt标签编写指南和审核流程"
+    }
+  ]
+}

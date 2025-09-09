@@ -1,0 +1,829 @@
+{
+  "timestamp": "2025-09-09T04:14:11.624Z",
+  "summary": {
+    "totalFixes": 60,
+    "fixedFiles": 16,
+    "errors": 0
+  },
+  "fixes": [
+    {
+      "line": 599,
+      "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 607,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 611,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 617,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 625,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 632,
+      "original": "// <Image src=\"i.png\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 611,
+      "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 619,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 623,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 629,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 637,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 644,
+      "original": "// <Image src=\"i.png\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 86,
+      "original": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+      "fixed": "{ code: '<img src=\"example.svg\" alt=\"Image: Example\" role=\"img\" />' },",
+      "altText": "Image: Example"
+    },
+    {
+      "line": 188,
+      "original": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+      "fixed": "{ code: '<img src=\"xyz\" alt=\"Image: Xyz\" />', errors: [missingPropError('img')] },",
+      "altText": "Image: Xyz"
+    },
+    {
+      "line": 267,
+      "original": "code: '<Image src=\"xyz\" />',",
+      "fixed": "code: '<Image src=\"xyz\" alt=\"Image: Xyz\" />',",
+      "altText": "Image: Xyz"
+    },
+    {
+      "line": 599,
+      "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 607,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 611,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 617,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 625,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 632,
+      "original": "// <Image src=\"i.png\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 611,
+      "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 619,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 623,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 629,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 637,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 644,
+      "original": "// <Image src=\"i.png\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 86,
+      "original": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+      "fixed": "{ code: '<img src=\"example.svg\" alt=\"Image: Example\" role=\"img\" />' },",
+      "altText": "Image: Example"
+    },
+    {
+      "line": 188,
+      "original": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+      "fixed": "{ code: '<img src=\"xyz\" alt=\"Image: Xyz\" />', errors: [missingPropError('img')] },",
+      "altText": "Image: Xyz"
+    },
+    {
+      "line": 267,
+      "original": "code: '<Image src=\"xyz\" />',",
+      "fixed": "code: '<Image src=\"xyz\" alt=\"Image: Xyz\" />',",
+      "altText": "Image: Xyz"
+    },
+    {
+      "line": 599,
+      "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 607,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 611,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 617,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 625,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 632,
+      "original": "// <Image src=\"i.png\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 611,
+      "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 619,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 623,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 629,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 637,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 644,
+      "original": "// <Image src=\"i.png\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 86,
+      "original": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+      "fixed": "{ code: '<img src=\"example.svg\" alt=\"Image: Example\" role=\"img\" />' },",
+      "altText": "Image: Example"
+    },
+    {
+      "line": 188,
+      "original": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+      "fixed": "{ code: '<img src=\"xyz\" alt=\"Image: Xyz\" />', errors: [missingPropError('img')] },",
+      "altText": "Image: Xyz"
+    },
+    {
+      "line": 267,
+      "original": "code: '<Image src=\"xyz\" />',",
+      "fixed": "code: '<Image src=\"xyz\" alt=\"Image: Xyz\" />',",
+      "altText": "Image: Xyz"
+    },
+    {
+      "line": 599,
+      "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 607,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 611,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 617,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 625,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 632,
+      "original": "// <Image src=\"i.png\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 611,
+      "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 619,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 623,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 629,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 637,
+      "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 644,
+      "original": "// <Image src=\"i.png\" />",
+      "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+      "altText": "Image: I"
+    },
+    {
+      "line": 86,
+      "original": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+      "fixed": "{ code: '<img src=\"example.svg\" alt=\"Image: Example\" role=\"img\" />' },",
+      "altText": "Image: Example"
+    },
+    {
+      "line": 188,
+      "original": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+      "fixed": "{ code: '<img src=\"xyz\" alt=\"Image: Xyz\" />', errors: [missingPropError('img')] },",
+      "altText": "Image: Xyz"
+    },
+    {
+      "line": 267,
+      "original": "code: '<Image src=\"xyz\" />',",
+      "fixed": "code: '<Image src=\"xyz\" alt=\"Image: Xyz\" />',",
+      "altText": "Image: Xyz"
+    }
+  ],
+  "fixedFiles": [
+    {
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/image.js.backup.1757391235065",
+      "fixes": [
+        {
+          "line": 599,
+          "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 607,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 611,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 617,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 625,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 632,
+          "original": "// <Image src=\"i.png\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+          "altText": "Image: I"
+        }
+      ]
+    },
+    {
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/image.js.backup.1757391235637",
+      "fixes": [
+        {
+          "line": 611,
+          "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 619,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 623,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 629,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 637,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 644,
+          "original": "// <Image src=\"i.png\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+          "altText": "Image: I"
+        }
+      ]
+    },
+    {
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/no-redundant-roles-test.js.backup.1757391236651",
+      "fixes": [
+        {
+          "line": 86,
+          "original": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+          "fixed": "{ code: '<img src=\"example.svg\" alt=\"Image: Example\" role=\"img\" />' },",
+          "altText": "Image: Example"
+        }
+      ]
+    },
+    {
+      "file": "recovery-workspace/backups/current-state-20250830-225356/recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/alt-text-test.js.backup.1757391236656",
+      "fixes": [
+        {
+          "line": 188,
+          "original": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+          "fixed": "{ code: '<img src=\"xyz\" alt=\"Image: Xyz\" />', errors: [missingPropError('img')] },",
+          "altText": "Image: Xyz"
+        },
+        {
+          "line": 267,
+          "original": "code: '<Image src=\"xyz\" />',",
+          "fixed": "code: '<Image src=\"xyz\" alt=\"Image: Xyz\" />',",
+          "altText": "Image: Xyz"
+        }
+      ]
+    },
+    {
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/esm/client/legacy/image.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/image.js.backup.1757391239266",
+      "fixes": [
+        {
+          "line": 599,
+          "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 607,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 611,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 617,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 625,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 632,
+          "original": "// <Image src=\"i.png\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+          "altText": "Image: I"
+        }
+      ]
+    },
+    {
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/next/dist/client/legacy/image.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/image.js.backup.1757391239686",
+      "fixes": [
+        {
+          "line": 611,
+          "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 619,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 623,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 629,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 637,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 644,
+          "original": "// <Image src=\"i.png\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+          "altText": "Image: I"
+        }
+      ]
+    },
+    {
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/no-redundant-roles-test.js.backup.1757391240680",
+      "fixes": [
+        {
+          "line": 86,
+          "original": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+          "fixed": "{ code: '<img src=\"example.svg\" alt=\"Image: Example\" role=\"img\" />' },",
+          "altText": "Image: Example"
+        }
+      ]
+    },
+    {
+      "file": "recovery-workspace/backups/current-state-20250830-225356/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/alt-text-test.js.backup.1757391240684",
+      "fixes": [
+        {
+          "line": 188,
+          "original": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+          "fixed": "{ code: '<img src=\"xyz\" alt=\"Image: Xyz\" />', errors: [missingPropError('img')] },",
+          "altText": "Image: Xyz"
+        },
+        {
+          "line": 267,
+          "original": "code: '<Image src=\"xyz\" />',",
+          "fixed": "code: '<Image src=\"xyz\" alt=\"Image: Xyz\" />',",
+          "altText": "Image: Xyz"
+        }
+      ]
+    },
+    {
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/esm/client/legacy/image.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/image.js.backup.1757391243359",
+      "fixes": [
+        {
+          "line": 599,
+          "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 607,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 611,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 617,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 625,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 632,
+          "original": "// <Image src=\"i.png\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+          "altText": "Image: I"
+        }
+      ]
+    },
+    {
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/next/dist/client/legacy/image.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/image.js.backup.1757391243782",
+      "fixes": [
+        {
+          "line": 611,
+          "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 619,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 623,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 629,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 637,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 644,
+          "original": "// <Image src=\"i.png\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+          "altText": "Image: I"
+        }
+      ]
+    },
+    {
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/no-redundant-roles-test.js.backup.1757391244620",
+      "fixes": [
+        {
+          "line": 86,
+          "original": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+          "fixed": "{ code: '<img src=\"example.svg\" alt=\"Image: Example\" role=\"img\" />' },",
+          "altText": "Image: Example"
+        }
+      ]
+    },
+    {
+      "file": "recovery-workspace/backups/current-20250830-222904/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/alt-text-test.js.backup.1757391244625",
+      "fixes": [
+        {
+          "line": 188,
+          "original": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+          "fixed": "{ code: '<img src=\"xyz\" alt=\"Image: Xyz\" />', errors: [missingPropError('img')] },",
+          "altText": "Image: Xyz"
+        },
+        {
+          "line": 267,
+          "original": "code: '<Image src=\"xyz\" />',",
+          "fixed": "code: '<Image src=\"xyz\" alt=\"Image: Xyz\" />',",
+          "altText": "Image: Xyz"
+        }
+      ]
+    },
+    {
+      "file": "recovered/node_modules/next/dist/esm/client/legacy/image.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/image.js.backup.1757391247518",
+      "fixes": [
+        {
+          "line": 599,
+          "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 607,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 611,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 617,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 625,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 632,
+          "original": "// <Image src=\"i.png\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+          "altText": "Image: I"
+        }
+      ]
+    },
+    {
+      "file": "recovered/node_modules/next/dist/client/legacy/image.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/image.js.backup.1757391248002",
+      "fixes": [
+        {
+          "line": 611,
+          "original": "// <Image src=\"i.png\" layout=\"fill\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" layout=\"fill\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 619,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 623,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"responsive\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 629,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"intrinsic\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 637,
+          "original": "// <Image src=\"i.png\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" width=\"100\" height=\"100\" layout=\"fixed\" />",
+          "altText": "Image: I"
+        },
+        {
+          "line": 644,
+          "original": "// <Image src=\"i.png\" />",
+          "fixed": "// <Image src=\"i.png\" alt=\"Image: I\" />",
+          "altText": "Image: I"
+        }
+      ]
+    },
+    {
+      "file": "recovered/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-redundant-roles-test.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/no-redundant-roles-test.js.backup.1757391249594",
+      "fixes": [
+        {
+          "line": 86,
+          "original": "{ code: '<img src=\"example.svg\" role=\"img\" />' },",
+          "fixed": "{ code: '<img src=\"example.svg\" alt=\"Image: Example\" role=\"img\" />' },",
+          "altText": "Image: Example"
+        }
+      ]
+    },
+    {
+      "file": "recovered/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/alt-text-test.js",
+      "backup": "/Users/duting/Downloads/money💰/--main/backups/image-alt-fixes/alt-text-test.js.backup.1757391249600",
+      "fixes": [
+        {
+          "line": 188,
+          "original": "{ code: '<img src=\"xyz\" />', errors: [missingPropError('img')] },",
+          "fixed": "{ code: '<img src=\"xyz\" alt=\"Image: Xyz\" />', errors: [missingPropError('img')] },",
+          "altText": "Image: Xyz"
+        },
+        {
+          "line": 267,
+          "original": "code: '<Image src=\"xyz\" />',",
+          "fixed": "code: '<Image src=\"xyz\" alt=\"Image: Xyz\" />',",
+          "altText": "Image: Xyz"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
