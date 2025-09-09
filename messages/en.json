@@ -2229,11 +2229,18 @@
       "hold": "Hold",
       "exhale": "Exhale"
     },
-    "instructions": "How to practice:",
-    "startButton": "🫁 Start Guided Practice",
-    "stopButton": "Stop Practice",
-    "practiceAgain": "Practice Again",
-    "completed": "✅ One cycle completed!",
+    "instructions": {
+      "title": "Practice Instructions",
+      "inhale": "Inhale",
+      "hold": "Hold",
+      "exhale": "Exhale"
+    },
+    "buttons": {
+      "startPractice": "Start Practice",
+      "stopPractice": "Stop Practice",
+      "practiceAgain": "Practice Again",
+      "oneCycleCompleted": "✅ One cycle completed!"
+    },
     "currentPhase": "Current:",
     "benefits": {
       "title": "Scientific Benefits:",
