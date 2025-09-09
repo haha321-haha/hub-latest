@@ -1,0 +1,2482 @@
+{
+  "totalFiles": 88,
+  "checkedFiles": 88,
+  "filesWithIssues": 43,
+  "filesWithRecommendations": 45,
+  "files": [
+    {
+      "file": "en/5-minute-period-pain-relief",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/5-minute-period-pain-relief.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 85,
+      "frontmatter": {
+        "title": "\"5-Minute Quick Tips for Immediate Period Pain Relief\"",
+        "seo_title": "\"Quick Period Pain Relief in 5 Minutes: Instant Cramp Tips\"",
+        "seo_description": "\"Suffering from sudden period cramps? Get effective tips for immediate relief you can use within 5 minutes, including simple exercises, breathing techniques, and more.\"",
+        "tags": [
+          "quick relief",
+          "immediate relief",
+          "period pain",
+          "cramps",
+          "emergency tips",
+          "instant relief"
+        ]
+      }
+    },
+    {
+      "file": "en/anti-inflammatory-diet-period-pain",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/anti-inflammatory-diet-period-pain.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 85,
+      "frontmatter": {
+        "title": "\"Anti-Inflammatory Diet: A Guide to Reducing Period Pain Through Food\"",
+        "seo_title": "\"Anti-Inflammatory Diet for Period Pain: Foods to Eat & Avoid\"",
+        "seo_description": "\"Reduce menstrual cramp pain naturally with an anti-inflammatory diet. Get a guide to anti-inflammatory foods for periods and learn which foods to limit.\"",
+        "tags": [
+          "anti-inflammatory diet",
+          "period pain",
+          "nutrition",
+          "diet for cramps",
+          "natural remedies",
+          "menstrual health",
+          "food for periods"
+        ]
+      }
+    },
+    {
+      "file": "en/comprehensive-iud-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/comprehensive-iud-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少H1标签"
+      ],
+      "recommendations": [
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 65,
+      "frontmatter": {
+        "title": "\"Intrauterine Device (IUD): Comprehensive Guide and User Manual\"",
+        "seo_title": "\"Complete IUD Guide: Types Comparison, Candidates, Insertion Process | Authoritative Medical Guidance\"",
+        "seo_description": "\"Authoritative IUD guide: Detailed comparison of copper vs hormonal IUD, suitable/contraindicated populations, insertion/removal procedures, side effect management. Based on latest WHO/ACOG/NHS guidelines to help you choose the most suitable long-term contraception.\"",
+        "tags": [
+          "contraception",
+          "IUD",
+          "intrauterine device",
+          "women's health",
+          "reproductive health"
+        ]
+      }
+    },
+    {
+      "file": "en/comprehensive-medical-guide-to-dysmenorrhea",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/comprehensive-medical-guide-to-dysmenorrhea.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Comprehensive Medical Guide to Dysmenorrhea: Causes, Diagnosis, and Evidence-Based Treatment\"",
+        "seo_title": "\"Medical Guide to Dysmenorrhea: Authoritative Analysis of Professional Diagnosis and Treatment\"",
+        "seo_description": "\"Authoritative medical guide: detailed explanation of dysmenorrhea pathophysiology, diagnostic criteria, and treatment protocols. Including differentiation between primary and secondary dysmenorrhea, medication selection, and comprehensive management strategies.\"",
+        "tags": [
+          "dysmenorrhea",
+          "medical diagnosis",
+          "pharmacological treatment",
+          "gynecological diseases",
+          "prostaglandins",
+          "secondary dysmenorrhea",
+          "NSAIDs",
+          "hormone therapy"
+        ]
+      }
+    },
+    {
+      "file": "en/comprehensive-menstrual-sleep-quality-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/comprehensive-menstrual-sleep-quality-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Comprehensive Menstrual Sleep Quality Improvement Guide: Evidence-Based Medical Methods\"",
+        "tags": [
+          "sleep quality",
+          "21-day plan",
+          "sleep hygiene",
+          "hormonal sleep",
+          "sleep monitoring"
+        ]
+      }
+    },
+    {
+      "file": "en/comprehensive-report-non-medical-factors-menstrual-pain",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/comprehensive-report-non-medical-factors-menstrual-pain.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Comprehensive Report: Non-Medical Factors Affecting Menstrual Pain\"",
+        "seo_title": "\"Comprehensive Report: Non-Medical Factors Affecting Menstrual Pain - Occupational Stress & Lifestyle Analysis\"",
+        "seo_description": "\"Professional analysis of how occupational stress, sleep quality, dietary habits, and exercise impact menstrual pain mechanisms. Based on latest scientific research, providing systematic menstrual pain management strategies to help women improve menstrual health from the root cause.\"",
+        "tags": [
+          "menstrual pain management",
+          "occupational stress",
+          "lifestyle factors",
+          "environmental factors",
+          "health management"
+        ]
+      }
+    },
+    {
+      "file": "en/effective-herbal-tea-menstrual-pain",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/effective-herbal-tea-menstrual-pain.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Most Effective Herbal Tea Recipes for Menstrual Pain\"",
+        "seo_title": "\"Most Effective Herbal Tea Recipes for Menstrual Pain - Scientifically Validated Natural Therapy Guide\"",
+        "seo_description": "\"Detailed introduction to 7 scientifically validated herbal tea recipes for menstrual pain, including ginger tea, cinnamon tea, fennel tea, etc. Provides preparation methods, mechanisms of action, clinical data, and safe usage guidelines to help women choose the most suitable natural menstrual pain relief solutions.\"",
+        "tags": [
+          "herbal tea",
+          "natural remedies",
+          "menstrual pain relief",
+          "traditional medicine",
+          "plant therapy"
+        ]
+      }
+    },
+    {
+      "file": "en/essential-oils-aromatherapy-menstrual-pain-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/essential-oils-aromatherapy-menstrual-pain-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 70,
+      "frontmatter": {
+        "title": "\"Essential Oils Aromatherapy for Menstrual Pain Relief: Complete Guide\"",
+        "seo_title": "\"Essential Oils for Menstrual Pain Relief: Science-Based Natural Therapy Guide\"",
+        "seo_description": "\"Professional guide to 6 core essential oils for menstrual pain relief. Scientific principles and usage methods for lavender, cinnamon, rose oils with safety guidelines based on research.\"",
+        "tags": [
+          "essential oil therapy",
+          "menstrual pain relief",
+          "natural therapy",
+          "aromatherapy",
+          "women's health"
+        ]
+      }
+    },
+    {
+      "file": "en/ginger-menstrual-pain-relief-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/ginger-menstrual-pain-relief-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"How to Use Ginger for Menstrual Pain Relief: 5 Scientifically Proven Methods\"",
+        "tags": [
+          "ginger therapy",
+          "menstrual pain relief",
+          "natural remedies",
+          "herbal treatment",
+          "scientific methods"
+        ]
+      }
+    },
+    {
+      "file": "en/global-traditional-menstrual-pain-relief",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/global-traditional-menstrual-pain-relief.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片",
+        "缺少阅读时间估算"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Global Perspectives on Menstrual Pain Relief: Integrating Traditional Wisdom with Modern Science\"",
+        "tags": [
+          "menstrual pain relief",
+          "ayurveda",
+          "traditional chinese medicine",
+          "natural remedies",
+          "women's health",
+          "holistic healing"
+        ]
+      }
+    },
+    {
+      "file": "en/heat-therapy-complete-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/heat-therapy-complete-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Complete Guide to Heat Therapy for Period Pain Relief\"",
+        "seo_title": "\"Heat Therapy for Period Pain: Complete Guide & How it Works\"",
+        "seo_description": "\"Find fast relief from menstrual cramps with our complete guide to heat therapy. Learn methods, benefits, and science-backed tips for using heating pads, hot water bottles, and more.\"",
+        "tags": [
+          "heat therapy",
+          "period pain relief",
+          "natural remedies",
+          "immediate relief",
+          "physical therapy",
+          "menstrual cramps"
+        ]
+      }
+    },
+    {
+      "file": "en/herbal-tea-menstrual-pain-relief",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/herbal-tea-menstrual-pain-relief.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Most Effective Herbal Tea Recipes for Menstrual Pain: 5 Scientifically Proven Natural Remedies\"",
+        "tags": [
+          "herbal tea",
+          "menstrual pain relief",
+          "natural remedies",
+          "preventive care",
+          "scientific formulas"
+        ]
+      }
+    },
+    {
+      "file": "en/hidden-culprits-of-menstrual-pain",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/hidden-culprits-of-menstrual-pain.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Hidden Culprits of Menstrual Pain: Psychological Stress and Pathways to Relief - Complete Psychological Guidance\"",
+        "tags": [
+          "mental health",
+          "menstrual pain management",
+          "stress relief",
+          "psychological guidance",
+          "cognitive behavioral therapy",
+          "mindfulness therapy",
+          "autonomic nervous testing",
+          "quick relief techniques"
+        ]
+      }
+    },
+    {
+      "file": "en/home-natural-menstrual-pain-relief",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/home-natural-menstrual-pain-relief.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Home Self-Care Solutions: Natural Menstrual Pain Relief Methods Effective in 5 Minutes\"",
+        "seo_title": "\"Home Natural Menstrual Pain Relief: 5-Minute Effective Home Care Methods\"",
+        "seo_description": "\"Relieve menstrual pain at home! Scientifically validated natural therapies including heat therapy, acupressure, and nutritional care, effective in 5 minutes, safe with no side effects.\"",
+        "tags": [
+          "home care",
+          "natural remedies",
+          "heat therapy",
+          "acupressure",
+          "nutritional care",
+          "quick relief",
+          "home treatment"
+        ]
+      }
+    },
+    {
+      "file": "en/long-term-healthy-lifestyle-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/long-term-healthy-lifestyle-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Long-term Healthy Lifestyle Guide: Building Sustainable Menstrual Health Management Strategies\"",
+        "seo_title": "\"Long-term Healthy Lifestyle Guide: Sustainable Menstrual Health Management | Professional Women's Health\"",
+        "seo_description": "\"Professional long-term healthy lifestyle guide: Build sustainable menstrual health management through scientific diet, exercise, sleep, and stress management strategies. Includes 21-day habit formation plan, personalized health profile methods, and long-term health maintenance strategies.\"",
+        "tags": [
+          "long-term health",
+          "lifestyle",
+          "menstrual management",
+          "preventive care",
+          "sustainability",
+          "healthy habits"
+        ]
+      }
+    },
+    {
+      "file": "en/magnesium-gut-health-comprehensive-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/magnesium-gut-health-comprehensive-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Goodbye Period Discomfort: A Comprehensive Guide from Magnesium Balance to Gut Health\"",
+        "seo_title": "\"Magnesium Balance Gut Health Menstrual Pain Relief: Evidence-Based Complete Guide to Period Care\"",
+        "seo_description": "\"Scientific analysis of magnesium supplementation mechanisms for menstrual pain relief, exploring gut health and menstrual cycle connections, providing dietary therapy plans and medical guidance. Evidence-based women's menstrual health management guide.\"",
+        "tags": [
+          "magnesium supplementation",
+          "gut health",
+          "menstrual pain relief",
+          "nutritional therapy",
+          "period management",
+          "estrogen metabolism",
+          "probiotics",
+          "dietary guidance",
+          "medical consultation",
+          "women's health"
+        ]
+      }
+    },
+    {
+      "file": "en/medication-vs-natural-remedies-menstrual-pain",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/medication-vs-natural-remedies-menstrual-pain.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Medication vs Natural Remedies: Which Menstrual Pain Relief Method Is Right for You?\"",
+        "tags": [
+          "medication treatment",
+          "natural remedies",
+          "menstrual pain relief",
+          "treatment options",
+          "personalized medicine"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-back-pain-comprehensive-care-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-back-pain-comprehensive-care-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 75,
+      "frontmatter": {
+        "title": "\"Comprehensive Menstrual Back Pain Care Guide: Scientific Relief & Expert Recommendations\"",
+        "seo_title": "\"Menstrual Back Pain Relief Guide: Expert Care & Scientific Methods\"",
+        "seo_description": "\"Comprehensive menstrual back pain care guide with WHO and ACOG-based strategies. Learn pain classification, immediate relief methods, exercise therapy, and warning signs for effective back pain management.\"",
+        "tags": [
+          "back pain care",
+          "menstrual back pain",
+          "pain management",
+          "physical therapy",
+          "medical guidance"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-nausea-relief-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-nausea-relief-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Menstrual Nausea Relief Guide: Scientific Approaches to Pain and Vomiting\"",
+        "seo_title": "\"Menstrual Nausea Relief Guide: Scientific Solutions for Pain and Vomiting\"",
+        "seo_description": "\"Period pain causing nausea and vomiting? Learn the medical mechanisms and master graded response strategies, from dietary adjustments to medication interventions for complete relief.\"",
+        "tags": [
+          "menstrual nausea",
+          "period pain vomiting",
+          "immediate relief",
+          "prostaglandins",
+          "acupressure",
+          "medication treatment",
+          "emergency care"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-pain-accompanying-symptoms-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-pain-accompanying-symptoms-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Complete Guide to Menstrual Pain Accompanying Symptoms: Solutions for Bloating, Vomiting, and Fever\"",
+        "seo_title": "\"Complete Guide to Menstrual Pain Symptoms: Scientific Solutions for Bloating, Vomiting & Fever\"",
+        "seo_description": "\"Menstrual pain with bloating, vomiting, fever? Learn symptom causes, master graded response plans, identify warning signs, and scientifically manage complex menstrual symptoms.\"",
+        "tags": [
+          "menstrual pain symptoms",
+          "period bloating",
+          "period vomiting",
+          "period fever",
+          "symptom matrix",
+          "emergency care",
+          "warning signs"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-pain-back-pain-connection",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-pain-back-pain-connection.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Can Menstrual Pain Cause Back Pain? 5 Surprising Facts\"",
+        "tags": [
+          "menstrual pain",
+          "back pain",
+          "pain mechanisms",
+          "neural conduction",
+          "pain management"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-pain-complications-management",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-pain-complications-management.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Menstrual Pain Complications & Symptom Management: Scientific Guide to Bloating, Nausea, and Back Pain\"",
+        "seo_title": "\"Complete Menstrual Pain Complications Guide: Scientific Relief for Bloating, Nausea & Back Pain\"",
+        "seo_description": "\"Professional guide to menstrual pain complications: In-depth analysis of bloating, nausea, vomiting, and back pain mechanisms with scientific relief strategies. Includes symptom correlation matrix, menstrual nausea relief guide, back pain analysis, acupressure techniques, and anti-inflammatory diet recommendations based on prostaglandin theory and clinical practice.\"",
+        "tags": [
+          "menstrual complications",
+          "period bloating",
+          "menstrual nausea",
+          "period back pain",
+          "symptom management",
+          "prostaglandins",
+          "referred pain",
+          "anti-inflammatory diet",
+          "acupressure",
+          "natural relief"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-pain-emergency-medication-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-pain-emergency-medication-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Complete Guide to Emergency Menstrual Pain Medication: Professional Solutions for Pain Relief Anywhere, Anytime\"",
+        "tags": [
+          "emergency medication",
+          "menstrual pain relief",
+          "medication carrying",
+          "drug safety",
+          "emergency management"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-pain-faq-expert-answers",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-pain-faq-expert-answers.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Menstrual Pain FAQ: Expert Answers to 5 Most Common Questions\"",
+        "seo_title": "\"Menstrual Pain FAQ: Expert Guide to Prostaglandin Mechanisms and Warning Signs\"",
+        "seo_description": "\"Authoritative expert answers to 5 major menstrual pain questions: why so painful, causes of worsening, lethality concerns, simulator accuracy. Evidence-based professional guidance for proper dysmenorrhea understanding.\"",
+        "tags": [
+          "menstrual pain FAQ",
+          "expert answers",
+          "dysmenorrhea mechanism",
+          "prostaglandins",
+          "secondary dysmenorrhea",
+          "warning signs",
+          "pain assessment",
+          "medical education"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-pain-medical-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-pain-medical-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Medical Guide to Menstrual Pain: Complete Analysis of Causes, Diagnosis & Scientific Treatment\"",
+        "seo_title": "\"Medical Guide to Menstrual Pain: Professional Diagnosis & Treatment Analysis\"",
+        "seo_description": "\"Complete medical guide to menstrual pain: detailed analysis of 10 major causes, professional diagnostic methods, and evidence-based treatment approaches. Essential resource for understanding dysmenorrhea from a medical perspective.\"",
+        "tags": [
+          "menstrual pain",
+          "medical diagnosis",
+          "gynecological disorders",
+          "pain management",
+          "women's health",
+          "medical education"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-pain-research-progress-2024",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-pain-research-progress-2024.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"2024 Menstrual Pain Research Progress Report: Evidence-Based Medicine and Clinical Translation\"",
+        "tags": [
+          "evidence-based medicine",
+          "research progress",
+          "drug development",
+          "pathological mechanisms",
+          "clinical trials"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-pain-vs-other-abdominal-pain-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-pain-vs-other-abdominal-pain-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Comprehensive Guide to Menstrual Pain vs Other Abdominal Pain: Recognizing Warning Signs and Making Informed Decisions\"",
+        "tags": [
+          "menstrual pain identification",
+          "abdominal pain diagnosis",
+          "warning signs",
+          "medical guidance",
+          "emergency management"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-preventive-care-complete-plan",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-preventive-care-complete-plan.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Complete Menstrual Preventive Care Plan: Evidence-Based Medical Guidance\"",
+        "tags": [
+          "preventive care",
+          "full-cycle management",
+          "evidence-based medicine",
+          "individualized plans",
+          "symptom monitoring"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-sleep-quality-improvement-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-sleep-quality-improvement-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Comprehensive Guide to Improving Menstrual Sleep Quality: Scientific Methods for Restoring Quality Sleep\"",
+        "tags": [
+          "menstrual sleep",
+          "sleep quality",
+          "sleep improvement",
+          "hormonal effects",
+          "sleep environment"
+        ]
+      }
+    },
+    {
+      "file": "en/menstrual-stress-management-complete-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/menstrual-stress-management-complete-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Complete Menstrual Stress Management Guide: Comprehensive Relief from Psychological to Physiological\"",
+        "tags": [
+          "stress management",
+          "workplace wellness",
+          "psychological relief",
+          "HPA axis",
+          "cortisol management"
+        ]
+      }
+    },
+    {
+      "file": "en/natural-physical-therapy-comprehensive-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/natural-physical-therapy-comprehensive-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Comprehensive Guide to Natural & Physical Therapies for Menstrual Pain: 15 Scientifically Validated Relief Methods\"",
+        "seo_title": "\"Complete Natural Therapy Guide for Menstrual Pain: 15 Scientifically Validated Relief Methods\"",
+        "seo_description": "\"Professional natural therapy guide for menstrual pain: Detailed explanation of 15 scientifically validated relief methods including heat/cold therapy, massage yoga, acupuncture moxibustion, herbal nutrition, and Ayurvedic therapies. Integrating Yellow Emperor's Classic and I Ching theories with modern research for personalized natural therapy selection.\"",
+        "tags": [
+          "natural remedies",
+          "physical therapy",
+          "heat therapy",
+          "cold therapy",
+          "massage therapy",
+          "yoga",
+          "acupuncture",
+          "moxibustion",
+          "herbal remedies",
+          "nutritional supplements",
+          "ayurveda",
+          "acupressure",
+          "aromatherapy",
+          "breathing techniques",
+          "meditation"
+        ]
+      }
+    },
+    {
+      "file": "en/nsaid-menstrual-pain-professional-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/nsaid-menstrual-pain-professional-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Professional NSAID Guide for Menstrual Pain: Safe Usage & Effectiveness Optimization\"",
+        "seo_title": "\"Professional NSAID Guide for Menstrual Pain: Safe Usage & Dosage Calculator | periodhub.health\"",
+        "seo_description": "\"Professional NSAID guide for menstrual pain: pharmacological mechanisms, safe usage guidelines, interactive dosage calculator, side effect management. Comparative analysis of ibuprofen, naproxen and other common medications, personalized treatment plans for effective pain relief.\"",
+        "tags": [
+          "NSAIDs",
+          "Medication",
+          "Safe Usage",
+          "Dosage",
+          "Medical Professional"
+        ]
+      }
+    },
+    {
+      "file": "en/period-friendly-recipes",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/period-friendly-recipes.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Period-Friendly Recipes: Nourish Your Body and Soul During 'Those Days'\"",
+        "tags": [
+          "nutrition",
+          "period care",
+          "healthy recipes",
+          "wellness"
+        ]
+      }
+    },
+    {
+      "file": "en/period-pain-simulator-accuracy-analysis",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/period-pain-simulator-accuracy-analysis.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Are Period Pain Simulators Accurate? Scientific Analysis and Expert Opinions\"",
+        "tags": [
+          "period pain simulator",
+          "pain science",
+          "medical devices",
+          "pain education",
+          "gender understanding"
+        ]
+      }
+    },
+    {
+      "file": "en/personal-menstrual-health-profile",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/personal-menstrual-health-profile.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Building Your Personal Menstrual Health Profile\"",
+        "seo_title": "\"Building Your Personal Menstrual Health Profile - Scientific Tracking & Personalized Management Guide\"",
+        "seo_description": "\"Detailed guidance on building a comprehensive personal menstrual health profile, including cycle tracking, symptom recording, and impact factor analysis. Provides practical tools and methods to help women achieve personalized menstrual health management.\"",
+        "tags": [
+          "menstrual tracking",
+          "health profile",
+          "symptom recording",
+          "personalized management",
+          "data analysis"
+        ]
+      }
+    },
+    {
+      "file": "en/recommended-reading-list",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/recommended-reading-list.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Recommended Reading List: Become Your Own Menstrual Health Expert\"",
+        "tags": [
+          "reading recommendations",
+          "women's health",
+          "menstrual education",
+          "mental health"
+        ]
+      }
+    },
+    {
+      "file": "en/specific-menstrual-pain-management-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/specific-menstrual-pain-management-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Specific Menstrual Pain Management & Associated Conditions: From Hormonal Mechanisms to Personalized Treatment\"",
+        "seo_title": "\"Complete Dysmenorrhea Management Guide: Hormonal Mechanisms + Disease Recognition + Specific Treatment Plans\"",
+        "seo_description": "\"Professional dysmenorrhea management guide: In-depth analysis of hormonal mechanisms, identification of 7 gynecological disease warning signs, management of IUD, pregnancy, and perimenopausal pain. Includes 5-minute self-assessment guide, symptom comparison charts, and long-term treatment plans based on authoritative medical research.\"",
+        "tags": [
+          "dysmenorrhea management",
+          "gynecological diseases",
+          "hormonal mechanisms",
+          "endometriosis",
+          "IUD cramps",
+          "perimenopausal pain",
+          "secondary dysmenorrhea",
+          "pain identification",
+          "personalized treatment",
+          "women's health"
+        ]
+      }
+    },
+    {
+      "file": "en/understanding-your-cycle",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/understanding-your-cycle.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Understanding Your Menstrual Cycle: A Comprehensive Guide\"",
+        "seo_title": "\"Understanding Your Menstrual Cycle: Complete Guide to Phases and Hormones\"",
+        "seo_description": "\"Comprehensive guide to understanding your menstrual cycle phases, hormonal changes, and how to use this knowledge for better health management and pain relief.\"",
+        "tags": [
+          "menstrual cycle",
+          "hormones",
+          "women's health",
+          "health education",
+          "reproductive health",
+          "dysmenorrhea"
+        ]
+      }
+    },
+    {
+      "file": "en/us-menstrual-pain-insurance-coverage-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/us-menstrual-pain-insurance-coverage-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Complete Guide to US Medical Insurance Coverage for Menstrual Pain Treatment (2025 Revised Edition)\"",
+        "tags": [
+          "medical insurance",
+          "ACA policy",
+          "Medicare reform",
+          "insurance claims",
+          "healthcare costs"
+        ]
+      }
+    },
+    {
+      "file": "en/when-to-see-doctor-period-pain",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/when-to-see-doctor-period-pain.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 85,
+      "frontmatter": {
+        "title": "\"When to See a Doctor: Period Pain Warning Signs You Shouldn't Ignore\"",
+        "seo_title": "\"Period Pain Warning Signs: When to See a Doctor Immediately\"",
+        "seo_description": "\"Know when period pain requires medical attention. Learn the warning signs of serious conditions and when to seek emergency care for menstrual symptoms.\"",
+        "tags": [
+          "medical emergency",
+          "severe period pain",
+          "when to see doctor",
+          "period warning signs",
+          "menstrual health",
+          "emergency symptoms"
+        ]
+      }
+    },
+    {
+      "file": "en/when-to-seek-medical-care-comprehensive-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/when-to-seek-medical-care-comprehensive-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Natural Period Pain Relief & When to Seek Medical Care: A Comprehensive Guide\"",
+        "seo_title": "\"Natural Period Pain Relief & Medical Care Guide: Complete Strategy for Menstrual Health\"",
+        "seo_description": "\"Learn scientifically-validated natural period pain relief methods including anti-inflammatory diet, heat therapy, and quick techniques. Understand important warning signs for when to seek medical care and take control of your menstrual health.\"",
+        "tags": [
+          "period pain relief",
+          "natural remedies",
+          "when to see doctor",
+          "anti-inflammatory diet",
+          "heat therapy",
+          "menstrual health",
+          "warning signs",
+          "period care"
+        ]
+      }
+    },
+    {
+      "file": "en/womens-lifecycle-menstrual-pain-analysis",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/womens-lifecycle-menstrual-pain-analysis.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"Complete Analysis of Women's Lifecycle Menstrual Pain Characteristics: North American Scientific Management Guide\"",
+        "tags": [
+          "lifecycle",
+          "age characteristics",
+          "scientific management",
+          "comprehensive guidance",
+          "North American guide"
+        ]
+      }
+    },
+    {
+      "file": "en/zhan-zhuang-baduanjin-for-menstrual-pain-relief",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/en/zhan-zhuang-baduanjin-for-menstrual-pain-relief.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签过长，建议控制在60字符以内",
+        "H1标签与标题关联性不强",
+        "SEO标题过长，建议控制在60字符以内",
+        "SEO描述过长，建议控制在160字符以内",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"Standing Meditation, Baduanjin and Tai Chi for Menstrual Pain Relief: Evidence-Based Guide to Traditional Practices\"",
+        "seo_title": "\"Standing Meditation, Baduanjin and Tai Chi for Menstrual Pain: Evidence-Based Traditional Practice Guide\"",
+        "seo_description": "\"Evidence-based guide to using standing meditation, Baduanjin, and Tai Chi for menstrual pain relief. Detailed practice methods, modern medical mechanisms, and personalized plans to help women safely and effectively manage period pain.\"",
+        "tags": [
+          "standing meditation",
+          "baduanjin",
+          "tai chi",
+          "menstrual pain relief",
+          "traditional practices",
+          "scientific research",
+          "TCM wellness",
+          "qi blood regulation",
+          "natural therapy",
+          "women's health"
+        ]
+      }
+    },
+    {
+      "file": "zh/5-minute-period-pain-relief",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/5-minute-period-pain-relief.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"5分钟快速缓解痛经技巧\"",
+        "seo_title": "\"5分钟快速缓解痛经：即时痉挛技巧\"",
+        "seo_description": "\"遭受突发经期痉挛？获得5分钟内即时缓解的有效技巧，包括简单运动、呼吸技巧等。\"",
+        "tags": [
+          "快速缓解",
+          "即时缓解",
+          "痛经",
+          "痉挛",
+          "紧急技巧",
+          "立即缓解"
+        ]
+      }
+    },
+    {
+      "file": "zh/anti-inflammatory-diet-period-pain",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/anti-inflammatory-diet-period-pain.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"抗炎饮食：通过食物缓解经期疼痛指南\"",
+        "seo_title": "\"抗炎饮食缓解痛经：推荐食物与禁忌食物\"",
+        "seo_description": "\"通过抗炎饮食自然减轻经期痉挛疼痛。获取经期抗炎食物指南，了解应限制哪些食物。\"",
+        "tags": [
+          "抗炎饮食",
+          "痛经",
+          "营养",
+          "经期饮食",
+          "自然疗法",
+          "月经健康",
+          "经期食物"
+        ]
+      }
+    },
+    {
+      "file": "zh/comprehensive-iud-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/comprehensive-iud-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少H1标签"
+      ],
+      "recommendations": [
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 75,
+      "frontmatter": {
+        "title": "\"宫内节育器 (IUD): 全面指南与用户须知\"",
+        "seo_title": "\"IUD宫内节育器完整指南：类型对比、适用人群、放置流程 | 权威医学指导\"",
+        "seo_description": "\"权威IUD指南：详解含铜vs含激素IUD区别，适用禁忌人群，放置取出流程，副作用管理。基于WHO/ACOG/NHS最新指南，助您选择最适合的长效避孕方法。\"",
+        "tags": [
+          "避孕",
+          "IUD",
+          "宫内节育器",
+          "女性健康",
+          "生殖健康"
+        ]
+      }
+    },
+    {
+      "file": "zh/comprehensive-medical-guide-to-dysmenorrhea",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/comprehensive-medical-guide-to-dysmenorrhea.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"痛经医学指南：病因、诊断与科学治疗的完整解析\"",
+        "seo_title": "\"痛经医学指南：专业诊断与治疗的权威解析\"",
+        "seo_description": "\"权威医学指南：详解痛经的病理机制、诊断标准和治疗方案。包括原发性与继发性痛经的鉴别、药物选择和综合管理策略。\"",
+        "tags": [
+          "痛经",
+          "医学诊断",
+          "药物治疗",
+          "妇科疾病",
+          "前列腺素",
+          "继发性痛经",
+          "NSAIDs",
+          "激素治疗"
+        ]
+      }
+    },
+    {
+      "file": "zh/comprehensive-menstrual-sleep-quality-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/comprehensive-menstrual-sleep-quality-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"经期睡眠质量全面改善指南：循证医学方法\"",
+        "tags": [
+          "睡眠质量",
+          "21天计划",
+          "睡眠卫生",
+          "激素睡眠",
+          "睡眠监测"
+        ]
+      }
+    },
+    {
+      "file": "zh/comprehensive-report-non-medical-factors-menstrual-pain",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/comprehensive-report-non-medical-factors-menstrual-pain.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"综合报告：非医疗因素对痛经的影响\"",
+        "seo_title": "\"综合报告：非医疗因素对痛经的影响 - 职业压力与生活方式深度解析\"",
+        "seo_description": "\"专业分析职业压力、睡眠质量、饮食习惯、运动状况等非医疗因素对痛经的影响机制。基于最新科学研究，提供系统性的痛经管理策略，帮助女性从根源改善经期健康。\"",
+        "tags": [
+          "痛经管理",
+          "职业压力",
+          "生活方式",
+          "环境因素",
+          "健康管理"
+        ]
+      }
+    },
+    {
+      "file": "zh/effective-herbal-tea-menstrual-pain",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/effective-herbal-tea-menstrual-pain.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"最有效的痛经草药茶配方\"",
+        "seo_title": "\"最有效的痛经草药茶配方 - 科学验证的自然疗法指南\"",
+        "seo_description": "\"详细介绍7种科学验证的痛经草药茶配方，包括姜茶、肉桂茶、茴香茶等。提供制作方法、作用机制、临床数据和安全使用指南，帮助女性选择最适合的自然痛经缓解方案。\"",
+        "tags": [
+          "草药茶",
+          "自然疗法",
+          "痛经缓解",
+          "传统医学",
+          "植物疗法"
+        ]
+      }
+    },
+    {
+      "file": "zh/essential-oils-aromatherapy-menstrual-pain-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/essential-oils-aromatherapy-menstrual-pain-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 80,
+      "frontmatter": {
+        "title": "\"精油芳香疗法缓解痛经：全面指南\"",
+        "seo_title": "\"精油芳香疗法缓解痛经：科学有效的自然疗法指南\"",
+        "seo_description": "\"专业详解6种核心精油缓解痛经的科学原理与使用方法。薰衣草、肉桂、玫瑰等精油的功效、安全指南，基于科学研究的自然痛经缓解方案。\"",
+        "tags": [
+          "精油疗法",
+          "痛经缓解",
+          "自然疗法",
+          "芳香疗法",
+          "女性健康"
+        ]
+      }
+    },
+    {
+      "file": "zh/ginger-menstrual-pain-relief-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/ginger-menstrual-pain-relief-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"如何用生姜缓解痛经：科学验证的5种高效方法\"",
+        "tags": [
+          "生姜疗法",
+          "痛经缓解",
+          "自然疗法",
+          "草药治疗",
+          "科学方法"
+        ]
+      }
+    },
+    {
+      "file": "zh/global-traditional-menstrual-pain-relief",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/global-traditional-menstrual-pain-relief.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "缺少特色图片",
+        "缺少阅读时间估算"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"全球视野下的痛经缓解：传统智慧与现代科学的融合\"",
+        "tags": [
+          "痛经缓解",
+          "阿育吠陀",
+          "中医",
+          "传统医学",
+          "自然疗法",
+          "女性健康"
+        ]
+      }
+    },
+    {
+      "file": "zh/heat-therapy-complete-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/heat-therapy-complete-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"经期热敷的正确方法：科学验证的5步高效指南\"",
+        "tags": [
+          "热敷疗法",
+          "痛经缓解",
+          "物理疗法",
+          "温度控制",
+          "科学方法"
+        ]
+      }
+    },
+    {
+      "file": "zh/herbal-tea-menstrual-pain-relief",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/herbal-tea-menstrual-pain-relief.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"最有效的痛经草药茶配方：科学验证的5种自然疗法\"",
+        "tags": [
+          "草药茶",
+          "痛经缓解",
+          "自然疗法",
+          "预防调理",
+          "科学配方"
+        ]
+      }
+    },
+    {
+      "file": "zh/hidden-culprits-of-menstrual-pain",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/hidden-culprits-of-menstrual-pain.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"痛经的隐藏帮凶：心理压力与缓解之道——心理疏导全解析\"",
+        "tags": [
+          "心理健康",
+          "痛经管理",
+          "压力缓解",
+          "心理疏导",
+          "认知行为疗法",
+          "正念疗法",
+          "自主神经检测",
+          "快速缓解技巧"
+        ]
+      }
+    },
+    {
+      "file": "zh/home-natural-menstrual-pain-relief",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/home-natural-menstrual-pain-relief.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"家庭自我护理方案：5分钟见效的自然痛经缓解方法\"",
+        "seo_title": "\"家庭自然痛经缓解方案：5分钟见效的居家护理方法\"",
+        "seo_description": "\"在家就能缓解痛经！科学验证的自然疗法包含热敷、穴位按压、营养调理等方法，5分钟快速见效，安全无副作用。\"",
+        "tags": [
+          "家庭护理",
+          "自然疗法",
+          "热敷疗法",
+          "穴位按压",
+          "营养调理",
+          "快速缓解",
+          "居家治疗"
+        ]
+      }
+    },
+    {
+      "file": "zh/long-term-healthy-lifestyle-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/long-term-healthy-lifestyle-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"长期健康生活方式指南：建立可持续的经期健康管理策略\"",
+        "seo_title": "\"长期健康生活方式指南：建立可持续的经期健康管理策略 | 专业女性健康\"",
+        "seo_description": "\"专业长期健康生活方式指南：通过科学的饮食、运动、睡眠和压力管理策略，建立可持续的经期健康管理方案。提供21天习惯养成计划、个性化健康档案建立方法和长期健康维护策略。\"",
+        "tags": [
+          "长期健康",
+          "生活方式",
+          "经期管理",
+          "预防保健",
+          "可持续发展",
+          "健康习惯"
+        ]
+      }
+    },
+    {
+      "file": "zh/magnesium-gut-health-comprehensive-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/magnesium-gut-health-comprehensive-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"告别经期不适：从镁平衡到肠道健康的全方位调理指南\"",
+        "seo_title": "\"镁平衡肠道健康痛经缓解：科学实证的经期调理完整指南\"",
+        "seo_description": "\"科学解析镁补充剂缓解痛经机制，探索肠道健康与月经周期关联，提供饮食调理方案和就医指导。基于权威研究的女性经期健康管理指南。\"",
+        "tags": [
+          "镁补充",
+          "肠道健康",
+          "痛经缓解",
+          "营养调理",
+          "经期管理",
+          "雌激素代谢",
+          "益生菌",
+          "饮食指导",
+          "就医指南",
+          "女性健康"
+        ]
+      }
+    },
+    {
+      "file": "zh/medication-vs-natural-remedies-menstrual-pain",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/medication-vs-natural-remedies-menstrual-pain.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"药物vs自然疗法：哪种痛经缓解方法最适合你？\"",
+        "tags": [
+          "药物治疗",
+          "自然疗法",
+          "痛经缓解",
+          "治疗选择",
+          "个性化医疗"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-back-pain-comprehensive-care-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-back-pain-comprehensive-care-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"经期腰部深度护理指南：科学缓解与权威建议\"",
+        "tags": [
+          "腰部护理",
+          "经期腰痛",
+          "疼痛管理",
+          "物理疗法",
+          "医学指导"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-nausea-relief-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-nausea-relief-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"经期恶心缓解指南：疼痛与呕吐的科学应对\"",
+        "seo_title": "\"经期恶心缓解指南：疼痛呕吐的科学应对方案\"",
+        "seo_description": "\"经期疼痛引发恶心呕吐？了解医学机制，掌握分级应对方案，从饮食调整到药物干预的完整缓解策略。\"",
+        "tags": [
+          "经期恶心",
+          "痛经呕吐",
+          "即时缓解",
+          "前列腺素",
+          "穴位按压",
+          "药物治疗",
+          "应急处理"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-pain-accompanying-symptoms-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-pain-accompanying-symptoms-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"痛经伴随症状大全：腹胀、呕吐、发烧的应对方案\"",
+        "seo_title": "\"痛经伴随症状大全：腹胀呕吐发烧的科学应对\"",
+        "seo_description": "\"痛经伴随腹胀、呕吐、发烧？了解症状成因，掌握分级应对方案，识别危险信号，科学管理复杂经期症状。\"",
+        "tags": [
+          "痛经伴随症状",
+          "经期腹胀",
+          "经期呕吐",
+          "经期发烧",
+          "症状矩阵",
+          "应急处理",
+          "危险信号"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-pain-back-pain-connection",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-pain-back-pain-connection.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"痛经会导致背痛吗？5个令人惊讶的事实\"",
+        "tags": [
+          "痛经",
+          "背痛",
+          "疼痛机制",
+          "神经传导",
+          "疼痛管理"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-pain-complications-management",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-pain-complications-management.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"痛经并发症与伴随症状管理：腹胀、恶心、腰痛的科学应对指南\"",
+        "seo_title": "\"痛经伴随症状完整管理指南：腹胀恶心腰痛的科学缓解方法 | 专业女性健康\"",
+        "seo_description": "\"专业痛经伴随症状管理指南：深度解析腹胀、恶心呕吐、腰痛的成因机制，提供科学缓解策略。包含症状关联矩阵、经期恶心缓解指南、腰痛专题、穴位按压技巧、抗炎饮食建议。基于前列腺素理论和临床实践，助您全面应对经期不适。\"",
+        "tags": [
+          "痛经伴随症状",
+          "经期腹胀",
+          "经期恶心",
+          "经期腰痛",
+          "症状管理",
+          "前列腺素",
+          "牵涉痛",
+          "抗炎饮食",
+          "穴位按压",
+          "自然缓解"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-pain-emergency-medication-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-pain-emergency-medication-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"痛经应急药物携带完全指南：随时随地缓解疼痛的专业方案\"",
+        "tags": [
+          "应急药物",
+          "痛经缓解",
+          "药物携带",
+          "用药安全",
+          "紧急处理"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-pain-faq-expert-answers",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-pain-faq-expert-answers.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"痛经常见疑问与专家解答：5个高频问题的权威回应\"",
+        "seo_title": "\"痛经常见疑问专家解答：前列腺素机制与危险信号识别指南\"",
+        "seo_description": "\"权威专家解答痛经5大高频疑问：为何如此痛苦、疼痛加重原因、是否致命、模拟器准确性等。基于科学证据的专业指导，帮助女性正确认知痛经。\"",
+        "tags": [
+          "痛经FAQ",
+          "专家解答",
+          "痛经机制",
+          "前列腺素",
+          "继发性痛经",
+          "危险信号",
+          "疼痛评估",
+          "医学科普"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-pain-medical-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-pain-medical-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"痛经医学指南：病因、诊断与科学治疗的完整解析\"",
+        "seo_title": "\"痛经医学指南：病因诊断与科学治疗完整解析\"",
+        "seo_description": "\"权威医学指南深度解析痛经10大病因，从前列腺素机制到子宫内膜异位症，详细阐述原发性与继发性痛经的鉴别诊断。\"",
+        "tags": [
+          "痛经",
+          "医学诊断",
+          "妇科疾病",
+          "疼痛管理",
+          "女性健康",
+          "医学科普"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-pain-research-progress-2024",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-pain-research-progress-2024.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"2024年痛经研究进展报告：循证医学与临床转化\"",
+        "tags": [
+          "循证医学",
+          "研究进展",
+          "新药开发",
+          "病理机制",
+          "临床试验"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-pain-vs-other-abdominal-pain-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-pain-vs-other-abdominal-pain-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"痛经与其他腹部疼痛全面对比指南：识别危险信号，做出明智决策\"",
+        "tags": [
+          "痛经鉴别",
+          "腹痛诊断",
+          "危险信号",
+          "医学指导",
+          "紧急处理"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-preventive-care-complete-plan",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-preventive-care-complete-plan.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"经期预防性护理完全方案：循证医学指导\"",
+        "tags": [
+          "预防性护理",
+          "全周期管理",
+          "循证医学",
+          "个体化方案",
+          "症状监测"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-sleep-quality-improvement-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-sleep-quality-improvement-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"经期睡眠质量全面改善指南：科学方法重获优质睡眠\"",
+        "tags": [
+          "经期睡眠",
+          "睡眠质量",
+          "睡眠改善",
+          "激素影响",
+          "睡眠环境"
+        ]
+      }
+    },
+    {
+      "file": "zh/menstrual-stress-management-complete-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/menstrual-stress-management-complete-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"经期压力管理完全指南：从心理到生理的全面缓解\"",
+        "tags": [
+          "压力管理",
+          "职场健康",
+          "心理调节",
+          "HPA轴",
+          "皮质醇管理"
+        ]
+      }
+    },
+    {
+      "file": "zh/natural-physical-therapy-comprehensive-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/natural-physical-therapy-comprehensive-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"痛经的自然与物理疗法综合指南：15种科学验证的缓解方法\"",
+        "seo_title": "\"痛经自然疗法完整指南：15种科学验证的缓解方法 | 热疗按摩瑜伽针灸艾灸\"",
+        "seo_description": "\"专业痛经自然疗法指南：详解15种科学验证的缓解方法，包括热疗冷疗、按摩瑜伽、针灸艾灸、草药营养、阿育吠陀疗法。融合《黄帝内经》《周易》理论与现代研究，提供个性化自然疗法选择。安全有效，无副作用，适合长期使用。\"",
+        "tags": [
+          "自然疗法",
+          "物理疗法",
+          "热疗",
+          "冷疗",
+          "按摩疗法",
+          "瑜伽",
+          "针灸",
+          "艾灸",
+          "草药疗法",
+          "营养补充",
+          "阿育吠陀",
+          "穴位按压",
+          "精油疗法",
+          "呼吸法",
+          "冥想"
+        ]
+      }
+    },
+    {
+      "file": "zh/nsaid-menstrual-pain-professional-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/nsaid-menstrual-pain-professional-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"NSAIDs痛经治疗专业指南：安全用药与效果优化\"",
+        "seo_title": "\"NSAIDs痛经治疗专业指南：安全用药与剂量计算 | periodhub.health\"",
+        "seo_description": "\"专业NSAIDs痛经治疗指南：药理机制详解、安全用药指导、互动式剂量计算器、副作用管理。布洛芬、萘普生等常用药物对比分析，个性化治疗方案制定，科学缓解痛经症状。\"",
+        "tags": [
+          "NSAIDs",
+          "药物治疗",
+          "安全用药",
+          "剂量计算",
+          "医学专业"
+        ]
+      }
+    },
+    {
+      "file": "zh/pain-management/understanding-dysmenorrhea",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/pain-management/understanding-dysmenorrhea.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 100,
+      "frontmatter": {
+        "title": "\"理解痛经：从生理机制到科学认知\"",
+        "seo_title": "\"理解痛经：生理机制与科学认知完整解析 | 专业医学指南\"",
+        "seo_description": "\"专业解析痛经的生理机制、病理过程和科学认知，帮助女性建立对痛经的全面医学理解。深入分析痛经成因、分类和影响，为科学管理提供理论基础。包含前列腺素机制、神经传导、分子生物学等专业内容，助您科学理解痛经本质。\"",
+        "tags": [
+          "痛经理解",
+          "生理机制",
+          "医学知识",
+          "科学认知",
+          "病理分析",
+          "痛经原理"
+        ],
+        "keywords": [
+          "痛经原理",
+          "痛经机制",
+          "前列腺素",
+          "痛经分类",
+          "原发性痛经",
+          "继发性痛经",
+          "痛经病理",
+          "痛经研究"
+        ]
+      }
+    },
+    {
+      "file": "zh/pain-management",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/pain-management.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO描述过短，建议至少120字符"
+      ],
+      "seoScore": 100,
+      "frontmatter": {
+        "title": "\"痛经管理完整指南：从基础理解到科学应对\"",
+        "seo_title": "\"痛经管理完整指南：科学理解与有效应对策略 | 专业女性健康\"",
+        "seo_description": "\"专业痛经管理指南：深入解析痛经机制、分类识别方法、自然缓解技巧和医疗干预策略。提供系统性的科学管理知识，帮助女性建立有效的痛经应对体系。包含热敷疗法、运动调理、饮食管理等实用方法，助您科学应对痛经困扰。\"",
+        "tags": [
+          "痛经管理",
+          "疼痛缓解",
+          "女性健康",
+          "科学应对",
+          "健康管理",
+          "痛经治疗"
+        ],
+        "keywords": [
+          "痛经管理",
+          "痛经治疗",
+          "痛经缓解",
+          "女性健康",
+          "痛经原因",
+          "痛经症状",
+          "痛经药物",
+          "痛经自然疗法"
+        ]
+      }
+    },
+    {
+      "file": "zh/period-friendly-recipes",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/period-friendly-recipes.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"经期友好食谱：滋养身心，舒适度过\\\"那几天\\\"\"",
+        "tags": [
+          "营养饮食",
+          "经期护理",
+          "食疗养生",
+          "健康食谱"
+        ]
+      }
+    },
+    {
+      "file": "zh/period-pain-simulator-accuracy-analysis",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/period-pain-simulator-accuracy-analysis.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"经痛模拟器准确吗？科学解析与权威观点\"",
+        "tags": [
+          "经痛模拟器",
+          "疼痛科学",
+          "医学设备",
+          "疼痛教育",
+          "性别理解"
+        ]
+      }
+    },
+    {
+      "file": "zh/personal-menstrual-health-profile",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/personal-menstrual-health-profile.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"建立个人经期健康档案\"",
+        "seo_title": "\"建立个人经期健康档案 - 科学追踪与个性化管理指南\"",
+        "seo_description": "\"详细指导如何建立完整的个人经期健康档案，包括周期追踪、症状记录、影响因素分析。提供实用工具和方法，帮助女性实现个性化的经期健康管理。\"",
+        "tags": [
+          "经期追踪",
+          "健康档案",
+          "症状记录",
+          "个性化管理",
+          "数据分析"
+        ]
+      }
+    },
+    {
+      "file": "zh/recommended-reading-list",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/recommended-reading-list.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"推荐书单：成为自己的经期健康专家\"",
+        "tags": [
+          "阅读推荐",
+          "女性健康",
+          "经期教育",
+          "心理健康"
+        ]
+      }
+    },
+    {
+      "file": "zh/specific-menstrual-pain-management-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/specific-menstrual-pain-management-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"特定情况下的痛经管理与关联疾病专题：从激素原理到个性化治疗方案\"",
+        "seo_title": "\"痛经管理完整指南：激素原理+疾病识别+特定情况治疗方案 | 专业女性健康\"",
+        "seo_description": "\"专业痛经管理指南：深度解析激素原理，识别7个妇科疾病危险信号，掌握IUD、孕期、更年期痛经管理。包含5分钟自检指南、症状对照表、长期治疗方案。基于权威医学研究，助您科学应对各种痛经情况。\"",
+        "tags": [
+          "痛经管理",
+          "妇科疾病",
+          "激素原理",
+          "子宫内膜异位症",
+          "IUD痛经",
+          "更年期痛经",
+          "继发性痛经",
+          "疼痛识别",
+          "个性化治疗",
+          "女性健康"
+        ]
+      }
+    },
+    {
+      "file": "zh/understanding-your-cycle",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/understanding-your-cycle.md",
+      "status": "issues",
+      "issues": [
+        "缺少H1标签"
+      ],
+      "recommendations": [
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段"
+      ],
+      "seoScore": 75,
+      "frontmatter": {
+        "title": "\"了解您的月经周期：全面指南\"",
+        "seo_title": "\"了解您的月经周期：阶段与激素的完整指南\"",
+        "seo_description": "\"全面了解月经周期阶段、激素变化，以及如何运用这些知识进行更好的健康管理和疼痛缓解。\"",
+        "tags": [
+          "月经周期",
+          "激素",
+          "女性健康",
+          "科普教育",
+          "生殖健康",
+          "痛经"
+        ]
+      }
+    },
+    {
+      "file": "zh/us-menstrual-pain-insurance-coverage-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/us-menstrual-pain-insurance-coverage-guide.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"美国痛经治疗医疗保险覆盖完全指南（2025年修正版）\"",
+        "tags": [
+          "医疗保险",
+          "ACA政策",
+          "Medicare改革",
+          "保险理赔",
+          "医疗费用"
+        ]
+      }
+    },
+    {
+      "file": "zh/when-to-see-doctor-period-pain",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/when-to-see-doctor-period-pain.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"痛经何时需要急诊？完整的危险信号识别与就医指南\"",
+        "seo_title": "\"痛经急诊指南：7个危险信号与完整就医指导\"",
+        "seo_description": "\"识别痛经7个危险信号，了解何时需要急诊就医。完整的医疗指导帮助您从自我评估到专业治疗，保护生命健康安全。\"",
+        "tags": [
+          "痛经急诊",
+          "危险信号",
+          "何时就医",
+          "医疗急诊",
+          "经期警示",
+          "月经健康",
+          "紧急症状",
+          "就医指导"
+        ]
+      }
+    },
+    {
+      "file": "zh/when-to-seek-medical-care-comprehensive-guide",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/when-to-seek-medical-care-comprehensive-guide.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"痛经自然缓解与就医指南：何时需要寻求专业帮助\"",
+        "seo_title": "\"痛经自然缓解与就医指南：掌控经期健康的完整攻略\"",
+        "seo_description": "\"学习科学验证的痛经自然缓解方法，包括抗炎饮食、热敷疗法和快速技巧。了解何时需要就医的重要警示信号，掌控您的经期健康。\"",
+        "tags": [
+          "痛经缓解",
+          "自然疗法",
+          "何时就医",
+          "抗炎饮食",
+          "热敷疗法",
+          "经期健康",
+          "警示信号",
+          "月经健康"
+        ]
+      }
+    },
+    {
+      "file": "zh/womens-lifecycle-menstrual-pain-analysis",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/womens-lifecycle-menstrual-pain-analysis.md",
+      "status": "issues",
+      "issues": [
+        "缺少必需的SEO元素: seo_title",
+        "缺少必需的SEO元素: seo_description",
+        "缺少必需的SEO元素: canonical_url"
+      ],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "缺少关键词字段",
+        "缺少特色图片"
+      ],
+      "seoScore": 55,
+      "frontmatter": {
+        "title": "\"女性生命周期痛经特点全解析：北美科学管理指南\"",
+        "tags": [
+          "生命周期",
+          "年龄特点",
+          "科学管理",
+          "全程指导",
+          "北美指南"
+        ]
+      }
+    },
+    {
+      "file": "zh/zhan-zhuang-baduanjin-for-menstrual-pain-relief",
+      "path": "/Users/duting/Downloads/money💰/--main/content/articles/zh/zhan-zhuang-baduanjin-for-menstrual-pain-relief.md",
+      "status": "ok",
+      "issues": [],
+      "recommendations": [
+        "H1标签与标题关联性不强",
+        "SEO标题过短，建议至少30字符",
+        "SEO描述过短，建议至少120字符",
+        "缺少关键词字段",
+        "内容较长，考虑分段或优化结构"
+      ],
+      "seoScore": 90,
+      "frontmatter": {
+        "title": "\"站桩、八段锦与太极拳缓解痛经：传统功法的科学实证指南\"",
+        "seo_title": "\"站桩八段锦太极拳缓解痛经：科学实证的传统功法指南\"",
+        "seo_description": "\"基于科学研究的站桩、八段锦与太极拳缓解痛经指南。详细的练习方法、现代医学机理解释和个体化方案，帮助女性安全有效地管理经期疼痛。\"",
+        "tags": [
+          "站桩",
+          "八段锦",
+          "太极拳",
+          "痛经缓解",
+          "传统功法",
+          "科学研究",
+          "中医养生",
+          "气血调理",
+          "自然疗法",
+          "女性健康"
+        ]
+      }
+    }
+  ],
+  "checkTime": "2025-09-09T06:59:57.874Z"
+}

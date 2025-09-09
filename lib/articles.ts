@@ -28,6 +28,35 @@ export interface Article {
 
 const articlesDirectory = path.join(process.cwd(), 'content/articles');
 
+// 递归扫描目录获取所有markdown文件
+function scanDirectoryRecursively(dir: string, basePath: string = ''): string[] {
+  const files: string[] = [];
+  
+  try {
+    const items = fs.readdirSync(dir);
+    
+    for (const item of items) {
+      const itemPath = path.join(dir, item);
+      const relativePath = basePath ? `${basePath}/${item}` : item;
+      const stat = fs.statSync(itemPath);
+      
+      if (stat.isDirectory()) {
+        // 递归扫描子目录
+        const subFiles = scanDirectoryRecursively(itemPath, relativePath);
+        files.push(...subFiles);
+      } else if (item.endsWith('.md')) {
+        // 添加markdown文件
+        const slug = relativePath.replace('.md', '');
+        files.push(slug);
+      }
+    }
+  } catch (error) {
+    console.warn(`扫描目录失败: ${dir}`, error);
+  }
+  
+  return files;
+}
+
 export function getAllArticles(locale: string = 'en'): Article[] {
   try {
     const articlesPath = locale === 'zh'
@@ -38,13 +67,11 @@ export function getAllArticles(locale: string = 'en'): Article[] {
       return [];
     }
 
-    const fileNames = fs.readdirSync(articlesPath);
-    const articles = fileNames
-      .filter(name => name.endsWith('.md'))
-      .map(name => {
-        const slug = name.replace(/\.md$/, '');
-        return getArticleBySlug(slug, locale);
-      })
+    // 使用递归扫描获取所有文章slug
+    const articleSlugs = scanDirectoryRecursively(articlesPath);
+    
+    const articles = articleSlugs
+      .map(slug => getArticleBySlug(slug, locale))
       .filter(article => article !== null) as Article[];
 
     // Sort articles by date (newest first)
@@ -82,6 +109,17 @@ export function getArticleBySlug(slug: string, locale: string = 'en'): Article |
     // 如果映射的文件不存在，尝试原始slug
     if (!fs.existsSync(fullPath)) {
       fullPath = path.join(articlesPath, `${slug}.md`);
+    }
+
+    // 如果直接文件不存在，尝试子目录结构
+    if (!fs.existsSync(fullPath)) {
+      // 处理子目录结构，如 pain-management/understanding-dysmenorrhea
+      const slugParts = slug.split('/');
+      if (slugParts.length > 1) {
+        const subDirPath = path.join(articlesPath, ...slugParts.slice(0, -1));
+        const fileName = `${slugParts[slugParts.length - 1]}.md`;
+        fullPath = path.join(subDirPath, fileName);
+      }
     }
 
     if (!fs.existsSync(fullPath)) {

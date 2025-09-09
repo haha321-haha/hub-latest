@@ -1,0 +1,172 @@
+{
+  "totalUrls": 34,
+  "articleUrls": 8,
+  "missingArticles": [],
+  "existingArticles": [
+    {
+      "url": "https://www.periodhub.health/zh/articles/menstrual-pain-medical-guide",
+      "locale": "zh",
+      "slug": "menstrual-pain-medical-guide",
+      "key": "zh/menstrual-pain-medical-guide",
+      "status": "exists"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/articles/heat-therapy-complete-guide",
+      "locale": "zh",
+      "slug": "heat-therapy-complete-guide",
+      "key": "zh/heat-therapy-complete-guide",
+      "status": "exists"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/articles/5-minute-period-pain-relief",
+      "locale": "zh",
+      "slug": "5-minute-period-pain-relief",
+      "key": "zh/5-minute-period-pain-relief",
+      "status": "exists"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/articles/when-to-see-doctor-period-pain",
+      "locale": "zh",
+      "slug": "when-to-see-doctor-period-pain",
+      "key": "zh/when-to-see-doctor-period-pain",
+      "status": "exists"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/articles/nsaid-menstrual-pain-professional-guide",
+      "locale": "zh",
+      "slug": "nsaid-menstrual-pain-professional-guide",
+      "key": "zh/nsaid-menstrual-pain-professional-guide",
+      "status": "exists"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/articles/anti-inflammatory-diet-period-pain",
+      "locale": "zh",
+      "slug": "anti-inflammatory-diet-period-pain",
+      "key": "zh/anti-inflammatory-diet-period-pain",
+      "status": "exists"
+    }
+  ],
+  "intentionallyRemoved": [
+    {
+      "url": "https://www.periodhub.health/zh/articles/pain-management",
+      "locale": "zh",
+      "slug": "pain-management",
+      "key": "zh/pain-management",
+      "status": "intentionally-removed"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/articles/pain-management/understanding-dysmenorrhea",
+      "locale": "zh",
+      "slug": "pain-management/understanding-dysmenorrhea",
+      "key": "zh/pain-management/understanding-dysmenorrhea",
+      "status": "intentionally-removed"
+    }
+  ],
+  "nonArticleUrls": [
+    {
+      "url": "https://www.periodhub.health/zh/downloads",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/pain-tracker",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/health-guide/relief-methods",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/health-guide",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/en/medical-disclaimer",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/interactive-tools",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/scenario-solutions",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/scenario-solutions/exercise",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/scenario-solutions/office",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/en/scenario-solutions/office",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/en/scenario-solutions/sleep",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/en/scenario-solutions/lifeStages",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/en/scenario-solutions/exercise",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/en/scenario-solutions/commute",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/natural-therapies",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/immediate-relief",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/interactive-tools/pain-tracker",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/interactive-tools/symptom-assessment",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/privacy-policy",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/scenario-solutions/sleep",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/en/teen-health/emotional-support",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/scenario-solutions/lifeStages",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/scenario-solutions/commute",
+      "status": "non-article"
+    },
+    {
+      "url": "https://www.periodhub.health/en/scenario-solutions/social",
+      "status": "non-article"
+    }
+  ],
+  "checkTime": "2025-09-09T07:14:51.979Z"
+}
