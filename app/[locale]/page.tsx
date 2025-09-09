@@ -292,11 +292,11 @@ export default async function HomePage({ params: { locale } }: { params: { local
                   <div className="text-gray-600">{t('home.trusted.metrics.activeUsers')}</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <div className="text-3xl font-bold text-pink-600 mb-2">42</div>
+                  <div className="text-3xl font-bold text-pink-600 mb-2">43</div>
                   <div className="text-gray-600">{t('home.trusted.metrics.articles')}</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">24</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">13</div>
                   <div className="text-gray-600">{t('home.trusted.metrics.resources')}</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
