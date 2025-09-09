@@ -12,6 +12,7 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     loader: 'default',
+    qualities: [25, 50, 75, 95],
     remotePatterns: [
       {
         protocol: 'https',

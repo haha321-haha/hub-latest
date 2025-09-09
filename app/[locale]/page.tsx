@@ -7,7 +7,8 @@ import UserSuccessStories from '@/components/UserSuccessStories';
 import NavigationTabs from '@/components/NavigationTabs';
 
 // 页面级别的metadata
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'homePageContent' });
 
   return {
@@ -155,7 +156,8 @@ const getStructuredData = async (locale: string) => {
   };
 };
 
-export default async function HomePage({ params: { locale } }: { params: { locale: string } }) {
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('');
   const isZh = typeof locale === 'string' && (locale === 'zh' || locale.startsWith('zh'));

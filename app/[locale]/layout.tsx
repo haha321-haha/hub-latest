@@ -27,11 +27,12 @@ function LoadingState() {
 
 export default async function LocaleLayout({
   children,
-  params: { locale }
+  params
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   // 确保在服务端设置当前请求的语言环境
   setRequestLocale(locale);
 

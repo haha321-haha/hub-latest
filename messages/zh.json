@@ -4058,12 +4058,19 @@
       "hold": "[ZH] Hold",
       "exhale": "[ZH] Exhale"
     },
-    "instructions": "[ZH] How to practice:",
-    "startButton": "[ZH] 🫁 Start Guided Practice",
-    "stopButton": "[ZH] Stop Practice",
-    "practiceAgain": "[ZH] Practice Again",
-    "completed": "[ZH] ✅ One cycle completed!",
-    "currentPhase": "[ZH] Current:",
+    "instructions": {
+      "title": "练习指导",
+      "inhale": "吸气",
+      "hold": "屏气",
+      "exhale": "呼气"
+    },
+    "buttons": {
+      "startPractice": "开始练习",
+      "stopPractice": "停止练习",
+      "practiceAgain": "再次练习",
+      "oneCycleCompleted": "✅ 完成一轮练习！"
+    },
+    "currentPhase": "当前阶段：",
     "benefits": {
       "title": "[ZH] Scientific Benefits:",
       "painPerception": "[ZH] Pain Perception",

@@ -10,10 +10,11 @@ import StructuredData from '@/components/StructuredData';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'interactiveToolsPage' });
   
   return {
@@ -45,10 +46,11 @@ export async function generateStaticParams() {
 }
 
 export default async function InteractiveToolsPage({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   // Enable static rendering
   unstable_setRequestLocale(locale);
 
