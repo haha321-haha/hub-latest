@@ -1,0 +1,17 @@
+# Robots.txt 更新规则
+# 用于解决 PDF 文件重复索引问题
+
+User-agent: *
+# 禁止搜索引擎索引 PDF 文件
+Disallow: /pdf-files/
+
+# 允许其他内容
+Allow: /
+
+# Sitemap 位置
+Sitemap: https://www.periodhub.health/sitemap.xml
+
+# 可选：禁止特定重复页面
+# Disallow: /en/interactive-tools/symptom-tracker
+# Disallow: /en/interactive-tools
+# Disallow: /zh/teen-health

@@ -167,18 +167,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     articlePages.push(`/en/articles/${slug}`);
   }
   
-  // 添加缺失的文章页面（修复404错误）
-  const missingArticleSlugs = [
-    'ginger-menstrual-pain-relief-guide',
-    'comprehensive-report-non-medical-factors-menstrual-pain',
-    'period-pain-simulator-accuracy-analysis',
-    'medication-vs-natural-remedies-menstrual-pain'
-  ];
-  
-  for (const slug of missingArticleSlugs) {
-    articlePages.push(`/zh/articles/${slug}`);
-    articlePages.push(`/en/articles/${slug}`);
-  }
+  // 注意：缺失的文章页面已经在 articleSlugs 数组中，无需重复添加
 
   // 所有页面
   const allPages = [...staticPages, ...articlePages];
@@ -214,42 +203,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  // PDF 资源文件 - 只包含有语言后缀的文件（用户实际需要的）
-  const pdfFiles = [
-    // 中文版PDF
-    'parent-communication-guide-zh.pdf',
-    'zhan-zhuang-baduanjin-illustrated-guide-zh.pdf',
-    'teacher-collaboration-handbook-zh.pdf',
-    'healthy-habits-checklist-zh.pdf',
-    'specific-menstrual-pain-management-guide-zh.pdf',
-    'natural-therapy-assessment-zh.pdf',
-    'menstrual-cycle-nutrition-plan-zh.pdf',
-    'campus-emergency-checklist-zh.pdf',
-    'menstrual-pain-complications-management-zh.pdf',
-    'magnesium-gut-health-menstrual-pain-guide-zh.pdf',
-    'pain-tracking-form-zh.pdf',
-    'teacher-health-manual-zh.pdf',
-    // 英文版PDF
-    'parent-communication-guide-en.pdf',
-    'zhan-zhuang-baduanjin-illustrated-guide-en.pdf',
-    'teacher-collaboration-handbook-en.pdf',
-    'healthy-habits-checklist-en.pdf',
-    'specific-menstrual-pain-management-guide-en.pdf',
-    'natural-therapy-assessment-en.pdf',
-    'menstrual-cycle-nutrition-plan-en.pdf',
-    'campus-emergency-checklist-en.pdf',
-    'menstrual-pain-complications-management-en.pdf',
-    'magnesium-gut-health-menstrual-pain-guide-en.pdf',
-    'pain-tracking-form-en.pdf',
-    'teacher-health-manual-en.pdf',
-  ];
+  // 注意：已移除 PDF 文件，因为它们被 robots.txt 禁止索引
+  // 这解决了 Google 发现的重复页面问题
 
-  const pdfEntries: MetadataRoute.Sitemap = pdfFiles.map((filename) => ({
-    url: `${baseUrl}/pdf-files/${filename}`,
-    lastModified: currentDate,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }));
-
-  return [...staticEntries, ...pdfEntries];
+  return staticEntries;
 }
