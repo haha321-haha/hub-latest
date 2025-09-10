@@ -4,6 +4,7 @@ import { Download } from 'lucide-react';
 import { Locale, locales } from '@/i18n';
 import OptimizedMobilePDFCenter from '@/components/OptimizedMobilePDFCenter';
 import { SITE_CONFIG } from '@/config/site.config';
+import { pdfResources } from '@/config/pdfResources';
 
 // Generate metadata for the page
 export async function generateMetadata({
@@ -56,7 +57,57 @@ export default async function DownloadsPage({
     ? `🎉 全新PDF下载中心 - ${totalResources}个精选资源，移动端优化体验，基于紧急程度智能分类`
     : `🎉 New PDF Download Center - ${totalResources} curated resources, mobile-optimized experience, urgency-based smart categorization`;
 
+  // 生成结构化数据
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": locale === 'zh' ? "PDF资源下载中心" : "PDF Resources Download Center",
+    "description": locale === 'zh' 
+      ? `Period Hub文章PDF下载中心，${totalResources}个精选经期健康资源`
+      : `Period Hub Articles PDF Download Center, ${totalResources} curated menstrual health resources`,
+    "url": `https://www.periodhub.health/${locale}/downloads`,
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": pdfResources.length,
+      "itemListElement": pdfResources.map((resource, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "DigitalDocument",
+          "name": resource.title,
+          "description": resource.description,
+          "fileSize": `${resource.fileSize}KB`,
+          "url": `https://www.periodhub.health${resource.downloadUrl}`,
+          "encodingFormat": "application/pdf"
+        }
+      }))
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": locale === 'zh' ? "首页" : "Home",
+          "item": `https://www.periodhub.health/${locale}`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": locale === 'zh' ? "PDF下载中心" : "PDF Download Center",
+          "item": `https://www.periodhub.health/${locale}/downloads`
+        }
+      ]
+    }
+  };
+
   return (
+    <>
+      {/* 结构化数据 */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100">
       {/* 🎉 新版本标识横幅 */}
       <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-3 mb-6 rounded-xl animate-pulse-slow">
@@ -131,5 +182,6 @@ export default async function DownloadsPage({
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -140,36 +140,6 @@ export const pdfResources: PDFResource[] = [
   //   updatedAt: '2024-01-15'
   // },
   {
-    id: 'pain-tracking-form',
-    title: '疼痛追踪表',
-    titleKey: 'painTrackingForm.title',
-    description: '详细的疼痛追踪方法和记录技巧',
-    descriptionKey: 'painTrackingForm.description',
-    filename: 'pain-tracking-form.pdf',
-    category: 'management-tools',
-    size: '2.8MB',
-    downloadUrl: '/downloads/pain-tracking-form.pdf',
-    icon: '📊',
-    fileSize: 2800,
-    createdAt: '2024-01-15',
-    updatedAt: '2024-01-15',
-    // 多语言版本支持
-    versions: {
-      zh: {
-        title: '疼痛追踪表',
-        description: '详细的疼痛追踪方法和记录技巧'
-      },
-      en: {
-        title: 'Pain Tracking Form',
-        description: 'Detailed pain tracking methods and recording techniques'
-      },
-      zhEn: {
-        title: 'Pain Tracking Form / 疼痛追踪表',
-        description: 'Detailed pain tracking methods and recording techniques / 详细的疼痛追踪方法和记录技巧'
-      }
-    }
-  },
-  {
     id: 'menstrual-cycle-nutrition-plan',
     title: '经期营养计划',
     titleKey: 'menstrualCycleNutritionPlan.title',
