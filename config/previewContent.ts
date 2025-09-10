@@ -1343,6 +1343,118 @@ export const PREVIEW_CONTENT: PreviewContent[] = [
         'Action checklist and preparation items'
       ]
     }
+  },
+  // 中医体质养生指南
+  {
+    id: 'constitution-guide',
+    title: {
+      zh: '中医体质养生指南',
+      en: 'TCM Constitution Health Guide'
+    },
+    keyPoints: {
+      zh: [
+        '九种体质类型详细分析',
+        '个性化养生方案制定',
+        '饮食调理和生活方式建议',
+        '经期体质调理方法'
+      ],
+      en: [
+        'Detailed analysis of nine constitution types',
+        'Personalized health regimen development',
+        'Dietary and lifestyle recommendations',
+        'Menstrual constitution adjustment methods'
+      ]
+    },
+    useCase: {
+      zh: '适合希望了解自己体质类型，制定个性化养生方案的用户',
+      en: 'Suitable for users who want to understand their constitution type and develop personalized health regimens'
+    },
+    estimatedTime: {
+      zh: '15-20分钟',
+      en: '15-20 minutes'
+    },
+    previewSections: {
+      zh: [
+        {
+          title: '体质测试方法',
+          content: [
+            '九种体质类型：平和质、气虚质、阳虚质、阴虚质、痰湿质、湿热质、血瘀质、气郁质、特禀质',
+            '体质判断标准：通过症状、体征、舌象、脉象综合判断',
+            '测试步骤：详细的自测方法和注意事项'
+          ],
+          isHighlight: true
+        },
+        {
+          title: '经期体质调理',
+          content: [
+            '不同体质在经期的表现特点',
+            '经期饮食调理原则',
+            '体质相关的经期不适调理方法',
+            '长期体质改善策略'
+          ]
+        },
+        {
+          title: '个性化养生方案',
+          content: [
+            '根据体质类型制定饮食计划',
+            '适合的运动方式和强度',
+            '作息时间调整建议',
+            '情志调养方法'
+          ]
+        }
+      ],
+      en: [
+        {
+          title: 'Constitution Testing Methods',
+          content: [
+            'Nine constitution types: Balanced, Qi deficiency, Yang deficiency, Yin deficiency, Phlegm-dampness, Damp-heat, Blood stasis, Qi stagnation, Special constitution',
+            'Constitution assessment criteria: Comprehensive evaluation through symptoms, signs, tongue appearance, and pulse',
+            'Testing steps: Detailed self-assessment methods and precautions'
+          ],
+          isHighlight: true
+        },
+        {
+          title: 'Menstrual Constitution Adjustment',
+          content: [
+            'Characteristics of different constitutions during menstruation',
+            'Dietary adjustment principles for menstruation',
+            'Constitution-related menstrual discomfort relief methods',
+            'Long-term constitution improvement strategies'
+          ]
+        },
+        {
+          title: 'Personalized Health Regimens',
+          content: [
+            'Dietary planning based on constitution type',
+            'Suitable exercise methods and intensity',
+            'Sleep schedule adjustment recommendations',
+            'Emotional regulation methods'
+          ]
+        }
+      ]
+    },
+    fullVersionIncludes: {
+      zh: [
+        '完整的九种体质详细分析表',
+        '个性化饮食调理方案',
+        '运动锻炼指导',
+        '情志调养方法',
+        '四季养生要点',
+        '体质改善时间表',
+        '常见体质问题解答',
+        '专业中医调理建议'
+      ],
+      en: [
+        'Complete detailed analysis table of nine constitution types',
+        'Personalized dietary adjustment plans',
+        'Exercise and fitness guidance',
+        'Emotional regulation methods',
+        'Seasonal health maintenance points',
+        'Constitution improvement timeline',
+        'FAQ for common constitution issues',
+        'Professional TCM adjustment recommendations'
+      ]
+    }
   }
 ];
 
