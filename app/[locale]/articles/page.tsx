@@ -2,7 +2,8 @@ import { redirect } from 'next/navigation';
 import { Locale } from '@/i18n';
 import { Metadata } from 'next';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
   const isZh = locale === 'zh';
 
   return {
@@ -25,10 +26,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 }
 
 export default async function ArticlesPage({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   // 301永久重定向到downloads页面
   redirect(`/${locale}/downloads`);
 }

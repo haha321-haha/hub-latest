@@ -1,0 +1,25 @@
+# Robots.txt 更新规则
+# 用于解决 PDF 文件重复索引问题
+
+# 禁止搜索引擎索引 PDF 文件
+Disallow: /pdf-files/
+
+# 或者使用更具体的方式，只禁止特定的 PDF 文件
+# Disallow: /pdf-files/zhan-zhuang-baduanjin-illustrated-guide-zh.pdf
+# Disallow: /pdf-files/parent-communication-guide-en.pdf
+# Disallow: /pdf-files/parent-communication-guide-zh.pdf
+# Disallow: /pdf-files/teacher-collaboration-handbook-en.pdf
+# Disallow: /pdf-files/teacher-health-manual-en.pdf
+# Disallow: /pdf-files/healthy-habits-checklist-en.pdf
+# Disallow: /pdf-files/pain-tracking-form-zh.pdf
+# Disallow: /pdf-files/specific-menstrual-pain-management-guide-en.pdf
+
+# 允许其他内容
+Allow: /
+
+# Sitemap 位置
+Sitemap: https://www.periodhub.health/sitemap.xml
+
+
+
+

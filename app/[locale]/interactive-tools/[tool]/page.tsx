@@ -445,10 +445,11 @@ export async function generateStaticParams() {
 
 // Generate metadata for the tool
 export async function generateMetadata({
-  params: { locale, tool }
+  params
 }: {
-  params: { locale: Locale; tool: string }
+  params: Promise<{ locale: Locale; tool: string }>
 }): Promise<Metadata> {
+  const { locale, tool } = await params;
   const toolData = await getToolBySlug(tool, locale);
 
   if (!toolData) {
@@ -470,10 +471,11 @@ export async function generateMetadata({
 }
 
 export default async function ToolPage({
-  params: { locale, tool }
+  params
 }: {
-  params: { locale: Locale; tool: string }
+  params: Promise<{ locale: Locale; tool: string }>
 }) {
+  const { locale, tool } = await params;
   unstable_setRequestLocale(locale);
 
   const toolData = await getToolBySlug(tool, locale);

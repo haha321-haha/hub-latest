@@ -1,15 +1,15 @@
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'medicationGuide' });
   
   return {
@@ -29,13 +29,14 @@ export async function generateMetadata({
   };
 }
 
-export default function MedicationGuidePage({
-  params: { locale }
+export default async function MedicationGuidePage({
+  params
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
-  const t = useTranslations('medicationGuide');
-  const commonT = useTranslations('common');
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'medicationGuide' });
+  const commonT = await getTranslations({ locale, namespace: 'common' });
   
   // 结构化数据
   const structuredData = {

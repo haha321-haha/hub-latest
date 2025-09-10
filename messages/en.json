@@ -2,7 +2,7 @@
   "site": {
     "name": "Period Hub",
     "title": "Period Hub - Menstrual Health Management Platform",
-    "description": "Professional menstrual health management platform providing scientific guidance and caring support for every woman"
+    "description": "Period Hub - Professional menstrual health management platform offering scientific pain relief solutions, interactive tools, and personalized health guidance for comprehensive period care. From instant relief to long-term management, supporting women's menstrual health worldwide. Evidence-based content with 42 expert articles, 24 PDF resources, and 6 interactive tools."
   },
   "metadata": {
     "home": {
@@ -195,7 +195,7 @@
     "categories": {
       "immediateRelief": {
         "title": "Immediate Relief Solutions",
-        "description": "Quick and effective pain relief methods and emergency techniques",
+        "description": "Professional immediate period pain relief solutions: 5-minute quick relief techniques, proper heat therapy methods, emergency pain management strategies, workplace emergency handling and other scientifically effective immediate relief methods. Evidence-based professional guidance for rapid pain relief when needed. Includes detailed step-by-step instructions and safety precautions for effective relief.",
         "articles": {
           "fiveMinuteRelief": "5-Minute Quick Tips for Period Pain Relief",
           "fiveMinuteReliefDesc": "Need fast relief from menstrual cramps? Explore simple, actionable techniques you can use right now",
@@ -227,7 +227,7 @@
       },
       "naturalTherapies": {
         "title": "Natural Therapies",
-        "description": "Gentle and effective natural therapies and traditional conditioning methods",
+        "description": "Comprehensive scientifically-verified natural period pain relief methods: covering heat therapy, yoga, massage, herbal teas, essential oils, acupuncture and 8 other safe and effective natural relief techniques. Evidence-based professional guidance with no side effects, suitable for all ages from teens to working women. Includes detailed usage instructions and safety precautions for effective pain relief.",
         "articles": {
           "physicalTherapy": "Comprehensive Natural Physical Therapy Guide",
           "physicalTherapyDesc": "Explore scientific applications of massage, stretching, exercise and other natural physical therapies",
@@ -1309,8 +1309,25 @@
           "title": "Exercise Science",
           "endorphinRelease": "Endorphin release: ",
           "bloodCirculation": "Blood circulation: ",
+          "muscleRelaxation": "Muscle relaxation: ",
           "endorphinReleaseValue": "Exercise promotes natural pain-relieving substances",
-          "bloodCirculationValue": "Improves pelvic and uterine blood flow"
+          "bloodCirculationValue": "Improves pelvic and uterine blood flow",
+          "muscleRelaxationValue": "Reduces muscle tension and spasms in pelvic area"
+        },
+        "practice": {
+          "title": "Practice Guidelines",
+          "timing": {
+            "title": "Best Timing",
+            "1": "During menstruation: 10-15 minutes daily",
+            "2": "Pre-menstrual: 20-30 minutes every other day",
+            "3": "Post-menstrual: 15-20 minutes for recovery"
+          },
+          "precautions": {
+            "title": "Important Precautions",
+            "1": "Stop if pain increases during exercise",
+            "2": "Avoid intense poses during heavy flow",
+            "3": "Consult doctor if you have chronic conditions"
+          }
         }
       },
       "aromatherapy": {
@@ -1468,6 +1485,7 @@
       }
     },
     "evidenceBased": {
+      "title": "Evidence-Based Research",
       "coreEfficacy": {
         "heatTherapy": {
           "title": "Heat Therapy Core Efficacy",
@@ -1504,6 +1522,13 @@
     "medicalDisclaimer": {
       "title": "Medical Disclaimer:",
       "content": "The information provided on this page is for educational purposes only and is not intended to replace professional medical advice, diagnosis, or treatment. If you have any medical concerns, please consult your doctor or other qualified healthcare provider."
+    },
+    "faq": {
+      "dysmenorrhea": "Dysmenorrhea",
+      "effectiveTherapies": "Which natural therapies are most effective for menstrual pain?",
+      "effectiveTherapiesAnswer": "According to evidence-based medical research, the most effective natural therapies include: heat therapy (92% effectiveness), acupuncture (85% effectiveness), transcutaneous electrical nerve stimulation (76% effectiveness), and aromatherapy (68% effectiveness). These methods work through different physiological mechanisms to relieve pain, and it's recommended to choose appropriate methods based on individual constitution and pain severity.",
+      "timeToEffect": "How long does it take for natural therapies to take effect?",
+      "timeToEffectAnswer": "Different therapies have different onset times: heat therapy typically takes effect within 15-20 minutes; acupuncture requires 3-5 treatments to see significant results; aromatherapy begins working within 30 minutes; yoga and exercise require 2-4 weeks of consistent practice to see long-term improvements. It's recommended to combine multiple methods and maintain patience and persistence."
     }
   },
   "culturalCharmsPage": {
@@ -1578,7 +1603,7 @@
           "feature3": "Scientific assessment methods",
           "feature4": "Instant result feedback",
           "startButton": "Start Assessment",
-          "disclaimer": "This assessment is for reference only and cannot replace professional medical diagnosis."
+          "disclaimer": "This tool is for reference only and cannot replace professional medical advice"
         },
         "progress": {
           "questionOf": "Question {current} of {total}"
@@ -1587,97 +1612,44 @@
           "previous": "Previous",
           "next": "Next",
           "skip": "Skip",
-          "finish": "Complete Assessment"
+          "finish": "Finish"
+        },
+        "painScale": {
+          "title": "Pain Level: ",
+          "reference": "Pain Level Reference",
+          "levels": {
+            "none": "None",
+            "mild": "Mild",
+            "moderate": "Moderate",
+            "severe": "Severe",
+            "extreme": "Extreme"
+          },
+          "descriptions": {
+            "0-2": "No pain or very mild discomfort",
+            "3-4": "Mild pain, does not affect daily activities",
+            "5-7": "Moderate pain, affects some activities",
+            "8-10": "Severe pain, seriously affects life"
+          }
         },
         "result": {
           "title": "Assessment Results",
           "yourScore": "Your Score",
-          "severity": "Severity",
+          "severity": "Severity Level",
           "riskLevel": "Risk Level",
-          "summary": "Summary",
-          "recommendations": "Recommendations",
+          "summary": "Assessment Summary",
+          "recommendations": "Personalized Recommendations",
           "timeframe": "Timeframe:",
-          "actionSteps": "Action Steps",
+          "actionSteps": "Action Steps:",
           "retakeAssessment": "Retake Assessment",
-          "saveResults": "Save Results",
-          "nextSteps": {
-            "trackSymptoms": "Use pain tracker to record symptoms",
-            "tryRecommendations": "Try recommended relief methods",
-            "consultDoctor": "If symptoms persist or worsen, consult a doctor"
-          }
-        },
-        "severity": {
-          "mild": "Mild",
-          "moderate": "Moderate",
-          "severe": "Severe",
-          "emergency": "Emergency"
-        },
-        "priority": {
-          "high": "High Priority",
-          "medium": "Medium Priority",
-          "low": "Low Priority"
+          "saveResults": "Save Results"
         },
         "messages": {
           "assessmentComplete": "Assessment Complete",
-          "assessmentCompleteDesc": "Your symptom assessment is complete. Please review the results and recommendations.",
+          "assessmentCompleteDesc": "Your assessment has been completed successfully",
           "assessmentFailed": "Assessment Failed",
-          "assessmentFailedDesc": "An error occurred during assessment. Please try again.",
+          "assessmentFailedDesc": "There was an error completing your assessment",
           "resultsSaved": "Results Saved",
-          "resultsSavedDesc": "Your assessment results have been saved to local storage."
-        },
-        "resultMessages": {
-          "emergency": "Your symptoms are quite severe, we recommend consulting a medical professional as soon as possible.",
-          "emergencySummary": "Assessment indicates you may need professional medical attention.",
-          "severe": "Your symptoms are quite severe, we recommend adopting comprehensive management strategies.",
-          "severeSummary": "Your symptoms require active management and possible medical intervention.",
-          "moderate": "You have moderate symptoms that can be managed through various methods.",
-          "moderateSummary": "Your symptoms are manageable with recommended relief strategies.",
-          "mild": "Your symptoms are relatively mild and can be well managed through simple self-care.",
-          "mildSummary": "Your symptoms are mild and can be improved through lifestyle adjustments."
-        },
-        "recommendations": {
-          "emergencyMedical": {
-            "title": "Seek Immediate Medical Care",
-            "description": "Your symptoms may require professional medical evaluation and treatment",
-            "timeframe": "Immediately",
-            "actionSteps": [
-              "Contact your gynecologist",
-              "If pain is severe, consider emergency care",
-              "Keep a detailed symptom diary"
-            ]
-          },
-          "painManagement": {
-            "title": "Pain Management Strategies",
-            "description": "Multiple methods can help relieve menstrual pain",
-            "timeframe": "Immediately available",
-            "actionSteps": [
-              "Use heating pads or hot water bottles",
-              "Try light exercise like walking",
-              "Consider over-the-counter pain relievers (follow instructions)"
-            ]
-          },
-          "lifestyleChanges": {
-            "title": "Lifestyle Adjustments",
-            "description": "Long-term lifestyle changes can significantly improve symptoms",
-            "timeframe": "2-3 months to see effects",
-            "actionSteps": [
-              "Maintain regular exercise habits",
-              "Ensure adequate sleep",
-              "Learn stress management techniques",
-              "Maintain a balanced diet"
-            ]
-          },
-          "selfcarePractices": {
-            "title": "Self-Care Practices",
-            "description": "Daily self-care can help you better manage symptoms",
-            "timeframe": "Ongoing",
-            "actionSteps": [
-              "Practice deep breathing and meditation",
-              "Use pain tracker to record symptoms",
-              "Build a support network",
-              "Learn relaxation techniques"
-            ]
-          }
+          "resultsSavedDesc": "Your assessment results have been saved"
         }
       }
     },
@@ -1786,6 +1758,14 @@
     "developmentNote": "We are continuously developing new tools and resources. Check back often for updates!"
   },
   "interactiveTools": {
+    "meta": {
+      "title": "Interactive Health Tools - Period Management Assistant",
+      "description": "Use our professional tools to track symptoms, assess pain levels, and better manage your menstrual health",
+      "ogTitle": "Interactive Menstrual Health Tools | Symptom Tracking & Pain Management",
+      "ogDescription": "Professional menstrual health management tools to help you track symptoms, record pain levels, and get personalized health recommendations",
+      "twitterTitle": "Interactive Menstrual Health Tools",
+      "twitterDescription": "Professional tools for tracking symptoms, managing pain, and optimizing menstrual health"
+    },
     "breadcrumb": {
       "home": "Home",
       "interactiveTools": "Interactive Tools"
@@ -2010,30 +1990,30 @@
     },
     "title": "Interactive Tools",
     "symptomAssessment": {
-      "title": "[ZH] 症状评估工具",
-      "description": "[ZH] 回答几个关于症状的问题，获取个性化的缓解建议。",
-      "toolTitle": "[ZH] 症状评估工具",
-      "toolDescription": "[ZH] 该工具将帮助您评估经期症状的严重程度，并提供个性化建议。",
-      "selectSymptom": "[ZH] 您当前的主要症状是什么？",
-      "selectSymptomPlaceholder": "[ZH] 请选择症状",
-      "menstrualPain": "[ZH] 经期疼痛",
-      "irregularPeriods": "[ZH] 经期不规律",
-      "abnormalFlow": "[ZH] 经期量异常",
-      "otherSymptoms": "[ZH] 其他症状",
-      "severity": "[ZH] 症状严重程度（1-10）",
-      "assessing": "[ZH] 评估中...",
-      "startAssessment": "[ZH] 开始评估"
+      "title": "Symptom Assessment Tool",
+      "description": "Answer a few questions about your symptoms to get personalized relief recommendations.",
+      "toolTitle": "Symptom Assessment Tool",
+      "toolDescription": "This tool will help you assess the severity of your menstrual symptoms and provide personalized recommendations.",
+      "selectSymptom": "What are your main symptoms?",
+      "selectSymptomPlaceholder": "Please select symptoms",
+      "menstrualPain": "Menstrual Pain",
+      "irregularPeriods": "Irregular Periods",
+      "abnormalFlow": "Abnormal Flow",
+      "otherSymptoms": "Other Symptoms",
+      "severity": "Symptom Severity (1-10)",
+      "assessing": "Assessing...",
+      "startAssessment": "Start Assessment"
     }
   },
   "scenarioSolutionsPage": {
     "title": "Scenario-Based Period Pain Solutions - Workplace, Exercise & Social Life Management",
-    "description": "Professional scenario-based period pain management strategies covering workplace, exercise, social, and sleep situations. Get targeted relief strategies and practical tips to handle period pain confidently in any environment. Includes emergency kit lists, exercise guidance, and social etiquette tips.",
+    "description": "Professional scenario-based period pain management strategies covering workplace, exercise, social, and sleep situations. Get targeted relief strategies and practical tips to handle period pain confidently in any environment. Includes emergency kit lists, exercise guidance, and social etiquette tips. Evidence-based professional guidance suitable for women of all ages.",
     "introTitle": "Complete Life Scenario Coverage",
     "introText": "Every woman's life is multifaceted, from workplace to home, from exercise to social activities. Different scenarios require different coping strategies. We've carefully prepared comprehensive scenario-based solutions to help you handle menstrual discomfort gracefully, wherever you are.",
     "scenarios": {
       "office": {
         "title": "Office/Workplace Scenarios",
-        "description": "Discreet relief solutions for professional environments",
+        "description": "Professional workplace period pain management solutions: discreet office relief techniques, meeting emergency kit preparation, workplace nutrition strategies. Get effective period pain relief methods suitable for office environments while maintaining your professional image.",
         "features": [
           "Meeting Emergency Kit",
           "Office Chair Stretches",
@@ -2042,7 +2022,7 @@
       },
       "commute": {
         "title": "Commuting Scenarios",
-        "description": "Strategies for sudden pain while traveling",
+        "description": "Commuting period pain emergency management guide: public transport comfort techniques, driving adjustments, sudden pain relief methods. Get period management strategies suitable for various commuting methods to effectively handle menstrual discomfort while traveling.",
         "features": [
           "Public Transport Solutions",
           "Driving Adjustments",
@@ -2051,7 +2031,7 @@
       },
       "exercise": {
         "title": "Exercise/Outdoor Scenarios",
-        "description": "Safety guidelines for physical activities",
+        "description": "Professional period exercise safety guidelines: suitable exercise types during menstruation, outdoor activity precautions, exercise intensity adjustment techniques. Get scientific period exercise recommendations to maintain your fitness routine while safely managing your menstrual cycle.",
         "features": [
           "Period Hiking Guide",
           "Pool Hygiene Management",
@@ -2060,7 +2040,7 @@
       },
       "sleep": {
         "title": "Sleep Scenarios",
-        "description": "Soothing solutions for nighttime pain",
+        "description": "Period nighttime pain relief sleep solutions: scientific sleep position adjustments, sleep audio recommendations, bedtime nutrition advice. Get professional period sleep management techniques to improve your nighttime rest and minimize menstrual discomfort's impact on sleep quality.",
         "features": [
           "Sleep Audio",
           "Scientific Sleep Positions",
@@ -2069,7 +2049,7 @@
       },
       "social": {
         "title": "Social Scenarios",
-        "description": "Graceful management during social activities",
+        "description": "Elegant period pain management strategies for social situations: date emergency handling, party food choices, pain concealment techniques. Get period management solutions suitable for various social activities to maintain your elegant appearance while effectively managing menstrual discomfort.",
         "features": [
           "Date Emergency Strategies",
           "Party Food Choices",
@@ -2078,7 +2058,7 @@
       },
       "lifeStages": {
         "title": "Special Life Stages",
-        "description": "Specialized solutions for different age groups",
+        "description": "Professional menstrual health management guidance for different life stages: adolescent period education, reproductive age health management, perimenopause care solutions. Get personalized period health management strategies tailored to each age group's characteristics.",
         "features": [
           "Adolescence Programs",
           "Pre-pregnancy Programs",
@@ -2416,6 +2396,8 @@
     "description": "Complete menstrual health guide covering causes, symptom identification, treatment methods, and lifestyle management. Based on latest medical research, providing scientific and practical health management strategies to help women better understand and address menstrual health issues. Includes global perspectives, lifestyle advice, and medical care guidance.",
     "keywords": "menstrual health guide,period health management,period pain causes,period pain treatment,lifestyle management,medical knowledge,health strategies",
     "sections": {
+      "title": "Health Guide Sections",
+      "readMore": "Read More",
       "understandingPain": {
         "title": "Understanding Menstrual Pain",
         "description": "Deep dive into the causes, types, and physiological mechanisms of menstrual pain"
@@ -2458,11 +2440,11 @@
       },
       "painTracker": {
         "title": "Pain Tracker",
-        "description": "Track pain patterns"
+        "description": "Smart menstrual pain tracking system: detailed recording of pain levels, locations, duration and other key data, analyzing pain patterns and triggers to provide personalized relief recommendations. Professional tracking tool to help you scientifically manage menstrual health."
       },
       "symptomAssessment": {
         "title": "Symptom Assessment",
-        "description": "Comprehensive menstrual symptom evaluation"
+        "description": "Professional comprehensive menstrual symptom assessment tool: scientifically analyze pain levels, symptom types, duration and other key indicators to provide personalized health recommendations and treatment plans. Evidence-based assessment system to help you accurately understand your menstrual health status."
       },
       "lifestyleGuide": {
         "title": "Lifestyle Guide",
@@ -2729,6 +2711,94 @@
     "meta": {
       "title": "Teen Menstrual Health Guide - Scientific Education & Growth Support",
       "description": "Educational resources designed for teenagers covering puberty development, period management, mental health, and school life. Providing scientific and practical menstrual health knowledge to help teens build correct health concepts and navigate adolescence smoothly. Includes school guides, communication tips, and emotional support."
+    },
+    "hero": {
+      "title": "🌸 Teen Menstrual Health Zone 🌸",
+      "subtitle": "A private space designed especially for you, ages 12-18",
+      "description": "Adolescence brings many worries, and \"those days\" each month can be especially concerning. Pain, mood swings, body changes... Don't worry, you're not fighting alone. Here, you'll find scientific, caring, and easy-to-understand period knowledge and coping methods. Whether you're at school, at home, or feeling anxious, we'll be with you through it all."
+    },
+    "quickHelp": {
+      "title": "🚨 Need Help Right Now?",
+      "description": "If you're experiencing pain or distress right now, here are some immediate methods you can try.",
+      "campusGuide": "Campus Emergency Guide",
+      "emergencyKit": "Emergency Kit List",
+      "immediateMethods": "Immediate Methods",
+      "methods": [
+        "Apply heat to abdomen or lower back",
+        "Deep breathing relaxation",
+        "Gentle abdominal massage",
+        "Seek help from teachers or friends"
+      ]
+    },
+    "painAssessment": {
+      "title": "🎯 Quick Pain Assessment",
+      "description": "Not sure about your pain level? Through simple questions, quickly understand your situation and get personalized advice.",
+      "detailedAssessment": "Want a more detailed assessment?",
+      "useFullTool": "Use Full Assessment Tool"
+    },
+    "features": {
+      "title": "How Can We Help You?",
+      "description": "From campus emergencies to emotional support, from pain management to communication skills - comprehensive support for your adolescent period health journey.",
+      "campusGuide": {
+        "title": "Campus Emergency Guide",
+        "description": "What to do when pain strikes at school? Classroom emergencies, dorm management, PE class strategies - comprehensive campus survival guide.",
+        "highlights": [
+          "Classroom self-help techniques",
+          "Dorm pain management",
+          "PE class strategies"
+        ]
+      },
+      "developmentPain": {
+        "title": "Developmental Pain Management",
+        "description": "Specialized pain management advice for ages 12-16, understanding adolescent period pain characteristics and scientific relief methods.",
+        "highlights": [
+          "Adolescent period pain characteristics",
+          "Scientific relief methods",
+          "When to seek medical help"
+        ]
+      },
+      "emotionalSupport": {
+        "title": "Emotional Support & Mental Health",
+        "description": "How to cope with period anxiety and mood swings? Relaxation techniques, peer experience sharing to help you through emotional \"roller coasters\".",
+        "highlights": [
+          "Emotional regulation techniques",
+          "Anxiety relief methods",
+          "Peer experience sharing"
+        ]
+      },
+      "communicationGuide": {
+        "title": "Communication Guide",
+        "description": "How to effectively communicate with parents, teachers, and doctors? Conversation templates and communication skills to help you express your needs confidently.",
+        "highlights": [
+          "Parent communication templates",
+          "Teacher collaboration guide",
+          "Doctor communication skills"
+        ]
+      }
+    },
+    "resources": {
+      "title": "📚 Exclusive Resource Library",
+      "description": "We've prepared rich learning resources for you, including recommended reading lists, nutrition recipes, communication templates, and more to help you become your own period health expert.",
+      "readingList": {
+        "title": "Reading List",
+        "description": "Curated period health books for teens",
+        "action": "View List"
+      },
+      "nutritionRecipes": {
+        "title": "Nutrition Recipes",
+        "description": "Period-friendly nutrition and recipes",
+        "action": "View Recipes"
+      },
+      "communicationTemplates": {
+        "title": "Communication Templates",
+        "description": "Practical templates for talking with parents and teachers",
+        "action": "Get Templates"
+      }
+    },
+    "cta": {
+      "title": "Start Your Health Journey",
+      "description": "Let's learn together and face your period with confidence, no longer letting pain and worries affect your life!",
+      "button": "Start Exploring"
     }
   },
   "toolPage": {
@@ -3026,7 +3096,7 @@
     "searchTips": "💡 Try searching \"5-minute relief\", \"heat therapy\", \"prostaglandins\"",
     "seo": {
       "title": "PeriodHub - Professional Menstrual Health Management Platform | Scientific Guidance",
-      "description": "PeriodHub - Professional menstrual health platform with 42 medical guidelines and 24 assessment tools. Board-certified OB/GYN reviewed content helping 600K+ women.",
+      "description": "PeriodHub - Professional menstrual health platform with 42 medical guidelines and 24 assessment tools. Board-certified OB/GYN reviewed content helping 600K+ women with scientific pain relief solutions and personalized health guidance.",
       "keywords": "menstrual cramps relief,period pain remedies,how to stop period pain,natural period pain relief,menstrual health,period tracking,women health,dysmenorrhea treatment",
       "ogTitle": "PeriodHub - Professional Menstrual Health Management Platform",
       "ogDescription": "Professional menstrual health management platform providing scientific period pain relief methods."
@@ -3042,7 +3112,7 @@
     },
     "healthGuide": {
       "title": "Health Guide",
-      "description": "Comprehensive menstrual health knowledge system, from basic understanding to advanced management strategies."
+      "description": "Professional comprehensive menstrual health management guide: covering menstrual physiology, pain cause analysis, scientific relief methods, lifestyle adjustments and comprehensive knowledge system. From basic understanding to advanced management strategies, providing evidence-based professional guidance for scientific menstrual health management."
     },
     "smartTools": {
       "title": "Smart Health Tools",
@@ -3478,12 +3548,6 @@
       "painTracker": "Pain Tracker"
     }
   },
-  "embeddedPainAssessment": {
-    "title": "Pain Assessment Tool",
-    "description": "Quickly assess your pain level",
-    "loading": "Loading...",
-    "error": "Failed to load, please refresh the page and try again"
-  },
   "scientificParameters": {
     "heatTherapy": {
       "title": "[ZH] 热疗科学参数",
@@ -3636,8 +3700,7 @@
       "immediately": "Immediately",
       "hurt": "Hurt",
       "ache": "Ache",
-      "method": "Method",
-      "science": "Science"
+      "method": "Method"
     },
     "searchKeywords": {
       "urgent": {

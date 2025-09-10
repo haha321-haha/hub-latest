@@ -6,10 +6,11 @@ import { ArrowLeft, Clock, User, BookOpen, AlertCircle, CheckCircle, Info } from
 type Locale = 'en' | 'zh';
 
 interface Props {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
   return {
     title: locale === 'zh' ? '深度解析：痛经的生理机制与类型 - 痛经管理专题' : 'In-depth Analysis: Physiological Mechanisms and Types of Dysmenorrhea - Dysmenorrhea Management Topics',
     description: locale === 'zh' 
@@ -18,7 +19,8 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   };
 }
 
-export default async function UnderstandingDysmenorrheaPage({ params: { locale } }: Props) {
+export default async function UnderstandingDysmenorrheaPage({ params }: Props) {
+  const { locale } = await params;
   setRequestLocale(locale);
 
   return (

@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   const isZh = locale === 'zh';
 
   return {
@@ -41,11 +42,12 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function ResourcesPage({
-  params: { locale }
+export default async function ResourcesPage({
+  params
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params;
   return (
     <div className="min-h-screen py-12 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
       <div className="container mx-auto px-4 max-w-7xl">

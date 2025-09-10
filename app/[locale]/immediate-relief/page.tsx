@@ -5,10 +5,11 @@ import Breadcrumb from '@/components/Breadcrumb';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'immediateReliefPage' });
   
   return {
@@ -37,10 +38,11 @@ export async function generateMetadata({
 }
 
 export default async function ImmediateReliefPage({
-  params: { locale }
+  params
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params;
   // Get translations for the immediate relief page
   const t = await getTranslations({ locale, namespace: 'immediateReliefPage' });
   const commonT = await getTranslations({ locale, namespace: 'common' });

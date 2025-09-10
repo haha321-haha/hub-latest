@@ -6,10 +6,11 @@ import { Locale, locales } from '@/i18n';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const title = locale === 'zh' ? '全球视角 - 痛经健康指南' : 'Global Perspectives - Health Guide';
   const description = locale === 'zh' 
     ? '探索世界各地的传统疗法和文化观点，了解不同文化如何处理经期健康。'
@@ -26,11 +27,12 @@ export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function GlobalPerspectivesPage({
-  params: { locale }
+export default async function GlobalPerspectivesPage({
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   // Enable static rendering
   unstable_setRequestLocale(locale);
 

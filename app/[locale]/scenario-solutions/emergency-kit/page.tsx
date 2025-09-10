@@ -20,10 +20,11 @@ import {
 type Locale = 'en' | 'zh';
 
 interface Props {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'scenarioSolutionsPage' });
   
   return {
@@ -32,7 +33,8 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   };
 }
 
-export default async function EmergencyKitPage({ params: { locale } }: Props) {
+export default async function EmergencyKitPage({ params }: Props) {
+  const { locale } = await params;
   unstable_setRequestLocale(locale);
   
   const t = await getTranslations('scenarioSolutionsPage');

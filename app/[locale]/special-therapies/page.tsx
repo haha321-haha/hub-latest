@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'SpecialTherapiesPage' });
   
   return {
@@ -26,14 +26,15 @@ export async function generateMetadata({
   };
 }
 
-export default function SpecialTherapiesPage({
-  params: { locale }
+export default async function SpecialTherapiesPage({
+  params
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params;
   // Get translations for the special therapies page
-  const t = useTranslations('SpecialTherapiesPage');
-  const commonT = useTranslations('common');
+  const t = await getTranslations({ locale, namespace: 'SpecialTherapiesPage' });
+  const commonT = await getTranslations({ locale, namespace: 'common' });
   
   // Sample therapy cards data - in a real app, this might come from an API or CMS
   const therapyCards = [

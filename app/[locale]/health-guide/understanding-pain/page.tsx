@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -6,10 +5,11 @@ import { Locale, locales } from '@/i18n';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const title = locale === 'zh' ? '理解痛经 - 痛经健康指南' : 'Understanding Menstrual Pain - Health Guide';
   const description = locale === 'zh' 
     ? '深入了解痛经的原因、类型和生理机制，掌握科学的痛经知识基础。'
@@ -26,15 +26,16 @@ export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function UnderstandingPainPage({
-  params: { locale }
+export default async function UnderstandingPainPage({
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   // Enable static rendering
   unstable_setRequestLocale(locale);
 
-  const commonT = useTranslations('common');
+  const commonT = await getTranslations({ locale, namespace: 'common' });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">

@@ -6,10 +6,11 @@ import { Locale, locales } from '@/i18n';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const title = locale === 'zh' ? '何时寻求帮助 - 痛经健康指南' : 'When to Seek Help - Health Guide';
   const description = locale === 'zh' 
     ? '识别需要医疗关注的症状和情况，了解何时应该寻求专业医疗帮助。'
@@ -26,11 +27,12 @@ export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function MedicalCarePage({
-  params: { locale }
+export default async function MedicalCarePage({
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   // Enable static rendering
   unstable_setRequestLocale(locale);
 

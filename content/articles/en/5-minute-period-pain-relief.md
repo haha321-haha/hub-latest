@@ -15,7 +15,7 @@ seo_description: "Quick and effective menstrual pain relief techniques including
 seo_description_zh: "5分钟痛经缓解法 - 快速有效的经期疼痛缓解技巧，包括呼吸练习、穴位按摩、热敷和放松方法。简单易学的应急缓解方案，帮助您在短时间内减轻疼痛不适，恢复日常活动。"
 featured_image: "/images/articles/5-minute-relief-featured.jpg"
 author: "periodhub.health Expert Team"
-canonical_url: "/articles/5-minute-period-pain-relief"
+canonical_url: "/en/articles/5-minute-period-pain-relief"
 schema_type: "Article"
 reading_time: "6 minutes"
 reading_time_zh: "6分钟"

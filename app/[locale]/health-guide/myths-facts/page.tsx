@@ -6,10 +6,11 @@ import { Locale, locales } from '@/i18n';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const title = locale === 'zh' ? '误区与事实 - 痛经健康指南' : 'Myths vs Facts - Health Guide';
   const description = locale === 'zh' 
     ? '澄清关于经期健康的常见误解，用科学事实替代错误观念。'
@@ -26,11 +27,12 @@ export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function MythsFactsPage({
-  params: { locale }
+export default async function MythsFactsPage({
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   // Enable static rendering
   unstable_setRequestLocale(locale);
 

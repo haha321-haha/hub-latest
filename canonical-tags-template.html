@@ -1,0 +1,47 @@
+<!-- Canonical 标签模板 -->
+<!-- 用于解决重复页面问题 -->
+
+<!-- 1. 交互工具页面 -->
+<!-- 对于 /en/interactive-tools/symptom-tracker -->
+<link rel="canonical" href="https://www.periodhub.health/en/interactive-tools/symptom-tracker" />
+
+<!-- 对于 /en/interactive-tools -->
+<link rel="canonical" href="https://www.periodhub.health/en/interactive-tools" />
+
+<!-- 对于 /zh/teen-health -->
+<link rel="canonical" href="https://www.periodhub.health/zh/teen-health" />
+
+<!-- 2. 通用 canonical 标签设置规则 -->
+<!-- 
+规则说明：
+1. 每个页面都应该有一个 canonical 标签
+2. canonical URL 应该是该页面的首选版本
+3. 如果有多个相似页面，选择一个作为规范版本
+4. canonical URL 应该使用绝对 URL（包含完整域名）
+5. 避免在 canonical 标签中使用查询参数或锚点
+-->
+
+<!-- 3. 示例：如何为不同语言版本设置 canonical -->
+<!-- 英文版本 -->
+<link rel="canonical" href="https://www.periodhub.health/en/page-name" />
+<link rel="alternate" hreflang="zh" href="https://www.periodhub.health/zh/page-name" />
+
+<!-- 中文版本 -->
+<link rel="canonical" href="https://www.periodhub.health/zh/page-name" />
+<link rel="alternate" hreflang="en" href="https://www.periodhub.health/en/page-name" />
+
+<!-- 4. 示例：如何为相似页面设置 canonical -->
+<!-- 如果 /page-a 和 /page-b 内容相似，选择其中一个作为规范版本 -->
+<!-- 在 /page-a 中 -->
+<link rel="canonical" href="https://www.periodhub.health/page-a" />
+
+<!-- 在 /page-b 中 -->
+<link rel="canonical" href="https://www.periodhub.health/page-a" />
+
+<!-- 5. 示例：如何为带参数的 URL 设置 canonical -->
+<!-- 如果 /page?param=value 和 /page 是同一个页面 -->
+<link rel="canonical" href="https://www.periodhub.health/page" />
+
+
+
+

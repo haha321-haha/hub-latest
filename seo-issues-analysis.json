@@ -1,0 +1,63 @@
+{
+  "sitemap": {
+    "hasCorrectName": true,
+    "currentName": "sitemap.xml",
+    "issues": [],
+    "recommendations": []
+  },
+  "duplicates": {
+    "totalDuplicates": 11,
+    "pdfFiles": [
+      "https://www.periodhub.health/pdf-files/zhan-zhuang-baduanjin-illustrated-guide-zh.pdf",
+      "https://www.periodhub.health/pdf-files/parent-communication-guide-en.pdf",
+      "https://www.periodhub.health/pdf-files/parent-communication-guide-zh.pdf",
+      "https://www.periodhub.health/pdf-files/teacher-collaboration-handbook-en.pdf",
+      "https://www.periodhub.health/pdf-files/teacher-health-manual-en.pdf",
+      "https://www.periodhub.health/pdf-files/healthy-habits-checklist-en.pdf",
+      "https://www.periodhub.health/pdf-files/pain-tracking-form-zh.pdf",
+      "https://www.periodhub.health/pdf-files/specific-menstrual-pain-management-guide-en.pdf"
+    ],
+    "htmlPages": [
+      "https://www.periodhub.health/en/interactive-tools/symptom-tracker",
+      "https://www.periodhub.health/en/interactive-tools",
+      "https://www.periodhub.health/zh/teen-health"
+    ],
+    "issues": [
+      "8 个 PDF 文件被标记为重复页面",
+      "3 个 HTML 页面被标记为重复页面"
+    ],
+    "recommendations": [
+      "PDF 文件通常不应该被搜索引擎索引，考虑使用 robots.txt 阻止或添加 noindex 标签",
+      "为重复页面设置规范 URL (canonical) 标签"
+    ]
+  },
+  "urlStructure": {
+    "urlPatterns": {},
+    "issues": [
+      "PDF 文件路径模式 /pdf-files/* 有 8 个重复"
+    ],
+    "recommendations": []
+  },
+  "solutions": {
+    "immediate": [
+      "将 sitemap-fixed.xml 重命名为 sitemap.xml 并上传到网站根目录",
+      "在 robots.txt 中添加 PDF 文件的禁止索引规则"
+    ],
+    "shortTerm": [
+      "为所有重复页面添加规范 URL (canonical) 标签",
+      "检查并修复重复页面的内容差异",
+      "在 Google Search Console 中设置首选域名"
+    ],
+    "longTerm": [
+      "建立内容审核流程，避免创建重复内容",
+      "实施内容管理系统，自动处理重复内容",
+      "定期监控和清理重复页面"
+    ],
+    "files": [
+      "robots.txt 更新规则",
+      "canonical 标签模板",
+      "sitemap.xml 重命名说明"
+    ]
+  },
+  "analysisTime": "2025-09-10T03:51:40.487Z"
+}

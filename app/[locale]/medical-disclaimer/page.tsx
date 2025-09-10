@@ -1,7 +1,8 @@
-import { useLocale } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   const isZh = locale === 'zh';
 
   return {
@@ -42,8 +43,13 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function MedicalDisclaimerPage() {
-  const locale = useLocale();
+export default async function MedicalDisclaimerPage({
+  params
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params;
+  unstable_setRequestLocale(locale);
 
   const content = locale === 'zh' ? {
     title: '医疗免责声明',

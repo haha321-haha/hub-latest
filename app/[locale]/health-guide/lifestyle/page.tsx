@@ -1,15 +1,16 @@
 import { useTranslations } from 'next-intl';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Locale, locales } from '@/i18n';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const title = locale === 'zh' ? '生活方式管理 - 痛经健康指南' : 'Lifestyle Management - Health Guide';
   const description = locale === 'zh' 
     ? '通过饮食、运动和日常习惯改善经期健康，建立长期有效的痛经管理策略。'
@@ -26,13 +27,14 @@ export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function LifestylePage({
-  params: { locale }
+export default async function LifestylePage({
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   // Enable static rendering
-  setRequestLocale(locale);
+  unstable_setRequestLocale(locale);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">

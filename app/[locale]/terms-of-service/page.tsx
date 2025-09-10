@@ -6,10 +6,11 @@ type Locale = 'en' | 'zh';
 
 // Generate metadata for the terms of service page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const title = locale === 'zh' ? '服务条款' : 'Terms of Service';
   const description = locale === 'zh' 
     ? '了解使用periodhub.health的条款和条件，包括用户责任和服务限制。'
@@ -32,10 +33,11 @@ export async function generateMetadata({
 }
 
 export default async function TermsOfServicePage({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   unstable_setRequestLocale(locale);
 
   const content = locale === 'zh' ? {

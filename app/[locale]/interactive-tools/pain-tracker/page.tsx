@@ -1,7 +1,8 @@
 import { getTranslations } from 'next-intl/server';
 import PainTrackerClient from './pain-tracker-client';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'interactiveTools' });
   
   return {
@@ -70,6 +71,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function PainTrackerPage({ params }: { params: { locale: string } }) {
-  return <PainTrackerClient params={params} />;
+export default async function PainTrackerPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return <PainTrackerClient params={{ locale }} />;
 }

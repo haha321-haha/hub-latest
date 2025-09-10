@@ -123,3 +123,7 @@
 3. **避免冲突**：不要在 `public/` 目录中放置 robots.txt 或 sitemap.xml
 4. **定期验证**：确保 SEO 文件正常工作
 5. **监控效果**：使用 Google Search Console 监控索引状态
+
+
+
+

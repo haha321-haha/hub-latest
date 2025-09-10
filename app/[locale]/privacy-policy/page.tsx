@@ -6,10 +6,11 @@ type Locale = 'en' | 'zh';
 
 // Generate metadata for the privacy policy page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const title = locale === 'zh' ? '隐私政策' : 'Privacy Policy';
   const description = locale === 'zh' 
     ? '了解我们如何收集、使用和保护您的个人信息。'
@@ -35,10 +36,11 @@ export async function generateMetadata({
 }
 
 export default async function PrivacyPolicyPage({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   unstable_setRequestLocale(locale);
 
   const content = locale === 'zh' ? {

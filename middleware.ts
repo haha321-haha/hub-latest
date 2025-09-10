@@ -16,6 +16,24 @@ const intlMiddleware = createMiddleware({
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   
+  // 🚀 优先处理文章路由，避免中间件干扰
+  if (pathname.startsWith('/en/articles/') || pathname.startsWith('/zh/articles/')) {
+    return intlMiddleware(request);
+  }
+  
+  // 🔧 修复错误的文章URL - 添加缺失的 /articles/ 段
+  if (pathname === '/en/5-minute-period-pain-relief') {
+    const url = request.nextUrl.clone();
+    url.pathname = '/en/articles/5-minute-period-pain-relief';
+    return Response.redirect(url, 301);
+  }
+  
+  if (pathname === '/zh/5-minute-period-pain-relief') {
+    const url = request.nextUrl.clone();
+    url.pathname = '/zh/articles/5-minute-period-pain-relief';
+    return Response.redirect(url, 301);
+  }
+  
   // 🚨 修复IndexNow索引问题 - 处理无语言前缀的文章URL
   const articleRedirects = [
     'personal-health-profile',

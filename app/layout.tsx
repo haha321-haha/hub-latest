@@ -73,7 +73,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh-CN">
+    <html lang="zh-CN" data-scroll-behavior="smooth">
       <head>
         {/* 🚀 性能优化 - DNS 预解析 */}
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />

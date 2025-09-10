@@ -1,5 +1,4 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { useLocale } from 'next-intl';
 import Link from 'next/link';
 import { 
   Brain, 
@@ -24,10 +23,11 @@ import type { Metadata } from 'next';
 type Locale = 'en' | 'zh';
 
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'teenHealth' });
   
   return {
@@ -39,10 +39,11 @@ export async function generateMetadata({
 }
 
 export default async function EmotionalSupportPage({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   unstable_setRequestLocale(locale);
 
   const emotionalSymptoms = [

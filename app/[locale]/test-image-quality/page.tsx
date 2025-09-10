@@ -14,11 +14,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function TestImageQualityPage({
-  params: { locale }
+export default async function TestImageQualityPage({
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   unstable_setRequestLocale(locale);
 
   return (

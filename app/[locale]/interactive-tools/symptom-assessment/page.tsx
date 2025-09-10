@@ -1,7 +1,8 @@
 import { getTranslations } from 'next-intl/server';
 import SymptomAssessmentClient from './symptom-assessment-client';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'interactiveTools' });
   
   return {
@@ -70,6 +71,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function SymptomAssessmentPage({ params }: { params: { locale: string } }) {
-  return <SymptomAssessmentClient params={params} />;
+export default async function SymptomAssessmentPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return <SymptomAssessmentClient params={{ locale }} />;
 }

@@ -8,10 +8,10 @@ import { mapPDFId, hasPDFMapping, getAllMappedIds } from '@/components/pdf-id-ma
 import PDFPreviewPage from './PDFPreviewPage';
 
 interface PreviewPageProps {
-  params: { 
+  params: Promise<{ 
     locale: Locale;
     id: string;
-  };
+  }>;
 }
 
 // 新增PDF资源的基本信息映射
@@ -88,8 +88,9 @@ const NEW_PDF_INFO: Record<string, { title: { zh: string; en: string }; descript
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale, id }
+  params
 }: PreviewPageProps): Promise<Metadata> {
+  const { locale, id } = await params;
   // 🚀 快速修复：映射SimplePDFCenter的ID到真实资源ID
   const realId = mapPDFId(id);
   const resource = getPDFResourceById(realId);
@@ -160,8 +161,9 @@ export async function generateStaticParams() {
 }
 
 export default async function PreviewPage({
-  params: { locale, id }
+  params
 }: PreviewPageProps) {
+  const { locale, id } = await params;
   setRequestLocale(locale);
 
   // 🚀 快速修复：映射SimplePDFCenter的ID到真实资源ID

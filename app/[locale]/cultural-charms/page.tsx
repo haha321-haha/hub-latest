@@ -1,14 +1,14 @@
 import Link from 'next/link';
-import { useTranslations, useLocale } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'culturalCharmsPage' });
   
   return {
@@ -25,10 +25,16 @@ export async function generateMetadata({
   };
 }
 
-export default function CulturalCharmsPage() {
+export default async function CulturalCharmsPage({
+  params
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params;
+  unstable_setRequestLocale(locale);
+  
   // Get translations for the cultural charms page
-  const t = useTranslations('culturalCharmsPage');
-  const locale = useLocale();
+  const t = await getTranslations({ locale, namespace: 'culturalCharmsPage' });
   
   return (
     <div className="space-y-10">

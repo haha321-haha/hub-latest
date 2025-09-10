@@ -3,10 +3,11 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 type PageProps = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({ params: { locale } }: PageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'homeClean' });
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3001';
 
@@ -55,7 +56,8 @@ function StructuredDataScript({ locale, baseUrl }: { locale: string; baseUrl: st
   );
 }
 
-export default async function HomeCleanPage({ params: { locale } }: PageProps) {
+export default async function HomeCleanPage({ params }: PageProps) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'homeClean' });
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3001';
 

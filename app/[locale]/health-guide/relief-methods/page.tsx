@@ -4,10 +4,11 @@ import { Locale, locales } from '@/i18n';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const title = locale === 'zh' ? 'A-Z缓解方法 - 痛经健康指南' : 'A-Z Relief Methods - Health Guide';
   const description = locale === 'zh' 
     ? '从A到Z的全面缓解方法，包括即时和长期策略，帮助您找到最适合的痛经管理方案。'
@@ -24,11 +25,12 @@ export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function ReliefMethodsPage({
-  params: { locale }
+export default async function ReliefMethodsPage({
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
 
   const reliefMethods = [
     {

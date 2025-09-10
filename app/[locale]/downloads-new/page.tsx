@@ -8,10 +8,11 @@ import StructuredData from '@/components/StructuredData';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   return {
     title: `文章PDF下载中心 - Period Hub 经期健康专业资源`,
     description: `Period Hub文章PDF下载中心，38个精选经期健康资源，基于紧急程度智能分类，支持中英双语下载`,
@@ -25,10 +26,11 @@ export async function generateStaticParams() {
 }
 
 export default async function DownloadsNewPage({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   setRequestLocale(locale);
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://periodhub.health';

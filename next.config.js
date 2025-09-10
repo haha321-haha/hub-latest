@@ -1,7 +1,10 @@
 const withNextIntl = require('next-intl/plugin')('./i18n/request.ts');
+const path = require('path');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // 🚀 修复工作区根目录警告
+  outputFileTracingRoot: path.join(__dirname, '../../'),
   // 🚀 Core Web Vitals 优化配置
   images: {
     unoptimized: false,
@@ -30,15 +33,15 @@ const nextConfig = {
   
   // 🚀 实验性功能 - 整合你的建议
   experimental: {
-    // 📦 包导入优化：包含国际化相关包
-    optimizePackageImports: ['next-intl', 'lucide-react'],
+    // 📦 包导入优化：暂时禁用，避免模块解析问题
+    // optimizePackageImports: ['next-intl', 'lucide-react'],
     // 🎯 其他性能优化
     optimizeCss: true, // CSS优化
     scrollRestoration: true, // 滚动位置恢复
     // 📱 移动端性能优化
     optimizeServerReact: true, // 服务端React优化
-    // 🚀 代码分割优化
-    esmExternals: 'loose', // 更好的ESM支持
+    // 🚀 代码分割优化 - 移除有问题的配置
+    // esmExternals: 'loose', // 移除，可能导致模块解析问题
   },
 
   // 构建优化 - 移除冲突的配置
@@ -80,6 +83,18 @@ const nextConfig = {
   // 🚀 SEO优化 - 301重定向配置
   async redirects() {
     return [
+      // 🔧 修复错误的文章URL - 添加缺失的 /articles/ 段
+      {
+        source: '/en/5-minute-period-pain-relief',
+        destination: '/en/articles/5-minute-period-pain-relief',
+        permanent: true,
+      },
+      {
+        source: '/zh/5-minute-period-pain-relief',
+        destination: '/zh/articles/5-minute-period-pain-relief',
+        permanent: true,
+      },
+      
       // 🚨 修复IndexNow索引问题 - 添加语言前缀重定向（临时禁用，避免重定向循环）
       // 注意：这些重定向与next-intl中间件冲突，导致重定向循环
       // 解决方案：让next-intl中间件处理语言前缀，不在此处添加重定向

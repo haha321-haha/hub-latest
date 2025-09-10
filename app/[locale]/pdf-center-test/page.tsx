@@ -6,10 +6,11 @@ import PDFCenterOptimized from '../../../components/PDFCenterOptimized';
 type Locale = 'en' | 'zh';
 
 interface Props {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'common' });
   
   return {
@@ -22,7 +23,8 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   };
 }
 
-export default async function PDFCenterTestPage({ params: { locale } }: Props) {
+export default async function PDFCenterTestPage({ params }: Props) {
+  const { locale } = await params;
   setRequestLocale(locale);
   
   const t = await getTranslations('common');

@@ -745,7 +745,7 @@ const OptimizedMobilePDFCenter: React.FC<OptimizedMobilePDFCenterProps> = ({ loc
         <div className="flex gap-2">
           {resource.type === 'article' ? (
             <a
-              href={`/${locale}/${resource.slug}`}
+              href={`/${locale}/articles/${resource.slug}`}
               className="flex-1 bg-purple-600 text-white py-2 px-3 rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors text-center block"
             >
               {t('actions.readArticle')}

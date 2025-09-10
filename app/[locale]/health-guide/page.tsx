@@ -1,4 +1,4 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import StructuredData from '@/components/StructuredData';
@@ -7,10 +7,11 @@ import BottomRecommendations from '@/components/BottomRecommendations';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'healthGuidePage' });
 
   return {
@@ -40,12 +41,13 @@ export async function generateStaticParams() {
 }
 
 export default async function HealthGuidePage({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   // Enable static rendering
-  setRequestLocale(locale);
+  unstable_setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'healthGuidePage' });
   const commonT = await getTranslations({ locale, namespace: 'common' });

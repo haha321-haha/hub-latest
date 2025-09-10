@@ -1,0 +1,1303 @@
+{
+  "patterns": {
+    "articles": [
+      {
+        "url": "https://www.periodhub.health/zh/articles/5-minute-period-pain-relief",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/5-minute-period-pain-relief",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/anti-inflammatory-diet-period-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/anti-inflammatory-diet-period-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/comprehensive-iud-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/comprehensive-iud-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/comprehensive-medical-guide-to-dysmenorrhea",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/comprehensive-medical-guide-to-dysmenorrhea",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/essential-oils-aromatherapy-menstrual-pain-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/essential-oils-aromatherapy-menstrual-pain-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/global-traditional-menstrual-pain-relief",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/global-traditional-menstrual-pain-relief",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/heat-therapy-complete-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/heat-therapy-complete-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/herbal-tea-menstrual-pain-relief",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/herbal-tea-menstrual-pain-relief",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/hidden-culprits-of-menstrual-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/hidden-culprits-of-menstrual-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/home-natural-menstrual-pain-relief",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/home-natural-menstrual-pain-relief",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/magnesium-gut-health-comprehensive-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/magnesium-gut-health-comprehensive-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/menstrual-nausea-relief-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/menstrual-nausea-relief-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/menstrual-pain-accompanying-symptoms-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/menstrual-pain-accompanying-symptoms-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/menstrual-pain-complications-management",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/menstrual-pain-complications-management",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/menstrual-pain-faq-expert-answers",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/menstrual-pain-faq-expert-answers",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/menstrual-pain-medical-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/menstrual-pain-medical-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/menstrual-pain-vs-other-abdominal-pain-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/menstrual-pain-vs-other-abdominal-pain-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/natural-physical-therapy-comprehensive-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/natural-physical-therapy-comprehensive-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/nsaid-menstrual-pain-professional-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/nsaid-menstrual-pain-professional-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/period-friendly-recipes",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/period-friendly-recipes",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/personal-menstrual-health-profile",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/personal-menstrual-health-profile",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/recommended-reading-list",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/recommended-reading-list",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/specific-menstrual-pain-management-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/specific-menstrual-pain-management-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/comprehensive-menstrual-sleep-quality-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/comprehensive-menstrual-sleep-quality-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/menstrual-pain-research-progress-2024",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/menstrual-pain-research-progress-2024",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/menstrual-preventive-care-complete-plan",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/menstrual-preventive-care-complete-plan",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/menstrual-stress-management-complete-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/menstrual-stress-management-complete-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/understanding-your-cycle",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/understanding-your-cycle",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/us-menstrual-pain-insurance-coverage-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/us-menstrual-pain-insurance-coverage-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/when-to-see-doctor-period-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/when-to-see-doctor-period-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/when-to-seek-medical-care-comprehensive-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/when-to-seek-medical-care-comprehensive-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/womens-lifecycle-menstrual-pain-analysis",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/womens-lifecycle-menstrual-pain-analysis",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/zhan-zhuang-baduanjin-for-menstrual-pain-relief",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/zhan-zhuang-baduanjin-for-menstrual-pain-relief",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/ginger-menstrual-pain-relief-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/ginger-menstrual-pain-relief-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/comprehensive-report-non-medical-factors-menstrual-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/comprehensive-report-non-medical-factors-menstrual-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/period-pain-simulator-accuracy-analysis",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/period-pain-simulator-accuracy-analysis",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/medication-vs-natural-remedies-menstrual-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/medication-vs-natural-remedies-menstrual-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/ginger-menstrual-pain-relief-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/ginger-menstrual-pain-relief-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/comprehensive-report-non-medical-factors-menstrual-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/comprehensive-report-non-medical-factors-menstrual-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/period-pain-simulator-accuracy-analysis",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/period-pain-simulator-accuracy-analysis",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/medication-vs-natural-remedies-menstrual-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/medication-vs-natural-remedies-menstrual-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.7",
+        "type": "url"
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://www.periodhub.health/zh",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      }
+    ],
+    "other": [
+      {
+        "url": "https://www.periodhub.health/zh/interactive-tools",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/interactive-tools",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/immediate-relief",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/immediate-relief",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/natural-therapies",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/natural-therapies",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/downloads",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/downloads",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/health-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/health-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/teen-health",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/teen-health",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/scenario-solutions",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/scenario-solutions",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/cultural-charms",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/cultural-charms",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/special-therapies",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/special-therapies",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/privacy-policy",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/privacy-policy",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/terms-of-service",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/terms-of-service",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/interactive-tools/symptom-assessment",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/interactive-tools/symptom-assessment",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/interactive-tools/pain-tracker",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/interactive-tools/pain-tracker",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/interactive-tools/constitution-test",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/interactive-tools/constitution-test",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/interactive-tools/cycle-tracker",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/interactive-tools/cycle-tracker",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/interactive-tools/symptom-tracker",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/interactive-tools/symptom-tracker",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/interactive-tools/period-pain-assessment",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/interactive-tools/period-pain-assessment",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/health-guide/global-perspectives",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/health-guide/global-perspectives",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/health-guide/lifestyle",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/health-guide/lifestyle",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/health-guide/medical-care",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/health-guide/medical-care",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/health-guide/myths-facts",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/health-guide/myths-facts",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/health-guide/relief-methods",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/health-guide/relief-methods",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/health-guide/understanding-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/health-guide/understanding-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/teen-health/campus-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/teen-health/campus-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/teen-health/communication-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/teen-health/communication-guide",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/teen-health/development-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/teen-health/development-pain",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/teen-health/emotional-support",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/teen-health/emotional-support",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/scenario-solutions/office",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/scenario-solutions/office",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/scenario-solutions/commute",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/scenario-solutions/commute",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/scenario-solutions/exercise",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/scenario-solutions/exercise",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/scenario-solutions/sleep",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/scenario-solutions/sleep",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/scenario-solutions/social",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/scenario-solutions/social",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/scenario-solutions/lifeStages",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/scenario-solutions/lifeStages",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/zh/scenario-solutions/emergency-kit",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "0.9",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/en/scenario-solutions/emergency-kit",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "weekly",
+        "priority": "1",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/parent-communication-guide-zh.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/zhan-zhuang-baduanjin-illustrated-guide-zh.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/teacher-collaboration-handbook-zh.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/healthy-habits-checklist-zh.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/specific-menstrual-pain-management-guide-zh.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/natural-therapy-assessment-zh.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/menstrual-cycle-nutrition-plan-zh.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/campus-emergency-checklist-zh.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/menstrual-pain-complications-management-zh.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/magnesium-gut-health-menstrual-pain-guide-zh.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/pain-tracking-form-zh.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/teacher-health-manual-zh.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/parent-communication-guide-en.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/zhan-zhuang-baduanjin-illustrated-guide-en.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/teacher-collaboration-handbook-en.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/healthy-habits-checklist-en.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/specific-menstrual-pain-management-guide-en.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/natural-therapy-assessment-en.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/menstrual-cycle-nutrition-plan-en.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/campus-emergency-checklist-en.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/menstrual-pain-complications-management-en.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/magnesium-gut-health-menstrual-pain-guide-en.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/pain-tracking-form-en.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      },
+      {
+        "url": "https://www.periodhub.health/pdf-files/teacher-health-manual-en.pdf",
+        "lastmod": "2025-09-10T03:22:15.519Z",
+        "changefreq": "monthly",
+        "priority": "0.6",
+        "type": "url"
+      }
+    ],
+    "duplicates": [
+      {
+        "url": "https://www.periodhub.health/zh/articles/ginger-menstrual-pain-relief-guide",
+        "count": 2
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/ginger-menstrual-pain-relief-guide",
+        "count": 2
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/comprehensive-report-non-medical-factors-menstrual-pain",
+        "count": 2
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/comprehensive-report-non-medical-factors-menstrual-pain",
+        "count": 2
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/period-pain-simulator-accuracy-analysis",
+        "count": 2
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/period-pain-simulator-accuracy-analysis",
+        "count": 2
+      },
+      {
+        "url": "https://www.periodhub.health/zh/articles/medication-vs-natural-remedies-menstrual-pain",
+        "count": 2
+      },
+      {
+        "url": "https://www.periodhub.health/en/articles/medication-vs-natural-remedies-menstrual-pain",
+        "count": 2
+      }
+    ],
+    "suspicious": []
+  },
+  "urlCounts": {},
+  "domainCounts": {},
+  "totalUrls": 178,
+  "uniqueUrls": 170,
+  "filteredUrls": {
+    "lowPriority": [],
+    "oldContent": [],
+    "suspicious": [],
+    "duplicateContent": [],
+    "technicalIssues": []
+  },
+  "analysisTime": "2025-09-10T03:46:50.635Z"
+}

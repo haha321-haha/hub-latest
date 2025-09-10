@@ -8,10 +8,11 @@ import { SITE_CONFIG } from '@/config/site.config';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'downloadsPage' });
 
   return {
@@ -27,10 +28,11 @@ export async function generateStaticParams() {
 }
 
 export default async function ArticlesPDFCenterPage({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
+  const { locale } = await params;
   setRequestLocale(locale);
   
   const t = await getTranslations('common');

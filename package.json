@@ -70,6 +70,7 @@
     "remark-gfm": "^4.0.1",
     "styled-jsx": "^5.1.7",
     "tailwind-merge": "^2.6.0",
+    "xml2js": "^0.6.2",
     "zustand": "^5.0.5"
   },
   "devDependencies": {

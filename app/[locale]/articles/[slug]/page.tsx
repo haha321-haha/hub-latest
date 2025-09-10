@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { setRequestLocale } from 'next-intl/server';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import fs from 'fs';
@@ -117,10 +117,11 @@ export async function generateStaticParams() {
 
 // Generate metadata for the article
 export async function generateMetadata({
-  params: { locale, slug }
+  params
 }: {
-  params: { locale: Locale; slug: string }
+  params: Promise<{ locale: Locale; slug: string }>
 }): Promise<Metadata> {
+  const { locale, slug } = await params;
   const article = await getArticleBySlug(slug, locale);
   
   if (!article) {
@@ -181,23 +182,31 @@ export async function generateMetadata({
 }
 
 export default async function ArticlePage({
-  params: { locale, slug }
+  params
 }: {
-  params: { locale: Locale; slug: string }
+  params: Promise<{ locale: Locale; slug: string }>
 }) {
-  setRequestLocale(locale);
+  const { locale, slug } = await params;
+  unstable_setRequestLocale(locale);
 
-  const article = getArticleBySlug(slug, locale);
-  const relatedArticles = getRelatedArticles(slug, locale, 3);
+  try {
+    console.log('ArticlePage - Processing:', { locale, slug });
+    
+    const article = await getArticleBySlug(slug, locale);
+    console.log('ArticlePage - Article found:', !!article, article?.title);
+    
+    if (!article) {
+      console.error(`Article not found: ${slug} for locale: ${locale}`);
+      notFound();
+    }
 
-  if (!article) {
-    notFound();
-  }
+    const relatedArticles = await getRelatedArticles(slug, locale, 3);
+    console.log('ArticlePage - Related articles found:', relatedArticles.length);
 
-  const title = locale === 'zh' ? article.title_zh || article.title : article.title;
-  const summary = locale === 'zh' ? article.summary_zh || article.summary : article.summary;
-  const category = locale === 'zh' ? article.category_zh || article.category : article.category;
-  const readingTime = locale === 'zh' ? article.reading_time_zh || article.reading_time : article.reading_time;
+    const title = locale === 'zh' ? article.title_zh || article.title : article.title;
+    const summary = locale === 'zh' ? article.summary_zh || article.summary : article.summary;
+    const category = locale === 'zh' ? article.category_zh || article.category : article.category;
+    const readingTime = locale === 'zh' ? article.reading_time_zh || article.reading_time : article.reading_time;
 
   // Check if this is the NSAID article that needs interactive components
   const isNSAIDArticle = slug === 'nsaid-menstrual-pain-professional-guide';
@@ -516,4 +525,8 @@ export default async function ArticlePage({
       </div>
     </div>
   );
+  } catch (error) {
+    console.error('Error in ArticlePage:', error);
+    notFound();
+  }
 }

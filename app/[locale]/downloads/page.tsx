@@ -1,4 +1,4 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { Download } from 'lucide-react';
 import { Locale, locales } from '@/i18n';
@@ -7,10 +7,11 @@ import { SITE_CONFIG } from '@/config/site.config';
 
 // Generate metadata for the page
 export async function generateMetadata({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
+  const { locale } = await params;
 
   return {
     title: locale === 'zh' 
@@ -43,11 +44,12 @@ export async function generateStaticParams() {
 }
 
 export default async function DownloadsPage({
-  params: { locale }
+  params
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }) {
-  setRequestLocale(locale);
+  const { locale } = await params;
+  unstable_setRequestLocale(locale);
 
   const totalResources = SITE_CONFIG.statistics.articles + SITE_CONFIG.statistics.pdfResources;
   const bannerText = locale === 'zh'

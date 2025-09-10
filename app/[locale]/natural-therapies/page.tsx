@@ -5,7 +5,8 @@ import { Metadata } from 'next';
 import BottomRecommendations from '@/components/BottomRecommendations';
 
 // SEO Metadata - 实现你建议的长标题策略
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'naturalTherapiesPage' });
   
   return {
@@ -95,10 +96,11 @@ const getStructuredData = async (locale: string) => {
 };
 
 export default async function NaturalTherapiesPage({
-  params: { locale }
+  params
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'naturalTherapiesPage' });
   const structuredData = await getStructuredData(locale);
