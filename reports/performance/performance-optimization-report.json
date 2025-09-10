@@ -1,0 +1,119 @@
+{
+  "timestamp": "2025-09-10T13:10:54.935Z",
+  "currentScore": 45,
+  "targetScore": 90,
+  "improvement": 45,
+  "metrics": {
+    "LCP": {
+      "current": 5,
+      "target": 2.5,
+      "improvement": 2.5,
+      "status": "需要改进"
+    },
+    "FCP": {
+      "current": 2.9,
+      "target": 1.8,
+      "improvement": 1.0999999999999999,
+      "status": "需要改进"
+    },
+    "TBT": {
+      "current": 2910,
+      "target": 200,
+      "improvement": 2710,
+      "status": "需要改进"
+    },
+    "CLS": {
+      "current": 0.001,
+      "target": 0.1,
+      "improvement": -0.099,
+      "status": "良好"
+    },
+    "SI": {
+      "current": 5.1,
+      "target": 3,
+      "improvement": 2.0999999999999996,
+      "status": "需要改进"
+    }
+  },
+  "optimizations": [
+    {
+      "category": "渲染阻塞资源",
+      "priority": "高",
+      "impact": "2,700毫秒",
+      "actions": [
+        "延迟加载非关键CSS",
+        "内联关键CSS",
+        "使用preload预加载关键资源",
+        "移除未使用的CSS"
+      ]
+    },
+    {
+      "category": "JavaScript优化",
+      "priority": "高",
+      "impact": "3.9秒执行时间",
+      "actions": [
+        "代码分割和懒加载",
+        "移除未使用的JavaScript (231 KiB)",
+        "使用现代JavaScript语法",
+        "避免长时间运行的主线程任务"
+      ]
+    },
+    {
+      "category": "资源优化",
+      "priority": "中",
+      "impact": "89 KiB节省",
+      "actions": [
+        "优化图片格式和大小",
+        "使用WebP格式",
+        "启用Gzip压缩",
+        "设置合适的缓存策略"
+      ]
+    },
+    {
+      "category": "网络优化",
+      "priority": "中",
+      "impact": "整体性能提升",
+      "actions": [
+        "使用CDN加速",
+        "启用HTTP/2",
+        "优化字体加载",
+        "减少DNS查询"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "紧急",
+      "action": "优化LCP (最大内容绘制)",
+      "description": "当前5.0秒，目标2.5秒，需要减少2.5秒",
+      "steps": [
+        "识别LCP元素（通常是主图片或标题）",
+        "优化图片大小和格式",
+        "使用preload预加载关键资源",
+        "考虑使用Next.js Image组件"
+      ]
+    },
+    {
+      "priority": "紧急",
+      "action": "减少JavaScript阻塞时间",
+      "description": "当前2,910毫秒，目标200毫秒，需要减少2,710毫秒",
+      "steps": [
+        "代码分割：将非关键JavaScript延迟加载",
+        "移除未使用的JavaScript (231 KiB)",
+        "优化第三方脚本加载",
+        "使用Web Workers处理重计算"
+      ]
+    },
+    {
+      "priority": "高",
+      "action": "优化FCP (首次内容绘制)",
+      "description": "当前2.9秒，目标1.8秒，需要减少1.1秒",
+      "steps": [
+        "内联关键CSS",
+        "延迟加载非关键CSS",
+        "优化字体加载策略",
+        "减少渲染阻塞资源"
+      ]
+    }
+  ]
+}

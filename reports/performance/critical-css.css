@@ -1,0 +1,31 @@
+
+/* 关键CSS内联示例 */
+/* 将关键样式内联到HTML中 */
+
+/* 1. 首屏样式 */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* 2. 关键字体 */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter-var.woff2') format('woff2');
+}
+
+/* 3. 非关键CSS延迟加载 */
+/* 使用媒体查询延迟加载非关键样式 */
+@media (min-width: 768px) {
+  .desktop-only {
+    display: block;
+  }
+}
+  

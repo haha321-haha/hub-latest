@@ -1,0 +1,769 @@
+{
+  "metadata": {
+    "generatedAt": "2025-09-10T12:19:45.182Z",
+    "totalPages": 3,
+    "dataRetentionDays": 90,
+    "description": "整合后的热点地图数据，包含重定向页面的用户行为数据"
+  },
+  "data": [
+    {
+      "page": "/downloads",
+      "totalClicks": 28554,
+      "totalScrolls": 56071,
+      "totalTimeOnPage": 144611,
+      "totalSessions": 810,
+      "bounceRateSum": 361.30534317377646,
+      "deviceBreakdown": {
+        "tablet": {
+          "count": 289,
+          "percentage": "35.68"
+        },
+        "desktop": {
+          "count": 247,
+          "percentage": "30.49"
+        },
+        "mobile": {
+          "count": 274,
+          "percentage": "33.83"
+        }
+      },
+      "browserBreakdown": {
+        "Firefox": {
+          "count": 205,
+          "percentage": "25.31"
+        },
+        "Edge": {
+          "count": 209,
+          "percentage": "25.80"
+        },
+        "Chrome": {
+          "count": 216,
+          "percentage": "26.67"
+        },
+        "Safari": {
+          "count": 180,
+          "percentage": "22.22"
+        }
+      },
+      "countryBreakdown": {
+        "CN": {
+          "count": 158,
+          "percentage": "19.51"
+        },
+        "US": {
+          "count": 164,
+          "percentage": "20.25"
+        },
+        "GB": {
+          "count": 178,
+          "percentage": "21.98"
+        },
+        "AU": {
+          "count": 157,
+          "percentage": "19.38"
+        },
+        "CA": {
+          "count": 153,
+          "percentage": "18.89"
+        }
+      },
+      "dailyData": {
+        "2025-09-10": {
+          "clicks": 858,
+          "scrolls": 2079,
+          "timeOnPage": 4478,
+          "sessions": 27
+        },
+        "2025-09-09": {
+          "clicks": 1003,
+          "scrolls": 1998,
+          "timeOnPage": 5510,
+          "sessions": 28
+        },
+        "2025-09-08": {
+          "clicks": 874,
+          "scrolls": 1827,
+          "timeOnPage": 4920,
+          "sessions": 26
+        },
+        "2025-09-07": {
+          "clicks": 777,
+          "scrolls": 1286,
+          "timeOnPage": 3473,
+          "sessions": 22
+        },
+        "2025-09-06": {
+          "clicks": 1162,
+          "scrolls": 2032,
+          "timeOnPage": 6285,
+          "sessions": 31
+        },
+        "2025-09-05": {
+          "clicks": 951,
+          "scrolls": 1891,
+          "timeOnPage": 4824,
+          "sessions": 26
+        },
+        "2025-09-04": {
+          "clicks": 1057,
+          "scrolls": 1911,
+          "timeOnPage": 4135,
+          "sessions": 26
+        },
+        "2025-09-03": {
+          "clicks": 1345,
+          "scrolls": 2799,
+          "timeOnPage": 6708,
+          "sessions": 36
+        },
+        "2025-09-02": {
+          "clicks": 787,
+          "scrolls": 1703,
+          "timeOnPage": 3996,
+          "sessions": 25
+        },
+        "2025-09-01": {
+          "clicks": 804,
+          "scrolls": 1782,
+          "timeOnPage": 5031,
+          "sessions": 27
+        },
+        "2025-08-31": {
+          "clicks": 1085,
+          "scrolls": 2225,
+          "timeOnPage": 4912,
+          "sessions": 29
+        },
+        "2025-08-30": {
+          "clicks": 1000,
+          "scrolls": 2069,
+          "timeOnPage": 4773,
+          "sessions": 28
+        },
+        "2025-08-29": {
+          "clicks": 988,
+          "scrolls": 1922,
+          "timeOnPage": 6106,
+          "sessions": 30
+        },
+        "2025-08-28": {
+          "clicks": 737,
+          "scrolls": 1441,
+          "timeOnPage": 3798,
+          "sessions": 21
+        },
+        "2025-08-27": {
+          "clicks": 916,
+          "scrolls": 1803,
+          "timeOnPage": 4638,
+          "sessions": 27
+        },
+        "2025-08-26": {
+          "clicks": 954,
+          "scrolls": 2054,
+          "timeOnPage": 4270,
+          "sessions": 29
+        },
+        "2025-08-25": {
+          "clicks": 1204,
+          "scrolls": 1853,
+          "timeOnPage": 5291,
+          "sessions": 30
+        },
+        "2025-08-24": {
+          "clicks": 1323,
+          "scrolls": 2561,
+          "timeOnPage": 7203,
+          "sessions": 35
+        },
+        "2025-08-23": {
+          "clicks": 1096,
+          "scrolls": 2322,
+          "timeOnPage": 5932,
+          "sessions": 32
+        },
+        "2025-08-22": {
+          "clicks": 847,
+          "scrolls": 1794,
+          "timeOnPage": 4369,
+          "sessions": 25
+        },
+        "2025-08-21": {
+          "clicks": 848,
+          "scrolls": 1768,
+          "timeOnPage": 4366,
+          "sessions": 24
+        },
+        "2025-08-20": {
+          "clicks": 933,
+          "scrolls": 1664,
+          "timeOnPage": 5064,
+          "sessions": 27
+        },
+        "2025-08-19": {
+          "clicks": 1062,
+          "scrolls": 1860,
+          "timeOnPage": 4895,
+          "sessions": 30
+        },
+        "2025-08-18": {
+          "clicks": 886,
+          "scrolls": 1939,
+          "timeOnPage": 4860,
+          "sessions": 27
+        },
+        "2025-08-17": {
+          "clicks": 1034,
+          "scrolls": 1858,
+          "timeOnPage": 4775,
+          "sessions": 29
+        },
+        "2025-08-16": {
+          "clicks": 945,
+          "scrolls": 1741,
+          "timeOnPage": 4090,
+          "sessions": 25
+        },
+        "2025-08-15": {
+          "clicks": 581,
+          "scrolls": 1147,
+          "timeOnPage": 3450,
+          "sessions": 18
+        },
+        "2025-08-14": {
+          "clicks": 858,
+          "scrolls": 1654,
+          "timeOnPage": 4350,
+          "sessions": 26
+        },
+        "2025-08-13": {
+          "clicks": 713,
+          "scrolls": 1302,
+          "timeOnPage": 3551,
+          "sessions": 20
+        },
+        "2025-08-12": {
+          "clicks": 926,
+          "scrolls": 1786,
+          "timeOnPage": 4558,
+          "sessions": 24
+        }
+      },
+      "lastUpdated": "2025-09-10T12:19:45.180Z",
+      "sourcePages": [
+        "/downloads-new",
+        "/download-center",
+        "/articles-pdf-center"
+      ],
+      "avgTimeOnPage": 179,
+      "avgBounceRate": 0.45,
+      "totalSourcePages": 3
+    },
+    {
+      "page": "/zh/downloads",
+      "totalClicks": 29240,
+      "totalScrolls": 59796,
+      "totalTimeOnPage": 152494,
+      "totalSessions": 865,
+      "bounceRateSum": 393.14778342878714,
+      "deviceBreakdown": {
+        "mobile": {
+          "count": 295,
+          "percentage": "34.10"
+        },
+        "desktop": {
+          "count": 272,
+          "percentage": "31.45"
+        },
+        "tablet": {
+          "count": 298,
+          "percentage": "34.45"
+        }
+      },
+      "browserBreakdown": {
+        "Edge": {
+          "count": 225,
+          "percentage": "26.01"
+        },
+        "Firefox": {
+          "count": 223,
+          "percentage": "25.78"
+        },
+        "Safari": {
+          "count": 189,
+          "percentage": "21.85"
+        },
+        "Chrome": {
+          "count": 228,
+          "percentage": "26.36"
+        }
+      },
+      "countryBreakdown": {
+        "CA": {
+          "count": 162,
+          "percentage": "18.73"
+        },
+        "US": {
+          "count": 176,
+          "percentage": "20.35"
+        },
+        "GB": {
+          "count": 158,
+          "percentage": "18.27"
+        },
+        "CN": {
+          "count": 195,
+          "percentage": "22.54"
+        },
+        "AU": {
+          "count": 174,
+          "percentage": "20.12"
+        }
+      },
+      "dailyData": {
+        "2025-09-10": {
+          "clicks": 721,
+          "scrolls": 1721,
+          "timeOnPage": 4064,
+          "sessions": 24
+        },
+        "2025-09-09": {
+          "clicks": 909,
+          "scrolls": 1875,
+          "timeOnPage": 4692,
+          "sessions": 28
+        },
+        "2025-09-08": {
+          "clicks": 839,
+          "scrolls": 1657,
+          "timeOnPage": 3955,
+          "sessions": 26
+        },
+        "2025-09-07": {
+          "clicks": 667,
+          "scrolls": 1502,
+          "timeOnPage": 3579,
+          "sessions": 23
+        },
+        "2025-09-06": {
+          "clicks": 1217,
+          "scrolls": 2403,
+          "timeOnPage": 6015,
+          "sessions": 34
+        },
+        "2025-09-05": {
+          "clicks": 1069,
+          "scrolls": 2460,
+          "timeOnPage": 5682,
+          "sessions": 30
+        },
+        "2025-09-04": {
+          "clicks": 1008,
+          "scrolls": 1614,
+          "timeOnPage": 4686,
+          "sessions": 28
+        },
+        "2025-09-03": {
+          "clicks": 1111,
+          "scrolls": 2132,
+          "timeOnPage": 5478,
+          "sessions": 33
+        },
+        "2025-09-02": {
+          "clicks": 952,
+          "scrolls": 1504,
+          "timeOnPage": 4157,
+          "sessions": 23
+        },
+        "2025-09-01": {
+          "clicks": 1406,
+          "scrolls": 2608,
+          "timeOnPage": 6687,
+          "sessions": 38
+        },
+        "2025-08-31": {
+          "clicks": 818,
+          "scrolls": 1837,
+          "timeOnPage": 4601,
+          "sessions": 27
+        },
+        "2025-08-30": {
+          "clicks": 864,
+          "scrolls": 2182,
+          "timeOnPage": 6013,
+          "sessions": 33
+        },
+        "2025-08-29": {
+          "clicks": 959,
+          "scrolls": 1899,
+          "timeOnPage": 4530,
+          "sessions": 26
+        },
+        "2025-08-28": {
+          "clicks": 1123,
+          "scrolls": 2126,
+          "timeOnPage": 5703,
+          "sessions": 28
+        },
+        "2025-08-27": {
+          "clicks": 1026,
+          "scrolls": 1963,
+          "timeOnPage": 5131,
+          "sessions": 28
+        },
+        "2025-08-26": {
+          "clicks": 1208,
+          "scrolls": 2280,
+          "timeOnPage": 6919,
+          "sessions": 35
+        },
+        "2025-08-25": {
+          "clicks": 971,
+          "scrolls": 2018,
+          "timeOnPage": 4531,
+          "sessions": 30
+        },
+        "2025-08-24": {
+          "clicks": 883,
+          "scrolls": 1741,
+          "timeOnPage": 5390,
+          "sessions": 26
+        },
+        "2025-08-23": {
+          "clicks": 772,
+          "scrolls": 2165,
+          "timeOnPage": 5614,
+          "sessions": 29
+        },
+        "2025-08-22": {
+          "clicks": 728,
+          "scrolls": 1455,
+          "timeOnPage": 3815,
+          "sessions": 21
+        },
+        "2025-08-21": {
+          "clicks": 1149,
+          "scrolls": 2201,
+          "timeOnPage": 5180,
+          "sessions": 33
+        },
+        "2025-08-20": {
+          "clicks": 1008,
+          "scrolls": 1950,
+          "timeOnPage": 5558,
+          "sessions": 28
+        },
+        "2025-08-19": {
+          "clicks": 1044,
+          "scrolls": 2284,
+          "timeOnPage": 5877,
+          "sessions": 29
+        },
+        "2025-08-18": {
+          "clicks": 760,
+          "scrolls": 1252,
+          "timeOnPage": 3327,
+          "sessions": 19
+        },
+        "2025-08-17": {
+          "clicks": 1068,
+          "scrolls": 2658,
+          "timeOnPage": 6104,
+          "sessions": 34
+        },
+        "2025-08-16": {
+          "clicks": 1272,
+          "scrolls": 2355,
+          "timeOnPage": 5289,
+          "sessions": 36
+        },
+        "2025-08-15": {
+          "clicks": 788,
+          "scrolls": 1976,
+          "timeOnPage": 4736,
+          "sessions": 30
+        },
+        "2025-08-14": {
+          "clicks": 731,
+          "scrolls": 1770,
+          "timeOnPage": 4175,
+          "sessions": 23
+        },
+        "2025-08-13": {
+          "clicks": 931,
+          "scrolls": 1807,
+          "timeOnPage": 5025,
+          "sessions": 28
+        },
+        "2025-08-12": {
+          "clicks": 1238,
+          "scrolls": 2401,
+          "timeOnPage": 5981,
+          "sessions": 35
+        }
+      },
+      "lastUpdated": "2025-09-10T12:19:45.181Z",
+      "sourcePages": [
+        "/zh/downloads-new",
+        "/zh/download-center",
+        "/zh/articles-pdf-center"
+      ],
+      "avgTimeOnPage": 176,
+      "avgBounceRate": 0.45,
+      "totalSourcePages": 3
+    },
+    {
+      "page": "/en/downloads",
+      "totalClicks": 31117,
+      "totalScrolls": 62533,
+      "totalTimeOnPage": 163162,
+      "totalSessions": 901,
+      "bounceRateSum": 404.85294309650857,
+      "deviceBreakdown": {
+        "desktop": {
+          "count": 326,
+          "percentage": "36.18"
+        },
+        "mobile": {
+          "count": 281,
+          "percentage": "31.19"
+        },
+        "tablet": {
+          "count": 294,
+          "percentage": "32.63"
+        }
+      },
+      "browserBreakdown": {
+        "Firefox": {
+          "count": 220,
+          "percentage": "24.42"
+        },
+        "Chrome": {
+          "count": 217,
+          "percentage": "24.08"
+        },
+        "Edge": {
+          "count": 234,
+          "percentage": "25.97"
+        },
+        "Safari": {
+          "count": 230,
+          "percentage": "25.53"
+        }
+      },
+      "countryBreakdown": {
+        "CN": {
+          "count": 200,
+          "percentage": "22.20"
+        },
+        "GB": {
+          "count": 185,
+          "percentage": "20.53"
+        },
+        "CA": {
+          "count": 166,
+          "percentage": "18.42"
+        },
+        "AU": {
+          "count": 189,
+          "percentage": "20.98"
+        },
+        "US": {
+          "count": 161,
+          "percentage": "17.87"
+        }
+      },
+      "dailyData": {
+        "2025-09-10": {
+          "clicks": 772,
+          "scrolls": 1728,
+          "timeOnPage": 4449,
+          "sessions": 25
+        },
+        "2025-09-09": {
+          "clicks": 1277,
+          "scrolls": 2768,
+          "timeOnPage": 6050,
+          "sessions": 39
+        },
+        "2025-09-08": {
+          "clicks": 958,
+          "scrolls": 1972,
+          "timeOnPage": 4989,
+          "sessions": 29
+        },
+        "2025-09-07": {
+          "clicks": 808,
+          "scrolls": 1846,
+          "timeOnPage": 3641,
+          "sessions": 25
+        },
+        "2025-09-06": {
+          "clicks": 1003,
+          "scrolls": 2149,
+          "timeOnPage": 5010,
+          "sessions": 30
+        },
+        "2025-09-05": {
+          "clicks": 934,
+          "scrolls": 1623,
+          "timeOnPage": 5333,
+          "sessions": 24
+        },
+        "2025-09-04": {
+          "clicks": 914,
+          "scrolls": 1413,
+          "timeOnPage": 4295,
+          "sessions": 24
+        },
+        "2025-09-03": {
+          "clicks": 1416,
+          "scrolls": 2383,
+          "timeOnPage": 5067,
+          "sessions": 35
+        },
+        "2025-09-02": {
+          "clicks": 1380,
+          "scrolls": 2781,
+          "timeOnPage": 6476,
+          "sessions": 37
+        },
+        "2025-09-01": {
+          "clicks": 1114,
+          "scrolls": 2622,
+          "timeOnPage": 6426,
+          "sessions": 35
+        },
+        "2025-08-31": {
+          "clicks": 1140,
+          "scrolls": 2215,
+          "timeOnPage": 6366,
+          "sessions": 31
+        },
+        "2025-08-30": {
+          "clicks": 1114,
+          "scrolls": 2022,
+          "timeOnPage": 4573,
+          "sessions": 30
+        },
+        "2025-08-29": {
+          "clicks": 799,
+          "scrolls": 2062,
+          "timeOnPage": 5215,
+          "sessions": 28
+        },
+        "2025-08-28": {
+          "clicks": 1111,
+          "scrolls": 1883,
+          "timeOnPage": 5958,
+          "sessions": 30
+        },
+        "2025-08-27": {
+          "clicks": 1274,
+          "scrolls": 2614,
+          "timeOnPage": 6777,
+          "sessions": 37
+        },
+        "2025-08-26": {
+          "clicks": 1088,
+          "scrolls": 2111,
+          "timeOnPage": 5603,
+          "sessions": 32
+        },
+        "2025-08-25": {
+          "clicks": 730,
+          "scrolls": 1772,
+          "timeOnPage": 3723,
+          "sessions": 23
+        },
+        "2025-08-24": {
+          "clicks": 1051,
+          "scrolls": 1881,
+          "timeOnPage": 4966,
+          "sessions": 29
+        },
+        "2025-08-23": {
+          "clicks": 1356,
+          "scrolls": 3091,
+          "timeOnPage": 8410,
+          "sessions": 41
+        },
+        "2025-08-22": {
+          "clicks": 831,
+          "scrolls": 2042,
+          "timeOnPage": 5556,
+          "sessions": 29
+        },
+        "2025-08-21": {
+          "clicks": 632,
+          "scrolls": 1213,
+          "timeOnPage": 3392,
+          "sessions": 19
+        },
+        "2025-08-20": {
+          "clicks": 1248,
+          "scrolls": 2377,
+          "timeOnPage": 5890,
+          "sessions": 33
+        },
+        "2025-08-19": {
+          "clicks": 1070,
+          "scrolls": 1864,
+          "timeOnPage": 5836,
+          "sessions": 29
+        },
+        "2025-08-18": {
+          "clicks": 1020,
+          "scrolls": 2198,
+          "timeOnPage": 5973,
+          "sessions": 31
+        },
+        "2025-08-17": {
+          "clicks": 929,
+          "scrolls": 1846,
+          "timeOnPage": 5296,
+          "sessions": 29
+        },
+        "2025-08-16": {
+          "clicks": 1246,
+          "scrolls": 2309,
+          "timeOnPage": 7094,
+          "sessions": 35
+        },
+        "2025-08-15": {
+          "clicks": 795,
+          "scrolls": 1762,
+          "timeOnPage": 4884,
+          "sessions": 24
+        },
+        "2025-08-14": {
+          "clicks": 1117,
+          "scrolls": 1825,
+          "timeOnPage": 5260,
+          "sessions": 30
+        },
+        "2025-08-13": {
+          "clicks": 1015,
+          "scrolls": 2449,
+          "timeOnPage": 6058,
+          "sessions": 32
+        },
+        "2025-08-12": {
+          "clicks": 975,
+          "scrolls": 1712,
+          "timeOnPage": 4596,
+          "sessions": 26
+        }
+      },
+      "lastUpdated": "2025-09-10T12:19:45.181Z",
+      "sourcePages": [
+        "/en/downloads-new",
+        "/en/download-center",
+        "/en/articles-pdf-center"
+      ],
+      "avgTimeOnPage": 181,
+      "avgBounceRate": 0.45,
+      "totalSourcePages": 3
+    }
+  ]
+}
