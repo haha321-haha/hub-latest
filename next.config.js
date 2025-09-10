@@ -3,6 +3,8 @@ const path = require('path');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // 解决多lockfile警告
+  outputFileTracingRoot: path.join(__dirname),
   // 性能优化
   compress: true,
   

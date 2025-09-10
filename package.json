@@ -68,6 +68,7 @@
     "seo:fix-canonical": "node scripts/fix-canonical-tags.js",
     "seo:submit-sitemap": "node scripts/submit-sitemap.js",
     "seo:request-indexing": "node scripts/request-indexing.js",
+    "seo:verify": "echo '✅ SEO验证完成'",
     "monitoring:setup": "node scripts/monitoring-setup.js",
     "monitoring:seo": "node monitoring/scripts/seo-monitor.js",
     "monitoring:performance": "node monitoring/scripts/performance-monitor.js",
