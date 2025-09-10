@@ -1,47 +1,25 @@
-export default function HomePage() {
+export default function HomePage({ params }: { params: { locale: string } }) {
   return (
-    <div style={{ padding: '20px', textAlign: 'center', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div>
-        <h1 style={{ fontSize: '2rem', marginBottom: '1rem', color: '#333' }}>
-          PeriodHub - 女性健康管理平台
-        </h1>
-        <p style={{ fontSize: '1.2rem', marginBottom: '2rem', color: '#666' }}>
-          欢迎来到PeriodHub，您的专业月经周期管理助手
-        </p>
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a 
-            href="/zh/interactive-tools" 
-            style={{ 
-              display: 'inline-block', 
-              padding: '12px 24px', 
-              backgroundColor: '#8B5CF6', 
-              color: 'white', 
-              textDecoration: 'none', 
-              borderRadius: '8px',
-              transition: 'background-color 0.3s'
-            }}
-          >
-            开始使用工具
-          </a>
-          <a 
-            href="/zh/articles" 
-            style={{ 
-              display: 'inline-block', 
-              padding: '12px 24px', 
-              backgroundColor: 'transparent', 
-              color: '#8B5CF6', 
-              textDecoration: 'none', 
-              border: '2px solid #8B5CF6',
-              borderRadius: '8px',
-              transition: 'background-color 0.3s'
-            }}
-          >
-            阅读文章
-          </a>
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
+      <div className="container mx-auto px-4 py-16">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold text-gray-900 mb-6">
+            PeriodHub - 女性健康管理平台
+          </h1>
+          <p className="text-xl text-gray-600 mb-8">
+            专业的痛经缓解和月经健康管理解决方案
+          </p>
+          <div className="space-x-4">
+            <a href={`/${params.locale}/articles`} 
+               className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700">
+              浏览文章
+            </a>
+            <a href={`/${params.locale}/interactive-tools`}
+               className="bg-pink-600 text-white px-6 py-3 rounded-lg hover:bg-pink-700">
+              互动工具
+            </a>
+          </div>
         </div>
-        <p style={{ marginTop: '2rem', fontSize: '0.9rem', color: '#999' }}>
-          最后更新: {new Date().toLocaleString('zh-CN')}
-        </p>
       </div>
     </div>
   );
