@@ -1,5 +1,8 @@
 
 const path = require('path');
+const createNextIntlPlugin = require('next-intl/plugin');
+
+const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -31,48 +34,48 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
   
-  // 重定向配置
-  async redirects() {
-    return [
-      { source: '/downloads-new', destination: '/downloads', permanent: true },
-      { source: '/download-center', destination: '/downloads', permanent: true },
-      { source: '/articles-pdf-center', destination: '/downloads', permanent: true },
-      { source: '/zh/downloads-new', destination: '/zh/downloads', permanent: true },
-      { source: '/zh/download-center', destination: '/zh/downloads', permanent: true },
-      { source: '/zh/articles-pdf-center', destination: '/zh/downloads', permanent: true },
-      { source: '/en/downloads-new', destination: '/en/downloads', permanent: true },
-      { source: '/en/download-center', destination: '/en/downloads', permanent: true },
-      { source: '/en/articles-pdf-center', destination: '/en/downloads', permanent: true },
-    ];
-  },
-  
-  // 头部优化
-  async headers() {
+  // 重写规则 - 修复静态资源路径
+  async rewrites() {
     return [
       {
-        source: '/(.*)',
-        headers: [
-          {
-            key: 'X-DNS-Prefetch-Control',
-            value: 'on'
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff'
-          },
-          {
-            key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin'
-          },
-          {
-            key: 'Link',
-            value: '</fonts/inter.woff2>; rel=preload; as=font; type=font/woff2; crossorigin'
-          }
-        ]
+        source: '/zh/manifest.json',
+        destination: '/manifest.json'
+      },
+      {
+        source: '/zh/icon.svg',
+        destination: '/icon.svg'
+      },
+      {
+        source: '/zh/apple-touch-icon.png',
+        destination: '/apple-touch-icon.png'
+      },
+      {
+        source: '/en/manifest.json',
+        destination: '/manifest.json'
+      },
+      {
+        source: '/en/icon.svg',
+        destination: '/icon.svg'
+      },
+      {
+        source: '/en/apple-touch-icon.png',
+        destination: '/apple-touch-icon.png'
+      },
+      {
+        source: '/fonts/:path*',
+        destination: '/:path*'
+      },
+      {
+        source: '/zh/images/:path*',
+        destination: '/images/:path*'
+      },
+      {
+        source: '/en/images/:path*',
+        destination: '/images/:path*'
       }
     ];
   }
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);
   

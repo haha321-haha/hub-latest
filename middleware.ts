@@ -1,9 +1,17 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
+import createMiddleware from 'next-intl/middleware';
+import { locales, defaultLocale } from './i18n/request';
+
+const intlMiddleware = createMiddleware({
+  locales,
+  defaultLocale,
+  localeDetection: true,
+  localePrefix: 'always',
+});
 
 export function middleware(request: NextRequest) {
-  // Temporarily disable all middleware logic
-  return NextResponse.next()
+  return intlMiddleware(request);
 }
 
 export const config = {
