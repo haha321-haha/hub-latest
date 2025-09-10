@@ -153,8 +153,10 @@ public/downloads/*.pdf
 public/pdf-files/*.pdf
 !public/downloads/*.html
 !public/pdf-files/*.html
-# Allow constitution-guide.pdf for download functionality
+# Allow constitution-guide files for download functionality
 !public/downloads/constitution-guide.pdf
+!public/downloads/constitution-guide.html
+!public/downloads/constitution-guide-en.html
 
 # Chinese documentation (keep only essential files)
 修复建议文档/
