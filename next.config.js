@@ -3,8 +3,8 @@ const path = require('path');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // 🚀 修复工作区根目录警告
-  outputFileTracingRoot: path.join(__dirname, '../../'),
+  // 🚀 修复工作区根目录警告 - 移除有问题的配置
+  // outputFileTracingRoot: path.join(__dirname, '../../'), // 注释掉，避免路径问题
   // 🚀 Core Web Vitals 优化配置
   images: {
     unoptimized: false,
