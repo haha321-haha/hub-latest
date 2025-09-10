@@ -1,6 +1,6 @@
 import '../globals.css';
 import {NextIntlClientProvider} from 'next-intl';
-import {unstable_setRequestLocale, getMessages} from 'next-intl/server';
+import {unstable_setRequestLocale} from 'next-intl/server';
 import {Suspense} from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -36,8 +36,8 @@ export default async function LocaleLayout({
   // 确保在服务端设置当前请求的语言环境
   unstable_setRequestLocale(locale);
 
-  // 由 next-intl 官方链路提供消息，避免手动动态导入导致的 SSR/CSR 差异
-  const messages = await getMessages();
+  // 直接导入消息文件，避免getMessages()函数问题
+  const messages = (await import(`../../messages/${locale}.json`)).default;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
