@@ -191,28 +191,29 @@ export default function PDFPreviewPage({ locale, resourceId }: PDFPreviewPagePro
   }, [resource, previewContent, newPdfInfo, locale]);
 
   const handleDownload = () => {
-    if (!resource && !newPdfInfo) return;
+    if (!resource && !newPdfInfo && !previewContent) return;
 
-    // 确定正确的HTML文件名（与预览页面使用相同的逻辑）
+    // 获取PDF文件名
     const filename = getFileName();
-    let htmlFilename = filename.replace('.pdf', '.html');
-    if (locale === 'en' && !htmlFilename.includes('-en')) {
-      htmlFilename = htmlFilename.replace('.html', '-en.html');
+    
+    // 使用PDF资源的downloadUrl，如果没有则使用默认路径
+    let downloadUrl;
+    if (resource && resource.downloadUrl) {
+      downloadUrl = resource.downloadUrl;
+    } else {
+      downloadUrl = `/downloads/${filename}`;
     }
-
-    // 创建下载链接
-    const url = `/pdf-files/${htmlFilename}`;
 
     // 创建临时链接进行下载
     const link = document.createElement('a');
-    link.href = url;
-    link.download = htmlFilename;
+    link.href = downloadUrl;
+    link.download = filename;
     link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 
-    console.log(`下载HTML格式PDF: ${htmlFilename}`);
+    console.log(`下载PDF文件: ${filename} from ${downloadUrl}`);
   };
 
   const handlePrint = () => {
