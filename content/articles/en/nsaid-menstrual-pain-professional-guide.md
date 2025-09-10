@@ -20,7 +20,7 @@ canonical_url: "/en/articles/nsaid-menstrual-pain-professional-guide"
 schema_type: "Article"
 ---
 
-# Professional NSAID Guide for Menstrual Pain: Safe Usage & Effectiveness Optimization
+## Professional NSAID Guide for Menstrual Pain: Safe Usage & Effectiveness Optimization
 
 ## Introduction: NSAIDs as First-Line Treatment for Menstrual Pain
 

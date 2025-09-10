@@ -21,7 +21,7 @@ reading_time: "12 minutes"
 reading_time_zh: "12分钟"
 ---
 
-# Complete Guide to Heat Therapy for Period Pain Relief
+## Complete Guide to Heat Therapy for Period Pain Relief
 
 ## Introduction
 

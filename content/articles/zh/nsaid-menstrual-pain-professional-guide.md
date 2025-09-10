@@ -20,7 +20,7 @@ canonical_url: "/zh/articles/nsaid-menstrual-pain-professional-guide"
 schema_type: "Article"
 ---
 
-# NSAIDs痛经治疗专业指南：安全用药与效果优化
+## NSAIDs痛经治疗专业指南：安全用药与效果优化
 
 ## 引言：NSAIDs在痛经治疗中的地位
 
