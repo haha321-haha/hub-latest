@@ -26,7 +26,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/'],
       }
     ],
-    sitemap: 'https://periodhub.health/sitemap.xml',
-    host: 'https://periodhub.health'
+    sitemap: 'https://www.periodhub.health/sitemap.xml',
+    host: 'https://www.periodhub.health'
   };
 }
