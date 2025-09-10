@@ -9,7 +9,13 @@
   },
   "redirects": [
     {
-      "source": "https://periodhub.health/:path*",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "periodhub.health"
+        }
+      ],
       "destination": "https://www.periodhub.health/:path*",
       "permanent": true
     }
