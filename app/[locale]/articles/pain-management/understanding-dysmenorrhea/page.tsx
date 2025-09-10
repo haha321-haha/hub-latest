@@ -11,7 +11,7 @@ interface Props {
 
 export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
   return {
-    title: locale === 'zh' ? '深度解析：痛经的生理机制与类型 - 疼痛管理专题' : 'In-depth Analysis: Physiological Mechanisms and Types of Dysmenorrhea - Pain Management Topics',
+    title: locale === 'zh' ? '深度解析：痛经的生理机制与类型 - 痛经管理专题' : 'In-depth Analysis: Physiological Mechanisms and Types of Dysmenorrhea - Dysmenorrhea Management Topics',
     description: locale === 'zh' 
       ? '从医学角度深入解析痛经的生理机制，了解原发性和继发性痛经的区别，为科学缓解疼痛提供理论基础。'
       : 'In-depth analysis of the physiological mechanisms of dysmenorrhea from a medical perspective, understanding the difference between primary and secondary dysmenorrhea, providing theoretical basis for scientific pain relief.',
@@ -29,8 +29,8 @@ export default async function UnderstandingDysmenorrheaPage({ params: { locale }
           {locale === 'zh' ? '文章中心' : 'Articles'}
         </Link>
         <span>/</span>
-        <Link href={`/${locale}/articles/pain-management`} className="hover:text-primary-600 transition-colors">
-          {locale === 'zh' ? '疼痛管理' : 'Pain Management'}
+        <Link href={`/${locale}/articles`} className="hover:text-primary-600 transition-colors">
+          {locale === 'zh' ? '文章中心' : 'Articles'}
         </Link>
         <span>/</span>
         <span className="text-neutral-800">
@@ -352,11 +352,11 @@ export default async function UnderstandingDysmenorrheaPage({ params: { locale }
       {/* Navigation */}
       <div className="flex justify-between items-center pt-8 border-t border-gray-200">
         <Link 
-          href={`/${locale}/articles/pain-management`}
+          href={`/${locale}/articles`}
           className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
-          {locale === 'zh' ? '返回疼痛管理专题' : 'Back to Pain Management Topics'}
+          {locale === 'zh' ? '返回痛经管理专题' : 'Back to Dysmenorrhea Management Topics'}
         </Link>
         
         <div className="text-sm text-neutral-500">

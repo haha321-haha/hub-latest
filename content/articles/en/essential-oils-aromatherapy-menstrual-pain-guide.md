@@ -8,7 +8,7 @@ category: "Natural Therapy"
 tags: ["essential oil therapy", "menstrual pain relief", "natural therapy", "aromatherapy", "women's health"]
 featured_image: "/images/essential-oils/lavender_essential_oil_800x800.png"
 seo_title: "Essential Oils for Menstrual Pain Relief: Science-Based Natural Therapy Guide"
-seo_description: "Professional guide to 6 core essential oils for menstrual pain relief. Scientific principles and usage methods for lavender, cinnamon, rose oils with safety guidelines based on research."
+seo_description: "Complete guide to 6 core essential oils for menstrual pain relief. Scientific principles and usage methods for lavender, cinnamon, rose oils with safety guidelines based on research."
 ---
 
 # Essential Oils Aromatherapy for Menstrual Pain Relief: Complete Guide
