@@ -18,7 +18,7 @@ export const SITE_CONFIG = {
   // 域名和URL配置
   domain: 'periodhub.health',
   baseUrl: process.env.NODE_ENV === 'production' 
-    ? 'https://periodhub.health' 
+    ? 'https://www.periodhub.health' 
     : 'http://localhost:3000',
   
   // 社交媒体和联系信息

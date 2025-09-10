@@ -1,0 +1,6 @@
+user_id,device_type,browser,country,total_clicks,total_scrolls,avg_time_on_page
+user_001,desktop,Chrome,US,100,200,180
+user_002,mobile,Safari,CN,150,300,120
+user_003,tablet,Firefox,GB,80,160,240
+user_004,desktop,Edge,AU,200,400,300
+user_005,mobile,Chrome,CA,120,250,150

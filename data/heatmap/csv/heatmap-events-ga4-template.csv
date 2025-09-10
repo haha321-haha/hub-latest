@@ -1,0 +1,11 @@
+event_name,event_timestamp,user_id,page_location,device_category,browser,country,total_clicks,total_scrolls,avg_time_on_page_seconds
+user_engagement,2025-09-11T08:00:00Z,user_001,https://www.periodhub.health/downloads,desktop,Chrome,United States,45,120,180
+user_engagement,2025-09-11T08:15:00Z,user_002,https://www.periodhub.health/features,mobile,Safari,China,32,85,150
+user_engagement,2025-09-11T08:30:00Z,user_003,https://www.periodhub.health/about,tablet,Firefox,United Kingdom,28,95,200
+user_engagement,2025-09-11T08:45:00Z,user_004,https://www.periodhub.health/contact,desktop,Edge,Canada,55,140,175
+user_engagement,2025-09-11T09:00:00Z,user_005,https://www.periodhub.health/,mobile,Chrome,Australia,38,110,160
+user_engagement,2025-09-11T09:15:00Z,user_006,https://www.periodhub.health/downloads,desktop,Safari,Germany,42,125,185
+user_engagement,2025-09-11T09:30:00Z,user_007,https://www.periodhub.health/features,mobile,Firefox,Japan,35,100,145
+user_engagement,2025-09-11T09:45:00Z,user_008,https://www.periodhub.health/about,tablet,Chrome,France,48,135,195
+user_engagement,2025-09-11T10:00:00Z,user_009,https://www.periodhub.health/contact,desktop,Edge,Brazil,52,155,170
+user_engagement,2025-09-11T10:15:00Z,user_010,https://www.periodhub.health/,mobile,Safari,India,40,115,155

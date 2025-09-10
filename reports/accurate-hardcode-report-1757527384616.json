@@ -1,0 +1,365 @@
+{
+  "timestamp": "2025-09-10T18:03:04.614Z",
+  "summary": {
+    "total": 13619,
+    "scannedFiles": 650,
+    "skippedFiles": 0,
+    "falsePositives": 13,
+    "byType": {
+      "urls": 191,
+      "texts": 13428
+    }
+  },
+  "topIssues": [
+    {
+      "file": "scripts/submit-to-indexnow.js",
+      "line": 14,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "scripts/seo-optimizer.js",
+      "line": 13,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "scripts/generate-new-pdf-files.js",
+      "line": 779,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "scripts/check-deployment.js",
+      "line": 15,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "lib/seo-config.ts",
+      "line": 4,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "lib/seo-config.ts",
+      "line": 11,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "lib/security/granular-csp-config.ts",
+      "line": 73,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "lib/security/granular-csp-config.ts",
+      "line": 109,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "lib/security/granular-csp-config.ts",
+      "line": 212,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "lib/security/csp-config.ts",
+      "line": 42,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "config/site.config.ts",
+      "line": 21,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "app/seo-config.ts",
+      "line": 5,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "app/seo-config.ts",
+      "line": 51,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "app/seo-config.ts",
+      "line": 88,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "app/api/indexnow/route.ts",
+      "line": 19,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "components/SimplePDFCenter.tsx",
+      "line": 368,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "components/Breadcrumb.tsx",
+      "line": 35,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "app/[locale]/interactive-tools/page.tsx",
+      "line": 132,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "app/[locale]/downloads-new/page.tsx",
+      "line": 36,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/workplace-relief-toolkit.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/workplace-relief-toolkit-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/sustainable-health-strategies.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/sustainable-health-strategies-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/stress-management-workbook.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/stress-management-workbook-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/sleep-quality-improvement-guide.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/sleep-quality-improvement-guide-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/personal-health-journal.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/personal-health-journal-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/pain-research-summary-2024.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/pain-research-summary-2024-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/nutrition-meal-planning-kit.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/nutrition-meal-planning-kit-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/monthly-preparation-planner.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/monthly-preparation-planner-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/menstrual-cycle-education-guide.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/menstrual-cycle-education-guide-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/medical-consultation-preparation.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/medical-consultation-preparation-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/long-term-health-planner.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/long-term-health-planner-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/lifestyle-assessment-toolkit.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/lifestyle-assessment-toolkit-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/heat-therapy-guide-pdf.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/heat-therapy-guide-pdf-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/global-health-perspectives.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/global-health-perspectives-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/exercise-routine-builder.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/exercise-routine-builder-en.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "public/pdf-files/emergency-pain-relief-card.html",
+      "line": 163,
+      "match": "https://periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    }
+  ]
+}

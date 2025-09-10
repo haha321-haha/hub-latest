@@ -1,0 +1,154 @@
+{
+  "timestamp": "2025-09-10T18:22:09.142Z",
+  "summary": {
+    "total": 13984,
+    "scannedFiles": 652,
+    "skippedFiles": 0,
+    "byType": {
+      "urls": 310,
+      "texts": 13674
+    }
+  },
+  "topIssues": [
+    {
+      "file": "verify-sitemap-env.js",
+      "line": 10,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-sitemap-duplicates.js",
+      "line": 15,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-sitemap-duplicates.js",
+      "line": 19,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-sitemap-duplicates.js",
+      "line": 20,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-sitemap-duplicates.js",
+      "line": 21,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-sitemap-duplicates.js",
+      "line": 22,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-sitemap-duplicates.js",
+      "line": 23,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-sitemap-duplicates.js",
+      "line": 24,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-sitemap-duplicates.js",
+      "line": 25,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-sitemap-duplicates.js",
+      "line": 26,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-seo-issues.js",
+      "line": 19,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-seo-issues.js",
+      "line": 20,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-seo-issues.js",
+      "line": 21,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-seo-issues.js",
+      "line": 22,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-seo-issues.js",
+      "line": 23,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-seo-issues.js",
+      "line": 24,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-seo-issues.js",
+      "line": 25,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-seo-issues.js",
+      "line": 26,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-seo-issues.js",
+      "line": 27,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    },
+    {
+      "file": "fix-seo-issues.js",
+      "line": 28,
+      "match": "https://www.periodhub.health",
+      "type": "URL",
+      "severity": "high"
+    }
+  ]
+}
