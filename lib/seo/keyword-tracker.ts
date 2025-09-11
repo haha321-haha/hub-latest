@@ -275,7 +275,7 @@ export class KeywordTracker {
         currentPosition: 12,
         previousPosition: 15,
         searchVolume: 14800,
-        url: 'https://periodhub.health/zh/articles/pain-management',
+        url: 'https://www.periodhub.health/zh/articles/pain-management',
         date: new Date().toISOString(),
         change: 3,
         serpFeatures: ['featured_snippet']
@@ -285,7 +285,7 @@ export class KeywordTracker {
         currentPosition: 8,
         previousPosition: 11,
         searchVolume: 3200,
-        url: 'https://periodhub.health/zh/health-guide',
+        url: 'https://www.periodhub.health/zh/health-guide',
         date: new Date().toISOString(),
         change: 3,
         serpFeatures: []

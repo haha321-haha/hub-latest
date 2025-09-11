@@ -21,11 +21,11 @@ export async function generateMetadata({
       'period pain emergency relief', 'immediate period pain relief', 'heat therapy for cramps'
     ],
     alternates: {
-      canonical: `https://periodhub.health/${locale}/immediate-relief`,
+      canonical: `https://www.periodhub.health/${locale}/immediate-relief`,
       languages: {
-        'zh-CN': 'https://periodhub.health/zh/immediate-relief',
-        'en-US': 'https://periodhub.health/en/immediate-relief',
-        'x-default': 'https://periodhub.health/zh/immediate-relief',
+        'zh-CN': 'https://www.periodhub.health/zh/immediate-relief',
+        'en-US': 'https://www.periodhub.health/en/immediate-relief',
+        'x-default': 'https://www.periodhub.health/zh/immediate-relief',
       },
     },
     openGraph: {

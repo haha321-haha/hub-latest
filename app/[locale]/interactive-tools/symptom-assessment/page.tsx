@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       type: 'website',
       locale: locale === 'zh' ? 'zh_CN' : 'en_US',
       siteName: 'PeriodHub',
-      url: `https://periodhub.health/${locale}/interactive-tools/symptom-assessment`,
+      url: `https://www.periodhub.health/${locale}/interactive-tools/symptom-assessment`,
     },
     
     twitter: {
@@ -50,10 +50,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
 
     alternates: {
-      canonical: `https://periodhub.health/${locale}/interactive-tools/symptom-assessment`,
+      canonical: `https://www.periodhub.health/${locale}/interactive-tools/symptom-assessment`,
       languages: {
-        'zh-CN': 'https://periodhub.health/zh/interactive-tools/symptom-assessment',
-        'en-US': 'https://periodhub.health/en/interactive-tools/symptom-assessment',
+        'zh-CN': 'https://www.periodhub.health/zh/interactive-tools/symptom-assessment',
+        'en-US': 'https://www.periodhub.health/en/interactive-tools/symptom-assessment',
       },
     },
 

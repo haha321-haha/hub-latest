@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       type: 'website',
       locale: locale === 'zh' ? 'zh_CN' : 'en_US',
       siteName: 'PeriodHub',
-      url: `https://periodhub.health/${locale}/assessment`,
+      url: `https://www.periodhub.health/${locale}/assessment`,
     },
     
     twitter: {
@@ -52,10 +52,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
 
     alternates: {
-      canonical: `https://periodhub.health/${locale}/assessment`,
+      canonical: `https://www.periodhub.health/${locale}/assessment`,
       languages: {
-        'zh-CN': 'https://periodhub.health/zh/assessment',
-        'en-US': 'https://periodhub.health/en/assessment',
+        'zh-CN': 'https://www.periodhub.health/zh/assessment',
+        'en-US': 'https://www.periodhub.health/en/assessment',
       },
     },
 

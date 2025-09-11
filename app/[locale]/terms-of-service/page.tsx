@@ -23,7 +23,7 @@ export async function generateMetadata({
       title: `${title} | periodhub.health`,
       description,
       type: 'website',
-      url: `https://periodhub.health/${locale}/terms-of-service`,
+      url: `https://www.periodhub.health/${locale}/terms-of-service`,
     },
     robots: {
       index: true,

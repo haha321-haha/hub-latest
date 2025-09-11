@@ -19,11 +19,11 @@ export async function generateMetadata({
     description: t('description'),
         keywords: t('keywords'),
     alternates: {
-      canonical: `https://periodhub.health/${locale}/health-guide`,
+      canonical: `https://www.periodhub.health/${locale}/health-guide`,
       languages: {
-        'zh-CN': 'https://periodhub.health/zh/health-guide',
-        'en-US': 'https://periodhub.health/en/health-guide',
-        'x-default': 'https://periodhub.health/zh/health-guide',
+        'zh-CN': 'https://www.periodhub.health/zh/health-guide',
+        'en-US': 'https://www.periodhub.health/en/health-guide',
+        'x-default': 'https://www.periodhub.health/zh/health-guide',
       },
     },
     openGraph: {
@@ -104,7 +104,7 @@ export default async function HealthGuidePage({
         type="healthTopicPage"
         title={t('title')}
         description={t('description')}
-        url={`https://periodhub.health/${locale}/health-guide`}
+        url={`https://www.periodhub.health/${locale}/health-guide`}
       />
       
       <div className="container mx-auto px-4 py-8 max-w-7xl">

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: isZh
         ? '专业经期健康PDF资源下载中心'
         : 'Professional menstrual health PDF resource download center',
-      url: `https://periodhub.health/${locale}/resources`,
+      url: `https://www.periodhub.health/${locale}/resources`,
       siteName: 'PeriodHub',
       locale: isZh ? 'zh_CN' : 'en_US',
       type: 'website',
@@ -33,10 +33,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       follow: true,
     },
     alternates: {
-      canonical: `https://periodhub.health/${locale}/resources`,
+      canonical: `https://www.periodhub.health/${locale}/resources`,
       languages: {
-        'zh-CN': 'https://periodhub.health/zh/resources',
-        'en-US': 'https://periodhub.health/en/resources',
+        'zh-CN': 'https://www.periodhub.health/zh/resources',
+        'en-US': 'https://www.periodhub.health/en/resources',
       },
     },
   };

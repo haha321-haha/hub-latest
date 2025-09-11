@@ -33,7 +33,7 @@ export default async function DownloadsNewPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://periodhub.health';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.periodhub.health';
   const pageUrl = `${baseUrl}/${locale}/downloads-new`;
 
   return (

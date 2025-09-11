@@ -39,7 +39,7 @@ export const productionCSP: CSPConfig = {
       'data:', // Base64图片
       'blob:', // Blob URL
       'https:', // HTTPS图片
-      'https://periodhub.health', // 自己的域名
+      'https://www.periodhub.health', // 自己的域名
     ],
     
     // 字体策略：允许同源字体和Google Fonts

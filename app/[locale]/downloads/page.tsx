@@ -25,7 +25,7 @@ export async function generateMetadata({
       ? ['经期健康', 'PDF下载', '健康资源', '月经管理', '女性健康', '中英双语', '移动优化']
       : ['menstrual health', 'PDF download', 'health resources', 'period management', 'women health', 'bilingual', 'mobile optimized'],
     alternates: {
-      canonical: `https://periodhub.health/${locale}/downloads`,
+      canonical: `https://www.periodhub.health/${locale}/downloads`,
     },
     openGraph: {
       title: locale === 'zh' 

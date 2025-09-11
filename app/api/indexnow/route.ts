@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
     }
     
     // Validate that all URLs are from our domain
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://periodhub.health';
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.periodhub.health';
     const invalidUrls = urls.filter(url => !url.startsWith(baseUrl));
     
     if (invalidUrls.length > 0) {

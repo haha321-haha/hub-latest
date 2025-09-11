@@ -15,11 +15,11 @@ export async function generateMetadata({
     title: t('title'),
     description: t('description'),
     alternates: {
-      canonical: `https://periodhub.health/${locale}/cultural-charms`,
+      canonical: `https://www.periodhub.health/${locale}/cultural-charms`,
       languages: {
-        'zh-CN': 'https://periodhub.health/zh/cultural-charms',
-        'en-US': 'https://periodhub.health/en/cultural-charms',
-        'x-default': 'https://periodhub.health/zh/cultural-charms',
+        'zh-CN': 'https://www.periodhub.health/zh/cultural-charms',
+        'en-US': 'https://www.periodhub.health/en/cultural-charms',
+        'x-default': 'https://www.periodhub.health/zh/cultural-charms',
       },
     },
   };

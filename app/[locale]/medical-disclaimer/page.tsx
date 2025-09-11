@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: isZh
         ? 'PeriodHub医疗免责声明：重要法律声明和使用条款'
         : 'PeriodHub Medical Disclaimer: Important legal notice and terms of use',
-      url: `https://periodhub.health/${locale}/medical-disclaimer`,
+      url: `https://www.periodhub.health/${locale}/medical-disclaimer`,
       siteName: 'PeriodHub',
       locale: isZh ? 'zh_CN' : 'en_US',
       type: 'website',
@@ -34,10 +34,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       follow: true,
     },
     alternates: {
-      canonical: `https://periodhub.health/${locale}/medical-disclaimer`,
+      canonical: `https://www.periodhub.health/${locale}/medical-disclaimer`,
       languages: {
-        'zh-CN': 'https://periodhub.health/zh/medical-disclaimer',
-        'en-US': 'https://periodhub.health/en/medical-disclaimer',
+        'zh-CN': 'https://www.periodhub.health/zh/medical-disclaimer',
+        'en-US': 'https://www.periodhub.health/en/medical-disclaimer',
       },
     },
   };

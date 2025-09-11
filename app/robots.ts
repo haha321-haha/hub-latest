@@ -18,7 +18,11 @@ export default function robots(): MetadataRoute.Robots {
           // 禁止索引测试和开发页面
           '/test*',
           '/dev*',
-          '/staging*'
+          '/staging*',
+          // 禁止索引备份文件
+          '*.backup*',
+          '*.tmp*',
+          '*.log*'
         ],
       },
       {
@@ -30,7 +34,10 @@ export default function robots(): MetadataRoute.Robots {
           '/pdf-files/',
           '/test*',
           '/dev*',
-          '/staging*'
+          '/staging*',
+          '*.backup*',
+          '*.tmp*',
+          '*.log*'
         ],
       },
       {
@@ -42,7 +49,10 @@ export default function robots(): MetadataRoute.Robots {
           '/pdf-files/',
           '/test*',
           '/dev*',
-          '/staging*'
+          '/staging*',
+          '*.backup*',
+          '*.tmp*',
+          '*.log*'
         ],
       }
     ],

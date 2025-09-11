@@ -20,11 +20,11 @@ export async function generateMetadata({
     title: `${title} | periodhub.health`,
     description,
     alternates: {
-      canonical: `https://periodhub.health/${locale}/privacy-policy`,
+      canonical: `https://www.periodhub.health/${locale}/privacy-policy`,
       languages: {
-        'zh-CN': 'https://periodhub.health/zh/privacy-policy',
-        'en-US': 'https://periodhub.health/en/privacy-policy',
-        'x-default': 'https://periodhub.health/zh/privacy-policy',
+        'zh-CN': 'https://www.periodhub.health/zh/privacy-policy',
+        'en-US': 'https://www.periodhub.health/en/privacy-policy',
+        'x-default': 'https://www.periodhub.health/zh/privacy-policy',
       },
     },
     openGraph: {

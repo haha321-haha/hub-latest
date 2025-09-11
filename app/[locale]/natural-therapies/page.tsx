@@ -16,16 +16,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       title: t('meta.title'),
       description: t('meta.description'),
-      url: `https://periodhub.health/${locale}/natural-therapies`,
+      url: `https://www.periodhub.health/${locale}/natural-therapies`,
       siteName: 'PeriodHub',
       locale: locale === 'zh' ? 'zh_CN' : 'en_US',
       type: 'article',
     },
     alternates: {
-      canonical: `https://periodhub.health/${locale}/natural-therapies`,
+      canonical: `https://www.periodhub.health/${locale}/natural-therapies`,
       languages: {
-        'zh-CN': 'https://periodhub.health/zh/natural-therapies',
-        'en-US': 'https://periodhub.health/en/natural-therapies',
+        'zh-CN': 'https://www.periodhub.health/zh/natural-therapies',
+        'en-US': 'https://www.periodhub.health/en/natural-therapies',
       },
     },
     robots: {
@@ -51,10 +51,10 @@ const getStructuredData = async (locale: string) => {
     "@graph": [
       {
         "@type": "MedicalWebPage",
-        "@id": `https://periodhub.health/${locale}/natural-therapies#webpage`,
+        "@id": `https://www.periodhub.health/${locale}/natural-therapies#webpage`,
         "name": t('meta.title'),
         "description": t('meta.description'),
-        "url": `https://periodhub.health/${locale}/natural-therapies`,
+        "url": `https://www.periodhub.health/${locale}/natural-therapies`,
         "medicalAudience": {
           "@type": "MedicalAudience",
           "audienceType": "Patient"
@@ -71,7 +71,7 @@ const getStructuredData = async (locale: string) => {
       },
       {
         "@type": "FAQPage",
-        "@id": `https://periodhub.health/${locale}/natural-therapies#faq`,
+        "@id": `https://www.periodhub.health/${locale}/natural-therapies#faq`,
         "mainEntity": [
           {
             "@type": "Question",

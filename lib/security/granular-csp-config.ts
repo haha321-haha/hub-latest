@@ -70,7 +70,7 @@ export const granularCSPConfig: GranularCSPConfig = {
         "'self'",
         'data:',
         'blob:',
-        'https://periodhub.health',
+        'https://www.periodhub.health',
         'https://images.unsplash.com',
       ],
       'font-src': [
@@ -106,7 +106,7 @@ export const granularCSPConfig: GranularCSPConfig = {
         "'self'",
         'data:',
         'blob:',
-        'https://periodhub.health',
+        'https://www.periodhub.health',
       ],
       'font-src': [
         "'self'",
@@ -209,7 +209,7 @@ export const granularCSPConfig: GranularCSPConfig = {
         "'self'",
         'data:',
         'blob:',
-        'https://periodhub.health',
+        'https://www.periodhub.health',
       ],
       'connect-src': [
         "'self'",

@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       type: 'website',
       locale: locale === 'zh' ? 'zh_CN' : 'en_US',
       siteName: 'PeriodHub',
-      url: `https://periodhub.health/${locale}/pain-tracker`,
+      url: `https://www.periodhub.health/${locale}/pain-tracker`,
     },
     
     twitter: {
@@ -50,10 +50,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
 
     alternates: {
-      canonical: `https://periodhub.health/${locale}/pain-tracker`,
+      canonical: `https://www.periodhub.health/${locale}/pain-tracker`,
       languages: {
-        'zh-CN': 'https://periodhub.health/zh/pain-tracker',
-        'en-US': 'https://periodhub.health/en/pain-tracker',
+        'zh-CN': 'https://www.periodhub.health/zh/pain-tracker',
+        'en-US': 'https://www.periodhub.health/en/pain-tracker',
       },
     },
 
