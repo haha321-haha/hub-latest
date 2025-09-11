@@ -40,14 +40,18 @@ export default async function LocaleLayout({
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      <Suspense fallback={<LoadingState />}>
-        <Header />
-        <main className="flex-1">
-          {children}
-        </main>
-        <Footer />
-      </Suspense>
-    </NextIntlClientProvider>
+    <html lang={locale === 'zh' ? 'zh-CN' : 'en-US'} data-scroll-behavior="smooth">
+      <body>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Suspense fallback={<LoadingState />}>
+            <Header />
+            <main className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </Suspense>
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }
