@@ -34,21 +34,6 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
   
-  // 重定向规则 - 解决Google Search Console重定向问题
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/zh',
-        permanent: false,
-      },
-      {
-        source: '/teen-health',
-        destination: '/zh/teen-health',
-        permanent: false,
-      }
-    ];
-  },
   
   // 重写规则 - 修复静态资源路径
   async rewrites() {
