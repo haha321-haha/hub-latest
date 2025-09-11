@@ -167,7 +167,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     articlePages.push(`/en/articles/${slug}`);
   }
   
-  // 注意：缺失的文章页面已经在 articleSlugs 数组中，无需重复添加
+  // 添加缺失的文章页面（修复404错误）
+  const missingArticleSlugs = [
+    'ginger-menstrual-pain-relief-guide',
+    'comprehensive-report-non-medical-factors-menstrual-pain',
+    'period-pain-simulator-accuracy-analysis',
+    'medication-vs-natural-remedies-menstrual-pain'
+  ];
+  
+  for (const slug of missingArticleSlugs) {
+    articlePages.push(`/zh/articles/${slug}`);
+    articlePages.push(`/en/articles/${slug}`);
+  }
 
   // 所有页面
   const allPages = [...staticPages, ...articlePages];
@@ -203,8 +214,46 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  // 注意：已移除 PDF 文件，因为它们被 robots.txt 禁止索引
-  // 这解决了 Google 发现的重复页面问题
+  // PDF 资源文件 - 包含在sitemap中供Bing发现
+  const pdfFiles = [
+    // 中文PDF文件
+    '/pdf-files/parent-communication-guide-zh.pdf',
+    '/pdf-files/zhan-zhuang-baduanjin-illustrated-guide-zh.pdf',
+    '/pdf-files/teacher-collaboration-handbook-zh.pdf',
+    '/pdf-files/healthy-habits-checklist-zh.pdf',
+    '/pdf-files/specific-menstrual-pain-management-guide-zh.pdf',
+    '/pdf-files/natural-therapy-assessment-zh.pdf',
+    '/pdf-files/menstrual-cycle-nutrition-plan-zh.pdf',
+    '/pdf-files/campus-emergency-checklist-zh.pdf',
+    '/pdf-files/menstrual-pain-complications-management-zh.pdf',
+    '/pdf-files/magnesium-gut-health-menstrual-pain-guide-zh.pdf',
+    '/pdf-files/pain-tracking-form-zh.pdf',
+    '/pdf-files/teacher-health-manual-zh.pdf',
+    // 英文PDF文件
+    '/pdf-files/parent-communication-guide-en.pdf',
+    '/pdf-files/zhan-zhuang-baduanjin-illustrated-guide-en.pdf',
+    '/pdf-files/teacher-collaboration-handbook-en.pdf',
+    '/pdf-files/healthy-habits-checklist-en.pdf',
+    '/pdf-files/specific-menstrual-pain-management-guide-en.pdf',
+    '/pdf-files/natural-therapy-assessment-en.pdf',
+    '/pdf-files/menstrual-cycle-nutrition-plan-en.pdf',
+    '/pdf-files/campus-emergency-checklist-en.pdf',
+    '/pdf-files/menstrual-pain-complications-management-en.pdf',
+    '/pdf-files/magnesium-gut-health-menstrual-pain-guide-en.pdf',
+    '/pdf-files/pain-tracking-form-en.pdf',
+    '/pdf-files/teacher-health-manual-en.pdf',
+  ];
 
-  return staticEntries;
+  // 生成PDF文件的sitemap条目
+  const pdfEntries: MetadataRoute.Sitemap = pdfFiles.map((pdf) => ({
+    url: `${baseUrl}${pdf}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6, // PDF文件优先级较低
+  }));
+
+  // 合并所有条目
+  const allEntries = [...staticEntries, ...pdfEntries];
+
+  return allEntries;
 }

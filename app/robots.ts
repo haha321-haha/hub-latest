@@ -56,7 +56,13 @@ export default function robots(): MetadataRoute.Robots {
         ],
       }
     ],
-    sitemap: 'https://www.periodhub.health/sitemap.xml',
+    sitemap: [
+      'https://www.periodhub.health/sitemap.xml',
+      'https://www.periodhub.health/sitemap-index.xml',
+      'https://www.periodhub.health/sitemap-pages.xml',
+      'https://www.periodhub.health/sitemap-articles.xml',
+      'https://www.periodhub.health/sitemap-pdfs.xml'
+    ],
     host: 'https://www.periodhub.health'
   };
 }
