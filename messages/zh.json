@@ -3046,27 +3046,33 @@
       "readMore": "阅读更多",
       "understandingPain": {
         "title": "理解痛经",
-        "description": "深入了解痛经的原因、类型和生理机制"
+        "description": "深入了解痛经的原因、类型和生理机制",
+        "cta": "了解疼痛原因"
       },
       "reliefMethods": {
         "title": "A-Z缓解方法",
-        "description": "从A到Z的全面缓解方法，包括即时和长期策略"
+        "description": "从A到Z的全面缓解方法，包括即时和长期策略",
+        "cta": "探索缓解方法"
       },
       "lifestyleManagement": {
         "title": "生活方式管理",
-        "description": "通过饮食、运动和日常习惯改善经期健康"
+        "description": "通过饮食、运动和日常习惯改善经期健康",
+        "cta": "发现生活方式建议"
       },
       "whenSeekHelp": {
         "title": "何时寻求帮助",
-        "description": "识别需要医疗关注的症状和情况"
+        "description": "识别需要医疗关注的症状和情况",
+        "cta": "了解何时就医"
       },
       "mythsFacts": {
         "title": "误区与事实",
-        "description": "澄清关于经期健康的常见误解"
+        "description": "澄清关于经期健康的常见误解",
+        "cta": "破除常见误解"
       },
       "globalPerspective": {
         "title": "全球视角",
-        "description": "探索世界各地的传统疗法和文化观点"
+        "description": "探索世界各地的传统疗法和文化观点",
+        "cta": "探索全球疗法"
       }
     },
     "hero": {

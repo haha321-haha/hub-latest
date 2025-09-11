@@ -2400,27 +2400,33 @@
       "readMore": "Read More",
       "understandingPain": {
         "title": "Understanding Menstrual Pain",
-        "description": "Deep dive into the causes, types, and physiological mechanisms of menstrual pain"
+        "description": "Deep dive into the causes, types, and physiological mechanisms of menstrual pain",
+        "cta": "Learn About Pain Causes"
       },
       "reliefMethods": {
         "title": "A-Z Relief Methods",
-        "description": "Comprehensive relief methods from A to Z, including immediate and long-term strategies"
+        "description": "Comprehensive relief methods from A to Z, including immediate and long-term strategies",
+        "cta": "Explore Relief Methods"
       },
       "lifestyleManagement": {
         "title": "Lifestyle Management",
-        "description": "Improve menstrual health through diet, exercise, and daily habits"
+        "description": "Improve menstrual health through diet, exercise, and daily habits",
+        "cta": "Discover Lifestyle Tips"
       },
       "whenSeekHelp": {
         "title": "When to Seek Help",
-        "description": "Recognize symptoms and situations that require medical attention"
+        "description": "Recognize symptoms and situations that require medical attention",
+        "cta": "Know When to See a Doctor"
       },
       "mythsFacts": {
         "title": "Myths vs Facts",
-        "description": "Clarify common misconceptions about menstrual health"
+        "description": "Clarify common misconceptions about menstrual health",
+        "cta": "Debunk Common Myths"
       },
       "globalPerspective": {
         "title": "Global Perspectives",
-        "description": "Explore traditional therapies and cultural perspectives from around the world"
+        "description": "Explore traditional therapies and cultural perspectives from around the world",
+        "cta": "Explore Global Therapies"
       }
     },
     "hero": {

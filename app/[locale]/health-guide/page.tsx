@@ -58,42 +58,48 @@ export default async function HealthGuidePage({
       title: t('sections.understandingPain.title'),
       description: t('sections.understandingPain.description'),
       href: `/${locale}/health-guide/understanding-pain`,
-      icon: '🧠'
+      icon: '🧠',
+      cta: t('sections.understandingPain.cta')
     },
     {
       id: 'relief-methods-az',
       title: t('sections.reliefMethods.title'),
       description: t('sections.reliefMethods.description'),
       href: `/${locale}/health-guide/relief-methods`,
-      icon: '📚'
+      icon: '📚',
+      cta: t('sections.reliefMethods.cta')
     },
     {
       id: 'lifestyle-management',
       title: t('sections.lifestyleManagement.title'),
       description: t('sections.lifestyleManagement.description'),
       href: `/${locale}/health-guide/lifestyle`,
-      icon: '🌱'
+      icon: '🌱',
+      cta: t('sections.lifestyleManagement.cta')
     },
     {
       id: 'when-seek-help',
       title: t('sections.whenSeekHelp.title'),
       description: t('sections.whenSeekHelp.description'),
       href: `/${locale}/health-guide/medical-care`,
-      icon: '🏥'
+      icon: '🏥',
+      cta: t('sections.whenSeekHelp.cta')
     },
     {
       id: 'myths-facts',
       title: t('sections.mythsFacts.title'),
       description: t('sections.mythsFacts.description'),
       href: `/${locale}/health-guide/myths-facts`,
-      icon: '💡'
+      icon: '💡',
+      cta: t('sections.mythsFacts.cta')
     },
     {
       id: 'global-perspectives',
       title: t('sections.globalPerspective.title'),
       description: t('sections.globalPerspective.description'),
       href: `/${locale}/health-guide/global-perspectives`,
-      icon: '🌍'
+      icon: '🌍',
+      cta: t('sections.globalPerspective.cta')
     }
   ];
 
@@ -700,7 +706,7 @@ export default async function HealthGuidePage({
                 {chapter.description}
               </p>
               <div className="flex items-center text-primary-600 group-hover:text-primary-700 font-medium">
-                {t('sections.readMore')}
+                {chapter.cta}
                 <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
