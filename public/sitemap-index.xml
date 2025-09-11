@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.periodhub.health/sitemap.xml</loc>
+    <lastmod>2025-01-11T23:35:00.000Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.periodhub.health/sitemap-pages.xml</loc>
+    <lastmod>2025-01-11T23:35:00.000Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.periodhub.health/sitemap-articles.xml</loc>
+    <lastmod>2025-01-11T23:35:00.000Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.periodhub.health/sitemap-pdfs.xml</loc>
+    <lastmod>2025-01-11T23:35:00.000Z</lastmod>
+  </sitemap>
+</sitemapindex>
