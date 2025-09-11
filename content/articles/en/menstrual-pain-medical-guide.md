@@ -20,7 +20,7 @@ reading_time: "20 minutes"
 reading_time_zh: "20分钟"
 ---
 
-## Medical Guide to Menstrual Pain: Complete Analysis of Causes, Diagnosis & Scientific Treatment
+### Medical Guide to Menstrual Pain: Complete Analysis of Causes, Diagnosis & Scientific Treatment
 
 ## Introduction
 
