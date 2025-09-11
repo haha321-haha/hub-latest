@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-09-11T06:33:35.962Z",
+  "action": "H1标签修复URL提交",
+  "description": "提交修复了H1标签重复问题的4个页面到Google Search Console",
+  "pages": [
+    {
+      "url": "https://www.periodhub.health/en/articles/menstrual-pain-medical-guide",
+      "status": "ready_for_submission",
+      "fix_applied": "H1标签重复问题已修复",
+      "priority": "high"
+    },
+    {
+      "url": "https://www.periodhub.health/en/articles/nsaid-menstrual-pain-professional-guide",
+      "status": "ready_for_submission",
+      "fix_applied": "H1标签重复问题已修复",
+      "priority": "high"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/articles/heat-therapy-complete-guide",
+      "status": "ready_for_submission",
+      "fix_applied": "H1标签重复问题已修复",
+      "priority": "high"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/articles/menstrual-pain-medical-guide",
+      "status": "ready_for_submission",
+      "fix_applied": "H1标签重复问题已修复",
+      "priority": "high"
+    }
+  ],
+  "instructions": {
+    "google_search_console": {
+      "url": "https://search.google.com/search-console/",
+      "steps": [
+        "1. 登录Google Search Console账户",
+        "2. 选择网站 periodhub.health",
+        "3. 使用\"URL检查\"工具",
+        "4. 逐个检查以下URL:",
+        "   1. https://www.periodhub.health/en/articles/menstrual-pain-medical-guide",
+        "   2. https://www.periodhub.health/en/articles/nsaid-menstrual-pain-professional-guide",
+        "   3. https://www.periodhub.health/zh/articles/heat-therapy-complete-guide",
+        "   4. https://www.periodhub.health/zh/articles/menstrual-pain-medical-guide",
+        "5. 对每个URL点击\"请求编入索引\"",
+        "6. 等待Google重新抓取和索引"
+      ]
+    },
+    "verification": {
+      "method": "Google Search Console > 索引 > 页面",
+      "expected_result": "H1标签错误消失，页面重新索引",
+      "timeframe": "几天到几周"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "timestamp": "2025-09-11T00:54:04.202Z",
+  "totalPages": 9,
+  "checkedPages": [
+    {
+      "page": "/zh",
+      "filePath": "app/[locale]/page.tsx",
+      "status": "failed",
+      "issues": [
+        "缺少canonical标签",
+        "缺少hreflang标签"
+      ],
+      "hasCanonical": false,
+      "hasHreflang": false,
+      "usesCorrectDomain": true
+    },
+    {
+      "page": "/en",
+      "filePath": "app/[locale]/page.tsx",
+      "status": "failed",
+      "issues": [
+        "缺少canonical标签",
+        "缺少hreflang标签"
+      ],
+      "hasCanonical": false,
+      "hasHreflang": false,
+      "usesCorrectDomain": true
+    },
+    {
+      "page": "/zh/interactive-tools/symptom-tracker",
+      "filePath": "app/[locale]/interactive-tools/[tool]/page.tsx",
+      "status": "failed",
+      "issues": [
+        "缺少canonical标签",
+        "缺少hreflang标签"
+      ],
+      "hasCanonical": false,
+      "hasHreflang": false,
+      "usesCorrectDomain": true
+    },
+    {
+      "page": "/en/interactive-tools/symptom-tracker",
+      "filePath": "app/[locale]/interactive-tools/[tool]/page.tsx",
+      "status": "failed",
+      "issues": [
+        "缺少canonical标签",
+        "缺少hreflang标签"
+      ],
+      "hasCanonical": false,
+      "hasHreflang": false,
+      "usesCorrectDomain": true
+    },
+    {
+      "page": "/zh/interactive-tools",
+      "filePath": "app/[locale]/interactive-tools/page.tsx",
+      "status": "failed",
+      "issues": [
+        "缺少canonical标签",
+        "缺少hreflang标签"
+      ],
+      "hasCanonical": false,
+      "hasHreflang": false,
+      "usesCorrectDomain": true
+    },
+    {
+      "page": "/en/interactive-tools",
+      "filePath": "app/[locale]/interactive-tools/page.tsx",
+      "status": "failed",
+      "issues": [
+        "缺少canonical标签",
+        "缺少hreflang标签"
+      ],
+      "hasCanonical": false,
+      "hasHreflang": false,
+      "usesCorrectDomain": true
+    },
+    {
+      "page": "/zh/teen-health",
+      "filePath": "app/[locale]/teen-health/page.tsx",
+      "status": "failed",
+      "issues": [
+        "缺少canonical标签",
+        "缺少hreflang标签"
+      ],
+      "hasCanonical": false,
+      "hasHreflang": false,
+      "usesCorrectDomain": true
+    },
+    {
+      "page": "/en/privacy-policy",
+      "filePath": "app/[locale]/privacy-policy/page.tsx",
+      "status": "failed",
+      "issues": [
+        "缺少canonical标签",
+        "缺少hreflang标签"
+      ],
+      "hasCanonical": false,
+      "hasHreflang": false,
+      "usesCorrectDomain": true
+    },
+    {
+      "page": "/zh/privacy-policy",
+      "filePath": "app/[locale]/privacy-policy/page.tsx",
+      "status": "failed",
+      "issues": [
+        "缺少canonical标签",
+        "缺少hreflang标签"
+      ],
+      "hasCanonical": false,
+      "hasHreflang": false,
+      "usesCorrectDomain": true
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 9,
+    "totalIssues": 18
+  },
+  "recommendations": [
+    "确保所有页面都使用https://www.periodhub.health作为基础URL",
+    "每个页面都必须有canonical标签指向自己",
+    "多语言页面必须有hreflang标签",
+    "PDF文件应该有canonical标签指向对应的HTML页面",
+    "在Bing Webmaster Tools中提交更新的sitemap.xml"
+  ]
+}

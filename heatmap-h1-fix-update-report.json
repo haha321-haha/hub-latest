@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-09-11T06:34:13.672Z",
+  "action": "热点地图H1修复更新",
+  "description": "更新热点地图以反映H1标签修复后的页面结构变化",
+  "affected_pages": [
+    "https://www.periodhub.health/en/articles/menstrual-pain-medical-guide",
+    "https://www.periodhub.health/en/articles/nsaid-menstrual-pain-professional-guide",
+    "https://www.periodhub.health/zh/articles/heat-therapy-complete-guide",
+    "https://www.periodhub.health/zh/articles/menstrual-pain-medical-guide"
+  ],
+  "changes": {
+    "h1_structure": {
+      "before": "2个H1标签（页面模板 + Markdown内容）",
+      "after": "1个H1标签（仅页面模板）",
+      "impact": "改善SEO结构，提升搜索引擎理解"
+    },
+    "heatmap_impact": {
+      "seo_benefit": "正确的H1标签结构提升页面SEO表现",
+      "user_experience": "清晰的标题层级改善用户体验",
+      "search_engine_understanding": "帮助搜索引擎更好理解页面内容结构"
+    }
+  },
+  "next_steps": [
+    "1. 监控热点地图数据收集",
+    "2. 观察H1修复对用户行为的影响",
+    "3. 跟踪SEO指标改善情况",
+    "4. 定期更新热点地图配置"
+  ]
+}

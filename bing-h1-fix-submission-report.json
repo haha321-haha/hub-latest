@@ -1,0 +1,52 @@
+{
+  "timestamp": "2025-09-11T06:33:11.986Z",
+  "action": "H1标签修复URL提交",
+  "description": "提交修复了H1标签重复问题的4个页面到Bing Webmaster Tools",
+  "pages": [
+    {
+      "url": "https://www.periodhub.health/en/articles/menstrual-pain-medical-guide",
+      "status": "ready_for_submission",
+      "fix_applied": "H1标签重复问题已修复",
+      "priority": "high"
+    },
+    {
+      "url": "https://www.periodhub.health/en/articles/nsaid-menstrual-pain-professional-guide",
+      "status": "ready_for_submission",
+      "fix_applied": "H1标签重复问题已修复",
+      "priority": "high"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/articles/heat-therapy-complete-guide",
+      "status": "ready_for_submission",
+      "fix_applied": "H1标签重复问题已修复",
+      "priority": "high"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/articles/menstrual-pain-medical-guide",
+      "status": "ready_for_submission",
+      "fix_applied": "H1标签重复问题已修复",
+      "priority": "high"
+    }
+  ],
+  "instructions": {
+    "bing_webmaster_tools": {
+      "url": "https://www.bing.com/webmasters/",
+      "steps": [
+        "1. 登录Bing Webmaster Tools账户",
+        "2. 选择网站 periodhub.health",
+        "3. 进入\"URL提交\"功能",
+        "4. 逐个提交以下URL:",
+        "   1. https://www.periodhub.health/en/articles/menstrual-pain-medical-guide",
+        "   2. https://www.periodhub.health/en/articles/nsaid-menstrual-pain-professional-guide",
+        "   3. https://www.periodhub.health/zh/articles/heat-therapy-complete-guide",
+        "   4. https://www.periodhub.health/zh/articles/menstrual-pain-medical-guide",
+        "5. 等待Bing重新抓取和索引"
+      ]
+    },
+    "verification": {
+      "method": "Bing Webmaster Tools > 索引 > 页面",
+      "expected_result": "H1标签错误消失",
+      "timeframe": "1-2周"
+    }
+  }
+}

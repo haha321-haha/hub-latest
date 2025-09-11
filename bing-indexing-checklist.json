@@ -1,0 +1,36 @@
+{
+  "title": "Bing索引编制检查清单",
+  "timestamp": "2025-09-11T01:05:55.942Z",
+  "items": [
+    {
+      "task": "在Bing Webmaster Tools中检查URL状态",
+      "frequency": "每日",
+      "status": "已完成",
+      "description": "使用URL检查工具验证每个提交的URL"
+    },
+    {
+      "task": "监控站点诊断报告",
+      "frequency": "每周",
+      "status": "进行中",
+      "description": "查看重复内容和规范化问题是否解决"
+    },
+    {
+      "task": "检查搜索性能数据",
+      "frequency": "每周",
+      "status": "待开始",
+      "description": "确认索引页面数量是否增加"
+    },
+    {
+      "task": "重新提交未索引的URL",
+      "frequency": "每两周",
+      "status": "待开始",
+      "description": "对于7天后仍未索引的URL重新提交"
+    },
+    {
+      "task": "验证canonical标签",
+      "frequency": "每月",
+      "status": "待开始",
+      "description": "确保所有页面都有正确的canonical标签"
+    }
+  ]
+}

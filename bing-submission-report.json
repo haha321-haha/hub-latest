@@ -1,0 +1,120 @@
+{
+  "timestamp": "2025-09-11T00:53:13.869Z",
+  "totalUrls": 17,
+  "categories": {
+    "duplicatePages": 12,
+    "interactiveTools": 3,
+    "otherPages": 2
+  },
+  "urls": [
+    {
+      "url": "https://www.periodhub.health/en/privacy-policy",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/magnesium-gut-health-menstrual-pain-guide-zh.pdf",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/zhan-zhuang-baduanjin-illustrated-guide-zh.pdf",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/magnesium-gut-health-menstrual-pain-guide-en.pdf",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/menstrual-cycle-nutrition-plan-en.pdf",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/zh/interactive-tools/symptom-tracker",
+      "status": "pending",
+      "priority": "high",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/natural-therapy-assessment-zh.pdf",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/parent-communication-guide-en.pdf",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/parent-communication-guide-zh.pdf",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/teacher-collaboration-handbook-en.pdf",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/teacher-health-manual-en.pdf",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/healthy-habits-checklist-en.pdf",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/pain-tracking-form-zh.pdf",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/specific-menstrual-pain-management-guide-en.pdf",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/en/interactive-tools/symptom-tracker",
+      "status": "pending",
+      "priority": "high",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/en/interactive-tools",
+      "status": "pending",
+      "priority": "high",
+      "lastChecked": null
+    },
+    {
+      "url": "https://www.periodhub.health/zh/teen-health",
+      "status": "pending",
+      "priority": "normal",
+      "lastChecked": null
+    }
+  ],
+  "recommendations": [
+    "1. 在Bing Webmaster Tools中提交更新的sitemap.xml",
+    "2. 使用URL检查工具逐一验证这些URL",
+    "3. 请求Bing重新抓取所有问题URL",
+    "4. 监控Bing的索引报告更新",
+    "5. 检查canonical标签是否正确设置"
+  ]
+}

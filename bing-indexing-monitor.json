@@ -1,0 +1,159 @@
+{
+  "timestamp": "2025-09-11T01:05:55.905Z",
+  "totalSubmitted": 17,
+  "categories": {
+    "pdfFiles": 12,
+    "interactiveTools": 3,
+    "otherPages": 2
+  },
+  "urls": [
+    {
+      "url": "https://www.periodhub.health/en/privacy-policy",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/magnesium-gut-health-menstrual-pain-guide-zh.pdf",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/zhan-zhuang-baduanjin-illustrated-guide-zh.pdf",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/magnesium-gut-health-menstrual-pain-guide-en.pdf",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/menstrual-cycle-nutrition-plan-en.pdf",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/interactive-tools/symptom-tracker",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "high",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/natural-therapy-assessment-zh.pdf",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/parent-communication-guide-en.pdf",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/parent-communication-guide-zh.pdf",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/teacher-collaboration-handbook-en.pdf",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/teacher-health-manual-en.pdf",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/healthy-habits-checklist-en.pdf",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/pain-tracking-form-zh.pdf",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/pdf-files/specific-menstrual-pain-management-guide-en.pdf",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/en/interactive-tools/symptom-tracker",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "high",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/en/interactive-tools",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "high",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    },
+    {
+      "url": "https://www.periodhub.health/zh/teen-health",
+      "status": "submitted",
+      "submittedAt": "2025-09-11T01:05:55.906Z",
+      "priority": "normal",
+      "expectedIndexTime": "3-7 days",
+      "nextCheckDate": "2025-09-14T01:05:55.906Z"
+    }
+  ],
+  "nextSteps": [
+    "1. 等待3-7天让Bing处理索引请求",
+    "2. 定期在Bing Webmaster Tools中检查URL状态",
+    "3. 监控\"站点诊断\"中的重复内容报告",
+    "4. 检查\"搜索性能\"中的索引页面数量",
+    "5. 如果7天后仍有问题，重新提交URL"
+  ],
+  "monitoringSchedule": {
+    "daily": "检查Bing Webmaster Tools中的URL状态",
+    "weekly": "查看站点诊断和搜索性能报告",
+    "biweekly": "重新提交仍未索引的URL"
+  }
+}
