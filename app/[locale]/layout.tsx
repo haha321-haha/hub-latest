@@ -4,6 +4,7 @@ import {unstable_setRequestLocale} from 'next-intl/server';
 import {Suspense} from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LanguageSetter from '@/components/LanguageSetter';
 
 export const dynamic = 'force-dynamic';
 export const dynamicParams = true;
@@ -40,18 +41,15 @@ export default async function LocaleLayout({
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
   return (
-    <html lang={locale === 'zh' ? 'zh-CN' : 'en-US'} data-scroll-behavior="smooth">
-      <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Suspense fallback={<LoadingState />}>
-            <Header />
-            <main className="flex-1">
-              {children}
-            </main>
-            <Footer />
-          </Suspense>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <LanguageSetter />
+      <Suspense fallback={<LoadingState />}>
+        <Header />
+        <main className="flex-1">
+          {children}
+        </main>
+        <Footer />
+      </Suspense>
+    </NextIntlClientProvider>
   );
 }
